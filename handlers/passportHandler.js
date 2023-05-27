@@ -45,7 +45,7 @@ passport.use(
 )
 
 passport.serializeUser(function (user, done) {
-    done(null, user)
+    done(null, user.id)
 })
 
 passport.deserializeUser(async function (user, done) {
