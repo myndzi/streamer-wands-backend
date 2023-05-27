@@ -40,7 +40,7 @@ const wss = require('./wss')(server)
 server.on('request', app)
 //secureServer.on("request", app)
 server.listen(process.env.PORT, () => {
-    console.log('[APP] Running port 2234.')
+    console.log('[APP] Running port', process.env.PORT)
 })
 /*
 secureServer.listen(443, () => {
