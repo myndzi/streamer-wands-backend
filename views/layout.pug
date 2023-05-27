@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= `${title}`
+    link(rel='stylesheet', href='/style.css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=VT323&display=swap")
+    script(src="https://ko-fi.com/widgets/widget_2.js")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    div.shameless-plug
+        script.
+            kofiwidget2.init('Support Me on Ko-fi', '#2e2e2e', 'G2G372NE');kofiwidget2.draw()
+    .content
+        block content
+            p Hi bish

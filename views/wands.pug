@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= `${title}`
+    link(rel='stylesheet', href='/style.css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=VT323&display=swap")
+    script(src="/spellData.js")
+    script(src="/wandSprites.js")
+    script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12")
+    script(src="https://unpkg.com/@popperjs/core@2.5.4/dist/umd/popper.min.js")
+    script(src="https://ko-fi.com/widgets/widget_2.js")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    script.
+        const streamerName = "#{streamer}"
+        const streamerWands = !{JSON.stringify(wands)}
+        const streamerInventory = !{JSON.stringify(inventory)}
+    div#app
+    div.disclaimer
+        p Disclaimer: Spell tooltips are not accurate at the moment.
+    div.download
+        a(href="https://github.com/soler91/streamer-wands/releases" target="_blank") Add to your stream
+    div.shameless-plug
+        
+        script.
+            window.hi = "ass"
+            kofiwidget2.init('Support Me on Ko-fi', '#2e2e2e', 'G2G372NE');kofiwidget2.draw()
+script(src="/main.js")
