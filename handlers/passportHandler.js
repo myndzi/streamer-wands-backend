@@ -17,7 +17,7 @@ passport.use(
                 console.log({ id: user.id })
                 const dbUser = await Streamer.findOneAndUpdate(
                     { id: user.id },
-                    { id: user.id, name: user.display_name },
+                    { id: user.id, name: user.displayName },
                     {
                         useFindAndModify: false,
                         new: true,
@@ -45,7 +45,7 @@ passport.use(
 )
 
 passport.serializeUser(function (user, done) {
-    done(null, user.id)
+    done(null, { id: user.id })
 })
 
 passport.deserializeUser(async function (user, done) {

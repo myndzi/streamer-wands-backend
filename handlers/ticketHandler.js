@@ -24,7 +24,7 @@ exports.generateTicket = (user) => {
     const ticket = jwt.sign(
         {
             id: user.id,
-            display_name: user.display_name,
+            displayName: user.displayName,
         },
         process.env.JWT_SECRET
     )
@@ -35,7 +35,7 @@ exports.generateRefreshTicket = (user) => {
     const refreshTicket = jwt.sign(
         {
             id: user.id,
-            display_name: user.display_name,
+            displayName: user.displayName,
         },
         process.env.JWT_REFRESH_SECRET
     )

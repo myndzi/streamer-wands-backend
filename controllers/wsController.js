@@ -7,7 +7,7 @@ exports.message = async (data, user, server) => {
 
         const { wands, inventory } = wandsHandler.validate(json)
         server.clients.forEach((ws) => {
-            if (ws.streamer == user.display_name) {
+            if (ws.streamer == user.displayName) {
                 ws.send(
                     JSON.stringify({
                         type: 'wands',

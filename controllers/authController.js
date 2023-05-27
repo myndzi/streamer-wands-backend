@@ -46,7 +46,7 @@ exports.getTicket = async (req, res) => {
         throw err
     }
     const query = await Tokens.findOne({ id: req.user.id })
-    const { display_name } = req.user
+    const { displayName } = req.user
     const ticket = query.token
     res.json({
         instructions:
