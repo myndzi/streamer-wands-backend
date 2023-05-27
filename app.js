@@ -27,16 +27,7 @@ app.use(
 
 app.use(passport.initialize())
 app.use(passport.session())
-//onlywands redirect || still needed ??
-app.use('/', (req, res, next) => {
-    if (!req.secure) {
-        res.redirect(301, 'https://onlywands.com' + req.url)
-    } else if (req.hostname !== 'onlywands.com') {
-        res.redirect(301, 'https://onlywands.com' + req.url)
-    } else {
-        next()
-    }
-})
+
 // Main Routes
 app.use('/streamer', streamerRoutes)
 app.use('/auth', authRoutes)
