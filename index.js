@@ -14,11 +14,7 @@ const secureServer = https.createServer(credentials)
 require('dotenv').config()
 
 // Database connection and errors...
-mongoose.connect(process.env.DATABASE, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-})
+mongoose.connect(process.env.DATABASE)
 mongoose.Promise = global.Promise
 const db = mongoose.connection
 db.on('error', (err) => {

@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const session = require('express-session')
 const mongoose = require('mongoose')
-const MongoStore = require('connect-mongo')(session)
+const MongoStore = require('connect-mongo')
 const passport = require('passport')
 const streamerRoutes = require('./routes/streamer')
 const authRoutes = require('./routes/auth')
@@ -12,14 +12,17 @@ const app = express()
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
-app.use(express.static('public', { dotfiles: 'allow' }))
+// // uncomment this if not running behind a reverse proxy such as nginx
+// app.use(express.static('public', { dotfiles: 'allow' }))
 app.use(
     session({
         secret: process.env.SESSION_SECRET,
         key: process.env.SESSION_KEY,
         resave: false,
         saveUninitialized: false,
-        store: new MongoStore({ mongooseConnection: mongoose.connection }),
+        store: MongoStore.create({
+            client: mongoose.connection.getClient(),
+        }),
         httpOnly: true,
         secure: true,
     })
