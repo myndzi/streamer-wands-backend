@@ -1,5 +1,5 @@
-const mongoose = require("mongoose")
-const Streamers = mongoose.model("Streamers")
+const mongoose = require('mongoose')
+const Streamers = mongoose.model('Streamers')
 /* obsolete
 const spellData = require("../utils/spellData")
 const wandSprites = require("../utils/wandSprites")
@@ -30,18 +30,20 @@ function usedSpells(wands) {
 */
 exports.getWands = async (req, res) => {
     const { name } = req.params
-    const streamer = await Streamers.findOne({ name }).collation({ locale: 'en_US', strength: 1 })
+    const streamer = await Streamers.findOne({ name }).collation({
+        locale: 'en_US',
+        strength: 1,
+    })
     if (streamer) {
         const stuff = {
             title: `${streamer.name} wands`,
             streamer: streamer.name,
             wands: streamer.wands,
-            inventory: streamer.inventory || []
+            inventory: streamer.inventory || [],
         }
-        res.render("wands", stuff)
-    }
-    else {
-        const err = new Error("Streamer not found")
+        res.render('wands', stuff)
+    } else {
+        const err = new Error('Streamer not found')
         err.status = 404
         throw err
     }

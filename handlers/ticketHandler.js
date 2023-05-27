@@ -1,11 +1,10 @@
-const jwt = require("jsonwebtoken")
+const jwt = require('jsonwebtoken')
 
 exports.isValidTicket = (ticket) => {
     jwt.verify(ticket, process.env.JWT_SECRET, (err) => {
         if (err) {
             return false
-        }
-        else {
+        } else {
             return true
         }
     })
@@ -22,18 +21,24 @@ exports.verify = (ticket) => {
 }
 
 exports.generateTicket = (user) => {
-    const ticket = jwt.sign({
-        id: user.id,
-        display_name: user.display_name
-    }, process.env.JWT_SECRET)
+    const ticket = jwt.sign(
+        {
+            id: user.id,
+            display_name: user.display_name,
+        },
+        process.env.JWT_SECRET
+    )
     return ticket
 }
 
 exports.generateRefreshTicket = (user) => {
-    const refreshTicket = jwt.sign({
-        id: user.id,
-        display_name: user.display_name
-    }, process.env.JWT_REFRESH_SECRET)
+    const refreshTicket = jwt.sign(
+        {
+            id: user.id,
+            display_name: user.display_name,
+        },
+        process.env.JWT_REFRESH_SECRET
+    )
 
     return refreshTicket
 }
@@ -42,7 +47,7 @@ exports.refreshTicket = (ticket) => {
     try {
         const verified = jwt.verify(ticket, process.env.JWT_REFRESH_SECRET)
         if (!verified) {
-            throw new Error("Failed to verify jwt refresh token.")
+            throw new Error('Failed to verify jwt refresh token.')
         }
 
         const newTicket = this.generateTicket(verified)

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require('mongoose')
 const wandSchema = new mongoose.Schema({
     stats: {
         sprite: String,
@@ -11,10 +11,10 @@ const wandSchema = new mongoose.Schema({
         shuffle_deck_when_empty: Boolean,
         spread_degrees: Number,
         speed_multiplier: Number,
-        fire_rate_wait: Number
+        fire_rate_wait: Number,
     },
     always_cast: [String],
-    deck: [String]
+    deck: [String],
 })
 
-module.exports = mongoose.model("Wand", wandSchema)
+module.exports = mongoose.model('Wand', wandSchema)

@@ -1,26 +1,20 @@
 function spellFilter(spell) {
-    return typeof spell == "string"
+    return typeof spell == 'string'
 }
 
 function statsValidation(stats) {
     for (const key in stats) {
-        if (key == "sprite") {
-            if (typeof stats[key] != "string") {
-                stats[key] = "999"
-            }
-            else {
+        if (key == 'sprite') {
+            if (typeof stats[key] != 'string') {
+                stats[key] = '999'
+            } else {
                 let match = stats[key].match(/([^\/]+)\./)[1]
-                if (match)
-                    stats[key] = match
+                if (match) stats[key] = match
             }
-        }
-        else if (key == "shuffle_deck_when_empty") {
-            if (typeof stats[key] != "boolean")
-                stats[key] = false
-        }
-        else {
-            if (typeof stats[key] != "number")
-                stats[key] = 0
+        } else if (key == 'shuffle_deck_when_empty') {
+            if (typeof stats[key] != 'boolean') stats[key] = false
+        } else {
+            if (typeof stats[key] != 'number') stats[key] = 0
         }
     }
     return stats
@@ -29,9 +23,27 @@ function statsValidation(stats) {
 exports.validate = (data) => {
     const legacy = Array.isArray(data)
     let wands = []
-    let inventory = ["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"]
-    if (legacy) { wands = data }
-    else {
+    let inventory = [
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+        '0',
+    ]
+    if (legacy) {
+        wands = data
+    } else {
         wands = data.wands
         if (data.inventory) {
             inventory = data.inventory

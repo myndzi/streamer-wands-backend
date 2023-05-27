@@ -1,24 +1,23 @@
-const URL = require("url")
-const path = require("path")
+const URL = require('url')
+const path = require('path')
 const http = require('http')
 const WebSocket = require('ws')
-const ticketHandler = require("./handlers/ticketHandler")
-const wsController = require("./controllers/wsController")
+const ticketHandler = require('./handlers/ticketHandler')
+const wsController = require('./controllers/wsController')
 const WebSocketServer = new WebSocket.Server({ noServer: true })
-function noop() { }
-WebSocketServer.on("connection", (ws, req, user) => {
+function noop() {}
+WebSocketServer.on('connection', (ws, req, user) => {
     console.log(`Connected [${JSON.stringify(user)}]`)
     ws.isAlive = true
-    if (typeof user == "object") {
-        ws.on("message", (d) => {
+    if (typeof user == 'object') {
+        ws.on('message', (d) => {
             ws.isAlive = true
             wsController.message(d, user, WebSocketServer)
         })
-    }
-    else {
+    } else {
         ws.streamer = user
-        ws.send("sup nerd")
-        ws.on("pong", () => {
+        ws.send('sup nerd')
+        ws.on('pong', () => {
             ws.isAlive = true
         })
     }
@@ -27,18 +26,18 @@ WebSocketServer.on("connection", (ws, req, user) => {
 const interval = setInterval(() => {
     WebSocketServer.clients.forEach((ws) => {
         if (ws.isAlive === false) {
-            console.log("byebye")
+            console.log('byebye')
             return ws.terminate()
         }
 
-        ws.isAlive = false;
+        ws.isAlive = false
         ws.ping(noop)
     })
 }, 30000)
 
 WebSocketServer.on('close', () => {
-    clearInterval(interval);
-});
+    clearInterval(interval)
+})
 
 module.exports = (server) => {
     server.on('upgrade', (req, socket, head) => {
@@ -46,11 +45,16 @@ module.exports = (server) => {
             const url = URL.parse(req.url)
             const token = decodeURIComponent(path.basename(url.path))
             console.log(token)
-            if (token.startsWith("client")) {
-                const streamer = token.split("=")[1]
-                return WebSocketServer.handleUpgrade(req, socket, head, ws => {
-                    WebSocketServer.emit('connection', ws, req, streamer)
-                })
+            if (token.startsWith('client')) {
+                const streamer = token.split('=')[1]
+                return WebSocketServer.handleUpgrade(
+                    req,
+                    socket,
+                    head,
+                    (ws) => {
+                        WebSocketServer.emit('connection', ws, req, streamer)
+                    }
+                )
             }
             const user = ticketHandler.verify(token)
             if (!user) {
@@ -59,7 +63,7 @@ module.exports = (server) => {
                 return
             }
 
-            return WebSocketServer.handleUpgrade(req, socket, head, ws => {
+            return WebSocketServer.handleUpgrade(req, socket, head, (ws) => {
                 WebSocketServer.emit('connection', ws, req, user)
             })
         } catch (err) {

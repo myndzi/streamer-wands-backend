@@ -1,39 +1,48 @@
-const passport = require('passport');
-const twitchStrategy = require("passport-twitch-new").Strategy
-const mongoose = require('mongoose');
-const Streamer = mongoose.model('Streamers');
+const passport = require('passport')
+const twitchStrategy = require('passport-twitch-new').Strategy
+const mongoose = require('mongoose')
+const Streamer = mongoose.model('Streamers')
 const Tokens = mongoose.model('Tokens')
-const ticketHandlers = require("../handlers/ticketHandler")
-passport.use(new twitchStrategy({
-    clientID: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: process.env.CALLBACK_URL,
-    scope: "user_read"
-},
-    async function (accessToken, refreshToken, user, done) {
-        try {
-            console.log({ id: user.id })
-            const dbUser = await Streamer.findOneAndUpdate({ id: user.id }, { id: user.id, name: user.display_name },
-                {
-                    useFindAndModify: false,
-                    new: true,
-                    upsert: true,
-                    setDefaultsOnInsert: true
-                })
-            const token = ticketHandlers.generateTicket(user)
-            const refresh = await Tokens.findOneAndUpdate({ id: user.id }, { id: user.id, token },
-                {
-                    useFindAndModify: false,
-                    new: true,
-                    upsert: true,
-                    setDefaultsOnInsert: true
-                })
-            done(null, user)
-        } catch (err) {
-            console.error(`Something went very wrong. ${err}`)
+const ticketHandlers = require('../handlers/ticketHandler')
+passport.use(
+    new twitchStrategy(
+        {
+            clientID: process.env.CLIENT_ID,
+            clientSecret: process.env.CLIENT_SECRET,
+            callbackURL: process.env.CALLBACK_URL,
+            scope: 'user_read',
+        },
+        async function (accessToken, refreshToken, user, done) {
+            try {
+                console.log({ id: user.id })
+                const dbUser = await Streamer.findOneAndUpdate(
+                    { id: user.id },
+                    { id: user.id, name: user.display_name },
+                    {
+                        useFindAndModify: false,
+                        new: true,
+                        upsert: true,
+                        setDefaultsOnInsert: true,
+                    }
+                )
+                const token = ticketHandlers.generateTicket(user)
+                const refresh = await Tokens.findOneAndUpdate(
+                    { id: user.id },
+                    { id: user.id, token },
+                    {
+                        useFindAndModify: false,
+                        new: true,
+                        upsert: true,
+                        setDefaultsOnInsert: true,
+                    }
+                )
+                done(null, user)
+            } catch (err) {
+                console.error(`Something went very wrong. ${err}`)
+            }
         }
-    }
-))
+    )
+)
 
 passport.serializeUser(function (user, done) {
     done(null, user)

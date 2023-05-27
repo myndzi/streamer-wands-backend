@@ -1,15 +1,15 @@
-const Wand = Vue.component("v-wand", {
+const Wand = Vue.component('v-wand', {
     data() {
         return {
             snackbar: { right: true, bottom: true },
             models: { config: {} },
-            temp: { config: {} }
+            temp: { config: {} },
         }
     },
     computed: {
         unsavedChanges: function () {
             return JSON.stringify(this.models) !== JSON.stringify(this.temp)
-        }
+        },
     },
     beforeCreate: async function () {
         /*
@@ -26,14 +26,11 @@ const Wand = Vue.component("v-wand", {
                 <v-spacer></v-spacer>
             </v-card-text>
         </v-card>
-    </v-container>`
+    </v-container>`,
 })
 
 let vm = new Vue({
     el: '#app',
-    data: {
-    },
-    beforeCreate: async function () {
-        
-    }
+    data: {},
+    beforeCreate: async function () {},
 })

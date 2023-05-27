@@ -1,0 +1,6 @@
+{
+  "[.js]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFoldingRangeProvider": "esbenp.prettier-vscode"
+  }
+}

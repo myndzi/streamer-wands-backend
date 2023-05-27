@@ -1,6 +1,6 @@
-const mongoose = require("mongoose")
-const fs = require("fs")
-const server = require("http").createServer()
+const mongoose = require('mongoose')
+const fs = require('fs')
+const server = require('http').createServer()
 /*
 const https = require("https")
 const credentials = {
@@ -11,32 +11,36 @@ const credentials = {
 const secureServer = https.createServer(credentials)
 */
 // .env variables
-require("dotenv").config()
+require('dotenv').config()
 
 // Database connection and errors...
-mongoose.connect(process.env.DATABASE, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+mongoose.connect(process.env.DATABASE, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+})
 mongoose.Promise = global.Promise
 const db = mongoose.connection
-db.on("error", (err) => {
+db.on('error', (err) => {
     console.error(`Something went wrong: ${err}`)
 })
-db.once("open", () => {
-    console.log("[DB] Connected.")
+db.once('open', () => {
+    console.log('[DB] Connected.')
 })
 
 // Models
-require("./models/wandModel")
-require("./models/tokenModel")
-require("./models/streamerModel")
+require('./models/wandModel')
+require('./models/tokenModel')
+require('./models/streamerModel')
 
 // Express server
-const app = require("./app")
-const wss = require("./wss")(server)
+const app = require('./app')
+const wss = require('./wss')(server)
 //const wsss = require("./wss")(secureServer)
-server.on("request", app)
+server.on('request', app)
 //secureServer.on("request", app)
 server.listen(process.env.PORT, () => {
-    console.log("[APP] Running port 2234.")
+    console.log('[APP] Running port 2234.')
 })
 /*
 secureServer.listen(443, () => {
