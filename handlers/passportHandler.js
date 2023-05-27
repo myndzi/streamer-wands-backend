@@ -1,5 +1,5 @@
 const passport = require('passport')
-const twitchStrategy = require('passport-twitch').Strategy
+const twitchStrategy = require('passport-twitch-strategy').Strategy
 const mongoose = require('mongoose')
 const Streamer = mongoose.model('Streamers')
 const Tokens = mongoose.model('Tokens')
