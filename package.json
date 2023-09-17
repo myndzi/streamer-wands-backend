@@ -1,27 +1,31 @@
 {
-  "name": "streamer_wands",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "connect-mongo": "^5.0.0",
-    "dotenv": "^16.0.3",
-    "express": "^4.17.1",
-    "express-session": "^1.17.3",
-    "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.2.1",
-    "passport": "^0.6.0",
-    "passport-twitch-strategy": "^2.2.0",
-    "prettier": "^2.8.8",
-    "pug": "^3.0.0",
-    "uuid": "^9.0.0",
-    "ws": "^8.13.0"
-  }
+    "name": "streamer_wands",
+    "version": "1.1.0-beta",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "connect-mongo": "^5.0.0",
+        "dotenv": "^16.0.3",
+        "express": "^4.17.1",
+        "express-session": "^1.17.3",
+        "jsonwebtoken": "^9.0.0",
+        "jszip": "^3.10.1",
+        "mongoose": "^7.2.1",
+        "passport": "^0.6.0",
+        "passport-twitch-strategy": "^2.2.0",
+        "pug": "^3.0.2",
+        "uuid": "^9.0.0",
+        "ws": "^8.13.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1",
+        "prettier": "^3.0.3"
+    }
 }

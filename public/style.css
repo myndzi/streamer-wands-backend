@@ -433,6 +433,40 @@ p {
     justify-content: center;
 }
 
+div.prose {
+    max-width: 65ch;
+}
+
+.main {
+    background-color: black;
+}
+
+.menu, .main, .footer {
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+ul.links {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+}
+ul.links li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    color: rgb(191, 161, 156);
+}
+a:visited {
+    color: rgb(170, 132, 125);
+}
+p {
+    margin: 0.75rem 0;
+}
+
 .inventory-wrapper {
     margin-top: 0.3rem;
     display: flex;
@@ -589,6 +623,8 @@ p {
 .mt-20 {
     margin-top: 20px;
 }
+
+
 
 .shuffle-deck::before {
     margin-right: 5px;

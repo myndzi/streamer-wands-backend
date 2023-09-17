@@ -28,7 +28,7 @@ function usedSpells(wands) {
     return spells
 }
 */
-exports.getWands = async (req, res) => {
+exports.getWands = async (req, res, next) => {
     const { name } = req.params
     const streamer = await Streamers.findOne({ name }).collation({
         locale: 'en_US',
@@ -36,6 +36,7 @@ exports.getWands = async (req, res) => {
     })
     if (streamer) {
         const stuff = {
+            menu: false,
             title: `${streamer.name} wands`,
             streamer: streamer.name,
             wands: streamer.wands,
@@ -43,8 +44,6 @@ exports.getWands = async (req, res) => {
         }
         res.render('wands', stuff)
     } else {
-        const err = new Error('Streamer not found')
-        err.status = 404
-        throw err
+        next()
     }
 }

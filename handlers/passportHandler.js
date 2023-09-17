@@ -23,7 +23,7 @@ passport.use(
                         new: true,
                         upsert: true,
                         setDefaultsOnInsert: true,
-                    }
+                    },
                 )
                 const token = ticketHandlers.generateTicket(user)
                 const refresh = await Tokens.findOneAndUpdate(
@@ -34,18 +34,18 @@ passport.use(
                         new: true,
                         upsert: true,
                         setDefaultsOnInsert: true,
-                    }
+                    },
                 )
                 done(null, user)
             } catch (err) {
                 console.error(`Something went very wrong. ${err}`)
             }
-        }
-    )
+        },
+    ),
 )
 
 passport.serializeUser(function (user, done) {
-    done(null, { id: user.id })
+    done(null, { id: user.id, displayName: user.displayName })
 })
 
 passport.deserializeUser(async function (user, done) {

@@ -1,22 +1,21 @@
-doctype html
-html
-  head
-    title= `${title}`
-    link(rel='stylesheet', href='/style.css')
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=VT323&display=swap")
-    script(src="/spellData.js")
-    script(src="/wandSprites.js")
-    script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12")
-    script(src="https://unpkg.com/@popperjs/core@2.5.4/dist/umd/popper.min.js")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-  body
-    script.
-        const streamerName = "#{streamer}"
-        const streamerWands = !{JSON.stringify(wands)}
-        const streamerInventory = !{JSON.stringify(inventory)}
-    div#app
-    div.disclaimer
-        p Disclaimer: Spell tooltips are not accurate at the moment.
-    div.download
-        a(href="https://github.com/soler91/streamer-wands/releases" target="_blank") Add to your stream
-script(src="/main.js")
+extends layout.pug 
+
+block scripts
+  script(src="/spellData.js") 
+  script(src="/wandSprites.js")
+  script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12")
+  script(src="https://unpkg.com/@popperjs/core@2.5.4/dist/umd/popper.min.js")
+
+block content
+  script.
+    const streamerName = "#{streamer}"
+    const streamerWands = !{JSON.stringify(wands)}
+    const streamerInventory = !{JSON.stringify(inventory)}
+  div#app
+  div.disclaimer
+    p Disclaimer: Spell tooltips are not accurate at the moment.
+
+block footer
+  div.download
+    a(href="/" target="_blank") Add to your stream
+  script(src="/main.js")

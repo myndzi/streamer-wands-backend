@@ -26,16 +26,23 @@ exports.isLoggedIn = (req, res, next) => {
     }
 }
 
-exports.logOut = async (req, res) => {
+exports.logOut = async (req, res, next) => {
+    if (!req.user) {
+        res.redirect('/')
+        return
+    }
+
     const deleted = await Tokens.findOneAndDelete({ id: req.user.id })
     if (!deleted) {
         const err = new Error('Failed to delete refresh token.')
         throw err
     }
 
-    req.logout()
-    req.session.destroy((err) => {
-        res.sendStatus(204)
+    req.logout(function (err) {
+        if (err) {
+            return next(err)
+        }
+        res.redirect('/')
     })
 }
 

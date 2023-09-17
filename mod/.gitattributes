@@ -1,0 +1,4 @@
+*.lua eol=crlf
+*.xml eol=crlf
+*.md eol=crlf
+.gitattributes export-ignore
