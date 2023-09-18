@@ -14,7 +14,7 @@ let lastUpdated = null
 let releaseList = []
 const releaseDir = PATH.resolve(__dirname, '..', 'releases')
 
-const updateFrequency = 60 * 1000 // 60 seconds
+const updateFrequency = 10 * 60 * 1000 // 10 minutes
 
 const getZipStream = async (relPath, jwt) => {
     const path = PATH.resolve(releaseDir, relPath)
@@ -32,24 +32,27 @@ const getZipStream = async (relPath, jwt) => {
     return zip.generateNodeStream()
 }
 
-const getReleases = async () => {
+const getReleases = () => {
     const now = Date.now()
     const timeToNext = lastUpdated + updateFrequency - now
     if (lastUpdated === null || timeToNext < 0) {
         console.log(`updating release list: timeToNext=${timeToNext}`)
-        const paths = await fs.readdir(releaseDir, { withFileTypes: true })
-        const stats = paths
-            .filter((file) => file.isFile() && /\.zip$/.test(file.name))
-            .map(async (file) => {
-                const path = PATH.resolve(releaseDir, file.name)
-                const stat = await fs.stat(path)
-                const relPath = PATH.relative(releaseDir, path)
-                return { mtime: stat.mtime, name: file.name, path: relPath }
-            })
-
-        releaseList = await Promise.all(stats)
-        releaseList.sort((a, b) => b.mtime - a.mtime)
         lastUpdated = now
+        releaseList = new Promise(async (resolve) => {
+            const paths = await fs.readdir(releaseDir, { withFileTypes: true })
+            const stats = paths
+                .filter((file) => file.isFile() && /\.zip$/.test(file.name))
+                .map(async (file) => {
+                    const path = PATH.resolve(releaseDir, file.name)
+                    const stat = await fs.stat(path)
+                    const relPath = PATH.relative(releaseDir, path)
+                    return { mtime: stat.mtime, name: file.name, path: relPath }
+                })
+
+            const withTimes = await Promise.all(stats)
+            withTimes.sort((a, b) => b.mtime - a.mtime)
+            resolve(withTimes)
+        })
     } // test
 
     return releaseList
