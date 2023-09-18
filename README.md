@@ -24,6 +24,7 @@ You'll need Node.js, a MongoDB server, and a Twitch app (for login) to run the a
   - `SESSION_SECRET` and `SESSION_KEY` should be randomly generated, equivalent to a password
   - `JWT_SECRET` should be randomly generated, equivalent to a password
 - Run `index.js` (optional: run under something like `nodemon` to restart when contents change)
+- When changing the mod itself, run `DEV=true ./bundle` in the project root to create a development release for download from the web ui
 
 # Developing the mod
 The mod files themselves are kept in this repository in the [mod](mod) folder. Start with a customized zip (your user token is stored in [mod/token.lua](mod/token.lua))
