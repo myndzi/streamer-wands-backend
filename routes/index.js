@@ -14,7 +14,7 @@ let lastUpdated = null
 let releaseList = []
 const releaseDir = PATH.resolve(__dirname, '..', 'releases')
 
-const updateFrequency = 60 * 1000 // 60 seconds
+const updateFrequency = 10 * 60 * 1000 // 10 minutes
 
 const getZipStream = async (relPath, jwt) => {
     const path = PATH.resolve(releaseDir, relPath)
