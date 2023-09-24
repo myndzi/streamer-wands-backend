@@ -1,8 +1,8 @@
 extends layout.pug 
 
 block scripts
-  script(src="/spellData.js") 
-  script(src="/wandSprites.js")
+  script(src=`/spellData.js?${mtime.spellData}`)
+  script(src=`/wandSprites.js?${mtime.wandSprites}`)
   script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12")
   script(src="https://unpkg.com/@popperjs/core@2.5.4/dist/umd/popper.min.js")
 
