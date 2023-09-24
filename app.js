@@ -1,14 +1,18 @@
-const path = require('path')
+const { statSync } = require('node:fs')
+const path = require('node:path')
+
 const express = require('express')
 const session = require('express-session')
 const mongoose = require('mongoose')
 const MongoStore = require('connect-mongo')
 const passport = require('passport')
+
 const streamerRoutes = require('./routes/streamer')
 const authRoutes = require('./routes/auth')
 const indexRoutes = require('./routes/index')
 const errorHandlers = require('./handlers/errorHandlers')
 require('./handlers/passportHandler')
+
 const app = express()
 
 // app.use((req, res, next) => {
@@ -39,9 +43,19 @@ app.use(
 app.use(passport.initialize())
 app.use(passport.session())
 
+const mtime = {
+    styleCss: statSync(__dirname, 'public', 'style.css').mtime.getTime(),
+    spellData: statSync(__dirname, 'public', 'spellData.js').mtime.getTime(),
+    wandSprites: statSync(
+        __dirname,
+        'public',
+        'wandSprites.js',
+    ).mtime.getTime(),
+}
 app.locals = {
     domain: process.env.DOMAIN,
     title: 'Streamer Wands',
+    mtime,
 }
 
 // Main Routes
