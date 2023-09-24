@@ -385,16 +385,20 @@ template {
     src: url(/noitafont/noita2.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
 html {
     background-color: black;
     font-size: 1.2rem;
-    font-family: 'noita';
+    font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: none;
 }
 
+.wand-display {
+    font-family: 'noita';
+}
+
 p {
-    font-family: inter;
-    src: url(/inter/inter.ttf);
     color: rgba(255, 255, 255, 0.8);
     margin: 0;
     padding: 0;
