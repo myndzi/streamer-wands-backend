@@ -1,0 +1,1 @@
+noita.exe -wizard_unpak
