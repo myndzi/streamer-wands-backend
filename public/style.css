@@ -397,11 +397,13 @@ html {
 .wand-display {
     font-family: 'noita';
 }
+.wand-display p {
+    margin: 0;
+}
 
 p {
     color: rgba(255, 255, 255, 0.8);
-    margin: 0;
-    padding: 0;
+    margin: 0.75rem 0;
 }
 
 .disclaimer {
