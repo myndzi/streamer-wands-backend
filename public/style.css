@@ -469,9 +469,6 @@ a {
 a:visited {
     color: rgb(170, 132, 125);
 }
-p {
-    margin: 0.75rem 0;
-}
 
 .inventory-wrapper {
     margin-top: 0.3rem;
