@@ -44,7 +44,6 @@ module.exports = (server) => {
         try {
             const url = URL.parse(req.url)
             const token = decodeURIComponent(path.basename(url.path))
-            console.log(token)
             if (token.startsWith('client')) {
                 const streamer = token.split('=')[1]
                 return WebSocketServer.handleUpgrade(
@@ -53,7 +52,7 @@ module.exports = (server) => {
                     head,
                     (ws) => {
                         WebSocketServer.emit('connection', ws, req, streamer)
-                    }
+                    },
                 )
             }
             const user = ticketHandler.verify(token)
