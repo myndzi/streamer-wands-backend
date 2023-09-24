@@ -393,6 +393,8 @@ html {
 }
 
 p {
+    font-family: inter;
+    src: url(/inter/inter.ttf);
     color: rgba(255, 255, 255, 0.8);
     margin: 0;
     padding: 0;
