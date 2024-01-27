@@ -26,7 +26,7 @@ exports.validate = (data) => {
     const legacy = Array.isArray(data)
     let wands = []
     let inventory = Array(16).fill('0')
-    let items = Array(16).fill('0')
+    let items = Array(4).fill('0')
     let progress = []
     if (legacy) {
         wands = data
