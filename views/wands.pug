@@ -2,8 +2,13 @@ extends layout.pug
 
 block scripts
   script(src=`/spellData.js?${mtime.spellData}`)
+  script(src=`/spellDataMain.js?${mtime.spellDataMain}`)
+  script(src=`/spellDataApoth.js?${mtime.spellDataApoth}`)
   script(src=`/wandSprites.js?${mtime.wandSprites}`)
-  script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12")
+  script(src=`/icons.js?${mtime.icons}`)
+  script(src=`/itemData.js?${mtime.itemData}`)
+  script(src=`/apothIcons.js?${mtime.apothIcons}`)
+  script(src="https://cdn.jsdelivr.net/npm/vue@2.6.1/dist/vue.js")
   script(src="https://unpkg.com/@popperjs/core@2.5.4/dist/umd/popper.min.js")
 
 block content
@@ -11,10 +16,14 @@ block content
     const streamerName = "#{streamer}"
     const streamerWands = !{JSON.stringify(wands)}
     const streamerInventory = !{JSON.stringify(inventory)}
+    const streamerItems = !{JSON.stringify(items)}
+    const streamerProgress = !{JSON.stringify(progress)}
+    const streamerVersion = !{JSON.stringify(version)}
   div.wand-display
     div#app
-    div.disclaimer
-      p Disclaimer: Spell tooltips are not accurate at the moment.
+    //- moved to within main.js
+    //- div.disclaimer
+      //- p Disclaimer: Spell tooltips are not accurate at the moment.
 
 block footer
   div.download

@@ -21,7 +21,19 @@ block content
         may not work correctly but are provided for your convenience. <strong>Do not share this zip file with others!</strong>
         The mod bundle includes credentials that identify which streamer page to update. If another user installs the same
         zip bundle, they will be sending wand updates to <em>your</em> stream page!
-
+      h2.progress Progress Instructions
+      p.
+        Spells and Perks progress is fully tracked by streamer-wands and requires no additional steps by you.
+        Enemy progress is tracked assuming you are on a clean save file (AKA no enemy progress), if you want 
+        tracking to start from your current enemy progress follow the below steps:<br><br>
+        1. Browse to your <strong>%appdata%/LocalLow/Nolla_Games_Noita/save00/stats/_stats.salakieli</strong><br>
+        2. Download the stats.lua file<br>
+        3. Move the stats.lua inside streamer-wands, root directory so right next to token.lua and mod.xml<br>
+        Note. If you get any enemy progress while the mod is disabled, you will have to re-go through these 3 steps
+        in order for enemy progress to be accurate again
+      div#stats
+        input(class="input" id="sala" type="file" accept=".salakieli")
+        script(src="/stats.js")
     h1.releases Streamer Wands releases for #{user.displayName}:
     each r, i in releases
       div 

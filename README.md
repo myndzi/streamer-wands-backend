@@ -37,6 +37,10 @@ to point to your development server. Do not include this change in your commits.
 - [Soler91](https://github.com/soler91) - initial development, thanks <3
 - [myndzi](https://github.com/myndzi) - current maintainer
 - [DunkOrSlam](https://twitch.tv/dunkorslam) - website hosting
+- [teh60](https://github.com/teh60) - continuing development
+  - [Conga Lyne](https://github.com/Conga0) - provided Apotheosis data, thanks <3
+  - [ipeterov](https://github.com/ipeterov/noita-progress) - remade hsaria's original NoitaProgressTable, teh60 looked at their scraper python scripts for the basis of his data.wak python scraping
+  - [lightbourn.net](https://lightbourn.net/games/Noita/editor.html) - teh60 also looked at their implementation of JS salakieli decoding
 
 # License
 Streamer Wands is released under the [MIT license](https://www.tldrlegal.com/license/mit-license)

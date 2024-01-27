@@ -2,6 +2,7 @@ const mongoose = require('mongoose')
 const wandSchema = new mongoose.Schema({
     stats: {
         sprite: String,
+        ui_name: String,
         mana: Number,
         mana_max: Number,
         mana_charge_speed: Number,
