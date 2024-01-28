@@ -797,7 +797,7 @@ const IconComp = Vue.component('icon-comp', {
         }
     },
     props: ['icon', 'tName', 'boolProg'],
-    template: `<div class="icon-slot" :class="{ bgHide : !boolProg }">
+    template: `<div class="icon-slot" :class="[{ bgHide : !boolProg }, {spellTip : tName=='Spells'}]">
         <div class="zoom">
             <img v-if="icon.bgImage" :style="bgStyle" :src="'data:image/png;base64,' + icon.bgImage"/>
             <a v-if="icon.wiki_url" :href="icon.wiki_url" target="_blank" rel="noopener noreferrer">
