@@ -873,10 +873,10 @@ const SpellInventory = Vue.component('spell-inv', {
         seedInfo() {
             let seedIndex = streamerVersion.findIndex(x => x.indexOf("seed=") > -1)
             if (seedIndex == -1) return false
-            let seed = streamerVersion[seedIndex].split("=")[1]
-            let url = `https://noitool.com/info?=${seed}`
+            let seed = streamerVersion[seedIndex]
+            let url = `https://noitool.com/info?${seed}`
             if (this.switches.betaContent.state) {
-                url = `https://dev.noitool.com/info?=${seed}`
+                url = `https://dev.noitool.com/info?${seed}`
             }
             if (this.switches.apothContent.state) {
                 url = false
