@@ -992,7 +992,7 @@ const itemData = {
             item_apotheosis_egg_fire_lukki_desc: "It feels warm to the touch.\\nYou feel it yerns for a new home."
         },
         sprite: {
-            'data/ui_gfx/items/egg_red.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA3ElEQVR4nK2TPQrCQBCFX8QbxMLtFQu1tBBsvICFB0nvCexzEK+RA8QUIQlYCJMiOcPYZNfM/giiAwu7zLzvvWVZ4MeKQo0uvbDez5JrcC4o5jxj7h7MecZj2HdivT5AnGicZwylACJAqXeDCNF278xPbHcjssRQCr4UAhAfT7JLJGDxcu1cwQCEuyU0593BSSESOEJdNigIeDYuLNS3AW1doq+KcHwi9FWBti79gE16i4zL2F0/6eBu5oaajg+aHnvi+txFAk03V/GIbXcg8JnuyZnni5VI5hP/pV7w5Yyttek3lgAAAABJRU5ErkJggg=="
+            'data/ui_gfx/items/egg_red.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABkElEQVR4nNWSQW7TYBCFv7FxSNX+TWVDY9lOCCSoLZWQgsSy3bDhYiy4ASuuwAY4QSU2KCBKIFGRSLASJW0oMk3rhtT+WSAFrJo1YlYzo/fePM0M/Pchec03O65G4OZOk8+jMbbrcePR81zspebeA0cjkB7FbNxxsMpVrKBOcn7K+GTGxuOs0JU/i9a9Nc23hGqzBjVN2DmkoqYMW13S+Yyi6/3dwd7uNa0KAgLRMMZwr7J8XgCBytY6GGA6Hr3RmObT1oL324EGVy1hlmx8H8Lu4S+iwJe3Pfy6YhAOOE3SjIOMwMHkDPU9Jplc4NcVSXSMWbIRawlz2cZX0OmFGQFjkaXCZrVCGhWo3q1xMDmj2z7mw6tPeJ5F+PEIUgGd3fuiev1wS3ff99lurCACF5M5QWMVRAMwOomJhjG77Wn+Fd7tD9i+tcaPFKypYBQszBV7McZX4K5+hfY03wHAk9slHRhFrpdNAPr9iLnWbJaKBA1F+Vn/0t/kftfLpqNnhkmw7iCi0QL3X3Rysf8+fgJqq4V0Npym0gAAAABJRU5ErkJggg=="
         }
     },
     item_apotheosis_heretical_eye_name: {

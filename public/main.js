@@ -448,7 +448,7 @@ const containerComp = Vue.component('wands-container', {
         }
     },
     computed: {
-        spellVersion() {
+        dataVersion() {
             let enemies = icons.enemies.filter(x => !x.beta)
             let out = {
                 icons: {
@@ -465,7 +465,12 @@ const containerComp = Vue.component('wands-container', {
             if (this.switches.betaContent.state) {
                 out = {
                     icons: icons,
-                    prog: streamerProgress[0],
+                    // prog: streamerProgress[0],
+                    prog: {
+                        perks: streamerProgress[0].perks.filter(x => icons.perks.map(y => y.id).includes(x)),
+                        spells: streamerProgress[0].spells.filter(x => spellData.hasOwnProperty(x)),
+                        enemies: streamerProgress[0].enemies.filter(x => icons.enemies.map(y => y.id).includes(x)),
+                    },
                 }
             }
             if (this.switches.apothContent.state) {
@@ -482,14 +487,11 @@ const containerComp = Vue.component('wands-container', {
         },
         tables() {
             return [
-                { name: "Perks", col: 9, data: this.spellVersion.icons.perks },
-                { name: "Spells", col: 12, data: this.spellVersion.icons.spells },
-                { name: "Enemies", col: 9, data: this.spellVersion.icons.enemies.filter(x => x.id != "turret_right") },
+                { name: "Perks", col: 9, data: this.dataVersion.icons.perks },
+                { name: "Spells", col: 12, data: this.dataVersion.icons.spells },
+                { name: "Enemies", col: 9, data: this.dataVersion.icons.enemies.filter(x => x.id != "turret_right") },
             ]
         },
-        progress() {
-            return this.spellVersion.prog
-        }
     },
     methods: {
         genKeys() {
@@ -545,7 +547,7 @@ const containerComp = Vue.component('wands-container', {
             <div class="top-border"></div>
             <prog-comp v-for="(table, i) in this.tables" 
             :key="i" :tName="table.name" :col="table.col" 
-            :tableIcons="table.data" :tableProg="spellVersion.prog[table.name.toLowerCase()]" 
+            :tableIcons="table.data" :tableProg="dataVersion.prog[table.name.toLowerCase()]" 
             ></prog-comp>
         </div>
     </div>`,

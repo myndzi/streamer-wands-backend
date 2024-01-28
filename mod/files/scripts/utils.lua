@@ -2,6 +2,7 @@ dofile("mods/streamer_wands/files/scripts/json.lua")
 dofile_once("data/scripts/perks/perk.lua")
 dofile_once("data/scripts/gun/gun_actions.lua")
 dofile_once("mods/streamer_wands/files/scripts/enemyNames.lua")
+dofile_once("mods/streamer_wands/files/scripts/enemyNamesApoth.lua")
 dofile_once("mods/streamer_wands/stats.lua")
 
 function get_player()
@@ -223,6 +224,16 @@ function get_inventory_items()
     return inventory
 end
 
+function get_version()
+    local versions = ModGetActiveModIDs()
+    if GameIsBetaBuild() then
+        table.insert(versions, "beta")
+    end
+    local seed = StatsGetValue("world_seed")
+    table.insert(versions, "seed=" .. seed)
+    return versions
+end
+
 function get_spells_progress()
     local spells = {}
     for _, spell in ipairs(actions) do
@@ -245,7 +256,13 @@ end
 
 function get_enemies_progress()
     local enemies = {}
-    for _, enemy in ipairs(enemyNames) do
+    local currentEnemies = enemyNames
+    for _, mod in ipairs(get_version()) do
+        if mod == "apotheosis" or mod == "Apotheosis" then
+            currentEnemies = enemyNamesApoth
+        end
+    end
+    for _, enemy in ipairs(currentEnemies) do
         local flag = "kill_" .. string.lower(enemy)
         if GameHasFlagRun("new_" .. flag) or (stats[enemy]) then
             AddFlagPersistent(flag)
@@ -257,16 +274,6 @@ function get_enemies_progress()
         end
     end
     return enemies
-end
-
-function get_version()
-    local versions = ModGetActiveModIDs()
-    if GameIsBetaBuild() then
-        table.insert(versions, "beta")
-    end
-    local seed = StatsGetValue("world_seed")
-    table.insert(versions, "seed=" .. seed)
-    return versions
 end
 
 function serialize_data()
