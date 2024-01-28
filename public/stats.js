@@ -4,7 +4,6 @@ const luaOut = document.getElementById("stats")
 salaIn.onchange = (e) => {
     const inFile = e.target.files[0]
     if (!inFile) return
-    // console.log(inFile)
     const reader = new FileReader()
     reader.onload = (e) => {
         xcrypt(e.target.result, function (xcrypted_content) {
@@ -24,7 +23,6 @@ salaIn.onchange = (e) => {
     }
     reader.readAsArrayBuffer(inFile)
 }
-
 
 function fromHexString(hexString) {
     return new Uint8Array(hexString.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
@@ -49,18 +47,3 @@ function xcrypt(data, pred) {
             ).then(xcrypted_content => { pred(xcrypted_content) })
         });
 }
-
-// router.post('/', upload.single('sala'), [], (req, res) => {
-//     if (req.file) {
-//         // console.log('Uploaded: ', req.file)
-//         xcrypt(req.file.buffer, function (xcrypted_content) {
-//             const dec = new TextDecoder()
-//             const xml = dec.decode(xcrypted_content)
-//             const lines = xml.match(/<E.+>/g)
-//             sala = lines.map(line => {
-//                 const kv = line.match(/"(\w+)" value="(\d+)"/)
-//                 return `${kv[1]}=${kv[2]}`
-//             })
-//         })
-//     }
-// }
