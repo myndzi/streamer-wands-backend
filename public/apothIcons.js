@@ -105,7 +105,7 @@ const apothIcons = {
             name: "Kissa",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kissa",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kissa",
             beta: true
         },
         {
@@ -132,7 +132,7 @@ const apothIcons = {
             name: "Nestem\u00e4inen kupla",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Nestem\u00e4inen kupla",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nestem\u00e4inen kupla",
             beta: true
         },
         {
@@ -204,7 +204,7 @@ const apothIcons = {
             name: "Varashiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Varashiisi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Varashiisi",
             beta: true
         },
         {
@@ -240,7 +240,7 @@ const apothIcons = {
             name: "Kaivosk\u00e4rryhaulikkohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kaivosk\u00e4rryhaulikkohiisi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kaivosk\u00e4rryhaulikkohiisi",
             beta: true
         },
         {
@@ -249,7 +249,7 @@ const apothIcons = {
             name: "Kaivosk\u00e4rrytappurahaulikkohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kaivosk\u00e4rrytappurahaulikkohiisi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kaivosk\u00e4rrytappurahaulikkohiisi",
             beta: true
         },
         {
@@ -258,7 +258,7 @@ const apothIcons = {
             name: "Psykopaattihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Psykopaattihiisi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Psykopaattihiisi",
             beta: true
         },
         {
@@ -312,7 +312,7 @@ const apothIcons = {
             name: "Insin\u00f6\u00f6rihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Insin\u00f6\u00f6rihiisi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Insin\u00f6\u00f6rihiisi",
             beta: true
         },
         {
@@ -339,7 +339,7 @@ const apothIcons = {
             name: "Rakettihaulikkohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Rakettihaulikkohiisi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Rakettihaulikkohiisi",
             beta: true
         },
         {
@@ -384,7 +384,7 @@ const apothIcons = {
             name: "Koditonhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Koditonhiisi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Koditonhiisi",
             beta: true
         },
         {
@@ -393,7 +393,7 @@ const apothIcons = {
             name: "Rikashiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Rikashiisi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Rikashiisi",
             beta: true
         },
         {
@@ -420,7 +420,7 @@ const apothIcons = {
             name: "Suurm\u00e4rki\u00e4inen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suurm\u00e4rki\u00e4inen",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suurm\u00e4rki\u00e4inen",
             beta: true
         },
         {
@@ -528,7 +528,7 @@ const apothIcons = {
             name: "Sokeakatselija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Sokeakatselija",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sokeakatselija",
             beta: true
         },
         {
@@ -555,7 +555,7 @@ const apothIcons = {
             name: "Heikko Vuotavajaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heikko Vuotavajaska",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Heikko Vuotavajaska",
             beta: true
         },
         {
@@ -564,7 +564,7 @@ const apothIcons = {
             name: "Vuotavajaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Vuotavajaska",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vuotavajaska",
             beta: true
         },
         {
@@ -573,7 +573,7 @@ const apothIcons = {
             name: "S\u00e4r\u00f6ilev\u00e4 limanuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4r\u00f6ilev\u00e4 limanuljaska",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/S\u00e4r\u00f6ilev\u00e4 limanuljaska",
             beta: true
         },
         {
@@ -582,7 +582,7 @@ const apothIcons = {
             name: "Liimanetana",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Liimanetana",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Liimanetana",
             beta: true
         },
         {
@@ -591,7 +591,7 @@ const apothIcons = {
             name: "Hyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hyytel\u00f6",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyytel\u00f6",
             beta: true
         },
         {
@@ -600,7 +600,7 @@ const apothIcons = {
             name: "Lumottuhyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lumottuhyytel\u00f6",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lumottuhyytel\u00f6",
             beta: true
         },
         {
@@ -609,7 +609,7 @@ const apothIcons = {
             name: "Ep\u00e4pyh\u00e4hyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ep\u00e4pyh\u00e4hyytel\u00f6",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Ep\u00e4pyh\u00e4hyytel\u00f6",
             beta: true
         },
         {
@@ -618,7 +618,7 @@ const apothIcons = {
             name: "Jumalallinenhyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Jumalallinenhyytel\u00f6",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Jumalallinenhyytel\u00f6",
             beta: true
         },
         {
@@ -627,7 +627,7 @@ const apothIcons = {
             name: "Korkeajumalallinenhyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Korkeajumalallinenhyytel\u00f6",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korkeajumalallinenhyytel\u00f6",
             beta: true
         },
         {
@@ -654,7 +654,7 @@ const apothIcons = {
             name: "Isom\u00f6ykky",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Isom\u00f6ykky",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Isom\u00f6ykky",
             beta: true
         },
         {
@@ -663,7 +663,7 @@ const apothIcons = {
             name: "Kammottavam\u00f6ykky",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kammottavam\u00f6ykky",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kammottavam\u00f6ykky",
             beta: true
         },
         {
@@ -681,7 +681,7 @@ const apothIcons = {
             name: "Tulimurkku",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tulimurkku",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Tulimurkku",
             beta: true
         },
         {
@@ -690,7 +690,7 @@ const apothIcons = {
             name: "Tukahduttajamurkku",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tukahduttajamurkku",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Tukahduttajamurkku",
             beta: true
         },
         {
@@ -708,7 +708,7 @@ const apothIcons = {
             name: "Juhlarotta",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Juhlarotta",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Juhlarotta",
             beta: true
         },
         {
@@ -735,7 +735,7 @@ const apothIcons = {
             name: "Psyykkinenlepakko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Psyykkinenlepakko",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Psyykkinenlepakko",
             beta: true
         },
         {
@@ -780,7 +780,7 @@ const apothIcons = {
             name: "Mutamies",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mutamies",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mutamies",
             beta: true
         },
         {
@@ -825,7 +825,7 @@ const apothIcons = {
             name: "Kattosieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kattosieni",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kattosieni",
             beta: true
         },
         {
@@ -834,7 +834,7 @@ const apothIcons = {
             name: "Myrkyllinensieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Myrkyllinensieni",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Myrkyllinensieni",
             beta: true
         },
         {
@@ -843,7 +843,7 @@ const apothIcons = {
             name: "Savuavasieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Savuavasieni",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Savuavasieni",
             beta: true
         },
         {
@@ -870,7 +870,7 @@ const apothIcons = {
             name: "Revitty sieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Revitty sieni",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Revitty sieni",
             beta: true
         },
         {
@@ -915,7 +915,7 @@ const apothIcons = {
             name: "Hirvitt\u00e4v\u00e4massa",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hirvitt\u00e4v\u00e4massa",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hirvitt\u00e4v\u00e4massa",
             beta: true
         },
         {
@@ -942,7 +942,7 @@ const apothIcons = {
             name: "Isoturso",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Isoturso",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Isoturso",
             beta: true
         },
         {
@@ -987,7 +987,7 @@ const apothIcons = {
             name: "Kohoava Pilari-h\u00e4mis",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kohoava Pilari-h\u00e4mis",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kohoava Pilari-h\u00e4mis",
             beta: true
         },
         {
@@ -1032,7 +1032,7 @@ const apothIcons = {
             name: "Nopealukki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Nopealukki",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nopealukki",
             beta: true
         },
         {
@@ -1050,7 +1050,7 @@ const apothIcons = {
             name: "Sukelluskello",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Sukelluskello",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sukelluskello",
             beta: true
         },
         {
@@ -1068,7 +1068,7 @@ const apothIcons = {
             name: "Nuori Tuhatjalkainen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Nuori Tuhatjalkainen",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nuori Tuhatjalkainen",
             beta: true
         },
         {
@@ -1077,7 +1077,7 @@ const apothIcons = {
             name: "Hein\u00e4sirkka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hein\u00e4sirkka",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hein\u00e4sirkka",
             beta: true
         },
         {
@@ -1086,7 +1086,7 @@ const apothIcons = {
             name: "Taikainen sy\u00f6j\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Taikainen sy\u00f6j\u00e4",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Taikainen sy\u00f6j\u00e4",
             beta: true
         },
         {
@@ -1095,7 +1095,7 @@ const apothIcons = {
             name: "Etsij\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Etsij\u00e4",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Etsij\u00e4",
             beta: true
         },
         {
@@ -1113,7 +1113,7 @@ const apothIcons = {
             name: "Kirottuolento",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kirottuolento",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottuolento",
             beta: true
         },
         {
@@ -1122,7 +1122,7 @@ const apothIcons = {
             name: "T\u00e4htilapsi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/T\u00e4htilapsi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/T\u00e4htilapsi",
             beta: true
         },
         {
@@ -1158,7 +1158,7 @@ const apothIcons = {
             name: "Sein\u00e4mato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Sein\u00e4mato",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sein\u00e4mato",
             beta: true
         },
         {
@@ -1185,7 +1185,7 @@ const apothIcons = {
             name: "Mekaaninenmato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mekaaninenmato",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mekaaninenmato",
             beta: true
         },
         {
@@ -1194,7 +1194,7 @@ const apothIcons = {
             name: "Kirottuselk\u00e4ranka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kirottuselk\u00e4ranka",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottuselk\u00e4ranka",
             beta: true
         },
         {
@@ -1212,7 +1212,7 @@ const apothIcons = {
             name: "Parannuskeinolennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Parannuskeinolennokki",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parannuskeinolennokki",
             beta: true
         },
         {
@@ -1221,7 +1221,7 @@ const apothIcons = {
             name: "Pieni Lennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pieni Lennokki",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pieni Lennokki",
             beta: true
         },
         {
@@ -1239,7 +1239,7 @@ const apothIcons = {
             name: "Teslat\u00f6tter\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Teslat\u00f6tter\u00f6",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Teslat\u00f6tter\u00f6",
             beta: true
         },
         {
@@ -1293,7 +1293,7 @@ const apothIcons = {
             name: "Johtaja",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Johtaja",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Johtaja",
             beta: true
         },
         {
@@ -1365,7 +1365,7 @@ const apothIcons = {
             name: "Sytytystankki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Sytytystankki",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sytytystankki",
             beta: true
         },
         {
@@ -1464,7 +1464,7 @@ const apothIcons = {
             name: "Vesi\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Vesi\u00f6",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vesi\u00f6",
             beta: true
         },
         {
@@ -1491,7 +1491,7 @@ const apothIcons = {
             name: "Suur-Stendari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suur-Stendari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Stendari",
             beta: true
         },
         {
@@ -1500,7 +1500,7 @@ const apothIcons = {
             name: "Vesimagi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Vesimagi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vesimagi",
             beta: true
         },
         {
@@ -1509,7 +1509,7 @@ const apothIcons = {
             name: "Suur-Vesimagi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suur-Vesimagi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Vesimagi",
             beta: true
         },
         {
@@ -1644,7 +1644,7 @@ const apothIcons = {
             name: "Kuolemattomuudenmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kuolemattomuudenmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kuolemattomuudenmestari",
             beta: true
         },
         {
@@ -1653,7 +1653,7 @@ const apothIcons = {
             name: "Uistelunmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Uistelunmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Uistelunmestari",
             beta: true
         },
         {
@@ -1662,7 +1662,7 @@ const apothIcons = {
             name: "Sinisorsienmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Sinisorsienmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sinisorsienmestari",
             beta: true
         },
         {
@@ -1671,7 +1671,7 @@ const apothIcons = {
             name: "Lumottu ankka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lumottu ankka",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lumottu ankka",
             beta: true
         },
         {
@@ -1680,7 +1680,7 @@ const apothIcons = {
             name: "R\u00e4j\u00e4hteidenmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/R\u00e4j\u00e4hteidenmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/R\u00e4j\u00e4hteidenmestari",
             beta: true
         },
         {
@@ -1689,7 +1689,7 @@ const apothIcons = {
             name: "Eimit\u00e4\u00e4nmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Eimit\u00e4\u00e4nmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Eimit\u00e4\u00e4nmestari",
             beta: true
         },
         {
@@ -1698,7 +1698,7 @@ const apothIcons = {
             name: "Mananmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mananmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mananmestari",
             beta: true
         },
         {
@@ -1707,7 +1707,7 @@ const apothIcons = {
             name: "Transmutaatioidenmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Transmutaatioidenmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Transmutaatioidenmestari",
             beta: true
         },
         {
@@ -1716,7 +1716,7 @@ const apothIcons = {
             name: "Nukketeatterinmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Nukketeatterinmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nukketeatterinmestari",
             beta: true
         },
         {
@@ -1725,7 +1725,7 @@ const apothIcons = {
             name: "Yli-innokas Muudonmuutosmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Yli-innokas Muudonmuutosmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Yli-innokas Muudonmuutosmestari",
             beta: true
         },
         {
@@ -1734,7 +1734,7 @@ const apothIcons = {
             name: "Korruptoitunut Kuolemattomuudenmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Korruptoitunut Kuolemattomuudenmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Kuolemattomuudenmestari",
             beta: true
         },
         {
@@ -1743,7 +1743,7 @@ const apothIcons = {
             name: "Korruptoitunut Haavoittajamestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Korruptoitunut Haavoittajamestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Haavoittajamestari",
             beta: true
         },
         {
@@ -1752,7 +1752,7 @@ const apothIcons = {
             name: "Korruptoitunut Mananmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Korruptoitunut Mananmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Mananmestari",
             beta: true
         },
         {
@@ -1761,7 +1761,7 @@ const apothIcons = {
             name: "Korruptoitunut Maadoittajamestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Korruptoitunut Maadoittajamestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Maadoittajamestari",
             beta: true
         },
         {
@@ -1770,7 +1770,7 @@ const apothIcons = {
             name: "Korruptoitunut Vaihdosmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Korruptoitunut Vaihdosmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Vaihdosmestari",
             beta: true
         },
         {
@@ -1779,7 +1779,7 @@ const apothIcons = {
             name: "Korruptoitunut Siirt\u00e4j\u00e4mestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Korruptoitunut Siirt\u00e4j\u00e4mestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Siirt\u00e4j\u00e4mestari",
             beta: true
         },
         {
@@ -1788,7 +1788,7 @@ const apothIcons = {
             name: "Korruptoitunut S\u00e4tkymestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Korruptoitunut S\u00e4tkymestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut S\u00e4tkymestari",
             beta: true
         },
         {
@@ -1797,7 +1797,7 @@ const apothIcons = {
             name: "Korruptoitunut Turvattomuusmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Korruptoitunut Turvattomuusmestari",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Turvattomuusmestari",
             beta: true
         },
         {
@@ -1860,7 +1860,7 @@ const apothIcons = {
             name: "Alkeeminen Outo",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Alkeeminen Outo",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alkeeminen Outo",
             beta: true
         },
         {
@@ -1869,7 +1869,7 @@ const apothIcons = {
             name: "Heijastava Outo",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heijastava Outo",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Heijastava Outo",
             beta: true
         },
         {
@@ -1878,7 +1878,7 @@ const apothIcons = {
             name: "Outo",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Outo",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Outo",
             beta: true
         },
         {
@@ -1923,7 +1923,7 @@ const apothIcons = {
             name: "Palavakeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Palavakeiju",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Palavakeiju",
             beta: true
         },
         {
@@ -1932,7 +1932,7 @@ const apothIcons = {
             name: "J\u00e4ttipalavakeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttipalavakeiju",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttipalavakeiju",
             beta: true
         },
         {
@@ -1941,7 +1941,7 @@ const apothIcons = {
             name: "Kolossaalinenpalavakeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolossaalinenpalavakeiju",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalinenpalavakeiju",
             beta: true
         },
         {
@@ -1959,7 +1959,7 @@ const apothIcons = {
             name: "J\u00e4ttikeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttikeiju",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttikeiju",
             beta: true
         },
         {
@@ -1968,7 +1968,7 @@ const apothIcons = {
             name: "Kolossaalinenkeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolossaalinenkeiju",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalinenkeiju",
             beta: true
         },
         {
@@ -1977,7 +1977,7 @@ const apothIcons = {
             name: "J\u00e4ttiristiriitakeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttiristiriitakeiju",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttiristiriitakeiju",
             beta: true
         },
         {
@@ -1986,7 +1986,7 @@ const apothIcons = {
             name: "Esoteerinenkeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Esoteerinenkeiju",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenkeiju",
             beta: true
         },
         {
@@ -1995,7 +1995,7 @@ const apothIcons = {
             name: "Esoteerinenolento",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Esoteerinenolento",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenolento",
             beta: true
         },
         {
@@ -2004,7 +2004,7 @@ const apothIcons = {
             name: "Esoteerinenmato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Esoteerinenmato",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenmato",
             beta: true
         },
         {
@@ -2040,7 +2040,7 @@ const apothIcons = {
             name: "Kuulumaton",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kuulumaton",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kuulumaton",
             beta: true
         },
         {
@@ -2049,7 +2049,7 @@ const apothIcons = {
             name: "Hiljainen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hiljainen",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hiljainen",
             beta: true
         },
         {
@@ -2085,7 +2085,7 @@ const apothIcons = {
             name: "Pakkomielteinenkalma",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pakkomielteinenkalma",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pakkomielteinenkalma",
             beta: true
         },
         {
@@ -2094,7 +2094,7 @@ const apothIcons = {
             name: "N\u00e4lk\u00e4inenaave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/N\u00e4lk\u00e4inenaave",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/N\u00e4lk\u00e4inenaave",
             beta: true
         },
         {
@@ -2103,7 +2103,7 @@ const apothIcons = {
             name: "Haamujousi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Haamujousi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Haamujousi",
             beta: true
         },
         {
@@ -2112,7 +2112,7 @@ const apothIcons = {
             name: "Hyl\u00e4ttysilm\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hyl\u00e4ttysilm\u00e4",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyl\u00e4ttysilm\u00e4",
             beta: true
         },
         {
@@ -2157,7 +2157,7 @@ const apothIcons = {
             name: "Parantava-Aave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Parantava-Aave",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parantava-Aave",
             beta: true
         },
         {
@@ -2184,7 +2184,7 @@ const apothIcons = {
             name: "Suur-Helvetinkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suur-Helvetinkatse",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Helvetinkatse",
             beta: true
         },
         {
@@ -2202,7 +2202,7 @@ const apothIcons = {
             name: "Suur-Taivaankatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suur-Taivaankatse",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Taivaankatse",
             beta: true
         },
         {
@@ -2211,7 +2211,7 @@ const apothIcons = {
             name: "J\u00e4\u00e4nkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4\u00e4nkatse",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4\u00e4nkatse",
             beta: true
         },
         {
@@ -2220,7 +2220,7 @@ const apothIcons = {
             name: "Suur-J\u00e4\u00e4nkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suur-J\u00e4\u00e4nkatse",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-J\u00e4\u00e4nkatse",
             beta: true
         },
         {
@@ -2229,7 +2229,7 @@ const apothIcons = {
             name: "Parasiittinenkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Parasiittinenkatse",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parasiittinenkatse",
             beta: true
         },
         {
@@ -2238,7 +2238,7 @@ const apothIcons = {
             name: "Aluebotti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Aluebotti",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Aluebotti",
             beta: true
         },
         {
@@ -2256,7 +2256,7 @@ const apothIcons = {
             name: "Vartiomies",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Vartiomies",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vartiomies",
             beta: true
         },
         {
@@ -2265,7 +2265,7 @@ const apothIcons = {
             name: "Kolmionmuotoinenkristalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolmionmuotoinenkristalli",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolmionmuotoinenkristalli",
             beta: true
         },
         {
@@ -2301,7 +2301,7 @@ const apothIcons = {
             name: "R\u00e4j\u00e4hdysherkk\u00e4matkija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/R\u00e4j\u00e4hdysherkk\u00e4matkija",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/R\u00e4j\u00e4hdysherkk\u00e4matkija",
             beta: true
         },
         {
@@ -2355,7 +2355,7 @@ const apothIcons = {
             name: "Hornakokkihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hornakokkihiisi",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hornakokkihiisi",
             beta: true
         },
         {
@@ -2382,7 +2382,7 @@ const apothIcons = {
             name: "Paskiainen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Paskiainen",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Paskiainen",
             beta: true
         },
         {
@@ -2526,7 +2526,7 @@ const apothIcons = {
             name: "Madon Muisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Madon Muisti",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Madon Muisti",
             beta: true
         },
         {
@@ -2616,7 +2616,7 @@ const apothIcons = {
             name: "J\u00e4ttim\u00e4inenmyrkkymato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttim\u00e4inenmyrkkymato",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttim\u00e4inenmyrkkymato",
             beta: true
         },
         {
@@ -2625,7 +2625,7 @@ const apothIcons = {
             name: "Myrkyllinenmato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Myrkyllinenmato",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Myrkyllinenmato",
             beta: true
         },
         {
@@ -2634,7 +2634,7 @@ const apothIcons = {
             name: "Hyl\u00e4ttyorkesteri",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hyl\u00e4ttyorkesteri",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyl\u00e4ttyorkesteri",
             beta: true
         },
         {
@@ -2643,7 +2643,7 @@ const apothIcons = {
             name: "Kolossaalim\u00f6ykky",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolossaalim\u00f6ykky",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalim\u00f6ykky",
             beta: true
         },
         {
@@ -2670,7 +2670,7 @@ const apothIcons = {
             name: "Monoliitti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Monoliitti",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Monoliitti",
             beta: true
         },
         {
@@ -2690,7 +2690,7 @@ const apothIcons = {
             name: "Critical Hit +",
             description: "You get more critical hits",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Critical_Hit_+"
+            wiki_url: "https://noita.wiki.gg/wiki/Critical_Hit_+"
         },
         {
             id: "BREATH_UNDERWATER",
@@ -2698,7 +2698,7 @@ const apothIcons = {
             name: "Breathless",
             description: "You can no longer drown, and can move in liquids with ease.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Breathless"
+            wiki_url: "https://noita.wiki.gg/wiki/Breathless"
         },
         {
             id: "EXTRA_MONEY",
@@ -2706,7 +2706,7 @@ const apothIcons = {
             name: "Greed",
             description: "You gain double the gold per nugget.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Greed"
+            wiki_url: "https://noita.wiki.gg/wiki/Greed"
         },
         {
             id: "EXTRA_MONEY_TRICK_KILL",
@@ -2714,7 +2714,7 @@ const apothIcons = {
             name: "Trick Greed",
             description: "4x instead of 2x gold is dropped when death is an accident.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Trick_Greed"
+            wiki_url: "https://noita.wiki.gg/wiki/Trick_Greed"
         },
         {
             id: "GOLD_IS_FOREVER",
@@ -2722,7 +2722,7 @@ const apothIcons = {
             name: "Gold Is Forever",
             description: "Gold nuggets never disappear.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Gold_is_Forever"
+            wiki_url: "https://noita.wiki.gg/wiki/Gold_is_Forever"
         },
         {
             id: "TRICK_BLOOD_MONEY",
@@ -2730,7 +2730,7 @@ const apothIcons = {
             name: "Trick Blood Money",
             description: "Blood money is dropped when death is an accident.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Trick_Blood_Money"
+            wiki_url: "https://noita.wiki.gg/wiki/Trick_Blood_Money"
         },
         {
             id: "EXPLODING_GOLD",
@@ -2738,7 +2738,7 @@ const apothIcons = {
             name: "Exploding Gold",
             description: "Gold dropped by enemies explodes when it disappears, is picked up or touched by other enemies!",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Exploding_Gold"
+            wiki_url: "https://noita.wiki.gg/wiki/Exploding_Gold"
         },
         {
             id: "HOVER_BOOST",
@@ -2746,7 +2746,7 @@ const apothIcons = {
             name: "Strong Levitation",
             description: "You can fly 100% longer.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Strong_Levitation"
+            wiki_url: "https://noita.wiki.gg/wiki/Strong_Levitation"
         },
         {
             id: "STRONG_KICK",
@@ -2754,7 +2754,7 @@ const apothIcons = {
             name: "Never Skip Leg Day",
             description: "Your kicks deal extra damage and knockback.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Never_Skip_Leg_Day"
+            wiki_url: "https://noita.wiki.gg/wiki/Never_Skip_Leg_Day"
         },
         {
             id: "TELEKINESIS",
@@ -2762,7 +2762,7 @@ const apothIcons = {
             name: "Telekinetic Kick",
             description: "You gain new telekinetic powers.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Telekinetic_Kick"
+            wiki_url: "https://noita.wiki.gg/wiki/Telekinetic_Kick"
         },
         {
             id: "REPELLING_CAPE",
@@ -2770,7 +2770,7 @@ const apothIcons = {
             name: "Repelling Cape",
             description: "Stains drop at a fast rate (when moving).",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Repelling_Cape"
+            wiki_url: "https://noita.wiki.gg/wiki/Repelling_Cape"
         },
         {
             id: "EXPLODING_CORPSES",
@@ -2778,7 +2778,7 @@ const apothIcons = {
             name: "Exploding Corpses",
             description: "Enemies explode upon death, but you gain immunity to explosive damage.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Exploding_Corpses"
+            wiki_url: "https://noita.wiki.gg/wiki/Exploding_Corpses"
         },
         {
             id: "SAVING_GRACE",
@@ -2786,7 +2786,7 @@ const apothIcons = {
             name: "Saving Grace",
             description: "If you would die and have more than 1 HP, your HP is set to 1 instead.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Saving_Grace"
+            wiki_url: "https://noita.wiki.gg/wiki/Saving_Grace"
         },
         {
             id: "INVISIBILITY",
@@ -2794,7 +2794,7 @@ const apothIcons = {
             name: "Invisibility",
             description: "You're invisible. Stains, casting spells, kicking and taking damage makes you temporarily visible.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Invisibility"
+            wiki_url: "https://noita.wiki.gg/wiki/Invisibility"
         },
         {
             id: "GLOBAL_GORE",
@@ -2802,7 +2802,7 @@ const apothIcons = {
             name: "More Blood",
             description: "Blood blood blood.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#More_Blood"
+            wiki_url: "https://noita.wiki.gg/wiki/More_Blood"
         },
         {
             id: "APOTHEOSIS_NO_BLOOD",
@@ -2810,7 +2810,7 @@ const apothIcons = {
             name: "Smoked Corpses",
             description: "Enemies leave behind no corpse, and bleed no blood.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Smoked_Corpses"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Smoked_Corpses"
         },
         {
             id: "REMOVE_FOG_OF_WAR",
@@ -2818,7 +2818,7 @@ const apothIcons = {
             name: "All-Seeing Eye",
             description: "You can see everywhere.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#All_Seeing_Eye"
+            wiki_url: "https://noita.wiki.gg/wiki/All-Seeing_Eye"
         },
         {
             id: "LEVITATION_TRAIL",
@@ -2826,7 +2826,7 @@ const apothIcons = {
             name: "Levitation Trail",
             description: "When levitating, you leave a trail of magical sparks that harm passing creatures.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Levitation_Trail"
+            wiki_url: "https://noita.wiki.gg/wiki/Levitation_Trail"
         },
         {
             id: "VAMPIRISM",
@@ -2834,7 +2834,7 @@ const apothIcons = {
             name: "Vampirism",
             description: "You lose 25% maximum health, but can replenish health by drinking blood.\\nBlood doesn't affect satiation level and you no longer suffer from food poisoning.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Vampirism"
+            wiki_url: "https://noita.wiki.gg/wiki/Vampirism"
         },
         {
             id: "EXTRA_HP",
@@ -2842,7 +2842,7 @@ const apothIcons = {
             name: "Extra Health (One-off)",
             description: "You gain 50% extra maximum health.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Extra_Health"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Health"
         },
         {
             id: "HEARTS_MORE_EXTRA_HP",
@@ -2850,7 +2850,7 @@ const apothIcons = {
             name: "Stronger Hearts",
             description: "Hearts bestow more maximum health.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Stronger_Hearts"
+            wiki_url: "https://noita.wiki.gg/wiki/Stronger_Hearts"
         },
         {
             id: "GLASS_CANNON",
@@ -2858,7 +2858,7 @@ const apothIcons = {
             name: "Glass Cannon",
             description: "Your spells are 5 times as powerful, but your maximum health becomes 50 and cannot be increased by normal hearts.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Glass_Cannon"
+            wiki_url: "https://noita.wiki.gg/wiki/Glass_Cannon"
         },
         {
             id: "LOW_HP_DAMAGE_BOOST",
@@ -2866,7 +2866,7 @@ const apothIcons = {
             name: "Living on the Edge",
             description: "Your spells deal 3x damage when you're under 25 HP or 25% of maximum health.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Living_on_the_Edge"
+            wiki_url: "https://noita.wiki.gg/wiki/Living_on_the_Edge"
         },
         {
             id: "RESPAWN",
@@ -2874,7 +2874,7 @@ const apothIcons = {
             name: "Extra Life (One-off)",
             description: "Upon death you respawn with 100 health.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Extra_Life"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Life"
         },
         {
             id: "WORM_ATTRACTOR",
@@ -2882,7 +2882,7 @@ const apothIcons = {
             name: "Worm Attractor",
             description: "Worms find you attractive.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Worm_Attractor"
+            wiki_url: "https://noita.wiki.gg/wiki/Worm_Attractor"
         },
         {
             id: "RADAR_ENEMY",
@@ -2890,7 +2890,7 @@ const apothIcons = {
             name: "Enemy Radar",
             description: "You can sense nearby enemies.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Enemy_Radar"
+            wiki_url: "https://noita.wiki.gg/wiki/Enemy_Radar"
         },
         {
             id: "FOOD_CLOCK",
@@ -2898,7 +2898,7 @@ const apothIcons = {
             name: "Eat Your Vegetables",
             description: "You inflict more damage the more satiated you are, but you start losing health if your stomach is empty.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Eat_Your_Vegetables"
+            wiki_url: "https://noita.wiki.gg/wiki/Eat_Your_Vegetables"
         },
         {
             id: "IRON_STOMACH",
@@ -2906,7 +2906,7 @@ const apothIcons = {
             name: "Iron Stomach",
             description: "You no longer suffer from negative effects of eating.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Iron_Stomach"
+            wiki_url: "https://noita.wiki.gg/wiki/Iron_Stomach"
         },
         {
             id: "WAND_RADAR",
@@ -2914,7 +2914,7 @@ const apothIcons = {
             name: "Wand Radar",
             description: "You can sense nearby wands.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Wand_Radar"
+            wiki_url: "https://noita.wiki.gg/wiki/Wand_Radar"
         },
         {
             id: "ITEM_RADAR",
@@ -2922,7 +2922,7 @@ const apothIcons = {
             name: "Item Radar",
             description: "You can sense nearby items.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Item_Radar"
+            wiki_url: "https://noita.wiki.gg/wiki/Item_Radar"
         },
         {
             id: "MOON_RADAR",
@@ -2930,7 +2930,7 @@ const apothIcons = {
             name: "Moon Radar",
             description: "You can sense lunar energy.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Moon_Radar"
+            wiki_url: "https://noita.wiki.gg/wiki/Moon_Radar"
         },
         {
             id: "APOTHEOSIS_PLANE_RADAR",
@@ -2938,7 +2938,7 @@ const apothIcons = {
             name: "Divine Radar",
             description: "You can sense otherworldy energy somewhere in the world.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Divine_Radar"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Divine_Radar"
         },
         {
             id: "MAP",
@@ -2946,7 +2946,7 @@ const apothIcons = {
             name: "Spatial Awareness",
             description: "If you stop for a moment, you can sense your location relative to the Mountain.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Spatial_Awareness"
+            wiki_url: "https://noita.wiki.gg/wiki/Spatial_Awareness"
         },
         {
             id: "PROTECTION_FIRE",
@@ -2954,7 +2954,7 @@ const apothIcons = {
             name: "Fire Immunity",
             description: "You take no damage from fire.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Fire_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Fire_Immunity"
         },
         {
             id: "PROTECTION_RADIOACTIVITY",
@@ -2962,7 +2962,7 @@ const apothIcons = {
             name: "Toxic Immunity",
             description: "You take no damage from toxic sludge and other toxic things.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Toxic_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Toxic_Immunity"
         },
         {
             id: "PROTECTION_EXPLOSION",
@@ -2970,7 +2970,7 @@ const apothIcons = {
             name: "Explosion Immunity",
             description: "You take no direct damage from explosions.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Explosion_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Explosion_Immunity"
         },
         {
             id: "PROTECTION_MELEE",
@@ -2978,7 +2978,7 @@ const apothIcons = {
             name: "Melee Immunity",
             description: "You take no damage from close-range enemy attacks.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Melee_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Melee_Immunity"
         },
         {
             id: "PROTECTION_ELECTRICITY",
@@ -2986,7 +2986,7 @@ const apothIcons = {
             name: "Electricity Immunity",
             description: "You take no damage from electric shocks.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Electricity_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Electricity_Immunity"
         },
         {
             id: "APOTHEOSIS_ALCOHOL_IMMUNITY",
@@ -2994,7 +2994,7 @@ const apothIcons = {
             name: "Alcohol Immunity",
             description: "You take no effect to being drunk.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Alcohol_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alcohol_Immunity"
         },
         {
             id: "APOTHEOSIS_TRIP_IMMUNITY",
@@ -3002,7 +3002,7 @@ const apothIcons = {
             name: "Shift Immunity",
             description: "The world is set in stone and can not be shifted so long as you live.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Shift_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Shift_Immunity"
         },
         {
             id: "TELEPORTITIS",
@@ -3010,7 +3010,7 @@ const apothIcons = {
             name: "Teleportitis",
             description: "You take 20% less damage. You teleport away every time you're hurt.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Teleportitis"
+            wiki_url: "https://noita.wiki.gg/wiki/Teleportitis"
         },
         {
             id: "TELEPORTITIS_DODGE",
@@ -3018,7 +3018,7 @@ const apothIcons = {
             name: "Teleportitis Dodge",
             description: "You teleport a short distance away when an enemy projectile is near.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Teleportitis_Dodge"
+            wiki_url: "https://noita.wiki.gg/wiki/Teleportitis_Dodge"
         },
         {
             id: "STAINLESS_ARMOUR",
@@ -3026,7 +3026,7 @@ const apothIcons = {
             name: "Stainless Armour",
             description: "You take 50% less damage as long as you have no active stain status effect.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Stainless_Armour"
+            wiki_url: "https://noita.wiki.gg/wiki/Stainless_Armour"
         },
         {
             id: "EDIT_WANDS_EVERYWHERE",
@@ -3034,7 +3034,7 @@ const apothIcons = {
             name: "Tinker With Wands Everywhere",
             description: "A divine blessing allows you to tinker with wands everywhere.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Tinker_with_Wands_Everywhere"
+            wiki_url: "https://noita.wiki.gg/wiki/Tinker_with_Wands_Everywhere"
         },
         {
             id: "NO_WAND_EDITING",
@@ -3042,7 +3042,7 @@ const apothIcons = {
             name: "No Wand Tinkering",
             description: "Wands cannot be tinkered with, but enemies may drop blood money.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#No_Wand_Tinkering"
+            wiki_url: "https://noita.wiki.gg/wiki/No_Wand_Tinkering"
         },
         {
             id: "WAND_EXPERIMENTER",
@@ -3050,7 +3050,7 @@ const apothIcons = {
             name: "Wand Experimenter",
             description: "Firing newly found and unmodified wands heals you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Wand_Experimenter"
+            wiki_url: "https://noita.wiki.gg/wiki/Wand_Experimenter"
         },
         {
             id: "ADVENTURER",
@@ -3058,7 +3058,7 @@ const apothIcons = {
             name: "Healthy Exploration",
             description: "Every time you visit a new area, you regain 60 health.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Healthy_Exploration"
+            wiki_url: "https://noita.wiki.gg/wiki/Healthy_Exploration"
         },
         {
             id: "ABILITY_ACTIONS_MATERIALIZED",
@@ -3066,7 +3066,7 @@ const apothIcons = {
             name: "Bombs Materialized",
             description: "Bomb-like spells can be placed in the ITEMS space in inventory and used like throwable items.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Bombs_Materialized"
+            wiki_url: "https://noita.wiki.gg/wiki/Bombs_Materialized"
         },
         {
             id: "PROJECTILE_HOMING",
@@ -3074,7 +3074,7 @@ const apothIcons = {
             name: "Homing Shots",
             description: "Your spells home towards enemies very slightly.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Homing_Shots"
+            wiki_url: "https://noita.wiki.gg/wiki/Homing_Shots"
         },
         {
             id: "PROJECTILE_HOMING_SHOOTER",
@@ -3082,7 +3082,7 @@ const apothIcons = {
             name: "Boomerang Spells",
             description: "Your spells arc towards you, but gain extra speed and deal extra damage.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Boomerang_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Boomerang_Spells"
         },
         {
             id: "UNLIMITED_SPELLS",
@@ -3090,7 +3090,7 @@ const apothIcons = {
             name: "Unlimited Spells",
             description: "Most spells are now unlimited.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Unlimited_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Unlimited_Spells"
         },
         {
             id: "FREEZE_FIELD",
@@ -3098,7 +3098,7 @@ const apothIcons = {
             name: "Freeze Field",
             description: "Liquids freeze in your presence.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Freeze_Field"
+            wiki_url: "https://noita.wiki.gg/wiki/Freeze_Field"
         },
         {
             id: "FIRE_GAS",
@@ -3106,7 +3106,7 @@ const apothIcons = {
             name: "Gas fire",
             description: "Gases near you ignite automatically.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Gas_Fire"
+            wiki_url: "https://noita.wiki.gg/wiki/Gas_Fire"
         },
         {
             id: "DISSOLVE_POWDERS",
@@ -3114,7 +3114,7 @@ const apothIcons = {
             name: "Dissolve Powders",
             description: "Sand and other soft, powdery materials dissolve quickly in your presence.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Dissolve_Powders"
+            wiki_url: "https://noita.wiki.gg/wiki/Dissolve_Powders"
         },
         {
             id: "BLEED_SLIME",
@@ -3122,7 +3122,7 @@ const apothIcons = {
             name: "Slime Blood",
             description: "You bleed slime, but slime no longer slows you down and you have higher projectile resistance.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Slime_Blood"
+            wiki_url: "https://noita.wiki.gg/wiki/Slime_Blood"
         },
         {
             id: "BLEED_OIL",
@@ -3130,7 +3130,7 @@ const apothIcons = {
             name: "Oil Blood",
             description: "You bleed flammable oil, but are immune to fire.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Oil_Blood"
+            wiki_url: "https://noita.wiki.gg/wiki/Oil_Blood"
         },
         {
             id: "BLEED_GAS",
@@ -3138,7 +3138,7 @@ const apothIcons = {
             name: "Gas Blood",
             description: "You bleed flammable gas instead of blood.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Gas_Blood"
+            wiki_url: "https://noita.wiki.gg/wiki/Gas_Blood"
         },
         {
             id: "SHIELD",
@@ -3146,7 +3146,7 @@ const apothIcons = {
             name: "Permanent Shield",
             description: "You gain a small, permanent shield.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Permanent_Shield"
+            wiki_url: "https://noita.wiki.gg/wiki/Permanent_Shield"
         },
         {
             id: "APOTHEOSIS_OVERSIZED_SHIELD",
@@ -3154,7 +3154,7 @@ const apothIcons = {
             name: "Oversized Shield",
             description: "You gain a very large, permanent shield.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Oversized_Shield"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Oversized_Shield"
         },
         {
             id: "REVENGE_EXPLOSION",
@@ -3162,7 +3162,7 @@ const apothIcons = {
             name: "Revenge Explosion",
             description: "You release a magical explosion upon taking damage, and gain 25% resistance against explosions.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Revenge_Explosion"
+            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Explosion"
         },
         {
             id: "REVENGE_TENTACLE",
@@ -3170,7 +3170,7 @@ const apothIcons = {
             name: "Revenge Tentacle",
             description: "You summon a monstrous tentacle upon taking damage, and gain 25% resistance against projectiles.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Revenge_Tentacle"
+            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Tentacle"
         },
         {
             id: "REVENGE_RATS",
@@ -3178,7 +3178,7 @@ const apothIcons = {
             name: "Revenge Rats",
             description: "When you take damage, there's a chance that a helpful rat minion is summoned",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Revenge_Rats"
+            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Rats"
         },
         {
             id: "REVENGE_BULLET",
@@ -3186,7 +3186,7 @@ const apothIcons = {
             name: "Revenge bullets",
             description: "You return fire when hit by projectiles, and you gain 20% resistance against explosions and projectiles.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Revenge_Bullets"
+            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Bullets"
         },
         {
             id: "APOTHEOSIS_REVENGE_REFLECTIVE",
@@ -3194,7 +3194,7 @@ const apothIcons = {
             name: "Revenge Reflection",
             description: "Reflect copies of enemy projectiles upon taking damage, with a steep damage boost as payback.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Revenge_Reflection"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Revenge_Reflection"
         },
         {
             id: "ATTACK_FOOT",
@@ -3202,7 +3202,7 @@ const apothIcons = {
             name: "Lukki Mutation",
             description: "You grow curious additional limbs that fight for you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Lukki_Mutation"
+            wiki_url: "https://noita.wiki.gg/wiki/Lukki_Mutation"
         },
         {
             id: "LEGGY_FEET",
@@ -3210,7 +3210,7 @@ const apothIcons = {
             name: "Leggy Mutation",
             description: "You grow disturbing looking limbs that fight for you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Leggy_Mutation"
+            wiki_url: "https://noita.wiki.gg/wiki/Leggy_Mutation"
         },
         {
             id: "PLAGUE_RATS",
@@ -3218,7 +3218,7 @@ const apothIcons = {
             name: "Plague Rats",
             description: "Dying enemies release rats to serve your bidding! All rats become your friend.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Plague_Rats"
+            wiki_url: "https://noita.wiki.gg/wiki/Plague_Rats"
         },
         {
             id: "VOMIT_RATS",
@@ -3226,7 +3226,7 @@ const apothIcons = {
             name: "Spontaneous Generation",
             description: "Vomit near you evolves into helpful rat minions",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Spontaneous_Generation"
+            wiki_url: "https://noita.wiki.gg/wiki/Spontaneous_Generation"
         },
         {
             id: "CORDYCEPS",
@@ -3234,7 +3234,7 @@ const apothIcons = {
             name: "Cordyceps",
             description: "Fungal creatures spawn from the corpses of enemies killed by you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Cordyceps"
+            wiki_url: "https://noita.wiki.gg/wiki/Cordyceps"
         },
         {
             id: "MOLD",
@@ -3242,7 +3242,7 @@ const apothIcons = {
             name: "Fungal Colony",
             description: "Slime near you spontaneously turns into fungal creatures.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Fungal_Colony"
+            wiki_url: "https://noita.wiki.gg/wiki/Fungal_Colony"
         },
         {
             id: "WORM_SMALLER_HOLES",
@@ -3250,7 +3250,7 @@ const apothIcons = {
             name: "Feared by Worms",
             description: "Worms run away from you, and worm and lukki enemies no longer destroy terrain while burrowing.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Feared_by_Worms"
+            wiki_url: "https://noita.wiki.gg/wiki/Feared_by_Worms"
         },
         {
             id: "RISKY_CRITICAL",
@@ -3258,7 +3258,7 @@ const apothIcons = {
             name: "Close Call",
             description: "You gain additional chance to deal critical hits as long as there are enemies near you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Close_Call"
+            wiki_url: "https://noita.wiki.gg/wiki/Close_Call"
         },
         {
             id: "FUNGAL_DISEASE",
@@ -3266,7 +3266,7 @@ const apothIcons = {
             name: "Fungal Disease",
             description: "When near danger, you sprout fungal growths.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Fungal_Disease"
+            wiki_url: "https://noita.wiki.gg/wiki/Fungal_Disease"
         },
         {
             id: "PROJECTILE_SLOW_FIELD",
@@ -3274,7 +3274,7 @@ const apothIcons = {
             name: "Projectile Slower",
             description: "Projectiles near you slow down.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Projectile_Slower"
+            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Slower"
         },
         {
             id: "PROJECTILE_REPULSION_SECTOR",
@@ -3282,7 +3282,7 @@ const apothIcons = {
             name: "Projectile Repulsion Sector",
             description: "Projectiles that fly into a small sector in front of you get blown away.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Projectile_Repulsion_Sector"
+            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Repulsion_Sector"
         },
         {
             id: "PROJECTILE_EATER_SECTOR",
@@ -3290,7 +3290,7 @@ const apothIcons = {
             name: "Projectile Eater",
             description: "Projectiles that fly into a small sector behind of you disappear.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Projectile_Eater"
+            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Eater"
         },
         {
             id: "ORBIT",
@@ -3298,7 +3298,7 @@ const apothIcons = {
             name: "Phasing",
             description: "Projectiles seemingly phase through you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Phasing"
+            wiki_url: "https://noita.wiki.gg/wiki/Phasing"
         },
         {
             id: "ANGRY_GHOST",
@@ -3306,7 +3306,7 @@ const apothIcons = {
             name: "Angry ghost",
             description: "An angry spirit comes to your aid, copying nearby spells and projectiles.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Angry_Ghost"
+            wiki_url: "https://noita.wiki.gg/wiki/Angry_Ghost"
         },
         {
             id: "HUNGRY_GHOST",
@@ -3314,7 +3314,7 @@ const apothIcons = {
             name: "Hungry Ghost",
             description: "Summons a happy minion who'll eat enemy projectile every now and then.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Hungry_Ghost"
+            wiki_url: "https://noita.wiki.gg/wiki/Hungry_Ghost"
         },
         {
             id: "DEATH_GHOST",
@@ -3322,7 +3322,7 @@ const apothIcons = {
             name: "Mournful Spirit",
             description: "Dying creatures leave behind a spirit that deals damage in a small area.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Mournful_Spirit"
+            wiki_url: "https://noita.wiki.gg/wiki/Mournful_Spirit"
         },
         {
             id: "HOMUNCULUS",
@@ -3330,7 +3330,7 @@ const apothIcons = {
             name: "Homunculus",
             description: "Every time you leave a Holy Mountain, a helpful homunculus is summoned.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Homunculus"
+            wiki_url: "https://noita.wiki.gg/wiki/Homunculus"
         },
         {
             id: "LUKKI_MINION",
@@ -3338,7 +3338,7 @@ const apothIcons = {
             name: "Lukki Minion",
             description: "Summons a lukki minion to your help.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Lukki_Minion"
+            wiki_url: "https://noita.wiki.gg/wiki/Lukki_Minion"
         },
         {
             id: "ELECTRICITY",
@@ -3346,7 +3346,7 @@ const apothIcons = {
             name: "Electricity",
             description: "You're immune to electric damage, but metal and liquids around you electrify constantly. Look out!",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Electricity"
+            wiki_url: "https://noita.wiki.gg/wiki/Electricity"
         },
         {
             id: "ATTRACT_ITEMS",
@@ -3354,7 +3354,7 @@ const apothIcons = {
             name: "Attract Gold",
             description: "Gold nuggets gravitate towards you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Attract_Gold"
+            wiki_url: "https://noita.wiki.gg/wiki/Attract_Gold"
         },
         {
             id: "EXTRA_KNOCKBACK",
@@ -3362,7 +3362,7 @@ const apothIcons = {
             name: "Extra Knockback on Spells",
             description: "Your spells knock enemies around with more force.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Extra_Knockback_on_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Knockback_on_Spells"
         },
         {
             id: "LOWER_SPREAD",
@@ -3370,7 +3370,7 @@ const apothIcons = {
             name: "Concentrated Spells",
             description: "Your spells have lower spread and extra damage, but have increased cast delay.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Concentrated_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Concentrated_Spells"
         },
         {
             id: "BOUNCE",
@@ -3378,7 +3378,7 @@ const apothIcons = {
             name: "Bouncing Spells",
             description: "Almost all your spells bounce around and last longer.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Bouncing_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Bouncing_Spells"
         },
         {
             id: "FAST_PROJECTILES",
@@ -3386,7 +3386,7 @@ const apothIcons = {
             name: "Faster Projectiles",
             description: "Your projectile spells fly faster than before.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Faster_Projectiles"
+            wiki_url: "https://noita.wiki.gg/wiki/Faster_Projectiles"
         },
         {
             id: "ALWAYS_CAST",
@@ -3394,7 +3394,7 @@ const apothIcons = {
             name: "Always Cast (One-off)",
             description: "A random Always Cast spell is added to the wand in your hand, up to a maximum of 4.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Always_Cast"
+            wiki_url: "https://noita.wiki.gg/wiki/Always_Cast"
         },
         {
             id: "EXTRA_MANA",
@@ -3402,7 +3402,7 @@ const apothIcons = {
             name: "High Mana, Low Capacity (One-off)",
             description: "Your currently held wand loses half its capacity, but gains more mana.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#High_Mana,_Low_Capacity"
+            wiki_url: "https://noita.wiki.gg/wiki/High_Mana,_Low_Capacity"
         },
         {
             id: "NO_MORE_SHUFFLE",
@@ -3410,7 +3410,7 @@ const apothIcons = {
             name: "No More Shuffle",
             description: "Most of the wands will be non shuffling. The wands you carry with you turn into non-shufflers too.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#No_More_Shuffle"
+            wiki_url: "https://noita.wiki.gg/wiki/No_More_Shuffle"
         },
         {
             id: "NO_MORE_KNOCKBACK",
@@ -3418,7 +3418,7 @@ const apothIcons = {
             name: "No More Knockback",
             description: "Enemies can no longer knock you back.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#No_More_Knockback"
+            wiki_url: "https://noita.wiki.gg/wiki/No_More_Knockback"
         },
         {
             id: "APOTHEOSIS_NO_RECOIL",
@@ -3426,7 +3426,7 @@ const apothIcons = {
             name: "No Recoil",
             description: "Your spells have no recoil.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#No_Recoil"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/No_Recoil"
         },
         {
             id: "DUPLICATE_PROJECTILE",
@@ -3434,7 +3434,7 @@ const apothIcons = {
             name: "Projectile duplication",
             description: "Your projectile spells have a chance to duplicate, but you're more vulnerable to projectile damage",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Projectile_Duplication"
+            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Duplication"
         },
         {
             id: "FASTER_WANDS",
@@ -3442,7 +3442,7 @@ const apothIcons = {
             name: "Faster Wands (One-off)",
             description: "All wands you're currently carrying gain a bonus to their cast delay & reload time.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Faster_Wands"
+            wiki_url: "https://noita.wiki.gg/wiki/Faster_Wands"
         },
         {
             id: "EXTRA_SLOTS",
@@ -3450,7 +3450,7 @@ const apothIcons = {
             name: "Extra Wand Capacity (One-off)",
             description: "The wands you're currently carrying gain 1-3 additional spell slots (to a maximum of 25).",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Extra_Wand_Capacity"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Wand_Capacity"
         },
         {
             id: "CONTACT_DAMAGE",
@@ -3458,7 +3458,7 @@ const apothIcons = {
             name: "Contact Damage",
             description: "You take no damage from close-range enemy attacks but enemies near you take damage.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Contact_Damage"
+            wiki_url: "https://noita.wiki.gg/wiki/Contact_Damage"
         },
         {
             id: "EXTRA_PERK",
@@ -3466,7 +3466,7 @@ const apothIcons = {
             name: "Extra Perk",
             description: "From now on you will find an extra perk in every Holy Mountain.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Extra_Perk"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Perk"
         },
         {
             id: "PERKS_LOTTERY",
@@ -3474,7 +3474,7 @@ const apothIcons = {
             name: "Perk Lottery",
             description: "When you pick a perk, there's a 50% chance the others won't disappear.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Perk_Lottery"
+            wiki_url: "https://noita.wiki.gg/wiki/Perk_Lottery"
         },
         {
             id: "GAMBLE",
@@ -3482,7 +3482,7 @@ const apothIcons = {
             name: "Gamble (One-off)",
             description: "You gain two random perks.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Gamble"
+            wiki_url: "https://noita.wiki.gg/wiki/Gamble"
         },
         {
             id: "EXTRA_SHOP_ITEM",
@@ -3490,7 +3490,7 @@ const apothIcons = {
             name: "Extra Item In Holy Mountain",
             description: "There will be an additional item in every Holy Mountain you haven't discovered yet.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Extra_Item_in_Holy_Mountain"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Item_in_Holy_Mountain"
         },
         {
             id: "GENOME_MORE_HATRED",
@@ -3498,7 +3498,7 @@ const apothIcons = {
             name: "More Hatred",
             description: "Creatures become more aggressive towards each other.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#More_Hatred"
+            wiki_url: "https://noita.wiki.gg/wiki/More_Hatred"
         },
         {
             id: "GENOME_MORE_LOVE",
@@ -3506,7 +3506,7 @@ const apothIcons = {
             name: "More Love",
             description: "Creatures become more friendly towards each other.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#More_Love"
+            wiki_url: "https://noita.wiki.gg/wiki/More_Love"
         },
         {
             id: "PEACE_WITH_GODS",
@@ -3514,7 +3514,7 @@ const apothIcons = {
             name: "Peace with Gods",
             description: "You make peace with your Gods.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Peace_with_Gods"
+            wiki_url: "https://noita.wiki.gg/wiki/Peace_with_Gods"
         },
         {
             id: "MANA_FROM_KILLS",
@@ -3522,7 +3522,7 @@ const apothIcons = {
             name: "Kills to mana",
             description: "Every time an enemy near you dies, you release mana-recharging liquid.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Kills_to_Mana"
+            wiki_url: "https://noita.wiki.gg/wiki/Kills_To_Mana"
         },
         {
             id: "ANGRY_LEVITATION",
@@ -3530,7 +3530,7 @@ const apothIcons = {
             name: "Rage-fueled Levitation",
             description: "Killing an enemy makes you replenish some of your levitation power.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Rage_Fueled_Levitation"
+            wiki_url: "https://noita.wiki.gg/wiki/Rage-fueled_Levitation"
         },
         {
             id: "LASER_AIM",
@@ -3538,7 +3538,7 @@ const apothIcons = {
             name: "Pinpointer",
             description: "Your spells fly faster and have lower spread, and you have a handy sightline for aiming!",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Pinpointer"
+            wiki_url: "https://noita.wiki.gg/wiki/Pinpointer"
         },
         {
             id: "PERSONAL_LASER",
@@ -3546,7 +3546,7 @@ const apothIcons = {
             name: "Personal Plasma Beam",
             description: "You constantly fire a devastating plasma beam, but you fire spells much slower",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Personal_Plasma_Beam"
+            wiki_url: "https://noita.wiki.gg/wiki/Personal_Plasma_Beam"
         },
         {
             id: "MEGA_BEAM_STONE",
@@ -3554,7 +3554,7 @@ const apothIcons = {
             name: "Summon S\u00e4dekivi (One-off)",
             description: "You gain an artefact that allows you to call the celestial rage.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Summon_S\u00e4dekivi"
+            wiki_url: "https://noita.wiki.gg/wiki/Summon_S\u00e4dekivi"
         },
         {
             id: "APOTHEOSIS_GHOSTLY_VISION",
@@ -3562,7 +3562,7 @@ const apothIcons = {
             name: "Ghostly Vision",
             description: "You can see things which aren't there.. Without assistance.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Ghostly_Vision"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Ghostly_Vision"
         },
         {
             id: "APOTHEOSIS_HASTE",
@@ -3570,7 +3570,7 @@ const apothIcons = {
             name: "Haste",
             description: "You move faster and levitate quicker.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Haste"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Haste"
         },
         {
             id: "APOTHEOSIS_VOID",
@@ -3578,7 +3578,7 @@ const apothIcons = {
             name: "Void",
             description: "Gain immense power, but the void grows jealous of your options.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perks#Void"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Void"
         }
     ],
     spells: [
@@ -3596,7 +3596,7 @@ const apothIcons = {
             name: "Giga Bomb",
             description: "Explosion!!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Giga_Bomb"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Giga_Bomb"
         },
         {
             id: "LIGHT_BULLET",
@@ -3900,7 +3900,7 @@ const apothIcons = {
             name: "Bouncing Burst with Expiration Trigger",
             description: "A very bouncy projectile that casts another spell upon expiration",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Bouncing_Burst_With_Expiration_Trigger"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Bouncing_Burst_With_Expiration_Trigger"
         },
         {
             id: "ARROW",
@@ -3924,7 +3924,7 @@ const apothIcons = {
             name: "Pollen with Trigger",
             description: "A small, floating projectile that casts another spell upon collision",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Pollen_With_Trigger"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pollen_With_Trigger"
         },
         {
             id: "LANCE",
@@ -3948,7 +3948,7 @@ const apothIcons = {
             name: "Holy Orb Barrage",
             description: "Casts a barrage of 7 holy orbs. Also has some magical properties...",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Holy_Orb_Barrage"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Holy_Orb_Barrage"
         },
         {
             id: "APOTHEOSIS_ELECTROSPHERE",
@@ -3956,7 +3956,7 @@ const apothIcons = {
             name: "Bolt Orb",
             description: "Cast a slow orb which zaps nearby creatures periodically",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Bolt_Orb"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Bolt_Orb"
         },
         {
             id: "APOTHEOSIS_STAR_SHOT",
@@ -3964,7 +3964,7 @@ const apothIcons = {
             name: "Star Shot",
             description: "Fire two starry projectiles with a bright light",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Star_Shot"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Star_Shot"
         },
         {
             id: "ROCKET",
@@ -4044,7 +4044,7 @@ const apothIcons = {
             name: "Aqua Mine",
             description: "Creates an explosive Aquamine with subtle homing properties.",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Aqua_Mine"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Aqua_Mine"
         },
         {
             id: "MINE",
@@ -4140,7 +4140,7 @@ const apothIcons = {
             name: "Musical Strike",
             description: "Fires a powerful musical attack, careful not to lose your creativity",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Musical_Strike"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Musical_Strike"
         },
         {
             id: "APOTHEOSIS_MUSICAL_STRIKE_TRIGGER",
@@ -4148,7 +4148,7 @@ const apothIcons = {
             name: "Musical Strike with trigger",
             description: "Fires a powerful musical attack, casts another spell upon collision",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Musical_Strike_With_Trigger"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Musical_Strike_With_Trigger"
         },
         {
             id: "APOTHEOSIS_REVERBERATION",
@@ -4156,7 +4156,7 @@ const apothIcons = {
             name: "Reverberation",
             description: "Creates a reverberating sound in the air, slicing anything nearby to pieces.",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoklEQVR4nGP8//8/AzUBE1VNY2BgYEHm9DlINjAwMNSTYU5j0YHnDSgGhpkqNzAwcJFlmAX3t3oGBgZUAy24v9Wf+MrFwMDAwLjq9F2iTQszVUaJBNqGITroc5DEKVd04DnpBuLShA9Q3cujBo4aSAZASdgW3N8aT3zl+h9mqkyqOY0YBp74ytVowf2t3oL7G0kmnfjK1XjiK1cDjM846EtsALeIK65H2BliAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Reverberation"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Reverberation"
         },
         {
             id: "LIGHTNING",
@@ -4244,7 +4244,7 @@ const apothIcons = {
             name: "Targetter",
             description: "Fire a projectile which causes irresistible hatred towards anything it hits",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Targetter"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Targetter"
         },
         {
             id: "TENTACLE",
@@ -4268,7 +4268,7 @@ const apothIcons = {
             name: "Summon Jumper Cables",
             description: "Summon a pair of electrifying vices to shock your victims",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Summon_Jumper_Cables"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Summon_Jumper_Cables"
         },
         {
             id: "HEAL_BULLET",
@@ -4628,7 +4628,7 @@ const apothIcons = {
             name: "Omega Death Cross",
             description: "A violent, giant, deadly energy cross that explodes after a short time",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Omega_Death_Cross"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Omega_Death_Cross"
         },
         {
             id: "INFESTATION",
@@ -4644,7 +4644,7 @@ const apothIcons = {
             name: "Sphere of Acid",
             description: "Cast a powerful sphere of acid, melting everything in its path",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Sphere_of_Acid"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sphere_of_Acid"
         },
         {
             id: "APOTHEOSIS_LIQUIDSPHERE_WATER",
@@ -4652,7 +4652,7 @@ const apothIcons = {
             name: "Sphere of Water",
             description: "Cast an enduring sphere of water, soaking everything in its path",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Sphere_of_Water"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sphere_of_Water"
         },
         {
             id: "APOTHEOSIS_LIQUIDSPHERE_TELEPORTATIUM",
@@ -4660,7 +4660,7 @@ const apothIcons = {
             name: "Sphere of Teleportatium",
             description: "Cast a malicious sphere of teleportatium, relocating everything in its path",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Sphere_of_Teleportatium"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sphere_of_Teleportatium"
         },
         {
             id: "APOTHEOSIS_FIRE_WALL",
@@ -4668,7 +4668,7 @@ const apothIcons = {
             name: "Wall of Fire",
             description: "Summons a wall of fire to ward off foes",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoklEQVR4nGP8//8/AzUBE1VNY2BgYEHm9DlINjAwMNSTYU5j0YHnDSgGhpkqNzAwcJFlmAX3t3oGBgZUAy24v9Wf+MrFwMDAwLjq9F2iTQszVUaJBNqGITroc5DEKVd04DnpBuLShA9Q3cujBo4aSAZASdgW3N8aT3zl+h9mqkyqOY0YBp74ytVowf2t3oL7G0kmnfjK1XjiK1cDjM846EtsALeIK65H2BliAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Wall_of_Fire"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Wall_of_Fire"
         },
         {
             id: "WALL_HORIZONTAL",
@@ -4732,7 +4732,7 @@ const apothIcons = {
             name: "Long-distance cast",
             description: "Casts a spell some distance away from the caster",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Long_Distance_Cast"
+            wiki_url: "https://noita.wiki.gg/wiki/Long-Distance_Cast"
         },
         {
             id: "TELEPORT_CAST",
@@ -4796,7 +4796,7 @@ const apothIcons = {
             name: "Attunium Mist",
             description: "A cloud of attunium mist",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Attunium_Mist"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Attunium_Mist"
         },
         {
             id: "CIRCLE_FIRE",
@@ -4876,7 +4876,7 @@ const apothIcons = {
             name: "Slime",
             description: "Transmute globs of slime out of nothing!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Slime"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Slime"
         },
         {
             id: "APOTHEOSIS_MATERIAL_ALCOHOL",
@@ -4884,7 +4884,7 @@ const apothIcons = {
             name: "Whiskey",
             description: "Transmute drops of whiskey out of nothing!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Whiskey"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Whiskey"
         },
         {
             id: "TELEPORT_PROJECTILE",
@@ -5100,7 +5100,7 @@ const apothIcons = {
             name: "Formation - behind your back",
             description: "Casts two spells: one ahead of and one behind the caster",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Behind_Your_Back"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Behind_Your_Back"
         },
         {
             id: "Y_SHAPE",
@@ -5108,7 +5108,7 @@ const apothIcons = {
             name: "Formation - bifurcated",
             description: "Casts 2 spells in a bifurcated pattern",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Bifurcated"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Bifurcated"
         },
         {
             id: "T_SHAPE",
@@ -5116,7 +5116,7 @@ const apothIcons = {
             name: "Formation - above and below",
             description: "Casts 3 spells - ahead, above and below the caster",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Above_And_Below"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Above_And_Below"
         },
         {
             id: "W_SHAPE",
@@ -5124,7 +5124,7 @@ const apothIcons = {
             name: "Formation - trifurcated",
             description: "Casts 3 spells in a trifurcated pattern",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Trifurcated"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Trifurcated"
         },
         {
             id: "CIRCLE_SHAPE",
@@ -5132,7 +5132,7 @@ const apothIcons = {
             name: "Formation - hexagon",
             description: "Casts 6 spells in a hexagonal pattern",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Hexagon"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Hexagon"
         },
         {
             id: "PENTAGRAM_SHAPE",
@@ -5140,7 +5140,7 @@ const apothIcons = {
             name: "Formation - pentagon",
             description: "Casts 5 spells in a pentagonal pattern",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Pentagon"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Pentagon"
         },
         {
             id: "APOTHEOSIS_SHAPE_WALL",
@@ -5148,7 +5148,7 @@ const apothIcons = {
             name: "Formation - Wall",
             description: "Casts 5 spells in a wall-shaped pattern",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Wall"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Formation_-_Wall"
         },
         {
             id: "I_SHOT",
@@ -5204,7 +5204,7 @@ const apothIcons = {
             name: "Wallplicate",
             description: "Casts 5 copies of a projectile in a wall-shaped pattern, but the copies still cost mana",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Wallplicate"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Wallplicate"
         },
         {
             id: "HEXA_SHOT",
@@ -5308,7 +5308,7 @@ const apothIcons = {
             name: "Hydromancy",
             description: "Reduce mana cost by 30 and increase fire rate when wet",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Hydromancy"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hydromancy"
         },
         {
             id: "APOTHEOSIS_BLOOD_POWER",
@@ -5316,7 +5316,7 @@ const apothIcons = {
             name: "Hemomancy",
             description: "Projectiles will pierce 5 times when bloody",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Hemomancy"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hemomancy"
         },
         {
             id: "APOTHEOSIS_FIRE_POWER",
@@ -5324,7 +5324,7 @@ const apothIcons = {
             name: "Pyromancy",
             description: "Amplify and convert all damage to fire damage when burning",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Pyromancy"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pyromancy"
         },
         {
             id: "BLOOD_MAGIC",
@@ -5380,7 +5380,7 @@ const apothIcons = {
             name: "Anti-gravity",
             description: "Applies a lifting force to a projectile",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Anti_Gravity"
+            wiki_url: "https://noita.wiki.gg/wiki/Anti-Gravity"
         },
         {
             id: "SINEWAVE",
@@ -5404,7 +5404,7 @@ const apothIcons = {
             name: "Ping-pong path",
             description: "Makes a projectile fly back and forth",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Ping_Pong_Path"
+            wiki_url: "https://noita.wiki.gg/wiki/Ping-Pong_Path"
         },
         {
             id: "AVOIDING_ARC",
@@ -5532,7 +5532,7 @@ const apothIcons = {
             name: "Short-range Homing",
             description: "A projectile flies towards targets when near them",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Short_Range_Homing"
+            wiki_url: "https://noita.wiki.gg/wiki/Short-Range_Homing"
         },
         {
             id: "HOMING_ROTATE",
@@ -5556,7 +5556,7 @@ const apothIcons = {
             name: "Auto-Aim",
             description: "Makes a projectile turns towards the nearest visible enemy",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Auto_Aim"
+            wiki_url: "https://noita.wiki.gg/wiki/Auto-Aim"
         },
         {
             id: "HOMING_ACCELERATING",
@@ -5588,7 +5588,7 @@ const apothIcons = {
             name: "Delayed Homing",
             description: "Makes a projectile accelerate towards your foes after a short delay",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Delayed_Homing"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Delayed_Homing"
         },
         {
             id: "PIERCING_SHOT",
@@ -5676,7 +5676,7 @@ const apothIcons = {
             name: "Kindness to Power",
             description: "Increase critical hit chance proportional to how many charmed creatures are nearby",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Kindness_To_Power"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kindness_To_Power"
         },
         {
             id: "ZERO_DAMAGE",
@@ -5828,7 +5828,7 @@ const apothIcons = {
             name: "Magic Inebriation",
             description: "Wildly diffuses the magical properties of different projectiles amongst each other",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Magic_Inebriation"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Magic_Inebriation"
         },
         {
             id: "RANDOM_EXPLOSION",
@@ -5860,7 +5860,7 @@ const apothIcons = {
             name: "Affluence",
             description: "Creatures hit by your projectiles drop extra gold",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Affluence"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Affluence"
         },
         {
             id: "APOTHEOSIS_HITFX_HEX_WATER",
@@ -5868,7 +5868,7 @@ const apothIcons = {
             name: "Vulnerability Hex - Water",
             description: "Creatures hit by your projectiles take damage from water and other wet substances",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Vulnerability_Hex___Water"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vulnerability_Hex_-_Water"
         },
         {
             id: "APOTHEOSIS_HITFX_HEX_OIL",
@@ -5876,7 +5876,7 @@ const apothIcons = {
             name: "Vulnerability Hex - Oil",
             description: "Creatures hit by your projectiles take damage from oil and other oily substances",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Vulnerability_Hex___Oil"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vulnerability_Hex_-_Oil"
         },
         {
             id: "APOTHEOSIS_HITFX_HEX_BLOOD",
@@ -5884,7 +5884,7 @@ const apothIcons = {
             name: "Vulnerability Hex - Blood",
             description: "Creatures hit by your projectiles take damage from blood and other bloody substances",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Vulnerability_Hex___Blood"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vulnerability_Hex_-_Blood"
         },
         {
             id: "EXPLOSION",
@@ -6116,7 +6116,7 @@ const apothIcons = {
             name: "Sea of Berserkium",
             description: "Summons a large body of Berserkium below the caster",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Sea_of_Berserkium"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sea_of_Berserkium"
         },
         {
             id: "APOTHEOSIS_POTION_TO_SEA",
@@ -6124,7 +6124,7 @@ const apothIcons = {
             name: "Potion to Sea",
             description: "The first flask in your inventory is shattered and converted into a sea of the same material",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Potion_To_Sea"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Potion_To_Sea"
         },
         {
             id: "CLOUD_WATER",
@@ -6164,7 +6164,7 @@ const apothIcons = {
             name: "Volcanic Cloud",
             description: "Creates a volcanic rain of lava and ash",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoklEQVR4nGP8//8/AzUBE1VNY2BgYEHm9DlINjAwMNSTYU5j0YHnDSgGhpkqNzAwcJFlmAX3t3oGBgZUAy24v9Wf+MrFwMDAwLjq9F2iTQszVUaJBNqGITroc5DEKVd04DnpBuLShA9Q3cujBo4aSAZASdgW3N8aT3zl+h9mqkyqOY0YBp74ytVowf2t3oL7G0kmnfjK1XjiK1cDjM846EtsALeIK65H2BliAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Volcanic_Cloud"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Volcanic_Cloud"
         },
         {
             id: "CLOUD_THUNDER",
@@ -6204,7 +6204,7 @@ const apothIcons = {
             name: "Fire Charge",
             description: "Imbues a projectile with a fiery charge, that it will release on impact",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Fire_Charge"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Fire_Charge"
         },
         {
             id: "APOTHEOSIS_GLUE_CHARGE",
@@ -6212,7 +6212,7 @@ const apothIcons = {
             name: "Glue Charge",
             description: "Imbues a projectile with a sticky charge, that it will release on impact",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Glue_Charge"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Glue_Charge"
         },
         {
             id: "HITFX_BURNING_CRITICAL_HIT",
@@ -6252,7 +6252,7 @@ const apothIcons = {
             name: "Critical on Drunk",
             description: "Make a projectile always do a critical hit on drunk enemies",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Critical_On_Drunk"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Critical_On_Drunk"
         },
         {
             id: "HITFX_TOXIC_CHARM",
@@ -6300,7 +6300,7 @@ const apothIcons = {
             name: "Transmute into Mutamies on Slimy Enemies",
             description: "Make a projectile transmute a creature into Mutamies upon collision if it's covered in slime",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Transmute_Into_Mutamies_On_Slimy_Enemies"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Transmute_Into_Mutamies_On_Slimy_Enemies"
         },
         {
             id: "HITFX_PETRIFY",
@@ -6436,7 +6436,7 @@ const apothIcons = {
             name: "Giga Disc Projectile Thrower",
             description: "Makes a projectile cast Giga Disc Projectiles in random directions",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Giga_Disc_Projectile_Thrower"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Giga_Disc_Projectile_Thrower"
         },
         {
             id: "APOTHEOSIS_CURSED_ORB_RAY",
@@ -6444,7 +6444,7 @@ const apothIcons = {
             name: "Cursed Orb Thrower",
             description: "Makes a projectile cast Cursed Orbs in random directions",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Cursed_Orb_Thrower"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Cursed_Orb_Thrower"
         },
         {
             id: "APOTHEOSIS_ICEBALL_RAY",
@@ -6452,7 +6452,7 @@ const apothIcons = {
             name: "Ice Ball Thrower",
             description: "Makes a projectile cast Ice Balls in random directions",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Ice_Ball_Thrower"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Ice_Ball_Thrower"
         },
         {
             id: "APOTHEOSIS_NUKE_RAY",
@@ -6460,7 +6460,7 @@ const apothIcons = {
             name: "Nuke Thrower",
             description: "Are you sure?",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Nuke_Thrower"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nuke_Thrower"
         },
         {
             id: "FIREBALL_RAY_LINE",
@@ -6468,7 +6468,7 @@ const apothIcons = {
             name: "Two-way fireball thrower",
             description: "Makes a projectile fire small fireballs perpendicular to its trajectory",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Two_Way_Fireball_Thrower"
+            wiki_url: "https://noita.wiki.gg/wiki/Two-Way_Fireball_Thrower"
         },
         {
             id: "FIREBALL_RAY_ENEMY",
@@ -6500,7 +6500,7 @@ const apothIcons = {
             name: "Personal Giga Disc Projectile Thrower",
             description: "Makes a projectile turn the creatures it hits into living Sawblade throwers",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Personal_Giga_Disc_Projectile_Thrower"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Personal_Giga_Disc_Projectile_Thrower"
         },
         {
             id: "APOTHEOSIS_CURSED_ORB_RAY_ENEMY",
@@ -6508,7 +6508,7 @@ const apothIcons = {
             name: "Personal Cursed Orb Thrower",
             description: "Makes a projectile turn the creatures it hits into living Cursed Orb throwers",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Personal_Cursed_Orb_Thrower"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Personal_Cursed_Orb_Thrower"
         },
         {
             id: "APOTHEOSIS_ICEBALL_RAY_ENEMY",
@@ -6516,7 +6516,7 @@ const apothIcons = {
             name: "Personal Ice Ball Thrower",
             description: "Makes a projectile turn the creatures it hits into living Ice Ball throwers",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Personal_Ice_Ball_Thrower"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Personal_Ice_Ball_Thrower"
         },
         {
             id: "APOTHEOSIS_NUKE_RAY_ENEMY",
@@ -6524,7 +6524,7 @@ const apothIcons = {
             name: "Personal Nuke Thrower",
             description: "Makes a projectile turn the creatures it hits into living... Nuke throwers?!?!!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Personal_Nuke_Thrower"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Personal_Nuke_Thrower"
         },
         {
             id: "GRAVITY_FIELD_ENEMY",
@@ -6548,7 +6548,7 @@ const apothIcons = {
             name: "Weakening Curse - Projectiles",
             description: "Target hit by a projectile takes 25% extra projectile damage for a time",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse___Projectiles"
+            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse_-_Projectiles"
         },
         {
             id: "CURSE_WITHER_EXPLOSION",
@@ -6556,7 +6556,7 @@ const apothIcons = {
             name: "Weakening Curse - Explosives",
             description: "Target hit by a projectile takes 25% extra explosion damage for a time",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse___Explosives"
+            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse_-_Explosives"
         },
         {
             id: "CURSE_WITHER_MELEE",
@@ -6564,7 +6564,7 @@ const apothIcons = {
             name: "Weakening Curse - Melee",
             description: "Target hit by a projectile takes 25% extra melee damage for a time",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse___Melee"
+            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse_-_Melee"
         },
         {
             id: "CURSE_WITHER_ELECTRICITY",
@@ -6572,7 +6572,7 @@ const apothIcons = {
             name: "Weakening Curse - Electricity",
             description: "Target hit by a projectile takes 25% extra electricity damage for a time",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse___Electricity"
+            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse_-_Electricity"
         },
         {
             id: "ORBIT_DISCS",
@@ -6628,7 +6628,7 @@ const apothIcons = {
             name: "Split Shot",
             description: "50% chance to duplicate the next cast",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Split_Shot"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Split_Shot"
         },
         {
             id: "ARC_ELECTRIC",
@@ -6676,7 +6676,7 @@ const apothIcons = {
             name: "All-seeing eye",
             description: "See into the unexplored. But not everywhere...",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/All_Seeing_Eye"
+            wiki_url: "https://noita.wiki.gg/wiki/All-Seeing_Eye"
         },
         {
             id: "APOTHEOSIS_MIND_VISION",
@@ -6684,7 +6684,7 @@ const apothIcons = {
             name: "Mind Vision",
             description: "Creatures hit by a projectile are temporarily revealed through fog of war",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Mind_Vision"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mind_Vision"
         },
         {
             id: "UNSTABLE_GUNPOWDER",
@@ -6748,7 +6748,7 @@ const apothIcons = {
             name: "Trail Enhancer",
             description: "Significantly increase the amount of material produced by other trail spells in the wand",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Trail_Enhancer"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Trail_Enhancer"
         },
         {
             id: "BURN_TRAIL",
@@ -6812,7 +6812,7 @@ const apothIcons = {
             name: "Auto-Fire",
             description: "Causes the wand to automatically shoot if there's nearby enemies",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAqklEQVR4nGP8//8/AzUBE1VNY2BgYIEx0ieVMuyet6mBgYGhngxzGu9duNnAwMDAwAjzsqSSDNmGcfJx19+7cJMRxYWcfNz13z99ZWBgYGD0K4gk2rRNE5ajRALtwhAb2D1vE0451yQ/0g3EpQkfoLqXRw0cNZAMgJKwOfm4G79/+vp/04TlpJrTiGHg909fGzn5uOs5+bhJMun7p6+N3z99bYDxGQd9iQ0AoiczZoxCV3EAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Auto_Fire"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Auto-Fire"
         },
         {
             id: "OCARINA_A",
@@ -6820,7 +6820,7 @@ const apothIcons = {
             name: "Ocarina - note A",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_A"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_A"
         },
         {
             id: "OCARINA_B",
@@ -6828,7 +6828,7 @@ const apothIcons = {
             name: "Ocarina - note B",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_B"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_B"
         },
         {
             id: "OCARINA_C",
@@ -6836,7 +6836,7 @@ const apothIcons = {
             name: "Ocarina - note C",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_C"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_C"
         },
         {
             id: "OCARINA_D",
@@ -6844,7 +6844,7 @@ const apothIcons = {
             name: "Ocarina - note D",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_D"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_D"
         },
         {
             id: "OCARINA_E",
@@ -6852,7 +6852,7 @@ const apothIcons = {
             name: "Ocarina - note E",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_E"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_E"
         },
         {
             id: "OCARINA_F",
@@ -6860,7 +6860,7 @@ const apothIcons = {
             name: "Ocarina - note F",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_F"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_F"
         },
         {
             id: "OCARINA_GSHARP",
@@ -6868,7 +6868,7 @@ const apothIcons = {
             name: "Ocarina - note G#",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_G#"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_G#"
         },
         {
             id: "OCARINA_A2",
@@ -6876,7 +6876,7 @@ const apothIcons = {
             name: "Ocarina - note A2",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_A2"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_A2"
         },
         {
             id: "KANTELE_A",
@@ -6884,7 +6884,7 @@ const apothIcons = {
             name: "Kantele - note A",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Kantele___Note_A"
+            wiki_url: "https://noita.wiki.gg/wiki/Kantele_-_Note_A"
         },
         {
             id: "KANTELE_D",
@@ -6892,7 +6892,7 @@ const apothIcons = {
             name: "Kantele - note D",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Kantele___Note_D"
+            wiki_url: "https://noita.wiki.gg/wiki/Kantele_-_Note_D"
         },
         {
             id: "KANTELE_DIS",
@@ -6900,7 +6900,7 @@ const apothIcons = {
             name: "Kantele - note D#",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Kantele___Note_D#"
+            wiki_url: "https://noita.wiki.gg/wiki/Kantele_-_Note_D#"
         },
         {
             id: "KANTELE_E",
@@ -6908,7 +6908,7 @@ const apothIcons = {
             name: "Kantele - note E",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Kantele___Note_E"
+            wiki_url: "https://noita.wiki.gg/wiki/Kantele_-_Note_E"
         },
         {
             id: "KANTELE_G",
@@ -6916,7 +6916,7 @@ const apothIcons = {
             name: "Kantele - note G",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Kantele___Note_G"
+            wiki_url: "https://noita.wiki.gg/wiki/Kantele_-_Note_G"
         },
         {
             id: "RANDOM_SPELL",
@@ -6956,7 +6956,7 @@ const apothIcons = {
             name: "Random Homing",
             description: "Cast one random homing spell     ",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Random_Homing"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Random_Homing"
         },
         {
             id: "APOTHEOSIS_RANDOM_BURST",
@@ -6964,7 +6964,7 @@ const apothIcons = {
             name: "Random Cast",
             description: "Multicasts between 4 to 8 random spells     ",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Random_Cast"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Random_Cast"
         },
         {
             id: "DRAW_RANDOM",
@@ -7044,7 +7044,7 @@ const apothIcons = {
             name: "Spells to Cats",
             description: "Transforms every projectile currently in the air into Cats; a cute idea",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Spells_To_Cats"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Spells_To_Cats"
         },
         {
             id: "APOTHEOSIS_SPELLS_TO_CURSOR",
@@ -7052,7 +7052,7 @@ const apothIcons = {
             name: "Redirect",
             description: "Redirects all airborne projectiles towards your mouse cursor at a high speed",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Redirect"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Redirect"
         },
         {
             id: "ALL_SPELLS",
@@ -7140,7 +7140,7 @@ const apothIcons = {
             name: "Burst Larpa",
             description: "Make a projectile cast a burst of copies after a short delay",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Burst_Larpa"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Burst_Larpa"
         },
         {
             id: "ALPHA",
@@ -7204,7 +7204,7 @@ const apothIcons = {
             name: "Chi",
             description: "Copies every utility-type spell in the wand when cast",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Chi"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Chi"
         },
         {
             id: "APOTHEOSIS_KAPPA",
@@ -7212,7 +7212,7 @@ const apothIcons = {
             name: "Kappa",
             description: "Copies every alt fire-type spell in the wand when cast",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Kappa"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kappa"
         },
         {
             id: "ZETA",
@@ -7276,7 +7276,7 @@ const apothIcons = {
             name: "Kaivossade",
             description: "Rapidly excavate a large amount of terrain",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoklEQVR4nGP8//8/AzUBE1VNY2BgYEHm9DlINjAwMNSTYU5j0YHnDSgGhpkqNzAwcJFlmAX3t3oGBgZUAy24v9Wf+MrFwMDAwLjq9F2iTQszVUaJBNqGITroc5DEKVd04DnpBuLShA9Q3cujBo4aSAZASdgW3N8aT3zl+h9mqkyqOY0YBp74ytVowf2t3oL7G0kmnfjK1XjiK1cDjM846EtsALeIK65H2BliAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Kaivossade"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kaivossade"
         },
         {
             id: "RESET",
@@ -7292,7 +7292,7 @@ const apothIcons = {
             name: "Requirement - Enemies",
             description: "The next spell is skipped if there are less than 15 enemies nearby",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Enemies"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Enemies"
         },
         {
             id: "IF_PROJECTILE",
@@ -7300,7 +7300,7 @@ const apothIcons = {
             name: "Requirement - Projectile Spells",
             description: "The next spell is skipped if there are less than 20 projectiles nearby",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Projectile_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Projectile_Spells"
         },
         {
             id: "IF_HP",
@@ -7308,7 +7308,7 @@ const apothIcons = {
             name: "Requirement - Low Health",
             description: "The next spell is skipped if you have more than 25% health left",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Low_Health"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Low_Health"
         },
         {
             id: "IF_HALF",
@@ -7316,7 +7316,7 @@ const apothIcons = {
             name: "Requirement - Every Other",
             description: "The next spell is skipped every other time this spell is cast",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Every_Other"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Every_Other"
         },
         {
             id: "IF_END",
@@ -7324,7 +7324,7 @@ const apothIcons = {
             name: "Requirement - Endpoint",
             description: "Any Requirement spells before this will skip all spells between them and this spell",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Endpoint"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Endpoint"
         },
         {
             id: "IF_ELSE",
@@ -7332,7 +7332,7 @@ const apothIcons = {
             name: "Requirement - Otherwise",
             description: "If a Requirement spell before this succeeds, the next spell is skipped",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Otherwise"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Otherwise"
         },
         {
             id: "COLOUR_RED",
@@ -7412,7 +7412,7 @@ const apothIcons = {
             name: "Mass Materia Conversion",
             description: "Cave quid volunt",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoklEQVR4nGP8//8/AzUBE1VNY2BgYEHm9DlINjAwMNSTYU5j0YHnDSgGhpkqNzAwcJFlmAX3t3oGBgZUAy24v9Wf+MrFwMDAwLjq9F2iTQszVUaJBNqGITroc5DEKVd04DnpBuLShA9Q3cujBo4aSAZASdgW3N8aT3zl+h9mqkyqOY0YBp74ytVowf2t3oL7G0kmnfjK1XjiK1cDjM846EtsALeIK65H2BliAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Mass_Materia_Conversion"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mass_Materia_Conversion"
         },
         {
             id: "APOTHEOSIS_BUNGAL_SHIFT",
@@ -7420,7 +7420,7 @@ const apothIcons = {
             name: "Fungal Shift",
             description: "Cave quid volunt",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoklEQVR4nGP8//8/AzUBE1VNY2BgYEHm9DlINjAwMNSTYU5j0YHnDSgGhpkqNzAwcJFlmAX3t3oGBgZUAy24v9Wf+MrFwMDAwLjq9F2iTQszVUaJBNqGITroc5DEKVd04DnpBuLShA9Q3cujBo4aSAZASdgW3N8aT3zl+h9mqkyqOY0YBp74ytVowf2t3oL7G0kmnfjK1XjiK1cDjM846EtsALeIK65H2BliAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Fungal_Shift"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Fungal_Shift"
         },
         {
             id: "APOTHEOSIS_BUNGAL_SHIFT_SPAM",
@@ -7428,7 +7428,7 @@ const apothIcons = {
             name: "Hyper Fungal Shift",
             description: "Insane....",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoklEQVR4nGP8//8/AzUBE1VNY2BgYEHm9DlINjAwMNSTYU5j0YHnDSgGhpkqNzAwcJFlmAX3t3oGBgZUAy24v9Wf+MrFwMDAwLjq9F2iTQszVUaJBNqGITroc5DEKVd04DnpBuLShA9Q3cujBo4aSAZASdgW3N8aT3zl+h9mqkyqOY0YBp74ytVowf2t3oL7G0kmnfjK1XjiK1cDjM846EtsALeIK65H2BliAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Hyper_Fungal_Shift"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyper_Fungal_Shift"
         },
         {
             id: "APOTHEOSIS_RAT_BITE",
@@ -7436,7 +7436,7 @@ const apothIcons = {
             name: "Bite",
             description: "...Magic?",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Bite"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Bite"
         },
         {
             id: "APOTHEOSIS_RAT_BITE_CRIT",
@@ -7444,7 +7444,7 @@ const apothIcons = {
             name: "Bloody Bite",
             description: "Magic...............................?",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Bloody_Bite"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Bloody_Bite"
         },
         {
             id: "APOTHEOSIS_MASS_STATUS_DRUNK",
@@ -7452,7 +7452,7 @@ const apothIcons = {
             name: "Mass Drunk",
             description: "Affects every creature in a large radius with a drunken curse",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Mass_Drunk"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mass_Drunk"
         },
         {
             id: "APOTHEOSIS_MASS_STATUS_WET",
@@ -7460,7 +7460,7 @@ const apothIcons = {
             name: "Mass Wet",
             description: "Soaks every creature in a large radius with a magical wetness",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Mass_Wet"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mass_Wet"
         },
         {
             id: "APOTHEOSIS_MASS_STATUS_FIRE",
@@ -7468,7 +7468,7 @@ const apothIcons = {
             name: "Mass Fire",
             description: "Burns every creature in a large radius with a magical fire",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Mass_Fire"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mass_Fire"
         },
         {
             id: "APOTHEOSIS_MASS_STATUS_URINE",
@@ -7476,7 +7476,7 @@ const apothIcons = {
             name: "Mass Jarate",
             description: "Douses every creature in a large radius with a magical jarate.",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Mass_Jarate"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mass_Jarate"
         },
         {
             id: "APOTHEOSIS_MASS_STATUS_POLYMORPH",
@@ -7484,7 +7484,7 @@ const apothIcons = {
             name: "Mass Polymorph",
             description: "Afflicts every creature in a large radius with a magical polymorphine",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Mass_Polymorph"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mass_Polymorph"
         },
         {
             id: "APOTHEOSIS_MASS_STATUS_POLYMORPH_INTENSE",
@@ -7492,7 +7492,7 @@ const apothIcons = {
             name: "Mass Chaotic Polymorph",
             description: "Afflicts every creature in a large radius with a magical chaotic polymorphine",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Mass_Chaotic_Polymorph"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mass_Chaotic_Polymorph"
         },
         {
             id: "APOTHEOSIS_MASS_DRY",
@@ -7500,7 +7500,7 @@ const apothIcons = {
             name: "Mass Infiltration",
             description: "Freezes the stains on every creature in a large radius with a magical spell",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Mass_Infiltration"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mass_Infiltration"
         },
         {
             id: "APOTHEOSIS_ALT_FIRE_TELEPORT",
@@ -7508,7 +7508,7 @@ const apothIcons = {
             name: "Alt Fire Teleport Bolt",
             description: "Right Click to fire a magical bolt that moves you wherever it ends up flying",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAqklEQVR4nGP8//8/AzUBE1VNY2BgYIEx0ieVMuyet6mBgYGhngxzGu9duNnAwMDAwAjzsqSSDNmGcfJx19+7cJMRxYWcfNz13z99ZWBgYGD0K4gk2rRNE5ajRALtwhAb2D1vE0451yQ/0g3EpQkfoLqXRw0cNZAMgJKwOfm4G79/+vp/04TlpJrTiGHg909fGzn5uOs5+bhJMun7p6+N3z99bYDxGQd9iQ0AoiczZoxCV3EAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Alt_Fire_Teleport_Bolt"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alt_Fire_Teleport_Bolt"
         },
         {
             id: "APOTHEOSIS_ALT_FIRE_TELEPORT_SHORT",
@@ -7516,7 +7516,7 @@ const apothIcons = {
             name: "Alt Fire Small Teleport Bolt",
             description: "Right Click to fire a shortlived magical bolt that moves you wherever it ends up flying",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAqklEQVR4nGP8//8/AzUBE1VNY2BgYIEx0ieVMuyet6mBgYGhngxzGu9duNnAwMDAwAjzsqSSDNmGcfJx19+7cJMRxYWcfNz13z99ZWBgYGD0K4gk2rRNE5ajRALtwhAb2D1vE0451yQ/0g3EpQkfoLqXRw0cNZAMgJKwOfm4G79/+vp/04TlpJrTiGHg909fGzn5uOs5+bhJMun7p6+N3z99bYDxGQd9iQ0AoiczZoxCV3EAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Alt_Fire_Small_Teleport_Bolt"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alt_Fire_Small_Teleport_Bolt"
         },
         {
             id: "APOTHEOSIS_ALT_FIRE_SWAPPER",
@@ -7524,7 +7524,7 @@ const apothIcons = {
             name: "Alt Fire Swapper Bolt",
             description: "Right Click to fire a projectile that swaps your position with the target's",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAqklEQVR4nGP8//8/AzUBE1VNY2BgYIEx0ieVMuyet6mBgYGhngxzGu9duNnAwMDAwAjzsqSSDNmGcfJx19+7cJMRxYWcfNz13z99ZWBgYGD0K4gk2rRNE5ajRALtwhAb2D1vE0451yQ/0g3EpQkfoLqXRw0cNZAMgJKwOfm4G79/+vp/04TlpJrTiGHg909fGzn5uOs5+bhJMun7p6+N3z99bYDxGQd9iQ0AoiczZoxCV3EAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Alt_Fire_Swapper_Bolt"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alt_Fire_Swapper_Bolt"
         },
         {
             id: "APOTHEOSIS_ALT_FIRE_COV",
@@ -7532,7 +7532,7 @@ const apothIcons = {
             name: "Alt Fire Circle of Vigour",
             description: "Right Click to cast a field of regenerative magic",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAqklEQVR4nGP8//8/AzUBE1VNY2BgYIEx0ieVMuyet6mBgYGhngxzGu9duNnAwMDAwAjzsqSSDNmGcfJx19+7cJMRxYWcfNz13z99ZWBgYGD0K4gk2rRNE5ajRALtwhAb2D1vE0451yQ/0g3EpQkfoLqXRw0cNZAMgJKwOfm4G79/+vp/04TlpJrTiGHg909fGzn5uOs5+bhJMun7p6+N3z99bYDxGQd9iQ0AoiczZoxCV3EAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Alt_Fire_Circle_of_Vigour"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alt_Fire_Circle_of_Vigour"
         },
         {
             id: "APOTHEOSIS_ALT_FIRE_TARGETTER",
@@ -7540,7 +7540,7 @@ const apothIcons = {
             name: "Alt Fire Targetter",
             description: "Right Click to fire a projectile which causes irresistible hatred towards anything it hits",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAqklEQVR4nGP8//8/AzUBE1VNY2BgYIEx0ieVMuyet6mBgYGhngxzGu9duNnAwMDAwAjzsqSSDNmGcfJx19+7cJMRxYWcfNz13z99ZWBgYGD0K4gk2rRNE5ajRALtwhAb2D1vE0451yQ/0g3EpQkfoLqXRw0cNZAMgJKwOfm4G79/+vp/04TlpJrTiGHg909fGzn5uOs5+bhJMun7p6+N3z99bYDxGQd9iQ0AoiczZoxCV3EAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Alt_Fire_Targetter"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alt_Fire_Targetter"
         },
         {
             id: "APOTHEOSIS_PORTAL_LUKKI_RED_PORTAL",
@@ -7548,7 +7548,7 @@ const apothIcons = {
             name: "Summon Red Portal",
             description: "Summons a red tinted portal to where it is focused, Right Click to mark a location for the portal to focus on.",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Summon_Red_Portal"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Summon_Red_Portal"
         },
         {
             id: "APOTHEOSIS_PORTAL_LUKKI_GREEN_PORTAL",
@@ -7556,7 +7556,7 @@ const apothIcons = {
             name: "Summon Green Portal",
             description: "Summons a green tinted portal to where it is focused, Right Click to mark a location for the portal to focus on.",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Summon_Green_Portal"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Summon_Green_Portal"
         },
         {
             id: "APOTHEOSIS_PORTAL_LUKKI_BLUE_PORTAL",
@@ -7564,7 +7564,7 @@ const apothIcons = {
             name: "Summon Blue Portal",
             description: "Summons a blue tinted portal to where it is focused, Right Click to mark a location for the portal to focus on.",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Summon_Blue_Portal"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Summon_Blue_Portal"
         },
         {
             id: "APOTHEOSIS_KNOWLEDGE_OF_KINGS",
@@ -7572,7 +7572,7 @@ const apothIcons = {
             name: "The Knowledge of Kings",
             description: "Casting this spell causes something irreversibly permanent to occur",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/The_Knowledge_of_Kings"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/The_Knowledge_of_Kings"
         },
         {
             id: "APOTHEOSIS_UPGRADE_ALWAYSCAST",
@@ -7580,7 +7580,7 @@ const apothIcons = {
             name: "Spell Infusion",
             description: "The first spell slotted in your wand will be applied to the wand as an always cast. Spell is voided upon use!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Spell_Infusion"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Spell_Infusion"
         }
     ]
 }

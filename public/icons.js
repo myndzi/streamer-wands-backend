@@ -1791,7 +1791,7 @@ const icons = {
             name: "All-Seeing Eye",
             description: "You can see everywhere.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/All_Seeing_Eye"
+            wiki_url: "https://noita.wiki.gg/wiki/All-Seeing_Eye"
         },
         {
             id: "LEVITATION_TRAIL",
@@ -2463,7 +2463,7 @@ const icons = {
             name: "Kills to mana",
             description: "Every time an enemy near you dies, you release mana-recharging liquid.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kills_to_Mana"
+            wiki_url: "https://noita.wiki.gg/wiki/Kills_To_Mana"
         },
         {
             id: "ANGRY_LEVITATION",
@@ -2471,7 +2471,7 @@ const icons = {
             name: "Rage-fueled Levitation",
             description: "Killing an enemy makes you replenish some of your levitation power.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Rage_Fueled_Levitation"
+            wiki_url: "https://noita.wiki.gg/wiki/Rage-fueled_Levitation"
         },
         {
             id: "LASER_AIM",
@@ -3513,7 +3513,7 @@ const icons = {
             name: "Long-distance cast",
             description: "Casts a spell some distance away from the caster",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Long_Distance_Cast"
+            wiki_url: "https://noita.wiki.gg/wiki/Long-Distance_Cast"
         },
         {
             id: "TELEPORT_CAST",
@@ -3857,7 +3857,7 @@ const icons = {
             name: "Formation - behind your back",
             description: "Casts two spells: one ahead of and one behind the caster",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Behind_Your_Back"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Behind_Your_Back"
         },
         {
             id: "Y_SHAPE",
@@ -3865,7 +3865,7 @@ const icons = {
             name: "Formation - bifurcated",
             description: "Casts 2 spells in a bifurcated pattern",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Bifurcated"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Bifurcated"
         },
         {
             id: "T_SHAPE",
@@ -3873,7 +3873,7 @@ const icons = {
             name: "Formation - above and below",
             description: "Casts 3 spells - ahead, above and below the caster",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Above_And_Below"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Above_And_Below"
         },
         {
             id: "W_SHAPE",
@@ -3881,7 +3881,7 @@ const icons = {
             name: "Formation - trifurcated",
             description: "Casts 3 spells in a trifurcated pattern",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Trifurcated"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Trifurcated"
         },
         {
             id: "CIRCLE_SHAPE",
@@ -3889,7 +3889,7 @@ const icons = {
             name: "Formation - hexagon",
             description: "Casts 6 spells in a hexagonal pattern",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Hexagon"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Hexagon"
         },
         {
             id: "PENTAGRAM_SHAPE",
@@ -3897,7 +3897,7 @@ const icons = {
             name: "Formation - pentagon",
             description: "Casts 5 spells in a pentagonal pattern",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
-            wiki_url: "https://noita.wiki.gg/wiki/Formation___Pentagon"
+            wiki_url: "https://noita.wiki.gg/wiki/Formation_-_Pentagon"
         },
         {
             id: "I_SHOT",
@@ -4097,7 +4097,7 @@ const icons = {
             name: "Anti-gravity",
             description: "Applies a lifting force to a projectile",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Anti_Gravity"
+            wiki_url: "https://noita.wiki.gg/wiki/Anti-Gravity"
         },
         {
             id: "SINEWAVE",
@@ -4121,7 +4121,7 @@ const icons = {
             name: "Ping-pong path",
             description: "Makes a projectile fly back and forth",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Ping_Pong_Path"
+            wiki_url: "https://noita.wiki.gg/wiki/Ping-Pong_Path"
         },
         {
             id: "AVOIDING_ARC",
@@ -4249,7 +4249,7 @@ const icons = {
             name: "Short-range Homing",
             description: "A projectile flies towards targets when near them",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Short_Range_Homing"
+            wiki_url: "https://noita.wiki.gg/wiki/Short-Range_Homing"
         },
         {
             id: "HOMING_ROTATE",
@@ -4273,7 +4273,7 @@ const icons = {
             name: "Auto-Aim",
             description: "Makes a projectile turns towards the nearest visible enemy",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Auto_Aim"
+            wiki_url: "https://noita.wiki.gg/wiki/Auto-Aim"
         },
         {
             id: "HOMING_ACCELERATING",
@@ -5041,7 +5041,7 @@ const icons = {
             name: "Two-way fireball thrower",
             description: "Makes a projectile fire small fireballs perpendicular to its trajectory",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Two_Way_Fireball_Thrower"
+            wiki_url: "https://noita.wiki.gg/wiki/Two-Way_Fireball_Thrower"
         },
         {
             id: "FIREBALL_RAY_ENEMY",
@@ -5089,7 +5089,7 @@ const icons = {
             name: "Weakening Curse - Projectiles",
             description: "Target hit by a projectile takes 25% extra projectile damage for a time",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse___Projectiles"
+            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse_-_Projectiles"
         },
         {
             id: "CURSE_WITHER_EXPLOSION",
@@ -5097,7 +5097,7 @@ const icons = {
             name: "Weakening Curse - Explosives",
             description: "Target hit by a projectile takes 25% extra explosion damage for a time",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse___Explosives"
+            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse_-_Explosives"
         },
         {
             id: "CURSE_WITHER_MELEE",
@@ -5105,7 +5105,7 @@ const icons = {
             name: "Weakening Curse - Melee",
             description: "Target hit by a projectile takes 25% extra melee damage for a time",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse___Melee"
+            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse_-_Melee"
         },
         {
             id: "CURSE_WITHER_ELECTRICITY",
@@ -5113,7 +5113,7 @@ const icons = {
             name: "Weakening Curse - Electricity",
             description: "Target hit by a projectile takes 25% extra electricity damage for a time",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse___Electricity"
+            wiki_url: "https://noita.wiki.gg/wiki/Weakening_Curse_-_Electricity"
         },
         {
             id: "ORBIT_DISCS",
@@ -5209,7 +5209,7 @@ const icons = {
             name: "All-seeing eye",
             description: "See into the unexplored. But not everywhere...",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/All_Seeing_Eye"
+            wiki_url: "https://noita.wiki.gg/wiki/All-Seeing_Eye"
         },
         {
             id: "UNSTABLE_GUNPOWDER",
@@ -5329,7 +5329,7 @@ const icons = {
             name: "Ocarina - note A",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_A"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_A"
         },
         {
             id: "OCARINA_B",
@@ -5337,7 +5337,7 @@ const icons = {
             name: "Ocarina - note B",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_B"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_B"
         },
         {
             id: "OCARINA_C",
@@ -5345,7 +5345,7 @@ const icons = {
             name: "Ocarina - note C",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_C"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_C"
         },
         {
             id: "OCARINA_D",
@@ -5353,7 +5353,7 @@ const icons = {
             name: "Ocarina - note D",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_D"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_D"
         },
         {
             id: "OCARINA_E",
@@ -5361,7 +5361,7 @@ const icons = {
             name: "Ocarina - note E",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_E"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_E"
         },
         {
             id: "OCARINA_F",
@@ -5369,7 +5369,7 @@ const icons = {
             name: "Ocarina - note F",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_F"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_F"
         },
         {
             id: "OCARINA_GSHARP",
@@ -5377,7 +5377,7 @@ const icons = {
             name: "Ocarina - note G#",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_G#"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_G#"
         },
         {
             id: "OCARINA_A2",
@@ -5385,7 +5385,7 @@ const icons = {
             name: "Ocarina - note A2",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Ocarina___Note_A2"
+            wiki_url: "https://noita.wiki.gg/wiki/Ocarina_-_Note_A2"
         },
         {
             id: "KANTELE_A",
@@ -5393,7 +5393,7 @@ const icons = {
             name: "Kantele - note A",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Kantele___Note_A"
+            wiki_url: "https://noita.wiki.gg/wiki/Kantele_-_Note_A"
         },
         {
             id: "KANTELE_D",
@@ -5401,7 +5401,7 @@ const icons = {
             name: "Kantele - note D",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Kantele___Note_D"
+            wiki_url: "https://noita.wiki.gg/wiki/Kantele_-_Note_D"
         },
         {
             id: "KANTELE_DIS",
@@ -5409,7 +5409,7 @@ const icons = {
             name: "Kantele - note D#",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Kantele___Note_D#"
+            wiki_url: "https://noita.wiki.gg/wiki/Kantele_-_Note_D#"
         },
         {
             id: "KANTELE_E",
@@ -5417,7 +5417,7 @@ const icons = {
             name: "Kantele - note E",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Kantele___Note_E"
+            wiki_url: "https://noita.wiki.gg/wiki/Kantele_-_Note_E"
         },
         {
             id: "KANTELE_G",
@@ -5425,7 +5425,7 @@ const icons = {
             name: "Kantele - note G",
             description: "Music for your ears!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Kantele___Note_G"
+            wiki_url: "https://noita.wiki.gg/wiki/Kantele_-_Note_G"
         },
         {
             id: "RANDOM_SPELL",
@@ -5737,7 +5737,7 @@ const icons = {
             name: "Requirement - Enemies",
             description: "The next spell is skipped if there are less than 15 enemies nearby",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Enemies"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Enemies"
         },
         {
             id: "IF_PROJECTILE",
@@ -5745,7 +5745,7 @@ const icons = {
             name: "Requirement - Projectile Spells",
             description: "The next spell is skipped if there are less than 20 projectiles nearby",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Projectile_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Projectile_Spells"
         },
         {
             id: "IF_HP",
@@ -5753,7 +5753,7 @@ const icons = {
             name: "Requirement - Low Health",
             description: "The next spell is skipped if you have more than 25% health left",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Low_Health"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Low_Health"
         },
         {
             id: "IF_HALF",
@@ -5761,7 +5761,7 @@ const icons = {
             name: "Requirement - Every Other",
             description: "The next spell is skipped every other time this spell is cast",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Every_Other"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Every_Other"
         },
         {
             id: "IF_END",
@@ -5769,7 +5769,7 @@ const icons = {
             name: "Requirement - Endpoint",
             description: "Any Requirement spells before this will skip all spells between them and this spell",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Endpoint"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Endpoint"
         },
         {
             id: "IF_ELSE",
@@ -5777,7 +5777,7 @@ const icons = {
             name: "Requirement - Otherwise",
             description: "If a Requirement spell before this succeeds, the next spell is skipped",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Requirement___Otherwise"
+            wiki_url: "https://noita.wiki.gg/wiki/Requirement_-_Otherwise"
         },
         {
             id: "COLOUR_RED",

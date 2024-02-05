@@ -811,12 +811,20 @@ const IconComp = Vue.component('icon-comp', {
 })
 
 const IconTooltip = Vue.component('icon-tooltip', {
+    computed: {
+        desc() {
+            if (this.icon.description) {
+                return this.icon.description.replace(/\\n/g, "<br>")
+            }
+            return null
+        }
+    },
     props: ['icon', 'iName'],
     template: `<div class="tooltip">
         <p class="tooltip-title">{{ icon.name }}</p>
         <p class="tooltip-wiki">({{ icon.id }})</p>
         <div class="desc-container">
-            <p v-if="icon.description" class="tooltip-description">{{ icon.description }}</p>
+            <p v-if="icon.description" class="tooltip-description" v-html="desc"></p>
             <img :src="'data:image/png;base64,' + icon.image"/>
         </div>
     </div>`
@@ -891,7 +899,7 @@ const SpellInventory = Vue.component('spell-inv', {
         <spell-slot v-for="(v, index) in slots" :spell="slots[index]" :key="index"></spell-slot>
         <p v-if="!seedInfo">No current run</p>
         <a v-else-if="seedInfo.url" :href="seedInfo.url" target="_blank" rel="noopener noreferrer">
-            <p>Seed: {{ seedInfo.seed }}</p>
+            <p>{{ seedInfo.seed }}</p>
         </a>
         <p v-else>{{ seedInfo.seed }} No seed-tool for apotheosis</p>
     </div>`,
