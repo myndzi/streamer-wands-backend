@@ -45,28 +45,22 @@ app.use(
 app.use(passport.initialize())
 app.use(passport.session())
 
-const mtime = {
-    styleCss: statSync(__dirname, 'public', 'style.css').mtime.getTime(),
-    spellData: statSync(__dirname, 'public', 'spellData.js').mtime.getTime(),
-    spellDataMain: statSync(
-        __dirname,
-        'public',
-        'spellDataMain.js',
-    ).mtime.getTime(),
-    spellDataApoth: statSync(
-        __dirname,
-        'public',
-        'spellDataApoth.js',
-    ).mtime.getTime(),
-    wandSprites: statSync(
-        __dirname,
-        'public',
-        'wandSprites.js',
-    ).mtime.getTime(),
-    icons: statSync(__dirname, 'public', 'icons.js').mtime.getTime(),
-    itemData: statSync(__dirname, 'public', 'itemData.js').mtime.getTime(),
-    apothIcons: statSync(__dirname, 'public', 'apothIcons.js').mtime.getTime(),
-}
+const cacheBustFiles = [
+    ['styleCss', 'style.css'],
+    ['spellData', 'spellData.js'],
+    ['spellDataMain', 'spellDataMain.js'],
+    ['spellDataApoth', 'spellDataApoth.js'],
+    ['wandSprites', 'wandSprites.js'],
+    ['icons', 'icons.js'],
+    ['itemData', 'itemData.js'],
+    ['apothIcons', 'apothIcons.js'],
+]
+const mtime = Object.fromEntries(
+    cacheBustFiles.map(([key, filename]) => [
+        key,
+        statSync(__dirname, 'public', filename).mtime.getTime(),
+    ]),
+)
 app.locals = {
     domain: process.env.DOMAIN,
     title: 'Streamer Wands',
