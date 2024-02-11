@@ -36,7 +36,7 @@ const getReleases = () => {
     const now = Date.now()
     const timeToNext = lastUpdated + updateFrequency - now
     if (lastUpdated === null || timeToNext < 0) {
-        console.log(`updating release list: timeToNext=${timeToNext}`)
+        console.log(`updating release list: (last updated ${-timeToNext} seconds ago)`)
         lastUpdated = now
         releaseList = new Promise(async (resolve) => {
             const paths = await fs.readdir(releaseDir, { withFileTypes: true })
@@ -63,27 +63,23 @@ const getJWT = (user) => {
     return JWT.sign(user, process.env.JWT_SECRET)
 }
 
-router.get(
-    '/release/:relpath',
-    authController.isLoggedIn,
-    async (req, res, next) => {
-        try {
-            const relpath = req.params.relpath
-            const jwt = getJWT(req.user)
+router.get('/release/:relpath', authController.isLoggedIn, async (req, res, next) => {
+    try {
+        const relpath = req.params.relpath
+        const jwt = getJWT(req.user)
 
-            const filename = PATH.basename(relpath)
-            const stream = await getZipStream(relpath, jwt)
+        const filename = PATH.basename(relpath)
+        const stream = await getZipStream(relpath, jwt)
 
-            res.writeHead(200, {
-                'Content-Type': 'application/zip',
-                'Content-Disposition': `attachment; filename=${filename}`,
-            })
-            stream.pipe(res)
-        } catch (err) {
-            next(err)
-        }
-    },
-)
+        res.writeHead(200, {
+            'Content-Type': 'application/zip',
+            'Content-Disposition': `attachment; filename=${filename}`,
+        })
+        stream.pipe(res)
+    } catch (err) {
+        next(err)
+    }
+})
 
 router.get('/', async (req, res, next) => {
     try {

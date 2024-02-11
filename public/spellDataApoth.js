@@ -1,4 +1,4 @@
-const spellData = {
+const spellDataApoth = {
     BOMB: {
         name: "Bomb",
         description: "Summons a bomb that destroys ground very efficiently",
@@ -11,6 +11,19 @@ const spellData = {
             explosion_radius: 60.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAhElEQVR4nGNgGDCQ7mRZl+hLgmoIoy7RlyhtcA2YgBGNr6FtKSmtBGE/f3rvxtXjaApYcKnW1LHQ1LFgYGBA08OEpvr503sQ1RBBJ/coDW1L7BogquE2IItj14AMrl85gcbA7gcGBga4JZhK0W2AuB6TAedCAEqwovkP4iu0UCI5HmgPAB2AOuMbGMUUAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_BOMB_GIGA: {
+        name: "Giga Bomb",
+        description: "Explosion!!",
+        meta: {
+            action_type: 0,
+            action_max_uses: 3,
+            action_mana_drain: 50,
+            fire_rate_wait: 140,
+            action_explosion: 10.0,
+            explosion_radius: 120.0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzklEQVR4nGNgoDVId7L8X5fo+x+XPCMhzTP3HWdkYGBgQDakaf5mvPpQDCCkBsMkDW2IJklpJRTxz58+MJw5sRVDPYoAumZNHQu43PUrJ7AawohLMzKAGYTNECZkheiakTXC+Lx8AihqUAx4/vQeiiRMIzobGbDgsp1YAHcBzHZ0VzAwYHoFqwEMDJCoQqZhAFkjuhyKAV8+v2Pg4RVi+PL5HcPzp/dQFGNzGQMDjnSADnh4hRh4+QQYnj+9x3Dj6nHs6YCQIQwMDBiaqQIAU8thOv51jrkAAAAASUVORK5CYII="
     },
     LIGHT_BULLET: {
         name: "Spark bolt",
@@ -330,7 +343,7 @@ const spellData = {
         description: "A more powerful version of Spitter Bolt",
         meta: {
             action_type: 0,
-            action_mana_drain: 25,
+            action_mana_drain: 10,
             fire_rate_wait: -2,
             action_speed: 700,
             action_projectile: 0.5,
@@ -343,7 +356,7 @@ const spellData = {
         description: "A more powerful version of Spitter Bolt that casts another spell after a timer runs out",
         meta: {
             action_type: 0,
-            action_mana_drain: 30,
+            action_mana_drain: 15,
             fire_rate_wait: -2,
             spread_degrees: 7.5
         },
@@ -354,7 +367,7 @@ const spellData = {
         description: "The most powerful version of Spitter Bolt",
         meta: {
             action_type: 0,
-            action_mana_drain: 40,
+            action_mana_drain: 15,
             fire_rate_wait: -4,
             action_speed: 900,
             action_projectile: 0.6,
@@ -367,7 +380,7 @@ const spellData = {
         description: "The most powerful version of Spitter Bolt that casts another spell after a timer runs out",
         meta: {
             action_type: 0,
-            action_mana_drain: 45,
+            action_mana_drain: 20,
             fire_rate_wait: -4,
             spread_degrees: 9.0
         },
@@ -473,6 +486,17 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVR4nGNgGAWMuCRM29T/SxgKMzAwMDC8OP+W4XTVTaxqmZA1YNPMwMDAIGEojCGPYoBpm/p/mA3Imj3MZBk8zGQxDDlddZMRxmaCSSLbBtMMA8iGoKuDe4FcwMTAAAkkGICxd5x6DBeDsbGpg4csrnBA1oAsD2NTHI2jgIEBADN0RPocImTTAAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_RUBBER_BALL_TRIGGER: {
+        name: "Bouncing Burst with Expiration Trigger",
+        description: "A very bouncy projectile that casts another spell upon expiration",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 10,
+            fire_rate_wait: -2,
+            spread_degrees: -1.0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8klEQVR4nO2SPwrCMBTGv3RzFpzapYsOLg6l0MEDuEmhJ/AAgks9gasHcHArlHaVzpLNgOtz6eJW8AxxeiG1SgVXPwj88v58eSEBfpSwN1Q3mnnij0S3vCvHbpaKAABSUcusV1Q3ehou9DRc6Ff+agKpCEV2bCWK7AipCFWU6t046Z/mkJ/N6VQ3+pCfdRWlZtkmNjuvgfUmNaaBFyPwYgDAbOibuu0tF8wOJ1fJXEhFcPcnSEVYloOWEdexmM0rAMAqmQsAcPen3iu3rnB91CbAfLmXJsb8rs58lt040dtbLpjtcbnBzjN//G22id38V1dP2N2FmScgwK4AAAAASUVORK5CYII="
+    },
     ARROW: {
         name: "Arrow",
         description: "Summons an arrow",
@@ -501,6 +525,21 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGklEQVR4nL2SP2rDMBjFXzsmEDoEH8BejCk9QYdqiLPmGh4y9gSlBygdBA2UnqAEOkUZRCCDM2VzvUiQJZTaQ9AJOlQ2iuSqgULfIvH4+H1/gT/qrMtknI4BxIZVpiRbnARgnE4AXA8GF8PGU+pQA1inJJt7ATrzKAqT0A4UspAAlnYl51ZcbGYGEDQf7cdWvAMwFfR7wdCEdMkH+LTekwClHpgj7ZdegB7QWshCVvVeAUBV75Ue4K5rlU4LelVLpQ5bnXmL7+k/+lppVnikj+rdKZlxOhW71SvjdNpWwDgdX13ePNiQPN84iaIwIf1ekERhQlpASrLF7OkZP52rKSELnucbCFnw32Jxd3/rtAAA87eX1vfdwf/oC2KebbJdLI5KAAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_POLLEN_TRIGGER: {
+        name: "Pollen with Trigger",
+        description: "A small, floating projectile that casts another spell upon collision",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 20,
+            fire_rate_wait: 2,
+            action_speed: 200,
+            action_projectile: 0.2,
+            action_explosion: 0.2,
+            explosion_radius: 7.0,
+            spread_degrees: 20
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdUlEQVR4nL2Sv0sCYRjHP4pLRYeDGEhI2RJyhG5CBd3g2VYu/Q8OQgRNLUG0RuFwUBD9Bf2cPIcjJLqmHMJczkokyhrEIJfIhrxD7xSHoGd6eZ73+T6f5/u+8Mdw2RMfmbHWtbi5CEx3pEuylMr2EnCbh+bDRgvAE4kBxOcnqruC4I0KgjcKxFVNWR5I0MwvtRgXoXrHc3DtpLNmlItlIGcncZvYVjPAuEigspP0n68kzYuC4PXZ1gLAAzCafnXBGc08nQRXI9N+H581P1Drhe/wIP+1uGriB77V2Xapb3OXwNDktgsofRV0AJ7dcpcHjUb9HSjZBRzP2HZ7ThC8volgJPZYKejt5idZSmX6EpghS6lTINdo1G/bk2/5dd/RbJ+csOde3u4dyKqmpI2ny2NVU9IWgaopiRlxYc8uous3jkFTobA0MuwPT4XCkiUgS6nswf4h/b5rZxjloqbrNxjlojboLlvb644VAE4vjqy8w8R/jx9dCY61XmQgrgAAAABJRU5ErkJggg=="
+    },
     LANCE: {
         name: "Glowing lance",
         description: "A magical lance that cuts through soft materials",
@@ -528,6 +567,47 @@ const spellData = {
             spread_degrees: -10
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARUlEQVR4nGNgGAXUB/8PeP3/////fxSx/////3/b8h+XHuwGQTX8P+D1H12MLENQALpB/9+2wCVIAdRzAVXDgGqxMIIAAPXdkw2ZxefEAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_HOLYORB_SHOTGUN: {
+        name: "Holy Orb Barrage",
+        description: "Casts a barrage of 7 holy orbs. Also has some magical properties...",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 50,
+            fire_rate_wait: 12,
+            action_speed: 302,
+            action_projectile: 0.25,
+            spread_degrees: 30.0
+        },
+        sprite: "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"
+    },
+    APOTHEOSIS_ELECTROSPHERE: {
+        name: "Bolt Orb",
+        description: "Cast a slow orb which zaps nearby creatures periodically",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 80,
+            fire_rate_wait: 50,
+            action_speed: 50,
+            action_projectile: 0.8,
+            action_explosion: 0.18,
+            explosion_radius: 15.0,
+            spread_degrees: 3.6
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABMUlEQVR4nK2TrU7DYBSGn5YhyK5gokkFVWSS2YYExRUgJiZmajG7hKVXUFOxq8CwhNRMdHKZKmLJxK6ALKGlB9F8pz+MQDJe86Wn532+c05P4UxZ3UCwPApAtNi045MhANH9VcvTegiWR4kWG9ybWwBmvgAQJlXabrsmmAxbEOuU2RgBvIHw/PaJ1+8RJtZJSFX2OBV3LhKtSolWpeSFyNPLh+SFSF7UcXcuwjgV06ptIM2bvUF1Plxf6CXTkaVtmRYVYAaWvRdMRxa+Y5PsS3xH+Qo2cOPRjJkveP2eJjfNyb7UWHawiB/LdgU/yRi7yg71/BRgPpVW9JrjO7aeTTVzbaiXBCBO2wMM7y6/vWt6FL3brpUcp6KD7JrNLhj9ukjd0ruL9H+r3ITA33+ms/UFxwyyvUlpF20AAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_STAR_SHOT: {
+        name: "Star Shot",
+        description: "Fire two starry projectiles with a bright light",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 40,
+            fire_rate_wait: 16,
+            action_speed: 175,
+            action_projectile: 0.4,
+            spread_degrees: 25.0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA4UlEQVR4nJVRsRHCMAz8eIKUWcF7qAobwAJ0DEDhYwx6xtCZATJAipTOnYs0TBDR2JxJHHDU2JKl1/8byAQz61w9FyoM1Iv6tRQg3drGu/dedgMkQEZEhJnN3kHNzMY5N4mIOOcmZjZRXkYmAKAKhl2VUietNZqm+WoYx3EehkHN83wmovtf+sz8FBGx1krI2/D2KJVivPcrD0JtJUMtC0R06/seALoUNEi7FLOIp7VWlsamvdUGQAvgWGDsYYtBnbLZMrY4towtGfwwCdvjl+5jEFnkwFff+CO6NCGiFwC8AW2MunqOgJt7AAAAAElFTkSuQmCC"
     },
     ROCKET: {
         name: "Magic missile",
@@ -670,6 +750,20 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR4nMVRPQvCMBS8SgcH6VAQVxfJFBDcnRz8O53b0b0/xbVDp/6CglPp0K6l4BALzRB4Dn6gTVpRKN6W9+6OdxdgLAiPUc5dyrlLwmP0lfhy3GgC02xc/C/CENG0s/rIj7OruMbqdO7lGRfCY2RtZ7DXewCASiNQ0sAJM41vG13v4unyAACQABQiCDAymbwh5y61hU9dtIVv/I1Jd7DYzXvNq7jWZpoBcMssy+D5lmUAlUbGMrUOnDCzBBgpRJAvhpQ0xqsGC8m5S49IH8v7FVcpvnV7msYJ3gAAAABJRU5ErkJggg=="
     },
+    APOTHEOSIS_AQUA_MINE: {
+        name: "Aqua Mine",
+        description: "Creates an explosive Aquamine with subtle homing properties.",
+        meta: {
+            action_type: 0,
+            action_max_uses: 20,
+            action_mana_drain: 50,
+            fire_rate_wait: 12,
+            action_speed: 100,
+            action_explosion: 4.0,
+            explosion_radius: 30.0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAByElEQVR4nLWTz2sTQRTHP7M76TaR9QdYEkUExaIIKhV6SC21HoJ3/wETj95LFdKTPbQnwT/AxKNHj1I8tLRJoWBBEMT6A+uhGz2kMJBk3dkdD2XX3Rp6Ed9pZt73fd5782bgf9rUXMtU6m1zlEbGi0q9bfwgZG15WsRn6ssq6lDAzPy6cXI2K4tlAWDFDj8IUZ0dJqoNEwOlW0K6Je4uHFQxUW0Y1dnBD8IEKNL0OBggP3aZ3t47wn6Xs1dn+fH9Q6LbbtbEUEAaYrTP6Knz+KqD0T4yf5JID3jbqGZiMptKvW16vib81YdI83TzGS+/fWbr/vM/l2ZbrC7dylZw5/GG2d/7CIBWHscvTnPt1QIndA+AMDK8mX2IVh7SLQFw+twVVhbLwoqpaev9/MTXkQIA74Eo8CmMXcpodBj93cLtRxsmdgBMvniAlcvTurcElsQeyVNwZDLCoZd4s9Y0lhxF9/cR0sFxiwy6uwjpANkJQOodwMEEjDGEQZ/ihRto5THo7lI4cz2jGQqYmV9PHHEW6ZYQ0uGYIzKZ09oE4ORs3OJ4Inz9pCy08tDKS3rebtaEWxzHydmHOx9ulXrbTM21jvxM/2y/ATx/tsJwnOODAAAAAElFTkSuQmCC"
+    },
     MINE: {
         name: "Unstable crystal",
         description: "A crystal that explodes when someone comes nearby",
@@ -795,7 +889,7 @@ const spellData = {
         description: "A pinpointed beam of light",
         meta: {
             action_type: 0,
-            action_mana_drain: 30,
+            action_mana_drain: 20,
             fire_rate_wait: -22,
             action_speed: 140,
             action_projectile: 0.39,
@@ -809,12 +903,53 @@ const spellData = {
         description: "A spectral wand is summoned that casts a huge beam of light",
         meta: {
             action_type: 0,
-            action_mana_drain: 110,
+            action_mana_drain: 80,
             fire_rate_wait: 90,
             action_speed: 1,
             action_projectile: 5.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2UlEQVR4nKWTsQ3CMBBF30UMgTISGyBBQ+kUrAIFdKGhpE5apknEFp+C2HKCQwKcZNmyvt+/89kmiX9i8YV26GQA2ZiwpqCmULyX0mUA26MFwaW1ocunGpUBXPeymgJA9xsWAScvqFeCd1/v3azDAKZXGwxQlwUAK05cWmOXT3AkIYmyQZWcJKlsUNmgGREAbwf9XMmNwQgA75yCdGvGRrKEOIMpkHefdRcpEJUcktgceAOlyhqCTN1n8i2LX2LUQnnNMnehzYD1AJ9il4uaQo/2DBBAAfBrPAF6cnGV3jPb0gAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_MUSICAL_STRIKE: {
+        name: "Musical Strike",
+        description: "Fires a powerful musical attack, careful not to lose your creativity",
+        meta: {
+            action_type: 0,
+            action_max_uses: 30,
+            action_mana_drain: 40,
+            action_speed: 140,
+            action_projectile: 1.0,
+            action_slice: 0.5,
+            action_explosion: 1.0,
+            explosion_radius: 6.0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAZ0lEQVR4nGNgGAWMuCSuZN77j01cZ7oSTj0o4P2JzxgGYBNjIso0PGDgDWBBFyDW71gNeH/i8/+VzWsYGBgYGGzk7HGKIQN4lFzJvPf/yKODcIU605UYsYnh9c+VzHv/0Z2LTWyYAQCAOjpvJp8Z4QAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_MUSICAL_STRIKE_TRIGGER: {
+        name: "Musical Strike with trigger",
+        description: "Fires a powerful musical attack, casts another spell upon collision",
+        meta: {
+            action_type: 0,
+            action_max_uses: 30,
+            action_mana_drain: 60,
+            action_speed: 140,
+            action_projectile: 1.0,
+            action_slice: 0.5,
+            action_explosion: 1.0,
+            explosion_radius: 6.0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxklEQVR4nGNgoDb4PFn8PynqmWCM7/er/zMwMDCwGFig8AkBRmTO98P+/xlkdBgYnlxh4LTdyIhLE4YBnyeL/2cxsGBgkNFByDy5wvDnwgmGh9eOo2jQma6E2+Dvh/3/f79f/f/7Yf//7098xvACNjGEZqifvx/2/4/MJ9oAGIDFArEuYEIX4M19SVTgwQALMbbgczoLusKVzWsYGBgYGGzk7HGKIQO4c69k3vt/5NFBuEKd6UqM2MTw+udK5j2M6MMmNswAABMmcxlHUS50AAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_REVERBERATION: {
+        name: "Reverberation",
+        description: "Creates a reverberating sound in the air, slicing anything nearby to pieces.",
+        meta: {
+            action_type: 1,
+            action_max_uses: 20,
+            action_mana_drain: 50,
+            fire_rate_wait: 15
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABKUlEQVR4nGNkQANW/W7/0cUYGBgYjhXuYsQmjgHaz03EMACbGAwwEWUqHkCxARj+aj838b/LvMtYFZtOmYOhHi6A7M/U3yYMIubWjNjE0A1ggWme1zObgYGBgUHUVIoh1coEqxhWL1j1u/1/ffoZXOGxwl2Mb04e/W85MR0uNuvWDAaJhOcMLxZIomjWma4EcZFVv9t/ZOe+OXn0P7LY+xOf/785eRQlKt+f+PwfJQxgGmFsmH+xicEMELTgZWRB1ny8ppyBgYGBQUJdA6cYRhgwMDAwnM5J+f/i5g24QtMpcxixiaF7QdCCFyF2OicFw58wMZh/YRphGCMM0G1Y2byGgYGBgcFGzp5BZ7oSIzYxrAZcybz3/8ijgygKsYnhshxuCLLTcYkBAPujvU82L2MHAAAAAElFTkSuQmCC"
     },
     LIGHTNING: {
         name: "Lightning bolt",
@@ -906,7 +1041,7 @@ const spellData = {
         description: "A good tool for cutting meat. Also has some magical properties...",
         meta: {
             action_type: 0,
-            action_mana_drain: 1,
+            action_mana_drain: 12,
             fire_rate_wait: 0,
             reload_time: -10,
             action_speed: 200,
@@ -939,6 +1074,18 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABW0lEQVR4nK2RMUgCURzGfyeOVkJ1OBgNLoYRDhYkDYHX5iAERbQFDUJDNUkkQUnU1iDYclmTLYGDo4PTSeFwg6SDTRqIOEg0RteQT67LEqxv+v7vvd/3Ht+DP0oCsMXZmnlMqU5XoLfRaZZ4Xooed/Y4GhjgW00ZTleAs51ZGnoWtz9CLFmm0yzhWI9eAtyvEe0XYAcQsHfiFa+i4A/vcnt9QSwJb0BIlp2hAhmA0+XWhjnAJkxDzwLgDx+i5xK9OSTLTnHG456bVmuK1jfA7Y8AoOcSX2YzLLw5xAafhcWSZaptB/l8nmrb0evACgMEPZtTIkQSi6JIoU6zxP75XdEKCj+Ob0yWFkYlLDooyJmfbhXgJPMjAJIkSfZBcD/w6mmluH2TX4TuN/Yr6jfw/YSg9eWoNUVTa4pWMdL1ipGut4yHF6MrtaZotjjGN8isoUEBDwWaA4YC/0MffLu2g87XZckAAAAASUVORK5CYII="
     },
+    APOTHEOSIS_TARGETTER: {
+        name: "Targetter",
+        description: "Fire a projectile which causes irresistible hatred towards anything it hits",
+        meta: {
+            action_type: 0,
+            action_max_uses: 8,
+            action_mana_drain: 40,
+            fire_rate_wait: 30,
+            action_speed: 350
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAvklEQVR4nLVTOQ7EIAwcVitFKVIg7QP2k3mFP+Dn8YBIKUCJUnkrIhtQSIqdipGH8YEBOhARuYq/egb7vl/G32U255wDgEAkn2kCACRmWWLEd55dqauwbZsEItE8nwORaN5EYjaidV2NmTavoIP6Ysm1zgwx9wwA3nvTo+Zadw5FT/s4jsogVzEMw8nHcbSCxHw9oIbOtLDEaLKV2Vu6CuVTPXqFlujRHui9D0SSdyIxG9Pe/6gqui3uVfUX/ADQbq7yG3md/QAAAABJRU5ErkJggg=="
+    },
     TENTACLE: {
         name: "Summon Tentacle",
         description: "Calls a terrifying appendage from another dimension",
@@ -960,6 +1107,19 @@ const spellData = {
             fire_rate_wait: 40
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAABK0lEQVR4nGNgIBEwovEz09shjOkzKwlogCuFA6x6mJBVy8hKPXx0U0ZWSkZWCqsRUBvgqhkYGKpr4iESrS0Lnzx+hmkP1AYZWamjR/fDVUN0otkDYUBtQDMeGaBZxQIRPXp0v7W1I6ZqTFOgGrCq1g6eLiBhAmF/eHHm6tpMhFxmeruXZ0Jry0Jk1dbZpw9f/758+fLD179bZ5/WDp6O8DTcEi/PBAhXQMKkI0dHQ+SLi4tLREJBR44OxDaohukzKyE+s7Z2hNvz5MIGBgYGA5+aC1taIGwUGyB6jh7dDwkZBgYGGYMABgaGC1ta4GwUDRA98nLqkED78OJMxZQrN97w7Nmz58YbnoopVz68OIMIJTRgbe24rSZeO3h6xRQGBgYVhiNX0EOJeAAADnqBgbXLOxAAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_JUMPER_CABLES: {
+        name: "Summon Jumper Cables",
+        description: "Summon a pair of electrifying vices to shock your victims",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 40,
+            fire_rate_wait: 40,
+            action_speed: 8,
+            action_electricity: 0.8,
+            spread_degrees: 30.0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABKklEQVR4nM2RsWoCQRCGv5E9QVhZjsCV1tsbEFLqMwh5hTyEr+Mb2FjYCOmu32ewkcUDCw8mTXa9O4WkSJGphn92Zv/5Bv5NLI3R/Xatx91Gl8bosO691+Nuo/vtWr33uT4CeC8KBZg4zzUGuhrAYrFQgGsMTJzvaSOAkyqVSH5QiXDSu4kYI865/IFzjhjj3cGhbWXoIGkAIQQZOkhaj8GzvMvgWW5SUonwMR4rwFkf+nHOsVqtFKBpmqxniKXcHZUiDxCttblurc0QTWo4q/J5uwHwVhR0B1praZqGuq4BmM/npIEmWU7UK+hdIFmOMeKmU+Llki+QVzip9qgf2laGZ+xSDyFIdwgAM9BX0Bk8EvwOY4y+lKWaJ1fip+bhkN4Kfxa/XaGrfQFvqpsM+9oe7QAAAABJRU5ErkJggg=="
     },
     HEAL_BULLET: {
         name: "Healing bolt",
@@ -1515,7 +1675,7 @@ const spellData = {
         description: "A deadly energy cross that explodes after a short time",
         meta: {
             action_type: 0,
-            action_mana_drain: 80,
+            action_mana_drain: 40,
             fire_rate_wait: 40,
             action_explosion: 3.0,
             explosion_radius: 25.0
@@ -1528,12 +1688,25 @@ const spellData = {
         meta: {
             action_type: 0,
             action_max_uses: 8,
-            action_mana_drain: 150,
+            action_mana_drain: 100,
             fire_rate_wait: 70,
             action_explosion: 4.0,
             explosion_radius: 35.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABC0lEQVR4nKWTPW7CQBCFPyyEXKR2hbsULtKm8AWs9SUQKTgBUg4R4RNQBHwGJK8saqhoUiFaXFGnsNxsqknsjb2JxFfuvvdmZn/gTkYA8dtnZ/H4+gDAYqNmAOu5zkUne8LYTmwLpunkGXgCctmTYqLz2kY7HSAKknqoQCegjyhIHkNq5erS60sVQmp1xdeuIoMsNmpmjDEHszJymH2MRDxNJy9RkNQhtYpZciQjZvnTNhkAV3x9vpV+VTTv67nOv2+hKpoP0tIjSDRkyjbLKPvt7vLvEQ5mZYwxzhGcyBm4NB78folCu3Ub8Xj2Qpu/zJ2APvbb3eV8K/0hM1h/wX7nwKkqmpOry7v5Ak/mdf4MmjGpAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_DEATH_CROSS_OMEGA: {
+        name: "Omega Death Cross",
+        description: "A violent, giant, deadly energy cross that explodes after a short time",
+        meta: {
+            action_type: 0,
+            action_max_uses: 8,
+            action_mana_drain: 150,
+            fire_rate_wait: 70,
+            action_explosion: 5.2,
+            explosion_radius: 42.0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABr0lEQVR4nIWTzUrDQBSFT/MzSX9M/QHFaNVixYXoSujOhRbEhV248i18BPExfANXIm4KLgSXglupxUg3JsWCkUYybSZN4sKmWJqpZzn33MM3986kwNHN3vNl4TBfkXMiAYCds8VCkk/gBQCAazH0e6EsKsIXzyPxCrvnS/tfL11dUkVhao1883xcgoxOSgCgrRMyiTIxoFZtXAPA7FZaTS+QkbN/AwbGMgCkFwhSwpCmnBSSutl7vgR+7xxjA4BWVAAATtODVlTgNL1hE7WY8XRh3gOAVDjMV1yLwW35iwD8jE7kuEErKsOgWN2277ktf2l2O13J6gSSnBNJbkWRWw9OOF/OyYEXjRDEFJ7dB+sEeL/rKL4buFpJzUqq4EsAoOSldul07u+qSn/xtaICB0DQC43V42kAQOfV6wZeODM21Vq1cV2rNky7TqN+L4jsOo3sOo1q1YaZNMSxLRzdbp4AeIwJXIuBWswA8DiojW5hDGEgu04jajFfzAhyQENj+WB6I8nHfYnUYoZx9cmcN6/L80wMeLow7wWS+nBN5nRe+SETf2NWJ5BUwU+c9kA/iBy2tNHhS28AAAAASUVORK5CYII="
     },
     INFESTATION: {
         name: "Infestation",
@@ -1547,6 +1720,52 @@ const spellData = {
             spread_degrees: 25
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQklEQVR4nGNgoAW4MuPmWkJq/v///x+/ABmGEmfTgAOCXsGmgKAmXP6kmf8JGoxNAdnRSDQgK/AoAWQFMNGa6Jp8AUwYP2lDDJaCAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_LIQUIDSPHERE_ACID: {
+        name: "Sphere of Acid",
+        description: "Cast a powerful sphere of acid, melting everything in its path",
+        meta: {
+            action_type: 0,
+            action_max_uses: 3,
+            action_mana_drain: 180,
+            fire_rate_wait: 80,
+            action_speed: 40
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGklEQVR4nKWSP2qEYBTEf0qIlVilkAiBLayEHGADVobA5gyBXCI5Qw6QOqdIEyuLvYGVRUAQtpav0sZU7/H8k212qu8b34zzRuFCeACHcjcJkcU5AB/ZlyfcodxN38Wv3t/r10meXwH0zaCONZUOiZEVA9SnSs8+wD5/VKJvBjWsT5Ua/ZfGA7h/u9Gh8O4agCgN6JuBKA3I4ny2koW/JFw74tpxlmgrycogKUIAnl6eVShGWyZS/GyFpAjpSqeruHYkKULtZGsdD+Dh83aysUVsYbuxJr6QMrAlPgcfoCsdrh3PioXP4nzWh5YoCexZihUuSgOO1c86wfLNkmZZqNzlq6iBiEVoOQtJZP/c1QrWZJmuK93mGhfhD/RppPgNenzPAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_LIQUIDSPHERE_WATER: {
+        name: "Sphere of Water",
+        description: "Cast an enduring sphere of water, soaking everything in its path",
+        meta: {
+            action_type: 0,
+            action_max_uses: 30,
+            action_mana_drain: 120,
+            fire_rate_wait: 80,
+            action_speed: 40
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABK0lEQVR4nKWSMYqDQBiF38gWucCWSrAQwRT2aQJhrBYh9zCBFMneISkWkr3BHiBgqQTSpLdwQSxENpewc6v/Z2aUNHmV/Mz7eO8h8KIEAMjTvaeDDBwAwH5pC/Px4frozfsbAFR1MyAfro9eBcnTvd8vbWFCLABYrxZsrOqGgfnvH4PyzVwQZFDh/eOTK0ymMwCA77mo6ga+50IGzmglTkDabRN0bYmuLbVEahIS7caAMIpx/PrGbpuwkUBjkHwzFxqgyFKGqPI992kSAQB28tOrsSfTmVbD3EbdxKIjPRgzP5NF8bu21MxhFGsP6S4DR6vCG1AC+qZN1JvvuThfbsMEZmxKU2SpVqvIUqxXCx6UAWQmo3pTFUYxzpeb9ucOKqgQM12RpaM1XtI/KzevQE4vh+4AAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_LIQUIDSPHERE_TELEPORTATIUM: {
+        name: "Sphere of Teleportatium",
+        description: "Cast a malicious sphere of teleportatium, relocating everything in its path",
+        meta: {
+            action_type: 0,
+            action_max_uses: 3,
+            action_mana_drain: 120,
+            fire_rate_wait: 80,
+            action_speed: 40
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABMUlEQVR4nK2SMU7DQBREny3kJoVxFBrTgCxBm4YKcQFfgJKGS3ACLkFDyQX2AhEVjVsiWdCwTaKYLdK4WZr8n13HokCMZMle7387Mzb8h17ev71ci5X3i5X34bvhXoCH1y8PcATQrLcHUIHcnCQJwJ358M/1eVJOcwAer08TgBSgvih1sFlvFWg3TkFlnhECRalstK6PQHbjaNZbhciJwygpgGm7/aDrsa6PHIVORBIllYW6Knh6++T+6mw/uAONQezGxQDTdgoJNZ9NRiG3l8f7EqUgtZdnUYzfnKRySplnmLbTYYkS9jMmjWBdH50sGYcuymkeudCvEMYQN3VVRGvSx4GDscx1Vah9eS/P0oUC1PYuhmwaqq4KzNJGP5x2IIPDLsJ703bMZxPM0h7A/6wft2XfWQaJZ4UAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_FIRE_WALL: {
+        name: "Wall of Fire",
+        description: "Summons a wall of fire to ward off foes",
+        meta: {
+            action_type: 1,
+            action_mana_drain: 70,
+            fire_rate_wait: 5
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5UlEQVR4nH3SQYvTUBAH8P+8lyaxbTZpJcUK1fUqqHdhQTwERPZmvel1QcEP4Um8+wVUEFoQYb1YwUtBVrzoip7VHiqJlHWzbZOal/FQUpo2dU4veZPfm8wbwoZ4f989f/ncpe8AcPjzy/bVJ8GPojyxCSAi2rT3X2Dy/AaNnt0U22ecXQCQXgsXmrXd4xe3CsEc8OvpHSK9KkpVS4eUuvRaUL0BIIRGTlVM9++uIQuAO20SpiVwulHCllMRulHOKiCtZKDsmKhb0u/co0IAaAMuJMqWSVbdqST1h6o3AABU2X2kWVsWhFuC2xDFQBuERkPCtE1ZsWvSawEAtOYOpNcCDNuGYxtouIK5Q+sAAMAlmKauXr/5mJW/CM2wAdMEIAFsAuYhvRa05k7unXr18gMALfuGeY6sAAEjihj6xevJsL9AFr+BKHd6HuiC4YMRxYkaj2fLScmwP18c/UngB1wMoAsEvsIkiHk6OsmV3xsgOa5dQRrGCHyFbpeJwDmAbnc5jcIUk3BGB98+ZeUnw/58Fg4OP2MURKkdqmVcW35Ip0cpi2S23P1FM70++GsYp+O/Ke3tcyHQHP/GZFZVq/Oa9YDjUJ3de5su763N9snjawQWaXaVybAP1RtAnYKwH7zj1fx/HF2q1WtvQAIAAAAASUVORK5CYII="
     },
     WALL_HORIZONTAL: {
         name: "Horizontal barrier",
@@ -1706,6 +1925,16 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAz0lEQVR4nL2SMQqDMBiFn65CsovSwbmeICB0jbPX6NSDeA1nc4CCN+jsIHqBCJnTKWnUgLVI3xj+7/F4ecBZajnXr6rSR7kQAGrG9HMcMShlzU5Ltqdg78CkuUQRrk2zuQ99gOnikecWBgBfR+EaXh/3Utpu3EQbg5bzRZEAUKQppnm2JoNS6KVcJAhc2CghBBmlAAD33VWRpiiFCDal1IzpaZ69UEII7l23YLy/4Jr4oJ/lW+vXziZVQghucWw3cSiaa5JRilKID//X/bt6Azz+a5L1AimqAAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_MIST_ATTUNIUM: {
+        name: "Attunium Mist",
+        description: "A cloud of attunium mist",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 120,
+            fire_rate_wait: 10
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5ElEQVR4nK2SoQ+CQBjFHwyRnQHYzHT/AIuNaDUbKP5BZorBrJFos5hMdDeDUwcEEZQNi3c7vHOC40X2fo933/cBbemwWZSX7bJswqS7FVQACAO/jOIEaV6wsDoBZDhpXFSQ8stA25Cuhv5oKvhVGUBnsV/PGQwAshkpnzA1A8DxdIVuEPSMDgtJ8wKO6zFO4+EoTgDLZGbbMhHFCQDCQm/ZU2zA4LfoXwGA/87Ltkw4rqcIQwkDv3xkqRTSDYLBeFZhpFvgQ2TQ35Jdq7DGb6LXek7ulXU2qkafRofMr7P2/beuFy9CcgN7/fvDAAAAAElFTkSuQmCC"
+    },
     CIRCLE_FIRE: {
         name: "Circle of fire",
         description: "An expanding circle of burning air",
@@ -1810,6 +2039,30 @@ const spellData = {
             action_speed: 129
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA10lEQVR4nMWTza2EMBCD7WjP0wMdQEMUR0MwFdBCSAH4nWZfftjTHjZSpESJPZ8nQEn4ZqSv1ABesdi2bTg8z1MAME0T+7N1XVuDXlhKAQBIgrvLzB6Nhgjuruu63mKSMLOG6KOBu0sSYpJtwVLKYNJEuO8bAEAS8TokEXHMDDnnZ4J935XSP1Csw0gScs5IKTUUTYT6m4gY9b4mGwyWZWFUjks1Bcl3T+rXaHrQu/dVo0ePBEFRZ65FsQ/SR4P6QiAHAclBPEToTY7jEEnM8zwIY/Dnf+MfmS+N+fqSSHwAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_MATERIAL_SLIME: {
+        name: "Slime",
+        description: "Transmute globs of slime out of nothing!",
+        meta: {
+            action_type: 4,
+            action_mana_drain: 0,
+            fire_rate_wait: -15,
+            reload_time: -10,
+            action_speed: 129
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6UlEQVR4nM2SQQqCQBiF39QugzZuah0ItXcZXaSuIXWAgq7R3jOEIHSBsMB1QroRzJ38rf7pHzVb1ts4OO89v/lH4K8VLHcULHfU5VGfglmZAwDiIsF0OIY9GGFx2jb8vfoL3/Xo/Lg2wlzcWeC7HsVFgkqRDktlZd4oMQpuzzsqReiT0iUczMoc9mCEMI3aCfbzFTnWRG/wmkviIkGYRnCsiUFhELCZ15V60zKZ9BgFm8tR8Zc5KCn6pPRM5G0YBPLcHJSD5BlJNe51P19pBw+Tn5K0lUAaGFmW1MNfdZityXe9zl/593oBv3qEed/wNTUAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_MATERIAL_ALCOHOL: {
+        name: "Whiskey",
+        description: "Transmute drops of whiskey out of nothing!",
+        meta: {
+            action_type: 4,
+            action_mana_drain: 0,
+            fire_rate_wait: -15,
+            reload_time: -10,
+            action_speed: 129
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAqElEQVR4nGNgGNTgZr7i/5v5iv/xqWHEpfH6658MmqLsDAwMDAwCZkEMDAwMDOLRvRjqmYjVzMDAwPByaTGGa1AMQNeMy3U4Dbj++ieGhg+n1mFlwwDcTzDbGRgY8LpAwCyI4cOpdQzqE+8zYriAGIDuCrgBMBMZGLB7BVkOWS2KC5Cdjs0QbAGMEa/IYYEONEXZUWzHcAEDA8Qr2AIRm2aCgJikPPAAAJxaTtXz3uRXAAAAAElFTkSuQmCC"
     },
     TELEPORT_PROJECTILE: {
         name: "Teleport bolt",
@@ -2154,6 +2407,15 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAOUlEQVR4nGNgoAr4////////sUoxUccGkgEu9yCkCahAUkOZH7DaQ9DyQQfQXEw9D+CPCmRZ2qclANzhLNpMXg2HAAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_SHAPE_WALL: {
+        name: "Formation - Wall",
+        description: "Casts 5 spells in a wall-shaped pattern",
+        meta: {
+            action_type: 3,
+            action_mana_drain: 5
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUklEQVR4nGNgoDf4DwUwPhMpGsm2kWoaYWLo3iBaIzIfQx0xGokG2Gwk6AJiNeI0gGzn4nMFso3oaghaSHY0EmMQWQCX7UTnBUZGRkaquAQdAADg3pN15+slswAAAABJRU5ErkJggg=="
+    },
     I_SHOT: {
         name: "Iplicate Spell",
         description: "Casts a copy of a projectile behind you, but the copy still cost mana",
@@ -2213,6 +2475,16 @@ const spellData = {
             action_mana_drain: 110
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAt0lEQVR4nK2TvQ3CMBBGnxELZAGUFPSUlImyQdZJnZJVsgFyS5mewhELZISjcuQ4tjGIr7Lk9935fgwJ6VaLbrWkmKTZKhXk8FP0XMmUzr4qVqtMEjRv+E+1mt6Ib3b5o3tZ32oEEXVRCmA8jRtz6EXKRgVo7o1ys86PGYDyWgJQDdWOV6EabfbiXACwPBe6VxdlozK9Eb8HX5lD5yyFmhUb6So72xRoF2s37ty9D3H/+wu5X9fn3jo+tAxWmDfKAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_SHOT_WALL: {
+        name: "Wallplicate",
+        description: "Casts 5 copies of a projectile in a wall-shaped pattern, but the copies still cost mana",
+        meta: {
+            action_type: 6,
+            action_max_uses: 20,
+            action_mana_drain: 110
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA4klEQVR4nJVTsQ2DMBC8j7IAGQBBkTqUKUEwgVdJGYkCKet4gkT2CGyAxABZ4dPkLWNDYq607u7P9zawE6Y1bFrDe3VOLBCTY6qYR16d+tdguk8MAFQRSYokAyGWj5KiFJcvpzMcGehcMwA0r8YJ/RSmNVw/a8d3pOE0MAD07550rgEA2TmLzPx04fkihSSRBJIi3MTiCpJCzWpRmPSwtQknFoMwQQj/MUV3EKGaFQmpuBaQJH6JtrOxgT8FWBYVrvGngUDKkx78h7S5hTXwyMwjR3/hkGpAFZG92eSBmwi/8wf/FKpPVQ3L8wAAAABJRU5ErkJggg=="
     },
     HEXA_SHOT: {
         name: "Heplicate Spell",
@@ -2339,6 +2611,34 @@ const spellData = {
             fire_rate_wait: 10
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAlElEQVR4nK1SUQqAIAwdkofwFp5JSKgDJRh0Jm/RIQzWx3BZmSX0fhxvb89tCvALlAnKhHfd4OPgY5055diedHxJoYYpkiIiIub2HHSXsqk/mBRHZyWTgg5nZWVKZUJeAyTlTu6gfkgmnlzfQcsp2ufdCh53XfST17ro8paclQAR0n7GeUtkCW0Px4mGr5Hj6+f7gh2Oz4snNWkVfAAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_WATER_POWER: {
+        name: "Hydromancy",
+        description: "Reduce mana cost by 30 and increase fire rate when wet",
+        meta: {
+            action_type: 2,
+            action_mana_drain: -30
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+0lEQVR4nMWSsWrDMBRFT5sS8Bw8q2PwFkN/ImOmgofuHVrwB6TgP2iHQoYOHgqd8hFdMxg8GI3WbPQDWl6HYiM7rkkLJXcRutK77+o+wX9ilR1klR1k6s7V1GGkQgCKv3YP4lSCOJ10cTnV3VmNs7pzcjKSvJYgTmWm1jJTawniVJK8HnUxmkFlGpzV3GavAHxs76lM87vuSV7LrhDZFSI+N1ncBteurYDPDQPtPSFSIaXVlG9PAHyWBgDncZEKe2P9cQqnouegMg3zxRJndbf3MV8sj7iLoWKS17J/fulE/OLN4wPvd9e9miMB+A5z+Hkq01Bsb0bvnxdfrQ2CCg9SuYEAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_BLOOD_POWER: {
+        name: "Hemomancy",
+        description: "Projectiles will pierce 5 times when bloody",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 20,
+            fire_rate_wait: 20
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1klEQVR4nLWTsQ0CMQxFH4gtbgE6u2ABdAVL3BB0zECXIViALhS3wRV3HQvcHKYgkcxFBCj4UiTb30ns7wT+iQAWwGo5mxq5VXka4/Q2Z1W7fUj2Dji+yV3Xbp+B2VfyLaKKdWD7tDqwqFLV4gUhbYwqFlVsXxGzaCGq2ACcVDi0LYe25aTCkLjqAQHsMk50Klyc8j62rKQY4wyc0+Zb3xex3acWPmE5kfWSbJx/HyfurhXPZRQt5BJn4OriDWX5BbLKwY0w2yGJF2p/Y0lm/6dH9M3BHg/P2Vs/uHbDFgAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_FIRE_POWER: {
+        name: "Pyromancy",
+        description: "Amplify and convert all damage to fire damage when burning",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 20
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAklEQVR4nM1SPQqDMBh9Fgen4NhJcOySbN5CvEBvIK4OLR3t0LVX6NCp0Dt0cquLo+AJRJBuTYfwSaKhToU+CJjv533vxQ/4JeqIyaWa1bdkkIQYCrFIYp06FELu15D7NSSR2BQ50+YgCdHeG1zaHlWn4twHtgED5TZlP/YZFoIkBACjGQCqTsX0mhlBHTF5PD/HBgC4HgSuB2HEjuen/XGHQsjYU55jT/l+1al81am05awWaNKJM5AamnrizLBFcOmjvTfgviLIK+X3fXuMpHmnYtxXtTMFm7J3dpmYj5hglwnjL7h6UldBdx3T6VbQAsWeefSF0uHYSGihpup06f+DDwjFj2+aomj6AAAAAElFTkSuQmCC"
     },
     BLOOD_MAGIC: {
         name: "Blood magic",
@@ -2655,13 +2955,21 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxUlEQVR4nK2TQQ6CMBBFX1l7EBcGNx4BLoI72cBJWOEOL8IRdKMhwYO4/26YBGtRSPhJ02k7/89PO4WZkIQk+qKQxZJwU4TmrtriLCa/pakANrsdr64D4NC23/zmrnpMturXJNHYga2dTz7uXe6L9kUhi7dV5Z5lKT8Hv+pcB9EUKQS7B5tnVTcH/isEBfwTDQiJGicCyGJOAM45NyH0McaIAC4PzuNNExrmyV4JWlqau+gVVnHxNyfUyr/2Z30mgFCLr4I3zH6uY584tfgAAAAASUVORK5CYII="
     },
-    PIERCING_SHOT: {
-        name: "Piercing shot",
-        description: "Makes a projectile fly through enemies, but harmful to the caster",
+    APOTHEOSIS_HOMING_DELAYED: {
+        name: "Delayed Homing",
+        description: "Makes a projectile accelerate towards your foes after a short delay",
         meta: {
             action_type: 2,
-            action_mana_drain: 140,
-            damage_projectile_add: -0.6
+            action_mana_drain: 50
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVR4nGNgoBAw4pI47eLyn0dHh+HLlSsMpnv24FSHUzMDAwPD9YKC/8h8kjQjG4DPEAynTdPXhyt0dHREkdOcMIGwV5BtQjaMLG/ADIDx////h2EI3lg4/fo1g6moKEYs/P//7z8jIxNpMUN1gM072AXpDohxBVEupZp3kA36//8/9cMIAPZ+Ub/p41QHAAAAAElFTkSuQmCC"
+    },
+    PIERCING_SHOT: {
+        name: "Piercing shot",
+        description: "Makes a projectile penetrate 5 times",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 60
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVR4nGNgoAb4/////xFsCCMuifsvDvxnYGBgePH+EoOlZh5OdUz4NDMwMDBICOoxHL8+CaersBoAAwkpsQwv3l9iqCjtxqcMuwtgOLfJ+D/JLlCUcGB88f4SAwMDA4ORpQJptiMDmM34XEASoGo6ociw/1DAwEAgGvG5gGoAALmEVR6d5Le7AAAAAElFTkSuQmCC"
     },
@@ -2758,6 +3066,15 @@ const spellData = {
             fire_rate_wait: 20
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABu0lEQVR4nI1TPUhCURT+jEc2ODQEBVYPIggy6pJYmwZKQ0RGaw1BEDVcHYREhwaHBKHBd4cmgyA3h4x6Q/TACt5SRgQFQgRBQS3SagS36TyeL/v54HEu73znO+dcvuuCA/rJmaTzzHTI5cw7oTiLU5k8IsEATs8voZ+cSaeIs0GTgFExkd2MI5XJI7sZh1Exm7qpTHCjYuL0/BKRYAAqE7zNTijpnhiJGBUTRX2i7By5qE+UI8FAyxwAIJHOSpUJTrEVp4cZBy2LW8EuojLB6fu3ABXOiYYs1KUs1KX0rV3Ib6SB2VoVAHyhY+5feqlOJu/knGhIlQk+mbyThbq0UKhLa7022unxaMjvCx3zjj62XN33+j9fOq/fnh8wtrKqdfcO/jjdr0ZRmeBdIwvLivd9vLt3ENHFdgBAufiBQ+52AQ4jqUzwBobDbtwbTzdcAEB13+unXO2qXwOA2l7Uauyi5E5uVKOf6xu3sQaGw6834Xm78G5OiRKHHGoZKZXJW5GmsE+3m1Oidg5Z2hKIBANNkVYg/GRzhcglCACmVtI9MTfumy6T8uEpaNRgeyv150v9hkQ6K+0RAL4A/dPRqz6VUtwAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_KINDNESS_TO_POWER: {
+        name: "Kindness to Power",
+        description: "Increase critical hit chance proportional to how many charmed creatures are nearby",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 40
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABk0lEQVR4nKVSPUvDUBQ9sZZO7tVWEiX0iR2EflAnoUKKW+vQ3aUO4rO/xUZcCv0NDaVLgw3o4mDHFlICidBCV8FFxF6nF9KkCuJdQjj33HfOvQf4Y1GjQcGvFARnmkYAkDZNaaZplFIUSO223zNQVTrc20NKUXzORhAEgJSigBoNEk3iJQCwY583E9fF3PMAAHePgxt/gCgB/vS/iXdj4rqwrJ4RsSAkCiVzz0PaNFd6AGCoJrunzqK2YgEAKo4jTVwXAGBaFtKmKelM5gLXmcx1JvNxLPEQHrpSYh9B4ke1ScuOTcuOTU/ZM4qQpvuZEQD0i1k+KxyPxqU6fVSbpDOZj0t1WnZsErXs2CSUbQpPGWea7xez/Ii2LtIvz/lZASNngdzlQa31m9rIgsLSz7e2L95iuzk1uYN49QoA8GncI2HcRrk6k/lQTXaFvPACDVYmg5Wj/nUm82BExaDw4HUqNwCAfcVbc8/zU3d9UmmFTyXuvnZAOKKW1TO4/aoHG8Vpg9GO2BioKomw/ISvJf+nvgHBh8qyxozsdwAAAABJRU5ErkJggg=="
     },
     ZERO_DAMAGE: {
         name: "Null shot",
@@ -2951,10 +3268,19 @@ const spellData = {
         meta: {
             action_type: 2,
             action_max_uses: 8,
-            action_mana_drain: 80,
+            action_mana_drain: 40,
             fire_rate_wait: 20
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAATElEQVR4nGNgoBa4vOU/HJClGR+faPD/////ZGumyGZcrqFYE4z/4WEb+S77///////fDpBnwIeHbf//fztAXtRiA6NphUqAajECAwDCHWEX6uB62QAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_LUA_SHARING: {
+        name: "Magic Inebriation",
+        description: "Wildly diffuses the magical properties of different projectiles amongst each other",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 40
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABYElEQVR4nKVSPUsDQRAdrCxsbbWy9y/kT4ndTBCcs1a0kQNFDpQIJ2jgmisCyhJSqcUlxGBMQAs/Cos50ozF3p7J3QX8eOXsvDfvzSxABoxNCH8FxiZUVa0SQbNdqhn0y8OqyAcGQ1XVM4P5m0E/VFWtFKl0Z65+5uBfeGUhlj3CYP4iq3YBAADCY+K+kKoqS4OiQl5LPrS5YyyLsHQtOfgWAZi6TDZ5dLuVDISJA6FZBx2mAG2zqqq8c97gJgr75N7vX9oJ70+JBGjCSWuiu81RkvWQ8JgCtPuQMTsyuRM+vbQT4cGsiI1zkU+avLX06KaTqCqpqsrQOouyv8GNQhSHExZyJId4p/dpB1zmdeEhCQ9poSiwXPPW02sPel5a9z7Sevx43K1trC0ZH59X4Q4AALz0vL64uYIAD7NkZ2/6lAAABjGLGJA07U44EhLul2MUyUWcspA0mTias4Pf4guigkwc+9P6jgAAAABJRU5ErkJggg=="
     },
     RANDOM_EXPLOSION: {
         name: "Chaos magic",
@@ -2985,6 +3311,42 @@ const spellData = {
             action_mana_drain: 1
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAs0lEQVR4nJWSsQ3DIBBFf7CLVCziDVDEBDTOGp7Ha5CGCSzLG7AIlRukFOecMcRI/Oo43kcHH6BRj7I1Gc317JaaYTL6PXQAlJEANhcAWB9TW5/RhJJ+dQA0e/qSfr4+7NnXURmZegRt/KV5qYykUQ8D3zKjsyZh4jrurRgQda7UYaAXrIgBgSSdfR1LlJuXV7I+0hmZh5abC9ZH6pxJl8HxMGnYZ9KzWwANBFS/RvPna9YX+YpVlS9kuLgAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_HITFX_AFFLUENCE: {
+        name: "Affluence",
+        description: "Creatures hit by your projectiles drop extra gold",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 20
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1klEQVR4nM2SrRaCQBCF7/oCWLRAJpA06lsYsNo9BvoatZvwGfBBIK4Fw1qhAGF5gjHtHlDAQ9Kb9szPmTvfLPB3IiIaUz/5iFTXUQOZfsjIp7nrmoTl2GCzPVOC03R5Zp3dXZKR37uCEvz7enHgEQBQGZrisVxaojIkJTg1p+shQBfEt+Y6y2E5NgopjZP15WGY9MLRUK3FCfX9aOIa7qCDOPDMRZ63LSzHNi7qLG+BHnRQJSm83QaFlACAKkmx4oeWg071nUsJTjLyqQnxq3Tx0P/4rV6a8Gqyi7uvrwAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_HITFX_HEX_WATER: {
+        name: "Vulnerability Hex - Water",
+        description: "Creatures hit by your projectiles take damage from water and other wet substances",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 30
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABFElEQVR4nKWTvUoDQRSFvwk+gzYasA2BYZiAWKawFiFtKiHuQt4gpBLBN3C3E9IuyrZapJRAlmWbtIqmUXyHsZpl3J/sireZmXvPOXPuZQb+GaKu8Pj6ZdzzxfF+LbZELJJ35Xfe2gYj3IK1eRWsDcCZPPhFHp0eiSK2Y4sPb99YcpJmxME8J079Cbf3T0QvH8bF5gLj5cYshr3czXYVlaxvVxHP2ScAi2FPjJcbA7BX1efhyQitJFN/AsC5d02SZpUzKQkkaYZWMheyoZWsFOkUE+vwUgCE3kBoJdFKEnoD4dZKAm5P1oVd3b2N4swA6Adx4xtoxLYRacT0g9h0/VkJ1PVnpopc+0GKIu93N+0+01/jB4QUgr0U/p9CAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_HITFX_HEX_OIL: {
+        name: "Vulnerability Hex - Oil",
+        description: "Creatures hit by your projectiles take damage from oil and other oily substances",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 30
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABFElEQVR4nKWTv0sDMRTHPyn+IaKTRPAgg4UOpf4Bwblrh4MbbAehs6Ngh7aDdHBwrYvcrsWh0BsOTvBwkIqLf0eccsT70TvxLUne90feC3nwzxBVwNf7xrjn/aN2JbcgzIt35Xfe2oQjXMCWGS4uDMDBydkv8XH7XOS5LQt+f0RYcZyk3CzCTBgEIx7u57xtHo3LzQzW4dR09DCrZhVtC6Wvoi2fr88AdPRQrMOpAdgr67N3eojyJEEwAuDS18RJWkYtGsRJivJkZmRDebLUpJVPXN0+CQDtz4TyJMqTaH8mXKxg4PZkq7Cru7eRfzMAlpN+7R+o5TYxqeUsJ30zHnQLpPGga8rElQOSN7m+e2k2TH+NH3K+hBOlpF9aAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_HITFX_HEX_BLOOD: {
+        name: "Vulnerability Hex - Blood",
+        description: "Creatures hit by your projectiles take damage from blood and other bloody substances",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 30
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABBElEQVR4nKWTrW7DMBSFP1d7hyls0MBSsaGLO1xU0FdoWAeigA5Ve4mikJEW9wcFVwowHIuqPYSHHHmJ02TaIbbvPef43isb/gnRl7ifTi48P89mvdyOsC1+FH946xiOCBO+zHKxcADJfP5L/LJcijZ34pPf1yteXFrL5nxuhKs05XO342u/dyG3MaiyzKk8b6o51HWn9ENdUx+PAKg8F1WWOYCnWJ+vSYKWklWaAvBuDKW10Zl0DEpr0VI2Rh5ayqjJpB1Y324CQBeF0FKipUQXhQhzUfieAD6mU+fXcB/jNrgYM/gGBrljTAY5F2PcVqkOaauUi4l7h9I2eauqcZ/pr/gByVJ813x8waAAAAAASUVORK5CYII="
     },
     EXPLOSION: {
         name: "Explosion",
@@ -3300,6 +3662,27 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnklEQVR4nK1RsRHCMBCTfXS0DMA+6Sk9BANQZACGSEnPPhkgbepQKaf7k7HD8Z2kl/7fBv5VZRy2Hq5Z9+lmTT+FHQ5yotuotuWxad8aex6UOAPA5XreiTIOm2LHEQNA0puWeQUFYg5QjvhZXumka2mjw47LcZrDUbMBbs14ArEG7gEq0FwLVT5HY+3WaKYnsUG/plXLvGJ6vFO7s6M+reRo6MXUChMAAAAASUVORK5CYII="
     },
+    APOTHEOSIS_SEA_BERSERK: {
+        name: "Sea of Berserkium",
+        description: "Summons a large body of Berserkium below the caster",
+        meta: {
+            action_type: 4,
+            action_max_uses: 3,
+            action_mana_drain: 140,
+            fire_rate_wait: 15
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArUlEQVR4nK1SuRHEIAxcGCeEl14vqoMmXA5NuA71QuqQEEdiBBaHPXOKWO2yegD4V5wp1Se5Mfxbc9M0x1h/4TOlKjkxEOwBIBC1RI6xagwAhblpPvvuRAMAm4gCETLQCMFytjSdgRbOsJXrlliYbxdWvNdkIOpEhbnDVkdek2KiDUfTqcGswmqM6Q6kstWV1r16hXHM1oE142xu3Q0AOCH071pFYcb3ONxa+SAuCPh3ftrGuOMAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_POTION_TO_SEA: {
+        name: "Potion to Sea",
+        description: "The first flask in your inventory is shattered and converted into a sea of the same material",
+        meta: {
+            action_type: 4,
+            action_max_uses: 1,
+            action_mana_drain: 200
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+UlEQVR4nL1SK24DMRScF5WnJKi1YeBKOYCPsarkI+wFFgQHmIVsj7BSVOo7BFZaqQWGNmsLcgMHJLbsjWNQVR3y5NGbeR8/4D/hv199wK/EWbyaUJrU970HAM45mqaJvBCCTu/brOry+Qm06miRkkopcs7BWgutNbTWEEIQAHwZg8fNjkIMmod5q4yx2ME0TZFfv7yRObT+5/gBc2g9rToqGqRIxwgmAID9Z+SyEe4Ja8gMpJSec54lDMNQ/bJoIKX0jLFiNzWTRRDXqtRMijtIt196p8h+wTkH4HJIc5G1tmgQDyIdo7QLpRTdkJid8r1djONYFP8JzriBZ5dMTv7eAAAAAElFTkSuQmCC"
+    },
     CLOUD_WATER: {
         name: "Rain cloud",
         description: "Creates a watery weather phenomenon",
@@ -3344,6 +3727,17 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHUlEQVR4nN2QsUrEQBCG/xHTXNBEEMHqmqtjZWN1kMoieQhNlSbpBFEkb7DTpNG0WtkcWApXpUgaSes9hE0ar5grwobsGUGsxA8Whp1/5p8Z4E8gIl9eUDly834s958XIiJQShl5DekGABDWrpwcTDCdnqPNPdIiO24ksgpiZiRJ0hVSl97RorB2xS8zOny5osgqyI6b3qbNPQprV+y4EWY2picACCpH/DIjbDHm/LC+lDb3KE1TcwKNFgJAZBWk/5gZzIzF27Oh3wWA5WoNf1A8bLKNX2bdemk3fX/E/Se733k+s7BcrTGfWaNNFqcfpI9IAKCU+tZxiN5bKQXjBkmS4PXsrp9gGN8eXfdxUDnyU7Pfs/c4MRzH4n/GBk4Yh1ThTiYFAAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_CLOUD_VOLCANIC: {
+        name: "Volcanic Cloud",
+        description: "Creates a volcanic rain of lava and ash",
+        meta: {
+            action_type: 1,
+            action_max_uses: 8,
+            action_mana_drain: 110,
+            fire_rate_wait: 15
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABaklEQVR4nM2RPyjFURTHP/fnh4dBBmWiDEK98neglMEu0XvDK0ryJ8N9m0xiISW/q7zhySyb1WAxWB5CLwOLwcCE5fceXo6B382PWBh869bp3nM+53vOhX8hEflycit9kt9IyNPuiogInueF3gOpAACQW+4Vp7oep7aFVFZUkDTdXSNuZ1wZY9BavxUqFQbklnslXTqgALTWFDLbsn5wYyGTFRlx6jpInSultQ4D/PlWSVeO2OSfOj/vrUkqKyqZTALgAFAcsUVBIoDbGbeOjDEYYygc74SauAC5q1Nojtvij5DPSpf0q6mGvCTf3dsd3I6VS3GR4uFRqGnq4P7ykKrGLvtLvBSg8ARuCWUz+yrYgQtgjIHoYngH0cEv3YO5vYixd05gefxu037uZEXGxkNnszb256Lied634/1O16NlArA10cbF8Ft8shojv5EQgKO1GP5Sj/zE+J38uailB24A6wbAX2j/ewevq9uo3lciJ4cAAAAASUVORK5CYII="
+    },
     CLOUD_THUNDER: {
         name: "Thundercloud",
         description: "Creates a stormy cloud",
@@ -3385,6 +3779,25 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAr0lEQVR4nLWPMRKCMBBFfywCBaTwCCmpAuegp/cy3sKeyyAVJYeIFEgTi3XiJlFmnNFtsrPz3t8N8GUJei6j7acFQFcVAIyW47x5qJ+WripORgE40Mho6VHPUU+0nz+FRuXkjPNmtGxU7rVzeyQgEHgk70nm85fAj+aRAOoyiz9NNdiV04Nd6zITImCCk6K8lI4FvhrA9XZP4wIhyov8jyelZ+yVc24feLPhx8L/6wEchShYugcbZQAAAABJRU5ErkJggg=="
     },
+    APOTHEOSIS_FIRE_CHARGE: {
+        name: "Fire Charge",
+        description: "Imbues a projectile with a fiery charge, that it will release on impact",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 10
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAtUlEQVR4nGNgGNTgS6fTf0JqmPBpZnaTJWgQTgOQNcPYRBmAbBuLpC0DPs1YDWB2k8VwMoukLU5voBjw/Xz8f3RbWSRt4QbjNeBLp9N/Fklbhp8Ll6FoZGBggIthcwWKC34uXMbA7CYL1/zn+WG47X93PcbqChQD0DXD2MjeQncFzmhE9gI+gNMAbODvrscMPOX7GLEawFO+j/HvrsdwfyODP88PY9XMwMDAgCGAK76xaaYKAAC5QErUiF59mQAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_GLUE_CHARGE: {
+        name: "Glue Charge",
+        description: "Imbues a projectile with a sticky charge, that it will release on impact",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 20,
+            fire_rate_wait: 30
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVR4nL2QvQ3DIBBGPyJX3sELIMuuvUlSpImUNVJkjUhpUiSbUIPQLcAOVEikOoRt/NMkn4SEgHu8O+DX8cHFtfvDFoBIrcJmgNIjPsthiwAilQp8cNFomwqNttsAoy0+78cufQCopqpEClIOABClHHifYD64WFeNKAKIVNI8nq4jAwaxXbEFoy26vh31mhtIOaDr22XA5XwXRtvR71lLxcyGmP8w7Z8t8wgUwsPMQWySD7BoAAB11Yhcm4unA1zN83WLPri09lf+O192eIJqYYm3jQAAAABJRU5ErkJggg=="
+    },
     HITFX_BURNING_CRITICAL_HIT: {
         name: "Critical on burning",
         description: "Makes a projectile always do a critical hit on burning enemies",
@@ -3421,6 +3834,15 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABR0lEQVR4nK2Tr0/DQBzFP0cwGJIaTLOEhA05uyAImboQBAlihsxVVO8PqJiZQ5OA6xATS4YgZFUDBFumWrmCItVzs1/M7rJuI8DgJZf7lfe+7/typ0SEv2BrcTPQWgZaby5QdBy7TpJEkiQRpRRfDQBlWhhoLUXH4W06BVDVKCIMQwHIsozXlycOCi5X17fKFBGRvINlF/V6XRkywN5+0d7FcSy2BVMdYLdWA7DJGvLR8QkXsxmTIJAwDGWn213NYE62Lhq+J4bsui4Ao1KJSppy2Gwqm8E8eeui0Omohu/J+0fG/cOjAmwelTRlPBpx2e8rEWEboBpFADacYa8lrZtnSzYol8uM2+18aMsPqeF7cn52mjuM41gmQSB3WguAmUUkLzDstVbIizDEXHEjsK7yjwUavicm8d9gpYXvsM6B+tffuAk+AdNFsTOA4wqaAAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_HITFX_CRITICAL_DRUNK: {
+        name: "Critical on Drunk",
+        description: "Make a projectile always do a critical hit on drunk enemies",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 10
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQ0lEQVR4nGNgQAIlPlL/GUgETMgcE0VWUvWjGmCqJQtnX7x48f/FixcJuogRxijxkfpvosjKEJ7sxMBoMJ+RgYGBYfHixf8ZGBgYnj59ynD88EEGZVlphr4ZcxiRDWBiQAP3jt+Gs2NjYxlhmhkYGBjEFFRQXMjAwMDAAhM4Ka/McEOCn2EjCy+KgTDNlrb2DEHfvjEE1dX9P6mqysC5di2qC8wf3mWIeXGZoeXPY7jmooyU/zDN0tLSEItUVRnMb99mUGtqYsTwwpn7vxlOX3sM13z38VOGjVu3M1ZUVDAiaz598iRcD9wLPVuewQPnxIb2/+2zDzFs3LodJcD09PQYTi9Zgh5sqKAoI+W/v7cnSvRdvHjx/626uv9L3d3/MzAwMMBoDHBiQzuGZmSAUyMum4k2oCgj5T8sxGkK8HphwAAAsf+APH52uqEAAAAASUVORK5CYII="
+    },
     HITFX_TOXIC_CHARM: {
         name: "Charm on toxic sludge",
         description: "Makes a projectile charm creatures covered in toxic sludge",
@@ -3444,7 +3866,7 @@ const spellData = {
         description: "Makes a projectile explode powerfully upon collision with creatures covered in slime",
         meta: {
             action_type: 2,
-            action_max_uses: 20,
+            action_max_uses: -1,
             action_mana_drain: 200
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABS0lEQVR4nIWSoW7DMBCGP0clURSylRRWDRxZVRBNLWrxuqeZFDYwyXTS6MDAHmAdDktAH6LTYMlYVIVE8kBzjt2m2iH7zvff57sDx15ungwnVhfrM58bCwCMMRhjuI6v7PmSVToyktyUOYEbnAzHvY8rHRk5x9lBAZCkxNlBKSH4uHs1k+GY798fHu4zAAbzFSQp7LY0ZY4I1HttxOcRuBSD+apzJqn11XttmvdnGwoAWx1gupzx+aW9RI+mPTdlTpwdlEcwXc56e+GJtejSi7MeANw+vnnVre22AISLjbJkAEopKh05mMfG9YokKXWBnbOCbly2cX2JDoVLEEA3WxmVoF76grudyo3bQDt7F1u+FI4yJW+bMu8E6mJtwsXmuCRAOMpUpSPj7UMrJiLWpAci5N5ljYWuLtZGivybfFrE/bsn0id2SeS04B/KdMY33K74bgAAAABJRU5ErkJggg=="
@@ -3463,10 +3885,20 @@ const spellData = {
         description: "Makes a projectile explode powerfully upon collision with creatures covered in alcohol",
         meta: {
             action_type: 2,
-            action_max_uses: 20,
+            action_max_uses: -1,
             action_mana_drain: 200
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABRUlEQVR4nIWSsWrDMBCGPxVBMcFkNB4yWQ+hwdm85xW6lT6C94KfopCtc3Zv9pCHSOc0cwimIFCH5BQ5telNOunu///7dXCLj1fjmYih20zey9uTJEWm5upGcW4WXppd3xIAVnk2W3xuFl7OaX25MhlLWl+UEvlFpljlGcVbr6RYlxUYC4c9rm8RgOHYeLnTAFuds3xekuo0sOuyuksxFvoWXVYMR+vd9j28a4AXd6T4+WblMj7jZmPHgLdclxWub0nri9JS8HXywGnePQG7SRcv/lgfvi1iD3HYA5Csd6EvKDg3Cx/L5LCfBjGWoSPshpLmMOcce6QiVvAE97+VrxKpcyPE2znyYDR/DCK5sSR5raTW9e0dYOg2PlnvrksCJHmtgi8PHghICPFAgOJc1ljUDd3GC8m/zY8k8ewjkCmwOZBHwl9/kLpJil/qZgAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_HITFX_MUDMAN_SLIMY: {
+        name: "Transmute into Mutamies on Slimy Enemies",
+        description: "Make a projectile transmute a creature into Mutamies upon collision if it's covered in slime",
+        meta: {
+            action_type: 2,
+            action_max_uses: 20,
+            action_mana_drain: 200
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABkUlEQVR4nJ2SO0gjYRSFv5kkJpn4IkYjaiPuki2sJI2WvtDCV6OiNtssWlgsbCGIYLGWEomFKFgFrBbWB1iIqKWFlZWFxbIIgYiCxkwyxHgt1DCTGQQ9zc9/7z2H78IFk1ZaF4UPSjV/aiqCH/VbA1pCzZ8PSLTHxfwCzPYisUm/fO9E7lPVsjyKbUV3acFMoWg+/t9liYTg53gGu/2VINEelzdjW1e0SBHfzin3OjzkIRxW2TxGeZegrStqofg14hHVo5FM+wlgAIaNoJhopujYG1BiEx6JNOX5c+ajIZgjbcBtxk/iKKs4BpRqdQo5vwKtsorqQhp3VZiFraQyO1Qnqzsp5d2A/Xnk5AKedEimIaC52Th4LM4ORpHdsxevY8CPfk1ceR1vwEfqNsfTI3yph99/7fNqaWG6r1yyGR2A67sctZXgKYOU4XNc1ZK4NFkj/5I3qMD6kbU3042gulg7KFjqFoKg9wZcXpsZYO0QpbGswFyP9ZwsAaeX8C1ksDjsdHNwpat8bYbYmHP/U3oGehmB/8BaYMcAAAAASUVORK5CYII="
     },
     HITFX_PETRIFY: {
         name: "Petrify",
@@ -3637,6 +4069,46 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAUlEQVR4nI1TMRKCQAxc/IAWjBVWdNow+gZ9hAX+BEdnzn9YaOcHsDkegGOjnZWdWOALYsEEwnmnUt0l2d3bkAB/fmlJlJZEZrxjBpT+LEpLomn3XykA49WlRaI0ERGRjfwnwXh1sYJbdtifLAriXSEJmFTpqo6ownimx00GHLIrHrfzsx9Gfp4MMVlfa7E8GQIAji9g1vO81iuYmRVZPYh3hYx/7QUDJZnSFYnZXADw5IV9A8B9O/dlbrDYP/ncDyP/tBw1WKWbJvFzWVVakAJOK9K3/ANMYrPxATbvDHLNRG3DVLDFrCRp6R5V2xjLQarBtk2T5Ga+3k7XmprFrtwbAfZmNE+VkkkAAAAASUVORK5CYII="
     },
+    APOTHEOSIS_SAWBLADE_BIG_RAY: {
+        name: "Giga Disc Projectile Thrower",
+        description: "Makes a projectile cast Giga Disc Projectiles in random directions",
+        meta: {
+            action_type: 2,
+            action_max_uses: 16,
+            action_mana_drain: 80
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAoElEQVR4nJWSwQ2AIAxFG3fwLGESd2ERBvDiJh6dwgMXBmCQ7wUSAm2tJAQSyusrlEgZKRdo50REi3Rw3Q/69Rcg5QK/rXQekfy2mkxYg5QLOAMzkAvUwNMAEEdgygUhBLT9F2AfgaIBRwPg6tx72BTLUeslB8CpmlxdrfaWtcKiZCq+7PgG6g+M5N5EMhXLkjKZeuArk6kLf3WbZmKJewFz+gLIUdv+cQAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_CURSED_ORB_RAY: {
+        name: "Cursed Orb Thrower",
+        description: "Makes a projectile cast Cursed Orbs in random directions",
+        meta: {
+            action_type: 2,
+            action_max_uses: 16,
+            action_mana_drain: 110
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+ElEQVR4nLVSS4rDMAx9DrlBcEvJwoUucwF3N3Oz3CzpqifwMtAshpBPbxCiLmoF1a3DMDDa2FjSs57eA/4znDY0WUtOG/oTwGQtERFN1kYBUgCospx2SYphmfF9/1Gc7JsOOJ+fZyQSbt6fDtglKaosX38rxlb1TVcXY6uiANycXa8rSBCXLZrpsMyAGHVY5rCm3gJQwPsOnDZfPn/zVG6yyWlDTCvKzRce/fVYjG3NzfvTAX3T4W03rLfTpuQpxFmyL1jaF3/ETCPoxOu2kKssJ6cNSXllXsnHkJv0CCskjfZpaeH4cc4+XlwTbvUXHtmWUdKIjf8AyYO8DURUyosAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_ICEBALL_RAY: {
+        name: "Ice Ball Thrower",
+        description: "Makes a projectile cast Ice Balls in random directions",
+        meta: {
+            action_type: 2,
+            action_max_uses: 16,
+            action_mana_drain: 110
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9UlEQVR4nLVRKw4CMRB9fFwvgFnLORArSLgCBoFGrFrBDTjBGgxXaILAIWmyvmbFKmyTujaDYIdMliU0ITzXzpuZ9+YB/0ZpDP1EbJyjr7zSGAoxUp/c1XZyWIiRcq1fvDEA3O53tN4jU+qjktIYypRC6z0uq9VokMAbehYKAAgxUtI92A7Lb5wrGufSmnubqWsu+irlwHcvHY7WnhazWc3vTKmDrLfeY3u9Po+Ya02lMSTT2Mzn68raAACVtWE6mYyW5zP2dY3We1TWPo/JzXxA6bWTuhuK9w08SP7JRJJTYMg05Ds5kSEi20waMkTItU5XkIoH7H0DQhIkaEEAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_NUKE_RAY: {
+        name: "Nuke Thrower",
+        description: "Are you sure?",
+        meta: {
+            action_type: 2,
+            action_max_uses: 16,
+            action_mana_drain: 250
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABBklEQVR4nLWTIW/DMBCFnwfKFhJWOhDlDwQmYCoaqoLyEyyFBI6VHQwJrQYPlZcMzDB8qgrKqhWZZGzEBZWj1olTadqMTrrzd++dfcB/HiIyzGymah6mks+Pr1BKTTaZBBxCRpqmvwN8bUIzFgNA26C35gUcTxov7WpRFIU4nnQPYmbz9ilvi32D6qpo6XZ11YCIDBEZKeUweYHEFtY2GOSFpR9CBgA86QJJCWEvBvV+11VRHNT7nc9u7+1atgW4SsZUwE3Y2JXdVdHSnYPwKfr4aQAA2azEPNdizCbgecZ5roUbJyVENiuhlML7N4GI/F9cSmnaBma7zkeL7u0HmPnuEv3ZOQPt/5XlhvWWaAAAAABJRU5ErkJggg=="
+    },
     FIREBALL_RAY_LINE: {
         name: "Two-way fireball thrower",
         description: "Makes a projectile fire small fireballs perpendicular to its trajectory",
@@ -3676,6 +4148,46 @@ const spellData = {
             action_mana_drain: 90
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABkklEQVR4nIVTPU/CYBB+XuIfcJMPg4Mik4Pp4g/AXZw1mpg0NZomRhIgYRJaExZkKJI4iCYupvwAWdgcZHKxESIxlI+Nf+A5yJW2YLjkTXp37/PcPfdegQVmaZLHL+Rr5I4LduLZ1lwCRdYpshpyfLs3gJGLCYST6OyGELA0CZuZN5BtzlRlsN0bOEeNmgLhJNCvY6MxBNqJIMg2QUQz7SqyTtwyG9km2ongrE6yTU8Xk7jKh8GWJkGRdYLfFFknJmJwd9Sk7qhJrx9lYhL3/fmOD7yIJOCfsl/z0ckBRuN3pFNFj1y+F3ADC/ka2b2BR9r93SOenmu4LqYAADff+4Rw0skvVaoZ4ZZg5GJCRFqwcInx3mFpZXkL2ztrHlKt8DDtsp0ITl+BvMO1NEll7e4ZKLJOTlH+YCK3JM5NXsgzQLYAS9hoDJ119g8SAMyf8xI/sVuy4IB/3wHAuE0LIYQDuvgqi/WXAdCv4/TqkyrVzCSL2V0wcjHROT772/d/iqhRc0rgt3l/qLuIGjVFPNvCLy5ODjK89QjgAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_SAWBLADE_BIG_RAY_ENEMY: {
+        name: "Personal Giga Disc Projectile Thrower",
+        description: "Makes a projectile turn the creatures it hits into living Sawblade throwers",
+        meta: {
+            action_type: 2,
+            action_max_uses: 20,
+            action_mana_drain: 70
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA40lEQVR4nJWSIQ7CMBSG/3KHJZgFmMMgQKHGAXaLaYLhAA0aw06CROLmEDV1I0vNkgmO8KO2LKMtXU2bvPe+97/XH/AcpQ19cQCYuQL3x4vDexJAacNkEeF2lUgWUZASqwKlDW0KgoG2RB/455CUY6DShnmes3s7i9/Nk+/myVIXfRJJ6VQwpHXFQwjJg3O0MbUrTLOYpS6YZrFbqm2uYffjZdcpkLbus806FlXd4nSWqOoWm3UsVvODaD4KALDdLwEAQgjpNdeYrLTpF1jqgpN+wLXpIA/86xTkwklu8ykJyfsCi2UZi9qKFYkAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_CURSED_ORB_RAY_ENEMY: {
+        name: "Personal Cursed Orb Thrower",
+        description: "Makes a projectile turn the creatures it hits into living Cursed Orb throwers",
+        meta: {
+            action_type: 2,
+            action_max_uses: 20,
+            action_mana_drain: 90
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABM0lEQVR4nLVTzWqDQBicFV+giPlBgi05FaGH9rKeUu95lfYZJI/gC2lPew+IpyAeJMYoeQHx66GubCSbQqFzWdhlZmdnvgX+E6ntUsM5pbZLfxJoOCciooZzrYAJALHl0MwwUfcdgrZk8vB0OAK+/7NqYEjyfL3EzDARW854m3cu2OlwTLxzwbQCkmwJMYpM8HXvmWbdd4Bite47AEBeJQQA1WUPPH+GWgdBW7K670Zy0JZMkgFg8fACkUVXIf7aSl4llFcJbbYrEllEm+1qJNytVm5KgbxK6GP3RiKLKLXdUJJltantkqGS5+slUtulp8U7qy57AMCr/wgA8M5FOLSCdshrbOeWMgCILKLYckiutzJgUweqsjojasja8KbB6JypuJqa6cTpZkSF3s4A3T+R+Ab9M+hpWYDO4AAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_ICEBALL_RAY_ENEMY: {
+        name: "Personal Ice Ball Thrower",
+        description: "Makes a projectile turn the creatures it hits into living Ice Ball throwers",
+        meta: {
+            action_type: 2,
+            action_max_uses: 20,
+            action_mana_drain: 90
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABBUlEQVR4nLWRrU4EMRSFz2LnGcZugmYNas24Xcc74ACBqsXgKzE8RRWIugqqME3WVKzpKpIm46Y5GDrMDLNLE8JJKnr73Z9zC/y3hLX8E+hj5K+csJZdSpzCX293w2JdSmyU6rkzAHg7HLBvW9RVdXQSYS3rqsK+bfG62SxmgdxhYuEeALqUWLSP3k7Q9EHTOEkf49Hkn6MA8EGP4PDxjsvz24WwltfLJQDgabfD42o1m4/cfb2taZzkeluzS2l0fIzfy2yUorCW0/F90Lx5uKBxkkNuZGkYHC7KOEkfNJ9frvoCJ5ULDWM50TjJ4l/Iynam91M/MtIcmG0WFZkDGqXKJyjVJz1vI827jOt4AAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_NUKE_RAY_ENEMY: {
+        name: "Personal Nuke Thrower",
+        description: "Makes a projectile turn the creatures it hits into living... Nuke throwers?!?!!",
+        meta: {
+            action_type: 2,
+            action_max_uses: 20,
+            action_mana_drain: 250
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABZUlEQVR4nLVTsUrDUBQ96a5LcGhpi9ChiptDwaUVVBzsYgPC+4SASweHDELBIYKDUOIiiorgA7V1EhwcQpdCJilI7RAqpbQBCYX8wHWQFxqbRhC90+Pd88655x4e8J+l6zpxzikKE4tqrs1oaDQakSKRBLbMkc/nf0cwqMkUdgYAy4BvbSpBf+hiy6psMMak/tD1iTjndPGqBsFhi+o6JnUdk5rtKo2rfp9G0nWdAKDX62F//RYJxZW6jhkAOaMWlk5PSm+ZTj23C2liXMHOOSfLAAn1QjFFzXaVCsXU1ChjAJCMywAAxpi0YGdLonl5do2buyscHu3BK2cXhdgEQUJxpYzLAACzx52Hj/tVOKMWAGB5ZV7ct71ydtuWeSAVP4Vxb8m4jPeXOTijFjY907f5mKvUga+E/CVO8yaSYYz5mEFNpoPnHaTTaQCApmnh71VVJcsAPZ0rocv76X9AJBIJ+qv6BFFNrN2x+xuBAAAAAElFTkSuQmCC"
     },
     GRAVITY_FIELD_ENEMY: {
         name: "Personal gravity field",
@@ -3790,6 +4302,15 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAATklEQVR4nGNgGLTgPxQQUsdED8eQBv7fKIQ7+3+yIkEvoGqeGoSiAZcBWMMHm2J0A3EagM+puAwhGiCHCTY+SQZQ7BqyAKEUOQhTIqkAALLnQp2FSzEMAAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_SPLIT_SPELL: {
+        name: "Split Shot",
+        description: "50% chance to duplicate the next cast",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 20
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1klEQVR4nN2SMQ6CQBBF326sTGzWxCDE7AGs0WPYWGgnZ/AC3AQ7bb2FSi0XIKCNHAFsWIJRESsTf7OTnZk/P38Gfg3RtjC+7lYmHlmLjYll2+YkCwMgSLIwqJN12ipwlIszmD/9NxKczssJoC63vc6FDUCShTjKrWoqDw7RWgNdWaQ9QOXCtsqUBnwAWaTesD978ECUkzTQBXrAsa7CTJZF6gHRZLw91fNNCgCsVgo+eQBMc2H7jnKNB54haTTRyI2vOwv4fgt1JFlYvS+38AnvLvEPcAcaRE887LhU7AAAAABJRU5ErkJggg=="
+    },
     ARC_ELECTRIC: {
         name: "Electric Arc",
         description: "Creates arcs of lightning between projectiles (requires 2 projectile spells)",
@@ -3846,6 +4367,15 @@ const spellData = {
             action_drill: 0.01
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAA8klEQVR4nI1RsQ3CMBC8R9DTEBZAYgEERNAgZQQGYAN6Qgk0FIgNGIANsJSGKBHKBmGBkCZ9EKYwMs4bAScX/++7f9+bYCHwIx1P1i67rdvsvViZKdOQzR7B63lDAImIQ4i5t7TnvNjbwS7wozKVUj6kfJSp1MXKBJWPZ0MA9Y5kje5XAnA+xMoSmRMSEQNQ71HQFf2qiukQonGTEO/K5XYqHerh3aIiyIq87bRCU+FQVuQ/tsQ8sC3V2DXrx9IPCPzI7fb1MRf6eQKAdrPFAhOkG6tgcZybvKzIN9O9ipWT18cxng2lnKxd+odtasi29R1P1Vd7Cm4Tm4YAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_MIND_VISION: {
+        name: "Mind Vision",
+        description: "Creatures hit by a projectile are temporarily revealed through fog of war",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 10
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwElEQVR4nGNgoDbYX338P0UG/L79nzwD9lcf///79v//////+//79v//ZLuEVBcwoQscWXCCJAsZsQnicr5jqyWGehZsGifuaWF4+eE1AwcbOwMDAwPDj18/GcQFROHyyAYxImuGaYSBQ1tOMjAwMDDY+ZjDxcQFRBnyXWrghjBh08zBxs5waMtJBhaV/wwsKv8ZDm05CXfNyw+vGSbuaYG7BiMQSQUUewElVAkFYr5LDQMDA45AxGYQOsAWjQMPAMe/cngjCD3zAAAAAElFTkSuQmCC"
     },
     UNSTABLE_GUNPOWDER: {
         name: "Firecrackers",
@@ -3910,6 +4440,15 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAPElEQVR4nGNgGH7g+27nwWD214kuaNq+368mXzNRqiGM7/erIYyvE13+//+PUxvcPXBt////p2XoDX4AAFxkJY4qlL0mAAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_TRAIL_LARGER: {
+        name: "Trail Enhancer",
+        description: "Significantly increase the amount of material produced by other trail spells in the wand",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 10
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAp0lEQVR4nGNgGDTgPxT4Tzj+n2wDyNbMwMDAANNsWrKSfENggBRDGAkpUPbJ/8/CxcfAwMDAwCenw3C6J5zx/////wMmnmDYWGDJyIRNAwMDA4N6WO1/BgYGBhYuPoabq5oZ/3z7xPDp0RUG05KV/wMmnmDYkG9B2HkwQ2CGEnQqukayAC7biApYZJvRwwLZEIrTy////3EbgC/AYJrxGgADFAUkKQAAfSlgEuObJAEAAAAASUVORK5CYII="
+    },
     BURN_TRAIL: {
         name: "Burning trail",
         description: "Gives a projectile a tail of fire",
@@ -3971,6 +4510,15 @@ const spellData = {
             action_mana_drain: 0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAqUlEQVR4nK1TOw7CMAx9rjgKEhNTLtEl7OSAZA9LLtGpU6XeJSw0clxbrQhviu33nvxpqZSCHgxd6n8YXKzC6z3x2Sh4d74DIQaAouR0A4to1QZBqO+cIgBgXeYmPuwAAAHA+Hg2SRmrBtqirre7Ktywu0Lwro7C27Y6MM+YU2xEMt5A/FP+bpkA1OS6zM0YwTviBtoSm1NxcU6RJFka7Ai8djjCL+j+mT61qj8p0iQScgAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_AUTOFIRE: {
+        name: "Auto-Fire",
+        description: "Causes the wand to automatically shoot if there's nearby enemies",
+        meta: {
+            action_type: 7,
+            action_mana_drain: 0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABEElEQVR4nK1TsWrDMBQ8lXxEwATSsVOhzWI8pB06GDJ36Nqxbj+io8dQj14L/oJClnpyZmfJ6GAoaAhk9Obr9IrsWK4hORASeu/untB7wIlQtkCcM5Lz87V6AYBCpwQAfdjAvXpTnQJCFJJAyAJTpNO1jUKnLHTK+WLC9XbJ+WLSEOwlmwKFTvn6fsv1dkkAuOgjmbgc3yl92AAAbtxpM9h298KMXpgxKSvOVnuS9V+54iy7tXzHD0jWJGsmZcV23ArHDygVzFZ7JmVFkjCXaToyidP7JwDA7vsTP18fygszPj641l4BgFEX0UxQ6pgf54wafeL4wfA3oufL/+uFQTlxzqgryXY/aJiA49k4G34BgzCyrh2ljrcAAAAASUVORK5CYII="
     },
     OCARINA_A: {
         name: "Ocarina - note A",
@@ -4151,6 +4699,24 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIUlEQVR4nK1SoU7EQBB9RxDwDcUWgy5UkSAIBlF9aoMhKD5hqEHcD2DIBUGqF4G4NGkwl8wZJB7FJzSoh7jdvW1pEwK8ZJKZ2X1vZ2cGcJBGLX4LadSSpBeRSq1UakWfB0VV5t/znjyTtZiH6K3tk0lyUOTFkRcq9s7ZmIj3t+KDHbwF/yovC+8f4LPzUF5eFBjDQiWoi96vy202uR/DN/Zv5Ll8AICpW8YW390GgErUTsu8CNlXHOEEwDtWpm65NMedB0zd8uF0dwJPJslKuotUiVpTt0yTjGmSUS4fg58mWbeSITJJxgKx+TPAjbFTvotXN8snAJieX2/yzt/fOxxvYDzG/hdIhq/0mxnIfhPHRPrkyZDIWbSFXiSOwwT+A1+kEv14F+43zgAAAABJRU5ErkJggg=="
     },
+    APOTHEOSIS_RANDOM_HOMING: {
+        name: "Random Homing",
+        description: "Cast one random homing spell     ",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 30
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA4klEQVR4nLWSMQ7CMAxFvzpxFw5AD9AD9AxsbLmB1YWBC7Cgjp2zMHSpGBiMKjHSmYkzsGCG1iVNW6hAfCmK5eQ/W06ARlSwxbeigq2IiEIoY0sZW+L9IJQp7efVvKEapiJeW98sIjIIOTTmnMlumzUG0ThwD2a4tPEqTGKN57h3CoXJMsaYcqaWTryr2y1eucnSwf5mTun26W4AABl5f+CMBQDgipNvqIyRTiJrJl/vD3HzvrmMIqmMkTKK+pAhqPtclTGi1d24J+2C6Ti9A1fuM/pQrf7WrD/RN07WUAd/1RMEdMvww2SdJQAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_RANDOM_BURST: {
+        name: "Random Cast",
+        description: "Multicasts between 4 to 8 random spells     ",
+        meta: {
+            action_type: 3,
+            action_mana_drain: 5
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/UlEQVR4nKWSMU7EMBBF31JxDloOsHuBVBRwBUpOkHLYhoIL0KCUqd1GliIKitkGpaKn2sLaA1ANTZz1OglLxJdceKz/5o9t+KdW6UZqdQBcHdhubu4WkZ5FnSUSfXJ/Nr/15kbFvfTrHESlcgAXAJd8DgcPm+0Q/ZrvWfP68f42QgBoVIaN6KszM9P2WAsh2FSCkaTVSXO65sY6mivZp/UcEEIw771BfweDPlgD8MVuLjpA13UURbHK6wDUokP0sixHndPuI1PdP6dK5RaZzcwiROXdLeqex47y3v9qlnbsOfkL3nvLIREQX+sE0vTfN4WkoDz62QRTI03VfwBI7UXSiDkrZAAAAABJRU5ErkJggg=="
+    },
     DRAW_RANDOM: {
         name: "Copy random spell",
         description: "Casts a random spell among the spells in your wand",
@@ -4247,6 +4813,27 @@ const spellData = {
             reload_time: 100
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAtUlEQVR4nGNgQAK2fVr/GUgETMgcDQNWUvWjGqCrpEW+Aan79P8j07gAujeZ0BUQcgW6N5lgtsI02ssk4XUFugUoLrCXScLrCmzeZGFgYGCY7XSRMXUfw38GhnkMDAwMDHkKyxnxeQNiwUV8SiAAOcBS9+n/n/Qg8v+kB5H/L/7Z/R/mCoxARAbY0gW6N1mIdSqp3oQ7mVC6wOsFZKeSZAAp6QKvCwilCwYGBgacAYHsCnwBBgBrvUiSiufs+QAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_SPELLS_TO_CATS: {
+        name: "Spells to Cats",
+        description: "Transforms every projectile currently in the air into Cats; a cute idea",
+        meta: {
+            action_type: 6,
+            action_mana_drain: 200,
+            fire_rate_wait: 100,
+            reload_time: 100
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABH0lEQVR4nJWSMWvCQBiGn4hwBgoWW6STf6KFbFkkBSfHzl39If0Jrl1cHF106pLBobTEKT+giyCHIDRoyPB1EOP1eknxW46D533u++4OLqivNwTgfXpcARqXCACyIpG72+MK4FWB3x/IdgedNmx3bqbXx2tWtWqHTFGvfz7YOUKnfYZs0Tz+vXcKzNA8PsquHqrHddZiPBSAycuj1HG1r5AVidxc++WNu8oD+Hx9ks3+QNdvsdkfnOBgNHOO0FyMh2KHTFFVsByh67dKyBYtV+s/gTAMBSAIAgFomKHlas1gNPPun6e1p2ZFIkopsiKRWjCKIsnzHKUUeZ47GedPPLVqh0xRHMce1DyjUqqEbJHW+v8OzJDWmjRNvVNnJvcD4kaAewv4b9YAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_SPELLS_TO_CURSOR: {
+        name: "Redirect",
+        description: "Redirects all airborne projectiles towards your mouse cursor at a high speed",
+        meta: {
+            action_type: 6,
+            action_mana_drain: 220,
+            fire_rate_wait: 20
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAcklEQVR4nLWQwQmAMAxFf8VbB+hcXSDDZYHMlbtejYciiFBpbHynEMjj5wORKJEpkXlu1uci1woFDAAKc3IJCnNSwHKtLdGAaHmzXyI3SmSbyFAf3QS7SHvJWWo3EQCYHfOyEOKTfDH+00eY9S4amac4AcwGRos6eHDpAAAAAElFTkSuQmCC"
     },
     ALL_SPELLS: {
         name: "The end of everything",
@@ -4349,6 +4936,16 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0klEQVR4nL2SoQ7CMBRF3yX8AENgEXjEhsOSkCDw/MEkim9AIfcH8wgSktk5NoFHYCc2PuFi6NZ1W1rFca/tPXmvLcSBaOfznr0769eixGgoRJI28X42ZS0wA5/cpTeRWgAAVdZIvACIw9TaRWsEM/R8Pdw7UByiNU6bC0VEzskRNoH1gGLoJeoO9Pn1mj/CW45tMO8K1EEvAPSgqv83go66RFu4VxCHKdXtm6I+xnpRZaQ++3KxEkkcBSQJNGFTNkTrK+sbE98WNQQmprCPa1HiC2UKZG9bgNLQAAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_LARPA_DELAYED: {
+        name: "Burst Larpa",
+        description: "Make a projectile cast a burst of copies after a short delay",
+        meta: {
+            action_type: 2,
+            action_mana_drain: 40,
+            fire_rate_wait: 32
+        },
+        sprite: "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"
+    },
     ALPHA: {
         name: "Alpha",
         description: "Casts a copy of the first spell in your wand",
@@ -4418,6 +5015,26 @@ const spellData = {
             fire_rate_wait: 30
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAr0lEQVR4nKVTwQ3DMAgkVSUv43+6SbpF6SRxt2g3sf8swyt9FCQ3BWop97ERcJzlA+Agpj5gwgoA80hjymUyE0xYmXBjwsXJL0y4aXwyalY5787kFwA0jU0Z3VNayuViSo0IhERlXmWqCesJCpTzGSlwCVIuj6hxRIGiRUmXgAlvcl29mhDihfqvzlQgjc2b3hOfjeQCHw+Y37d36I8PehMFymfdhS8Fu2UaWqrDeAP/XkOcSm9IYgAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_CHI: {
+        name: "Chi",
+        description: "Copies every utility-type spell in the wand when cast",
+        meta: {
+            action_type: 5,
+            action_mana_drain: 120,
+            fire_rate_wait: 50
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAuklEQVR4nKWTwRGCMBREXxxnaIY7dmLKgEqkjNCJ3GmGk15+Mus3UUb/CZKdt8smwJ8T9GXfxmvXz4tfAyZgsKWomiDCu4liA5KAtevni+6d8oNsTJWkyWneATKDpVF3gLWirQKigzTdAc760vVzMFeAJJCqO7hT0JHiCrg2tU/IacpJSA/HAS5+akGaAOziWHkFsm/j4ytA3KOHHE2Q3UsPAvkM8O5ubk7zCrCi8k8z+eIsUWxdqp/mCXejWZ/F6yRaAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_KAPPA: {
+        name: "Kappa",
+        description: "Copies every alt fire-type spell in the wand when cast",
+        meta: {
+            action_type: 5,
+            action_mana_drain: 40,
+            fire_rate_wait: 50
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnElEQVR4nK2TsRGEMAwEFxKaIYdOoAvcybsM6ARyN+MIEsNo9Eb4h79IluS7s0aGl6jkIQa3Al06bk3reysPUCvCzxnIprv4i6Bp/aItxuCGGNyelCtd1w5ymHPKFsEm1XXuVwemukmQ3g0wWgolMzBxSyAmPr9xMMK1SMUE58bJvegyfUUOHl3ov+CBKanr2p7Lawe9uLA+xX/BAd67PKvHIOtnAAAAAElFTkSuQmCC"
     },
     ZETA: {
         name: "Zeta",
@@ -4501,6 +5118,18 @@ const spellData = {
             reload_time: 60
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABi0lEQVR4nJ2SMUjDQBSGv8soqGsU4iAI0WzSQqFYIe2axaGDzdCpg4OdCiq6CXatY1w6VAeHInZysBTBRcRFUgsFBwXNqoWu5yAXakyl+Jb/ePC/+993JwBs15PDoM+UvoRSgLieqveHFgCa7XpSt0wAlI6eozoM+uiWydyqw1O3JbR2oyQCv8di1uF0Zy28SfWq2Q6LWYfA75FfqHKydUdmUAwHiuUVRwLMrTq/4kV754eflJsFahunlJsFhkEfoRjolsnzdSu8LY5BfqFKOmFwe//KzXSds92M0NR+mUExjDeOwfnLDvn9GWoXFtVsB9v1pJbKVWTg90gnDMrNAumEgW6ZjHJRqYZBn65/yey8iZE8oN0oCQGweXQjM4NiGK92YcUyAOj6lwjx7QMQtuvJ+nZAfm/Ax9v37lf1JMVjnSiXdqMUGlVp7UZJGMmDcLqKF+Uy+kfGlpRSAqRyFWm7nnxsrv/QVK4io55fkVRFuahnm2jAX1ziOIxdJ5WryFGdyBg36F/GSesLD6PmXpTZRc0AAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_MASS_BURROW: {
+        name: "Kaivossade",
+        description: "Rapidly excavate a large amount of terrain",
+        meta: {
+            action_type: 1,
+            action_max_uses: 2,
+            action_mana_drain: 225,
+            fire_rate_wait: 100,
+            reload_time: 60
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwElEQVR4nK2SMWhTQRjHfydOXTp0SQoRghSSl6Xta6ZCRu3yGujgUA2I8GbfkqGDIDpUhJpkPigureAgxrdYxcFCUbTv0OHVBwEDDTRv6VCkWc8h3PO9WF30g4P77r7/7/7f3cE/hvjTRhAEOp3btn1h7W+LRthsBeQqJXY3aiK9Pgm6NClutoJEDLC+ua8Btt6cY9u2mHQm0uJbjfssNJoAxGEEkICME1NrnCQOlFIsNJp8f+cThxE3rjyis7ZD7cdt4jBKnKxv7mulVLYFKaV+9l4ThxFnJxGjuMfyUoG7L26yvFRgqPwEsrtRE67rCimlzjgYKh+A/KLD2UnEweGAztoOB4cDpmdLGUj6Di6nk1HcYyo3R37RofMSnh87jOIeH94+ZvD5IYWqi1VZzbxa5hUMJD034vmVbWZmihyFrzL1yc1KKfWT1nhzerbEVG6OofLZe1plfmU7EXx5fYe9r3lc1xWZFsIw5NuRLwDKkPRZqN4DxoDT0z5WZZXr165OGh+H53m6bDkaoGw52gyttT7+9ECXLUd7nnfxR0pD+v0+3W5XwK+feP5xi2KxSLvdFn8FmKjX65mTDPC/x0+1qNGw96zBQwAAAABJRU5ErkJggg=="
     },
     RESET: {
         name: "Wand Refresh",
@@ -4654,5 +5283,256 @@ const spellData = {
             action_mana_drain: 0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAp0lEQVR4nGP8//8/AyWAiSLdI8AAl8tM/5n32fxn3LD2P2PNfVho/5djnAIPeRQDfrtp/GdgYGD4d5kXruCv0xFGGJvRatt/Lo7pDI/+5yA0/f//Hys++pbh/////xmY9lr/x6Xm////EAPuMjMjFPWr4NWA1QAY/uWqTpJmFANeSQvDNf+9xPP/////DM6XGAkayEjVpAyLBZIANmfBvEAMpq4XyAEAqRgM235KtSEAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_MASS_MATERIA_CONVERSION: {
+        name: "Mass Materia Conversion",
+        description: "Cave quid volunt",
+        meta: {
+            action_type: 1,
+            action_max_uses: 3,
+            action_mana_drain: 200,
+            fire_rate_wait: 60,
+            reload_time: 30
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACHklEQVR4nLWTT0iTYRzHP28IbjoHwmToknqn8er0ILWTFIkyobIi6NBFEYLNhC6j2w4hJAV1CcEoMMibEEzI/sDAS9phaCq8jETpRRyMBjJena9Bwq/DeF99QwiCvrf3ed7vX3jgf2BoTpUpmZEpmZGiqUvR1OXD1/ty0r+njn8MPuqTKZmRy9eesMgsAHsHBQCiLQmKpi4vP15yCSnHyT2pOIvMUs7lAPBFItxeCaA13aDO28jeQYE6byPpL/dIXPmsAFTZAj2puCuax9jlV7rI9oU8APW1qnN3q/sFCTqPKgzNqQI47h5jl5+qH2vDQ3Owi6vnJ5TSvuEysDepArA722RZDePhO9Nv3ivBsxEB2P6xCsEjgWhLAphwjwggq2GsDQ/TA4YyePeOTI7llNGHEWkOdlFfq1LaN6jzNrpH1E1TAJ6tr7OUyRCNxVhZWGAtmVTexS4KgHV4iKq1EezrxxdupTrQgO+MqjgJ8pZFq8+HPxJhKZNhLZlUOsfHBeDcwE1UrQ1/ewe+cKsrcZXt/EDTKieaxmYoBCDRWIzrqZSyFR8VAG9TiOpAQ8Vw9u1RBbtG3rJYKpUc9c1ymdHXk/jbO/A2hQBc8Z0EAPH5eV719gJwuqaGvGUBEOzrd4gA1YEGco/H/ty+gu50WnTTFN005VOhILppys5yVnaWs1LeMqS8ZUh2ZPjEN+HCcDbrCNnEb8+f/p34L/gNYd7sPCbdzU0AAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_BUNGAL_SHIFT: {
+        name: "Fungal Shift",
+        description: "Cave quid volunt",
+        meta: {
+            action_type: 1,
+            action_max_uses: 3,
+            action_mana_drain: 200,
+            fire_rate_wait: 60,
+            reload_time: 30
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABMElEQVR4nKWRMUvDUBSFvxQFC7WlItQuDm1JDJ2cOmQM/gnXQjfBwR9S6FYogrtDwEkoZAnExQ5a0ILiZCxICraSMQ72PZLGYKxneffde8+5574H/4TyU3I2eA9Xc1v7m+SPSon+WEIQJ8PHhGilUKTUqiaEZPDSuQuniw9JUE1NCkVjIVRu7yoAOYCbYycstaqS7C88XMumUigC4Fo2/sJDNTXEEOF2A+B+eotveVLg9XMZv8XvrmUvTw99T4uvMDB78uHGsweM0zy1ukpDN7i+OsfpBjTLB3JIe3iiSAfRhBByugG13nfN6QYJYibM/XE4cvqJL40iVU0QG7rB9k4ztS+XVjg0OpmspgqI6VE3f8bI6Ydzf7z+Gzw/TajVVSD7SgBcXpyFqw7WXuM3fAHEM37cAyZbOAAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_BUNGAL_SHIFT_SPAM: {
+        name: "Hyper Fungal Shift",
+        description: "Insane....",
+        meta: {
+            action_type: 1,
+            action_max_uses: 3,
+            action_mana_drain: 200,
+            fire_rate_wait: 60,
+            reload_time: 30
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABe0lEQVR4nKWSv0/CQBTHv2ccMGAIJMKAcQBs0jB1YugmOvMHsNmkqwt/QCd3FgYSMCFxZDEmRANsjWXqYmNCtDFGG+3QDlQD07l4J6X4I/qd3n3z3ufevXfAP0VWmb7ZpstebGsHG9sHkfyQwQon5igCzebiSGbKERAP7i9U+vL0ygsE2sCEHEViBkpJCgGANQAYd2o0+XjMi71ZAGOuIJuLAwCMuQJvFkCgDbBLWLfrAHD98Awvo3CA4wah9tnZ+Mgxrs4gFrLhJ7S1Ch+cZfuQ9/eQLwgoijIuz0+gD0Yo5VMcqmhDwjtYNBhIH4yQLwhg8XLerzT1LGrqrchKF/UljRUWRRmb6RIBgH6zSgEgHUugfHj6uYVVkmQ1BO83q9RxAzhuAG8WYNyp0QiAmUxFUebdOG4Ay/Zh2T6HhNTWKrTfrNJFiKm36NSzQtBetx468w4UbUjeErv8babeovbdBLc3Or4b5MoZ9Lp1KskqYf9AklXy0zb+rHfW+q4+ZyuMEAAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_RAT_BITE: {
+        name: "Bite",
+        description: "...Magic?",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 20,
+            action_speed: 7,
+            action_melee: 1.0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAAr0lEQVR4nO2QIRLCMBRE9zPo+tYBAjDYCnA9QDhAL1CbE/QE3IUD4IroCUpFqQPPBRb1MyETUcMMgmf2JzO7fxPgz3expuAx3xEAVCdTVyXrqiRJWlOQZDRAfIPOr8cTSZa6GQDafkS+XuB0vogfMNeqvlm17Uc03YDDduWUJEXEhYg1BXVbuDHkertLeDfzjVpdA5tu+NDYP4hfX0my1DXxCd8PANhvlozNU86/wRsiFVr2GDVOdAAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_RAT_BITE_CRIT: {
+        name: "Bloody Bite",
+        description: "Magic...............................?",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 80,
+            action_speed: 7,
+            action_melee: 1.0,
+            damage_critical_chance: 50
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIUlEQVR4nM2SMUvDQBTHfzkylhZLDLSbOIiDswhudY978wWyFty7+zXqB+jsIIgogpuDOEi3BGNIaeicOMg77y7N5uBbLv+7/+/de+8Cfx2zaNLMk7iRcLXrVy7cH49aSas067zQmydxU6UZAnaZ++MRVZqxeHoFIM9zD0AJUKWZhs0quhKHYdgA+LKRrzeEewMAbu8eST7XTMuS8+NDAB7ePn6Mlxe6Cj0DE35+XwHQU4qb4VAbl0GgL4rPTn5b2AUDXO8P6Cll6WUQsMpLy6cENuPqa6OhXVq3IxW4cFQUlt7WdSu5NQPp7fTowDIDREXBtCy13ta1NRtvFk1af5cZMiO30sX9iwfgy4HMwjWasHwLDODLpvkaJiSrCf2v+AbwHbAxOTbXCwAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_MASS_STATUS_DRUNK: {
+        name: "Mass Drunk",
+        description: "Affects every creature in a large radius with a drunken curse",
+        meta: {
+            action_type: 6,
+            action_max_uses: 20,
+            action_mana_drain: 100,
+            fire_rate_wait: 100,
+            reload_time: 60,
+            action_drill: 0.01
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwElEQVR4nGNgoBAw4pL4fyHxP4pCg/k41WJoRNeMTxyvrSSpwSZR4iP1v8RHCqtrYGwWGOPe8dsYhpoosmK1DEPt3ek2WJ11d7rNf3xyDAwMDExYrWCAOP/0tccMSpaqeMOGBZcETucSa8BJeWWGGxL8DBtZeAnZAQHofi3xkfq/Ilf+P7ZwQObDXXD62mMMQ8/c/83AwIApjk0tAwMDA8OKXHmCCYmgmhW58lgTD8xL6OI4Mwi6IT1bnhGXmUgFABvjZoQ6/D8oAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_MASS_STATUS_WET: {
+        name: "Mass Wet",
+        description: "Soaks every creature in a large radius with a magical wetness",
+        meta: {
+            action_type: 6,
+            action_max_uses: 20,
+            action_mana_drain: 100,
+            fire_rate_wait: 100,
+            reload_time: 60,
+            action_drill: 0.01
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0klEQVR4nGNgoBAw4pJYf//Vf2R+oKIYTrUYGtE14xPHaytJarBJuJfv+O9evgOra2BsFhhj3YM3GIayqotitQxZLRMDAwND7P5r/xc7aqEEErLNPvPOorhisaMWY+z+a//hBhAC+uoqOOWwGuBevuM/zPkwzdVHP2INPIIuuHjzDgqN1QBkP8HA75uv4ewzm46j8JHDDO6C8zdvwxXs7PRghBkC0wgTQ1eLAnRmbCSYkAiq0Zmx8b9cZjWGIrnM6v/YNOPMIOiGPJreSlxmIhUAAAgHciqPSj/OAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_MASS_STATUS_FIRE: {
+        name: "Mass Fire",
+        description: "Burns every creature in a large radius with a magical fire",
+        meta: {
+            action_type: 6,
+            action_max_uses: 20,
+            action_mana_drain: 100,
+            fire_rate_wait: 100,
+            reload_time: 60,
+            action_drill: 0.01
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9klEQVR4nGNgoBAw4pL4d3XNf2Q+k3YITrUYGtE14xPHaysM/PeW/k9IDVaJn12W/9ENQFfLBBe9vgHDUPay44wMDAwMv+zlUCXQ1f5bE4NiA8zGTweyUGhsepjQJWA2/veW/s+gKAURUJTC8AamF5DATzNDDNdgeAOfAQwMDAyfp2UycMrpM/zZMgPDUAwDmEKWMKKHAz7wb03Mf6aQJYwMDAwMLDBBxlub4Qp4uzcyfC71Z/gOE7j/jIH91HkGbGpRwP82frgrfnZZ/v90IOv/pwNZ/5EDEFkNTkNeVAtiKHpRLfgfm2acGQTdEInW98RlJlIBAMD0fnEx/9GKAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_MASS_STATUS_URINE: {
+        name: "Mass Jarate",
+        description: "Douses every creature in a large radius with a magical jarate.",
+        meta: {
+            action_type: 6,
+            action_max_uses: 20,
+            action_mana_drain: 100,
+            fire_rate_wait: 100,
+            reload_time: 60,
+            action_drill: 0.01
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzklEQVR4nGNgoBAw4pJ4/abgPzJfVGQCTrUYGtE14xPHaytJarBJ3Hwg9v/mAzGsroGxWWCMn7/OYRgq+IYPynqFIo6h9skzO6y2vzqjAsfo8jA9TBjWYgGC0vY45bAacPOB2H+Y82Gafz9Pxhp4BF3w/ulBFBqrATJShxjRw+G9yCc4+97PzSj8J8/s/stIHWJEcQEj0ym4AnWFV4wwQ2AaYWLoalHA0xccBBMSQTU3b3P9v3CJF0PRhUu8/7FpxplB0A0x0PtMXGYiFQAAT+F0yeTaKuYAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_MASS_STATUS_POLYMORPH: {
+        name: "Mass Polymorph",
+        description: "Afflicts every creature in a large radius with a magical polymorphine",
+        meta: {
+            action_type: 6,
+            action_max_uses: 20,
+            action_mana_drain: 120,
+            fire_rate_wait: 100,
+            reload_time: 60,
+            action_drill: 0.01
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJklEQVR4nGNgoBAw4pL4cPLtf2S+gLkwTrUYGtE14xPHaytJapAl/v3++//f77//kdlfjj77j00tE4zx+ex7uGaYGLImLjNxOB+mFg4eT7uDYhs2/KL19P+38679fzvv2n9kPUzIBn079RKn3w/O3MrAwMDAsKdhFYo4igGftz+EG4Js2LdTLxns070ZGBgYGFwawlAMYEHmSLZYMr7gPP3/8/aHDLye8iiG8DhIM3w58BSnC+F+etF6+j8DAwPD85rj/78cffb/Revp/89rjv/fpdjzH10tihc+nfvAwMDAwMAqyc3AwMDAcHnpUQYeaylGVkluBskWS5RUCFOLAa6mnCGYkAiquZpy5v8J0z0Yik6Y7vmPTTPODIJuiMVpF+IyE6kAAFgvyV9w8HJXAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_MASS_STATUS_POLYMORPH_INTENSE: {
+        name: "Mass Chaotic Polymorph",
+        description: "Afflicts every creature in a large radius with a magical chaotic polymorphine",
+        meta: {
+            action_type: 6,
+            action_max_uses: 20,
+            action_mana_drain: 120,
+            fire_rate_wait: 100,
+            reload_time: 60,
+            action_drill: 0.01
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0klEQVR4nGNgoBAw4pK4v/L2f2S+YrgqTrUYGtE14xPHaysxahiRJWDOrHM8jNWgpv22jOhqWWCSn669Z2BgYGAotNzw//OPtwzvfzxD0SzIIcVQ53j4f9N+W0aYWji4WH8KbmOC4bT/CYbTMFxQaLnhf6Hlhv/oeljQFS44n8WIrhHGRncVVgOwaYZpRDecoAH4NGIA5HAgRS0TjPHx6nsMhegBh08tAwMDA8OhkJ0oirHFCLoarIYst56HoWi59bz/2DTjDBx0QyKPJhGXmUgFALMDgKh1S7OpAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_MASS_DRY: {
+        name: "Mass Infiltration",
+        description: "Freezes the stains on every creature in a large radius with a magical spell",
+        meta: {
+            action_type: 6,
+            action_max_uses: 20,
+            action_mana_drain: 100,
+            fire_rate_wait: 100,
+            reload_time: 60,
+            action_drill: 0.01
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABBklEQVR4nKVTIW7EMBCcPVR4kQ4WGpYeLzQMDTsQdC84FGCUFwREAWGhgX7GPSAqMCqIlPxgi9ZK7PjUqiMZ7GRmdrOygX+CUh+maeJtrZRKaiNjaH7FUyhSSlE3jAwAZZETAEgNAJ/Xj900lDKnUBY5iXYXYK3l59c3Ltl5Z5iXNeLeszdorQkATmIWYl5WzMvquwm3hdaarLXsAwSP+81PNC8rumFk6R6GCnYBR0FSP+43CieJAuqm50t2RjeMLAYxyTThkqMlAvBLK4uc6qbnLQccLBEAnHN+dOks5nAHzrmjPwfato3uQN30LCeliUKMMZHIGMNH5uQDCUOqqvrdY/orfgCnzaR0IMNXCQAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_ALT_FIRE_TELEPORT: {
+        name: "Alt Fire Teleport Bolt",
+        description: "Right Click to fire a magical bolt that moves you wherever it ends up flying",
+        meta: {
+            action_type: 7,
+            action_mana_drain: 40
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA4klEQVR4nO2Rr04DQRCHv7lAyFXfcT1DSBO4Ihoeo6qifQrQPEZzCnHBYpAIFE+AJqjNOsyV7AM0TUMG070sLWIbkHx2d35/ZuCveHp+1fnto94UI91n7sAPV1UJwEX6CcVI6483iRaoqpKz/hIoOTxZwfsRdWSCBMCYFrtIAVjfv6B3DwA455rws6ru1NtK4Ckj/TcJfsK7O+ca3eBThEkSa+00rGAXKca0nVCWZVci8m2hIiJepHvwlzCmZTK+lLB/nufXoWso2FUYDnqz89NjGQ56s3Bw2zl6B7H8WuAf+ALal17WlWVoWwAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_ALT_FIRE_TELEPORT_SHORT: {
+        name: "Alt Fire Small Teleport Bolt",
+        description: "Right Click to fire a shortlived magical bolt that moves you wherever it ends up flying",
+        meta: {
+            action_type: 7,
+            action_mana_drain: 20
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA20lEQVR4nO2RsWpCQRBFz4hBnvWC2cYiEJ4pJFUg+YJU+RRt/Ayx0co2TcoUVn6BtVgt26V5ht0+BJGxcUHkJXlBS0+zzc6dcxk4F7P5UoeTdx20uvqfuXoaznMLwF22hVZXR58rqRyQ55bb6y/ActX+ho8Go4oGNQDnCvw6A2DzukCnbwCEEHoAqvpjrSODhK24f29QRgihZ4wZp+26588Kfp3hXIExZhxj7B9+FhE5DqkDvDzfy2y+VLA4V9C5aT7FGB/KzETk9+t47x9ThaR++JZWOIWTAy7ADulvX0nS3eAxAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_ALT_FIRE_SWAPPER: {
+        name: "Alt Fire Swapper Bolt",
+        description: "Right Click to fire a projectile that swaps your position with the target's",
+        meta: {
+            action_type: 7,
+            action_mana_drain: 10
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwklEQVR4nMWRMQrCQBBFf7bLCYKdKBgRcgXBM+UYllZiZ2NpEZucIHXK3RTGKmFrC0HkWy1okl0NBvwwTPHmz/5lgKGUpDnXmyPjIGIfnzDmMBxhPptg5T8QBxF32ZUAYOtvUqUmbxeqUvO8nPI0XnydQgCAlBWK2gcA3PcZuD1YDc4EplSp+yX4Ra0vFLUPKSurgWR3uiTNqUrNJM2d8ZsLPNdmz/M+cmHg67CBxuTiovlSVwIXb13BNmzjw5zxr3oCFh59rCLIFDoAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_ALT_FIRE_COV: {
+        name: "Alt Fire Circle of Vigour",
+        description: "Right Click to cast a field of regenerative magic",
+        meta: {
+            action_type: 7,
+            action_max_uses: 2,
+            action_mana_drain: 80
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABWklEQVR4nKWSsUrDUBSGv0il5AlsIdBaWqODpau0g4g43WfonD5DxSkdnRtXFx/ALILo0uKqFaFpSwkaaPQFShGJQ0m4SVoo9J+Se8/5/nPOPbCllPDj/uEtGI6m+OYV19/vymBhd+XAala0VgEyYbKu5wE4Uv9g7zjo99qWHBgCkyAFYOT+BJXcnLGvsts84eMzS/C8H3Pypp4FUG90YpAdAMeZMfZVAH5vXwhu7gAQRRtRtGOgfq+N3F4GQNfzVHJzKSyPUqhFf4fFGt7UWzWCZQWb6PxMGFpJM7SSZshVpFoY+yqOM6OMGSWXMSljptqJAIXTLyuEOM4McVHdtLDlDAC8TNMi0AwOYEItcgaYcAnA0H1NAaJFGizsbr/XjvUsAx6f7Ggv5KdcO0TZbZVzqAhQzYpWvdGJXdquwHZF7Cy5SAoJhc8jtxMmhkbyeQqQBMkVrovdSv8kPItc8F4u2wAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_ALT_FIRE_TARGETTER: {
+        name: "Alt Fire Targetter",
+        description: "Right Click to fire a projectile which causes irresistible hatred towards anything it hits",
+        meta: {
+            action_type: 7,
+            action_max_uses: 8,
+            action_mana_drain: 40
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABK0lEQVR4nLVTMWrDQBAciTQqXAhCTDpDCpOAyQ/S5hf6gEmV+BVXBoPqfMCF0ugFqVVKLnKpZERAhcUqIoRJ4eiQkCy5ycDBLrc7O7t7B4yAJIfu7doIwojqecPH6aKVUJblYIGzOnk+vwQAXDs/wHTBhycP55MJAKDwfX7u95itVlatyrIsy7AkOiO/PpjojO93V3yd3RgVImJsrRSbvlEQxymAg4LvlzcwToH7WwBAVVUm+GK5RLZed/uoFdQn0RnzPG9VavpaKWPbOALXda1jfj0bQxDHKbY7BwCw3Tl/LXWR5zlFhLbnQUTYWnEQRkx0xiCMBvcOHLbSe9Hs7dQZ9JI0V9VMFBEOJvcFjb2DFppD0Uqx8H2KCAvfb5GO/Y+OopODx1T9C34BUKLeIZFxZbQAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_PORTAL_LUKKI_RED_PORTAL: {
+        name: "Summon Red Portal",
+        description: "Summons a red tinted portal to where it is focused, Right Click to mark a location for the portal to focus on.",
+        meta: {
+            action_type: 5,
+            action_mana_drain: 300,
+            fire_rate_wait: 100,
+            reload_time: 100
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABaUlEQVR4nLVSrY6DQBicXk4h1mBQCGybDRVcdl+gPMJ5Uh6huqnmEUjwPMLKU9sEAUeKRaAwGMRaTn0b2t7lztxnvv2b2dmZBf6rquPxsxRi+e3cy+NCxnldCrH0txvfxjE+Docl47ymvcfzm/Xkdj4vADBpjXGe4TEGV0p0SmEwpvEdJ9zGMXaXi8VZBRnndacUJq3hSgmPMQBAkKbwGIPvOCGtrZVYglPb7gdjmnGeMWmNqCgAAH2eA4BVM2kN33HCbxWsb+nzHK6UCNIUrpSIisI+jUwGgFciePO8kAB9niNI0zuzqiS5U9IpxS1BKcRC8iatLYhI1r3Pc0xa4/163ViCYLdridFjDFFR2LdTJ/JxnjEY0zzFWAqxrI0CYMdRUaBKEgs+te3+ycTBmIYAZBRJr5LERus7TvhjjADsLeM8W/kUrSsltnGMtYK7n0hxntp2n3FeUzKdUnafzPtzlUIslPm/1Bdsmsb5ZsubawAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_PORTAL_LUKKI_GREEN_PORTAL: {
+        name: "Summon Green Portal",
+        description: "Summons a green tinted portal to where it is focused, Right Click to mark a location for the portal to focus on.",
+        meta: {
+            action_type: 5,
+            action_mana_drain: 300,
+            fire_rate_wait: 100,
+            reload_time: 100
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeUlEQVR4nLWSPW6DQBSEx1EKGkTlAldEoQjS2oLSBRfAB0A+A9Q+hOvlEBwALrB9ILEVU2CFCmpEQ7cprLfCdqSk8WuW/XnDtzMLPKq2X9sPljH517mn2wU7sQuWMXn4PqyCtwDr97W0E7ugvdvzs+lkd95JABC9wNAN0E0dvuEjr3KMzVhqluYGbwH2r3vVpwjsxC7yKofoBXzDh27qAIB4EUM3dWiW5tLalEQJ1FHtjc1YDt0A0QukTgoA4C0HAEUjegHN0txfCaZ/4S2Hb/iIFzF8w0fqpOpqZDIAPJPAfD13qYG3HPEivjIrPIVXJHmVr5QAy5gkPNEL1UQi05G3HKIXOG6OMyWwfFl+kqJu6kidVN2dRhIfugFjM5Z3MbKMyalRANR36qQIT6FqrqPauzNxbMaSGsgoQg9PoYpWszR3GqMysY5qD2fICaLLjQv+0A0QuLwPGMB+s1cEVy+R4qyj2rMTu6Bk8ipX+2Tev4tlTFLmD6kfuZ7CjLBtAj4AAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_PORTAL_LUKKI_BLUE_PORTAL: {
+        name: "Summon Blue Portal",
+        description: "Summons a blue tinted portal to where it is focused, Right Click to mark a location for the portal to focus on.",
+        meta: {
+            action_type: 5,
+            action_mana_drain: 300,
+            fire_rate_wait: 100,
+            reload_time: 100
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABf0lEQVR4nLVSPWuDUBQ9KR2yCAHTIZksJYYIBjOmuGUKdC6hkB8guLj0F3Tq0kVI9yyhs+DkJjiV2IZGaih10sWA4OJmp/tqPqBdcpf3ec4779wDnKrunj/eZMMq/7p3tr/RmZpL2bDK1ed3fzzs4frhtexMzSWd7d+vVRf3L18lALhhhnybgONbUMUGbC9AkUZ+vSko42EPj7dXDMcUdKbm0vYCuGEGVWyA41sAAH3UBse3UG8KCu1VlTCCzVwfFGnk59sEbphhoUkAANOJAYCpccMM9aagHFVQfcV0YqhiA/qoDVVsYKFJ7GtkMgCcE8FFd6gQwHRi6KP2jlmT2XpHie0FfUYgG1ZJ8twwYyAiqY6mE8MNM6yebmq/BN3Ld2Lk+BYWmsT+TiOR59sERRr5B22UDausGgWAzReahMlszcCbuT44MLFII58AZBRJn8zWrLX1pqBU23gQpP3Q7IcKwPEg0QFJLNLIp1ABQL5NYHvBDvhfJRtWST0/Sf0Av4XMfK5AImwAAAAASUVORK5CYII="
+    },
+    APOTHEOSIS_KNOWLEDGE_OF_KINGS: {
+        name: "The Knowledge of Kings",
+        description: "Casting this spell causes something irreversibly permanent to occur",
+        meta: {
+            action_type: 5,
+            action_max_uses: 1,
+            action_mana_drain: 600,
+            fire_rate_wait: 100,
+            reload_time: 100
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAsUlEQVR4nGNgoBAw4pL4/+PUfxSFHGY41WJoRNeMTxyvrSSpIUYzNrVMcNE/hyCSX3rgkv+/9PxH5yOrZcCQgGmC2oDs7/8/TmE1jIkBHdy6huFMOBsqhwxYsHoS5kQWO1Q+FoDhggP776MahKQZRQ7ZBYw8JYz/v/T8Z+QpYcTlVGSAohYueC6J+GjEpZYYQwiq+X8u6f/+XkcMRft7Hf9j04wzg6Ab4li8n7jMRCoAAM9IjbE8H21pAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_UPGRADE_ALWAYSCAST: {
+        name: "Spell Infusion",
+        description: "The first spell slotted in your wand will be applied to the wand as an always cast. Spell is voided upon use!",
+        meta: {
+            action_type: 6,
+            action_mana_drain: 0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfElEQVR4nGNgGPTg/72Z/////////72Z/xkYGBj+////nyTN2PhEG4KuEMZHFmch1RB0wESUU8g24P4s/HxiAEWxQDF4Nj2GcttghuByOiOywgf3HzAsP3GfIdJCEU4zMDAwGLrnwjVwOoczYhpDhAtep5iS7h2qhAEhAADq3lp1KNDnowAAAABJRU5ErkJggg=="
     }
 }

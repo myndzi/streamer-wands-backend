@@ -14,6 +14,9 @@ exports.getWands = async (req, res, next) => {
             streamer: streamer.name,
             wands: streamer.wands,
             inventory: streamer.inventory || [],
+            items: streamer.items || [],
+            progress: streamer.progress,
+            version: streamer.version,
         })
     } else {
         next()

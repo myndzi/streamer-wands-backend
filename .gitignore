@@ -1,3 +1,4 @@
 /node_modules
 /.env
 /mod.zip
+.DS_Store

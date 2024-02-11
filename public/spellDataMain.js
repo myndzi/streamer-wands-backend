@@ -1,4 +1,4 @@
-const spellData = {
+const spellDataMain = {
     BOMB: {
         name: "Bomb",
         description: "Summons a bomb that destroys ground very efficiently",
@@ -199,18 +199,6 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAA90lEQVR4nGNgIBEwQijt4OkCEiYQ9ocXZ66uzYSrMGt4f6pBEEWTdvB06+zTh69/X758+eHr362zT2sHT8dnC0T169evX79+LW2eDtHDwMAw58B3TMVMEOrJhQ0MDAwGPjUXtrRA2AwMDCkOnHB1cw58////P0KDjEEAAwPDhS0tcLZZw3uzhvfIZs89+AOfH/7//z/nwHc0PThDqTA3IdmeA2LqrAM/kEOJEc4ya3if5sCBZl6yPQeaHibMcMDubhhA0QBxBoQBQciCEMCCZh6aNFZLEMCs4T0kvCEk1oBixNSD7HW0IIJqmHPgO3KkIhuJnuzIAADyi468RWnmkAAAAABJRU5ErkJggg=="
     },
-    HOOK: {
-        name: "Hookbolt",
-        description: "A glowing hook that pulls the caster towards itself upon collision",
-        meta: {
-            action_type: 0,
-            action_mana_drain: 30,
-            fire_rate_wait: 12,
-            action_speed: 700,
-            action_projectile: 0.3
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUklEQVR4nGNgGDIgfzn3/+Pvk/8ff5/8nyzNyPz///+TbggyIMsVVNFMttOPv0/+T1AzLJT///8Pp/EB6ruAGEAVQyiKBbINoUpKRI4lkjXjAwA6L2xpdLVKyQAAAABJRU5ErkJggg=="
-    },
     BLACK_HOLE: {
         name: "Black hole",
         description: "A slow orb of void that eats through all obstacles",
@@ -234,18 +222,6 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABU0lEQVR4nKWSrU/DUBTFT+uWTCBJiq2qYIIGUTI3V9FkU8MUtZGJ2SVAmJhEjGRJB4YKYGYkiCYTndoHZhMjKdn+AESTTtRVXlRLPwfJTvKSe/Le+9377rvAnmL8QChrdHB4Emy49hJfb5dM6q24hLJGUmNB07VHg8GApmuPpMaChLJG/wL4lx3HIcdxiDutBRDV9Eg1vUwQ6wffq3cAQEG+xsroBH6uFjFXi8gCBYCjggIAWBmdiPcVBiUArr1Eq2dhs81jPB5js82j1bPg2stEyXHIzl+whnW06y94Ne4jEEmfQC/lfn+o8vQ5AwDV9IjnxGDd1p4jnudEerj6IJ4Tg36w2KF4ZgC405sRzwLA8OL4TOmaI72UYyR9AgCoytGDYR9+QmYF4exVuYl2/zwBTUjpmiMg2YtwP1KHqnLTf4zH/uD4gL8mMhUSBu2ufQ/9AFqWzP064kwcAAAAAElFTkSuQmCC"
     },
-    WHITE_HOLE: {
-        name: "White hole",
-        description: "An orb of positive energy that destroys everything in its path",
-        meta: {
-            action_type: 0,
-            action_max_uses: 3,
-            action_mana_drain: 180,
-            fire_rate_wait: 80,
-            action_speed: 40
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzklEQVR4nGNgGDTAJ3F2PDa2qKLTf1FFp/8ka4Zp9LfJ/+9vk/8fl0GMaAbN3TI/NVlU0em/lbQuVsuOPb3M8Pr+Prg+JnyaDbRNMQywktZlQHYJE4YKKDDQNmVomBGN1RAML/gkzt61ZX6qG7rTDbRNGS5cPY2iwcs+nGHbwZVwr+B0AQMDA4ZmBgYGhm0HV6LwmRgYGBi2zE9180mcPff1/X2Mx55ehtuO7iUYQA5InC5Ath1feBAdjbDwQI9GmEayExJeQ5ANwqlxwAEANyR0d3fNi58AAAAASUVORK5CYII="
-    },
     BLACK_HOLE_BIG: {
         name: "Giga black hole",
         description: "A growing orb of negative energy that destroys everything in its reach",
@@ -257,17 +233,6 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAA20lEQVR4nJVSKw6DQBAdNhhOUcclNsGRIDjAlpoViKpyhV6BqgrEKsoBKkhwJHuCOs7RBFsxZBkGCOlTO7Pvzd+DJXQ3Mo+JA2p6nNoOtsmdU6oKkpDKfMe2OoIVTt9PrXMkoEZQdpYWTFC/S3xYHWEJwv1laXF/XtYaBl93I7TDFOw6h9xAO+huFABgmxwDUzZN9Xo0SAMAb6/dTUjTi2PWElyA2Q8EUlXOPt/Ubj2qAgBh4gB3uYe5+yQ0cXDQw3o50y3RWWVpweZbv0tpejyNv49vFixkBOy8f4iRYGPCvhx8AAAAAElFTkSuQmCC"
     },
-    WHITE_HOLE_BIG: {
-        name: "Giga white hole",
-        description: "A growing orb of positive energy that destroys everything in its reach",
-        meta: {
-            action_type: 1,
-            action_max_uses: 6,
-            action_mana_drain: 240,
-            fire_rate_wait: 80
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA3klEQVR4nJVTIQ6DQBCcI7WtaVAoVMWFBINB8o3+oUkf0KTP6GuQmJomlwoUCkUw8AAqyG2O7V4LI/du5mb2dhUEhHExSfWuKRWv7STi6ZDguF9e7EcAMSYupFxyHiUAgFRneL2fkgkAQNUaEgk4GYCXnOoMAJBHCbkNvM8I5PvjTCIUIYyLScrsE7Hu+hGoBzM7sOTb9SJatrDkVGfEUTz/FlStWd8DH1YL8HgWm5rogprYNaWqB0MHvHE+1MM8TIsIvr/+ha9RlsaY19xRXmzXv2WyUcVlkoQ4pHX+AAtsYYDxUBkrAAAAAElFTkSuQmCC"
-    },
     BLACK_HOLE_GIGA: {
         name: "Omega Black Hole",
         description: "Even light dies eventually...",
@@ -278,17 +243,6 @@ const spellData = {
             action_speed: 120
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwklEQVR4nGNgoBAw+k09/B+bxKZsW0aiDFCVNkUxwMgjh4GBgYHhu5ESUQYxqkqb/l8+aQVDZF4EhqSRRw5BgzBcEOWTz7Bsy0SsBmEzBMMAXACXIUzEaGZgYGA4t2MKA+e5ewzogY7TgOWTVmA1BB3ADYjyyUeRwBaoDAwMGK6AG4AecLgAuiuIDgNcriDKAHTvEXQBugZ07yF7A8OAKJ98hoYZ0XhtRXEBNtsaMpZiDVRsUUt0SkQHmlV9DJuybRkBdmJNmltJEpYAAAAASUVORK5CYII="
-    },
-    WHITE_HOLE_GIGA: {
-        name: "Omega white hole",
-        description: "A massive orb of positive energy that destroys everything in its reach",
-        meta: {
-            action_type: 1,
-            action_max_uses: 6,
-            action_mana_drain: 500,
-            action_speed: 120
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxElEQVR4nGNgoBAwiio6/ccm8fr+PkZiDGCxktZFEXj7GcpQZPhPjEFMDAwMDLWFeXABYV4ItpLWZVDn02UQVXT6j8uVDAwMDIz+NvkokgbapgwXrp7GcNXNT5exuoYJXQBdM8xVMNcQNAAXwGUITgOQwwXZEJwuMNA2RZFo7p+E1WB0V8ANwOZ3bADdFUSHAS5XEGUAuvcIugBdA7r3kL2BYYCBtilDw4xovLaiuACbbQ0ZS7EGKraoxUjKxIJjTyFJGwDbc0GHYj8GRQAAAABJRU5ErkJggg=="
     },
     TENTACLE_PORTAL: {
         name: "Eldritch portal",
@@ -514,21 +468,6 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAOUlEQVR4nGNgGAUUAIu2N7OufZh17cP///8t2t6QoO3///////+fde0DdsMgJFaAooc0G6jph+EJAGXrUDr+KU7XAAAAAElFTkSuQmCC"
     },
-    LANCE_HOLY: {
-        name: "Holy Lance",
-        description: "A fast-flying, penetrating lance that glows with power",
-        meta: {
-            action_type: 0,
-            action_mana_drain: 120,
-            fire_rate_wait: 30,
-            action_speed: 150,
-            action_holy: 1.75,
-            action_explosion: 1.2,
-            explosion_radius: 30.0,
-            spread_degrees: -10
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARUlEQVR4nGNgGAXUB/8PeP3/////fxSx/////3/b8h+XHuwGQTX8P+D1H12MLENQALpB/9+2wCVIAdRzAVXDgGqxMIIAAPXdkw2ZxefEAAAAAElFTkSuQmCC"
-    },
     ROCKET: {
         name: "Magic missile",
         description: "A fiery, explosive projectile",
@@ -723,18 +662,6 @@ const spellData = {
             speed_multiplier: 0.75
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAzUlEQVR4nGNgoAR8niyOJvKm5Pr///+RRZgg1Pf71QwMDCwGFnA2RDWEgayHEc76ftifQUaH4ckVTtuNyKqFuzWgShkZGRgYWCAuYTGwYJDRYWBgYJDR+X6Y4c+FEz8fojv4////jBBNmDZcCNkNEVSwUmFgYPjz7AeEK9KjifADp+1GiGq4H7ACqAZOxVYGBoY/F07A2QQ0QABv7ks8SrFoIAaQrIEFq+ixqyfgDCttC8I2ZF2vxRQ0WOOKz0loeiCqCYNpms3wSCQTAAA6REvOXXHfGAAAAABJRU5ErkJggg=="
-    },
-    FISH: {
-        name: "Summon fish",
-        description: "FISH!",
-        meta: {
-            action_type: 0,
-            action_max_uses: 20,
-            action_mana_drain: 90,
-            fire_rate_wait: 80,
-            action_speed: 265
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAa0lEQVR4nGP8//8/AyWAiSLdowbQwQD78s7/CfMu4Y/n////Y+D4uRf/w9h2ZR3/kfnomBFXQrIv7/wv8IQHRWya/R4G1xkfGa6d28dIlBduX1/LcPv6WjgfXTNRXoB5g2QvEAsGeTogBgAA4cB9luVrxTAAAAAASUVORK5CYII="
     },
     EXPLODING_DEER: {
         name: "Summon deercoy",
@@ -973,20 +900,6 @@ const spellData = {
             spread_degrees: 2.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAh0lEQVR4nGNgoDVgxBTafN8bzvZV3Iomy4TVGB+FLT4KW7BKYdGgoWCAxiBsAx7AAqEg7sY08vb/agYGhhsPLjCg+Wfzfe//eAE8JMh1EgMDw5YHPnAnqTC0MDAw3GGogXAhTsIJbv+vhjgD4gE0QLKTsGiAOwCrS1gwhRgYGLY88CHVZuoBABgxSK9eHv3BAAAAAElFTkSuQmCC"
-    },
-    ANTIHEAL: {
-        name: "Deadly heal",
-        description: "A projectile that at first deals damage, then heals over time",
-        meta: {
-            action_type: 0,
-            action_max_uses: 20,
-            action_mana_drain: 20,
-            fire_rate_wait: 8,
-            action_speed: 625,
-            action_projectile: 1.2,
-            spread_degrees: 3.0
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHUlEQVR4nLVSsU7DMBQ8V1nYQII9SMRhQkh8BEPtP+mAwsrggZUOqH/BGDPwBUxIjDhGanYi0Y2l4jFYz2lJgtKBm+zn0717vgf8FxqtyUhJq6KgRmsa4om+opGSLp6yrdrLpYepqg5/8pcLlVqo1AIAZnney0n6irM8x2d6Fu+n6TmS7KtXIDowUhLPPeSo0brDEfzwfP8duzFOcAsAeMdNrL3VrwAAffzY/oeRksrllMaiXE5jMhOeeVckWUgpaS8OtlajR1h73wrsz+dihYLW3mPhHnClFD7u9rY6Hl2HFA58+PeFc4gjsOJhWQpTVYLVf4M5AOJSDS4SW+VzcOc6vCiw+chnWyvYWgFA7DwaHBMvDxDi3klkU2gIP5PWq5UQNkXbAAAAAElFTkSuQmCC"
     },
     SPIRAL_SHOT: {
         name: "Spiral shot",
@@ -1410,7 +1323,7 @@ const spellData = {
         description: "Summons five flies to aid you in battle",
         meta: {
             action_type: 1,
-            action_mana_drain: 60,
+            action_mana_drain: 70,
             fire_rate_wait: 60,
             reload_time: 20,
             action_speed: 100,
@@ -1424,7 +1337,7 @@ const spellData = {
         description: "Summons four fire bugs to aid you in battle",
         meta: {
             action_type: 1,
-            action_mana_drain: 70,
+            action_mana_drain: 80,
             fire_rate_wait: 60,
             reload_time: 20,
             action_speed: 100,
@@ -1438,7 +1351,7 @@ const spellData = {
         description: "Summon six wasps to aid you in battle",
         meta: {
             action_type: 1,
-            action_mana_drain: 80,
+            action_mana_drain: 90,
             fire_rate_wait: 60,
             reload_time: 20,
             action_speed: 100,
@@ -1654,16 +1567,6 @@ const spellData = {
             spread_degrees: -6
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAYklEQVR4nGNgoCb4////f1L1MFFqKdwAmO2kuoIJmyZSDGFiYGBgYGRkZEQWROcTNACbxp2eZ0gLUGxhQLIh2MCXraRHLW0MISeR0cYQBgYKvfRl6///fS6z/1NsCNma0QEAgoJB49VDvA4AAAAASUVORK5CYII="
-    },
-    CASTER_CAST: {
-        name: "Inner spell",
-        description: "Causes a projectile to be cast from where the caster is standing",
-        meta: {
-            action_type: 6,
-            action_mana_drain: 10,
-            spread_degrees: -24
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4nGNgoCX4DwX41DAiK4YLMjIyYlOMVw0hm3CpZSJWEy6A1akMDAwMX7aiuojHG7u3WHBpntU/B0MMmyFMDAyk+R8GYHooDgMmBgbc0YYPwPRQHIhwMGDpACUaYSYTk5SJAsRkJooBAA36SV5CILUfAAAAAElFTkSuQmCC"
     },
     MIST_RADIOACTIVE: {
         name: "Toxic mist",
@@ -1964,16 +1867,6 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAb0lEQVR4nGNgoBAw4pK4MtHrMTJfJ3+bLFEmXpno9RhdMz5xvLaSpIYYzdjUMmGTJNkLMAlkBYTYMBrDBaQCFmSOTv42WVzOhImjRyeGC5AVoPsbb1pAtxlXGKDzKQ4Dgq7AZztOQ0hJB9TPTKQCAB0/ZSu2mwv/AAAAAElFTkSuQmCC"
     },
-    TOUCH_PISS: {
-        name: "Touch of Gold?",
-        description: "Transmutes everything in a short radius into urine, including walls, creatures... and you",
-        meta: {
-            action_type: 4,
-            action_max_uses: 4,
-            action_mana_drain: 190
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAZElEQVR4nGNgoBAw4pL4fyflMopClTm6RJn4/07KZXTN+MTx2kqSGlJsRRZjImQjUQCf7YRcQbELsBpAyN8EDSDZBYwqc3SJiUJk18ASFlYXYEt1RKVEihISsgJSEhX1MxOpAACoN1ubM1SBAQAAAABJRU5ErkJggg=="
-    },
     TOUCH_BLOOD: {
         name: "Touch of Blood",
         description: "Transmutes everything in a short radius into blood, including walls, creatures... and you",
@@ -2000,23 +1893,11 @@ const spellData = {
         meta: {
             action_type: 1,
             action_max_uses: 5,
-            action_mana_drain: 240,
-            fire_rate_wait: 150,
-            reload_time: 240
+            action_mana_drain: 600,
+            fire_rate_wait: 100,
+            reload_time: 300
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyElEQVR4nJVS2w3CMAy8IrZoBUPkiz9mqboEDNApEKuUP74YolIYoxw/uHUc98FJleLkzva5Bn7o20iS7NtIuatDM56FI58AljCXxAol3iwmyaFzhFYsj177tgAA7OXweSBDVkmhDg3vr1uRkIcu9Sexbr8ODaU722U2KA3PJgAUfRt5vFaFbbk6ldidJ3vx+QYAHC5lEkNnnYNOnO2B9e7NQPx7drOsS3uw9FdgiVv3YMRaNWvVFWuiHZy7/57YEr2Eq/7/efsCrFDdmR4A/38AAAAASUVORK5CYII="
-    },
-    MASS_POLYMORPH: {
-        name: "Muodonmuutos",
-        description: "Baa",
-        meta: {
-            action_type: 1,
-            action_max_uses: 3,
-            action_mana_drain: 220,
-            fire_rate_wait: 140,
-            reload_time: 240
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAvUlEQVR4nGNgGDDw//+/////YYozYVV0+/ZtuAgBI////3f79m04GxlBlDESNgkJMDIysRCj7sOSTAEBHoQf4C7GBebMOcLAwNDTswPqJIgGFRXlO3fuQhi4bGD07WViYGBQVVVlYGBAU33nzl2ICIT88OEL1BsQ6v3i9DcWJXAj4bbBAcRQBgYGhKdFTvQIxs6EOO/OnbsiJ3oYGBgEY2dO9zZG1gnVAA+EPQURDAwMmVvP/t9cjD8kBg8AACc4bF0ZSmwtAAAAAElFTkSuQmCC"
     },
     BURST_2: {
         name: "Double spell",
@@ -2099,8 +1980,7 @@ const spellData = {
         description: "Casts two spells: one ahead of and one behind the caster",
         meta: {
             action_type: 3,
-            action_mana_drain: 0,
-            spread_degrees: -5.0
+            action_mana_drain: 0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAJklEQVR4nGNgGAU0Av///////z8yF00WWQ0TphwjIyNW7iigIQAA0PAX8QO5QrQAAAAASUVORK5CYII="
     },
@@ -2109,8 +1989,7 @@ const spellData = {
         description: "Casts 2 spells in a bifurcated pattern",
         meta: {
             action_type: 3,
-            action_mana_drain: 2,
-            spread_degrees: -8.0
+            action_mana_drain: 2
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAALklEQVR4nGNgoAX4////////IWwmgkpJMHXIKKUXINNJQ0gbCWmJkZGRHHuQAQAVfCnegqjAUwAAAABJRU5ErkJggg=="
     },
@@ -2119,8 +1998,7 @@ const spellData = {
         description: "Casts 3 spells - ahead, above and below the caster",
         meta: {
             action_type: 3,
-            action_mana_drain: 3,
-            spread_degrees: -8.0
+            action_mana_drain: 3
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAMklEQVR4nGNgIA/8////////xKhkItMGkgGR7hkogOw8OBt7MGJVik8DLQHtrRtMaQkAkjgp25WMEB8AAAAASUVORK5CYII="
     },
@@ -2129,8 +2007,7 @@ const spellData = {
         description: "Casts 3 spells in a trifurcated pattern",
         meta: {
             action_type: 3,
-            action_mana_drain: 3,
-            spread_degrees: -5.0
+            action_mana_drain: 3
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAN0lEQVR4nGNgoAX4////////IWwmgkpJMHXIKMWjE42NbigepVg0kOmkIaSNhLTEyMhIjj3IAAA8h0TDze9gDQAAAABJRU5ErkJggg=="
     },
@@ -2139,8 +2016,7 @@ const spellData = {
         description: "Casts 6 spells in a hexagonal pattern",
         meta: {
             action_type: 3,
-            action_mana_drain: 6,
-            spread_degrees: -15.0
+            action_mana_drain: 6
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAO0lEQVR4nGNgoAT8////////+EWYKLKBTAB3A5pj6OwGiO1Y3QCXgjBQQomRkRFTA1ZBOgNaBuvgSEsAeDI11yS8AH8AAAAASUVORK5CYII="
     },
@@ -2149,80 +2025,9 @@ const spellData = {
         description: "Casts 5 spells in a pentagonal pattern",
         meta: {
             action_type: 3,
-            action_mana_drain: 5,
-            spread_degrees: -12.0
+            action_mana_drain: 5
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAOUlEQVR4nGNgoAr4////////sUoxUccGkgEu9yCkCahAUkOZH7DaQ9DyQQfQXEw9D+CPCmRZ2qclANzhLNpMXg2HAAAAAElFTkSuQmCC"
-    },
-    I_SHOT: {
-        name: "Iplicate Spell",
-        description: "Casts a copy of a projectile behind you, but the copy still cost mana",
-        meta: {
-            action_type: 6,
-            action_max_uses: 30,
-            action_mana_drain: 40
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAYklEQVR4nO3PsQnAMAxE0RNkgkziEQQey537bBS4wgMkG2iUS2WI25DChV8pjg8ClkkwU8zUpz0z1fVjlFCUUN3rENYt6daw395lPxyCZMmsx9vVECUEAJbMmCk//ccXlgk8SjBRzWsUTCQAAAAASUVORK5CYII="
-    },
-    Y_SHOT: {
-        name: "Yplicate Spell",
-        description: "Casts a copy of a projectile in a bifurcated pattern, but the copy still cost mana",
-        meta: {
-            action_type: 6,
-            action_max_uses: 30,
-            action_mana_drain: 40
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjklEQVR4nM2Tyw2AMAxDHcQEDMAMrIDYgFU4cutA3QCVEbpBJRYxpyDEt6UX3t2OHSVAIq5zdJ1jqm4TK2pSxorpeTn11SCMgQAgjYimAIB2auU17qeutra0tY0WbhVMZQgA/dI/R/svpjLUGlmkLvGWrJPdE8ZAPaYsY3qSnqdfKGINpBGZhzl58IljhRWie2DRyD/JGgAAAABJRU5ErkJggg=="
-    },
-    T_SHOT: {
-        name: "Tiplicate Spell",
-        description: "Casts copies of a projectile above and below you, but the copies still cost mana",
-        meta: {
-            action_type: 6,
-            action_max_uses: 25,
-            action_mana_drain: 60
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhUlEQVR4nNWTywnAMAxDldIJOkAhs2SDrJNboOtkBa/QDQJdRL00gf4gcU99ZyMZyQYOxAnFCaFBnLDQKzKoHJ/g2u9+E/i8RQ65W0SVwWNj4oRxigSANCemOdWBHDLLdtfGxqt6nCL95k0ZBgC7WAM05NSawevRaUKsaGs8tfDzX9C+8w7o6nQsYzrS1wAAAABJRU5ErkJggg=="
-    },
-    W_SHOT: {
-        name: "Wuplicate Spell",
-        description: "Casts copies of a projectile in a trifurcated pattern, but the copies still cost mana",
-        meta: {
-            action_type: 6,
-            action_max_uses: 20,
-            action_mana_drain: 70
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAo0lEQVR4nKVTyw2DMAx9rjpBB0BiA1ZAbMAqPXJD6jrZoAojZINIXeT15KgNBWz67u9rGXAiDpFxiPTyClmhIlcrmYk/XQ8F8pQJANKJaAoA6J+9HMY91TU0gaEJZmKpMN9mAsD4GvejwVCjTpGnTN2ivsTXiHUKdWofrQDblyhkFbBU2BzYO+I5Fw8+B/xLmIlk4uoXLlYB6USW++I2XqGu8AaoAo4gYeWo7AAAAABJRU5ErkJggg=="
-    },
-    QUAD_SHOT: {
-        name: "Quplicate Spell",
-        description: "Casts copies of a projectile in a tetragonal pattern, but the copies still cost mana",
-        meta: {
-            action_type: 6,
-            action_max_uses: 20,
-            action_mana_drain: 90
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAo0lEQVR4nM1TywnDMAx9lE6QTTKAQcRzeIDM4Jt97kYBHTJAs4FGUQ9FNP1EMT71gcGYZ70PNuCAIytHVo/jXjZ4Qy5d01uhm6/e5GC9r/0OylBUspyXeNS2ZPl5/sb/bNtUbc+RVbJoGYrqps+141/3k+lGIBDqVJHmBODVQZoT6lQRxgBaqC2CqbdG/oJZPyUewXJ7HPcdhDF0i//JX2hp+wHM5p6O1zw0JAAAAABJRU5ErkJggg=="
-    },
-    PENTA_SHOT: {
-        name: "Peplicate Spell",
-        description: "Casts 5 copies of a projectile in a pentagonal pattern, but the copies still cost mana",
-        meta: {
-            action_type: 6,
-            action_max_uses: 20,
-            action_mana_drain: 110
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAt0lEQVR4nK2TvQ3CMBBGnxELZAGUFPSUlImyQdZJnZJVsgFyS5mewhELZISjcuQ4tjGIr7Lk9935fgwJ6VaLbrWkmKTZKhXk8FP0XMmUzr4qVqtMEjRv+E+1mt6Ib3b5o3tZ32oEEXVRCmA8jRtz6EXKRgVo7o1ys86PGYDyWgJQDdWOV6EabfbiXACwPBe6VxdlozK9Eb8HX5lD5yyFmhUb6So72xRoF2s37ty9D3H/+wu5X9fn3jo+tAxWmDfKAAAAAElFTkSuQmCC"
-    },
-    HEXA_SHOT: {
-        name: "Heplicate Spell",
-        description: "Casts 6 copies of a projectile in a hexagonal pattern, but the copies still cost mana",
-        meta: {
-            action_type: 6,
-            action_max_uses: 20,
-            action_mana_drain: 130
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0ElEQVR4nNVTsQ2DMBC8j7IAGYAudfAGIGcCeqagdMdAniCRPQKR6FJYygI06T+FBSKYEJMu19i6P9v/935gBiMNG2k4lg9EA6biTzwA7FZv/AVGGuaWg1S59a9/LWMQx3CrcMrx0n6OPeDTBoDiWtA0qFPN3bMLDk31ZKTh/JL7yM0vlBHpVHNyTAAA/b1H+ShpLOPkdfZs37tgawvKiJxyLCox8qIScMoxZUS2tmEdS+465bg5NKxTzXMPoroRa+IitrQx+Ilrqf3RLGwZ5xeYg75p6oZRDQAAAABJRU5ErkJggg=="
     },
     SPREAD_REDUCE: {
         name: "Reduce spread",
@@ -2463,7 +2268,7 @@ const spellData = {
         meta: {
             action_type: 2,
             action_mana_drain: 0,
-            fire_rate_wait: -8
+            fire_rate_wait: -3
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAXklEQVR4nGNgoDWQSV78Hx+fKGA97fz/+qMf/1tPO0+aZpnkxf//////v/7oRzhNtCv+//8PV0S2C5BtgxlI0HZkm6kKiDKYZrbT3HCibKC9CwiB/1CALs40EI5BAQDoQlPlDTC58AAAAABJRU5ErkJggg=="
     },
@@ -2473,7 +2278,7 @@ const spellData = {
         meta: {
             action_type: 2,
             action_mana_drain: 0,
-            fire_rate_wait: -8
+            fire_rate_wait: -3
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVR4nGNgoBf4DwXo4kx0cwFBgM15pMjTHhDlApo6k2jDqe4KmeTF/5ENhvFJcon1tPP/649+/G897TxprpNJXvz//////+uPfoTTJLmCYhdgs41k2wkBAJTCU+XAcVmPAAAAAElFTkSuQmCC"
     },
@@ -2531,17 +2336,6 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAd0lEQVR4nL2QwRGAIAwE76hES6IAS7EaCrAUSzofmhl0gOE+5hUy3LIE+Lv0VJyTG/720wBJS2tuGQBYoyFJM3tb9Ex6gSKpjO50v1AHR5AmwNEcLXGPhuQ2C3xZuAvLkrL7UIpwDbIAlmbPAMAZA5KHTbEXVtUFT79KQ+fhS/wAAAAASUVORK5CYII="
     },
-    TRUE_ORBIT: {
-        name: "True Orbit",
-        description: "Makes a projectile rotate around the caster like an orbiting planet",
-        meta: {
-            action_type: 2,
-            action_mana_drain: 2,
-            fire_rate_wait: -20,
-            damage_projectile_add: 0.1
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnklEQVR4nKWSsQ3CQAxF/0cMQU+NRMlIlIzCDozADCfRIEWiTnuKBDt8miQ6IvviE6/8tr/tOwN/QktMWbo9P+j6Acf9Dl0/AAAel4OZPyNJKUte/HR9uTHUCq1GIVEjlvajm46OwTJ/ExlzaUJyfsxtZJVSL4tNgymh1rXEXSFK1YAjqwYk6e0epsXAvUjv3ydSls7393ojGbScehNfHyqLo+5hIjMAAAAASUVORK5CYII="
-    },
     BOUNCE: {
         name: "Bounce",
         description: "Makes a projectile bounce on impact",
@@ -2570,25 +2364,6 @@ const spellData = {
             action_mana_drain: 70
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnUlEQVR4nLVSwQ3CMAy867uD8OiTEdp92kk6UEeAZyUYhHePBzJE2EmJKiydEifx+eyYknDEmtLlfZp22RkpuA6DAKDtOjzWFQBwXhZWKbCAXGBWQSr7NM/89h2DJIdL30sSbuOo1I+QLcH6YKul+0mBwRR4bO/z8BdqrDgHZXtlblKnzsiEgKwj+rz7Rw9KjP4uIIjKsT3dJB4u4Ql9Zpxuw3F/UgAAAABJRU5ErkJggg=="
-    },
-    ANTI_HOMING: {
-        name: "Anti Homing",
-        description: "Makes a projectile accelerate away from your foes",
-        meta: {
-            action_type: 2,
-            action_mana_drain: 1,
-            fire_rate_wait: -20
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABEklEQVR4nK1SMWvCYBS817m7jh07OEmX6qp/oEunqqA/IA5CN3EQCg5CF5cODYVCKfgHHHRocGinIKSb69uydO45lBcT05pv6MHjy5H3Lpd7H0jCKvI8prlLCUl8NJsEgNNKBV+bDQDgYrEQOODEHmzAddAgkefRyPl0Kp/9foYXKpDEe6PBdAbGXSr5BcvBTmf8yxb+kgYkk0G7Xk6a/UAl5+BYtWolbnXFra64ju7ZqpVY4GDvol0vczR/ybzROMSsO96H+Dskt8ZO7wYah7gdTACgSCBv7/HhCc+vPu4mAxeBHwd+oDK8uobGIQCgenmWdKQEDr+W5X6gMuuOoXGI5fAt3XaY+PfRu2DpO26hGDuWKjxr9YoNfwAAAABJRU5ErkJggg=="
-    },
-    HOMING_WAND: {
-        name: "Wand Homing",
-        description: "Makes a projectile accelerate towards wands",
-        meta: {
-            action_type: 2,
-            action_mana_drain: 200
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAApUlEQVR4nLVRwQ3DIAw8ou4QiQHyZTYmyAbZoQP0nQUyRebIm+uDOHUhQaAolozF4TNnGySh3XnLFCt5PHaL5EDn7QFWFxCyuBRpUjAtG8nAadmqFbyg7P0ZAKx7rDStAADGuWf6XvJOJ0vfeojpd6cKNEEruF5pYDZE5y2FPM592xaOS9MMogqTDrHVuhyqqfjLeUJBSUWOXxQw5p8gUXCVebeFL748RLoQNfOiAAAAAElFTkSuQmCC"
     },
     HOMING_SHORT: {
         name: "Short-range Homing",
@@ -2759,21 +2534,6 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABu0lEQVR4nI1TPUhCURT+jEc2ODQEBVYPIggy6pJYmwZKQ0RGaw1BEDVcHYREhwaHBKHBd4cmgyA3h4x6Q/TACt5SRgQFQgRBQS3SagS36TyeL/v54HEu73znO+dcvuuCA/rJmaTzzHTI5cw7oTiLU5k8IsEATs8voZ+cSaeIs0GTgFExkd2MI5XJI7sZh1Exm7qpTHCjYuL0/BKRYAAqE7zNTijpnhiJGBUTRX2i7By5qE+UI8FAyxwAIJHOSpUJTrEVp4cZBy2LW8EuojLB6fu3ABXOiYYs1KUs1KX0rV3Ib6SB2VoVAHyhY+5feqlOJu/knGhIlQk+mbyThbq0UKhLa7022unxaMjvCx3zjj62XN33+j9fOq/fnh8wtrKqdfcO/jjdr0ZRmeBdIwvLivd9vLt3ENHFdgBAufiBQ+52AQ4jqUzwBobDbtwbTzdcAEB13+unXO2qXwOA2l7Uauyi5E5uVKOf6xu3sQaGw6834Xm78G5OiRKHHGoZKZXJW5GmsE+3m1Oidg5Z2hKIBANNkVYg/GRzhcglCACmVtI9MTfumy6T8uEpaNRgeyv150v9hkQ6K+0RAL4A/dPRqz6VUtwAAAAASUVORK5CYII="
     },
-    ZERO_DAMAGE: {
-        name: "Null shot",
-        description: "Increases a projectile's duration dramatically but removes all damage & explosion from it",
-        meta: {
-            action_type: 2,
-            action_mana_drain: 5,
-            fire_rate_wait: -5,
-            damage_projectile_add: 0,
-            damage_ice_add: 0,
-            damage_electricity_add: 0,
-            damage_explosion_add: 0,
-            damage_critical_chance: 0
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5ElEQVR4nK2TQQ6CMBBFP0Y23MDENCUeQgws5Abdcg43HIGNiUfxCGyMvUQDISTcoJsuxo01IEUxOKvp5M/r77QF/hEqy0hwRnP1gjNSWUajwhzIpHYO5KtGcEYyTemS7AkALsl+kMs0HTWv+otr3XjSaER+gL5QcEaRH0AajWvdeP2e9buLsu1QAsjDHYpKAc9cGu10PQBYuwAgjUYe7gAARaVw3G6cgJWz+kM4AWXbIfIDFJUaOJkNsGe2tu1gy7b7DLA7uwYmjcb5EGPyGgVndD7Er8m74nS/OSHLn/Liz7QkHg2/iEbtwWA0AAAAAElFTkSuQmCC"
-    },
     HEAVY_SHOT: {
         name: "Heavy Shot",
         description: "Greatly increases the damage done by a projectile, at the cost of its speed",
@@ -2871,18 +2631,6 @@ const spellData = {
             explosion_radius: 15.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5klEQVR4nGNkwAOmexv/33HmAU75jS/fMjLhM4AQ8BcX/k+RAQwMDAwoBnxu5/5PkQG8lV8ZYezvh/3/MzAwMHiYKDAwMDAwLCn4gdUARqyiSIZw2m5knO5t/J+BgYEBW4Cy4NOI7BIGBgYGhg5MQ/C74Hk7QvOdE3DmnyN7GGImcCBc8P////+MjIyMyPSPIwFYDV3Q8YRhxxkOOJ+JgYGBgZGRkREbjWz7go4nDAs6njAkVMgQ5wVkv8M0RoQcwVCHNSF9bueGByLEyQ8YIkKOYI1KvIFIKC/gdAEpYGAN2PjyLSMAlfhfaC5oxj0AAAAASUVORK5CYII="
-    },
-    CLUSTERMOD: {
-        name: "Clusterbolt",
-        description: "Makes a projectile release a cluster of explosive bolts upon hitting a wall",
-        meta: {
-            action_type: 2,
-            action_mana_drain: 30,
-            fire_rate_wait: 20,
-            damage_explosion_add: 0.2,
-            explosion_radius: 4.0
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJ0lEQVR4nI1ToW7DMBB9jkymKGhgZCAgf7CAgIwFRBooGRjcZyyoqVTJ/YPRgv1AWUHZAgL6CQEFJQNDVjQyyQOL3di5WH3Eln3vfO/8joGAFOESAKKqX+mz96cHtT+erLjd1zfjFJnnRY0kg8TaSuJicXerAvImyYCuneNZMBWMy5ZYw5XgTTCQa54XkOJgEaUIVVT1DADKNIbbByOB5wV+m8PkBU1+fbvH/nhCmcYo09jcM0oCVerP50Lp/XZzNpUwKpgkJ9nloGvx8txcJCillG/1IQAAxhjzrRa6FtvN2U5AQYrQfr1rDXn8E8EQvNRN1ETdfSlCdfO4YwAmZADghAfcn6nnyMBgJMoD7kx8NLRUHlX9Sop/8sQDV8yE1wdjc82N8x9P754g54uGbQAAAABJRU5ErkJggg=="
     },
     WATER_TO_POISON: {
         name: "Water to poison",
@@ -3267,17 +3015,6 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAsUlEQVR4nN1SoRHDMBCTfeUBHaEXHhYe0A26RUgnKekW3SCgvCw8lxECPIGLlHt/33ZwH1kvvV5nG/iP6ocxlnBJ4wGgOV/2Rj+MUWKrRwwADgCut0cEgLCtIEHMBbJHPL3u7iRjSaGFrZ5PyLb7GajxXpJhmRNR03YJDsucN+AwRTxr06xBboMubZa9A262Ukld8go6gYWl4Z6A712Kqk0540jI31WrsK34vJ+urjxQX8ioXCIOJgFiAAAAAElFTkSuQmCC"
     },
-    SEA_SWAMP: {
-        name: "Summon Swamp",
-        description: "Summons a large swamp below the caster",
-        meta: {
-            action_type: 4,
-            action_max_uses: 3,
-            action_mana_drain: 140,
-            fire_rate_wait: 15
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA30lEQVR4nK2SMQ6CQBBF/4qJEy+iHQmJjeEMlvZ7EC5k6SFsSAh0cBDNWpBvYXaz4CwNTrXz8/fN7AdDEmtqs+r2PwAgCVuVk3fMe02zVUmSX8DhsKM32Kpk3GuarUrm+Z4kYUjieBQCwPl6QnNvwpTiUgAAHrcaACCSobgUeNxqiGRo26eZAESy5FOdGyGSwbkxaH3vzE+Izo0Tk+9jeHxe/AoxKO5jfautqU1KVdggNmuTUlA1Ax9WHJoGCwBtVa/Nk5/7QwbeNIelgpxs0HUvo11cmjwMbwPg+yeuqQ8B54pIYqB+QwAAAABJRU5ErkJggg=="
-    },
     SEA_ACID: {
         name: "Sea of acid",
         description: "Summons a large body of acid below the caster",
@@ -3562,40 +3299,6 @@ const spellData = {
             bounces: 1
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA4klEQVR4nLWSIQ7CQBBF3xI0Sa9C65ANCYKLcIIFhWUVXKAWgwSBqQPFImoJB0DBDRhEKWnpbiEhfLPZmfn/z+wO/BMiIp9qWr+aNArcjvWYPFETeE8AbJP99x2oJ8oi2flQcS7XeUd4FynIZZKzA59IE9kpoPtz79c15Zz4aQ+Wo50UZ5Oz0lrXksYYdbUiQZjvwjbZk3XWToG2tfZ1iVpD7H3DcrSTIMxjQQgDemSrNeVa5wj2vgEgOU0rW2gmi5dBrQPfbGY1RjPLL92L0x1AAcRxXHmHYpQoirxEgDRN1QOoPnaC7luqsgAAAABJRU5ErkJggg=="
-    },
-    BOUNCE_SMALL_EXPLOSION: {
-        name: "Sparkly bounce",
-        description: "Makes a projectile release damaging sparks as it bounces",
-        meta: {
-            action_type: 2,
-            action_mana_drain: 10,
-            fire_rate_wait: 9,
-            bounces: 1
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAx0lEQVR4nM1RLQ7CMBT+SubGMRA7QAUCV+RSjjNb1/sQJFOQMLEDIOZ3gJXMkDzEIOnaVzIcn2ne+376Xgv8NZwGhT16IxIniV91KXJJeFLs14PNyT8REqGJu3nsbWwee0t+SCpg8QS+ebwc0vtzXzXYnJyeHtznwyCnQYIzZ7v9VGy2QNfgeT1D3B5YHxHpRVVV0QSmvE/mD7oG5lSwG2Rt20ZNAwlTNrMJgAKcViil2AeSUs5qzgwAGdv9YgixWqRKoK5r8QIiVZULmtp8hQAAAABJRU5ErkJggg=="
-    },
-    BOUNCE_LIGHTNING: {
-        name: "Lightning bounce",
-        description: "Makes a projectile release powerful lightning as it bounces",
-        meta: {
-            action_type: 2,
-            action_mana_drain: 40,
-            fire_rate_wait: 25,
-            bounces: 1
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0UlEQVR4nNWSPQ6CQBCFP4wtCa33oDPQUHogvACBa3AFEksaid22wBEs3cABtNDlZ3cojJXbbN6bN+9NZhf+7jw/x+DdVuGnhG94APJuWBVtsYTjqnUNl6RpspvtMGdMY7JlIE6Qd4O4QImLq3attcdejmiERmOCjEbcg3nO62O+l7wd7KVp6riczgVRMOOiH9Fl5oQB7JVSDhncR6LAn/Dx4HMBJO3OYQBdZhT9OOHbfZRk2wZKKXSZ0Who9NtQSgfwAJIkET9HGIabjQB1XXsvAkPGotU7qrIAAAAASUVORK5CYII="
-    },
-    BOUNCE_HOLE: {
-        name: "Vacuum bounce",
-        description: "Makes a projectile remove earth as it bounces",
-        meta: {
-            action_type: 2,
-            action_max_uses: 20,
-            action_mana_drain: 60,
-            fire_rate_wait: 40,
-            bounces: 1
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAcElEQVR4nNVQwRHAIAgLXkdyA4diBodyA3ayn3pXFVpbro/mRyAkAPwO9UCrg9VwOTzhl5a8StZEd+Jw1XRjJbo7gXsBMfMUM+dMI6fNAcAmIh0RYzTdxlngix+IyBSXmavmDgCUUlJvO59iiUsptANZQUg/6N1axQAAAABJRU5ErkJggg=="
     },
     FIREBALL_RAY: {
         name: "Fireball thrower",
@@ -4354,7 +4057,7 @@ const spellData = {
         description: "Casts a copy of the first spell in your wand",
         meta: {
             action_type: 5,
-            action_mana_drain: 40,
+            action_mana_drain: 30,
             fire_rate_wait: 15
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAi0lEQVR4nGNgoCX4eaUgn5AaJgLykT+vFJzAp4CFgAHmZLsAavM0JDZpBkBtP0TIJVgNgNoYwa4zYSUDA0MEIVdgM+A/Oh9dDKcLYLajCeN0BSMh29EBu84EDD0otv+8UhCOQy4c6hXcYUHIdmxhwYQkic3v6AB3jBCyHZcrmJBNJBTXyPIkpQt8AABkjV9dSbhMGAAAAABJRU5ErkJggg=="
@@ -4364,7 +4067,7 @@ const spellData = {
         description: "Casts a copy of the last spell in your wand",
         meta: {
             action_type: 5,
-            action_mana_drain: 40,
+            action_mana_drain: 30,
             fire_rate_wait: 15
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAY0lEQVR4nGNgoBAwInN+Xik4wcDAYE5Az0l2nQkWMA4LmmQ/AwPDCgYGBgZ2nQmMaHIMP68UhMPkcYKfVwr+/7xS8B+P/AlkPhMB52IAZOeTZQA6GDVg1AAMA5CTKXqSpRkAABqEGtVz+UqNAAAAAElFTkSuQmCC"
@@ -4374,7 +4077,7 @@ const spellData = {
         description: "Copies the two following spells in the wand when cast",
         meta: {
             action_type: 5,
-            action_mana_drain: 90,
+            action_mana_drain: 80,
             fire_rate_wait: 35
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAd0lEQVR4nO2SuxWAIAxFHzQswz4wRtyENdhE+iyTCis9iODBT2HhrUhy8rhFgIcoABCmfGfZ2KB0UScA3tigjA0KgC9mdT/tkoRpFiZX/yBMuWUnTG7tbwbGhnhBPR4sWvQMSvTZcIQ/4NMB5WW2rnTEYOq832UB2s0sHupMyA8AAAAASUVORK5CYII="
@@ -4384,7 +4087,7 @@ const spellData = {
         description: "Casts copies of every spell in your wand",
         meta: {
             action_type: 5,
-            action_mana_drain: 320,
+            action_mana_drain: 300,
             fire_rate_wait: 50
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAuklEQVR4nLWSsQ3DIBBFv61ILMMM9GQal2ECXDKN6d2m9TKukuZDDgwSUZTfAMe7f3fYwI+aehfnsWwALI9R6XAfMqgSa12M5k5yBOCUDpPSYQLgGLNkrgbnsTxE5V3psKY77nceLdlLB0a0uaISY7FiC4Pe3C1lVhrEBthTZqVBnnGgcmI/BpzxCeSvUUjEijdq/Qcvbl0C+eqehYqcuZXI1QjOyDvB4tap3pM/j8U3OwDnH9Q37J/1Boj+SieuO83PAAAAAElFTkSuQmCC"

@@ -24,8 +24,10 @@ const app = express()
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
-// // uncomment this if not running behind a reverse proxy such as nginx
-// app.use(express.static('public', { dotfiles: 'allow' }))
+
+if (process.env.NO_NGINX === 'true') {
+    app.use(express.static('public'))
+}
 app.use(
     session({
         secret: process.env.SESSION_SECRET,
@@ -43,15 +45,23 @@ app.use(
 app.use(passport.initialize())
 app.use(passport.session())
 
-const mtime = {
-    styleCss: statSync(__dirname, 'public', 'style.css').mtime.getTime(),
-    spellData: statSync(__dirname, 'public', 'spellData.js').mtime.getTime(),
-    wandSprites: statSync(
-        __dirname,
-        'public',
-        'wandSprites.js',
-    ).mtime.getTime(),
-}
+const cacheBustFiles = [
+    ['styleCss', 'style.css'],
+    ['spellData', 'spellData.js'],
+    ['spellDataMain', 'spellDataMain.js'],
+    ['spellDataApoth', 'spellDataApoth.js'],
+    ['wandSprites', 'wandSprites.js'],
+    ['icons', 'icons.js'],
+    ['itemData', 'itemData.js'],
+    ['apothIcons', 'apothIcons.js'],
+    ['main', 'main.js'],
+]
+const mtime = Object.fromEntries(
+    cacheBustFiles.map(([key, filename]) => [
+        key,
+        statSync(__dirname, 'public', filename).mtime.getTime(),
+    ]),
+)
 app.locals = {
     domain: process.env.DOMAIN,
     title: 'Streamer Wands',
