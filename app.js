@@ -24,8 +24,10 @@ const app = express()
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
-// // uncomment this if not running behind a reverse proxy such as nginx
-// app.use(express.static('public', { dotfiles: 'allow' }))
+
+if (process.env.NO_NGINX === 'true') {
+    app.use(express.static('public'))
+}
 app.use(
     session({
         secret: process.env.SESSION_SECRET,
@@ -46,12 +48,24 @@ app.use(passport.session())
 const mtime = {
     styleCss: statSync(__dirname, 'public', 'style.css').mtime.getTime(),
     spellData: statSync(__dirname, 'public', 'spellData.js').mtime.getTime(),
-    spellDataMain: statSync(__dirname, 'public', 'spellDataMain.js').mtime.getTime(),
-    spellDataApoth: statSync(__dirname, 'public', 'spellDataApoth.js').mtime.getTime(),
-    wandSprites: statSync(__dirname, 'public', 'wandSprites.js',).mtime.getTime(),
-    icons: statSync(__dirname, 'public', 'icons.js',).mtime.getTime(),
-    itemData: statSync(__dirname, 'public', 'itemData.js',).mtime.getTime(),
-    apothIcons: statSync(__dirname, 'public', 'apothIcons.js',).mtime.getTime(),
+    spellDataMain: statSync(
+        __dirname,
+        'public',
+        'spellDataMain.js',
+    ).mtime.getTime(),
+    spellDataApoth: statSync(
+        __dirname,
+        'public',
+        'spellDataApoth.js',
+    ).mtime.getTime(),
+    wandSprites: statSync(
+        __dirname,
+        'public',
+        'wandSprites.js',
+    ).mtime.getTime(),
+    icons: statSync(__dirname, 'public', 'icons.js').mtime.getTime(),
+    itemData: statSync(__dirname, 'public', 'itemData.js').mtime.getTime(),
+    apothIcons: statSync(__dirname, 'public', 'apothIcons.js').mtime.getTime(),
 }
 app.locals = {
     domain: process.env.DOMAIN,
