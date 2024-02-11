@@ -543,7 +543,7 @@ const containerComp = Vue.component('wands-container', {
         connect() {
             const scheme = window.location.protocol === 'https:' ? 'wss' : 'ws'
             this.ws = new WebSocket(`${scheme}://${window.location.host}/client=${streamerName}`)
-            this.ws.onopen = () => {}
+            this.ws.onopen = () => { }
             this.ws.onmessage = (msg) => {
                 try {
                     const data = JSON.parse(msg.data)
@@ -552,9 +552,10 @@ const containerComp = Vue.component('wands-container', {
                         this.inventory = data.inventory
                         this.progress = data.progress
                         this.items = data.items
+                        this.version = data.version
                         this.genKeys()
                     }
-                } catch (err) {}
+                } catch (err) { }
             }
             this.ws.onclose = () => {
                 if (this.retries >= 10) {
