@@ -9,13 +9,26 @@ local main_socket = wslib.open_ws(HOST_URL)
 local reconnect = false
 local count = 0
 local retries = 0
-send_event = function(json_string)
-    if main_socket then
-        if main_socket:status() == "open" then
-            main_socket:send(json_string)
-        end
-    end
+
+local last_sent = ""
+local function send_event()
+    if not main_socket then return end
+    if main_socket:status() ~= "open" then return end
+
+    local json_string = serialize_data()
+    if last_sent == json_string then return end
+
+    main_socket:send(json_string)
+    last_sent = json_string
 end
+
+local function send_ping()
+    if not main_socket then return end
+    if main_socket:status() ~= "open" then return end
+
+    main_socket:send("im alive")
+end
+
 local function increase_count()
     wake_up_waiting_threads(1) -- from coroutines.lua
     count = count + 1
@@ -42,22 +55,15 @@ _ws_main = function()
     end
 
     if count % 300 == 0 then
-        send_event("im alive")
+        send_ping()
     end
 
     increase_count()
 end
 
-last_sent = ""
-
 async_loop(
     function()
         wait(180)
-
-        local serialized = serialize_data()
-        if (last_sent ~= serialized and serialized ~= "") then
-            last_sent = serialized
-            send_event(serialized)
-        end
+        send_event()
     end
 )

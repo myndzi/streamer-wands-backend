@@ -16,7 +16,7 @@ exports.message = async (data, user, server) => {
                         items: items || [],
                         progress,
                         version,
-                    })
+                    }),
                 )
             }
         })
@@ -29,7 +29,7 @@ exports.message = async (data, user, server) => {
                 new: true,
                 upsert: true,
                 setDefaultsOnInsert: true,
-            }
+            },
         )
     } catch (err) {
         if (data != 'im alive') {
