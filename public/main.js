@@ -531,6 +531,7 @@ const containerComp = Vue.component('wands-container', {
                         this.wands = data.wands
                         this.inventory = data.inventory
                         this.progress = data.progress
+                        this.items = data.items
                         this.genKeys()
                     }
                 } catch (err) {}
