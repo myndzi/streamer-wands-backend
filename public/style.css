@@ -10,9 +10,6 @@
 
 body {
     margin: 0;
-    font-family: 'noita', serif;
-    -webkit-font-smoothing: none;
-    image-rendering: pixelated;
 }
 
 img {
@@ -410,6 +407,10 @@ p {
     margin: 0.75rem 0;
 }
 
+.progress code.click-to-copy {
+    color: rgb(145, 129, 103);
+}
+
 .outdated {
     font-size: 2rem;
     display: flex;
@@ -453,9 +454,15 @@ div.prose {
 .footer {
     padding: 1rem;
     color: rgba(255, 255, 255, 0.8);
-    position: sticky;
     bottom: 0px;
 }
+
+
+.progress #stats input[type='file'],
+.progress #stats ::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
 
 ul.links {
     padding: 0;

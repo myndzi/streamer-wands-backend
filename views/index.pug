@@ -7,43 +7,53 @@ block menu
 
 block content
   if user === undefined
-    div.prose
+    div.prose.instructions
       h1.instructions Instructions
       p.
         Log in via Twitch to get your customized mod zip file. Your Twitch credentials are not stored, and are
         only used to identify which streamer's wands page to update as you play the game.
   else
-
-    div.prose
-      h1.instructions Instructions
+    div.prose.instructions
+      h1 Instructions
       p.
         Download your customized mod zip bundle below. The bundle marked "latest" is recommended, older versions
         may not work correctly but are provided for your convenience. <strong>Do not share this zip file with others!</strong>
         The mod bundle includes credentials that identify which streamer page to update. If another user installs the same
         zip bundle, they will be sending wand updates to <em>your</em> stream page!
-      h2.progress Progress Instructions
+    div.prose.progress
+      h1 Progress Instructions
       p.
         Spells and Perks progress is fully tracked by streamer-wands and requires no additional steps by you.
         Enemy progress is tracked assuming you are on a clean save file (AKA no enemy progress), if you want 
-        tracking to start from your current enemy progress follow the below steps:<br><br>
-        1. Click "browse" on the file selector below
-        1. Browse to your <strong>%appdata%/LocalLow/Nolla_Games_Noita/save00/stats/_stats.salakieli</strong><br>
-        1. Download the stats.lua file<br>
-        1. Move the stats.lua inside streamer-wands, root directory so right next to token.lua and mod.xml<br>
+        tracking to start from your current enemy progress follow the below steps.
+      p.
+        Note: If your mod or Noita installation are in different folders, you'll need to navigate to the correct
+        locations manually. The paths below apply to a default installation on Windows with Steam.
+      ol
+        li Copy this path (location of stats file):<br/>
+          <code class="click-to-copy">%USERPROFILE%\AppData\LocalLow\Nolla_Games_Noita\save00\stats\_stats.salakieli</code>
+        li Click the file selector below
+        li Paste the path, and click "Open" - the site will convert your stats to a lua file that the mod can use
+        li Copy this path (location of Noita mods folder):<br/>
+          <code class="click-to-copy" style="white-space: nowrap">C:\Program Files (x86)\Steam\steamapps\common\Noita\mods\streamer_wands</code>
+        li Right-click on <code>stats.lua</code>, select "Save as..."
+        li Paste the path, hit enter to browse to that location, then click "Save" with the default filename (<code>stats.lua</code>)
+      p.
         Note. If you get any enemy progress while the mod is disabled, you will have to re-go through these 3 steps
         in order for enemy progress to be accurate again
       div#stats
         input(class="input" id="sala" type="file" accept=".salakieli")
         script(src="/stats.js")
-    h1.releases Streamer Wands releases for #{user.displayName}:
-    each r, i in releases
-      div 
-        a(href=`/release/${r.path}`)=r.name
-        span=(i === 0 ? ' (latest)' : '')
+    div.prose.releases
+      h1 Streamer Wands releases for #{user.displayName}:
+      each r, i in releases
+        div
+          a(href=`/release/${r.path}`)=r.name
+          span=(i === 0 ? ' (latest)' : '')
 
-    div.prose
-      h1.chrome-warning
-      p. 
+    div.prose.chrome-warning
+      h1 Note on Chrome download warnings
+      p.
         Chrome is currently complaining about the zip file as an "uncommon file", so you may need to take an extra step to
         complete the download. See these images:
       div(style="display: flex; gap: 0.5rem;")
@@ -51,10 +61,11 @@ block content
         img(src="/img/uncommon_file_2.png" style="width: 100%; height: 100%")
 
 block footer
-  h1.github Github
-  p.
-    Source code is <a href="https://github.com/myndzi/streamer-wands-backend/">available on Github</a>. In particular, the
-    contents of the mod bundle are in the <a href="https://github.com/myndzi/streamer-wands-backend/tree/master/mod/">mod folder</a>.
+  div.prose.github
+    h1 Github
+    p.
+      Source code is <a href="https://github.com/myndzi/streamer-wands-backend/">available on Github</a>. In particular, the
+      contents of the mod bundle are in the <a href="https://github.com/myndzi/streamer-wands-backend/tree/master/mod/">mod folder</a>.
 
 
 
