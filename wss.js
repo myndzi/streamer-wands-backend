@@ -8,6 +8,7 @@ const WebSocketServer = new WebSocket.Server({ noServer: true })
 function noop() {}
 WebSocketServer.on('connection', (ws, req, user) => {
     console.log(`Connected [${JSON.stringify(user)}]`)
+    ws.user = JSON.stringify(user)
     ws.isAlive = true
     if (typeof user == 'object') {
         ws.on('message', (d) => {
@@ -36,6 +37,7 @@ const interval = setInterval(() => {
 }, 30000)
 
 WebSocketServer.on('close', () => {
+    if (this.user) console.log(`Disconnected [${JSON.stringify(user)}]`)
     clearInterval(interval)
 })
 
