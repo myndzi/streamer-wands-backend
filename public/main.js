@@ -425,16 +425,22 @@ const containerComp = Vue.component('wands-container', {
             inventory: streamerInventory,
             items: streamerItems,
             switches: {
-                progressTable: { state: false, label: 'Show Progress Table' },
-                showAll: { state: false, label: 'Show All Progress' },
-                flipHidden: { state: false, label: 'Toggle Hidden Behavior' },
+                progressTable: {
+                    state: false,
+                    label: 'Show Progress Table',
+                    className: 'progress-table',
+                },
+                showAll: { state: false, label: 'Show All Progress', className: 'show-all' },
+                flipHidden: { state: false, label: 'Invert Highlighted', className: 'flip-hidden' },
                 betaContent: {
                     state: streamerVersion.indexOf('beta') > -1,
                     label: 'Show Beta Content',
+                    className: 'beta-content',
                 },
                 apothContent: {
                     state: streamerVersion.indexOf('Apotheosis') > -1,
                     label: 'Show Apotheosis Content',
+                    className: 'apoth-content',
                 },
             },
         }
@@ -515,6 +521,20 @@ const containerComp = Vue.component('wands-container', {
                 },
             ]
         },
+        // last minute add current seed with correct seedtool open in new tab link
+        seedInfo() {
+            let seedIndex = streamerVersion.findIndex((x) => x.indexOf('seed=') > -1)
+            if (seedIndex == -1) return false
+            let seed = streamerVersion[seedIndex]
+            let url = `https://noitool.com/info?${seed}`
+            if (this.switches.betaContent.state) {
+                url = `https://dev.noitool.com/info?${seed}`
+            }
+            if (this.switches.apothContent.state) {
+                url = false
+            }
+            return { seed: seed, url: url }
+        },
     },
     methods: {
         genKeys() {
@@ -556,21 +576,30 @@ const containerComp = Vue.component('wands-container', {
             <p>Streamer is running an outdated version of the mod.</p>
         </div>
         <div class="wands-wrapper">
-            <wand-comp v-for="(wand, i) in wands" :key="fKeys[i]" :stats="wand.stats" 
-            :ac="wand.always_cast" :deck="wand.deck"></wand-comp>
+            <wand-comp v-for="(wand, i) in wands" :key="fKeys[i]" :stats="wand.stats" :ac="wand.always_cast" :deck="wand.deck"></wand-comp>
         </div>
         <div class="disclaimer">
-            <p>Disclaimer: Spell tooltips are <span class="strike">not</span> <i>mostly</i> accurate at the moment.</p>
+            <p v-if="!seedInfo">No current run</p>
+            <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
+                <p>{{ seedInfo.seed }}</p>
+            </a>
+            <p v-else>{{ seedInfo.seed }} No seed-tool for apotheosis</p>
+            <div>
+                <p>Disclaimer: Spell tooltips are <span class="strike">not</span> <i>mostly</i> accurate at the moment.</p>
+            </div>
         </div>
         <div class="switches">
-            <v-switch v-for="(sw, i) in switches" :key="i"
-            v-model="sw.state" :title="sw.label"></v-switch>
+            <v-switch v-for="(sw, i) in switches" :key="i" v-model="sw.state" :title="sw.label" :class="sw.className"></v-switch>
         </div>
         <div v-if="switches.progressTable.state" class="prog-wrapper">
             <div class="top-border"></div>
-            <prog-comp v-for="(table, i) in this.tables" 
-            :key="i" :tName="table.name" :col="table.col" 
-            :tableIcons="table.data" :tableProg="dataVersion.prog[table.name.toLowerCase()]" 
+            <prog-comp
+                v-for="(table, i) in this.tables"
+                :key="i"
+                :tName="table.name"
+                :col="table.col"
+                :tableIcons="table.data"
+                :tableProg="dataVersion.prog[table.name.toLowerCase()]"
             ></prog-comp>
         </div>
     </div>`,
@@ -591,11 +620,12 @@ const Progress = Vue.component('prog-comp', {
         }
     },
     mounted() {
-        if (this.$refs.tooltip)
+        if (this.$refs.tooltip) {
             this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip.$el, {
                 placement: 'top',
                 modifiers: [{ name: 'offset', options: { offset: [0, 25] } }],
             })
+        }
     },
     beforeDestroy() {
         if (this.tooltip) {
@@ -760,18 +790,30 @@ const Progress = Vue.component('prog-comp', {
     inject: ['switches'],
     template: `<div class="prog" :style="{width : 1.85 * col + 'rem'}">
         <div class="header">
-            <span>{{ tName }} - {{ perc }}%</span>
-            <span>{{ tableProg.length }}/{{ tableIcons.length }}</span>
-            <span v-if="selected != -1">({{ selected }} found)</span>
-            <input class="search" type="text" v-model="search" :placeholder="'Search ' + tName" @keyup="filterIcons"/>
-            <div class="tip">
-                <img ref="slot" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAg0lEQVR4nGP8//8/AymABZnDyMjIkJ2YcRxZbOr8GZbIhqJoyE7MOP7y+UsGdDEGBgZLGJ8JWRKmeM2O9ZZrdqy3RBbDagNMET7AhEsC5hcMQ/7//w/HyIpDPAKPY1OD1QZ0dyMDRmSTGRkZsSpCVoPVhuzEjOPo8QEDLNgEiXYSMQAA+jlJnW6J0BUAAAAASUVORK5CYII="/>
-                <search-tip ref="tooltip" :tip="tip[tName]"></search-tip>
+            <div class="stats-wrap">
+                <div class="stats">
+                    <span>{{ tName }} - {{ perc }}%</span>
+                    <span>{{ tableProg.length }}/{{ tableIcons.length }}</span>
+                    <span v-if="selected != -1">({{ selected }} found)</span>
+                </div>
+                <div class="tip">
+                    <img ref="slot" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAg0lEQVR4nGP8//8/AymABZnDyMjIkJ2YcRxZbOr8GZbIhqJoyE7MOP7y+UsGdDEGBgZLGJ8JWRKmeM2O9ZZrdqy3RBbDagNMET7AhEsC5hcMQ/7//w/HyIpDPAKPY1OD1QZ0dyMDRmSTGRkZsSpCVoPVhuzEjOPo8QEDLNgEiXYSMQAA+jlJnW6J0BUAAAAASUVORK5CYII="/>
+                    <search-tip ref="tooltip" :tip="tip[tName]"></search-tip>
+                </div>
+            </div>
+
+            <input class="search" type="text" v-model="search" tabindex="1" :placeholder="'Search ' + tName" @keyup="filterIcons"/>
+            <div class="search-wrap">
             </div>
         </div>
         <div class="spells">
-            <icon-comp v-for="icon in tableIcons" :key="icon.id" :icon="icon" :tName="tName" :ref="icon.id"
-            :boolProg="(tableProg.includes(icon.id) || switches.showAll.state) ^ switches.flipHidden.state"
+            <icon-comp
+                v-for="icon in tableIcons"
+                :key="icon.id"
+                :icon="icon"
+                :tName="tName"
+                :ref="icon.id"
+                :boolProg="(tableProg.includes(icon.id) || switches.showAll.state) ^ switches.flipHidden.state"
             ></icon-comp>
         </div>
     </div>`,
@@ -819,7 +861,7 @@ const IconComp = Vue.component('icon-comp', {
     template: `<div class="icon-slot" :class="[{ bgHide : !boolProg }, {spellTip : tName=='Spells'}]">
         <div class="zoom">
             <img v-if="icon.bgImage" :style="bgStyle" :src="'data:image/png;base64,' + icon.bgImage"/>
-            <a v-if="icon.wiki_url" :href="icon.wiki_url" target="_blank" rel="noopener noreferrer">
+            <a v-if="icon.wiki_url" :href="icon.wiki_url" tabindex="-1" target="_blank" rel="noopener noreferrer">
                 <img ref="slot" :src="'data:image/png;base64,' + icon.image"/>
             </a>
             <img v-else ref="slot" :src="'data:image/png;base64,' + icon.image"/>
@@ -869,10 +911,9 @@ const vSwitch = Vue.component('v-switch', {
             this.$emit('input', this.content)
         },
     },
-    template: `<div>
+    template: `<div class="switch-group">
         <label class="switch">
-            <input :disabled="disabled" type="checkbox" ref="input"
-                @input="handleInput" :checked="value" />
+            <input :disabled="disabled" type="checkbox" ref="input" @input="handleInput" :checked="value" tabindex="1"/>
             <span class="slider round"></span>
         </label>
         <slot></slot>
@@ -896,31 +937,12 @@ const SpellInventory = Vue.component('spell-inv', {
             }
             return s
         },
-        // last minute add current seed with correct seedtool open in new tab link
-        seedInfo() {
-            let seedIndex = streamerVersion.findIndex((x) => x.indexOf('seed=') > -1)
-            if (seedIndex == -1) return false
-            let seed = streamerVersion[seedIndex]
-            let url = `https://noitool.com/info?${seed}`
-            if (this.switches.betaContent.state) {
-                url = `https://dev.noitool.com/info?${seed}`
-            }
-            if (this.switches.apothContent.state) {
-                url = false
-            }
-            return { seed: seed, url: url }
-        },
     },
     props: ['spells', 'items'],
     inject: ['switches'],
     template: `<div class="inventory">
         <item-slot v-for="(v, i) in itemSlots" :item="itemSlots[i]" :key="i+20"></item-slot>
         <spell-slot v-for="(v, index) in slots" :spell="slots[index]" :key="index"></spell-slot>
-        <p v-if="!seedInfo">No current run</p>
-        <a v-else-if="seedInfo.url" :href="seedInfo.url" target="_blank" rel="noopener noreferrer">
-            <p>{{ seedInfo.seed }}</p>
-        </a>
-        <p v-else>{{ seedInfo.seed }} No seed-tool for apotheosis</p>
     </div>`,
 })
 
