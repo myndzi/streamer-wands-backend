@@ -521,7 +521,8 @@ const containerComp = Vue.component('wands-container', {
             this.fKeys = this.wands.map((v) => 1000 + Math.random() * 9999)
         },
         connect() {
-            this.ws = new WebSocket(`wss://${window.location.host}/client=${streamerName}`)
+            const scheme = window.location.protocol === 'https:' ? 'wss' : 'ws'
+            this.ws = new WebSocket(`${scheme}://${window.location.host}/client=${streamerName}`)
             this.ws.onopen = () => {}
             this.ws.onmessage = (msg) => {
                 try {
