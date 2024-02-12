@@ -154,11 +154,6 @@ const SpellSlot = Vue.component('spell-slot', {
                 top: '0px',
                 left: '0px',
             },
-            // spell string contains both the ID and uses remaining
-            id: this.spell && this.spell.split('_#')[0],
-            uses: this.spell && +this.spell.split('_#')[1],
-            // hide uses remaining overlay if in always cast slot
-            ac: this.$parent.$options.name == 'wand-ac',
         }
     },
     mounted() {
