@@ -17,7 +17,7 @@ salaIn.onchange = (e) => {
             const dl = document.createElement("a")
             dl.innerText = "stats.lua"
             dl.download = dl.innerText
-            dl.href = URL.createObjectURL(new Blob([`stats = {${sala.join(",")}}`]))
+            dl.href = URL.createObjectURL(new Blob([`stats = {${sala.join(",")}}`], { type: 'text/plain' }))
             luaOut.append(dl)
         })
     }

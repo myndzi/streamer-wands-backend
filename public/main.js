@@ -154,11 +154,6 @@ const SpellSlot = Vue.component('spell-slot', {
                 top: '0px',
                 left: '0px',
             },
-            // spell string contains both the ID and uses remaining
-            id: this.spell && this.spell.split('_#')[0],
-            uses: this.spell && +this.spell.split('_#')[1],
-            // hide uses remaining overlay if in always cast slot
-            ac: this.$parent.$options.name == 'wand-ac',
         }
     },
     mounted() {
@@ -182,6 +177,15 @@ const SpellSlot = Vue.component('spell-slot', {
         }
     },
     computed: {
+        info() {
+            return {
+                // spell string contains both the ID and uses remaining
+                id: this.spell && this.spell.split('_#')[0],
+                uses: this.spell && +this.spell.split('_#')[1],
+                // hide uses remaining overlay if in always cast slot
+                ac: this.$parent.$options.name == 'wand-ac',
+            }
+        },
         // use icons objects to retrieve spell border images
         spells() {
             let data = spellDataMain
@@ -203,13 +207,13 @@ const SpellSlot = Vue.component('spell-slot', {
     props: ['spell'],
     inject: ['switches'],
     template: `<div class="spell-slot">
-        <template v-if="this.spells.data[id]">
-            <img v-if="this.spells.img[id].bgImage" :style="bgStyle" :src="'data:image/png;base64,' + this.spells.img[id].bgImage"/>
-            <img ref="slot" class="spellZoom" :src="'data:image/png;base64,' + this.spells.data[id].sprite"/>
-            <p v-if="(uses > -1) && ac" :style="pStyle">
-                {{ uses }}
+        <template v-if="this.spells.data[info.id]">
+            <img v-if="this.spells.img[info.id].bgImage" :style="bgStyle" :src="'data:image/png;base64,' + this.spells.img[info.id].bgImage"/>
+            <img ref="slot" class="spellZoom" :src="'data:image/png;base64,' + this.spells.data[info.id].sprite"/>
+            <p v-if="(info.uses > -1) && !info.ac" :style="pStyle">
+                {{ info.uses }}
             </p>
-            <spell-tooltip ref="tooltip" :spell="id"></spell-tooltip>
+            <spell-tooltip ref="tooltip" :spell="info.id"></spell-tooltip>
         </template>
     </div>`,
 })
