@@ -666,6 +666,7 @@ const Progress = Vue.component('prog-comp', {
                 'dmg. slice': ['action_slice'],
                 'dmg. drill': ['action_drill'],
                 'dmg. fire': ['action_fire'],
+                'dmg. healing': ['action_healing'],
                 'dmg. holy': ['action_holy'],
                 'dmg. melee': ['action_melee'],
                 'dmg. electric': ['action_electricity', 'damage_electricity_add'],
@@ -692,6 +693,7 @@ const Progress = Vue.component('prog-comp', {
             ]
             // dmg values need to be multiplied by 25 to match up with UI
             let dmg25 = [
+                'action_healing',
                 'action_holy',
                 'action_melee',
                 'action_fire',
@@ -1011,6 +1013,11 @@ const SpellTooltip = Vue.component('spell-tooltip', {
                     key: 'action_fire',
                 },
                 {
+                    label: 'Dmg. Healing',
+                    classes: 'crisp dmg-healing',
+                    key: 'action_healing',
+                },
+                {
                     label: 'Dmg. Holy',
                     classes: 'crisp dmg-holy',
                     key: 'action_holy',
@@ -1122,6 +1129,7 @@ const SpellTooltip = Vue.component('spell-tooltip', {
                     case 'action_type':
                         m[key] = this.types[prop]
                         break
+                    case 'action_healing':
                     case 'action_holy':
                     case 'action_melee':
                     case 'action_fire':
