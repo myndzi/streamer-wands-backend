@@ -1180,6 +1180,15 @@ const apothIcons = {
             beta: false
         },
         {
+            id: "worm_end_big_apotheosis",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIUlEQVR4nJWSIY6DQBiFPwgKheACaxCLWNNusqoSuXqzd+ACRZYL9AQ1HKByTtAENAbTCyBGjWVF809+CJDsM5OZ5Hvz5s0f3E6HKc1yAMahx1hHkcSkWU7TdhRJDECa5bx9f7FUqGGRsY5x6CmSGGPdJgwQ3E6HSYNakmQLBog0KHFlb6yj2oEBQnmzwNro9/O4CwNEuiTdAzCLfjlfZwmrunwlSLMcKVJWY93sdoGNdf6XLufry2AZSUz07QJXdUlVl95k1eC/ipYH0sPz/vAplrEl0REIx6H3kKxFEtO0nTfVsfVzAIKfj/dJf6FIitwbIoBQt6thYJZit4PlBIqKJJ51sZpAz8HaNDZtx/P+2DaQ4sRE4DTLfXHj0G+a/AE1NpedLBcl2gAAAABJRU5ErkJggg==",
+            name: "Suur-Helvetinmato",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Helvetinmato",
+            beta: true
+        },
+        {
             id: "worm_mechanical",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJklEQVR4nLWTP0vDUBTFfxGHOpnnSxtFdFDUCoIg2C66uXRoF0dBXJ38Bn6oLv0MFhEVBIuCUBGbJuGlQ7Hbc3qPJiRQKZ7xcs/hnPvH6bS7mik0WjWHDDrtri77y6laGIxotGqOc3/X09OFLBmgunugy5VVXOGTqAAAV/gA5BKyRIBwOMCIAKytb+QLXF7daBVHACQqSBHfek8YQQMnjyykx8f7i7UcDgcA7Owd2l4hPVQcFUc4PTnTRsDYrgdjjrf3qWytcPv8iJAei0UCrvAR0rNRXOHTP6rSR0Mc2xks5JGbzQstpEeptGQb68GY85HDtZSp3lyBv6BwBsaFiiMbwbiZyUGighQZYPPh1cb4/vpkMvn5hzXOdUhZzHTKcz/TvO/8C/PSqU8KzF3tAAAAAElFTkSuQmCC",
             name: "Mekaaninenmato",
@@ -1945,12 +1954,12 @@ const apothIcons = {
             beta: true
         },
         {
-            id: "fairy_cheap",
+            id: "fairy",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1klEQVR4nO2Rrw7CQAzGv9tu/EmWCUKCwMwjISGZmsdgJ3mTewGeBQx+ioQEJAZ1BkFCEAvjYNxWxMBsI5Bg+VSbNu2vX4G/2LsCETggeJ4JzRj01wOIREPKsOM4zTYARJE6uq5/YExci71G1eY4nijbtDytKdCaAtu0vDieqJzqAwGRaJxOq55Bo3Wi5gCAWnOMjC0GrdZwW6QoEbyUqNm0Kv6CAFxKv2ublpfVzT4AGLd0c07vS9cN90UzyzcxaCL/IGW4dDjfAUB0uT9NDCs/8dePegANUVZ88czaggAAAABJRU5ErkJggg==",
-            name: "",
+            name: "Keiju",
             description: null,
             bgImage: null,
-            wiki_url: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Keiju",
             beta: true
         },
         {

@@ -970,6 +970,7 @@ const spellData = {
             action_mana_drain: 15,
             fire_rate_wait: 4,
             action_speed: 625,
+            action_healing: -0.35,
             spread_degrees: 2.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAh0lEQVR4nGNgoDVgxBTafN8bzvZV3Iomy4TVGB+FLT4KW7BKYdGgoWCAxiBsAx7AAqEg7sY08vb/agYGhhsPLjCg+Wfzfe//eAE8JMh1EgMDw5YHPnAnqTC0MDAw3GGogXAhTsIJbv+vhjgD4gE0QLKTsGiAOwCrS1gwhRgYGLY88CHVZuoBABgxSK9eHv3BAAAAAElFTkSuQmCC"
@@ -3120,7 +3121,8 @@ const spellData = {
             action_type: 1,
             action_max_uses: 2,
             action_mana_drain: 80,
-            fire_rate_wait: 15
+            fire_rate_wait: 15,
+            action_healing: -0.05
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2ElEQVR4nKVTOw6CQBB9EBMuQbExFFbEHipjuQeBM2ApZ5CDbGmsoDdUFsZQcAk7qyGzn1ETXrU7nzfzdmaBlYgkx/g2F37PE12H4jZS4tA3QbtLFLlBlJhu04r75tfcAUBRthZJHEomaGWglbFsQ99Y8mII2Kl98Owi4tWpbUrIcAYAPHECADym+yKHpHiP6LbMiTIFmElbPlHCv/A6MJP+KYFjGaM7heNBV5zgejMd+fgoRQm8WqgyYSHIE10XZevJcR/NXSTvL0irTORfVzlExDuUYlfhA02EZQMiH5PjAAAAAElFTkSuQmCC"
     },

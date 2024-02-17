@@ -525,11 +525,11 @@ a:visited {
     flex-flow: row wrap;
     justify-content: center;
 }
+
 .wands-wrapper .stats {
     display: flex;
     align-items: center;
 }
-
 
 .prog-wrapper {
     margin-top: 0.3rem;
@@ -582,20 +582,23 @@ a:visited {
     z-index: 2;
     gap: 1rem;
 }
+
 .switch-group {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     gap: 0.25rem;
+    white-space: nowrap;
 }
+
 .switch-group.show-all {
     display: none !important;
 }
 
 .top-border {
     position: sticky;
-    top: 26px;
+    top: 24px;
     width: 100%;
     height: 3px;
     background-color: rgb(145, 129, 103);
@@ -629,32 +632,38 @@ a:visited {
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 29px;
+    top: 27px;
     background-color: rgb(11, 8, 8);
     z-index: 2;
     padding: 4px;
     gap: 0.25rem;
 }
+
 .prog .header .stats-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .prog .header .stats {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
 }
+
 .prog .header .tip {
     align-self: flex-end;
 }
+
 .prog .header .tip img {
     width: 18px;
     height: 18px;
 }
+
 .prog .header .tip img:hover {
     filter: brightness(2);
 }
+
 .prog .header .search {
     width: 100%;
     box-sizing: border-box;
@@ -794,10 +803,6 @@ a:visited {
     image-rendering: pixelated;
 }
 
-.stats-wrap .tip .tooltip {
-    font-family: 'Inter', sans-serif;
-}
-
 .spell-slot .tooltip,
 .spellTip .tooltip {
     min-width: 350px;
@@ -825,12 +830,12 @@ a:visited {
     min-width: 220px;
     min-height: 20px;
     visibility: hidden;
-    background-color: rgb(17, 13, 12);
+    background-color: rgb(17, 13, 12, 0.95);
     color: white;
     padding: 10px;
     border: solid 2px #ded7ce;
     border-radius: 2px;
-
+    font-family: 'Inter', sans-serif;
     position: absolute;
     z-index: 3;
     bottom: 100%;
@@ -1307,6 +1312,17 @@ crit
     content: "";
     background-size: cover;
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAABnRSTlMAAAAAAABupgeRAAAALUlEQVR4nG2KMQ4AIBDCyv3/zziYIBqZKBQAsE1lGvJNoPXLzfeuf/esksK7L0+BDwTFPEE5AAAAAElFTkSuQmCC');
+}
+
+.dmg-healing::before {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 14px;
+    width: 14px;
+    content: "";
+    background-size: cover;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAKUlEQVR4nGNkgIL/////h7EZGRkZGRgYGJgY8ABGZB3oAK9O/MaS7SAA/T4MCB1weMEAAAAASUVORK5CYII=');
 }
 
 .dmg-holy::before {
