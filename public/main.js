@@ -434,6 +434,7 @@ const containerComp = Vue.component('wands-container', {
                     label: 'Show Progress Table',
                     className: 'progress-table',
                 },
+                pauseUpdates: { state: true, label: 'Auto Refresh Data', className: 'pause-updates' },
                 showAll: { state: false, label: 'Show All Progress', className: 'show-all' },
                 flipHidden: { state: false, label: 'Invert Highlighted', className: 'flip-hidden' },
                 betaContent: {
@@ -551,7 +552,7 @@ const containerComp = Vue.component('wands-container', {
             this.ws.onmessage = (msg) => {
                 try {
                     const data = JSON.parse(msg.data)
-                    if (data.type == 'wands') {
+                    if ((data.type == 'wands') && this.switches.pauseUpdates.state) {
                         this.wands = data.wands
                         this.inventory = data.inventory
                         this.progress = data.progress
@@ -626,9 +627,9 @@ const Progress = Vue.component('prog-comp', {
     },
     mounted() {
         if (this.$refs.tooltip) {
-            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip.$el, {
+            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
                 placement: 'top',
-                modifiers: [{ name: 'offset', options: { offset: [0, 25] } }],
+                modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
             })
         }
     },
@@ -796,7 +797,7 @@ const Progress = Vue.component('prog-comp', {
     props: ['tName', 'col', 'tableIcons', 'tableProg'],
     inject: ['switches'],
     template: `<div class="prog" :style="{width : 1.85 * col + 'rem'}">
-        <div class="header">
+        <div ref="slot" class="header">
             <div class="stats-wrap">
                 <div class="stats">
                     <span>{{ tName }} - {{ perc }}%</span>
@@ -804,13 +805,14 @@ const Progress = Vue.component('prog-comp', {
                     <span v-if="selected != -1">({{ selected }} found)</span>
                 </div>
                 <div class="tip">
-                    <img ref="slot" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAg0lEQVR4nGP8//8/AymABZnDyMjIkJ2YcRxZbOr8GZbIhqJoyE7MOP7y+UsGdDEGBgZLGJ8JWRKmeM2O9ZZrdqy3RBbDagNMET7AhEsC5hcMQ/7//w/HyIpDPAKPY1OD1QZ0dyMDRmSTGRkZsSpCVoPVhuzEjOPo8QEDLNgEiXYSMQAA+jlJnW6J0BUAAAAASUVORK5CYII="/>
-                    <search-tip ref="tooltip" :tip="tip[tName]"></search-tip>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAg0lEQVR4nGP8//8/AymABZnDyMjIkJ2YcRxZbOr8GZbIhqJoyE7MOP7y+UsGdDEGBgZLGJ8JWRKmeM2O9ZZrdqy3RBbDagNMET7AhEsC5hcMQ/7//w/HyIpDPAKPY1OD1QZ0dyMDRmSTGRkZsSpCVoPVhuzEjOPo8QEDLNgEiXYSMQAA+jlJnW6J0BUAAAAASUVORK5CYII="/>
+                    <div ref="tooltip" class="tooltip">
+                        <p>{{ tip[tName] }}</p>
+                    </div>
                 </div>
             </div>
-
-            <input class="search" type="text" v-model="search" tabindex="1" :placeholder="'Search ' + tName" @keyup="filterIcons"/>
             <div class="search-wrap">
+                <input class="search" type="text" v-model="search" tabindex="1" :placeholder="'Search ' + tName" @keyup="filterIcons"/>
             </div>
         </div>
         <div class="spells">
@@ -825,13 +827,13 @@ const Progress = Vue.component('prog-comp', {
         </div>
     </div>`,
 })
-
-const searchTip = Vue.component('search-tip', {
-    props: ['tip'],
-    template: `<div class="tooltip" ref="tooltip">
-        <p>{{ tip }}</p>
-    </div>`,
-})
+// <search-tip ref="tooltip" :tip="tip[tName]"></search-tip>
+// const searchTip = Vue.component('search-tip', {
+//     props: ['tip'],
+//     template: `<div class="tooltip">
+//         <p>{{ tip }}</p>
+//     </div>`,
+// })
 
 const IconComp = Vue.component('icon-comp', {
     data() {

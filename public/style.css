@@ -589,6 +589,7 @@ a:visited {
     flex-wrap: nowrap;
     align-items: center;
     gap: 0.25rem;
+    white-space: nowrap;
 }
 
 .switch-group.show-all {
@@ -597,7 +598,7 @@ a:visited {
 
 .top-border {
     position: sticky;
-    top: 26px;
+    top: 24px;
     width: 100%;
     height: 3px;
     background-color: rgb(145, 129, 103);
@@ -631,7 +632,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 29px;
+    top: 27px;
     background-color: rgb(11, 8, 8);
     z-index: 2;
     padding: 4px;
@@ -802,10 +803,6 @@ a:visited {
     image-rendering: pixelated;
 }
 
-.stats-wrap .tip .tooltip {
-    font-family: 'Inter', sans-serif;
-}
-
 .spell-slot .tooltip,
 .spellTip .tooltip {
     min-width: 350px;
@@ -833,12 +830,12 @@ a:visited {
     min-width: 220px;
     min-height: 20px;
     visibility: hidden;
-    background-color: rgb(17, 13, 12);
+    background-color: rgb(17, 13, 12, 0.95);
     color: white;
     padding: 10px;
     border: solid 2px #ded7ce;
     border-radius: 2px;
-
+    font-family: 'Inter', sans-serif;
     position: absolute;
     z-index: 3;
     bottom: 100%;
