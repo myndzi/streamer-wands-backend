@@ -547,7 +547,6 @@ const containerComp = Vue.component('wands-container', {
             handler: function (newVal, oldVal) {
                 if (this.switches.pauseUpdates.state) {
                     this.updateData(this.newData)
-                    this.genKeys()
                 }
             },
             deep: true,
