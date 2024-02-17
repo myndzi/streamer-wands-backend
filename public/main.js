@@ -435,7 +435,11 @@ const containerComp = Vue.component('wands-container', {
                     label: 'Show Progress Table',
                     className: 'progress-table',
                 },
-                pauseUpdates: { state: true, label: 'Auto Refresh Data', className: 'pause-updates' },
+                autoRefresh: {
+                    state: true,
+                    label: 'Auto Refresh Data',
+                    className: 'pause-updates',
+                },
                 showAll: { state: false, label: 'Show All Progress', className: 'show-all' },
                 flipHidden: { state: false, label: 'Invert Highlighted', className: 'flip-hidden' },
                 betaContent: {
@@ -545,9 +549,9 @@ const containerComp = Vue.component('wands-container', {
     watch: {
         switches: {
             handler: function (newVal, oldVal) {
-                if (this.switches.pauseUpdates.state) {
+                if (newVal.autoRefresh.state && this.newData !== null) {
                     this.updateData(this.newData)
-                    this.genKeys()
+                    this.newData = null
                 }
             },
             deep: true,
@@ -568,19 +572,18 @@ const containerComp = Vue.component('wands-container', {
         connect() {
             const scheme = window.location.protocol === 'https:' ? 'wss' : 'ws'
             this.ws = new WebSocket(`${scheme}://${window.location.host}/client=${streamerName}`)
-            this.ws.onopen = () => { }
+            this.ws.onopen = () => {}
             this.ws.onmessage = (msg) => {
                 try {
                     const data = JSON.parse(msg.data)
                     if (data.type == 'wands') {
-                        if (this.switches.pauseUpdates.state) {
+                        if (this.switches.autoRefresh.state) {
                             this.updateData(data)
-                            this.newData = null
                         } else {
                             this.newData = data
                         }
                     }
-                } catch (err) { }
+                } catch (err) {}
             }
             this.ws.onclose = () => {
                 if (this.retries >= 10) {
