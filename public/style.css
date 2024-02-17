@@ -398,6 +398,39 @@ input[type=text] {
     font-family: 'Inter', sans-serif !important;
 }
 
+.relative {
+    position: relative;
+}
+.w-half {
+    width: 50%;
+}
+
+/* Install page styles */
+#download-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#download-form .row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#download-form button,
+#download-form select,
+#download-form input[type='file'],
+#download-form ::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+#download-form code.click-to-copy {
+    color: rgb(145, 129, 103);
+}
+
+/* Wands page styles */
+
 .wand-display {
     font-family: 'noita';
 }
@@ -409,10 +442,6 @@ input[type=text] {
 p {
     color: rgba(255, 255, 255, 0.8);
     margin: 0.75rem 0;
-}
-
-.progress code.click-to-copy {
-    color: rgb(145, 129, 103);
 }
 
 .outdated {
@@ -461,13 +490,6 @@ div.prose {
     color: rgba(255, 255, 255, 0.8);
     bottom: 0px;
 }
-
-
-.progress #stats input[type='file'],
-.progress #stats ::-webkit-file-upload-button {
-    cursor: pointer;
-}
-
 
 ul.links {
     padding: 0;

@@ -468,6 +468,12 @@ const containerComp = Vue.component('wands-container', {
     },
     computed: {
         dataVersion() {
+            const progress = streamerProgress[0] || {
+                perks: [],
+                spells: [],
+                enemies: [],
+            }
+
             let enemies = icons.enemies.filter((x) => !x.beta)
             let out = {
                 icons: {
@@ -476,27 +482,20 @@ const containerComp = Vue.component('wands-container', {
                     enemies: enemies,
                 },
                 prog: {
-                    perks: streamerProgress[0].perks,
-                    spells: streamerProgress[0].spells.filter((x) =>
-                        spellDataMain.hasOwnProperty(x),
-                    ),
-                    enemies: streamerProgress[0].enemies.filter((x) =>
-                        enemies.map((y) => y.id).includes(x),
-                    ),
+                    perks: progress.perks,
+                    spells: progress.spells.filter((x) => spellDataMain.hasOwnProperty(x)),
+                    enemies: progress.enemies.filter((x) => enemies.map((y) => y.id).includes(x)),
                 },
             }
             if (this.switches.betaContent.state) {
                 out = {
                     icons: icons,
-                    // prog: streamerProgress[0],
                     prog: {
-                        perks: streamerProgress[0].perks.filter((x) =>
+                        perks: progress.perks.filter((x) =>
                             icons.perks.map((y) => y.id).includes(x),
                         ),
-                        spells: streamerProgress[0].spells.filter((x) =>
-                            spellData.hasOwnProperty(x),
-                        ),
-                        enemies: streamerProgress[0].enemies.filter((x) =>
+                        spells: progress.spells.filter((x) => spellData.hasOwnProperty(x)),
+                        enemies: progress.enemies.filter((x) =>
                             icons.enemies.map((y) => y.id).includes(x),
                         ),
                     },
@@ -506,13 +505,11 @@ const containerComp = Vue.component('wands-container', {
                 out = {
                     icons: apothIcons,
                     prog: {
-                        perks: streamerProgress[0].perks.filter((x) =>
+                        perks: progress.perks.filter((x) =>
                             apothIcons.perks.map((y) => y.id).includes(x),
                         ),
-                        spells: streamerProgress[0].spells.filter((x) =>
-                            spellDataApoth.hasOwnProperty(x),
-                        ),
-                        enemies: streamerProgress[0].enemies.filter((x) =>
+                        spells: progress.spells.filter((x) => spellDataApoth.hasOwnProperty(x)),
+                        enemies: progress.enemies.filter((x) =>
                             apothIcons.enemies.map((y) => y.id).includes(x),
                         ),
                     },
