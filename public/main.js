@@ -428,13 +428,18 @@ const containerComp = Vue.component('wands-container', {
             wands: streamerWands,
             inventory: streamerInventory,
             items: streamerItems,
+            newData: null,
             switches: {
                 progressTable: {
                     state: false,
                     label: 'Show Progress Table',
                     className: 'progress-table',
                 },
-                pauseUpdates: { state: true, label: 'Auto Refresh Data', className: 'pause-updates' },
+                autoRefresh: {
+                    state: true,
+                    label: 'Auto Refresh Data',
+                    className: 'pause-updates',
+                },
                 showAll: { state: false, label: 'Show All Progress', className: 'show-all' },
                 flipHidden: { state: false, label: 'Invert Highlighted', className: 'flip-hidden' },
                 betaContent: {
@@ -541,9 +546,28 @@ const containerComp = Vue.component('wands-container', {
             return { seed: seed, url: url }
         },
     },
+    watch: {
+        switches: {
+            handler: function (newVal, oldVal) {
+                if (newVal.autoRefresh.state && this.newData !== null) {
+                    this.updateData(this.newData)
+                    this.newData = null
+                }
+            },
+            deep: true,
+        },
+    },
     methods: {
         genKeys() {
             this.fKeys = this.wands.map((v) => 1000 + Math.random() * 9999)
+        },
+        updateData(data) {
+            this.wands = data.wands
+            this.inventory = data.inventory
+            this.progress = data.progress
+            this.items = data.items
+            this.version = data.version
+            this.genKeys()
         },
         connect() {
             const scheme = window.location.protocol === 'https:' ? 'wss' : 'ws'
@@ -552,13 +576,12 @@ const containerComp = Vue.component('wands-container', {
             this.ws.onmessage = (msg) => {
                 try {
                     const data = JSON.parse(msg.data)
-                    if ((data.type == 'wands') && this.switches.pauseUpdates.state) {
-                        this.wands = data.wands
-                        this.inventory = data.inventory
-                        this.progress = data.progress
-                        this.items = data.items
-                        this.version = data.version
-                        this.genKeys()
+                    if (data.type == 'wands') {
+                        if (this.switches.autoRefresh.state) {
+                            this.updateData(data)
+                        } else {
+                            this.newData = data
+                        }
                     }
                 } catch (err) { }
             }
