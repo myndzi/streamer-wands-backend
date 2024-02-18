@@ -1,6 +1,15 @@
 const express = require('express')
 const router = express.Router()
-const passport = require('passport')
+const multer = require('multer')
+const { convertNoitaStats } = require('../lib/noitastats')
+
+const storage = multer.memoryStorage({
+    limits: {
+        parts: 5,
+        fieldSize: 16 * 1024,
+    },
+})
+const upload = multer({ storage })
 
 const authController = require('../controllers/authController')
 
@@ -16,7 +25,7 @@ const releaseDir = PATH.resolve(__dirname, '..', 'releases')
 
 const updateFrequency = 10 * 60 * 1000 // 10 minutes
 
-const getZipStream = async (relPath, jwt) => {
+const getZipStream = async (relPath, extrafiles = []) => {
     const path = PATH.resolve(releaseDir, relPath)
 
     if (!path.startsWith(`${releaseDir}/`)) {
@@ -27,7 +36,9 @@ const getZipStream = async (relPath, jwt) => {
     const data = await fs.readFile(path)
     const zip = await JSZip.loadAsync(data)
 
-    zip.file('streamer_wands/token.lua', Buffer.from(`return "${jwt}"`))
+    for (const [filename, buf] of extrafiles) {
+        zip.file(`streamer_wands/${filename}`, buf)
+    }
 
     return zip.generateNodeStream()
 }
@@ -41,12 +52,13 @@ const getReleases = () => {
         releaseList = new Promise(async (resolve) => {
             const paths = await fs.readdir(releaseDir, { withFileTypes: true })
             const stats = paths
-                .filter((file) => file.isFile() && /\.zip$/.test(file.name))
+                .filter((file) => file.isFile() && /^streamer_wands--.*\.zip$/.test(file.name))
                 .map(async (file) => {
                     const path = PATH.resolve(releaseDir, file.name)
                     const stat = await fs.stat(path)
                     const relPath = PATH.relative(releaseDir, path)
-                    return { mtime: stat.mtime, name: file.name, path: relPath }
+                    const version = file.name.match(/--(.*)\.zip$/)[1]
+                    return { mtime: stat.mtime, name: file.name, path: relPath, version }
                 })
 
             const withTimes = await Promise.all(stats)
@@ -63,23 +75,35 @@ const getJWT = (user) => {
     return JWT.sign(user, process.env.JWT_SECRET)
 }
 
-router.get('/release/:relpath', authController.isLoggedIn, async (req, res, next) => {
-    try {
-        const relpath = req.params.relpath
-        const jwt = getJWT(req.user)
+const emptyStats = 'stats = {}'
 
-        const filename = PATH.basename(relpath)
-        const stream = await getZipStream(relpath, jwt)
+router.post(
+    '/release',
+    authController.isLoggedIn,
+    upload.single('statsfile'),
+    async (req, res, next) => {
+        try {
+            const relpath = req.body.versionfile
 
-        res.writeHead(200, {
-            'Content-Type': 'application/zip',
-            'Content-Disposition': `attachment; filename=${filename}`,
-        })
-        stream.pipe(res)
-    } catch (err) {
-        next(err)
-    }
-})
+            const jwt = getJWT(req.user)
+            const extrafiles = [
+                ['token.lua', Buffer.from(`return "${jwt}"`)],
+                ['stats.lua', req.file ? await convertNoitaStats(req.file.buffer) : emptyStats],
+            ]
+
+            const filename = PATH.basename(relpath)
+            const stream = await getZipStream(relpath, extrafiles)
+
+            res.writeHead(200, {
+                'Content-Type': 'application/zip',
+                'Content-Disposition': `attachment; filename=${filename}`,
+            })
+            stream.pipe(res)
+        } catch (err) {
+            next(err)
+        }
+    },
+)
 
 router.get('/', async (req, res, next) => {
     try {
