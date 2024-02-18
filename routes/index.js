@@ -6,7 +6,7 @@ const { convertNoitaStats } = require('../lib/noitastats')
 const storage = multer.memoryStorage({
     limits: {
         parts: 5,
-        fieldSize: 16 * 1024,
+        fieldSize: 128 * 1024,
     },
 })
 const upload = multer({ storage })
