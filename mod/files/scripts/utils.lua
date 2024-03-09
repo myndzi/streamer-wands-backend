@@ -160,6 +160,10 @@ function get_inventory_spells()
                 last_slot = last_slot + 1
             end
         end
+        if action_id == nil then
+            action_id = "sampo"
+            charges = -1
+        end
 
         table.insert(inventory, action_id .. "_#" .. charges)
         last_slot = last_slot + 1
