@@ -596,6 +596,7 @@ a:visited {
 .switches {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     position: sticky;
