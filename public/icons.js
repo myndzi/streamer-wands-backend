@@ -1646,6 +1646,24 @@ const icons = {
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4ry\u00f6mij\u00e4",
             beta: true
+        },
+        {
+            id: "boss_sky",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5klEQVR4nMWTMQ+CMBCFX42LCRKmAhNLSVi7mG7+djfiwmoiixPqREgTxzrQ1pbWCRNvaq957753BKKUwprarFL/wmBrDkdxcPvfchFzOLXnkCBLUk+s757xsucZjHKKirMkRVnso0jBDiJT0dQUVZlDcOYNAZwdLPF2iUJV5gAo2q4PokDvwyNoaoqmpgCgxXMJzmyEJaFLEJtk6yVJtO8ZGHdDETNtaoq2m+zdjUBGOT/chocVC84gOPMMBWcWZ0lARjmpUX6QL9enR+CKAwNNQMpij+E+fy5DJTgjbdcHkcjf/8Y3C/lO4JTW+RUAAAAASUVORK5CYII=",
+            name: "Lohkare",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Lohkare",
+            beta: true
+        },
+        {
+            id: "mimic_potion",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA60lEQVR4nGP8//8/AyWAiSLd1DCABZ/kok89MP8xbp4YwrC6VgG3AQEBAf8ZGBgYubK/oyjwMHfF64KBDwNcBvyHYoYdJ3czMDAw/Ge1SP8ftdsdvwEbNmyAaWZY5roTq8FWkdNxGsAIDUiGZa47GbDZxsDAwCD2fed/mLqAgABUF3h1ZDHi8BIDAwMDw/HuqwyvON0ZkS1DSQfbKqYxXPx2lYEBf8xh9wKy/3E5n4GBgeH5zT0wtQwbNmzATEgwQ7ABfS4TBga5v/8DAgLg3iAqHUCjkuHsq1MM6JZgzQvHu68SYy4DAwMDAwDxBU1l7z6qGQAAAABJRU5ErkJggg==",
+            name: "Henkev\u00e4 potu",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Henkev\u00e4 potu",
+            beta: true
         }
     ],
     perks: [
@@ -3756,6 +3774,14 @@ const icons = {
             wiki_url: "https://noita.wiki.gg/wiki/Touch_of_Gold?"
         },
         {
+            id: "TOUCH_GRASS",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjUlEQVR4nKVTyw6AIAwrxu/zYPxM48EfnAcD2UpHNOxExvpY0WJmmKkVAPb7UHfMXHjg2s6XIAEyQPaZwJQSAcPM8hHMRG290QojglaVgNUzJz4HA1AWMRQsErgjViGqs3IgCbyCV0wDritktrNqhOoVvJvso+oc/HER1lEZeFXOpHOjVvDBqX5szv7OD58eIzJC5vy6AAAAAElFTkSuQmCC",
+            name: "Touch of Grass",
+            description: "Transmutes everything in a short radius into Earth, including walls, creatures... and you. Unless\u2026",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Touch_of_Grass"
+        },
+        {
             id: "TOUCH_BLOOD",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAZ0lEQVR4nGNgoBAw4pLYaGp6A5nvf/q0BlEmbjQ1vYGuGZ84XltJUkOMZmxqmcjRRLbtyOpgbBZSDdpoanoDI0YocQHeMECOOqw2E3IFvjQBY7OgSyIDolMfPleQrIbUpEz9zEQqAAAdkkiwRccTIQAAAABJRU5ErkJggg==",
             name: "Touch of Blood",
@@ -4770,6 +4796,14 @@ const icons = {
             description: "Summons a large body of flammable gas below the caster",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
             wiki_url: "https://noita.wiki.gg/wiki/Sea_of_Flammable_Gas"
+        },
+        {
+            id: "SEA_MIMIC",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVR4nK2T0UtTYRjGf6/tmBVGTRjREkXn1jmlTNFlhM5MUqILHfNGg66q2/1ZXQVBF4EESRTZBqnMA3pMzhpbF8ouKlPcyc+L4WeneTc/+ODj4X1+PO8DnyilaOQ0NeQ+M8DsdErNTqe0+PTFQyUivsHM+F2f9nzqvgIIAATvPKay9EaJiMzMpNRIZhxAiYgopcjMJVS6v1drzybH1OSDBBpwDEkHlEom71HlgPh8DZKZS5CeMGEN0v0Wf5pbtNkHAEgmR3yxw08GeOT88Gn/musAEdNkw1mn1HS861VW2mo9/+4tYXUNw5JbX2JrdZ/RWDvLboHOm7fZ9WDXAytoYcTG9LC99RkvKvpqAMDXvIPVHcH+tgnAUMjCrthU19/7IP+fAEDkoALAl40icJ72nUPaLhwS9pr5Xr5B/JKwvT1U6yUewi2vYlQ9fwKAvkiXfq8VbWKhGPGeHpYdB4BbZhS3vErn9T72fl08SRAI7QGwmCsCBpdbrgCQzxYwPv7lGtA6+JOdco6oNcBmPu8v8d1itm63wY7wqTtvuTXz64XsSYKXrxYEUMGEqQdzhdKpgMo5gw9vPwEIgDT6nY8Ac3yUG6mNWXcAAAAASUVORK5CYII=",
+            name: "Sea of Mimicium",
+            description: "Summons a large body of mimicium under the caster",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Sea_of_Mimicium"
         },
         {
             id: "CLOUD_WATER",
@@ -5850,6 +5884,14 @@ const icons = {
             description: "Gives a projectile a trail of rainbow",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
             wiki_url: "https://noita.wiki.gg/wiki/Rainbow_Trail"
+        },
+        {
+            id: "CESSATION",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmklEQVR4nGP8//8/AyWABcbo799OkkmFhZ6MDAwMDIz///9n6O/f/v/y5Usk2ayrq8dQWOjJyIIseO/eNaI0Kylpwdks6JLPnt3Fq1lKShmFj2EAAwMDw/v3z7BqFhSUwhDDagADAwPDjx+fUfgcHLxY1THhMoBYMPAG4AwDXH4mygBsoU20AejxTJIByCmMWMAIy40UZSZKAAA1wihBM86yagAAAABJRU5ErkJggg==",
+            name: "Cessation",
+            description: "The caster enters the realm of no realm",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Cessation"
         }
     ]
 }

@@ -1975,6 +1975,16 @@ const spellData = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAZElEQVR4nGNgoBAw4pL4fyflMopClTm6RJn4/07KZXTN+MTx2kqSGlJsRRZjImQjUQCf7YRcQbELsBpAyN8EDSDZBYwqc3SJiUJk18ASFlYXYEt1RKVEihISsgJSEhX1MxOpAACoN1ubM1SBAQAAAABJRU5ErkJggg=="
     },
+    TOUCH_GRASS: {
+        name: "Touch of Grass",
+        description: "Transmutes everything in a short radius into Earth, including walls, creatures... and you. Unless\u2026",
+        meta: {
+            action_type: 4,
+            action_max_uses: 4,
+            action_mana_drain: 190
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjUlEQVR4nKVTyw6AIAwrxu/zYPxM48EfnAcD2UpHNOxExvpY0WJmmKkVAPb7UHfMXHjg2s6XIAEyQPaZwJQSAcPM8hHMRG290QojglaVgNUzJz4HA1AWMRQsErgjViGqs3IgCbyCV0wDritktrNqhOoVvJvso+oc/HER1lEZeFXOpHOjVvDBqX5szv7OD58eIzJC5vy6AAAAAElFTkSuQmCC"
+    },
     TOUCH_BLOOD: {
         name: "Touch of Blood",
         description: "Transmutes everything in a short radius into blood, including walls, creatures... and you",
@@ -3301,6 +3311,17 @@ const spellData = {
             fire_rate_wait: 15
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnklEQVR4nK1RsRHCMBCTfXS0DMA+6Sk9BANQZACGSEnPPhkgbepQKaf7k7HD8Z2kl/7fBv5VZRy2Hq5Z9+lmTT+FHQ5yotuotuWxad8aex6UOAPA5XreiTIOm2LHEQNA0puWeQUFYg5QjvhZXumka2mjw47LcZrDUbMBbs14ArEG7gEq0FwLVT5HY+3WaKYnsUG/plXLvGJ6vFO7s6M+reRo6MXUChMAAAAASUVORK5CYII="
+    },
+    SEA_MIMIC: {
+        name: "Sea of Mimicium",
+        description: "Summons a large body of mimicium under the caster",
+        meta: {
+            action_type: 4,
+            action_max_uses: 3,
+            action_mana_drain: 140,
+            fire_rate_wait: 15
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVR4nK2T0UtTYRjGf6/tmBVGTRjREkXn1jmlTNFlhM5MUqILHfNGg66q2/1ZXQVBF4EESRTZBqnMA3pMzhpbF8ouKlPcyc+L4WeneTc/+ODj4X1+PO8DnyilaOQ0NeQ+M8DsdErNTqe0+PTFQyUivsHM+F2f9nzqvgIIAATvPKay9EaJiMzMpNRIZhxAiYgopcjMJVS6v1drzybH1OSDBBpwDEkHlEom71HlgPh8DZKZS5CeMGEN0v0Wf5pbtNkHAEgmR3yxw08GeOT88Gn/musAEdNkw1mn1HS861VW2mo9/+4tYXUNw5JbX2JrdZ/RWDvLboHOm7fZ9WDXAytoYcTG9LC99RkvKvpqAMDXvIPVHcH+tgnAUMjCrthU19/7IP+fAEDkoALAl40icJ72nUPaLhwS9pr5Xr5B/JKwvT1U6yUewi2vYlQ9fwKAvkiXfq8VbWKhGPGeHpYdB4BbZhS3vErn9T72fl08SRAI7QGwmCsCBpdbrgCQzxYwPv7lGtA6+JOdco6oNcBmPu8v8d1itm63wY7wqTtvuTXz64XsSYKXrxYEUMGEqQdzhdKpgMo5gw9vPwEIgDT6nY8Ac3yUG6mNWXcAAAAASUVORK5CYII="
     },
     CLOUD_WATER: {
         name: "Rain cloud",
@@ -4656,5 +4677,16 @@ const spellData = {
             action_mana_drain: 0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAp0lEQVR4nGP8//8/AyWAiSLdI8AAl8tM/5n32fxn3LD2P2PNfVho/5djnAIPeRQDfrtp/GdgYGD4d5kXruCv0xFGGJvRatt/Lo7pDI/+5yA0/f//Hys++pbh/////xmY9lr/x6Xm////EAPuMjMjFPWr4NWA1QAY/uWqTpJmFANeSQvDNf+9xPP/////DM6XGAkayEjVpAyLBZIANmfBvEAMpq4XyAEAqRgM235KtSEAAAAASUVORK5CYII="
+    },
+    CESSATION: {
+        name: "Cessation",
+        description: "The caster enters the realm of no realm",
+        meta: {
+            action_type: 5,
+            action_mana_drain: 0,
+            fire_rate_wait: 600,
+            reload_time: 600
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmklEQVR4nGP8//8/AyWABcbo799OkkmFhZ6MDAwMDIz///9n6O/f/v/y5Usk2ayrq8dQWOjJyIIseO/eNaI0Kylpwdks6JLPnt3Fq1lKShmFj2EAAwMDw/v3z7BqFhSUwhDDagADAwPDjx+fUfgcHLxY1THhMoBYMPAG4AwDXH4mygBsoU20AejxTJIByCmMWMAIy40UZSZKAAA1wihBM86yagAAAABJRU5ErkJggg=="
     }
 }

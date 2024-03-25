@@ -394,7 +394,7 @@ const ItemTooltip = Vue.component('item-tooltip', {
             let total = ''
             if (this.item.mats.length > 0) {
                 names = this.item.mats
-                    .reduce((n, { name }) => `${n}+${name.split(' ')[0]}`, '')
+                    .reduce((n, { name }) => `${n}+${name.split(" (")[0]}`, '')
                     .substring(1)
                 total = `(${Math.floor(this.item.mats.reduce((n, { amt }) => n + amt, 0))}% full)`
             }
@@ -569,7 +569,7 @@ const containerComp = Vue.component('wands-container', {
         connect() {
             const scheme = window.location.protocol === 'https:' ? 'wss' : 'ws'
             this.ws = new WebSocket(`${scheme}://${window.location.host}/client=${streamerName}`)
-            this.ws.onopen = () => {}
+            this.ws.onopen = () => { }
             this.ws.onmessage = (msg) => {
                 try {
                     const data = JSON.parse(msg.data)
@@ -580,7 +580,7 @@ const containerComp = Vue.component('wands-container', {
                             this.newData = data
                         }
                     }
-                } catch (err) {}
+                } catch (err) { }
             }
             this.ws.onclose = () => {
                 if (this.retries >= 10) {
