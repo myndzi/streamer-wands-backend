@@ -193,13 +193,14 @@ function get_inventory_items()
     end
 
     local last_slot = 0
+    local beer = "data/items_gfx/beer_bottle.png"
     for _, child in ipairs(nonwand) do
         local item_comp = EntityGetFirstComponentIncludingDisabled(child, "ItemComponent")
         local name = ComponentGetValue2(item_comp, "item_name")
         local desc = ComponentGetValue2(item_comp, "ui_description")
         local amt = "$-1"
         local spr = ComponentGetValue2(item_comp, "ui_sprite")
-        if EntityHasTag(child, "potion") or EntityHasTag(child, "powder_stash") then
+        if EntityHasTag(child, "potion") or EntityHasTag(child, "powder_stash") or (spr == beer) then
             local material_inv_comp = EntityGetFirstComponentIncludingDisabled(child, "MaterialInventoryComponent")
             local mats = ComponentGetValue2(material_inv_comp, "count_per_material_type")
             local color = GameGetPotionColorUint(child)

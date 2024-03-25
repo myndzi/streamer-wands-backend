@@ -173,6 +173,16 @@ const itemData = {
             book_apotheosis_materia_conversion_spell_description_new: "Conversion.. \\nRemember these words.... \\nFungus \\nWorm \\nRat \\nSpark \\nMass \\nLetter \\nLifetime"
         }
     },
+    booktitle_barren: {
+        sprite: {
+            'data/ui_gfx/items/emerald_tablet.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJklEQVR4nMWSMWvCUBSFv5ZAh9AlCW2moHsHQaWDIF06WX9BR/0LndqxXfsL4tgfUGymLkXIUFRwcFcyRYlZJIMQSJe+R14TsZtneudx733nvHvg2DjJk4f31yzP42iDYZkKH/RelB5JeoPH7OLKIQ0TNFsvvJSGCXG0AVCGnIpDsFgCoNk663mgNAoYlinrSi3cPt1nTrWCYZmK/DjayMbP5zelR8uTRreN73qcXZ5Ta9b5/vgCoNXvFCyVDvhb3Op3pAXDMpmNp4cHTIYjdqst13c3zMZTdqutVORUK4cH1Jp1uYVGty3v0zApfCDktiAgfE+GI3zXIw0TfNcDKFWg5MCwTDRbV7IgzvtyIC0IecYvX88DucZ8Lv6Vg30IFstCDo6PH+q/fiWev9jsAAAAAElFTkSuQmCC",
+            'data/items_gfx/book.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAA7klEQVR4nGNgIBEwwlnRXhr4lS7ddoOBgYEFwmnPs1GW5ecQtxWRkOfi4f/25SMXDz8DA8O3Lx8ZGBi4ePi3r2iDqGSBGwBR/ebFQwgXzhaRkEe2B6Hhx8vDT14ehnPh7DcMDCIS8lfuvEHX8PHLL0x38/OwoYkwIXPevP9+4PRjCBvOgPhBR0UEi4Yrd95AJA6cfuxgKotpIYqTGBgY4IrQVH/78hHuBxQbDpx+/Ob9d7jb4K5CdhJ2G0QEORFsCXmIa7HYgBW8efEQEn3EaoAA7KGEC3Dx8MOdhEh87Xk2WFVrm/j4xVUQ6RAsAAB6nFTNG1aNYQAAAABJRU5ErkJggg=="
+        },
+        name: "Adept\u2019s Note",
+        description: {
+            bookdesc_barren: "Those who attain the fruit of the House above the Triadic Tomb shall hold this truth:\\nThe Holiest Ground is most fertile when touched by Our Water."
+        }
+    },
     book_apotheosis_symbol_fungus: {
         sprite: {
             'data/ui_gfx/items/emerald_tablet.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJklEQVR4nMWSMWvCUBSFv5ZAh9AlCW2moHsHQaWDIF06WX9BR/0LndqxXfsL4tgfUGymLkXIUFRwcFcyRYlZJIMQSJe+R14TsZtneudx733nvHvg2DjJk4f31yzP42iDYZkKH/RelB5JeoPH7OLKIQ0TNFsvvJSGCXG0AVCGnIpDsFgCoNk663mgNAoYlinrSi3cPt1nTrWCYZmK/DjayMbP5zelR8uTRreN73qcXZ5Ta9b5/vgCoNXvFCyVDvhb3Op3pAXDMpmNp4cHTIYjdqst13c3zMZTdqutVORUK4cH1Jp1uYVGty3v0zApfCDktiAgfE+GI3zXIw0TfNcDKFWg5MCwTDRbV7IgzvtyIC0IecYvX88DucZ8Lv6Vg30IFstCDo6PH+q/fiWev9jsAAAAAElFTkSuQmCC"
@@ -483,7 +493,8 @@ const itemData = {
     item_potion: {
         sprite: {
             'data/ui_gfx/items/potion.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAu0lEQVR4nMVSUQ3FIAy8vswGSMABRjohWAABWEAJCiZhE9L38TIeMNg+14SEFu7SuxZ4O2hUdM4JAGitYYwpdWstiQiI/rCGQETKfV1XUUqV3Htf/tYEy6w1pVTpYNu2qYTP9KWKWsYtARGV0wPPes75uQNmFq11U4sxCgBYa+8JmLkxr5ZxkkwJmPny4Ynk1sTe/dE0hmM8jgPAb5F60L7vTX7ZxFrGyIsQQoNpEmZGSmnqRUppuPrvxheplT4hiGExMwAAAABJRU5ErkJggg==",
-            'data/ui_gfx/items/potion_alchemist.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjUlEQVR4nK2T0Q2CIQyED+MaZQQmYBI6CB2BwZiAhc4nTX6kGMVLeKJcv15KIIkT3Y5eA7h7F2bGGCMAIKWEnHNYFpJ0TymFtVbuarYjiAieFJ5cAzN7pdt7d5M+DnFpoKqXjmMMl2JpICK/E8zdP1H8NwNV5Q5/RXFMEObPNGcwE7XWLiv9ZvCtjkd4ANsQXeCu1OKXAAAAAElFTkSuQmCC"
+            'data/ui_gfx/items/potion_alchemist.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjUlEQVR4nK2T0Q2CIQyED+MaZQQmYBI6CB2BwZiAhc4nTX6kGMVLeKJcv15KIIkT3Y5eA7h7F2bGGCMAIKWEnHNYFpJ0TymFtVbuarYjiAieFJ5cAzN7pdt7d5M+DnFpoKqXjmMMl2JpICK/E8zdP1H8NwNV5Q5/RXFMEObPNGcwE7XWLiv9ZvCtjkd4ANsQXeCu1OKXAAAAAElFTkSuQmCC",
+            'data/items_gfx/beer_bottle.png': "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAbUlEQVR4nGNgGBBQ4iP1H5ccEzZBE0VWnIZh1WCqJUu8hhIfqf+nrz1m+H8hEauzsNrAwMDAcO/4baziLOgCJ+WVGW5I8DNsZOElToP5w7sMJkysDKZCsgzLidHAwMDAcOb+bwYGhse4XEtjAAAl6RZgUq+IXwAAAABJRU5ErkJggg=="
         },
         name: "Potion",
         description: {
@@ -516,15 +527,6 @@ const itemData = {
     },
     item_utility_box: {
         name: "Utility box"
-    },
-    item_apotheosis_egg_fairy_name: {
-        name: "Glowing Egg",
-        description: {
-            item_apotheosis_egg_fairy_desc: "The egg looks luminescent"
-        },
-        sprite: {
-            'data/ui_gfx/items/egg_yellow.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB1UlEQVR4nHWTwU7bQBCG/xmvIxWH1CFSQlCEEAeQOPfCoa/hN0B9JpQ3SB+kHHqGGwcUVRhBFSdB28TrmR42m8QuXcmH9cz3///sagmNpfozBtxRWS5PiUxb1S3juP0EmN9EX8pmPzVhi8UgWptr0fkk/GfqZFXL/fiEw7wpwjt4EgGLXoCNuUAr/gpjLiA6n0Rrcw0ser6vIaCqBIxa1vJ5gJkGG/fBVsRaPgdGLd9fS/CdAekak1wx98E0gGi+c6EBmPswJrkCpOv7N7Xg7hyfVZKPTXS5hcISzWGiS1SSj53js/0UHNxVoyvmfu2EQ4rtONyHalRLwUDb2HI1quR1694Ew96neB3bcjUC2mYjkDKTdj4C98+gXtcOkIYEUwBL3yCzf+LXRtrWl/AcwMCzSFnMy+oBIi//jS+aQ+QFZfUAKYs58CwbgWOn6qYRn9wEl+YVeti7R3xyo+qmwLEDAANkUhS3szT9c1/KL8QhLnbjeGHvbujofla42cFB5hMQQYfD7krEPhKlWRjlI5gozUTs43DYXRFBNyMARFmVJOZtbYu7fZHwBXhti7skMW9EWRXEG6/xNn5/d72K26cRH342aLHDWipZFJEsnzz8rfYa/wK2aCRzxmMINgAAAABJRU5ErkJggg=="
-        }
     },
     action_broken_spell: {
         name: "Broken spell",
@@ -663,15 +665,6 @@ const itemData = {
         name: "Essence of Fire",
         description: {
             itemdesc_essence_fire: "Your entire being is fluctuating!"
-        }
-    },
-    item_apotheosis_egg_mud_name: {
-        name: "Muddy Egg",
-        description: {
-            item_apotheosis_egg_mud_desc: "The egg feels amorphous"
-        },
-        sprite: {
-            'data/ui_gfx/items/egg_mud.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjUlEQVR4nK2SvUrDYBSGHwNWQhuzhOJUUusiRAoiKkhBKN28A0enlk46uXRwctHJW/AO3NRJCupQCAm4JBg6iJQsSSpBC4lDSTGmRUHP9p2fh/e854M/xtyswuFRPQ5DEEU4P7ud2SfMGu7dP2PpL+xtDGi26vGvAbs7y7Hx6FJRFUa8c3klAtCoVadCMoDVaplRFJCTJQD6TsCT/kyptPCzgoP9zdjSX+i083x4ARVVASEHgO24HB5lV0kBcrKUkm07LitrCuvbZQCMR3e2gmarHlvGeHfTHGA742ZRHA9WVAXf9zJeTACW4VIqLSAvSYgFgXAYUVEVwhCOWxG24yIWskebZHzfw3ZcvNeAcBihaUVyskSva3Ny8cb6dplwGLGypkwHLC7KdNp5+v13NK2IaQ6wDBdNKwLQvbEB6HXt6YDrO33u+DRInXAUBZjmgE47P/ajIPCgO6lfmXo0atXY972JB4myr7nvgJQr13f6pJgY5vsemlZkXpAywxkFSWxV1TiBJEqmDf9LfAL31Kt+2wAbMgAAAABJRU5ErkJggg=="
         }
     },
     item_chest_treasure: {
@@ -818,6 +811,15 @@ const itemData = {
             'data/ui_gfx/items/evil_eye.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABxUlEQVR4nKWTMWgTURjHfxcK2uFasjzurvTgSMgQAilBKJGmSEClBx3SQHfnWxykBEHELYPgIJkFB8GAOhTatVhRhBJSODolHASaC7eIZGm1+Byu92hMqEPf9PG97/973/fne5qUkpucuX8Tba8BMIuqAWy3mrS9BtutJgCpKyLaXkPqhiFzbpV8zSVfc9ENg5xbZT6dlrPAqSsvy7j4HivlVebTC/wIBmx4j/jz6zf52kN0w6DtNeQUYPPlc5XIOA79ICDjOOiWoB8ELNpL13uw++SFzLlVVsqrSnz4YRerVADgffMVAFlh0otCssKUiScTJibifhCgW0KJ+1HI63dvWV+rULSd2R7M3boNQPfbdwB0Q6iiRPz5yyHHg2A2IJlfNwQ/B6cqlxWmEq+vVVRuCnBxfobfOZ4yqReFFG1HiYu2Qy8KpwDaeBhxcX4GwKK9xLDjA1B5cJ+MMNm6c5cdt05GmHw8+qqp0ZMg7PpAQc1vlQoMOz5WqcDT+ib7rTdx+8COW2cCcLmWWrwkMSTsnLBcLjEeRezvHTAejS7hhpbEEx0ko4Rdn7Abr+zJp72JO4CNZ4/V6gNoN/2Nqf+XXH/+AhpfnhYaBg61AAAAAElFTkSuQmCC"
         }
     },
+    item_apotheosis_bloodmoney_1: {
+        sprite: {
+            'data/ui_gfx/items/book.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAA00lEQVR4nGNgIBEwwlnteTZX7rzBo3TpthsMDAwscNXKsvzaJj4iEvJcPPzfvnzk4uFnYGD49uUjAwMDFw//9hVtEJUsyGb8eHn4ycvDmGarWWfD2QgNH7/8wuoSfh62b18+wl3LhCz35v33A6cfQ9hwBhpA0XDlzhsdFRGIagdTWbg2Lh5+iDi6HyCKsDKw+AFino6KiIgg55v33yGO1lERQfMDdhtEBDmRzUZ2Eoof8ADsoYQLQKKPNBtIcxIXDz/cSSiJD5cGe59sK7dIIt2CDgCQi01apq6e0QAAAABJRU5ErkJggg=="
+        },
+        name: "Bloody gold nugget (1)"
+    },
+    item_potion_mimic: {
+        name: "Potion (100% full)"
+    },
     item_gold_orb: {
         name: "Shiny orb",
         description: {
@@ -839,6 +841,12 @@ const itemData = {
             'data/ui_gfx/items/kakke.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABg0lEQVR4nLWSv0sCYRzGP6cuh4KQkA5h4BSYaFSDQyCBLXFbg0JTzg4ZuDQ3NNQSNAT2TzgK4ib4g5SaBcXhFAyUVw4Huwa54647oqVnOr7c87zP+/m+8B8q5xP6w1VM19/u9LfnjP7bvx43c1heUioW6DVrpNLZXwNtAbmzuN4abr4Nc69Z4+fMGuKzBqjCg7K3ZDsWpN4ZARuD0qk4ZtCwNyjnEzqrBe2xzHQwZ6L5+fic8/hUoVQssL8VtM1sDYzqStJLtS9oE0AVEJY3QUZ1qFHvjJhofjsDa3Ul6UWdCSKBL6r9NYm4j3pnZIZU+2vuyzmTgwSQOdzVI6EAxzsaE81PIu5jOpjTHsuOGcDpUZRUOot0cCt5ABrdoaTOBO2xTGuIyUCdCSaan7C85PL8gtOjqIODCdEIMaqH5SWRUMCxwvxJyDzAsUZDStK7aSBwXet15YVG910yGVhl8FCFB1YL3NjcvA5Mn+MpW68C4MbGKkcDN5mtZoJGd/gnz5/1Ddim8BQEtawpAAAAAElFTkSuQmCC"
         }
     },
+    item_apotheosis_money_1: {
+        name: "Gold nugget (1)",
+        sprite: {
+            'data/ui_gfx/items/book.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAA00lEQVR4nGNgIBEwwlnteTZX7rzBo3TpthsMDAwscNXKsvzaJj4iEvJcPPzfvnzk4uFnYGD49uUjAwMDFw//9hVtEJUsyGb8eHn4ycvDmGarWWfD2QgNH7/8wuoSfh62b18+wl3LhCz35v33A6cfQ9hwBhpA0XDlzhsdFRGIagdTWbg2Lh5+iDi6HyCKsDKw+AFino6KiIgg55v33yGO1lERQfMDdhtEBDmRzUZ2Eoof8ADsoYQLQKKPNBtIcxIXDz/cSSiJD5cGe59sK7dIIt2CDgCQi01apq6e0QAAAABJRU5ErkJggg=="
+        }
+    },
     item_bloodmoney_50: {
         sprite: {
             'data/ui_gfx/items/goldnugget.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnElEQVR4nO2QIQ7CQBBFXwsnqGi4AYEEh+MKeC5Qs3cg9BQ4fF1lE+5AgoUKRDcgSGgVhoqPIRh2EwS4PjmZ/zLzoeM/SEISj2qlF0hy7oY+SW4iAbQ2BXCnfYLcROrFIcVmDcC5mNHa1Cnpu4b7ZgANTIdXDtsMgPqSfX/B7R4AsDvGnGwNwCQpA98bH0jCzMdaLkbvAn0ldvyAJ3w6QneZJSmjAAAAAElFTkSuQmCC"
@@ -850,15 +858,6 @@ const itemData = {
             'data/ui_gfx/items/goldnugget.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnElEQVR4nO2QIQ7CQBBFXwsnqGi4AYEEh+MKeC5Qs3cg9BQ4fF1lE+5AgoUKRDcgSGgVhoqPIRh2EwS4PjmZ/zLzoeM/SEISj2qlF0hy7oY+SW4iAbQ2BXCnfYLcROrFIcVmDcC5mNHa1Cnpu4b7ZgANTIdXDtsMgPqSfX/B7R4AsDvGnGwNwCQpA98bH0jCzMdaLkbvAn0ldvyAJ3w6QneZJSmjAAAAAElFTkSuQmCC"
         },
         name: "Bloody gold nugget (200)"
-    },
-    item_apotheosis_egg_robot_name: {
-        name: "Robotic Egg",
-        description: {
-            item_apotheosis_egg_robot_desc: "The egg feels like it's moving"
-        },
-        sprite: {
-            'data/ui_gfx/items/egg_metal.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9klEQVR4nGNgoBAw4pLwDoj8b2ygzXD2wlWGrRuW41THhE/znXuPGIwNtBm8AyL/E22Ad0Dkfy9XO4Y79x4xqCjJMZy9cJWBn48XpyEYTps6dTqGwpev3zIwMDAwNDXUYKhHEUC2hZ+Pl+Hjp89wNgwsWzQLRQ8LMsfYQJuBgYGBQVxUGMOpMFfgdIF3QOR/ZJs+fvqMYjOyOHKsoLhARUmOoO1nL1xFkUMxABbi2GzFBVAM8HK1w2orAwMiXLbtPoQijhEL2FyADPDGAgMD7nDAZjuGC2CugLFhaQHmKnTbsRrAwMDAEBWX9h/dJdnZmTgzFEUAAJk3V7l39bN6AAAAAElFTkSuQmCC"
-        }
     },
     item_goldnugget_10000: {
         name: "Golden Idol (10000)",
@@ -952,6 +951,16 @@ const itemData = {
             itemdesc_runestone: "A runestone with a strong magical aura. You feel like kicking it."
         }
     },
+    item_apotheosis_runestone_alchemy_name: {
+        sprite: {
+            'data/ui_gfx/items/runestone_slow.png': "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAABDklEQVR4nGNgoAYobtrzPz538X9sckzoAp5Rs+AKsWlC0WDhlPlfS0MJzhcRlcRvg6CEIcOb188Z3rx+DleMbgsLsunYTEXnw20QlDBkEBPmZLh1bR+KAnQ+E7rp8oqmDMf2zmBgYGBgOLZ3BoO8oimKs1hgpsMAOycvg7FVNMOxvTMYjK2iGdg5eRnYOXkxnQQLnVvX9sE1sXPyYncSAwMDw5vXzxkYGBjgTmLn5IU7iYEBEVpwDSKikgxvXj/H6iTkYIZrOHpgLYY/kBVfu3EPoeHPD4hzbl49BpdAV7x9WRojAwMDAyPMVNegxv+fP7xgQAe8AhIMu9fVw9XBnbR7XT0jr4AEXsUMDAwMAByfaMY23zMOAAAAAElFTkSuQmCC",
+            'data/ui_gfx/items/runestone_alchemy.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/klEQVR4nGNgoCW4uCn+//ZZ3v/xqWHCJbF5guF/BgYGBikJEQZ8hmA1oCJZ67+ckh6cLyUhQpoLrHXZMcRwuQLDgIpkLRSFz168wesKDAOsddkZWLik4PyH735j1YjVAJjtMNuOX3uO4gps3kAxANnvMM2WWpIMD9/9Znj24g1Wb2B4ATn0LbUkUQwh6AVkcPLcc6zi6N5gwWUAAwMDw4Ql51D4llqSGN7AMGD5xtMM9uaKDAUxRlgNfXTvEgofxQv3nzEzMDAwMBw8eR9DIUyzb8F5RmQxRnRFk8pM/j97+w1Ds5QwF0Ne1xkM9RiBmNd1hlFKmIsozQwMDAwAAutUpE2DK2cAAAAASUVORK5CYII="
+        },
+        name: "Runestone of Alchemy",
+        description: {
+            itemdesc_runestone: "A runestone with a strong magical aura. You feel like kicking it."
+        }
+    },
     item_runestone_null: {
         sprite: {
             'data/ui_gfx/items/runestone_slow.png': "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAABDklEQVR4nGNgoAYobtrzPz538X9sckzoAp5Rs+AKsWlC0WDhlPlfS0MJzhcRlcRvg6CEIcOb188Z3rx+DleMbgsLsunYTEXnw20QlDBkEBPmZLh1bR+KAnQ+E7rp8oqmDMf2zmBgYGBgOLZ3BoO8oimKs1hgpsMAOycvg7FVNMOxvTMYjK2iGdg5eRnYOXkxnQQLnVvX9sE1sXPyYncSAwMDw5vXzxkYGBjgTmLn5IU7iYEBEVpwDSKikgxvXj/H6iTkYIZrOHpgLYY/kBVfu3EPoeHPD4hzbl49BpdAV7x9WRojAwMDAyPMVNegxv+fP7xgQAe8AhIMu9fVw9XBnbR7XT0jr4AEXsUMDAwMAByfaMY23zMOAAAAAElFTkSuQmCC",
@@ -960,6 +969,33 @@ const itemData = {
         name: "Runestone of emptiness",
         description: {
             itemdesc_runestone: "A runestone with a strong magical aura. You feel like kicking it."
+        }
+    },
+    item_apotheosis_egg_fairy_name: {
+        name: "Glowing Egg",
+        description: {
+            item_apotheosis_egg_fairy_desc: "The egg looks luminescent"
+        },
+        sprite: {
+            'data/ui_gfx/items/egg_yellow.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB1UlEQVR4nHWTwU7bQBCG/xmvIxWH1CFSQlCEEAeQOPfCoa/hN0B9JpQ3SB+kHHqGGwcUVRhBFSdB28TrmR42m8QuXcmH9cz3///sagmNpfozBtxRWS5PiUxb1S3juP0EmN9EX8pmPzVhi8UgWptr0fkk/GfqZFXL/fiEw7wpwjt4EgGLXoCNuUAr/gpjLiA6n0Rrcw0ser6vIaCqBIxa1vJ5gJkGG/fBVsRaPgdGLd9fS/CdAekak1wx98E0gGi+c6EBmPswJrkCpOv7N7Xg7hyfVZKPTXS5hcISzWGiS1SSj53js/0UHNxVoyvmfu2EQ4rtONyHalRLwUDb2HI1quR1694Ew96neB3bcjUC2mYjkDKTdj4C98+gXtcOkIYEUwBL3yCzf+LXRtrWl/AcwMCzSFnMy+oBIi//jS+aQ+QFZfUAKYs58CwbgWOn6qYRn9wEl+YVeti7R3xyo+qmwLEDAANkUhS3szT9c1/KL8QhLnbjeGHvbujofla42cFB5hMQQYfD7krEPhKlWRjlI5gozUTs43DYXRFBNyMARFmVJOZtbYu7fZHwBXhti7skMW9EWRXEG6/xNn5/d72K26cRH342aLHDWipZFJEsnzz8rfYa/wK2aCRzxmMINgAAAABJRU5ErkJggg=="
+        }
+    },
+    item_apotheosis_egg_mud_name: {
+        name: "Muddy Egg",
+        description: {
+            item_apotheosis_egg_mud_desc: "The egg feels amorphous"
+        },
+        sprite: {
+            'data/ui_gfx/items/egg_mud.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjUlEQVR4nK2SvUrDYBSGHwNWQhuzhOJUUusiRAoiKkhBKN28A0enlk46uXRwctHJW/AO3NRJCupQCAm4JBg6iJQsSSpBC4lDSTGmRUHP9p2fh/e854M/xtyswuFRPQ5DEEU4P7ud2SfMGu7dP2PpL+xtDGi26vGvAbs7y7Hx6FJRFUa8c3klAtCoVadCMoDVaplRFJCTJQD6TsCT/kyptPCzgoP9zdjSX+i083x4ARVVASEHgO24HB5lV0kBcrKUkm07LitrCuvbZQCMR3e2gmarHlvGeHfTHGA742ZRHA9WVAXf9zJeTACW4VIqLSAvSYgFgXAYUVEVwhCOWxG24yIWskebZHzfw3ZcvNeAcBihaUVyskSva3Ny8cb6dplwGLGypkwHLC7KdNp5+v13NK2IaQ6wDBdNKwLQvbEB6HXt6YDrO33u+DRInXAUBZjmgE47P/ajIPCgO6lfmXo0atXY972JB4myr7nvgJQr13f6pJgY5vsemlZkXpAywxkFSWxV1TiBJEqmDf9LfAL31Kt+2wAbMgAAAABJRU5ErkJggg=="
+        }
+    },
+    item_apotheosis_egg_robot_name: {
+        name: "Robotic Egg",
+        description: {
+            item_apotheosis_egg_robot_desc: "The egg feels like it's moving"
+        },
+        sprite: {
+            'data/ui_gfx/items/egg_metal.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9klEQVR4nGNgoBAw4pLwDoj8b2ygzXD2wlWGrRuW41THhE/znXuPGIwNtBm8AyL/E22Ad0Dkfy9XO4Y79x4xqCjJMZy9cJWBn48XpyEYTps6dTqGwpev3zIwMDAwNDXUYKhHEUC2hZ+Pl+Hjp89wNgwsWzQLRQ8LMsfYQJuBgYGBQVxUGMOpMFfgdIF3QOR/ZJs+fvqMYjOyOHKsoLhARUmOoO1nL1xFkUMxABbi2GzFBVAM8HK1w2orAwMiXLbtPoQijhEL2FyADPDGAgMD7nDAZjuGC2CugLFhaQHmKnTbsRrAwMDAEBWX9h/dJdnZmTgzFEUAAJk3V7l39bN6AAAAAElFTkSuQmCC"
         }
     },
     item_apotheosis_chest_death_cross: {
@@ -992,7 +1028,7 @@ const itemData = {
             item_apotheosis_egg_fire_lukki_desc: "It feels warm to the touch.\\nYou feel it yerns for a new home."
         },
         sprite: {
-            'data/ui_gfx/items/egg_red.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABkElEQVR4nNWSQW7TYBCFv7FxSNX+TWVDY9lOCCSoLZWQgsSy3bDhYiy4ASuuwAY4QSU2KCBKIFGRSLASJW0oMk3rhtT+WSAFrJo1YlYzo/fePM0M/Pchec03O65G4OZOk8+jMbbrcePR81zspebeA0cjkB7FbNxxsMpVrKBOcn7K+GTGxuOs0JU/i9a9Nc23hGqzBjVN2DmkoqYMW13S+Yyi6/3dwd7uNa0KAgLRMMZwr7J8XgCBytY6GGA6Hr3RmObT1oL324EGVy1hlmx8H8Lu4S+iwJe3Pfy6YhAOOE3SjIOMwMHkDPU9Jplc4NcVSXSMWbIRawlz2cZX0OmFGQFjkaXCZrVCGhWo3q1xMDmj2z7mw6tPeJ5F+PEIUgGd3fuiev1wS3ff99lurCACF5M5QWMVRAMwOomJhjG77Wn+Fd7tD9i+tcaPFKypYBQszBV7McZX4K5+hfY03wHAk9slHRhFrpdNAPr9iLnWbJaKBA1F+Vn/0t/kftfLpqNnhkmw7iCi0QL3X3Rysf8+fgJqq4V0Npym0gAAAABJRU5ErkJggg=="
+            'data/ui_gfx/items/egg_red.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA3ElEQVR4nK2TPQrCQBCFX8QbxMLtFQu1tBBsvICFB0nvCexzEK+RA8QUIQlYCJMiOcPYZNfM/giiAwu7zLzvvWVZ4MeKQo0uvbDez5JrcC4o5jxj7h7MecZj2HdivT5AnGicZwylACJAqXeDCNF278xPbHcjssRQCr4UAhAfT7JLJGDxcu1cwQCEuyU0593BSSESOEJdNigIeDYuLNS3AW1doq+KcHwi9FWBti79gE16i4zL2F0/6eBu5oaajg+aHnvi+txFAk03V/GIbXcg8JnuyZnni5VI5hP/pV7w5Yyttek3lgAAAABJRU5ErkJggg=="
         }
     },
     item_apotheosis_heretical_eye_name: {
@@ -1105,15 +1141,5 @@ const itemData = {
     },
     item_apotheosis_chest_portals: {
         name: "Dimensional Chest"
-    },
-    item_apotheosis_runestone_alchemy_name: {
-        sprite: {
-            'data/ui_gfx/items/runestone_slow.png': "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAABDklEQVR4nGNgoAYobtrzPz538X9sckzoAp5Rs+AKsWlC0WDhlPlfS0MJzhcRlcRvg6CEIcOb188Z3rx+DleMbgsLsunYTEXnw20QlDBkEBPmZLh1bR+KAnQ+E7rp8oqmDMf2zmBgYGBgOLZ3BoO8oimKs1hgpsMAOycvg7FVNMOxvTMYjK2iGdg5eRnYOXkxnQQLnVvX9sE1sXPyYncSAwMDw5vXzxkYGBjgTmLn5IU7iYEBEVpwDSKikgxvXj/H6iTkYIZrOHpgLYY/kBVfu3EPoeHPD4hzbl49BpdAV7x9WRojAwMDAyPMVNegxv+fP7xgQAe8AhIMu9fVw9XBnbR7XT0jr4AEXsUMDAwMAByfaMY23zMOAAAAAElFTkSuQmCC",
-            'data/ui_gfx/items/runestone_alchemy.png': "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/klEQVR4nGNgoCW4uCn+//ZZ3v/xqWHCJbF5guF/BgYGBikJEQZ8hmA1oCJZ67+ckh6cLyUhQpoLrHXZMcRwuQLDgIpkLRSFz168wesKDAOsddkZWLik4PyH735j1YjVAJjtMNuOX3uO4gps3kAxANnvMM2WWpIMD9/9Znj24g1Wb2B4ATn0LbUkUQwh6AVkcPLcc6zi6N5gwWUAAwMDw4Ql51D4llqSGN7AMGD5xtMM9uaKDAUxRlgNfXTvEgofxQv3nzEzMDAwMBw8eR9DIUyzb8F5RmQxRnRFk8pM/j97+w1Ds5QwF0Ne1xkM9RiBmNd1hlFKmIsozQwMDAwAAutUpE2DK2cAAAAASUVORK5CYII="
-        },
-        name: "Runestone of Alchemy",
-        description: {
-            itemdesc_runestone: "A runestone with a strong magical aura. You feel like kicking it."
-        }
     }
 }

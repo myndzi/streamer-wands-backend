@@ -1,4 +1,4 @@
-enemyNames = 
+enemyNames =
 {
     "player",
     "sheep",
@@ -182,5 +182,7 @@ enemyNames =
     "boss_centipede",
     "ultimate_killer",
     "friend",
-    "meatmaggot"
+    "meatmaggot",
+    "boss_sky",
+    "mimic_potion"
 }
