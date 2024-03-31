@@ -1650,10 +1650,10 @@ const icons = {
         {
             id: "boss_sky",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5klEQVR4nMWTMQ+CMBCFX42LCRKmAhNLSVi7mG7+djfiwmoiixPqREgTxzrQ1pbWCRNvaq957753BKKUwprarFL/wmBrDkdxcPvfchFzOLXnkCBLUk+s757xsucZjHKKirMkRVnso0jBDiJT0dQUVZlDcOYNAZwdLPF2iUJV5gAo2q4PokDvwyNoaoqmpgCgxXMJzmyEJaFLEJtk6yVJtO8ZGHdDETNtaoq2m+zdjUBGOT/chocVC84gOPMMBWcWZ0lARjmpUX6QL9enR+CKAwNNQMpij+E+fy5DJTgjbdcHkcjf/8Y3C/lO4JTW+RUAAAAASUVORK5CYII=",
-            name: "Lohkare",
+            name: "Kivi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lohkare",
+            wiki_url: "https://noita.wiki.gg/wiki/Kivi",
             beta: true
         },
         {
