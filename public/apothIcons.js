@@ -6,8 +6,7 @@ const apothIcons = {
             name: "Min\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Min\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Min\u00e4"
         },
         {
             id: "sheep",
@@ -15,8 +14,7 @@ const apothIcons = {
             name: "Lammas",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lammas",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lammas"
         },
         {
             id: "sheep_bat",
@@ -24,8 +22,7 @@ const apothIcons = {
             name: "Lentolammas",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lentolammas",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lentolammas"
         },
         {
             id: "sheep_fly",
@@ -33,8 +30,7 @@ const apothIcons = {
             name: "Suhiseva lammas",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suhiseva lammas",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suhiseva lammas"
         },
         {
             id: "scorpion",
@@ -42,8 +38,7 @@ const apothIcons = {
             name: "Skorpioni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Skorpioni",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Skorpioni"
         },
         {
             id: "fish",
@@ -51,8 +46,7 @@ const apothIcons = {
             name: "Ev\u00e4k\u00e4s",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ev\u00e4k\u00e4s",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ev\u00e4k\u00e4s"
         },
         {
             id: "fish_large",
@@ -60,8 +54,7 @@ const apothIcons = {
             name: "Suurev\u00e4k\u00e4s",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suurev\u00e4k\u00e4s",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suurev\u00e4k\u00e4s"
         },
         {
             id: "duck",
@@ -69,8 +62,7 @@ const apothIcons = {
             name: "Ankka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ankka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ankka"
         },
         {
             id: "wolf",
@@ -78,8 +70,7 @@ const apothIcons = {
             name: "Susi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Susi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Susi"
         },
         {
             id: "deer",
@@ -87,8 +78,7 @@ const apothIcons = {
             name: "Nelikoipi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Nelikoipi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Nelikoipi"
         },
         {
             id: "elk",
@@ -96,8 +86,7 @@ const apothIcons = {
             name: "Poro",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Poro",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Poro"
         },
         {
             id: "cat_mocreeps",
@@ -105,8 +94,7 @@ const apothIcons = {
             name: "Kissa",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kissa",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kissa"
         },
         {
             id: "cat_mocreeps_spoopy_skittle",
@@ -114,8 +102,7 @@ const apothIcons = {
             name: "",
             description: null,
             bgImage: null,
-            wiki_url: null,
-            beta: true
+            wiki_url: null
         },
         {
             id: "eel",
@@ -123,8 +110,7 @@ const apothIcons = {
             name: "Nahkiainen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Nahkiainen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Nahkiainen"
         },
         {
             id: "bubble_liquid",
@@ -132,8 +118,7 @@ const apothIcons = {
             name: "Nestem\u00e4inen kupla",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nestem\u00e4inen kupla",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nestem\u00e4inen kupla"
         },
         {
             id: "zombie_weak",
@@ -141,8 +126,7 @@ const apothIcons = {
             name: "Heikkohurtta",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heikkohurtta",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Heikkohurtta"
         },
         {
             id: "zombie",
@@ -150,8 +134,7 @@ const apothIcons = {
             name: "Hurtta",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hurtta",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hurtta"
         },
         {
             id: "miner_weak",
@@ -159,8 +142,7 @@ const apothIcons = {
             name: "Tappurahiisil\u00e4inen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tappurahiisil\u00e4inen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Tappurahiisil\u00e4inen"
         },
         {
             id: "miner",
@@ -168,8 +150,7 @@ const apothIcons = {
             name: "Tappurahiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tappurahiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Tappurahiisi"
         },
         {
             id: "miner_fire",
@@ -177,8 +158,7 @@ const apothIcons = {
             name: "Tulihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tulihiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Tulihiisi"
         },
         {
             id: "miner_santa",
@@ -186,8 +166,7 @@ const apothIcons = {
             name: "Jouluhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Jouluhiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Jouluhiisi"
         },
         {
             id: "miner_chef",
@@ -195,8 +174,7 @@ const apothIcons = {
             name: "Kokkihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kokkihiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kokkihiisi"
         },
         {
             id: "hiisi_thief",
@@ -204,8 +182,7 @@ const apothIcons = {
             name: "Varashiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Varashiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Varashiisi"
         },
         {
             id: "goblin_bomb",
@@ -213,8 +190,7 @@ const apothIcons = {
             name: "S\u00e4hik\u00e4ismennink\u00e4inen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4hik\u00e4ismennink\u00e4inen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4hik\u00e4ismennink\u00e4inen"
         },
         {
             id: "shotgunner_weak",
@@ -222,8 +198,7 @@ const apothIcons = {
             name: "Heikko haulikkohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heikko haulikkohiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Heikko haulikkohiisi"
         },
         {
             id: "shotgunner",
@@ -231,8 +206,7 @@ const apothIcons = {
             name: "Haulikkohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Haulikkohiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Haulikkohiisi"
         },
         {
             id: "hisii_minecart",
@@ -240,8 +214,7 @@ const apothIcons = {
             name: "Kaivosk\u00e4rryhaulikkohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kaivosk\u00e4rryhaulikkohiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kaivosk\u00e4rryhaulikkohiisi"
         },
         {
             id: "hisii_minecart_tnt",
@@ -249,8 +222,7 @@ const apothIcons = {
             name: "Kaivosk\u00e4rrytappurahaulikkohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kaivosk\u00e4rrytappurahaulikkohiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kaivosk\u00e4rrytappurahaulikkohiisi"
         },
         {
             id: "hisii_giga_bomb",
@@ -258,8 +230,7 @@ const apothIcons = {
             name: "Psykopaattihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Psykopaattihiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Psykopaattihiisi"
         },
         {
             id: "scavenger_smg",
@@ -267,8 +238,7 @@ const apothIcons = {
             name: "Rynkkyhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Rynkkyhiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Rynkkyhiisi"
         },
         {
             id: "scavenger_grenade",
@@ -276,8 +246,7 @@ const apothIcons = {
             name: "Kranuhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kranuhiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kranuhiisi"
         },
         {
             id: "scavenger_mine",
@@ -285,8 +254,7 @@ const apothIcons = {
             name: "Miinankylv\u00e4j\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Miinankylv\u00e4j\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Miinankylv\u00e4j\u00e4"
         },
         {
             id: "scavenger_heal",
@@ -294,8 +262,7 @@ const apothIcons = {
             name: "Parantajahiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Parantajahiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Parantajahiisi"
         },
         {
             id: "scavenger_glue",
@@ -303,8 +270,7 @@ const apothIcons = {
             name: "Liimahiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Liimahiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Liimahiisi"
         },
         {
             id: "hisii_engineer",
@@ -312,8 +278,7 @@ const apothIcons = {
             name: "Insin\u00f6\u00f6rihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Insin\u00f6\u00f6rihiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Insin\u00f6\u00f6rihiisi"
         },
         {
             id: "scavenger_invis",
@@ -321,8 +286,7 @@ const apothIcons = {
             name: "H\u00e4ivehiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4ivehiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4ivehiisi"
         },
         {
             id: "scavenger_shield",
@@ -330,8 +294,7 @@ const apothIcons = {
             name: "Kilpihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kilpihiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kilpihiisi"
         },
         {
             id: "hisii_rocketshotgun",
@@ -339,8 +302,7 @@ const apothIcons = {
             name: "Rakettihaulikkohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Rakettihaulikkohiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Rakettihaulikkohiisi"
         },
         {
             id: "scavenger_poison",
@@ -348,8 +310,7 @@ const apothIcons = {
             name: "Myrkkyhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Myrkkyhiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Myrkkyhiisi"
         },
         {
             id: "scavenger_clusterbomb",
@@ -357,8 +318,7 @@ const apothIcons = {
             name: "Isohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Isohiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Isohiisi"
         },
         {
             id: "scavenger_leader",
@@ -366,8 +326,7 @@ const apothIcons = {
             name: "Toimari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Toimari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Toimari"
         },
         {
             id: "alchemist",
@@ -375,8 +334,7 @@ const apothIcons = {
             name: "Puistokemisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Puistokemisti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Puistokemisti"
         },
         {
             id: "hisii_hobo",
@@ -384,8 +342,7 @@ const apothIcons = {
             name: "Koditonhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Koditonhiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Koditonhiisi"
         },
         {
             id: "hisii_hobo_rich",
@@ -393,8 +350,7 @@ const apothIcons = {
             name: "Rikashiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Rikashiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Rikashiisi"
         },
         {
             id: "sniper",
@@ -402,8 +358,7 @@ const apothIcons = {
             name: "Snipuhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Snipuhiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Snipuhiisi"
         },
         {
             id: "shaman",
@@ -411,8 +366,7 @@ const apothIcons = {
             name: "M\u00e4rki\u00e4inen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4rki\u00e4inen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4rki\u00e4inen"
         },
         {
             id: "shaman_greater_apotheosis",
@@ -420,8 +374,7 @@ const apothIcons = {
             name: "Suurm\u00e4rki\u00e4inen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suurm\u00e4rki\u00e4inen",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suurm\u00e4rki\u00e4inen"
         },
         {
             id: "coward",
@@ -429,8 +382,7 @@ const apothIcons = {
             name: "Raukka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Raukka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Raukka"
         },
         {
             id: "flamer",
@@ -438,8 +390,7 @@ const apothIcons = {
             name: "Liekkari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Liekkari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Liekkari"
         },
         {
             id: "icer",
@@ -447,8 +398,7 @@ const apothIcons = {
             name: "J\u00e4\u00e4hdytyslaite",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4\u00e4hdytyslaite",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4\u00e4hdytyslaite"
         },
         {
             id: "bigzombie",
@@ -456,8 +406,7 @@ const apothIcons = {
             name: "M\u00e4t\u00e4nev\u00e4 ruumis",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 ruumis",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 ruumis"
         },
         {
             id: "bigzombietorso",
@@ -465,8 +414,7 @@ const apothIcons = {
             name: "M\u00e4t\u00e4nev\u00e4 kroppa",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 kroppa",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 kroppa"
         },
         {
             id: "bigzombiehead",
@@ -474,8 +422,7 @@ const apothIcons = {
             name: "M\u00e4t\u00e4nev\u00e4 p\u00e4\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 p\u00e4\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 p\u00e4\u00e4"
         },
         {
             id: "slimeshooter_weak",
@@ -483,8 +430,7 @@ const apothIcons = {
             name: "Heikko limanuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heikko limanuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Heikko limanuljaska"
         },
         {
             id: "slimeshooter",
@@ -492,8 +438,7 @@ const apothIcons = {
             name: "Limanuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Limanuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Limanuljaska"
         },
         {
             id: "acidshooter_weak",
@@ -501,8 +446,7 @@ const apothIcons = {
             name: "Heikko happonuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heikko happonuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Heikko happonuljaska"
         },
         {
             id: "acidshooter",
@@ -510,8 +454,7 @@ const apothIcons = {
             name: "Happonuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Happonuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Happonuljaska"
         },
         {
             id: "lasershooter",
@@ -519,8 +462,7 @@ const apothIcons = {
             name: "Mulkkio",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mulkkio",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Mulkkio"
         },
         {
             id: "blindgazer",
@@ -528,8 +470,7 @@ const apothIcons = {
             name: "Sokeakatselija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sokeakatselija",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sokeakatselija"
         },
         {
             id: "giantshooter_weak",
@@ -537,8 +478,7 @@ const apothIcons = {
             name: "Heikko \u00e4itinuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heikko \u00e4itinuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Heikko \u00e4itinuljaska"
         },
         {
             id: "giantshooter",
@@ -546,8 +486,7 @@ const apothIcons = {
             name: "\u00c4itinuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/\u00c4itinuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/\u00c4itinuljaska"
         },
         {
             id: "slime_leaker_weak",
@@ -555,8 +494,7 @@ const apothIcons = {
             name: "Heikko Vuotavajaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Heikko Vuotavajaska",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Heikko Vuotavajaska"
         },
         {
             id: "slime_leaker",
@@ -564,8 +502,7 @@ const apothIcons = {
             name: "Vuotavajaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vuotavajaska",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vuotavajaska"
         },
         {
             id: "slime_teleporter",
@@ -573,8 +510,7 @@ const apothIcons = {
             name: "S\u00e4r\u00f6ilev\u00e4 limanuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/S\u00e4r\u00f6ilev\u00e4 limanuljaska",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/S\u00e4r\u00f6ilev\u00e4 limanuljaska"
         },
         {
             id: "goo_slug",
@@ -582,8 +518,7 @@ const apothIcons = {
             name: "Liimanetana",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Liimanetana",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Liimanetana"
         },
         {
             id: "poring",
@@ -591,8 +526,7 @@ const apothIcons = {
             name: "Hyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyytel\u00f6",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyytel\u00f6"
         },
         {
             id: "poring_magic",
@@ -600,8 +534,7 @@ const apothIcons = {
             name: "Lumottuhyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lumottuhyytel\u00f6",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lumottuhyytel\u00f6"
         },
         {
             id: "poring_devil",
@@ -609,8 +542,7 @@ const apothIcons = {
             name: "Ep\u00e4pyh\u00e4hyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Ep\u00e4pyh\u00e4hyytel\u00f6",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Ep\u00e4pyh\u00e4hyytel\u00f6"
         },
         {
             id: "poring_holy",
@@ -618,8 +550,7 @@ const apothIcons = {
             name: "Jumalallinenhyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Jumalallinenhyytel\u00f6",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Jumalallinenhyytel\u00f6"
         },
         {
             id: "poring_holy_arch",
@@ -627,8 +558,7 @@ const apothIcons = {
             name: "Korkeajumalallinenhyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korkeajumalallinenhyytel\u00f6",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korkeajumalallinenhyytel\u00f6"
         },
         {
             id: "miniblob",
@@ -636,8 +566,7 @@ const apothIcons = {
             name: "M\u00f6ykky",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00f6ykky",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00f6ykky"
         },
         {
             id: "blob",
@@ -645,8 +574,7 @@ const apothIcons = {
             name: "Kiukkum\u00f6ykky",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kiukkum\u00f6ykky",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kiukkum\u00f6ykky"
         },
         {
             id: "blob_big",
@@ -654,8 +582,7 @@ const apothIcons = {
             name: "Isom\u00f6ykky",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Isom\u00f6ykky",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Isom\u00f6ykky"
         },
         {
             id: "blob_huge",
@@ -663,8 +590,7 @@ const apothIcons = {
             name: "Kammottavam\u00f6ykky",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kammottavam\u00f6ykky",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kammottavam\u00f6ykky"
         },
         {
             id: "ant",
@@ -672,8 +598,7 @@ const apothIcons = {
             name: "Murkku",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Murkku",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Murkku"
         },
         {
             id: "ant_fire",
@@ -681,8 +606,7 @@ const apothIcons = {
             name: "Tulimurkku",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Tulimurkku",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Tulimurkku"
         },
         {
             id: "ant_suffocate",
@@ -690,8 +614,7 @@ const apothIcons = {
             name: "Tukahduttajamurkku",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Tukahduttajamurkku",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Tukahduttajamurkku"
         },
         {
             id: "rat",
@@ -699,8 +622,7 @@ const apothIcons = {
             name: "Rotta",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Rotta",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Rotta"
         },
         {
             id: "rat_birthday",
@@ -708,8 +630,7 @@ const apothIcons = {
             name: "Juhlarotta",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Juhlarotta",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Juhlarotta"
         },
         {
             id: "bat",
@@ -717,8 +638,7 @@ const apothIcons = {
             name: "Lepakko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lepakko",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lepakko"
         },
         {
             id: "bigbat",
@@ -726,8 +646,7 @@ const apothIcons = {
             name: "Suurlepakko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suurlepakko",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suurlepakko"
         },
         {
             id: "ccc_bat_psychic",
@@ -735,8 +654,7 @@ const apothIcons = {
             name: "Psyykkinenlepakko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Psyykkinenlepakko",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Psyykkinenlepakko"
         },
         {
             id: "firebug",
@@ -744,8 +662,7 @@ const apothIcons = {
             name: "Pikkutulik\u00e4rp\u00e4nen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pikkutulik\u00e4rp\u00e4nen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pikkutulik\u00e4rp\u00e4nen"
         },
         {
             id: "bigfirebug",
@@ -753,8 +670,7 @@ const apothIcons = {
             name: "Suurtulik\u00e4rp\u00e4nen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suurtulik\u00e4rp\u00e4nen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suurtulik\u00e4rp\u00e4nen"
         },
         {
             id: "bloom",
@@ -762,8 +678,7 @@ const apothIcons = {
             name: "Puska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Puska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Puska"
         },
         {
             id: "shooterflower",
@@ -771,8 +686,7 @@ const apothIcons = {
             name: "Plasmakukka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Plasmakukka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Plasmakukka"
         },
         {
             id: "mudman_friendly",
@@ -780,8 +694,7 @@ const apothIcons = {
             name: "Mutamies",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mutamies",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mutamies"
         },
         {
             id: "fly",
@@ -789,8 +702,7 @@ const apothIcons = {
             name: "Amppari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Amppari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Amppari"
         },
         {
             id: "frog",
@@ -798,8 +710,7 @@ const apothIcons = {
             name: "Konna",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Konna",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Konna"
         },
         {
             id: "frog_big",
@@ -807,8 +718,7 @@ const apothIcons = {
             name: "J\u00e4ttikonna",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttikonna",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttikonna"
         },
         {
             id: "fungus",
@@ -816,8 +726,7 @@ const apothIcons = {
             name: "Laahustussieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Laahustussieni",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Laahustussieni"
         },
         {
             id: "ceiling_fungus",
@@ -825,8 +734,7 @@ const apothIcons = {
             name: "Kattosieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kattosieni",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kattosieni"
         },
         {
             id: "poisonmushroom",
@@ -834,8 +742,7 @@ const apothIcons = {
             name: "Myrkyllinensieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Myrkyllinensieni",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Myrkyllinensieni"
         },
         {
             id: "fungus_smoking_creep",
@@ -843,8 +750,7 @@ const apothIcons = {
             name: "Savuavasieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Savuavasieni",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Savuavasieni"
         },
         {
             id: "fungus_big",
@@ -852,8 +758,7 @@ const apothIcons = {
             name: "Nuijamalikka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Nuijamalikka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Nuijamalikka"
         },
         {
             id: "fungus_giga",
@@ -861,8 +766,7 @@ const apothIcons = {
             name: "Huhtasieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Huhtasieni",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Huhtasieni"
         },
         {
             id: "lukki_fungus",
@@ -870,8 +774,7 @@ const apothIcons = {
             name: "Revitty sieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Revitty sieni",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Revitty sieni"
         },
         {
             id: "lurker",
@@ -879,8 +782,7 @@ const apothIcons = {
             name: "Varjokupla",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Varjokupla",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Varjokupla"
         },
         {
             id: "maggot",
@@ -888,8 +790,7 @@ const apothIcons = {
             name: "Toukka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Toukka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Toukka"
         },
         {
             id: "skullrat",
@@ -897,8 +798,7 @@ const apothIcons = {
             name: "Kallorotta",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kallorotta",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kallorotta"
         },
         {
             id: "skullfly",
@@ -906,8 +806,7 @@ const apothIcons = {
             name: "Kallok\u00e4rp\u00e4nen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kallok\u00e4rp\u00e4nen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kallok\u00e4rp\u00e4nen"
         },
         {
             id: "hideous_mass",
@@ -915,8 +814,7 @@ const apothIcons = {
             name: "Hirvitt\u00e4v\u00e4massa",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hirvitt\u00e4v\u00e4massa",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hirvitt\u00e4v\u00e4massa"
         },
         {
             id: "tentacler_small",
@@ -924,8 +822,7 @@ const apothIcons = {
             name: "Pikkuturso",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pikkuturso",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pikkuturso"
         },
         {
             id: "tentacler",
@@ -933,8 +830,7 @@ const apothIcons = {
             name: "Turso",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Turso",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Turso"
         },
         {
             id: "tentacler_big",
@@ -942,8 +838,7 @@ const apothIcons = {
             name: "Isoturso",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Isoturso",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Isoturso"
         },
         {
             id: "ghoul",
@@ -951,8 +846,7 @@ const apothIcons = {
             name: "Sylkyri",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Sylkyri",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Sylkyri"
         },
         {
             id: "giant",
@@ -960,8 +854,7 @@ const apothIcons = {
             name: "Hiidenkivi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hiidenkivi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hiidenkivi"
         },
         {
             id: "pebble_physics",
@@ -969,8 +862,7 @@ const apothIcons = {
             name: "Lohkare",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lohkare",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lohkare"
         },
         {
             id: "longleg",
@@ -978,8 +870,7 @@ const apothIcons = {
             name: "H\u00e4mis",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4mis",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4mis"
         },
         {
             id: "longleg_pillar",
@@ -987,8 +878,7 @@ const apothIcons = {
             name: "Kohoava Pilari-h\u00e4mis",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kohoava Pilari-h\u00e4mis",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kohoava Pilari-h\u00e4mis"
         },
         {
             id: "lukki_tiny",
@@ -996,8 +886,7 @@ const apothIcons = {
             name: "Pikkuh\u00e4m\u00e4h\u00e4kki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pikkuh\u00e4m\u00e4h\u00e4kki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pikkuh\u00e4m\u00e4h\u00e4kki"
         },
         {
             id: "lukki",
@@ -1005,8 +894,7 @@ const apothIcons = {
             name: "H\u00e4m\u00e4h\u00e4kki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4m\u00e4h\u00e4kki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4m\u00e4h\u00e4kki"
         },
         {
             id: "lukki_longleg",
@@ -1014,8 +902,7 @@ const apothIcons = {
             name: "Lukki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lukki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lukki"
         },
         {
             id: "lukki_creepy_long",
@@ -1023,8 +910,7 @@ const apothIcons = {
             name: "Kasvoton Lukki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kasvoton Lukki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kasvoton Lukki"
         },
         {
             id: "lukki_swarmling",
@@ -1032,8 +918,7 @@ const apothIcons = {
             name: "Nopealukki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nopealukki",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nopealukki"
         },
         {
             id: "lukki_dark",
@@ -1041,8 +926,7 @@ const apothIcons = {
             name: "Kammolukki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kammolukki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kammolukki"
         },
         {
             id: "sunken_creature",
@@ -1050,8 +934,7 @@ const apothIcons = {
             name: "Sukelluskello",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sukelluskello",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sukelluskello"
         },
         {
             id: "lukki_fire_miniboss_phase2",
@@ -1059,8 +942,7 @@ const apothIcons = {
             name: "",
             description: null,
             bgImage: null,
-            wiki_url: null,
-            beta: true
+            wiki_url: null
         },
         {
             id: "giant_centipede",
@@ -1068,8 +950,7 @@ const apothIcons = {
             name: "Nuori Tuhatjalkainen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nuori Tuhatjalkainen",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nuori Tuhatjalkainen"
         },
         {
             id: "locust_swarm",
@@ -1077,8 +958,7 @@ const apothIcons = {
             name: "Hein\u00e4sirkka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hein\u00e4sirkka",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hein\u00e4sirkka"
         },
         {
             id: "devourer_magic",
@@ -1086,8 +966,7 @@ const apothIcons = {
             name: "Taikainen sy\u00f6j\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Taikainen sy\u00f6j\u00e4",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Taikainen sy\u00f6j\u00e4"
         },
         {
             id: "seeker",
@@ -1095,8 +974,7 @@ const apothIcons = {
             name: "Etsij\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Etsij\u00e4",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Etsij\u00e4"
         },
         {
             id: "miniboss_pit_02",
@@ -1104,8 +982,7 @@ const apothIcons = {
             name: "",
             description: null,
             bgImage: null,
-            wiki_url: null,
-            beta: true
+            wiki_url: null
         },
         {
             id: "lukki_tentacle_hungry",
@@ -1113,8 +990,7 @@ const apothIcons = {
             name: "Kirottuolento",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottuolento",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottuolento"
         },
         {
             id: "star_child",
@@ -1122,8 +998,7 @@ const apothIcons = {
             name: "T\u00e4htilapsi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/T\u00e4htilapsi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/T\u00e4htilapsi"
         },
         {
             id: "worm_tiny",
@@ -1131,8 +1006,7 @@ const apothIcons = {
             name: "Pikkumato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pikkumato",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pikkumato"
         },
         {
             id: "worm",
@@ -1140,8 +1014,7 @@ const apothIcons = {
             name: "Mato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mato",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Mato"
         },
         {
             id: "worm_big",
@@ -1149,8 +1022,7 @@ const apothIcons = {
             name: "J\u00e4ttimato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttimato",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttimato"
         },
         {
             id: "worm_wall",
@@ -1158,8 +1030,7 @@ const apothIcons = {
             name: "Sein\u00e4mato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sein\u00e4mato",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sein\u00e4mato"
         },
         {
             id: "worm_skull",
@@ -1167,8 +1038,7 @@ const apothIcons = {
             name: "Kalmamato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kalmamato",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kalmamato"
         },
         {
             id: "worm_end",
@@ -1176,8 +1046,7 @@ const apothIcons = {
             name: "Helvetinmato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Helvetinmato",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Helvetinmato"
         },
         {
             id: "worm_end_big_apotheosis",
@@ -1185,8 +1054,7 @@ const apothIcons = {
             name: "Suur-Helvetinmato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Helvetinmato",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Helvetinmato"
         },
         {
             id: "worm_mechanical",
@@ -1194,8 +1062,7 @@ const apothIcons = {
             name: "Mekaaninenmato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mekaaninenmato",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mekaaninenmato"
         },
         {
             id: "worm_spine",
@@ -1203,8 +1070,7 @@ const apothIcons = {
             name: "Kirottuselk\u00e4ranka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottuselk\u00e4ranka",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottuselk\u00e4ranka"
         },
         {
             id: "drone_physics",
@@ -1212,8 +1078,7 @@ const apothIcons = {
             name: "Lennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lennokki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lennokki"
         },
         {
             id: "drone_status_ailment",
@@ -1221,8 +1086,7 @@ const apothIcons = {
             name: "Parannuskeinolennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parannuskeinolennokki",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parannuskeinolennokki"
         },
         {
             id: "drone_mini",
@@ -1230,8 +1094,7 @@ const apothIcons = {
             name: "Pieni Lennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pieni Lennokki",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pieni Lennokki"
         },
         {
             id: "drone_lasership",
@@ -1239,8 +1102,7 @@ const apothIcons = {
             name: "J\u00e4ttilaser-lennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttilaser-lennokki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttilaser-lennokki"
         },
         {
             id: "tesla_turret",
@@ -1248,8 +1110,7 @@ const apothIcons = {
             name: "Teslat\u00f6tter\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Teslat\u00f6tter\u00f6",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Teslat\u00f6tter\u00f6"
         },
         {
             id: "drone_shield",
@@ -1257,8 +1118,7 @@ const apothIcons = {
             name: "Turvalennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Turvalennokki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Turvalennokki"
         },
         {
             id: "basebot_sentry",
@@ -1266,8 +1126,7 @@ const apothIcons = {
             name: "Tarkkailija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tarkkailija",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Tarkkailija"
         },
         {
             id: "basebot_hidden",
@@ -1275,8 +1134,7 @@ const apothIcons = {
             name: "Vakoilija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Vakoilija",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Vakoilija"
         },
         {
             id: "basebot_neutralizer",
@@ -1284,8 +1142,7 @@ const apothIcons = {
             name: "Pys\u00e4ytt\u00e4j\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pys\u00e4ytt\u00e4j\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pys\u00e4ytt\u00e4j\u00e4"
         },
         {
             id: "basebot_soldier",
@@ -1293,8 +1150,7 @@ const apothIcons = {
             name: "Teloittaja",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Teloittaja",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Teloittaja"
         },
         {
             id: "c_basebot_speeder_apotheosis",
@@ -1302,8 +1158,7 @@ const apothIcons = {
             name: "Johtaja",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Johtaja",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Johtaja"
         },
         {
             id: "healerdrone_physics",
@@ -1311,8 +1166,7 @@ const apothIcons = {
             name: "Korjauslennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Korjauslennokki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Korjauslennokki"
         },
         {
             id: "roboguard",
@@ -1320,8 +1174,7 @@ const apothIcons = {
             name: "Robottikytt\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Robottikytt\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Robottikytt\u00e4"
         },
         {
             id: "roboguard_big",
@@ -1329,8 +1182,7 @@ const apothIcons = {
             name: "Kyrmyniska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kyrmyniska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kyrmyniska"
         },
         {
             id: "assassin",
@@ -1338,8 +1190,7 @@ const apothIcons = {
             name: "Salamurhaajarobotti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Salamurhaajarobotti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Salamurhaajarobotti"
         },
         {
             id: "spearbot",
@@ -1347,8 +1198,7 @@ const apothIcons = {
             name: "Peitsivartija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Peitsivartija",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Peitsivartija"
         },
         {
             id: "tank",
@@ -1356,8 +1206,7 @@ const apothIcons = {
             name: "KK-Tankki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/KK-Tankki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/KK-Tankki"
         },
         {
             id: "tank_rocket",
@@ -1365,8 +1214,7 @@ const apothIcons = {
             name: "IT-Tankki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/IT-Tankki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/IT-Tankki"
         },
         {
             id: "tank_flame_apotheosis",
@@ -1374,8 +1222,7 @@ const apothIcons = {
             name: "Sytytystankki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sytytystankki",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sytytystankki"
         },
         {
             id: "tank_super",
@@ -1383,8 +1230,7 @@ const apothIcons = {
             name: "Laser-tankki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Laser-tankki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Laser-tankki"
         },
         {
             id: "turret_left",
@@ -1392,8 +1238,7 @@ const apothIcons = {
             name: "Torjuntalaite",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Torjuntalaite",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Torjuntalaite"
         },
         {
             id: "turret_right",
@@ -1401,8 +1246,7 @@ const apothIcons = {
             name: "Torjuntalaite",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Torjuntalaite",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Torjuntalaite"
         },
         {
             id: "monk",
@@ -1410,8 +1254,7 @@ const apothIcons = {
             name: "Munkki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Munkki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Munkki"
         },
         {
             id: "missilecrab",
@@ -1419,8 +1262,7 @@ const apothIcons = {
             name: "Hein\u00e4sirkka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hein\u00e4sirkka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hein\u00e4sirkka"
         },
         {
             id: "necrobot",
@@ -1428,8 +1270,7 @@ const apothIcons = {
             name: "Tuonelankone",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tuonelankone",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Tuonelankone"
         },
         {
             id: "necrobot_super",
@@ -1437,8 +1278,7 @@ const apothIcons = {
             name: "Marraskone",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Marraskone",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Marraskone"
         },
         {
             id: "fireskull",
@@ -1446,8 +1286,7 @@ const apothIcons = {
             name: "Liekki\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Liekki\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Liekki\u00f6"
         },
         {
             id: "iceskull",
@@ -1455,8 +1294,7 @@ const apothIcons = {
             name: "J\u00e4\u00e4ti\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4\u00e4ti\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4\u00e4ti\u00f6"
         },
         {
             id: "thunderskull",
@@ -1464,8 +1302,7 @@ const apothIcons = {
             name: "S\u00e4hki\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4hki\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4hki\u00f6"
         },
         {
             id: "waterskull",
@@ -1473,8 +1310,7 @@ const apothIcons = {
             name: "Vesi\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vesi\u00f6",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vesi\u00f6"
         },
         {
             id: "firemage_weak",
@@ -1482,8 +1318,7 @@ const apothIcons = {
             name: "Stendari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Stendari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Stendari"
         },
         {
             id: "firemage",
@@ -1491,8 +1326,7 @@ const apothIcons = {
             name: "Eldari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Eldari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Eldari"
         },
         {
             id: "wizard_firemage_greater",
@@ -1500,8 +1334,7 @@ const apothIcons = {
             name: "Suur-Stendari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Stendari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Stendari"
         },
         {
             id: "watermage",
@@ -1509,8 +1342,7 @@ const apothIcons = {
             name: "Vesimagi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vesimagi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vesimagi"
         },
         {
             id: "watermage_greater",
@@ -1518,8 +1350,7 @@ const apothIcons = {
             name: "Suur-Vesimagi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Vesimagi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Vesimagi"
         },
         {
             id: "icemage",
@@ -1527,8 +1358,7 @@ const apothIcons = {
             name: "Pakkasukko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pakkasukko",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pakkasukko"
         },
         {
             id: "thundermage",
@@ -1536,8 +1366,7 @@ const apothIcons = {
             name: "Ukko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ukko",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ukko"
         },
         {
             id: "thundermage_big",
@@ -1545,8 +1374,7 @@ const apothIcons = {
             name: "Suur-Ukko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suur-Ukko",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suur-Ukko"
         },
         {
             id: "barfer",
@@ -1554,8 +1382,15 @@ const apothIcons = {
             name: "Turvonnu velho",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Turvonnu velho",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Turvonnu velho"
+        },
+        {
+            id: "barfer_greater_apotheosis",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQklEQVR4nMWRMWvCQBiG38tPcMjSktEtWV2UgquLS1IF6SaFnDjVpQYHiaVgJuGC4FAoHWwCblmFgHRyafsPMnTwF3RLpzsuMYljXzi477vvfe69BPhvEbkYOE7K92+uS87HLwAA4DF4T+X6ybqtBCkDx0n5zXlzWa8wAYdohp4ZWJgWpmFQmkThG83QM+aFaQEApmFQmUQpasrGSxKAiPmImH82wHsR8wtTiHft1t1UvTJAvVgc6q0WNENHxHx0qI2I+fiMY1IIaN+1UwCYm01xyGEdaote/mOKouf0RLxTcoIMo16MDrWRfH3jJ/nA/nVPMgDZLEsGUS8Ge7jBLDwAgICQMnMeNDebGE82WC2HGYj4C6NGHdb1r1iyVE3FLDxgtRxiPNmIp+3W3VTZulsyatRx//yCY60vFo9fpWOtjz+4GYPRBjbfRwAAAABJRU5ErkJggg==",
+            name: "Suur-Turvonnu velho",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Turvonnu velho"
         },
         {
             id: "wizard_dark",
@@ -1563,8 +1398,7 @@ const apothIcons = {
             name: "Sokaisunmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Sokaisunmestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Sokaisunmestari"
         },
         {
             id: "wizard_tele",
@@ -1572,8 +1406,7 @@ const apothIcons = {
             name: "Siirt\u00e4j\u00e4mestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Siirt\u00e4j\u00e4mestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Siirt\u00e4j\u00e4mestari"
         },
         {
             id: "wizard_poly",
@@ -1581,8 +1414,7 @@ const apothIcons = {
             name: "Muodonmuutosmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Muodonmuutosmestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Muodonmuutosmestari"
         },
         {
             id: "wizard_swapper",
@@ -1590,8 +1422,7 @@ const apothIcons = {
             name: "Vaihdosmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Vaihdosmestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Vaihdosmestari"
         },
         {
             id: "wizard_neutral",
@@ -1599,8 +1430,7 @@ const apothIcons = {
             name: "Maadoittajamestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Maadoittajamestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Maadoittajamestari"
         },
         {
             id: "wizard_returner",
@@ -1608,8 +1438,7 @@ const apothIcons = {
             name: "Palauttajamestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Palauttajamestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Palauttajamestari"
         },
         {
             id: "wizard_hearty",
@@ -1617,8 +1446,7 @@ const apothIcons = {
             name: "Haavoittajamestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Haavoittajamestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Haavoittajamestari"
         },
         {
             id: "wizard_homing",
@@ -1626,8 +1454,7 @@ const apothIcons = {
             name: "Kohdennusmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kohdennusmestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kohdennusmestari"
         },
         {
             id: "wizard_weaken",
@@ -1635,8 +1462,7 @@ const apothIcons = {
             name: "Turvattomuusmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Turvattomuusmestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Turvattomuusmestari"
         },
         {
             id: "wizard_twitchy",
@@ -1644,8 +1470,7 @@ const apothIcons = {
             name: "S\u00e4tkymestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4tkymestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4tkymestari"
         },
         {
             id: "wizard_ambrosia",
@@ -1653,8 +1478,7 @@ const apothIcons = {
             name: "Kuolemattomuudenmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kuolemattomuudenmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kuolemattomuudenmestari"
         },
         {
             id: "wizard_copeseethmald",
@@ -1662,8 +1486,7 @@ const apothIcons = {
             name: "Uistelunmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Uistelunmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Uistelunmestari"
         },
         {
             id: "wizard_duck",
@@ -1671,8 +1494,7 @@ const apothIcons = {
             name: "Sinisorsienmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sinisorsienmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sinisorsienmestari"
         },
         {
             id: "enchanted_duck",
@@ -1680,8 +1502,7 @@ const apothIcons = {
             name: "Lumottu ankka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lumottu ankka",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lumottu ankka"
         },
         {
             id: "wizard_explosive",
@@ -1689,8 +1510,7 @@ const apothIcons = {
             name: "R\u00e4j\u00e4hteidenmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/R\u00e4j\u00e4hteidenmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/R\u00e4j\u00e4hteidenmestari"
         },
         {
             id: "wizard_jackofalltrades",
@@ -1698,8 +1518,7 @@ const apothIcons = {
             name: "Eimit\u00e4\u00e4nmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Eimit\u00e4\u00e4nmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Eimit\u00e4\u00e4nmestari"
         },
         {
             id: "wizard_manaeater",
@@ -1707,8 +1526,7 @@ const apothIcons = {
             name: "Mananmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mananmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mananmestari"
         },
         {
             id: "wizard_transmutation",
@@ -1716,8 +1534,7 @@ const apothIcons = {
             name: "Transmutaatioidenmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Transmutaatioidenmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Transmutaatioidenmestari"
         },
         {
             id: "wizard_corrupt_wands",
@@ -1725,8 +1542,7 @@ const apothIcons = {
             name: "Nukketeatterinmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nukketeatterinmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nukketeatterinmestari"
         },
         {
             id: "wizard_z_poly_miniboss",
@@ -1734,8 +1550,7 @@ const apothIcons = {
             name: "Yli-innokas Muudonmuutosmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Yli-innokas Muudonmuutosmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Yli-innokas Muudonmuutosmestari"
         },
         {
             id: "wizard_corrupt_ambrosia",
@@ -1743,8 +1558,7 @@ const apothIcons = {
             name: "Korruptoitunut Kuolemattomuudenmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Kuolemattomuudenmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Kuolemattomuudenmestari"
         },
         {
             id: "wizard_corrupt_hearty",
@@ -1752,8 +1566,7 @@ const apothIcons = {
             name: "Korruptoitunut Haavoittajamestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Haavoittajamestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Haavoittajamestari"
         },
         {
             id: "wizard_corrupt_manaeater",
@@ -1761,8 +1574,7 @@ const apothIcons = {
             name: "Korruptoitunut Mananmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Mananmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Mananmestari"
         },
         {
             id: "wizard_corrupt_neutral",
@@ -1770,8 +1582,7 @@ const apothIcons = {
             name: "Korruptoitunut Maadoittajamestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Maadoittajamestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Maadoittajamestari"
         },
         {
             id: "wizard_corrupt_swapper",
@@ -1779,8 +1590,7 @@ const apothIcons = {
             name: "Korruptoitunut Vaihdosmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Vaihdosmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Vaihdosmestari"
         },
         {
             id: "wizard_corrupt_teleport",
@@ -1788,8 +1598,7 @@ const apothIcons = {
             name: "Korruptoitunut Siirt\u00e4j\u00e4mestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Siirt\u00e4j\u00e4mestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Siirt\u00e4j\u00e4mestari"
         },
         {
             id: "wizard_corrupt_twitchy",
@@ -1797,8 +1606,7 @@ const apothIcons = {
             name: "Korruptoitunut S\u00e4tkymestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut S\u00e4tkymestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut S\u00e4tkymestari"
         },
         {
             id: "wizard_corrupt_weaken",
@@ -1806,8 +1614,7 @@ const apothIcons = {
             name: "Korruptoitunut Turvattomuusmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Turvattomuusmestari",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Turvattomuusmestari"
         },
         {
             id: "enlightened_alchemist",
@@ -1815,8 +1622,7 @@ const apothIcons = {
             name: "Valaistunut alkemisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Valaistunut alkemisti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Valaistunut alkemisti"
         },
         {
             id: "failed_alchemist",
@@ -1824,8 +1630,7 @@ const apothIcons = {
             name: "Kadotettu alkemisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kadotettu alkemisti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kadotettu alkemisti"
         },
         {
             id: "failed_alchemist_b",
@@ -1833,8 +1638,7 @@ const apothIcons = {
             name: "Ep\u00e4alkemisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ep\u00e4alkemisti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ep\u00e4alkemisti"
         },
         {
             id: "wraith",
@@ -1842,8 +1646,7 @@ const apothIcons = {
             name: "Hyypi\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hyypi\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hyypi\u00f6"
         },
         {
             id: "wraith_storm",
@@ -1851,8 +1654,7 @@ const apothIcons = {
             name: "Ukkoshyypi\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ukkoshyypi\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ukkoshyypi\u00f6"
         },
         {
             id: "wraith_glowing",
@@ -1860,8 +1662,7 @@ const apothIcons = {
             name: "Hohtava hyypi\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hohtava hyypi\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hohtava hyypi\u00f6"
         },
         {
             id: "wraith_alchemy_apotheosis",
@@ -1869,8 +1670,7 @@ const apothIcons = {
             name: "Alkeeminen Outo",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alkeeminen Outo",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alkeeminen Outo"
         },
         {
             id: "wraith_returner_apotheosis",
@@ -1878,8 +1678,7 @@ const apothIcons = {
             name: "Heijastava Outo",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Heijastava Outo",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Heijastava Outo"
         },
         {
             id: "wraith_weirdo_shield",
@@ -1887,8 +1686,7 @@ const apothIcons = {
             name: "Outo",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Outo",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Outo"
         },
         {
             id: "statue",
@@ -1896,8 +1694,7 @@ const apothIcons = {
             name: "Patsas",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Patsas",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Patsas"
         },
         {
             id: "statue_physics",
@@ -1905,8 +1702,7 @@ const apothIcons = {
             name: "Hohtonaamio",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hohtonaamio",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hohtonaamio"
         },
         {
             id: "snowcrystal",
@@ -1914,8 +1710,7 @@ const apothIcons = {
             name: "Haamukivi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Haamukivi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Haamukivi"
         },
         {
             id: "hpcrystal",
@@ -1923,8 +1718,7 @@ const apothIcons = {
             name: "Elvytyskristalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Elvytyskristalli",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Elvytyskristalli"
         },
         {
             id: "whisp",
@@ -1932,8 +1726,7 @@ const apothIcons = {
             name: "Palavakeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Palavakeiju",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Palavakeiju"
         },
         {
             id: "whisp_big",
@@ -1941,8 +1734,7 @@ const apothIcons = {
             name: "J\u00e4ttipalavakeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttipalavakeiju",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttipalavakeiju"
         },
         {
             id: "whisp_giga",
@@ -1950,8 +1742,7 @@ const apothIcons = {
             name: "Kolossaalinenpalavakeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalinenpalavakeiju",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalinenpalavakeiju"
         },
         {
             id: "fairy",
@@ -1959,8 +1750,7 @@ const apothIcons = {
             name: "Keiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Keiju",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Keiju"
         },
         {
             id: "fairy_big",
@@ -1968,8 +1758,7 @@ const apothIcons = {
             name: "J\u00e4ttikeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttikeiju",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttikeiju"
         },
         {
             id: "fairy_giant",
@@ -1977,8 +1766,7 @@ const apothIcons = {
             name: "Kolossaalinenkeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalinenkeiju",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalinenkeiju"
         },
         {
             id: "fairy_big_discord",
@@ -1986,8 +1774,7 @@ const apothIcons = {
             name: "J\u00e4ttiristiriitakeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttiristiriitakeiju",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttiristiriitakeiju"
         },
         {
             id: "fairy_esoteric",
@@ -1995,8 +1782,7 @@ const apothIcons = {
             name: "Esoteerinenkeiju",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenkeiju",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenkeiju"
         },
         {
             id: "esoteric_being",
@@ -2004,8 +1790,7 @@ const apothIcons = {
             name: "Esoteerinenolento",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenolento",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenolento"
         },
         {
             id: "worm_esoteric",
@@ -2013,8 +1798,7 @@ const apothIcons = {
             name: "Esoteerinenmato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenmato",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenmato"
         },
         {
             id: "ghost",
@@ -2022,8 +1806,7 @@ const apothIcons = {
             name: "Houre",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Houre",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Houre"
         },
         {
             id: "wand_ghost",
@@ -2031,8 +1814,7 @@ const apothIcons = {
             name: "Taikasauva",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Taikasauva",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Taikasauva"
         },
         {
             id: "ethereal_being",
@@ -2040,8 +1822,7 @@ const apothIcons = {
             name: "Olematon",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Olematon",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Olematon"
         },
         {
             id: "musical_being",
@@ -2049,8 +1830,7 @@ const apothIcons = {
             name: "Kuulumaton",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kuulumaton",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kuulumaton"
         },
         {
             id: "musical_being_weak",
@@ -2058,8 +1838,7 @@ const apothIcons = {
             name: "Hiljainen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hiljainen",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hiljainen"
         },
         {
             id: "playerghost",
@@ -2067,8 +1846,7 @@ const apothIcons = {
             name: "Kummitus",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kummitus",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kummitus"
         },
         {
             id: "phantom_a",
@@ -2076,8 +1854,7 @@ const apothIcons = {
             name: "Spiraalikalma",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Spiraalikalma",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Spiraalikalma"
         },
         {
             id: "phantom_b",
@@ -2085,8 +1862,7 @@ const apothIcons = {
             name: "Kiukkukalma",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kiukkukalma",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kiukkukalma"
         },
         {
             id: "phantom_c_apotheosis",
@@ -2094,8 +1870,7 @@ const apothIcons = {
             name: "Pakkomielteinenkalma",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pakkomielteinenkalma",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pakkomielteinenkalma"
         },
         {
             id: "devourer_ghost",
@@ -2103,8 +1878,7 @@ const apothIcons = {
             name: "N\u00e4lk\u00e4inenaave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/N\u00e4lk\u00e4inenaave",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/N\u00e4lk\u00e4inenaave"
         },
         {
             id: "ghost_bow",
@@ -2112,8 +1886,7 @@ const apothIcons = {
             name: "Haamujousi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Haamujousi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Haamujousi"
         },
         {
             id: "forsaken_eye",
@@ -2121,8 +1894,7 @@ const apothIcons = {
             name: "Hyl\u00e4ttysilm\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyl\u00e4ttysilm\u00e4",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyl\u00e4ttysilm\u00e4"
         },
         {
             id: "confusespirit",
@@ -2130,8 +1902,7 @@ const apothIcons = {
             name: "Utu-Aave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Utu-Aave",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Utu-Aave"
         },
         {
             id: "berserkspirit",
@@ -2139,8 +1910,7 @@ const apothIcons = {
             name: "Viha-Aave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Viha-Aave",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Viha-Aave"
         },
         {
             id: "weakspirit",
@@ -2148,8 +1918,7 @@ const apothIcons = {
             name: "Kaamo-Aave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kaamo-Aave",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Kaamo-Aave"
         },
         {
             id: "slimespirit",
@@ -2157,8 +1926,7 @@ const apothIcons = {
             name: "Neva-Aave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Neva-Aave",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Neva-Aave"
         },
         {
             id: "spirit_healing",
@@ -2166,8 +1934,7 @@ const apothIcons = {
             name: "Parantava-Aave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parantava-Aave",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parantava-Aave"
         },
         {
             id: "necromancer",
@@ -2175,8 +1942,7 @@ const apothIcons = {
             name: "Hahmonvaihtaja",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hahmonvaihtaja",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hahmonvaihtaja"
         },
         {
             id: "gazer",
@@ -2184,8 +1950,7 @@ const apothIcons = {
             name: "Helvetinkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Helvetinkatse",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Helvetinkatse"
         },
         {
             id: "gazer_greater",
@@ -2193,8 +1958,7 @@ const apothIcons = {
             name: "Suur-Helvetinkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Helvetinkatse",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Helvetinkatse"
         },
         {
             id: "skygazer",
@@ -2202,8 +1966,7 @@ const apothIcons = {
             name: "Taivaankatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Taivaankatse",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Taivaankatse"
         },
         {
             id: "gazer_greater_sky",
@@ -2211,8 +1974,7 @@ const apothIcons = {
             name: "Suur-Taivaankatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Taivaankatse",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Taivaankatse"
         },
         {
             id: "gazer_cold_apotheosis",
@@ -2220,8 +1982,7 @@ const apothIcons = {
             name: "J\u00e4\u00e4nkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4\u00e4nkatse",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4\u00e4nkatse"
         },
         {
             id: "gazer_greater_cold",
@@ -2229,8 +1990,7 @@ const apothIcons = {
             name: "Suur-J\u00e4\u00e4nkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-J\u00e4\u00e4nkatse",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-J\u00e4\u00e4nkatse"
         },
         {
             id: "gazer_parasitic",
@@ -2238,8 +1998,7 @@ const apothIcons = {
             name: "Parasiittinenkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parasiittinenkatse",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parasiittinenkatse"
         },
         {
             id: "gazer_robot",
@@ -2247,8 +2006,7 @@ const apothIcons = {
             name: "Aluebotti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Aluebotti",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Aluebotti"
         },
         {
             id: "spitmonster",
@@ -2256,8 +2014,7 @@ const apothIcons = {
             name: "Helvetin sylkij\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Helvetin sylkij\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Helvetin sylkij\u00e4"
         },
         {
             id: "sentry",
@@ -2265,8 +2022,7 @@ const apothIcons = {
             name: "Vartiomies",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vartiomies",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vartiomies"
         },
         {
             id: "triangle_gem",
@@ -2274,8 +2030,7 @@ const apothIcons = {
             name: "Kolmionmuotoinenkristalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolmionmuotoinenkristalli",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolmionmuotoinenkristalli"
         },
         {
             id: "crystal_physics",
@@ -2283,8 +2038,7 @@ const apothIcons = {
             name: "Kirottu kristalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kirottu kristalli",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kirottu kristalli"
         },
         {
             id: "bloodcrystal_physics",
@@ -2292,8 +2046,7 @@ const apothIcons = {
             name: "Verikristalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Verikristalli",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Verikristalli"
         },
         {
             id: "skycrystal_physics",
@@ -2301,8 +2054,7 @@ const apothIcons = {
             name: "Taivaskristalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Taivaskristalli",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Taivaskristalli"
         },
         {
             id: "mimic_explosive_box",
@@ -2310,8 +2062,7 @@ const apothIcons = {
             name: "R\u00e4j\u00e4hdysherkk\u00e4matkija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/R\u00e4j\u00e4hdysherkk\u00e4matkija",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/R\u00e4j\u00e4hdysherkk\u00e4matkija"
         },
         {
             id: "chest_mimic",
@@ -2319,8 +2070,7 @@ const apothIcons = {
             name: "Matkija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Matkija",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Matkija"
         },
         {
             id: "chest_leggy",
@@ -2328,8 +2078,7 @@ const apothIcons = {
             name: "Jalkamatkatavara",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Jalkamatkatavara",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Jalkamatkatavara"
         },
         {
             id: "miner_hell",
@@ -2337,8 +2086,7 @@ const apothIcons = {
             name: "Hornantappurahiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hornantappurahiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Hornantappurahiisi"
         },
         {
             id: "shotgunner_hell",
@@ -2346,8 +2094,7 @@ const apothIcons = {
             name: "Hornahiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hornahiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Hornahiisi"
         },
         {
             id: "sniper_hell",
@@ -2355,8 +2102,7 @@ const apothIcons = {
             name: "Hornasnipuhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hornasnipuhiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Hornasnipuhiisi"
         },
         {
             id: "hiisi_chef_hell",
@@ -2364,8 +2110,7 @@ const apothIcons = {
             name: "Hornakokkihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hornakokkihiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hornakokkihiisi"
         },
         {
             id: "dark_alchemist",
@@ -2373,8 +2118,7 @@ const apothIcons = {
             name: "Pahan muisto",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pahan muisto",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pahan muisto"
         },
         {
             id: "shaman_wind",
@@ -2382,8 +2126,7 @@ const apothIcons = {
             name: "Valhe",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Valhe",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Valhe"
         },
         {
             id: "mimic_perk_twwe",
@@ -2391,8 +2134,7 @@ const apothIcons = {
             name: "Paskiainen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Paskiainen",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Paskiainen"
         },
         {
             id: "necromancer_shop",
@@ -2400,8 +2142,7 @@ const apothIcons = {
             name: "Stevari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Stevari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Stevari"
         },
         {
             id: "necromancer_super",
@@ -2409,8 +2150,7 @@ const apothIcons = {
             name: "Skoude",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Skoude",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Skoude"
         },
         {
             id: "boss_dragon",
@@ -2418,8 +2158,7 @@ const apothIcons = {
             name: "Suomuhauki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suomuhauki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suomuhauki"
         },
         {
             id: "boss_limbs",
@@ -2427,8 +2166,7 @@ const apothIcons = {
             name: "Kolmisilm\u00e4n koipi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n koipi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n koipi"
         },
         {
             id: "boss_meat",
@@ -2436,8 +2174,7 @@ const apothIcons = {
             name: "Kolmisilm\u00e4n syd\u00e4n",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n syd\u00e4n",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n syd\u00e4n"
         },
         {
             id: "boss_alchemist",
@@ -2445,8 +2182,7 @@ const apothIcons = {
             name: "Ylialkemisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ylialkemisti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ylialkemisti"
         },
         {
             id: "parallel_alchemist",
@@ -2454,8 +2190,7 @@ const apothIcons = {
             name: "Alkemistin Varjo",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Alkemistin Varjo",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Alkemistin Varjo"
         },
         {
             id: "boss_ghost",
@@ -2463,8 +2198,7 @@ const apothIcons = {
             name: "Unohdettu",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Unohdettu",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Unohdettu"
         },
         {
             id: "boss_ghost_polyp",
@@ -2472,8 +2206,7 @@ const apothIcons = {
             name: "H\u00e4ive",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4ive",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4ive"
         },
         {
             id: "islandspirit",
@@ -2481,8 +2214,7 @@ const apothIcons = {
             name: "Tapion vasalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tapion vasalli",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Tapion vasalli"
         },
         {
             id: "boss_pit",
@@ -2490,8 +2222,7 @@ const apothIcons = {
             name: "Sauvojen tuntija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Sauvojen tuntija",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Sauvojen tuntija"
         },
         {
             id: "boss_robot",
@@ -2499,8 +2230,7 @@ const apothIcons = {
             name: "Kolmisilm\u00e4n silm\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n silm\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n silm\u00e4"
         },
         {
             id: "fish_giga",
@@ -2508,8 +2238,7 @@ const apothIcons = {
             name: "Syv\u00e4olento",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Syv\u00e4olento",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Syv\u00e4olento"
         },
         {
             id: "maggot_tiny",
@@ -2517,8 +2246,7 @@ const apothIcons = {
             name: "Limatoukka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Limatoukka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Limatoukka"
         },
         {
             id: "parallel_tentacles",
@@ -2526,8 +2254,7 @@ const apothIcons = {
             name: "Kolmisilm\u00e4n K\u00e4tyri",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n K\u00e4tyri",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n K\u00e4tyri"
         },
         {
             id: "boss_toxic_worm_parallel",
@@ -2535,8 +2262,7 @@ const apothIcons = {
             name: "Madon Muisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Madon Muisti",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Madon Muisti"
         },
         {
             id: "minipit",
@@ -2544,8 +2270,7 @@ const apothIcons = {
             name: "Pienk\u00e4tyri",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pienk\u00e4tyri",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pienk\u00e4tyri"
         },
         {
             id: "gate_monster_a",
@@ -2553,8 +2278,7 @@ const apothIcons = {
             name: "Veska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Veska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Veska"
         },
         {
             id: "gate_monster_b",
@@ -2562,8 +2286,7 @@ const apothIcons = {
             name: "Molari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Molari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Molari"
         },
         {
             id: "gate_monster_c",
@@ -2571,8 +2294,7 @@ const apothIcons = {
             name: "Mokke",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mokke",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Mokke"
         },
         {
             id: "gate_monster_d",
@@ -2580,8 +2302,7 @@ const apothIcons = {
             name: "Seula",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Seula",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Seula"
         },
         {
             id: "boss_wizard",
@@ -2589,8 +2310,7 @@ const apothIcons = {
             name: "Mestarien mestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mestarien mestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Mestarien mestari"
         },
         {
             id: "boss_centipede",
@@ -2598,8 +2318,7 @@ const apothIcons = {
             name: "Kolmisilm\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4"
         },
         {
             id: "ultimate_killer",
@@ -2607,8 +2326,7 @@ const apothIcons = {
             name: "Kauhuhirvi\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kauhuhirvi\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kauhuhirvi\u00f6"
         },
         {
             id: "friend",
@@ -2616,8 +2334,7 @@ const apothIcons = {
             name: "Toveri",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Toveri",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Toveri"
         },
         {
             id: "boss_toxic_worm",
@@ -2625,8 +2342,7 @@ const apothIcons = {
             name: "J\u00e4ttim\u00e4inenmyrkkymato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttim\u00e4inenmyrkkymato",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttim\u00e4inenmyrkkymato"
         },
         {
             id: "boss_toxic_worm_minion",
@@ -2634,8 +2350,7 @@ const apothIcons = {
             name: "Myrkyllinenmato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Myrkyllinenmato",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Myrkyllinenmato"
         },
         {
             id: "boss_musical_ghost",
@@ -2643,8 +2358,7 @@ const apothIcons = {
             name: "Hyl\u00e4ttyorkesteri",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyl\u00e4ttyorkesteri",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyl\u00e4ttyorkesteri"
         },
         {
             id: "blob_titan",
@@ -2652,8 +2366,7 @@ const apothIcons = {
             name: "Kolossaalim\u00f6ykky",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalim\u00f6ykky",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalim\u00f6ykky"
         },
         {
             id: "boss_fire_lukki_phase2",
@@ -2661,8 +2374,7 @@ const apothIcons = {
             name: "",
             description: null,
             bgImage: null,
-            wiki_url: null,
-            beta: true
+            wiki_url: null
         },
         {
             id: "boss_flesh_monster",
@@ -2670,8 +2382,7 @@ const apothIcons = {
             name: "",
             description: null,
             bgImage: null,
-            wiki_url: null,
-            beta: true
+            wiki_url: null
         },
         {
             id: "forest_monolith",
@@ -2679,8 +2390,15 @@ const apothIcons = {
             name: "Monoliitti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Monoliitti",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Monoliitti"
+        },
+        {
+            id: "boss_sky",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5klEQVR4nMWTMQ+CMBCFX42LCRKmAhNLSVi7mG7+djfiwmoiixPqREgTxzrQ1pbWCRNvaq957753BKKUwprarFL/wmBrDkdxcPvfchFzOLXnkCBLUk+s757xsucZjHKKirMkRVnso0jBDiJT0dQUVZlDcOYNAZwdLPF2iUJV5gAo2q4PokDvwyNoaoqmpgCgxXMJzmyEJaFLEJtk6yVJtO8ZGHdDETNtaoq2m+zdjUBGOT/chocVC84gOPMMBWcWZ0lARjmpUX6QL9enR+CKAwNNQMpij+E+fy5DJTgjbdcHkcjf/8Y3C/lO4JTW+RUAAAAASUVORK5CYII=",
+            name: "Kivi",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Kivi"
         },
         {
             id: "meatmaggot",
@@ -2688,8 +2406,15 @@ const apothIcons = {
             name: "M\u00e4t\u00e4ry\u00f6mij\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4ry\u00f6mij\u00e4",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4ry\u00f6mij\u00e4"
+        },
+        {
+            id: "mimic_potion",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA60lEQVR4nGP8//8/AyWAiSLd1DCABZ/kok89MP8xbp4YwrC6VgG3AQEBAf8ZGBgYubK/oyjwMHfF64KBDwNcBvyHYoYdJ3czMDAw/Ge1SP8ftdsdvwEbNmyAaWZY5roTq8FWkdNxGsAIDUiGZa47GbDZxsDAwCD2fed/mLqAgABUF3h1ZDHi8BIDAwMDw/HuqwyvON0ZkS1DSQfbKqYxXPx2lYEBf8xh9wKy/3E5n4GBgeH5zT0wtQwbNmzATEgwQ7ABfS4TBga5v/8DAgLg3iAqHUCjkuHsq1MM6JZgzQvHu68SYy4DAwMDAwDxBU1l7z6qGQAAAABJRU5ErkJggg==",
+            name: "Henkev\u00e4 potu",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Henkev\u00e4 potu"
         }
     ],
     perks: [
@@ -4608,6 +4333,14 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Firebomb"
         },
         {
+            id: "APOTHEOSIS_TOILET_PAPER",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzElEQVR4nM2SMRKCMBBFfxgPYIMjFTaYTm4hM44cQE9g5Rm8EzZ4C+wSmlAxEw4Rq0UNCQxW/i5/9r/dbAL8paTShiSVNlJpMztoaxJSlJU3PAZhFOY86s0kDr2NGGNsAHCRfRAbEHwebtczLqcDAKBuukHY5QUAIETbG+tw6QzWTQchWtiv4tyBS0K0oJokDnF/PJFn6fs+PghNx3n0tZe66bDdrNiCjDxLWVFWhoopfNzvvBM5NfaZSNTIq6KsjAsklZ4O26CfgnP0AiJ961zRV2M9AAAAAElFTkSuQmCC",
+            name: "Conjure Roll of Divine Purification",
+            description: "Summons a roll of toilet paper",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Conjure_Roll_of_Divine_Purification"
+        },
+        {
             id: "SOILBALL",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAABQklEQVR4nK1SvWrDMBC+NKFwOBgJjEBgKAQHd8mQhk6ZsrSPkDFr9jxHHqJjH6Fd+gABd/BSgzEEAgJRsDExgoChwxnFTQ3t0Bs+0N33c0IC+JdaLafr9aJz1Ls4bzaPnwft+cLi0/N7t4CoyBkAmLwgNnLmONdtWY8W8HwRR/vJ3U2b5PkCANqB2+3LAACUNmmaBcHwJwk583xRVSelDfITAAwAoCprx+0rbaqyplwiEcbRXgqUAk1eNALH7VtZmh4dtw+gkbM42lMfQ5YliuyuyJLYhACQpkfysx0AmNz731aySJlKGykQQ2byIt4dgmCYJapJsDwqshyFUmmTJQo5C4Kh0mYUykZA3u2VqrLOEjUKZVXW8e6AnNlLnx9uPhvbNEIypunr20f315jPxm22FHjxNbrrYXG7Wk5/5/2lvgDJW8biCZ9LKAAAAABJRU5ErkJggg==",
             name: "Chunk of soil",
@@ -5006,6 +4739,14 @@ const apothIcons = {
             description: "Transmutes everything in a short radius into urine, including walls, creatures... and you",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
             wiki_url: "https://noita.wiki.gg/wiki/Touch_of_Gold?"
+        },
+        {
+            id: "TOUCH_GRASS",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjUlEQVR4nKVTyw6AIAwrxu/zYPxM48EfnAcD2UpHNOxExvpY0WJmmKkVAPb7UHfMXHjg2s6XIAEyQPaZwJQSAcPM8hHMRG290QojglaVgNUzJz4HA1AWMRQsErgjViGqs3IgCbyCV0wDritktrNqhOoVvJvso+oc/HER1lEZeFXOpHOjVvDBqX5szv7OD58eIzJC5vy6AAAAAElFTkSuQmCC",
+            name: "Touch of Grass",
+            description: "Transmutes everything in a short radius into Earth, including walls, creatures... and you. Unless\u2026",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Touch_of_Grass"
         },
         {
             id: "TOUCH_BLOOD",
@@ -6120,6 +5861,14 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Sea_of_Flammable_Gas"
         },
         {
+            id: "SEA_MIMIC",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVR4nK2T0UtTYRjGf6/tmBVGTRjREkXn1jmlTNFlhM5MUqILHfNGg66q2/1ZXQVBF4EESRTZBqnMA3pMzhpbF8ouKlPcyc+L4WeneTc/+ODj4X1+PO8DnyilaOQ0NeQ+M8DsdErNTqe0+PTFQyUivsHM+F2f9nzqvgIIAATvPKay9EaJiMzMpNRIZhxAiYgopcjMJVS6v1drzybH1OSDBBpwDEkHlEom71HlgPh8DZKZS5CeMGEN0v0Wf5pbtNkHAEgmR3yxw08GeOT88Gn/musAEdNkw1mn1HS861VW2mo9/+4tYXUNw5JbX2JrdZ/RWDvLboHOm7fZ9WDXAytoYcTG9LC99RkvKvpqAMDXvIPVHcH+tgnAUMjCrthU19/7IP+fAEDkoALAl40icJ72nUPaLhwS9pr5Xr5B/JKwvT1U6yUewi2vYlQ9fwKAvkiXfq8VbWKhGPGeHpYdB4BbZhS3vErn9T72fl08SRAI7QGwmCsCBpdbrgCQzxYwPv7lGtA6+JOdco6oNcBmPu8v8d1itm63wY7wqTtvuTXz64XsSYKXrxYEUMGEqQdzhdKpgMo5gw9vPwEIgDT6nY8Ac3yUG6mNWXcAAAAASUVORK5CYII=",
+            name: "Sea of Mimicium",
+            description: "Summons a large body of mimicium under the caster",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Sea_of_Mimicium"
+        },
+        {
             id: "APOTHEOSIS_SEA_BERSERK",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArUlEQVR4nK1SuRHEIAxcGCeEl14vqoMmXA5NuA71QuqQEEdiBBaHPXOKWO2yegD4V5wp1Se5Mfxbc9M0x1h/4TOlKjkxEOwBIBC1RI6xagwAhblpPvvuRAMAm4gCETLQCMFytjSdgRbOsJXrlliYbxdWvNdkIOpEhbnDVkdek2KiDUfTqcGswmqM6Q6kstWV1r16hXHM1oE142xu3Q0AOCH071pFYcb3ONxa+SAuCPh3ftrGuOMAAAAASUVORK5CYII=",
             name: "Sea of Berserkium",
@@ -7003,7 +6752,7 @@ const apothIcons = {
             id: "ALL_NUKES",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA30lEQVR4nLWSLQ7CQBBG3yQNopJmRRPwOByyKEiwuDU9QcMVkL0AnAGDweKoBIVCkdQQDCiSCkwRkA2EluUnjN2db968DPxYArAckQPUfI/pbigc5+B1UUqhtX4Z4ADspSdZNcy3Z1CKPNnUCRoKrbV8RACw9Sa0KxGL8wjAGuIAtCIkjuNryClltu7QbKa4rvsZQc338PuHh6bVWF76sU6YjXtk1dCsmCQJQRCY1awBNj+OLcDm522CIj8iglP08V5WKxrcmo6F80xA2THZKM3jt8dkCL49pieCMll/qwu25G/9AZYOIQAAAABJRU5ErkJggg==",
             name: "Spells to nukes",
-            description: "Transforms every projectile currently in the air into a nuke; not a good idea",
+            description: "Transforms every projectile currently in the air into a nuke, not a good idea",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
             wiki_url: "https://noita.wiki.gg/wiki/Spells_To_Nukes"
         },
@@ -7414,6 +7163,14 @@ const apothIcons = {
             description: "Gives a projectile a trail of rainbow",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
             wiki_url: "https://noita.wiki.gg/wiki/Rainbow_Trail"
+        },
+        {
+            id: "CESSATION",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmklEQVR4nGP8//8/AyWABcbo799OkkmFhZ6MDAwMDIz///9n6O/f/v/y5Usk2ayrq8dQWOjJyIIseO/eNaI0Kylpwdks6JLPnt3Fq1lKShmFj2EAAwMDw/v3z7BqFhSUwhDDagADAwPDjx+fUfgcHLxY1THhMoBYMPAG4AwDXH4mygBsoU20AejxTJIByCmMWMAIy40UZSZKAAA1wihBM86yagAAAABJRU5ErkJggg==",
+            name: "Cessation",
+            description: "The caster enters the realm of no realm",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Cessation"
         },
         {
             id: "APOTHEOSIS_MASS_MATERIA_CONVERSION",

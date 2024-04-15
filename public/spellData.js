@@ -3317,7 +3317,7 @@ const spellData = {
         description: "Summons a large body of mimicium under the caster",
         meta: {
             action_type: 4,
-            action_max_uses: 3,
+            action_max_uses: 2,
             action_mana_drain: 140,
             fire_rate_wait: 15
         },
@@ -4203,7 +4203,7 @@ const spellData = {
     },
     ALL_NUKES: {
         name: "Spells to nukes",
-        description: "Transforms every projectile currently in the air into a nuke; not a good idea",
+        description: "Transforms every projectile currently in the air into a nuke, not a good idea",
         meta: {
             action_type: 6,
             action_max_uses: 2,
@@ -4683,6 +4683,7 @@ const spellData = {
         description: "The caster enters the realm of no realm",
         meta: {
             action_type: 5,
+            action_max_uses: 25,
             action_mana_drain: 0,
             fire_rate_wait: 600,
             reload_time: 600

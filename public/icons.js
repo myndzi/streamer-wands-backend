@@ -6,8 +6,7 @@ const icons = {
             name: "Min\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Min\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Min\u00e4"
         },
         {
             id: "sheep",
@@ -15,8 +14,7 @@ const icons = {
             name: "Lammas",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lammas",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lammas"
         },
         {
             id: "sheep_bat",
@@ -24,8 +22,7 @@ const icons = {
             name: "Lentolammas",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lentolammas",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lentolammas"
         },
         {
             id: "sheep_fly",
@@ -33,8 +30,7 @@ const icons = {
             name: "Suhiseva lammas",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suhiseva lammas",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suhiseva lammas"
         },
         {
             id: "scorpion",
@@ -42,8 +38,7 @@ const icons = {
             name: "Skorpioni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Skorpioni",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Skorpioni"
         },
         {
             id: "fish",
@@ -51,8 +46,7 @@ const icons = {
             name: "Ev\u00e4k\u00e4s",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ev\u00e4k\u00e4s",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ev\u00e4k\u00e4s"
         },
         {
             id: "fish_large",
@@ -60,8 +54,7 @@ const icons = {
             name: "Suurev\u00e4k\u00e4s",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suurev\u00e4k\u00e4s",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suurev\u00e4k\u00e4s"
         },
         {
             id: "duck",
@@ -69,8 +62,7 @@ const icons = {
             name: "Ankka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ankka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ankka"
         },
         {
             id: "wolf",
@@ -78,8 +70,7 @@ const icons = {
             name: "Susi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Susi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Susi"
         },
         {
             id: "deer",
@@ -87,8 +78,7 @@ const icons = {
             name: "Nelikoipi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Nelikoipi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Nelikoipi"
         },
         {
             id: "elk",
@@ -96,8 +86,7 @@ const icons = {
             name: "Poro",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Poro",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Poro"
         },
         {
             id: "eel",
@@ -105,8 +94,7 @@ const icons = {
             name: "Nahkiainen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Nahkiainen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Nahkiainen"
         },
         {
             id: "zombie_weak",
@@ -114,8 +102,7 @@ const icons = {
             name: "Heikkohurtta",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heikkohurtta",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Heikkohurtta"
         },
         {
             id: "zombie",
@@ -123,8 +110,7 @@ const icons = {
             name: "Hurtta",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hurtta",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hurtta"
         },
         {
             id: "miner_weak",
@@ -132,8 +118,7 @@ const icons = {
             name: "Tappurahiisil\u00e4inen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tappurahiisil\u00e4inen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Tappurahiisil\u00e4inen"
         },
         {
             id: "miner",
@@ -141,8 +126,7 @@ const icons = {
             name: "Tappurahiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tappurahiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Tappurahiisi"
         },
         {
             id: "miner_fire",
@@ -150,8 +134,7 @@ const icons = {
             name: "Tulihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tulihiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Tulihiisi"
         },
         {
             id: "miner_santa",
@@ -159,8 +142,7 @@ const icons = {
             name: "Jouluhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Jouluhiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Jouluhiisi"
         },
         {
             id: "miner_chef",
@@ -168,8 +150,7 @@ const icons = {
             name: "Kokkihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kokkihiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kokkihiisi"
         },
         {
             id: "goblin_bomb",
@@ -177,8 +158,7 @@ const icons = {
             name: "S\u00e4hik\u00e4ismennink\u00e4inen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4hik\u00e4ismennink\u00e4inen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4hik\u00e4ismennink\u00e4inen"
         },
         {
             id: "shotgunner_weak",
@@ -186,8 +166,7 @@ const icons = {
             name: "Heikko haulikkohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heikko haulikkohiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Heikko haulikkohiisi"
         },
         {
             id: "shotgunner",
@@ -195,8 +174,7 @@ const icons = {
             name: "Haulikkohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Haulikkohiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Haulikkohiisi"
         },
         {
             id: "scavenger_smg",
@@ -204,8 +182,7 @@ const icons = {
             name: "Rynkkyhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Rynkkyhiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Rynkkyhiisi"
         },
         {
             id: "scavenger_grenade",
@@ -213,8 +190,7 @@ const icons = {
             name: "Kranuhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kranuhiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kranuhiisi"
         },
         {
             id: "scavenger_mine",
@@ -222,8 +198,7 @@ const icons = {
             name: "Miinankylv\u00e4j\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Miinankylv\u00e4j\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Miinankylv\u00e4j\u00e4"
         },
         {
             id: "scavenger_heal",
@@ -231,8 +206,7 @@ const icons = {
             name: "Parantajahiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Parantajahiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Parantajahiisi"
         },
         {
             id: "scavenger_glue",
@@ -240,8 +214,7 @@ const icons = {
             name: "Liimahiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Liimahiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Liimahiisi"
         },
         {
             id: "scavenger_invis",
@@ -249,8 +222,7 @@ const icons = {
             name: "H\u00e4ivehiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4ivehiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4ivehiisi"
         },
         {
             id: "scavenger_shield",
@@ -258,8 +230,7 @@ const icons = {
             name: "Kilpihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kilpihiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kilpihiisi"
         },
         {
             id: "scavenger_poison",
@@ -267,8 +238,7 @@ const icons = {
             name: "Myrkkyhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Myrkkyhiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Myrkkyhiisi"
         },
         {
             id: "scavenger_clusterbomb",
@@ -276,8 +246,7 @@ const icons = {
             name: "Isohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Isohiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Isohiisi"
         },
         {
             id: "scavenger_leader",
@@ -285,8 +254,7 @@ const icons = {
             name: "Toimari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Toimari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Toimari"
         },
         {
             id: "alchemist",
@@ -294,8 +262,7 @@ const icons = {
             name: "Puistokemisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Puistokemisti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Puistokemisti"
         },
         {
             id: "sniper",
@@ -303,8 +270,7 @@ const icons = {
             name: "Snipuhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Snipuhiisi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Snipuhiisi"
         },
         {
             id: "shaman",
@@ -312,8 +278,7 @@ const icons = {
             name: "M\u00e4rki\u00e4inen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4rki\u00e4inen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4rki\u00e4inen"
         },
         {
             id: "coward",
@@ -321,8 +286,7 @@ const icons = {
             name: "Raukka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Raukka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Raukka"
         },
         {
             id: "flamer",
@@ -330,8 +294,7 @@ const icons = {
             name: "Liekkari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Liekkari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Liekkari"
         },
         {
             id: "icer",
@@ -339,8 +302,7 @@ const icons = {
             name: "J\u00e4\u00e4hdytyslaite",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4\u00e4hdytyslaite",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4\u00e4hdytyslaite"
         },
         {
             id: "bigzombie",
@@ -348,8 +310,7 @@ const icons = {
             name: "M\u00e4t\u00e4nev\u00e4 ruumis",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 ruumis",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 ruumis"
         },
         {
             id: "bigzombietorso",
@@ -357,8 +318,7 @@ const icons = {
             name: "M\u00e4t\u00e4nev\u00e4 kroppa",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 kroppa",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 kroppa"
         },
         {
             id: "bigzombiehead",
@@ -366,8 +326,7 @@ const icons = {
             name: "M\u00e4t\u00e4nev\u00e4 p\u00e4\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 p\u00e4\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4nev\u00e4 p\u00e4\u00e4"
         },
         {
             id: "slimeshooter_weak",
@@ -375,8 +334,7 @@ const icons = {
             name: "Heikko limanuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heikko limanuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Heikko limanuljaska"
         },
         {
             id: "slimeshooter",
@@ -384,8 +342,7 @@ const icons = {
             name: "Limanuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Limanuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Limanuljaska"
         },
         {
             id: "acidshooter_weak",
@@ -393,8 +350,7 @@ const icons = {
             name: "Heikko happonuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heikko happonuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Heikko happonuljaska"
         },
         {
             id: "acidshooter",
@@ -402,8 +358,7 @@ const icons = {
             name: "Happonuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Happonuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Happonuljaska"
         },
         {
             id: "lasershooter",
@@ -411,8 +366,7 @@ const icons = {
             name: "Mulkkio",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mulkkio",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Mulkkio"
         },
         {
             id: "giantshooter_weak",
@@ -420,8 +374,7 @@ const icons = {
             name: "Heikko \u00e4itinuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Heikko \u00e4itinuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Heikko \u00e4itinuljaska"
         },
         {
             id: "giantshooter",
@@ -429,8 +382,7 @@ const icons = {
             name: "\u00c4itinuljaska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/\u00c4itinuljaska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/\u00c4itinuljaska"
         },
         {
             id: "miniblob",
@@ -438,8 +390,7 @@ const icons = {
             name: "M\u00f6ykky",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00f6ykky",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00f6ykky"
         },
         {
             id: "blob",
@@ -447,8 +398,7 @@ const icons = {
             name: "Kiukkum\u00f6ykky",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kiukkum\u00f6ykky",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kiukkum\u00f6ykky"
         },
         {
             id: "ant",
@@ -456,8 +406,7 @@ const icons = {
             name: "Murkku",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Murkku",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Murkku"
         },
         {
             id: "rat",
@@ -465,8 +414,7 @@ const icons = {
             name: "Rotta",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Rotta",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Rotta"
         },
         {
             id: "bat",
@@ -474,8 +422,7 @@ const icons = {
             name: "Lepakko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lepakko",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lepakko"
         },
         {
             id: "bigbat",
@@ -483,8 +430,7 @@ const icons = {
             name: "Suurlepakko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suurlepakko",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suurlepakko"
         },
         {
             id: "firebug",
@@ -492,8 +438,7 @@ const icons = {
             name: "Pikkutulik\u00e4rp\u00e4nen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pikkutulik\u00e4rp\u00e4nen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pikkutulik\u00e4rp\u00e4nen"
         },
         {
             id: "bigfirebug",
@@ -501,8 +446,7 @@ const icons = {
             name: "Suurtulik\u00e4rp\u00e4nen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suurtulik\u00e4rp\u00e4nen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suurtulik\u00e4rp\u00e4nen"
         },
         {
             id: "bloom",
@@ -510,8 +454,7 @@ const icons = {
             name: "Puska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Puska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Puska"
         },
         {
             id: "shooterflower",
@@ -519,8 +462,7 @@ const icons = {
             name: "Plasmakukka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Plasmakukka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Plasmakukka"
         },
         {
             id: "fly",
@@ -528,8 +470,7 @@ const icons = {
             name: "Amppari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Amppari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Amppari"
         },
         {
             id: "frog",
@@ -537,8 +478,7 @@ const icons = {
             name: "Konna",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Konna",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Konna"
         },
         {
             id: "frog_big",
@@ -546,8 +486,7 @@ const icons = {
             name: "J\u00e4ttikonna",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttikonna",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttikonna"
         },
         {
             id: "fungus",
@@ -555,8 +494,7 @@ const icons = {
             name: "Laahustussieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Laahustussieni",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Laahustussieni"
         },
         {
             id: "fungus_big",
@@ -564,8 +502,7 @@ const icons = {
             name: "Nuijamalikka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Nuijamalikka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Nuijamalikka"
         },
         {
             id: "fungus_giga",
@@ -573,8 +510,7 @@ const icons = {
             name: "Huhtasieni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Huhtasieni",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Huhtasieni"
         },
         {
             id: "lurker",
@@ -582,8 +518,7 @@ const icons = {
             name: "Varjokupla",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Varjokupla",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Varjokupla"
         },
         {
             id: "maggot",
@@ -591,8 +526,7 @@ const icons = {
             name: "Toukka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Toukka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Toukka"
         },
         {
             id: "skullrat",
@@ -600,8 +534,7 @@ const icons = {
             name: "Kallorotta",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kallorotta",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kallorotta"
         },
         {
             id: "skullfly",
@@ -609,8 +542,7 @@ const icons = {
             name: "Kallok\u00e4rp\u00e4nen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kallok\u00e4rp\u00e4nen",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kallok\u00e4rp\u00e4nen"
         },
         {
             id: "tentacler_small",
@@ -618,8 +550,7 @@ const icons = {
             name: "Pikkuturso",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pikkuturso",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pikkuturso"
         },
         {
             id: "tentacler",
@@ -627,8 +558,7 @@ const icons = {
             name: "Turso",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Turso",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Turso"
         },
         {
             id: "ghoul",
@@ -636,8 +566,7 @@ const icons = {
             name: "Sylkyri",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Sylkyri",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Sylkyri"
         },
         {
             id: "giant",
@@ -645,8 +574,7 @@ const icons = {
             name: "Hiidenkivi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hiidenkivi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hiidenkivi"
         },
         {
             id: "pebble_physics",
@@ -654,8 +582,7 @@ const icons = {
             name: "Lohkare",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lohkare",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lohkare"
         },
         {
             id: "longleg",
@@ -663,8 +590,7 @@ const icons = {
             name: "H\u00e4mis",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4mis",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4mis"
         },
         {
             id: "lukki_tiny",
@@ -672,8 +598,7 @@ const icons = {
             name: "Pikkuh\u00e4m\u00e4h\u00e4kki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pikkuh\u00e4m\u00e4h\u00e4kki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pikkuh\u00e4m\u00e4h\u00e4kki"
         },
         {
             id: "lukki",
@@ -681,8 +606,7 @@ const icons = {
             name: "H\u00e4m\u00e4h\u00e4kki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4m\u00e4h\u00e4kki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4m\u00e4h\u00e4kki"
         },
         {
             id: "lukki_longleg",
@@ -690,8 +614,7 @@ const icons = {
             name: "Lukki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lukki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lukki"
         },
         {
             id: "lukki_creepy_long",
@@ -699,8 +622,7 @@ const icons = {
             name: "Kasvoton Lukki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kasvoton Lukki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kasvoton Lukki"
         },
         {
             id: "lukki_dark",
@@ -708,8 +630,7 @@ const icons = {
             name: "Kammolukki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kammolukki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kammolukki"
         },
         {
             id: "worm_tiny",
@@ -717,8 +638,7 @@ const icons = {
             name: "Pikkumato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pikkumato",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pikkumato"
         },
         {
             id: "worm",
@@ -726,8 +646,7 @@ const icons = {
             name: "Mato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mato",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Mato"
         },
         {
             id: "worm_big",
@@ -735,8 +654,7 @@ const icons = {
             name: "J\u00e4ttimato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttimato",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttimato"
         },
         {
             id: "worm_skull",
@@ -744,8 +662,7 @@ const icons = {
             name: "Kalmamato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kalmamato",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kalmamato"
         },
         {
             id: "worm_end",
@@ -753,8 +670,7 @@ const icons = {
             name: "Helvetinmato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Helvetinmato",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Helvetinmato"
         },
         {
             id: "drone_physics",
@@ -762,8 +678,7 @@ const icons = {
             name: "Lennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lennokki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Lennokki"
         },
         {
             id: "drone_lasership",
@@ -771,8 +686,7 @@ const icons = {
             name: "J\u00e4ttilaser-lennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttilaser-lennokki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttilaser-lennokki"
         },
         {
             id: "drone_shield",
@@ -780,8 +694,7 @@ const icons = {
             name: "Turvalennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Turvalennokki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Turvalennokki"
         },
         {
             id: "basebot_sentry",
@@ -789,8 +702,7 @@ const icons = {
             name: "Tarkkailija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tarkkailija",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Tarkkailija"
         },
         {
             id: "basebot_hidden",
@@ -798,8 +710,7 @@ const icons = {
             name: "Vakoilija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Vakoilija",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Vakoilija"
         },
         {
             id: "basebot_neutralizer",
@@ -807,8 +718,7 @@ const icons = {
             name: "Pys\u00e4ytt\u00e4j\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pys\u00e4ytt\u00e4j\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pys\u00e4ytt\u00e4j\u00e4"
         },
         {
             id: "basebot_soldier",
@@ -816,8 +726,7 @@ const icons = {
             name: "Teloittaja",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Teloittaja",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Teloittaja"
         },
         {
             id: "healerdrone_physics",
@@ -825,8 +734,7 @@ const icons = {
             name: "Korjauslennokki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Korjauslennokki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Korjauslennokki"
         },
         {
             id: "roboguard",
@@ -834,8 +742,7 @@ const icons = {
             name: "Robottikytt\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Robottikytt\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Robottikytt\u00e4"
         },
         {
             id: "roboguard_big",
@@ -843,8 +750,7 @@ const icons = {
             name: "Kyrmyniska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kyrmyniska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kyrmyniska"
         },
         {
             id: "assassin",
@@ -852,8 +758,7 @@ const icons = {
             name: "Salamurhaajarobotti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Salamurhaajarobotti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Salamurhaajarobotti"
         },
         {
             id: "spearbot",
@@ -861,8 +766,7 @@ const icons = {
             name: "Peitsivartija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Peitsivartija",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Peitsivartija"
         },
         {
             id: "tank",
@@ -870,8 +774,7 @@ const icons = {
             name: "KK-Tankki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/KK-Tankki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/KK-Tankki"
         },
         {
             id: "tank_rocket",
@@ -879,8 +782,7 @@ const icons = {
             name: "IT-Tankki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/IT-Tankki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/IT-Tankki"
         },
         {
             id: "tank_super",
@@ -888,8 +790,7 @@ const icons = {
             name: "Laser-tankki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Laser-tankki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Laser-tankki"
         },
         {
             id: "turret_left",
@@ -897,8 +798,7 @@ const icons = {
             name: "Torjuntalaite",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Torjuntalaite",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Torjuntalaite"
         },
         {
             id: "turret_right",
@@ -906,8 +806,7 @@ const icons = {
             name: "Torjuntalaite",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Torjuntalaite",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Torjuntalaite"
         },
         {
             id: "monk",
@@ -915,8 +814,7 @@ const icons = {
             name: "Munkki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Munkki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Munkki"
         },
         {
             id: "missilecrab",
@@ -924,8 +822,7 @@ const icons = {
             name: "Hein\u00e4sirkka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hein\u00e4sirkka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hein\u00e4sirkka"
         },
         {
             id: "necrobot",
@@ -933,8 +830,7 @@ const icons = {
             name: "Tuonelankone",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tuonelankone",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Tuonelankone"
         },
         {
             id: "necrobot_super",
@@ -942,8 +838,7 @@ const icons = {
             name: "Marraskone",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Marraskone",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Marraskone"
         },
         {
             id: "fireskull",
@@ -951,8 +846,7 @@ const icons = {
             name: "Liekki\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Liekki\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Liekki\u00f6"
         },
         {
             id: "iceskull",
@@ -960,8 +854,7 @@ const icons = {
             name: "J\u00e4\u00e4ti\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4\u00e4ti\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/J\u00e4\u00e4ti\u00f6"
         },
         {
             id: "thunderskull",
@@ -969,8 +862,7 @@ const icons = {
             name: "S\u00e4hki\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4hki\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4hki\u00f6"
         },
         {
             id: "firemage_weak",
@@ -978,8 +870,7 @@ const icons = {
             name: "Stendari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Stendari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Stendari"
         },
         {
             id: "firemage",
@@ -987,8 +878,7 @@ const icons = {
             name: "Eldari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Eldari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Eldari"
         },
         {
             id: "icemage",
@@ -996,8 +886,7 @@ const icons = {
             name: "Pakkasukko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pakkasukko",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pakkasukko"
         },
         {
             id: "thundermage",
@@ -1005,8 +894,7 @@ const icons = {
             name: "Ukko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ukko",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ukko"
         },
         {
             id: "thundermage_big",
@@ -1014,8 +902,7 @@ const icons = {
             name: "Suur-Ukko",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suur-Ukko",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suur-Ukko"
         },
         {
             id: "barfer",
@@ -1023,8 +910,7 @@ const icons = {
             name: "Turvonnu velho",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Turvonnu velho",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Turvonnu velho"
         },
         {
             id: "wizard_dark",
@@ -1032,8 +918,7 @@ const icons = {
             name: "Sokaisunmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Sokaisunmestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Sokaisunmestari"
         },
         {
             id: "wizard_tele",
@@ -1041,8 +926,7 @@ const icons = {
             name: "Siirt\u00e4j\u00e4mestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Siirt\u00e4j\u00e4mestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Siirt\u00e4j\u00e4mestari"
         },
         {
             id: "wizard_poly",
@@ -1050,8 +934,7 @@ const icons = {
             name: "Muodonmuutosmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Muodonmuutosmestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Muodonmuutosmestari"
         },
         {
             id: "wizard_swapper",
@@ -1059,8 +942,7 @@ const icons = {
             name: "Vaihdosmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Vaihdosmestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Vaihdosmestari"
         },
         {
             id: "wizard_neutral",
@@ -1068,8 +950,7 @@ const icons = {
             name: "Maadoittajamestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Maadoittajamestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Maadoittajamestari"
         },
         {
             id: "wizard_returner",
@@ -1077,8 +958,7 @@ const icons = {
             name: "Palauttajamestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Palauttajamestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Palauttajamestari"
         },
         {
             id: "wizard_hearty",
@@ -1086,8 +966,7 @@ const icons = {
             name: "Haavoittajamestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Haavoittajamestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Haavoittajamestari"
         },
         {
             id: "wizard_homing",
@@ -1095,8 +974,7 @@ const icons = {
             name: "Kohdennusmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kohdennusmestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kohdennusmestari"
         },
         {
             id: "wizard_weaken",
@@ -1104,8 +982,7 @@ const icons = {
             name: "Turvattomuusmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Turvattomuusmestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Turvattomuusmestari"
         },
         {
             id: "wizard_twitchy",
@@ -1113,8 +990,7 @@ const icons = {
             name: "S\u00e4tkymestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4tkymestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/S\u00e4tkymestari"
         },
         {
             id: "enlightened_alchemist",
@@ -1122,8 +998,7 @@ const icons = {
             name: "Valaistunut alkemisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Valaistunut alkemisti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Valaistunut alkemisti"
         },
         {
             id: "failed_alchemist",
@@ -1131,8 +1006,7 @@ const icons = {
             name: "Kadotettu alkemisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kadotettu alkemisti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kadotettu alkemisti"
         },
         {
             id: "failed_alchemist_b",
@@ -1140,8 +1014,7 @@ const icons = {
             name: "Ep\u00e4alkemisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ep\u00e4alkemisti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ep\u00e4alkemisti"
         },
         {
             id: "wraith",
@@ -1149,8 +1022,7 @@ const icons = {
             name: "Hyypi\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hyypi\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hyypi\u00f6"
         },
         {
             id: "wraith_storm",
@@ -1158,8 +1030,7 @@ const icons = {
             name: "Ukkoshyypi\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ukkoshyypi\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ukkoshyypi\u00f6"
         },
         {
             id: "wraith_glowing",
@@ -1167,8 +1038,7 @@ const icons = {
             name: "Hohtava hyypi\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hohtava hyypi\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hohtava hyypi\u00f6"
         },
         {
             id: "statue",
@@ -1176,8 +1046,7 @@ const icons = {
             name: "Patsas",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Patsas",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Patsas"
         },
         {
             id: "statue_physics",
@@ -1185,8 +1054,7 @@ const icons = {
             name: "Hohtonaamio",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hohtonaamio",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hohtonaamio"
         },
         {
             id: "snowcrystal",
@@ -1194,8 +1062,7 @@ const icons = {
             name: "Haamukivi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Haamukivi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Haamukivi"
         },
         {
             id: "hpcrystal",
@@ -1203,8 +1070,7 @@ const icons = {
             name: "Elvytyskristalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Elvytyskristalli",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Elvytyskristalli"
         },
         {
             id: "ghost",
@@ -1212,8 +1078,7 @@ const icons = {
             name: "Houre",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Houre",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Houre"
         },
         {
             id: "wand_ghost",
@@ -1221,8 +1086,7 @@ const icons = {
             name: "Taikasauva",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Taikasauva",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Taikasauva"
         },
         {
             id: "ethereal_being",
@@ -1230,8 +1094,7 @@ const icons = {
             name: "Olematon",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Olematon",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Olematon"
         },
         {
             id: "playerghost",
@@ -1239,8 +1102,7 @@ const icons = {
             name: "Kummitus",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kummitus",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kummitus"
         },
         {
             id: "phantom_a",
@@ -1248,8 +1110,7 @@ const icons = {
             name: "Spiraalikalma",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Spiraalikalma",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Spiraalikalma"
         },
         {
             id: "phantom_b",
@@ -1257,8 +1118,7 @@ const icons = {
             name: "Kiukkukalma",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kiukkukalma",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kiukkukalma"
         },
         {
             id: "confusespirit",
@@ -1266,8 +1126,7 @@ const icons = {
             name: "Utu-Aave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Utu-Aave",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Utu-Aave"
         },
         {
             id: "berserkspirit",
@@ -1275,8 +1134,7 @@ const icons = {
             name: "Viha-Aave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Viha-Aave",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Viha-Aave"
         },
         {
             id: "weakspirit",
@@ -1284,8 +1142,7 @@ const icons = {
             name: "Kaamo-Aave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kaamo-Aave",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Kaamo-Aave"
         },
         {
             id: "slimespirit",
@@ -1293,8 +1150,7 @@ const icons = {
             name: "Neva-Aave",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Neva-Aave",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Neva-Aave"
         },
         {
             id: "necromancer",
@@ -1302,8 +1158,7 @@ const icons = {
             name: "Hahmonvaihtaja",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hahmonvaihtaja",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Hahmonvaihtaja"
         },
         {
             id: "gazer",
@@ -1311,8 +1166,7 @@ const icons = {
             name: "Helvetinkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Helvetinkatse",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Helvetinkatse"
         },
         {
             id: "skygazer",
@@ -1320,8 +1174,7 @@ const icons = {
             name: "Taivaankatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Taivaankatse",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Taivaankatse"
         },
         {
             id: "spitmonster",
@@ -1329,8 +1182,7 @@ const icons = {
             name: "Helvetin sylkij\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Helvetin sylkij\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Helvetin sylkij\u00e4"
         },
         {
             id: "crystal_physics",
@@ -1338,8 +1190,7 @@ const icons = {
             name: "Kirottu kristalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kirottu kristalli",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kirottu kristalli"
         },
         {
             id: "bloodcrystal_physics",
@@ -1347,8 +1198,7 @@ const icons = {
             name: "Verikristalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Verikristalli",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Verikristalli"
         },
         {
             id: "skycrystal_physics",
@@ -1356,8 +1206,7 @@ const icons = {
             name: "Taivaskristalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Taivaskristalli",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Taivaskristalli"
         },
         {
             id: "chest_mimic",
@@ -1365,8 +1214,7 @@ const icons = {
             name: "Matkija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Matkija",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Matkija"
         },
         {
             id: "chest_leggy",
@@ -1374,8 +1222,7 @@ const icons = {
             name: "Jalkamatkatavara",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Jalkamatkatavara",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Jalkamatkatavara"
         },
         {
             id: "miner_hell",
@@ -1383,8 +1230,7 @@ const icons = {
             name: "Hornantappurahiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hornantappurahiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Hornantappurahiisi"
         },
         {
             id: "shotgunner_hell",
@@ -1392,8 +1238,7 @@ const icons = {
             name: "Hornahiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hornahiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Hornahiisi"
         },
         {
             id: "sniper_hell",
@@ -1401,8 +1246,7 @@ const icons = {
             name: "Hornasnipuhiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hornasnipuhiisi",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Hornasnipuhiisi"
         },
         {
             id: "dark_alchemist",
@@ -1410,8 +1254,7 @@ const icons = {
             name: "Pahan muisto",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pahan muisto",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pahan muisto"
         },
         {
             id: "shaman_wind",
@@ -1419,8 +1262,7 @@ const icons = {
             name: "Valhe",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Valhe",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Valhe"
         },
         {
             id: "necromancer_shop",
@@ -1428,8 +1270,7 @@ const icons = {
             name: "Stevari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Stevari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Stevari"
         },
         {
             id: "necromancer_super",
@@ -1437,8 +1278,7 @@ const icons = {
             name: "Skoude",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Skoude",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Skoude"
         },
         {
             id: "boss_dragon",
@@ -1446,8 +1286,7 @@ const icons = {
             name: "Suomuhauki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Suomuhauki",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Suomuhauki"
         },
         {
             id: "boss_limbs",
@@ -1455,8 +1294,7 @@ const icons = {
             name: "Kolmisilm\u00e4n koipi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n koipi",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n koipi"
         },
         {
             id: "boss_meat",
@@ -1464,8 +1302,7 @@ const icons = {
             name: "Kolmisilm\u00e4n syd\u00e4n",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n syd\u00e4n",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n syd\u00e4n"
         },
         {
             id: "boss_alchemist",
@@ -1473,8 +1310,7 @@ const icons = {
             name: "Ylialkemisti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Ylialkemisti",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Ylialkemisti"
         },
         {
             id: "parallel_alchemist",
@@ -1482,8 +1318,7 @@ const icons = {
             name: "Alkemistin Varjo",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Alkemistin Varjo",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Alkemistin Varjo"
         },
         {
             id: "boss_ghost",
@@ -1491,8 +1326,7 @@ const icons = {
             name: "Unohdettu",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Unohdettu",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Unohdettu"
         },
         {
             id: "boss_ghost_polyp",
@@ -1500,8 +1334,7 @@ const icons = {
             name: "H\u00e4ive",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4ive",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/H\u00e4ive"
         },
         {
             id: "islandspirit",
@@ -1509,8 +1342,7 @@ const icons = {
             name: "Tapion vasalli",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tapion vasalli",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Tapion vasalli"
         },
         {
             id: "boss_pit",
@@ -1518,8 +1350,7 @@ const icons = {
             name: "Sauvojen tuntija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Sauvojen tuntija",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Sauvojen tuntija"
         },
         {
             id: "boss_robot",
@@ -1527,8 +1358,7 @@ const icons = {
             name: "Kolmisilm\u00e4n silm\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n silm\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n silm\u00e4"
         },
         {
             id: "fish_giga",
@@ -1536,8 +1366,7 @@ const icons = {
             name: "Syv\u00e4olento",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Syv\u00e4olento",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Syv\u00e4olento"
         },
         {
             id: "maggot_tiny",
@@ -1545,8 +1374,7 @@ const icons = {
             name: "Limatoukka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Limatoukka",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Limatoukka"
         },
         {
             id: "parallel_tentacles",
@@ -1554,8 +1382,7 @@ const icons = {
             name: "Kolmisilm\u00e4n K\u00e4tyri",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n K\u00e4tyri",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4n K\u00e4tyri"
         },
         {
             id: "minipit",
@@ -1563,8 +1390,7 @@ const icons = {
             name: "Pienk\u00e4tyri",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pienk\u00e4tyri",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Pienk\u00e4tyri"
         },
         {
             id: "gate_monster_a",
@@ -1572,8 +1398,7 @@ const icons = {
             name: "Veska",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Veska",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Veska"
         },
         {
             id: "gate_monster_b",
@@ -1581,8 +1406,7 @@ const icons = {
             name: "Molari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Molari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Molari"
         },
         {
             id: "gate_monster_c",
@@ -1590,8 +1414,7 @@ const icons = {
             name: "Mokke",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mokke",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Mokke"
         },
         {
             id: "gate_monster_d",
@@ -1599,8 +1422,7 @@ const icons = {
             name: "Seula",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Seula",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Seula"
         },
         {
             id: "boss_wizard",
@@ -1608,8 +1430,7 @@ const icons = {
             name: "Mestarien mestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mestarien mestari",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Mestarien mestari"
         },
         {
             id: "boss_centipede",
@@ -1617,8 +1438,7 @@ const icons = {
             name: "Kolmisilm\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kolmisilm\u00e4"
         },
         {
             id: "ultimate_killer",
@@ -1626,8 +1446,7 @@ const icons = {
             name: "Kauhuhirvi\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kauhuhirvi\u00f6",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Kauhuhirvi\u00f6"
         },
         {
             id: "friend",
@@ -1635,8 +1454,15 @@ const icons = {
             name: "Toveri",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Toveri",
-            beta: false
+            wiki_url: "https://noita.wiki.gg/wiki/Toveri"
+        },
+        {
+            id: "boss_sky",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5klEQVR4nMWTMQ+CMBCFX42LCRKmAhNLSVi7mG7+djfiwmoiixPqREgTxzrQ1pbWCRNvaq957753BKKUwprarFL/wmBrDkdxcPvfchFzOLXnkCBLUk+s757xsucZjHKKirMkRVnso0jBDiJT0dQUVZlDcOYNAZwdLPF2iUJV5gAo2q4PokDvwyNoaoqmpgCgxXMJzmyEJaFLEJtk6yVJtO8ZGHdDETNtaoq2m+zdjUBGOT/chocVC84gOPMMBWcWZ0lARjmpUX6QL9enR+CKAwNNQMpij+E+fy5DJTgjbdcHkcjf/8Y3C/lO4JTW+RUAAAAASUVORK5CYII=",
+            name: "Kivi",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Kivi"
         },
         {
             id: "meatmaggot",
@@ -1644,17 +1470,7 @@ const icons = {
             name: "M\u00e4t\u00e4ry\u00f6mij\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4ry\u00f6mij\u00e4",
-            beta: true
-        },
-        {
-            id: "boss_sky",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5klEQVR4nMWTMQ+CMBCFX42LCRKmAhNLSVi7mG7+djfiwmoiixPqREgTxzrQ1pbWCRNvaq957753BKKUwprarFL/wmBrDkdxcPvfchFzOLXnkCBLUk+s757xsucZjHKKirMkRVnso0jBDiJT0dQUVZlDcOYNAZwdLPF2iUJV5gAo2q4PokDvwyNoaoqmpgCgxXMJzmyEJaFLEJtk6yVJtO8ZGHdDETNtaoq2m+zdjUBGOT/chocVC84gOPMMBWcWZ0lARjmpUX6QL9enR+CKAwNNQMpij+E+fy5DJTgjbdcHkcjf/8Y3C/lO4JTW+RUAAAAASUVORK5CYII=",
-            name: "Lohkare",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lohkare",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/M\u00e4t\u00e4ry\u00f6mij\u00e4"
         },
         {
             id: "mimic_potion",
@@ -1662,8 +1478,7 @@ const icons = {
             name: "Henkev\u00e4 potu",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Henkev\u00e4 potu",
-            beta: true
+            wiki_url: "https://noita.wiki.gg/wiki/Henkev\u00e4 potu"
         }
     ],
     perks: [
@@ -2415,7 +2230,7 @@ const icons = {
             id: "CONTACT_DAMAGE",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABRUlEQVR4nKWTsUsCYRiHnwupSM6gAgdrKqGhIRBSEcTtoEjycBCkf8Bc5aYc3MTGuH+gVY4QHNxEELWpoaG4nEpIaNIMarHpDs87NfA3fby8v+d7Po6DJSMYh0wsNO4NRv8q+Txu1HpbMAGZWGh8//iMVxQBWN1Ymwt4639ycXyIWm8LLoDeYMSed4egXyYvF83FgqbQ0TUbwCuKGLYuY1hVdFrdBmn13FzMSjnycpGzon+mjQmYLCYjcQA+vl5IqyWqim6BTD5xZZpolG8qJcrNigmvKrqjgQ1glKczC2IDvPdeHW8CaHUbBP3yYoNUIEEqkLDNb2sly1eyAZKROLu+g5kGTnE0WAT5/f6ZDzg5ukOWWmxtrlvmWSlHQVPsBj6PG4Bys8Lp1ZiHp0u0WpjC9bZlObwfpaNr9IdDs7P0z7R0/gAsgmb3G8DDJgAAAABJRU5ErkJggg==",
             name: "Contact Damage",
-            description: "Enemies near you take damage; the damage is higher the lower your health gets.",
+            description: "Enemies near you take damage, the damage is higher the lower your health gets.",
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Contact_Damage"
         },
@@ -5521,7 +5336,7 @@ const icons = {
             id: "ALL_NUKES",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA30lEQVR4nLWSLQ7CQBBG3yQNopJmRRPwOByyKEiwuDU9QcMVkL0AnAGDweKoBIVCkdQQDCiSCkwRkA2EluUnjN2db968DPxYArAckQPUfI/pbigc5+B1UUqhtX4Z4ADspSdZNcy3Z1CKPNnUCRoKrbV8RACw9Sa0KxGL8wjAGuIAtCIkjuNryClltu7QbKa4rvsZQc338PuHh6bVWF76sU6YjXtk1dCsmCQJQRCY1awBNj+OLcDm522CIj8iglP08V5WKxrcmo6F80xA2THZKM3jt8dkCL49pieCMll/qwu25G/9AZYOIQAAAABJRU5ErkJggg==",
             name: "Spells to nukes",
-            description: "Transforms every projectile currently in the air into a nuke; not a good idea",
+            description: "Transforms every projectile currently in the air into a nuke, not a good idea",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
             wiki_url: "https://noita.wiki.gg/wiki/Spells_To_Nukes"
         },

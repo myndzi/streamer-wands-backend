@@ -401,6 +401,7 @@ input[type=text] {
 .relative {
     position: relative;
 }
+
 .w-half {
     width: 50%;
 }
@@ -615,7 +616,8 @@ a:visited {
     white-space: nowrap;
 }
 
-.switch-group.show-all {
+.switch-group.show-all,
+.switch-group.beta-content {
     display: none !important;
 }
 

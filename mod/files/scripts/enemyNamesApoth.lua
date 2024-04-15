@@ -171,6 +171,7 @@ enemyNamesApoth = {
 	"thundermage",
 	"thundermage_big",
 	"barfer",
+	"barfer_greater_apotheosis",
 	"wizard_dark",
 	"wizard_tele",
 	"wizard_poly",

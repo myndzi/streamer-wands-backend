@@ -182,7 +182,7 @@ enemyNames =
     "boss_centipede",
     "ultimate_killer",
     "friend",
-    "meatmaggot",
     "boss_sky",
+    "meatmaggot",
     "mimic_potion"
 }

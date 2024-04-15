@@ -443,7 +443,9 @@ const containerComp = Vue.component('wands-container', {
                 showAll: { state: false, label: 'Show All Progress', className: 'show-all' },
                 flipHidden: { state: false, label: 'Invert Highlighted', className: 'flip-hidden' },
                 betaContent: {
-                    state: streamerVersion.indexOf('beta') > -1,
+                    // until nolla starts pushing new betas disable this feature (also hidden in css)
+                    // state: streamerVersion.indexOf('beta') > -1,
+                    state: true,
                     label: 'Show Beta Content',
                     className: 'beta-content',
                 },
