@@ -5,7 +5,7 @@ exports.message = async (data, user, server) => {
     try {
         const json = JSON.parse(data)
 
-        const { wands, inventory, items, progress, version } = wandsHandler.validate(json)
+        const { wands, inventory, items, progress, version, info } = wandsHandler.validate(json)
         server.clients.forEach((ws) => {
             if (ws.streamer == user.displayName) {
                 ws.send(
@@ -16,6 +16,7 @@ exports.message = async (data, user, server) => {
                         items: items || [],
                         progress,
                         version,
+                        info,
                     }),
                 )
             }
@@ -23,7 +24,7 @@ exports.message = async (data, user, server) => {
         const id = user.id
         await Streamer.findOneAndUpdate(
             { id },
-            { wands, inventory: inventory || [], items: items || [], progress, version },
+            { wands, inventory: inventory || [], items: items || [], progress, version, info },
             {
                 useFindAndModify: false,
                 new: true,

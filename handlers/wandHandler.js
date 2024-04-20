@@ -22,6 +22,25 @@ function statsValidation(stats) {
     return stats
 }
 
+function amtValidation(amounts) {
+    for (const amt in amounts) {
+        if (typeof amounts[amt] != 'number') amounts[amt] = 0
+    }
+    return amounts
+}
+
+function healthValidation(hp) {
+    for (const val in hp) {
+        if (typeof hp[val] != 'number') hp[val] = 0
+    }
+    return hp
+}
+
+function goldValidation(gold) {
+    if (typeof gold != 'number') gold = 0
+    return gold
+}
+
 exports.validate = (data) => {
     const legacy = Array.isArray(data)
     let wands = []
@@ -43,6 +62,9 @@ exports.validate = (data) => {
         }
         if (data.version) {
             version = data.version
+        }
+        if (data.info) {
+            info = data.info
         }
     }
     const validatedWands = []
@@ -68,11 +90,24 @@ exports.validate = (data) => {
     }
     let validatedVersion = version.filter(strFilter)
 
+    const validatedInfo = []
+
+    for (const player of info) {
+        valid = {}
+        valid.names = player[0].filter(strFilter)
+        valid.amounts = amtValidation(player[1])
+        valid.shifts = player[2].filter(strFilter)
+        valid.health = healthValidation(player[3])
+        valid.gold = goldValidation(player[4])
+        validatedInfo.push(valid)
+    }
+
     return {
         wands: validatedWands,
         inventory: validatedSpells,
         items: validatedItems,
         progress: validatedProgress,
-        version: validatedVersion
+        version: validatedVersion,
+        info: validatedInfo
     }
 }

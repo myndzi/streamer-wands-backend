@@ -1661,6 +1661,18 @@ const spellDataApoth = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAARUlEQVR4nGNgGAVQcFtX6FOhOrGqP683/v///////z+vNyas+lOh+n8kcFtXCE0BExr/5Z7XyFxxF1FqOwnuMEzHjGAAAM4vKis96tBtAAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_TOILET_PAPER: {
+        name: "Conjure Roll of Divine Purification",
+        description: "Summons a roll of toilet paper",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 10,
+            fire_rate_wait: -2,
+            action_speed: 350,
+            action_projectile: 0.04
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzElEQVR4nM2SMRKCMBBFfxgPYIMjFTaYTm4hM44cQE9g5Rm8EzZ4C+wSmlAxEw4Rq0UNCQxW/i5/9r/dbAL8paTShiSVNlJpMztoaxJSlJU3PAZhFOY86s0kDr2NGGNsAHCRfRAbEHwebtczLqcDAKBuukHY5QUAIETbG+tw6QzWTQchWtiv4tyBS0K0oJokDnF/PJFn6fs+PghNx3n0tZe66bDdrNiCjDxLWVFWhoopfNzvvBM5NfaZSNTIq6KsjAsklZ4O26CfgnP0AiJ961zRV2M9AAAAAElFTkSuQmCC"
+    },
     SOILBALL: {
         name: "Chunk of soil",
         description: "Don't soil yourself",
@@ -2228,6 +2240,16 @@ const spellDataApoth = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAZElEQVR4nGNgoBAw4pL4fyflMopClTm6RJn4/07KZXTN+MTx2kqSGlJsRRZjImQjUQCf7YRcQbELsBpAyN8EDSDZBYwqc3SJiUJk18ASFlYXYEt1RKVEihISsgJSEhX1MxOpAACoN1ubM1SBAQAAAABJRU5ErkJggg=="
     },
+    TOUCH_GRASS: {
+        name: "Touch of Grass",
+        description: "Transmutes everything in a short radius into Earth, including walls, creatures... and you. Unless\u2026",
+        meta: {
+            action_type: 4,
+            action_max_uses: 4,
+            action_mana_drain: 190
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjUlEQVR4nKVTyw6AIAwrxu/zYPxM48EfnAcD2UpHNOxExvpY0WJmmKkVAPb7UHfMXHjg2s6XIAEyQPaZwJQSAcPM8hHMRG290QojglaVgNUzJz4HA1AWMRQsErgjViGqs3IgCbyCV0wDritktrNqhOoVvJvso+oc/HER1lEZeFXOpHOjVvDBqX5szv7OD58eIzJC5vy6AAAAAElFTkSuQmCC"
+    },
     TOUCH_BLOOD: {
         name: "Touch of Blood",
         description: "Transmutes everything in a short radius into blood, including walls, creatures... and you",
@@ -2618,7 +2640,9 @@ const spellDataApoth = {
         description: "Reduce mana cost by 30 and increase fire rate when wet",
         meta: {
             action_type: 2,
-            action_mana_drain: -30
+            action_mana_drain: -30,
+            fire_rate_wait: -10,
+            reload_time: -20
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+0lEQVR4nMWSsWrDMBRFT5sS8Bw8q2PwFkN/ImOmgofuHVrwB6TgP2iHQoYOHgqd8hFdMxg8GI3WbPQDWl6HYiM7rkkLJXcRutK77+o+wX9ilR1klR1k6s7V1GGkQgCKv3YP4lSCOJ10cTnV3VmNs7pzcjKSvJYgTmWm1jJTawniVJK8HnUxmkFlGpzV3GavAHxs76lM87vuSV7LrhDZFSI+N1ncBteurYDPDQPtPSFSIaXVlG9PAHyWBgDncZEKe2P9cQqnouegMg3zxRJndbf3MV8sj7iLoWKS17J/fulE/OLN4wPvd9e9miMB+A5z+Hkq01Bsb0bvnxdfrQ2CCg9SuYEAAAAASUVORK5CYII="
     },
@@ -2637,7 +2661,8 @@ const spellDataApoth = {
         description: "Amplify and convert all damage to fire damage when burning",
         meta: {
             action_type: 2,
-            action_mana_drain: 20
+            action_mana_drain: 20,
+            damage_critical_chance: 10
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAklEQVR4nM1SPQqDMBh9Fgen4NhJcOySbN5CvEBvIK4OLR3t0LVX6NCp0Dt0cquLo+AJRJBuTYfwSaKhToU+CJjv533vxQ/4JeqIyaWa1bdkkIQYCrFIYp06FELu15D7NSSR2BQ50+YgCdHeG1zaHlWn4twHtgED5TZlP/YZFoIkBACjGQCqTsX0mhlBHTF5PD/HBgC4HgSuB2HEjuen/XGHQsjYU55jT/l+1al81am05awWaNKJM5AamnrizLBFcOmjvTfgviLIK+X3fXuMpHmnYtxXtTMFm7J3dpmYj5hglwnjL7h6UldBdx3T6VbQAsWeefSF0uHYSGihpup06f+DDwjFj2+aomj6AAAAAElFTkSuQmCC"
     },
@@ -3073,7 +3098,8 @@ const spellDataApoth = {
         description: "Increase critical hit chance proportional to how many charmed creatures are nearby",
         meta: {
             action_type: 2,
-            action_mana_drain: 40
+            action_mana_drain: 40,
+            damage_critical_chance: 50
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABk0lEQVR4nKVSPUvDUBQ9sZZO7tVWEiX0iR2EflAnoUKKW+vQ3aUO4rO/xUZcCv0NDaVLgw3o4mDHFlICidBCV8FFxF6nF9KkCuJdQjj33HfOvQf4Y1GjQcGvFARnmkYAkDZNaaZplFIUSO223zNQVTrc20NKUXzORhAEgJSigBoNEk3iJQCwY583E9fF3PMAAHePgxt/gCgB/vS/iXdj4rqwrJ4RsSAkCiVzz0PaNFd6AGCoJrunzqK2YgEAKo4jTVwXAGBaFtKmKelM5gLXmcx1JvNxLPEQHrpSYh9B4ke1ScuOTcuOTU/ZM4qQpvuZEQD0i1k+KxyPxqU6fVSbpDOZj0t1WnZsErXs2CSUbQpPGWea7xez/Ii2LtIvz/lZASNngdzlQa31m9rIgsLSz7e2L95iuzk1uYN49QoA8GncI2HcRrk6k/lQTXaFvPACDVYmg5Wj/nUm82BExaDw4HUqNwCAfcVbc8/zU3d9UmmFTyXuvnZAOKKW1TO4/aoHG8Vpg9GO2BioKomw/ISvJf+nvgHBh8qyxozsdwAAAABJRU5ErkJggg=="
     },
@@ -3663,6 +3689,17 @@ const spellDataApoth = {
             fire_rate_wait: 15
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnklEQVR4nK1RsRHCMBCTfXS0DMA+6Sk9BANQZACGSEnPPhkgbepQKaf7k7HD8Z2kl/7fBv5VZRy2Hq5Z9+lmTT+FHQ5yotuotuWxad8aex6UOAPA5XreiTIOm2LHEQNA0puWeQUFYg5QjvhZXumka2mjw47LcZrDUbMBbs14ArEG7gEq0FwLVT5HY+3WaKYnsUG/plXLvGJ6vFO7s6M+reRo6MXUChMAAAAASUVORK5CYII="
+    },
+    SEA_MIMIC: {
+        name: "Sea of Mimicium",
+        description: "Summons a large body of mimicium under the caster",
+        meta: {
+            action_type: 4,
+            action_max_uses: 3,
+            action_mana_drain: 140,
+            fire_rate_wait: 15
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVR4nK2T0UtTYRjGf6/tmBVGTRjREkXn1jmlTNFlhM5MUqILHfNGg66q2/1ZXQVBF4EESRTZBqnMA3pMzhpbF8ouKlPcyc+L4WeneTc/+ODj4X1+PO8DnyilaOQ0NeQ+M8DsdErNTqe0+PTFQyUivsHM+F2f9nzqvgIIAATvPKay9EaJiMzMpNRIZhxAiYgopcjMJVS6v1drzybH1OSDBBpwDEkHlEom71HlgPh8DZKZS5CeMGEN0v0Wf5pbtNkHAEgmR3yxw08GeOT88Gn/musAEdNkw1mn1HS861VW2mo9/+4tYXUNw5JbX2JrdZ/RWDvLboHOm7fZ9WDXAytoYcTG9LC99RkvKvpqAMDXvIPVHcH+tgnAUMjCrthU19/7IP+fAEDkoALAl40icJ72nUPaLhwS9pr5Xr5B/JKwvT1U6yUewi2vYlQ9fwKAvkiXfq8VbWKhGPGeHpYdB4BbZhS3vErn9T72fl08SRAI7QGwmCsCBpdbrgCQzxYwPv7lGtA6+JOdco6oNcBmPu8v8d1itm63wY7wqTtvuTXz64XsSYKXrxYEUMGEqQdzhdKpgMo5gw9vPwEIgDT6nY8Ac3yUG6mNWXcAAAAASUVORK5CYII="
     },
     APOTHEOSIS_SEA_BERSERK: {
         name: "Sea of Berserkium",
@@ -4309,7 +4346,8 @@ const spellDataApoth = {
         description: "50% chance to duplicate the next cast",
         meta: {
             action_type: 2,
-            action_mana_drain: 20
+            action_mana_drain: 20,
+            spread_degrees: 10.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1klEQVR4nN2SMQ6CQBBF326sTGzWxCDE7AGs0WPYWGgnZ/AC3AQ7bb2FSi0XIKCNHAFsWIJRESsTf7OTnZk/P38Gfg3RtjC+7lYmHlmLjYll2+YkCwMgSLIwqJN12ipwlIszmD/9NxKczssJoC63vc6FDUCShTjKrWoqDw7RWgNdWaQ9QOXCtsqUBnwAWaTesD978ECUkzTQBXrAsa7CTJZF6gHRZLw91fNNCgCsVgo+eQBMc2H7jnKNB54haTTRyI2vOwv4fgt1JFlYvS+38AnvLvEPcAcaRE887LhU7AAAAABJRU5ErkJggg=="
     },
@@ -4748,7 +4786,7 @@ const spellDataApoth = {
     },
     ALL_NUKES: {
         name: "Spells to nukes",
-        description: "Transforms every projectile currently in the air into a nuke; not a good idea",
+        description: "Transforms every projectile currently in the air into a nuke, not a good idea",
         meta: {
             action_type: 6,
             action_max_uses: 2,
@@ -5286,6 +5324,17 @@ const spellDataApoth = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAp0lEQVR4nGP8//8/AyWAiSLdI8AAl8tM/5n32fxn3LD2P2PNfVho/5djnAIPeRQDfrtp/GdgYGD4d5kXruCv0xFGGJvRatt/Lo7pDI/+5yA0/f//Hys++pbh/////xmY9lr/x6Xm////EAPuMjMjFPWr4NWA1QAY/uWqTpJmFANeSQvDNf+9xPP/////DM6XGAkayEjVpAyLBZIANmfBvEAMpq4XyAEAqRgM235KtSEAAAAASUVORK5CYII="
     },
+    CESSATION: {
+        name: "Cessation",
+        description: "The caster enters the realm of no realm",
+        meta: {
+            action_type: 5,
+            action_mana_drain: 0,
+            fire_rate_wait: 600,
+            reload_time: 600
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmklEQVR4nGP8//8/AyWABcbo799OkkmFhZ6MDAwMDIz///9n6O/f/v/y5Usk2ayrq8dQWOjJyIIseO/eNaI0Kylpwdks6JLPnt3Fq1lKShmFj2EAAwMDw/v3z7BqFhSUwhDDagADAwPDjx+fUfgcHLxY1THhMoBYMPAG4AwDXH4mygBsoU20AejxTJIByCmMWMAIy40UZSZKAAA1wihBM86yagAAAABJRU5ErkJggg=="
+    },
     APOTHEOSIS_MASS_MATERIA_CONVERSION: {
         name: "Mass Materia Conversion",
         description: "Cave quid volunt",
@@ -5329,7 +5378,8 @@ const spellDataApoth = {
             action_type: 0,
             action_mana_drain: 20,
             action_speed: 7,
-            action_melee: 1.0
+            action_melee: 1.0,
+            damage_critical_chance: 10
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAAr0lEQVR4nO2QIRLCMBRE9zPo+tYBAjDYCnA9QDhAL1CbE/QE3IUD4IroCUpFqQPPBRb1MyETUcMMgmf2JzO7fxPgz3expuAx3xEAVCdTVyXrqiRJWlOQZDRAfIPOr8cTSZa6GQDafkS+XuB0vogfMNeqvlm17Uc03YDDduWUJEXEhYg1BXVbuDHkertLeDfzjVpdA5tu+NDYP4hfX0my1DXxCd8PANhvlozNU86/wRsiFVr2GDVOdAAAAABJRU5ErkJggg=="
     },

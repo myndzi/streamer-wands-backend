@@ -171,6 +171,7 @@ enemyNamesApoth = {
 	"thundermage",
 	"thundermage_big",
 	"barfer",
+	"barfer_greater_apotheosis",
 	"wizard_dark",
 	"wizard_tele",
 	"wizard_poly",
@@ -296,5 +297,7 @@ enemyNamesApoth = {
 	"boss_fire_lukki_phase2",
 	"boss_flesh_monster",
 	"forest_monolith",
-	"meatmaggot"
+	"boss_sky",
+	"meatmaggot",
+	"mimic_potion"
 }
