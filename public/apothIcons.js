@@ -371,10 +371,10 @@ const apothIcons = {
         {
             id: "shaman_greater_apotheosis",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABaUlEQVR4nJWSP0vDUBTFz4uV0CBqFWxFIYtDhKIdpFCoLXSw4uDi0I+g4OIH6Si0Q9116FqqTqmVrhUEM+ggGDQRiS0lpRR5DvIe+Q8eeHDvzeXHuTeXwKP9kyPqzNv1JvH2OMU/FiplKiXmApuiILHtvRxdSMwDAGxrBAAIAwVJCCra1ghyOgU5nQLgH8sHGFhDV3Fzd4PHDPIvB093zzx+ffyIBMRYMLCGYLvwQqJ2IkzsMU+YdVM3XE3tepMUKmVaqJR9u/CNwCCdq2v+65R8hpq6AVM34IUIohQPtK3kM5TBtG6fsOd1xx2w+dXLewDAylrS5ShMsYk9hijF+RK1bp8AgPY3Bo7PT12Wp/qnC0CUfIYCgCjF8XDTCz3Zg6JC15OzWF6cwdf3D96MKVqqRgLvIEgtVSNCqVG96C29C6VGtaVqBAg5pCht3b6sOnMOmNhj7BwWQ28eACS5ls2JZ5DkWpbVfgGWgXvhb07KXgAAAABJRU5ErkJggg==",
-            name: "Suurm\u00e4rki\u00e4inen",
+            name: "Suur-M\u00e4rki\u00e4inen",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suurm\u00e4rki\u00e4inen"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-M\u00e4rki\u00e4inen"
         },
         {
             id: "coward",
@@ -2414,7 +2414,7 @@ const apothIcons = {
             name: "Henkev\u00e4 potu",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Henkev\u00e4 potu"
+            wiki_url: "https://noita.wiki.gg/wiki/Henkev\u00e4 potu",
         }
     ],
     perks: [
@@ -2424,7 +2424,9 @@ const apothIcons = {
             name: "Critical Hit +",
             description: "You get more critical hits",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Critical_Hit_+"
+            wiki_url: "https://noita.wiki.gg/wiki/Critical_Hit_+",
+            ui_name: "$perk_critical_hit",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA50lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/bBqxGQQzhAmXosDEFIacmno439rRAas6FAOQbV8/fw7D06dPGQITUxgkVFQZ7j5+CpdbsGULnM2Cz6nr58+B29xtbMrAYGzKcFJVlYFz7VrsLkAH1o4ODHcfP2UIiYhiYGBgYDipqspgfvs2Q+zKZYQNgGl+cec2iuanly+jqMNqALpmBgYGBj09PQzNDAxYwgDmZ5jmnJp6iM3r1jFUXIMYAEsPDAwkpIMOLV0UA2DpgOKUOAwAAAdZX0i77OLWAAAAAElFTkSuQmCC"
         },
         {
             id: "BREATH_UNDERWATER",
@@ -2432,7 +2434,9 @@ const apothIcons = {
             name: "Breathless",
             description: "You can no longer drown, and can move in liquids with ease.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Breathless"
+            wiki_url: "https://noita.wiki.gg/wiki/Breathless",
+            ui_name: "$perk_breath_underwater",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxUlEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/mEbltOkMDAwMDHdnZWI1CGYIEzZnKadNZ7i9dztDeZwp3CBcAMUAmO3vHr9iYGBgYEiJb8KqCdl7WF3wfns9g7CaMYOqsyfD3VmZDMpp03G6BKsBMENgmvF5B6cBMEDIO3gNUE6bjuEddMCCzPn17Sc8gAQ9Gxlu793OoJo2neHurEyG92jqCLoAZjM2W5EBxSlxGAAAa85OlHkqtT0AAAAASUVORK5CYII="
         },
         {
             id: "EXTRA_MONEY",
@@ -2440,7 +2444,9 @@ const apothIcons = {
             name: "Greed",
             description: "You gain double the gold per nugget.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Greed"
+            wiki_url: "https://noita.wiki.gg/wiki/Greed",
+            ui_name: "$perk_extra_money",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABF0lEQVR4nN2SLU/DUBSGHxBdMlNX09ZeTR0CT/YHGAb+AKroBdGg6W8gNYOEkGCamdWQDLeZEXIr15pmpiFZspohSC/92Jgk4aiTe8/7vOfevPDXddA8cGx7A6B1O63hYrUGYLpYKN1hU6x1O0o8GvZrgPKuNGkBmq6n5w+qr8KqczVAWW+v1z/9R9yCVWsr4PjkToHy2aDm7ve0/QAlTlJ0yySTUm3ihsV+QOA53+KjW/IkxRCCfDaoPW0nwO9pGEIAED+eoVum2iJPUgLP2Q0oVmvcsCCTkvf7ZwwhiMcR8ThiOZmjWyYXN1OVB2gEybHtTfRyufXHR8M+mZQsJ3Ounj5VmH5Not/TcMOCwHNqztUk/oP6AuT8crg7EfFXAAAAAElFTkSuQmCC"
         },
         {
             id: "EXTRA_MONEY_TRICK_KILL",
@@ -2448,7 +2454,9 @@ const apothIcons = {
             name: "Trick Greed",
             description: "4x instead of 2x gold is dropped when death is an accident.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Trick_Greed"
+            wiki_url: "https://noita.wiki.gg/wiki/Trick_Greed",
+            ui_name: "$perk_extra_money_trick_kill",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAElEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHhK6ZjYsdQ3PbhoMM68/fZujZdYKBjYsdbgmGAdjA+vO3GTTlpRgYGBgYNOWlGNafv40ij2IANmdff/iMIdBQFYVGVocSBubqKv8xTIC6AgYCDVUZGBgYGE7evMOI1wsnjhQxnLhxG8MV6ACrCxY3GTKIqakxMDAwMPDLSDNY2PRhaMTpgn5PNgYxNTUGfhlphle3bjF8fPKUYXGTIS6Hohrw69tPhsLtvxhe3brFcHvffoY3x68y8MtIM8TWnWeAuQymDqsXYOmAEPj17Sc8MVGcEocBAAB7mmCdiK6zqgAAAABJRU5ErkJggg=="
         },
         {
             id: "GOLD_IS_FOREVER",
@@ -2456,7 +2464,9 @@ const apothIcons = {
             name: "Gold Is Forever",
             description: "Gold nuggets never disappear.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Gold_is_Forever"
+            wiki_url: "https://noita.wiki.gg/wiki/Gold_is_Forever",
+            ui_name: "$perk_gold_is_forever",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABSElEQVR4nN2Sv0tCcRTFP4WYNGSTi8rXoV4/Jh8I9R9E0FwtQXuLueaLUPca+gMMlxKkiCBaiuCBDoIuNjyX90UdEodegagErynp+SPHoDPee865514u/DWmBgtqMGgDuGdnhsi9dheAUq3W17l+EtaWFuxB0ef8Kp6IhhACKSWdYhIV7G+T6UkRPRGNs314zmncnITwRDRHf6KBEIJQKARAeCuOEMKxnmuMrg8pJaYJ5bsUpmkSTUtH/1eDgh7jtjJHNP2OEDZSQqeYdIjGGhT0GFa9wcprHP08y/ry4kjByBtkEipWvYE3nMKnKFjlOAU9NnKQw6DX7nK66canKABUs9t4A36ahoFVb5BJqH3e2ASH9z2ahsHLxTU+RaH6+EQrX8Eb8LN3XBpKMPSJb6Uje2P3ylF7uNyhaRi08hUOch+OT/wH+AKRPnF1XE5QxwAAAABJRU5ErkJggg=="
         },
         {
             id: "TRICK_BLOOD_MONEY",
@@ -2464,7 +2474,9 @@ const apothIcons = {
             name: "Trick Blood Money",
             description: "Blood money is dropped when death is an accident.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Trick_Blood_Money"
+            wiki_url: "https://noita.wiki.gg/wiki/Trick_Blood_Money",
+            ui_name: "$perk_trick_blood_money",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGklEQVR4nMWTsUrDUBSGvyuSlGQouLQ0pAUhxI5x8gGc3Lo4+gQ+h1AQJ5+go0vEwUFcdOqi2dQQEGyxtItQocHE4TpFkuZWxAz+y+VyzvnPdzj3CiklVbRWqRpYz1+EEHi2LQE0Qy8lp3ECQDAei4y8QODZttQMvVR8dH6DH0QcXw3RDP27ya9G8IOIbqcFQLfTwg+iQrxgoMJ+fJnQ85zCmc8T+S3sbDnKleS79jwHgOFTJH4c4Xp/j9uTfoliWUqCQa1B3W0CYLoWu2eXpcKVBKfPG9TdJqZrMQ+nLMJXBrXGKtCiQRonHG6+MQ+nTC7ueH/4xHQtDj5mZGRZnnKE7XZbqjaxrDROuB+NRMngLy9R/PtnqmzwBbNZdyBwkMhxAAAAAElFTkSuQmCC"
         },
         {
             id: "EXPLODING_GOLD",
@@ -2472,7 +2484,9 @@ const apothIcons = {
             name: "Exploding Gold",
             description: "Gold dropped by enemies explodes when it disappears, is picked up or touched by other enemies!",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Exploding_Gold"
+            wiki_url: "https://noita.wiki.gg/wiki/Exploding_Gold",
+            ui_name: "$perk_exploding_gold",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABCklEQVR4nGNgGGjAiC5gKCv7f0uyFkPQ8rso4ieOFDEYGbUzMDAwMJx//BiujxFdMxsXO0TD6kAGi9D1cBoZ/Pr2E24ICzZnnVgdyMCgGMZwYjUDhmZ0wITM2ZKsBdEMA4phDCdWBzKsi1SGC/V7sjHAXInhBXN1lf/ILmC4vwqnC07evMOI4QIYeLbuEoOFSSSDReh6uO0nbtxmOHGkCL8XYM5HjoGg5XcZTty4jeIFnAYgOxfZ3wwMDAwMb6YzHG+dguEClFj49e0nPICQXXF7VRicXbj9F8Ovbz/hfKzp4MSN2wwWGqoYtiFbBEsHKF44//gx469vPxmM5OTgYoubDFE0ImseJgAAEfVqYyY9TqwAAAAASUVORK5CYII="
         },
         {
             id: "HOVER_BOOST",
@@ -2480,7 +2494,9 @@ const apothIcons = {
             name: "Strong Levitation",
             description: "You can fly 100% longer.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Strong_Levitation"
+            wiki_url: "https://noita.wiki.gg/wiki/Strong_Levitation",
+            ui_name: "$perk_hover_boost",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAq0lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHhK6ZjYsdRbNE/mw4GyYHswTDAHQgkT+b4cXEVBRD0AGKAeg2v5iYymC1+DaGIcjqsLoAWXO2BgNWQ2AAJRDN1VXgfoNphoGpNxgYjsWqwvknb95hxOkCdM0MDAxwl6ADFmwGHItVZTiGZBC67cgAxQWweCYEkNXhjUZiAMUpcRgAAFRoQukHoL5DAAAAAElFTkSuQmCC"
         },
         {
             id: "STRONG_KICK",
@@ -2488,7 +2504,9 @@ const apothIcons = {
             name: "Never Skip Leg Day",
             description: "Your kicks deal extra damage and knockback.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Never_Skip_Leg_Day"
+            wiki_url: "https://noita.wiki.gg/wiki/Never_Skip_Leg_Day",
+            ui_name: "$perk_strong_kick",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOUlEQVR4nN2SMUvDUBSFP1NpoFBEqAiBBgt2EKeCFHEpCIJjQXDQnxDQDl2c3HTpIELBPyHUrYOLi0OWdHJoaVpSKUiDYIsNCrYOIc/ExDoKnu2+e7/zzntc+GvNfT/IpdNTgHhCdusUGLbbq5ckts8cjF5PcJIfPi6eTuMJWcDgwvWSRDEDsewG++syw9uDaaQBwObaYSjm1c0ErZwnqapo5TyX5/eiFzLwm+RS7u0eDJBUVY5OtqINnl4eAyaGDbsXE6oVnZFlATCyLKoVfXYCTxmlAEBsVaGujwWslfNiZt4PdPp3QEHUA6fB3o6CaS8Az3y0Hqh1oKbp0QaeSUYpMHAaZFcUTBuGrw7XRh/TCKcMPOF9/CZMlpcWARduN7vA1z54czP/oN3sBuCf9OsmRiX0b+I/0CdF2nTx7c7DfgAAAABJRU5ErkJggg=="
         },
         {
             id: "TELEKINESIS",
@@ -2496,7 +2514,9 @@ const apothIcons = {
             name: "Telekinetic Kick",
             description: "You gain new telekinetic powers.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Telekinetic_Kick"
+            wiki_url: "https://noita.wiki.gg/wiki/Telekinetic_Kick",
+            ui_name: "$perk_telekinesis",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAUlEQVR4nGP8//8/AyWAiSLdDAwMLMgcRkZGBkNZ2f8MDAwMbFzsGIp/ffvJwMDAwHD+8WNGmMtRDDCUlf2PTSMMwOSgljBiGIANzOpLQ+GnFc1C4TMiB+L8cwz/GRgYGGZGqTKkL7vNMDNKlSEi1Irh+t2nDNkx7iga9bxKGTEMsNBQRYmSnHQPhut3njIwMDAwvHn/iUFTWRouV9C8kJGBAS0W0pfdRqHfvPvE8Ob9JwYGBgYGEUE+BhEhBMbqBXQXODvrYrV9xepjDCdu3MZ0AborVJLXMbx5/wmn7RguMJKTwxuNMPDr20+Gc48eYXcBqQDFBeSkRMYBz0wUGwAA+ZZo5wd4JD4AAAAASUVORK5CYII="
         },
         {
             id: "REPELLING_CAPE",
@@ -2504,7 +2524,9 @@ const apothIcons = {
             name: "Repelling Cape",
             description: "Stains drop at a fast rate (when moving).",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Repelling_Cape"
+            wiki_url: "https://noita.wiki.gg/wiki/Repelling_Cape",
+            ui_name: "$perk_repelling_cape",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGklEQVR4nGP8//8/AyWAiSLdDAwMLMgcRkZGBkNZ2f8MDAwMbFzsDAwMDAweukEMMtIqDAwMDAzT1jUzMDAwMJx//JgR5nIUAwxlZf/DNCJr7tnUzSDA9h9uKNQSRoJekJFWYVh1eDleL6AYALPBIrmcgYGBgeHJ0zsM4mzCDHKCMijiyK5kRI4FCw1VlCjx0A2Cs3dcXodi84kbt7F7AWYLcuBhkyfoAiUZAwYnHTcGM53FDAwMDAwdK8QZ7j25QNgFMFvuPbnA4JX9n+HUlViGdTstGZpqhbEpRXWBkZwcPBphLmBggAQmchj8+vaT4dyjR/jDQE1QiaD/GRjQEtL5x48ZGSY34cwchyY3IdRh8wI5gOLMRLEBAPCWXtbssNcpAAAAAElFTkSuQmCC"
         },
         {
             id: "EXPLODING_CORPSES",
@@ -2512,7 +2534,9 @@ const apothIcons = {
             name: "Exploding Corpses",
             description: "Enemies explode upon death, but you gain immunity to explosive damage.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Exploding_Corpses"
+            wiki_url: "https://noita.wiki.gg/wiki/Exploding_Corpses",
+            ui_name: "$perk_exploding_corpses",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAUlEQVR4nN2SLwvCUBTFjwYFQeOCMERmFmxW81hwIDiL+GH8HGrZwtgWZNkkmPQLOIY8MBgVBltQg7zLe3NaBU95f8/vnnd5wK9Vym/0VPWxD8fojwLaM3SF5p7LcGCMfOW8uVKrktm3NABAu9WkO/twjJ6qPgoTcADXzh1K6Tg4S1JKISWo1KpUlY9c9iamp4hFJAAAmE4E39LQNLtSH7jEfhQCDF2B6USS2d7EmAzab7A3gKErWIcXWvuWhv4oQHw6Y77cYtaoYx1epBQSgJv5+00nkqotrrfvCbIkLTSK8K8AUavO/dMRPJcVAw6MlbIkRZakmB5fR/mui3/gT/QEfvpdfKIiSK8AAAAASUVORK5CYII="
         },
         {
             id: "SAVING_GRACE",
@@ -2520,7 +2544,9 @@ const apothIcons = {
             name: "Saving Grace",
             description: "If you would die and have more than 1 HP, your HP is set to 1 instead.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Saving_Grace"
+            wiki_url: "https://noita.wiki.gg/wiki/Saving_Grace",
+            ui_name: "$perk_saving_grace",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGUlEQVR4nGP8//8/AyWAiSLdDAwMLMgcRkZGBkNZ2f8MDAwMbFzsGIp/ffvJwMDAwHD+8WNGmMtRDDCUlf2PTSMMwOSgljAyMBDwwsG9WQwnbtxmOLg3C6caFAMWTTKHs+f12TPYO09jsNBQZbB3nsYwr88eqzqG////w/Hbq7n//38+9N9cXeW/ubrK/6tbk1Foc3WV//8/H/r/9mruf5geFAMCPEz+//98CMUQZAyTC/AwwW6AubrK/8vrQ+AKYQYh8y+vD4GIQfVgBGJKxQU4OzC0CIVGl8cIxF/ffjLM6TCAa3p+/wMDAwMDw/P7H+CGzOkwgKcHBgYGBkbkpGwkJ4c3HSBbdO7RI0YMA8hJiYwDnpkoNgAAipvQlA1JZRsAAAAASUVORK5CYII="
         },
         {
             id: "INVISIBILITY",
@@ -2528,7 +2554,9 @@ const apothIcons = {
             name: "Invisibility",
             description: "You're invisible. Stains, casting spells, kicking and taking damage makes you temporarily visible.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Invisibility"
+            wiki_url: "https://noita.wiki.gg/wiki/Invisibility",
+            ui_name: "$perk_invisibility",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAtElEQVR4nGNgGGjAiC5gKCv7n42LHc5XCWmCs68tKmdgYGBgOP/4MVwfCzGar12+wMD89y8DTM5QVvY/zBAmQk68dvkCAwMDAwPznY1Y5VEMQLYdH0BWh9MFf1X8GRgYGBi0dA0YtHQNcBqG0wB1A2OiXIM3DGD+R3YR0QZcu3wBxem4XIRiwK9vP+FsdH/fvHAWqzqsLsDmXKKi8fzjx4y/vv3E6dxf334y/Pr2EyUlDgMAAI7AOxIeRey2AAAAAElFTkSuQmCC"
         },
         {
             id: "GLOBAL_GORE",
@@ -2536,7 +2564,9 @@ const apothIcons = {
             name: "More Blood",
             description: "Blood blood blood.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/More_Blood"
+            wiki_url: "https://noita.wiki.gg/wiki/More_Blood",
+            ui_name: "$perk_global_gore",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8klEQVR4nN2SoQvCQBSHPw1OBG3CQAZmm5jEoFmbLIh/oBiGplksGtQkNoNJGIOBTWF4KxrkjjungknwB8c9jve+9+O9g18r8/xQd5wbQK5gpZKTWACwCwJVZwDqjnOThZ5dwY1CAHrdBlYpjzhf8WdbklgoSPadNTcK8ewKAFYpb9y6DMCzbQkZLo4AbJb7VF7Kgeyqx6NOFYBmu/bZgezaH7QMkK7+oPUZ0Os2mIxXuFGohqhrMl4ZkBTAn21Vd7mJS3RSB0Ccr68Bcs+ys+5gvjioeOqt3zv4VgZgFwSZJBbKCTyGVrTLABTtsvGJ/kR3ZHpgV7dZAYwAAAAASUVORK5CYII="
         },
         {
             id: "APOTHEOSIS_NO_BLOOD",
@@ -2544,7 +2574,9 @@ const apothIcons = {
             name: "Smoked Corpses",
             description: "Enemies leave behind no corpse, and bleed no blood.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Smoked_Corpses"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Smoked_Corpses",
+            ui_name: "$perk_apotheosis_no_blood",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA60lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHhK6ZjYsdq2a3tFIGmBzMEgwDcAG3tFKGc+tnMoiI8mHIoRiAzWYODlaGc+tnMhgFpjOoOEUwMDAwMPgU1MDlWQjZbhdXwMDAwMDA8+kYAw/U57tmdWN3ATZwaNEEBp5Px+B8t7RS3F7A5wIY2DWrG8UQlGg0V1f5z4AFuDqowdm7D9xiYGBgYDh58w4jhgtg8YwNwDSiqyMqGvEBFAPOP37M+OvbTxQbgiKsGXglRBkYGBgYeCVEGX59+4mSEocBAAABlUAAL1nQGQAAAABJRU5ErkJggg=="
         },
         {
             id: "REMOVE_FOG_OF_WAR",
@@ -2552,7 +2584,9 @@ const apothIcons = {
             name: "All-Seeing Eye",
             description: "You can see everywhere.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/All-Seeing_Eye"
+            wiki_url: "https://noita.wiki.gg/wiki/All-Seeing_Eye",
+            ui_name: "$perk_remove_fog_of_war",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABKElEQVR4nNWSMUvDUBSFv4i00KlL6ZQtkLkgxFKXQn5C1oD/IGtoOrYh4CD5B0IGl+AvCGRRoiA4i26dSpdMhdbhdQh5JubhKl54y3n3nHvePQ/+urSfwETXBUBv0CdyEon7qctxfwDgbbPRlAITXRe9QR+AyEmIs5W88+wlfuoCcNwfpMiZylZNnmHj2Utm2MTZquVIWZZpiDwoxI11K/KgEF8fQp4mbpmG6DwhDwoBcHV9+fsU4PHuGYD5eqq1dmCZhoichNesariwv8WamJ+6vLx/agDnqgkP5T0AT1kmsW25qwRoO+ws0U9dQieWpPoAhE4sk1AK1Dk3RcbDUYdc9ykdQBXjIvUkeTwcsUg9ZYydn5gHhWiSm7Utd4ROzHw97fD+cZ0Ax42FWeqrFkwAAAAASUVORK5CYII="
         },
         {
             id: "LEVITATION_TRAIL",
@@ -2560,7 +2594,9 @@ const apothIcons = {
             name: "Levitation Trail",
             description: "When levitating, you leave a trail of magical sparks that harm passing creatures.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Levitation_Trail"
+            wiki_url: "https://noita.wiki.gg/wiki/Levitation_Trail",
+            ui_name: "$perk_levitation_trail",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9klEQVR4nKWTq47CQBSGvyGkTfoKMDV0EwQGBGE1hpdYxcXieAEcwWDA4Ai2mtVrNhgMoskWVXgFEjCD2DA7pRSy9FdnMue/zJkZoZQiC3KZ2EDeXAghqEqpACzHBqDTGgCwP4QUCx5Tf8gmisQ1eSxBVUplObYmA9Qri5ij5djaJJHgFp3WgPX2V6Regd7YT/TEEpjOJvzPd9bbj7t9D4c4X40ebQMgzGtslN/0otQP2U28VOJ38CNSE7SDP3I7CF9L8Ax3E5hupX668/l40nVMYOZKXe8m3tP4cHMEgJrrquYy4qubHODV2XyJCYH/IvNnyixwAbs4VEZ5G+AjAAAAAElFTkSuQmCC"
         },
         {
             id: "VAMPIRISM",
@@ -2568,7 +2604,9 @@ const apothIcons = {
             name: "Vampirism",
             description: "You lose 25% maximum health, but can replenish health by drinking blood.\\nBlood doesn't affect satiation level and you no longer suffer from food poisoning.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Vampirism"
+            wiki_url: "https://noita.wiki.gg/wiki/Vampirism",
+            ui_name: "$perk_vampirism",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAl0lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHhK6ZjYsdRXOLsBicDZODWYJhADkAxQB0ZyPbjksdQRcoq6riNAivAcia8BnCQsh2BgYGBgk9PYjA21fEuwAGJPT0GDgDAxGG4DMAFs8w22Ga0QGyOpxeiDxxlGE5AwODBJTvOGs6VnUUp8RhAABoQSVypf3RgQAAAABJRU5ErkJggg=="
         },
         {
             id: "EXTRA_HP",
@@ -2576,7 +2614,9 @@ const apothIcons = {
             name: "Extra Health (One-off)",
             description: "You gain 50% extra maximum health.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Extra_Health"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Health",
+            ui_name: "$perk_extra_hp",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArklEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/bBqxGQQzhAWbgqkKygxCEhIMEnp6DI6zpmPwkQGKAWxc7CiKOQMDGfYzMDC8uHQJhY9sCBM+p35fvx4vH6cB7168YHhx6RIDA9R2bDROA7If3MUwBAau7drFEHniKGEXIBuC7CqYOEED0A3BpRnDAFhCQTcEXTOyOopT4jAAAOsxXvfitrJrAAAAAElFTkSuQmCC"
         },
         {
             id: "HEARTS_MORE_EXTRA_HP",
@@ -2584,7 +2624,9 @@ const apothIcons = {
             name: "Stronger Hearts",
             description: "Hearts bestow more maximum health.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Stronger_Hearts"
+            wiki_url: "https://noita.wiki.gg/wiki/Stronger_Hearts",
+            ui_name: "$perk_hearts_more_extra_hp",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+klEQVR4nN2SMWvCUBSFv2clomOnLCGKBTdBMnR2c3DJn8jSf9JdhP6JjH3g4OxQAtkKlja45C2OlrrcLjW810Q7dCj0budyzvcOvAt/Per7YhIEAuD1OjXz8fABQLbbVTkHMAkCaQo2gU6QdpNh0R9y7fv44zHTh2VN2+MAvF7HMXfjmDVQ5rmjbUjrUtX3NL2ozwL2ZUmZ5/D1emYMV4MBj6tVtT8LuHt7cSCZMYQieHFMKEJmzM8NbMg8SYi0BiDSmnmSOF7nG29HN2LrRX9IoRShCJHWPM1mFEpx/7pl87xVtQanQ7GbhCIUSnFM0yps+359if9gPgHPRnKNt97DnQAAAABJRU5ErkJggg=="
         },
         {
             id: "GLASS_CANNON",
@@ -2592,7 +2634,9 @@ const apothIcons = {
             name: "Glass Cannon",
             description: "Your spells are 5 times as powerful, but your maximum health becomes 50 and cannot be increased by normal hearts.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Glass_Cannon"
+            wiki_url: "https://noita.wiki.gg/wiki/Glass_Cannon",
+            ui_name: "$perk_glass_cannon",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/klEQVR4nN2SrW7DMBSFvw4kUt5gICxRgioVJSPRWIpCi01KxoryCHuL4FKjhlUDa4dGO3WsoNoLTNqIhxxdJx6etEPs+3/useGvMRs7FnFsdtuGRvWTZN3VLFea18tlqLsZFwdRSKN6dFcDcDydh+JG9QRRyCKOjbfBbtsM9zEDacs8B0WWmI/nB1NkiSmyxEhYn417GchJx9OZVlUAtKoaVhkzcxrYvXVXU+Yp+8MVgP3hSpmnTtzCeQVJDeD+7pbH7olWVUMzi5e395l3Bdl9s55T5imb9dwbn0AKaEWUpxTSq8FypX+dJG2Z5/2JAEEUThh+f34BOD/xH+AHSCOCZYfJ/H4AAAAASUVORK5CYII="
         },
         {
             id: "LOW_HP_DAMAGE_BOOST",
@@ -2600,7 +2644,9 @@ const apothIcons = {
             name: "Living on the Edge",
             description: "Your spells deal 3x damage when you're under 25 HP or 25% of maximum health.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Living_on_the_Edge"
+            wiki_url: "https://noita.wiki.gg/wiki/Living_on_the_Edge",
+            ui_name: "$perk_low_hp_damage_boost",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABA0lEQVR4nMWTvW6DMBDHfw4IJCYmEEgeK3UsW58jax4iEytDVqa8CM/RrRkrdUQiIhNTo1aW3MnoTOjE0Fvsk+/+H6ezstayJXabuoFQJkopKq3teZqoy/yhuB1GjmnKe98rp9xTUGltoySmLnPaYQTgdL3NzXWZEyUxldazbw/gPE3zfalA5rJutyxyzJLdnVLJKoBkOl1vdMYA0BkzgyyVeQCOvR1GmiLjoksALrqkKTLv3YWSe/D6/OQtxUs/sA9DOmNmMBdvH59q1YJEPwQBTZFxCILV91UL0uNdKe+Ex0F7AMc0/ZNJ5rLOm4HbRIAoiZfu+Pn6BvA2Uf37Z9oM8AuQpXUxXCztDgAAAABJRU5ErkJggg=="
         },
         {
             id: "RESPAWN",
@@ -2608,7 +2654,9 @@ const apothIcons = {
             name: "Extra Life (One-off)",
             description: "Upon death you respawn with 100 health.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Extra_Life"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Life",
+            ui_name: "$perk_respawn",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2ElEQVR4nMVTsQ6CMBS8Z4gm8gFMsDLXDoRPYXFlZfULWLuysrj6F8ZBWWWFiQ/ARJe6WFNog1EGb+vrvbt76StJKTEHi1ndABz9QERgvi8BYLleGeTH7Q4AqNqWVPKBAPN9aWtUUHcvEwK+HCEV3KgNBHT3MTkVHFHMDJ41gRe6iGIGL3TftSI7W1MZAqngyMsEAJCXiTW2DmdcKLIzDuEVeZlgt92jq/tJAesIXd3jdKw+NhsC6p1VEh1qlFTwAY/0Vd4EweQe6EaXpiFD4JdNpL9/ptkCT+zmUc19FNdYAAAAAElFTkSuQmCC"
         },
         {
             id: "WORM_ATTRACTOR",
@@ -2616,7 +2664,9 @@ const apothIcons = {
             name: "Worm Attractor",
             description: "Worms find you attractive.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Worm_Attractor"
+            wiki_url: "https://noita.wiki.gg/wiki/Worm_Attractor",
+            ui_name: "$perk_worm_attractor",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABTUlEQVR4nNWRvUtCYRSHn1uRoQS5ubyLH2g5CdrXJRwkaBGyKWhxcswmcXGKFvsPGuQStQTZUENgNgSlYFSLccFouVB37IOCWm6DefFeda+zvMM5z+99Dgf+XEWEMCJCGDNBv2FsnVjeTq97XrLDo04HAKf+DAAT81Nmf3Z3A4Dvzy9uNU0CGBpksvSwA8DL1b0FtpcloPO7PcQOd8/1NXDFcgBIImWGvA1PWnoDA+pqC2Vdx5cu4fQE8KVLJuSK5fCEQ5aQEXvA3GKO1yeV7LKCvCK4vNa4CCsAeMIhHqvHgw3qaotapQiAHBVky2vIUWFC+/kFvIkkTk/AZHrO6AiuApCePkSO/hqMK+hN1WJQP9uW+q5QqxTRGpvkqwoH5TakN1Web9qgN5FEb6r9DToW7niBj0YRSaQwtCOgfYWx9zvc8QLne5ke7h/XD0T8dsYIF4VkAAAAAElFTkSuQmCC"
         },
         {
             id: "RADAR_ENEMY",
@@ -2624,7 +2674,9 @@ const apothIcons = {
             name: "Enemy Radar",
             description: "You can sense nearby enemies.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Enemy_Radar"
+            wiki_url: "https://noita.wiki.gg/wiki/Enemy_Radar",
+            ui_name: "$perk_radar_enemy",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABMklEQVR4nN2SMU/CUBSFP4yByPiaplMbYwJTGRhwk7A48CO64D8gLkYXB4IDaVgdnNhdG+NCcCIOjEbj1E4NaRMGIdQBB9KXPiRdTTzTvTf3nHfuvQ/+GoXdQt00NwCLmy8AVm/fDO0OmhBEcczd7SOzIJC8w11ysVxi3o3RXSHrWnMba0JQLJeom+YmFTnYdZAlz7sxfjvk+moEgDMZ5I9wci82WXIa9/qO7HEmAyzPYPr+ud9BHhlg1LxU8r0CKXp9R9rPOsiK7hXQXYHfDvO0JZQr6K6Q9i3PILK3Sxw/TWXP6esxkR3LXFlieka/HWJ5hqyft6o8HL1wsTrjefxBslzLv6A4SGF5hjrCqroVbP3uVXYwC4JCslyTLNdYnoHlGQztDrVGBYBao6K8/k/wA1IPcuKzK7EfAAAAAElFTkSuQmCC"
         },
         {
             id: "FOOD_CLOCK",
@@ -2632,7 +2684,9 @@ const apothIcons = {
             name: "Eat Your Vegetables",
             description: "You inflict more damage the more satiated you are, but you start losing health if your stomach is empty.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Eat_Your_Vegetables"
+            wiki_url: "https://noita.wiki.gg/wiki/Eat_Your_Vegetables",
+            ui_name: "$perk_food_clock",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+UlEQVR4nGP8//8/AyWAiSLdDAwMLMgcRkZGBkNZ2f8MDAwMbFzsGIp/ffvJwMDAwHD+8WNGmMtRXGAoK/ufjYsdQ7N5vBoDzFA2Lna4JUR74eTCWwxxfXaEvYBus2uJBpz9/NkrrOrwumB3zw0GgS2BDJJSYgyfXv9DMRCrC9BBqEYlA2faUYbvs6wZ5BgYGB6ZryXegDKL+Qyi4qIM0u8DGNYzbGBgYICEBTrA6gW4Zj1Rhgu7rzEoCqjhdCWKC359+8nAxsXOcP8DxKbXu18zMDAwMNz/cIth9Y12FHV4XbD6RjvcEHTN6IAROS+QkxIZBzwzUWwAAMYIWb2RmQNsAAAAAElFTkSuQmCC"
         },
         {
             id: "IRON_STOMACH",
@@ -2640,7 +2694,9 @@ const apothIcons = {
             name: "Iron Stomach",
             description: "You no longer suffer from negative effects of eating.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Iron_Stomach"
+            wiki_url: "https://noita.wiki.gg/wiki/Iron_Stomach",
+            ui_name: "$perk_iron_stomach",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxUlEQVR4nKVTMQrDMAw8l9JCH+Ef2Jj8KF/I3Ezp0iV7uwQ6Nn8pIVkM2fKIQLK4k41juzHUmmShu5MsiSilkGKHJDSAoxvIKFUAcLqcveR1XgAAn2kiOkbsFjJKVQh4f74AAFKOaOoK67wYEq+CELh9t+adFyUet2u4Ba2uFQFswG5esAJbkXERK9CfgpSj8Ye+A+Nilyj6B0PfGZ9xgaau9iv4ZSGwR6DnHAPbecE9yItyQ+Aq23tA3FtI2sR/LPmYkgm+zA5YFgqIBsMAAAAASUVORK5CYII="
         },
         {
             id: "WAND_RADAR",
@@ -2648,7 +2704,9 @@ const apothIcons = {
             name: "Wand Radar",
             description: "You can sense nearby wands.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Wand_Radar"
+            wiki_url: "https://noita.wiki.gg/wiki/Wand_Radar",
+            ui_name: "$perk_radar_wand",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGElEQVR4nN2SP0vDQBjGfzGiIHTwSDhUkkF0FZwcnfsFnLM527mf4ZyzZfYL9DM4FVxE6NTDPyElUkpS2yJxKDmSNsFR8Jnujvf5Pe97vPDXsjYfLj2vAJj2MwDmzyusyOb+6Z27iyNkp8NQa+Pb2TTvHewz7We4SuAqgRXZvH6mABw/jIhnMxOyBQBIeimuEuZcBN+cHK7vbzdneNJpH+E0FEXV7CqBjieI28jUpGGAJx0eX0ZWYwdN5jQMjLkKawWU8qRjzNUOfgW4SjDuxgZSVX711Q5wlSDprX/cH0jG3diASl0n5+2AZb6opfsDiT+QNcNHNmeZL8x9t2mEMr2UFdlNZduAodZWuSTVZM2k1mV1E/+BfgBGxm6+VloAAwAAAABJRU5ErkJggg=="
         },
         {
             id: "ITEM_RADAR",
@@ -2656,7 +2714,9 @@ const apothIcons = {
             name: "Item Radar",
             description: "You can sense nearby items.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Item_Radar"
+            wiki_url: "https://noita.wiki.gg/wiki/Item_Radar",
+            ui_name: "$perk_radar_item",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABB0lEQVR4nMWTMWrDMBSGPzXFBkMWg8hkHcGQ3sKH6Jw9c87gM3TtHEOPUfDSXSKDSUjIkJS2gzo9IRGni4f+kwTS9/7/6Ul575mih0m3gcd4o5RiWVUe4Ly5APD58YN6mYUzi/mcd+eUOE8cLKvKZ0XOeXNBtyW6LTFvCwBet1sAsiIPRUYj7NdHdFuGtW0GALquG42QAKRyDBIHxhgAbDOQFfk4YMyFGw48r1YhRtyPuwCRXDbGUNd1gLjh8DdAt2XILur7frRIAtBtyX59BAjZnXNYa+9Ckjn4vn6F6gIQiEhgIhWP8pMxXjpsm+GmYbF2p5O6AcSTGD9V7BBIJlH9+2eaDPgFg3Z24oi8HSIAAAAASUVORK5CYII="
         },
         {
             id: "MOON_RADAR",
@@ -2664,7 +2724,9 @@ const apothIcons = {
             name: "Moon Radar",
             description: "You can sense lunar energy.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Moon_Radar"
+            wiki_url: "https://noita.wiki.gg/wiki/Moon_Radar",
+            ui_name: "$perk_radar_moon",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABd0lEQVR4nMWTzUoCURiGnzH/ZoSZECdJ0nW0qlVGJJQLkVZBi67DtdfgPRQRgYWrkKCgqMhF0EZor2FMluDE6Oio0ypxcGpT0NkdeN/nnPf7EWzb5jfH8yv3XwC8kxdBEFiJx22Adt4AoPtkAZAoR+l3egA81uvCV3QHYCUet/1SgGauhVoIO16qZTUS5ehYBwhTAMBhbuZaJC+2ECWRZd3DIDmiWrn/PkI7bzjMqZsMG5kUqhqh+2Fi9nrMKjK35+fugMlfJC+22Mik0JvvpNObPNxVWFpcZFaRHdpvuyBKIqoaYWdvl1hsntW1dd60BrH5GIos/wxQC2G8Mx6CwSCddheA6MIc6e0MoVAIv8/nDlALYZq5FgCD4QjTNDEMA+35dayRFJG+ZbkD+p0eaiFMLatRrdxzfXlFd2Ay9AzRdZ1G44XS8Qml/cOxx7WIiXKUWlbjiAM4BUWW8ft89C2Ls2LRoRUml2lyEv1SYArsNonCv2/jJzcQkgFScusZAAAAAElFTkSuQmCC"
         },
         {
             id: "APOTHEOSIS_PLANE_RADAR",
@@ -2672,7 +2734,9 @@ const apothIcons = {
             name: "Divine Radar",
             description: "You can sense otherworldy energy somewhere in the world.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Divine_Radar"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Divine_Radar",
+            ui_name: "$perk_apotheosis_plane_radar",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABN0lEQVR4nNWSsUsCYRjGf0YoCC6CnEJ3QxwKqYNDOJRBLXE19Ae0B7VkboJ7m0QNUUNtEVEQLUdCY0NTSyFFLud0CIKDhja8Tcqdfs7RM77f+/y+9+V54d8rMF7I6boAdCpdAL7rPwAYtsag1wfgtdkMKAE5XZdgOESr1CZWjfrAjuVi2BoAg15/BJkZn8BrbpXaOJbL4nIBw9ZwLHdiBR+gU+n6zLFqFMPWiBXmRms4lkswHFIDVFMA7KzvKX+fChhqbWOTi7t74vE4td1nZc+sqrj0uIJZzlIwVllIpwHIJLPc1J5oNBpcOse8fHxNGvMpU+bPopJPmZJPmZIoRuTk+khERMoH+5IoRkZvQ48yRm9kAIen52w/bCljVK4wHtlt/coH9GrqJXqjSqYzfL6/KS/x7/UL36d7ZeRNyk8AAAAASUVORK5CYII="
         },
         {
             id: "MAP",
@@ -2680,7 +2744,9 @@ const apothIcons = {
             name: "Spatial Awareness",
             description: "If you stop for a moment, you can sense your location relative to the Mountain.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Spatial_Awareness"
+            wiki_url: "https://noita.wiki.gg/wiki/Spatial_Awareness",
+            ui_name: "$perk_map",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA80lEQVR4nN2SsWrCQACGv4goOJVASJfEoRY3IZNToas0g1DfwqEQdOwDFCRPoltL3kEEx+7JUgkEJ0U7xOlC7nLqKPhN4cj/3Q//wa0x1APPcXKARqtJGmQA7H//AXhcPACwThJDK/AcJ2+0mgCkQYYVmpI8HmxwI5vj7lBIarpa5XAaZMSDDQBuZBffAkkgapfDVmhKQTey+Xvf6gXnWpy7/aJAx3K8KmRXBVZoFisAzL9/GPlvfEym0n/SCv1uJ9fVF2GBPxzy+TUzKoLyjGIyNQxIM9bV6m67Tc/zeOo88zJ+rYRVLr5ElePuAMgv8Q44AZwQXxFv9uuAAAAAAElFTkSuQmCC"
         },
         {
             id: "PROTECTION_FIRE",
@@ -2688,7 +2754,9 @@ const apothIcons = {
             name: "Fire Immunity",
             description: "You take no damage from fire.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Fire_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Fire_Immunity",
+            ui_name: "$perk_protection_fire",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABD0lEQVR4nMWTMUsDQRCFvxVRki7F4RXeFoIpD3LXKwRCSBexyF+xC6m09G9YiHZBBEH7RLD0wGIT5OQKu4SkWascu7cXC69wutn39s3bmVmhtaZK7FS6DeyaiRCCVhBogL36vkNeL1YAvM5mYuPcEmgFgT46v8Lz5daKWarg9kIDwhEA8HzJ5OUOgPvjR/pJx8LjkzM+jNzqQdF2IwpzoW08x0ExngdfQAhJOe5MIUuVlde6bWrddu6iiDsC8/EQ2YwB+J6+5eeNKEQ2Y+bj4e8CZvSTDp+X1ywfnji9OSjlCHMTIyn1pkGHvRHqfZJjZvX1YsVUqfIxWk/pjfB8SZYqx3qpg79sovj3z1RZ4Af6MGA/Fla0zgAAAABJRU5ErkJggg=="
         },
         {
             id: "PROTECTION_RADIOACTIVITY",
@@ -2696,7 +2764,9 @@ const apothIcons = {
             name: "Toxic Immunity",
             description: "You take no damage from toxic sludge and other toxic things.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Toxic_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Toxic_Immunity",
+            ui_name: "$perk_protection_radioactivity",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABKklEQVR4nMWTP0vDUBTFf09KC51cAgFJCiItOAglizrorEuRLoL4ATKIq4uEbN37GQJ1EHGw2RxcnILgYFG65M8QCOISBF3iYkKaGilm8GzvvXPPPee9d0WSJFTBUqVqoJZfCCHoKkoCUG825sif7x8APPi+SJ3PCHQVJVntD5BktbRjFHpweZYAYk6g3mwgySrO3RUAuhmzvqZxcvSccbSdA4Kcu9I70M2Y+2ufjeU+Q6tT6qhUwJ284k3eOD0/5mnqLC4QhR4A41GLzd4KWz2Fi8EjuhkztDrZeYpaUSCwDdQ9E+/FYTxqfe9u405cwCGwbxeLkGL/0M0c3Vi7v0dI3zmwDdS2lhUCqG2NwDZmeD9GKEaRZJUo9LLiIkR+Fv7yE8W/D1NlgS+sG2/VYrydogAAAABJRU5ErkJggg=="
         },
         {
             id: "PROTECTION_EXPLOSION",
@@ -2704,7 +2774,9 @@ const apothIcons = {
             name: "Explosion Immunity",
             description: "You take no direct damage from explosions.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Explosion_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Explosion_Immunity",
+            ui_name: "$perk_protection_explosion",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABNElEQVR4nMWTsUoDQRCGvxVRYiNIDq/wtrAItjFpArYWMVjdAwhiYWFhqRYeWng+hCg+wGGXvIAQkKCtVYrLFZGEA5uEpFkL2WOX4xpTON3O/vPPP//OCqUUi8TSQtXAsnkQQlD1PAWwsraaA88nMwA+BgOhlVsEVc9T2/49jisLO46GMUQXChA5AgDHlVw5J/hRy8q3w5Rpr8sdD/SNvOWBlu1HLdphyuPms1WsSc3xCk2c9rq454e8vZxlxZrQjBzBaBgD8P06prxzDUCp3gDg+Osouy8kSDoBslJjfa/M+PM2U9MOU2SlRtIJLHzORB2leoODyw0iv/k7ewSyksdZCvQ7J52A06d9C2h21zgAYa7yrpTKdHireYPjSkbD2JI+n8x4j2ORI/jLJop//0wLE/wA88N7RjK4LSkAAAAASUVORK5CYII="
         },
         {
             id: "PROTECTION_MELEE",
@@ -2712,7 +2784,9 @@ const apothIcons = {
             name: "Melee Immunity",
             description: "You take no damage from close-range enemy attacks.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Melee_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Melee_Immunity",
+            ui_name: "$perk_protection_melee",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/klEQVR4nMWTsWvCQBjFf1e0BUchkiU3dHBxkoCb2aV0KIX+Ic3ipt266B8iiIOIu26COHXtEB1CAx0LbYdzkAuXXuJghr7t7t573/u+uxNKKcrgqpQaqJgLIQRtz1MA17Ubi/zz9Q3Abr8XOnnGoO156vbxFceVhRWTOIJpXwHCMgBwXMl2NbOEm8WIzl2IHzzwbuxnZpAXG+B5fhLn8QqHGHY/U/H4Piyi2S0kcQTAaF1nNfwl+CPW54UJDssBsunz1PogGFbTJACy6XNYDs4baEzeGmmSc8gY6HvWKUyY1TUPcmaQaaX3guNKkjiyomsI8y9c8hLFv3+m0gZH58lcQnJao0AAAAAASUVORK5CYII="
         },
         {
             id: "PROTECTION_ELECTRICITY",
@@ -2720,7 +2794,9 @@ const apothIcons = {
             name: "Electricity Immunity",
             description: "You take no damage from electric shocks.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Electricity_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Electricity_Immunity",
+            ui_name: "$perk_protection_electricity",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABH0lEQVR4nMWTsUrDUBSGv1ukgnuhiAnFoXspZPINJIsODYgvkQy6FTeXZO0TFFLBZgjS2YyB4CuUtkihuAp26HUINySkacEM/ss9F875z/+fe4+QUlIHjVrVwEn+IoSgp2kSoHl2Wkrefv8A8LFcCqW8QNDTNHl5+0yrrVd23KwX8PooAQF7LLTaOl/nTZIoIImCLB49XJFEQYm8QKBkz/0JduhmcfzmYlw7dKxBIa9kQcEOXabjGDt0sRrg7yodlS1s1gs80+HmzsiKPdPBDl3m/iSdwSGC1WyI3u3jmQ7+DqbjGEhPvdtnNRseJsjDMx1e7g0gncVRC+qdlYqONcj857urPKgYoiK54In3z+1e6Qoivwt/+Yni35epNsEvzVR4V4iQdzUAAAAASUVORK5CYII="
         },
         {
             id: "APOTHEOSIS_ALCOHOL_IMMUNITY",
@@ -2728,7 +2804,9 @@ const apothIcons = {
             name: "Alcohol Immunity",
             description: "You take no effect to being drunk.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alcohol_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alcohol_Immunity",
+            ui_name: "$perk_apotheosis_alcohol_immunity",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9ElEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHgq5ZKbiDQVRCDqeNr188YmBYW/EfZggLugJRCTmGs4fWw/n2TCsYDv6LgPON7QIZ7iGpZ0LWjM3ZJoqsGGLI6pgwZNGAqZYsXnkMA16/eARn2zOtYDh97THDqbb3WOWxGvBkez2DnJoxAwMDA8NJeWWGJRK6DFGnfzAwMDAwyKkZMzzZXo+iHiMQkYH5w7sMJkysDKZCsgwRDJKEvQCLZ2RXnLn/m+H0tccotsPU4XXBk+31DAye3QyiEnIMq188wnA6DFCcEocBAAB80U+foEKE/QAAAABJRU5ErkJggg=="
         },
         {
             id: "APOTHEOSIS_TRIP_IMMUNITY",
@@ -2736,7 +2814,9 @@ const apothIcons = {
             name: "Shift Immunity",
             description: "The world is set in stone and can not be shifted so long as you live.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Shift_Immunity"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Shift_Immunity",
+            ui_name: "$perk_apotheosis_trip_immunity",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9ElEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHgq5ZKbiDQVRCDqeNr188YmBYW/EfZggLugJRCTmGs4fW4zTA2C6Q4R4SH8UAdGcXVvYyMDAwMKzbcZbh4fllWNVhuABZ897LEDa/tDGDPAMDiiEwwIQu8PrFIwYGBga4ZhjglzZGkYcBlFgwV1f5z8DAwCDj2cjw6NZZBgYGBgYJfg6GFx9/MDAwMDDIqRkzPNlez8DAwMBw8uYdRqwuQAdurl545VEMgMXzk+31DHJqxigKkW2HqcPrApghV1/9R9GMDihOicMAAAAA1FBtVlh9tAAAAABJRU5ErkJggg=="
         },
         {
             id: "TELEPORTITIS",
@@ -2744,7 +2824,9 @@ const apothIcons = {
             name: "Teleportitis",
             description: "You take 20% less damage. You teleport away every time you're hurt.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Teleportitis"
+            wiki_url: "https://noita.wiki.gg/wiki/Teleportitis",
+            ui_name: "$perk_teleportitis",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxUlEQVR4nGP8//8/AyWAiSLdDAwMLMgcRkZGBkNZ2f8MDAwMbFzsGIp/ffvJwMDAwHD+8WNGmMtRDDCUlf2PTSMMwOSgljAyMKB5wT3QH86OSkyCs0/cuI3TULLCANmVLOiSuGyGsS00VHG7QFJKiuH5s2cMDAwMDHnllQyTOttRFFtoqGJ4B8UAmGYGBgYMzciG4DRg/84dcPay+fNwasJpACyeCQFkdYzISdlITg5vOkA24NyjR4wYBpCTEhkHPDNRbAAApeJNjIvsmjIAAAAASUVORK5CYII="
         },
         {
             id: "TELEPORTITIS_DODGE",
@@ -2752,7 +2834,9 @@ const apothIcons = {
             name: "Teleportitis Dodge",
             description: "You teleport a short distance away when an enemy projectile is near.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Teleportitis_Dodge"
+            wiki_url: "https://noita.wiki.gg/wiki/Teleportitis_Dodge",
+            ui_name: "$perk_teleportitis_dodge",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABemlDQ1BJQ0MgUHJvZmlsZQAAeJx1kc9LAkEUx7/+CIOEOnTwEOHBosAilCCik4FeKkQNKjq0u7oa7Ooyu+Kha9BV6BB16dc/0KmuQV07BUUg/Q1B1CVk+45WSugb3s5nvvvem5k3gHfH0EzbPweYZUdkUonwxuZWONBA8Hcomm2tZpM59LXPJ3jk/Dgja/WP62lD+YKtAZ5BsqFZwiHTsVhzLMlX5FGtpOTJ9+So4AHJb1JXW+z1Sy62OSRZ5DLL5Ch5pNjFahdrJWGSl8gR06hqP+eRNwkWyutZzmn6GIpQYHIoCCOGWXoYU8iiCgsFCEatIUUtyQiV611oJIf/8lTTVCrQqRpUptnn3nuNt/bSUWa0aGXarTwHNVYTzKXJt/nfc1uPx9rVgglg4NV13yeAwCHQrLvu17nrNi8AXwO4LXfyK2fAwgf1ekeLnALD+8D1XUdTj4CbAyD0YilC+Xs1b3y+3T+aT34un4HcHrDyAByfAJM6a21/A62UaO0lqHqEAAAA6klEQVR4nKWSMYvCQBSEvxVJIHXYTjvBVqv8hlTJfxJbf0pSHLlrrhGEq3KtYLd2S2pBm70qYTe7CmemWXaZnTfz3hPGGKZgNuk3MLcvQgg2i4UBaJUiW68c8uN2B+D3ehW9c2FH2C6XplXKqxISapUSwQhjcrZe8XO+PI3gCERJTF6UDiEvSk80SuKwQF6UNHUFwGG/A6CpK0/0qYOmrkildAiplINoCM4UUinptOaw3/H99QlApzWplHwcT4DfI8dBp3Wwyvjdbqo3xiiJByf9OcbLMf4XjgN7E+1R2ZXhxSa+g8kRJgv8AYy3Y+KlZvKAAAAAAElFTkSuQmCC"
         },
         {
             id: "STAINLESS_ARMOUR",
@@ -2760,7 +2844,9 @@ const apothIcons = {
             name: "Stainless Armour",
             description: "You take 50% less damage as long as you have no active stain status effect.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Stainless_Armour"
+            wiki_url: "https://noita.wiki.gg/wiki/Stainless_Armour",
+            ui_name: "$perk_stainless_armour",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABFUlEQVR4nMWTMUsDMRiGn4jXQpebI5d2Elw6FIq4dXMV/4B/QRD/gqvQzR8hSBcHt4KCg9DBRXDShMucRdAb4tDmyHl3Dt7gN31J3vfN+31fIrz3dImtTmxgO14IIZgo5QF6g34N/PXxCcBKaxGcVwQmSvkmYohwtrlE1AQA9k/OkUoym445Oz4s9y9v7lg+PWO15f7qormE3qCPcQVgWUak2XRcko0rKuWJeAoHe7seYOfolCxNAJBKYrUFwLiCfDEH4PHlVUDLFPLFHOMKjCu4vn0o80COo9aDEG/vGoDRUJV50oBrFRgNFVmaIJUkS5O1g1UdVykhzDkuIzQuth/jWh0Ekfw3AD+m8JeXKP79M3UW+Aahon/6UbO2YgAAAABJRU5ErkJggg=="
         },
         {
             id: "EDIT_WANDS_EVERYWHERE",
@@ -2768,7 +2854,9 @@ const apothIcons = {
             name: "Tinker With Wands Everywhere",
             description: "A divine blessing allows you to tinker with wands everywhere.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Tinker_with_Wands_Everywhere"
+            wiki_url: "https://noita.wiki.gg/wiki/Tinker_with_Wands_Everywhere",
+            ui_name: "$perk_edit_wands_everywhere",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAqUlEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/bBqxGQQzhIlEF2MAFAOw2a7acghDDFkdQRfcrrGDG3Lixi38LoDZyJK8iOGJkgecvn//AUPR7ssMqx7/ZCjafRlFPUogmqur/MfmCtWWQwy3a+wY/k4+wcCca8HAwMDAcPLmHeICEaaZgYEBrhmnCwYkGilOicMAAACHPUAKyAcGWgAAAABJRU5ErkJggg=="
         },
         {
             id: "NO_WAND_EDITING",
@@ -2776,7 +2864,9 @@ const apothIcons = {
             name: "No Wand Tinkering",
             description: "Wands cannot be tinkered with, but enemies may drop blood money.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/No_Wand_Tinkering"
+            wiki_url: "https://noita.wiki.gg/wiki/No_Wand_Tinkering",
+            ui_name: "$perk_no_wand_editing",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA60lEQVR4nGP8//8/AyWAiSLdDAwMLOgCRnJy/xkYGBjYuNgxFP/69pOBgYGB4dyjR4wwMUZkLxjJyf1H1tgvIg5nF755iWIQzBAMFyBrRtaEzocBlDCA2Y5ss2rLIbgLYOLIrsQIRGSb+kXEGW7X2MENsTxyGMVwrAYwMDAwsCQvYgjlM4Qbcv/+A4ai3ZcZVj3+id8LMPBnbhyDzL0dcJd0byxl6HPVZei+8ZWwAch+ZWBgYJhWsBrukkmN/hgBiWIALJ6RDbldYwfXBKNh6hgY8EQjukuwRSEDA1pCYmCgMCWSAyjOTBQbAADd62pd2qTv5gAAAABJRU5ErkJggg=="
         },
         {
             id: "WAND_EXPERIMENTER",
@@ -2784,7 +2874,9 @@ const apothIcons = {
             name: "Wand Experimenter",
             description: "Firing newly found and unmodified wands heals you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Wand_Experimenter"
+            wiki_url: "https://noita.wiki.gg/wiki/Wand_Experimenter",
+            ui_name: "$perk_wand_experimenter",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+ElEQVR4nGP8//8/AyWAiSLdDAwMLOgCRnJy/xkYGBjYuNgZGBgYGAS62Bk+lP1kYGBgYPj1DUKfe/SIEasLjOTk/rNxscM1MzAwMDg5OMPZMDmYJXi9INDFzhB0yoshnM+GIeiUF4NAFztWdSheQLb5Q9lPhnUM2xgYTjEwrDPbxoBLHcFA3HdgL155ggbAApBsA4p2XybfgBM3bjEwMDAw/J18gjgDYPEMAxYaagwMDAwMzLkWDLjU4XWBasshhkkrzjOothzCrej///8o2FBW9r+hrOz/mNXP/purq/yX9sz5b66u8j9m9bP/MDlk9YwDnpkoNgAAbnZboe23vREAAAAASUVORK5CYII="
         },
         {
             id: "ADVENTURER",
@@ -2792,7 +2884,9 @@ const apothIcons = {
             name: "Healthy Exploration",
             description: "Every time you visit a new area, you regain 60 health.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Healthy_Exploration"
+            wiki_url: "https://noita.wiki.gg/wiki/Healthy_Exploration",
+            ui_name: "$perk_adventurer",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR4nN2Sv0rDUBSHvxSxKJQsRRxabkLbpdslU7bSRXwDJ1/DZ/ANjHRycuhscDAUF8c72TUJzSC2CFKobZc6SC5JvKCb4G+75893zrnnwF/Lqhpku70D2D+sfwverjYAqNlM5+1Vk4uJcjCk0+0xHgXIwRDhuKRJDHfhLodYJoAvbda2h5pEGvQ4fWO5yDg9v6CWhFwF1xZArQjIq69tj+z5QduF47JcZACEN5cIx9W+EiCvpiYR87mFL20A0iSm0WwB0Gi2vsYw/QFAp9vTrT+pd3xpI+pT6PcRjkeaxNpvBIxHQektjg5IXz9QKkJVg00jFHV2cszt/YvuxKQSIN9zMTlXEVKMM67xJ21XG4x3kEPg95f4D/QJ0W9sy3jOasUAAAAASUVORK5CYII="
         },
         {
             id: "ABILITY_ACTIONS_MATERIALIZED",
@@ -2800,7 +2894,9 @@ const apothIcons = {
             name: "Bombs Materialized",
             description: "Bomb-like spells can be placed in the ITEMS space in inventory and used like throwable items.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Bombs_Materialized"
+            wiki_url: "https://noita.wiki.gg/wiki/Bombs_Materialized",
+            ui_name: "$perk_ability_actions_materialized",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABE0lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYkC5p8P/p5+/MUjzcjEwMDAw4GMvOXKKkYGBgYEF2YBdV+4yuOkoMxy494SBgYGBwUFJBicbBlAMQHb2iiwXBgYGBobYZ2wMyRvu4QgBNAMclGQYnn7+hrBBk4Fh8Y5fDGZSoijiTz9/w24AzIm3X7+D2DztHsOKyS4MEbl74OLogAmX02DOjsjdw7BisguKXKCnGZyNEgvm6ir/cRkoZOHJwMDAwKDP9IBh/7HrDCdv3mHEcAEsnrFpllJQZmBgYGA48p4fRR1OL6CDZw/uMnz++B5DnOiUyKppwcDAwMDw9exBlJQ4DAAAc79lTvdANboAAAAASUVORK5CYII="
         },
         {
             id: "PROJECTILE_HOMING",
@@ -2808,7 +2904,9 @@ const apothIcons = {
             name: "Homing Shots",
             description: "Your spells home towards enemies very slightly.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Homing_Shots"
+            wiki_url: "https://noita.wiki.gg/wiki/Homing_Shots",
+            ui_name: "$perk_projectile_homing",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAx0lEQVR4nGNgGGjAiMyREhD4L87Ly8DAwMDAxsWOVcOvbz8ZXn7+zPDswwdGBgYGBiZkSXFeXgY2Lna45gWePhgGsHGxM8AswTAAGUyRVUChcQEUA5Bt5tHRYUjYvoWBR0cHwyXI3kMJA3N1lf/ILuDR0WH4cuUKQ87jBxg2n7x5BzMMkAFME4w+ceMWYS+gg4TtW+BsCw01rIbgNQAdWGio4Tfg17efOJ2KLP7r20/cLoDZAtMAo7HZzsBAYkqE2YycEocBAAAsYUOsDcee0AAAAABJRU5ErkJggg=="
         },
         {
             id: "PROJECTILE_HOMING_SHOOTER",
@@ -2816,7 +2914,9 @@ const apothIcons = {
             name: "Boomerang Spells",
             description: "Your spells arc towards you, but gain extra speed and deal extra damage.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Boomerang_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Boomerang_Spells",
+            ui_name: "$perk_projectile_homing_shooter",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6ElEQVR4nN2SMQrCQBBFnyIJRHsrBYOiFhaaQs9gId7AHMM2nTewzREEzyBoEexEURLQKgeIoI0WkiXZTcBO8MMWMzv//9nZgV+jICf6tdoLQDP0VH7cc1jt5gDsbzfBK8pkzdAzyZvzmulwgWbowkQRyEMYBRyuHmEUKHcpAdk5RrXcYDKaUS03lLrcDrbHMwCWaQuRZJwrEBNHnRaWaeP5LpXuUhzPd1MiqV8YtpsvMjDuOcBnFp7vArA7XQpKB7G7jDAKMgeoCAzqdaVAfrNl2jzvDxGXMmUTiFvOw9ebCAjn5Cb+Ad64/EeuZ9gOkgAAAABJRU5ErkJggg=="
         },
         {
             id: "UNLIMITED_SPELLS",
@@ -2824,7 +2924,9 @@ const apothIcons = {
             name: "Unlimited Spells",
             description: "Most spells are now unlimited.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Unlimited_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Unlimited_Spells",
+            ui_name: "$perk_unlimited_spells",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6ElEQVR4nKWTPWrDQBCFPzlBAp0hqAhWrMaNGusCAV8mTc7g2oVziRzB4E6VKrlwIyxIseQMARvMSyVHWnkVjAYGluG9Nz8740lijE1GsYFHO5BGkQD8MOiBzz8nAEpjvJsVpFEkPwwojaGo6g65qGpKY/DD4JoEAElXX8ymkqTFbKr22xFD0vAMsiSmqGqyJHZiBgUast1O23pDbBOazLdiTgEb9L47sH6dO9v4p4UjAJePwonpCDT//FfJCwAPbxku3GAF8Spn87knXuVOjGffgr2J389Lnr62ncztTewJ3Gujj2m0wC8gPXVoZCsXGAAAAABJRU5ErkJggg=="
         },
         {
             id: "FREEZE_FIELD",
@@ -2832,7 +2934,9 @@ const apothIcons = {
             name: "Freeze Field",
             description: "Liquids freeze in your presence.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Freeze_Field"
+            wiki_url: "https://noita.wiki.gg/wiki/Freeze_Field",
+            ui_name: "$perk_freeze_field",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyUlEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOz/3M1XGVZe+8LAwMDAEK7Fg2LAymtfGMK1eBgm+2rDDWFCt2VmuBGGRgMlNrhmAyU2FDkUA2DONlBiQ1F84d4vhnYfIQYGBgaGTFMdFO9huACmwUCJDU7DNCbq82KoxWrAzHAjuEtwacRrAAwY8kKcOv/iZwYGBgYGCw1V0gyAaUAPOJwGwOIZ2XZ0Nro6vC5Adwk2QHFKHAYAAMXzO2gt6QONAAAAAElFTkSuQmCC"
         },
         {
             id: "FIRE_GAS",
@@ -2840,7 +2944,9 @@ const apothIcons = {
             name: "Gas fire",
             description: "Gases near you ignite automatically.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Gas_Fire"
+            wiki_url: "https://noita.wiki.gg/wiki/Gas_Fire",
+            ui_name: "$perk_gas_fire",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxElEQVR4nN2SMQ6CQBBFn2I02EG/VyDBhp4GaTkOp/AktGIjN8CEK9BLJ9HEYLVkd2ENnYm/2Z3NzJ8/8xd+jZX5EAoxAGz3u0ny6/EE4Na2Y51GEAoxqIWp74z38/2tEUmSjU1a6jtakRlLrNVAdpfJxdHVFEhFqkqNwOzkHQIAqjyakFgJJKo8wk3i8bTBStDVDQBuEtNfrto4KiZLlDKzsqfghHcI6OqGrOxnF2m18ZsLi2w0FzZn4USBVAHLf+If4AMuu1ibfPPrGgAAAABJRU5ErkJggg=="
         },
         {
             id: "DISSOLVE_POWDERS",
@@ -2848,7 +2954,9 @@ const apothIcons = {
             name: "Dissolve Powders",
             description: "Sand and other soft, powdery materials dissolve quickly in your presence.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Dissolve_Powders"
+            wiki_url: "https://noita.wiki.gg/wiki/Dissolve_Powders",
+            ui_name: "$perk_dissolve_powders",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABB0lEQVR4nN2SP0vDQBjGf3Wo4NatGA+DyFW4KZNWUIglIK5Ozukk+BUq+jnsJxHrVnCKSwaLBEu90DGTYJc45ci/1sGh4DMdd8/7u5fnfWHdapQvHCFSgObWZsW8+PoGIJjNTF0B4AiR1hXWgTLIxm/mvt+rPWcqAMq/9/0e02gOgOcqHoZPFd/SDga3PsdnDrt7bQAen0MAlLSWd5AvtmWL8Shge8fGc5V5Cyd6NUBJi/jzg/EoYBrNsWWL7umRgeRhUJrCYWc/zUyxTuieHJgMYp1weXXO/d0QgJe390YF4AiRXt9cmLDyygKNdULwGpkxrtwDJS3CicZzlQkRinvw5038B/oB1mhh6QAYkNIAAAAASUVORK5CYII="
         },
         {
             id: "BLEED_SLIME",
@@ -2856,7 +2964,9 @@ const apothIcons = {
             name: "Slime Blood",
             description: "You bleed slime, but slime no longer slows you down and you have higher projectile resistance.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Slime_Blood"
+            wiki_url: "https://noita.wiki.gg/wiki/Slime_Blood",
+            ui_name: "$perk_bleed_slime",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHUlEQVR4nN2SMUvDQBiGnzo0pSUVh0KX4FDRyaE4ZCidxTgInTr3H/gLSjY3ZxfnClJxsCIuSqmSQboJBkEkS6GC0ELIZYmD9siZRNwEXzju4/jeh++9O/hr5b4f1A0jAsgXtURz6AsAxp4nfQqgbhhRmnHX2kIrFxCzgIvBA6EvJGTpp/GO1wcAaOWCsselAPJFTZoAOq5F1xyy+XIAwP3to+xLjWBurEWLumsOWX2fA3BSO6K0/Cb7+r0RztNzdoTtnT1sp8nrig6QMLfajfQIAK12g6vLcwAFkqUEoN8bKfdgO03mk6lcAGIWpAMW79xxLQD2Y6DrG1fWZ6d32RPEdfgF+nWEseflQl/ISeDzTvRqBQC9WlE+0T/RB8x9Ys5fpACDAAAAAElFTkSuQmCC"
         },
         {
             id: "BLEED_OIL",
@@ -2864,7 +2974,9 @@ const apothIcons = {
             name: "Oil Blood",
             description: "You bleed flammable oil, but are immune to fire.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Oil_Blood"
+            wiki_url: "https://noita.wiki.gg/wiki/Oil_Blood",
+            ui_name: "$perk_bleed_oil",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABRUlEQVR4nN2SsWvCQBSHP0tJIFsjWiwIRSKFpg4dQnFzVzJ0cPM/KB0EB3FyEIVCh9K1k506OIgdSpdsQRycHCzikkqhxYyBZLFTj0TTudBvubt37/3e+x0Hf01iO3CezW4AJEUWsXqjTFJVWbsuvfaAqeOIur3tYkmRkRQZs2qKeFJVxSopsmiyIxBm+DTErJoUSwYPjzYA93ejnbyIQLizWTXRjo9IpTOc6acMRjOurisiL/YNLk60DUBO1zhMHZBKZwBYrd65rOgir9XsM54vErEWOt0ay9lC2Pj6/Ijct5p9Ot1avIV6o0yr2QfAtiYUSwa2NYl032Y/fLi9eebHwnK2wLYmAFgv40jR2nXjJwg8H0BYCPNqvYl9rz2IFwiT07Vfxw4TEZg6TiLwfALPF1PUG2UKRh6AgpEn8PzIT/wHfAOVeGQueHcOlAAAAABJRU5ErkJggg=="
         },
         {
             id: "BLEED_GAS",
@@ -2872,7 +2984,9 @@ const apothIcons = {
             name: "Gas Blood",
             description: "You bleed flammable gas instead of blood.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Gas_Blood"
+            wiki_url: "https://noita.wiki.gg/wiki/Gas_Blood",
+            ui_name: "$perk_gas_blood",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJklEQVR4nN2SMUvDUBSFv4q00DEZmqV0sUMJHQRLEVe3+gsEF2dRCGQQpw5qQegg/gFx72QH0UIRHDJ1KgWHQsjyMrw3BhKHOkhDniaLi+Cd7n2c+91z4MFfV+n7g3t/tgKQQiH8ELvbYucDTMNAKsWgP2IWBOneRnZ5u15fZWerUWPuLTANA/iClKsVTacBAObeAikUpmUg/BCAi/MHAO5uH39E0ADlagU5WSL8ECkUdrcFgH28y/DljZPTg1RX6ABIIesY6x7g8vqo2EFWICdLXq/GCD/EatRw9vfSOFmIBnDcXpo36+awuZVnFIDN7DC8GeeKpk+eDlUq30ESxYWXnqfvaT/oj/IBvykNMAuCUhLFmhPH7dHuNAFod5okUaz9xH9QnzRvaejS4V2XAAAAAElFTkSuQmCC"
         },
         {
             id: "SHIELD",
@@ -2880,7 +2994,9 @@ const apothIcons = {
             name: "Permanent Shield",
             description: "You gain a small, permanent shield.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Permanent_Shield"
+            wiki_url: "https://noita.wiki.gg/wiki/Permanent_Shield",
+            ui_name: "$perk_shield",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwUlEQVR4nN2SQQqDMBBFf0tVkG67zAHEgLjwHDlKzpKjeIWuCi6KMOIBvEIR1IUuSkJG66K0UOhfJTP5bybDAL/WYR3IhZgBIIyjzeOxHwAA965zPgbIhZh9Y2HInSstGchCTnutFYbQUMvuPsSKAWz1whDodsVUly5HD+UgfpfHvcq+GQCmukRDLfvWS8C7+j6g0hKpTBBkisWDTCGVyWaQbIhjPyCMI1RaPmdxvricb7b7sAGsO9nbA18fb+IfaAEgo00bt1X1tQAAAABJRU5ErkJggg=="
         },
         {
             id: "APOTHEOSIS_OVERSIZED_SHIELD",
@@ -2888,7 +3004,9 @@ const apothIcons = {
             name: "Oversized Shield",
             description: "You gain a very large, permanent shield.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Oversized_Shield"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Oversized_Shield",
+            ui_name: "$perk_apotheosis_shield_oversized_name",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA3klEQVR4nN2SPQrCQBCFPyVEsAoqWAUbLyDaWQTCVimtchYP4FlSWaYSIYWFoIi9jVgFglgFEgJaaBbj+gcKgq/aN8z7dnYZ+LVKt4WOaR4B9GpFaU7jBIDVbidzBUDHNI950PJdBRA4ngTlEO3eWJbvMtlPlbrwXQnJVb42erUiw9khIxqHLHszonFIdsiY7KdYvlt43t0JANZiDuJ83o42AHQXfaWvrFQuag3bT/1LwLt6CDDseuHm3D8FpHFC4HiImo1mnL+nMWgCoBkaomYTOJ7cB/jCHny8iX+gEwn0ULqP4s+PAAAAAElFTkSuQmCC"
         },
         {
             id: "REVENGE_EXPLOSION",
@@ -2896,7 +3014,9 @@ const apothIcons = {
             name: "Revenge Explosion",
             description: "You release a magical explosion upon taking damage, and gain 25% resistance against explosions.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Explosion"
+            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Explosion",
+            ui_name: "$perk_revenge_explosion",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA20lEQVR4nN2SoQ7CQAyGPxBbco4HQPIAM+SCRjJJUAtyb4HgLU6SKYLc5PSyzPAAk7zDEjCgrrDdBgJBQk0vTfv1b3vwaxt1A8F0egfwlO8k35orAOfLRerG3eLjZtIqLs1S3p7y8ZQvTRwAQJQ2g3JfYb0A27k8nwBIQgXzWGI6zlt5vQoAdLAWiIAGzAGIzMow2x8AxL+qGwToOHeSAOrdliRU6GD9HmBHqLMCKvNUs1p8HsHeuTTL5zUqQ50V1FkhEJvXqyAJlWzb+ihtiNIGHefOQr/+iX9gDwuMUt57X1hBAAAAAElFTkSuQmCC"
         },
         {
             id: "REVENGE_TENTACLE",
@@ -2904,7 +3024,9 @@ const apothIcons = {
             name: "Revenge Tentacle",
             description: "You summon a monstrous tentacle upon taking damage, and gain 25% resistance against projectiles.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Tentacle"
+            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Tentacle",
+            ui_name: "$perk_revenge_tentacle",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA3ElEQVR4nN2SMQ6CMBiFP4zRxCMQegidTFh0deAGTm7egYlzMHEDLoCDrDKzmEiNmysJLDq1oQWMm4n/1Lz0ff97TeHX49jCUogXwHp31NrlFAPQ1g0AhZTa59jm2WLOanPobVIQBVKQiX1RmT3hcqtKPOEauj0GQMW+VSUAz+uZNIl6kG69qU30hIsnXNIk0po6B/sQNgejTg+Q5xm+vx2M24UOVgC0OdiHg5CPgMsp5i4fOsk3EAPQ1o2G+P52FKL+w2CFbpKxtxhNUEjptHVjbMjzzNjc/UR/Mm/zQWHONlgvqAAAAABJRU5ErkJggg=="
         },
         {
             id: "REVENGE_RATS",
@@ -2912,7 +3034,9 @@ const apothIcons = {
             name: "Revenge Rats",
             description: "When you take damage, there's a chance that a helpful rat minion is summoned",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Rats"
+            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Rats",
+            ui_name: "$perk_revenge_rats",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6ElEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix2rhl/ffjKcf/wYro8JXTMbFzuKZk0FaRSajYsdbgmGAejAWkOeYf6OA3AaG0AxAN3ZfFKSDMUBLgwMDAwMNprKDNYa8hjq8Lrg5q0fDHxSkgwMDAwM5uqKDC/evcdQw4LPADVBJYabt+4xMDAIMtx7cgGrGpwGpHiUofBxGYDXCwwMDAwy0ip45VEM+PXtJ4YCM53FDEHuxxmUZAywqsPpgjk7uhi8sv8znLoSy7BupyVDU60wVnU4U2JWUC1c7MnTOww7Lq+D24ycEocBAACe40BcKRy58QAAAABJRU5ErkJggg=="
         },
         {
             id: "REVENGE_BULLET",
@@ -2920,7 +3044,9 @@ const apothIcons = {
             name: "Revenge bullets",
             description: "You return fire when hit by projectiles, and you gain 20% resistance against explosions and projectiles.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Bullets"
+            wiki_url: "https://noita.wiki.gg/wiki/Revenge_Bullets",
+            ui_name: "$perk_revenge_bullet",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1UlEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHgq4Zm0YYOHv1EQMDAwODsbbcf5ghTOiKvPUSGbICGohyPgMDmhfM1VX+w9gLs3YyxE9zh8sdP32bwdJUFc4/efMOdhfAQPw0d4YNE49h1YwMcBqAy2aSDPh48zODpakqw/HTtxmOn76NVQ0LVlEGBoasgAZ4GMBcADME2UUogWgoK/tfV8qFQUVOhWHrpfk4Xfbr2094WsBwwc0PhxlufjiMUzM6oDglDgMAAD3RSNEa43LqAAAAAElFTkSuQmCC"
         },
         {
             id: "APOTHEOSIS_REVENGE_REFLECTIVE",
@@ -2928,7 +3054,9 @@ const apothIcons = {
             name: "Revenge Reflection",
             description: "Reflect copies of enemy projectiles upon taking damage, with a steep damage boost as payback.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Revenge_Reflection"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Revenge_Reflection",
+            ui_name: "$perk_apotheosis_revenge_reflective",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLElEQVR4nN2SsUvDQBjFf0pJIA5KETpIBwdRlCIKbtlcu4odde0m4l8h4lbHbloHnbqGLLcVUkooaKFLG9MEISaDFl10kAu5ZnBwEHxwHNy9733vu3fw15ibPdgplz8BNEPPkT/e3gHojsdp3fxssWboaIbO7cU67VYdgHarjnAE8k42yTmQAhKW3URfXAPA3DUVJ9KF4kB2lsU3dkh3+ELBKCEckbrJNlEEAEbeM5bd5OpuwHZli73KBoAikkVO4OwyYhp2AOi5fTruA0C6V2sNhV/ISQKvTxZLxWPiKKHn9lOxzeVSjpsTOD8pAhBHCYHvEfgecZQAMA1HCEcoD6qMIHM+PH3kYPWeYDL5Xr7HkZlQrTWIB9cpD36IUSaysLKvzJ6N8dc/8R/gC5dLg/mf2EK4AAAAAElFTkSuQmCC"
         },
         {
             id: "ATTACK_FOOT",
@@ -2936,7 +3064,9 @@ const apothIcons = {
             name: "Lukki Mutation",
             description: "You grow curious additional limbs that fight for you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lukki_Mutation"
+            wiki_url: "https://noita.wiki.gg/wiki/Lukki_Mutation",
+            ui_name: "$perk_attack_foot",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/ElEQVR4nN2SoW7DMBBA36ap1UL2BZEKy6IGtcClJlbBwH7AaNv/jOUXBqaQ0ARsqFNZYKRG4Q1ItZEMOYprRxqbtEMn+967s3Xw13F1ebAKw/5ePpEWiVP83X0B8Hk8Dtz1FLxcbIdzJTRxJFlvdsyCOasw7M3dzViw3uxo2hqAsspRQtO0tXca7wQA+0MGQBxJ0iKhO50daBbM/QJTrIQe8rLKJ7s7AlPctLUFxpFECf27J4y7G3h/yEiLxCtxBOPucSQtmU9iCcaAyS//IC0S4khOT1BWuQUvF1sLAPh4fxtyZxMfH5777nQmuLu1JlBC85q9APYm/oP4AQ5IdsNNXz9jAAAAAElFTkSuQmCC"
         },
         {
             id: "LEGGY_FEET",
@@ -2944,7 +3074,9 @@ const apothIcons = {
             name: "Leggy Mutation",
             description: "You grow disturbing looking limbs that fight for you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Leggy_Mutation"
+            wiki_url: "https://noita.wiki.gg/wiki/Leggy_Mutation",
+            ui_name: "$perk_leggy_feet",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIUlEQVR4nN2SPWrDQBCFPxmjQDA4hQKWQZ1AtSufyE0SYlSbuBF2UjgoqnWDvUaqVAF1gXQGu/AWCQiD3Uya7Nr6OUDIg2Xh7cybebMDfw6jIJBREMg4CqVQSgqlZByFMo5CGQWBFErJebxTT3YvL8iTJQCl3gHQ865tTKl33D4+8b5eOwDdegermzsbGGcpAOk0tu+Ga+2gUEq+txv6vm+5ycOs1erbx6cD0KmwIr/VtT15siBPFgD2PkfVguPQH/hM5qeqebKwQqXWDYFOg+E0B2MhzlJKrRv+oTaD1+xF+gOfr+2Gq+HQCrShdQb3q2cm8xld17XtGt/nP3HcH9o7MHtgkE5jep5nxYyF4/5g96AiYEQA6kJxltrKJvmf4AcziYE0H7DTyQAAAABJRU5ErkJggg=="
         },
         {
             id: "PLAGUE_RATS",
@@ -2952,7 +3084,9 @@ const apothIcons = {
             name: "Plague Rats",
             description: "Dying enemies release rats to serve your bidding! All rats become your friend.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Plague_Rats"
+            wiki_url: "https://noita.wiki.gg/wiki/Plague_Rats",
+            ui_name: "$perk_plague_rats",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA4ElEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/bBqxGQQzhIlEF2MAFAOIsR1dHcUuYMEl4elkwcDAwMDw6dlzhqM3HuI0AKsLrDXkMfiaCtIMDAwMcBqnAdYa8gx8UpIoYnxSkgzzdxxgsNaQZ5i/4wBuA+qtbOHsT8+eM3x69hxuWHGACwMDAwODjaYyigtRDKjesweuGRkg883VFVHkMFJigrv9/4vX7jGwcbEzaCpIM1x/8JSBgQHi94vX7jHoaykxLNh5EEPfEAYAn505egV9a5IAAAAASUVORK5CYII="
         },
         {
             id: "VOMIT_RATS",
@@ -2960,7 +3094,9 @@ const apothIcons = {
             name: "Spontaneous Generation",
             description: "Vomit near you evolves into helpful rat minions",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Spontaneous_Generation"
+            wiki_url: "https://noita.wiki.gg/wiki/Spontaneous_Generation",
+            ui_name: "$perk_vomit_rats",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABI0lEQVR4nNWSMUvDUBSFPyVo2iFDtlSCtRpq6VQQClaQguCqm4Obu4t/yz/g4FCKUMHiJEYCogQb2tIMHWJaC3GIPpq+h47iWd6795573nmXC3+NpcVEzbYTgJX8qkSeRhMA7n1f9GUEaradqBpVQt8iy7+RK8W1zLmIjIDq9WLJpuN6mLpGx/UkntJBlNMBaGyvA3BxdADAXmVT5JQCzuEOAPn3WBDHvUDU6+WNn7/gXd1lhACMgkUYz0Q8fwfQVPZNx2AAbH2kZVPXCOMZjy9v0jAzDqbRhObZrojbQx+AG/dV5Lr9kdgHSaB63EhtemOCXkB1v0x76BPldLr9EZDOZx7SJp6enySmYwDw0HrCKlgEX4MMb58x6yWuL1tS3z/GJ9ilWx3v4Q3jAAAAAElFTkSuQmCC"
         },
         {
             id: "CORDYCEPS",
@@ -2968,7 +3104,9 @@ const apothIcons = {
             name: "Cordyceps",
             description: "Fungal creatures spawn from the corpses of enemies killed by you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Cordyceps"
+            wiki_url: "https://noita.wiki.gg/wiki/Cordyceps",
+            ui_name: "$perk_cordyceps",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzElEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix2rhl/ffjKcf/wYrg/FAENZ2f/IGqUSvBh0bHgZrhz5zPBswTashjDhcppUgheDoKQYAwMDA4OgpBiDVIIXVnUsyBxk258t2MbwjIGBIaFjEUNpexwDLnU4XQADchoyeOXxGtC24SADm7wsQ9uGg6QbsP78bQZNeSkGBgYGBk15KYb152+TZsD1h88YAg1VUWhsAG80ItsaaKgKZxMVjeiuwAVISom/vv1kYGBgQEmJwwAAAKCrRmTnj8C7AAAAAElFTkSuQmCC"
         },
         {
             id: "MOLD",
@@ -2976,7 +3114,9 @@ const apothIcons = {
             name: "Fungal Colony",
             description: "Slime near you spontaneously turns into fungal creatures.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Fungal_Colony"
+            wiki_url: "https://noita.wiki.gg/wiki/Fungal_Colony",
+            ui_name: "$perk_mold",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9UlEQVR4nN2SqwoCQRhGz4rs4jaL4GUXwSKYTHaDwaRpm2ww2QV9A2FfwSDbbCaDwVewWiyuF7DYFC0aZIZZGTQK/jAM/DPn8M0Ffl3Ge6PqOA8A07ZojD3ZX3Sn3C83AFZRZGgFVcd5mLYFEIMB9psU+dJVioQkoYtVGfpaeL9JURn6FHttuRYTmLZFzm9KSDefjycOk7lkkqpAwOfjiXQ2E4OAGKgVqBsOQDAKAXBrBbxWXXda/R2IcsuFT8vfBapkOlt+F4h3hld8r1Vnu97JISTqPm2CYBTSH3TkHQD0Bx22693nBKsoMlS7AN9Tqj/xD+oJSFBk3qS7jwUAAAAASUVORK5CYII="
         },
         {
             id: "WORM_SMALLER_HOLES",
@@ -2984,7 +3124,9 @@ const apothIcons = {
             name: "Feared by Worms",
             description: "Worms run away from you, and worm and lukki enemies no longer destroy terrain while burrowing.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Feared_by_Worms"
+            wiki_url: "https://noita.wiki.gg/wiki/Feared_by_Worms",
+            ui_name: "$perk_worm_smaller_holes",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABj0lEQVR4nN2QPUgjURSFv1E0oKhgpZFHgv8QG8MIkWmW3dFGBA1YiCJimWKtFHFKCaKdjaCgBJdli4AWksrYCIMBh9gkEH8xDBorwWIFLXwW4uCYWAve7h3OOe+7F756lI9CtxASIB0dIBRNOnrK0AkaCQCObVspWdAthKys8jjvuNrEiHVNytBdZU8Pj05J2Wdob+G42kQomiRl6CV9roL3v7+FSxG89xURVPfMvu4mhl0Ekfgo/Wth2ic6PidI5c6I/b6lZXKTqoY2WiY3GbGu6V8Lc373yLyvgnymQCQ+6mRcRwzpM/L+Jsf0UBZNFZiWzUFNjPLnJfxagCszi18L0FrvIbmb5o+RUFwEh3vLAGiqYHp7DE0VXO7vsuo958rMog8GAdhYTJReobdvljpvJ6ZlsxL+i2nZNP8aJHLTil8LADDvq8DX1Ug+UyheQUop7aMF5vZ/cJvN0RDo5CI2hSdYi6+r0fHlMwUO/qWVogKAn+Pr8v/RMooYRto7jt4+0cHp1gmeYK0T/ibzAvSPj0+QUS2uAAAAAElFTkSuQmCC"
         },
         {
             id: "RISKY_CRITICAL",
@@ -2992,7 +3134,9 @@ const apothIcons = {
             name: "Close Call",
             description: "You gain additional chance to deal critical hits as long as there are enemies near you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Close_Call"
+            wiki_url: "https://noita.wiki.gg/wiki/Close_Call",
+            ui_name: "$perk_risky_critical",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABN0lEQVR4nN2SP0vDYBCHHxuN6CwuoXQKmA4Bp0aCCKUfQP0oEeIX6NIO+Q4FJyHB0VVETAkoZOkQOoTgIm6BQAOlDk1e8gddBW863rvnd/feHfy17TQfTrvdzdtwCIDhv9RiebYC4D1JBFcTKOHQsgDQHUfEqmJ5thIinWYHXhCgOw5hGHI3GjHRNC6/PvENU+SUHQLsVmH5cF9U84GJpvH6/ASF7xd5oWXBbNYWAJiuc+GX8Nn5BddZRtTrMVdVBq4rclpfAPANk5uDPQErigKwhaMINY5/FijhZfLBw9Ext4tFC64OtPMbXE3UdR01jvGCoFawJjC/OhGwFwT4hkloWQyiCN1xhGB5D9AY4v3jUlS2JXm7jeIUmpVLa12i2+9vxmkqVmpLMtN1ji3JjNMUqF/iP7BvOYCEuqp+NyUAAAAASUVORK5CYII="
         },
         {
             id: "FUNGAL_DISEASE",
@@ -3000,7 +3144,9 @@ const apothIcons = {
             name: "Fungal Disease",
             description: "When near danger, you sprout fungal growths.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Fungal_Disease"
+            wiki_url: "https://noita.wiki.gg/wiki/Fungal_Disease",
+            ui_name: "$perk_fungal_disease",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJUlEQVR4nN2Sv0rDUBTGf21EURzFCJrMDi6BOnVxC7hLEKyLdPQJMvcJHMXFCCG4F7J1cRALWXyBJhaSkkEQIile4pRLYlJXwQMXvnvP/b7zF/7aOj8fDE0rANa3NloJyywniCLJqwkYmlZUibrtShyOzltFuqtS020X87CLiFNEnNbEqlYTKKPrtouIU3xvipKEnJ7sAjB0vNq/1gyGjoeIU5QkBMC0evjeFBGnjCeLRia1HpzdvxQl2eirBE8JgMRC1QFQ9nZ4vDxu9qAauSRXcbWc1hLmd9eYVk/ejb6KUHV5AMaTBcb2vL2Ecoz7VzcAzPxn6Vt7e2DoeNwOrNoYf92DzSNb4s/XkcQr9yCIos4yy1lmOQAf7zPp+zq4aJD/iX0DTyaFdMiUBXAAAAAASUVORK5CYII="
         },
         {
             id: "PROJECTILE_SLOW_FIELD",
@@ -3008,7 +3154,9 @@ const apothIcons = {
             name: "Projectile Slower",
             description: "Projectiles near you slow down.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Slower"
+            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Slower",
+            ui_name: "$perk_projectile_slow_field",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1ElEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/mMZsuzoMA6YeaoIbBDOEBZuzsu3qGG69fotVHGYIDDAhc9i42OGabz69wNCs8ZLh2K2tcPat128Zsu3qULyHYgAyWOUsycCQnMzw4+87OBsbwGpAs8ZLuIajgW44NeM0oPaGOAPD3LkMDAwMDNbrd8HZ2ADWQGRgYGAI2/ucYRXDXAYOZiE4m4FBHEMd1mjEFQtqosIMUw81oUQjxemA4pQ4DAAA0xpfmbgDByIAAAAASUVORK5CYII="
         },
         {
             id: "PROJECTILE_REPULSION_SECTOR",
@@ -3016,7 +3164,9 @@ const apothIcons = {
             name: "Projectile Repulsion Sector",
             description: "Projectiles that fly into a small sector in front of you get blown away.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Repulsion_Sector"
+            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Repulsion_Sector",
+            ui_name: "$perk_projectile_repulsion_sector",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABE0lEQVR4nN2SPUvDUBiFH420pXdrcAqFdqgiUtBJp2z5Gy6OxSVzcZBuQraOLo7+hWyZdLJQxH4MLYRMkm63NMWgU0JukwhOgmc8vOc5Z3jhr7W3a5w3m18AlXo19ayTHu77EIDtOuLV99Pc/m64Uq8qYYBpMKJn3pKAk5IcoEyhDJh9hCkkKwVw6rzkDoTWQhcG02CUetmFCmDeN+kMPACeJzNlAVC4QgEcXD+yWCyx3TFPfoTtjtnEKzbxilAGyopCwOfDFe12C8fqcj+ROFaXmtagpjXQhcGxcfYzoDPwmPdNALSby9TXhQHA0aHO0LsrB7zZF7kGGS8JZaC0b9dRMaBMujAK2+GXn5g0Zz/xH+gbIjNh42K/eTMAAAAASUVORK5CYII="
         },
         {
             id: "PROJECTILE_EATER_SECTOR",
@@ -3024,7 +3174,9 @@ const apothIcons = {
             name: "Projectile Eater",
             description: "Projectiles that fly into a small sector behind of you disappear.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Eater"
+            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Eater",
+            ui_name: "$perk_projectile_eater_sector",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABL0lEQVR4nNWSIUgDURjHf+eN2zEQEVEEtyLeLAZFGFiubhgEDWJZmxb7khYxuRWDzWZfWBizrggrC1q8s52CaBARxtvhcaY9d3tPq/ilx//7/r//9+CDvy5jXFjL5WIAK5Omk7dxPSF7lVIVgP3zA+mbGDdbmbQ0H92/KuZ6syZDFMCwOnmb7vMbvohw4w+p15s1ZTYBsDJp+W6+f+LYJr6IAHh8etDOpX5KB/BFxIthyd7e+jYA7duGfoPR9FFzpVQlu7CkG9UDtqZSOLbJXBwmdB1EAbieoDA/DaBACitX7BRvWMyu6gFhf5DYwhcRjm1y2T5j8zCme1emcb3ByfHM718YbuHYJh1jkkqpSuvi++Z2yy09oBcERtgfEPYHuJ7gdHlWx6cXBMoF/+P6AsT2Y16wTSHdAAAAAElFTkSuQmCC"
         },
         {
             id: "ORBIT",
@@ -3032,7 +3184,9 @@ const apothIcons = {
             name: "Phasing",
             description: "Projectiles seemingly phase through you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Phasing"
+            wiki_url: "https://noita.wiki.gg/wiki/Phasing",
+            ui_name: "$perk_orbit",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAw0lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/ZI3xocFw9sLVa1EMghnCgs1ZuxbcZuCzYGCw0FBFMQzZEBhgQubAbOezYGD4dAJV4cLVa+EuQnYlEwMaiA8NZrDQUGVwS1DF6g1kPlYD0A1buHotw4kbtxl2LbiNVQ1eA2A2fjoB8RY2gBIL5uoq/5FtxuUiBgYGhpM37zBiuAAWz9j8iqwZpg7DBeSkA4pT4jAAADrQViIbrvHnAAAAAElFTkSuQmCC"
         },
         {
             id: "ANGRY_GHOST",
@@ -3040,7 +3194,9 @@ const apothIcons = {
             name: "Angry ghost",
             description: "An angry spirit comes to your aid, copying nearby spells and projectiles.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Angry_Ghost"
+            wiki_url: "https://noita.wiki.gg/wiki/Angry_Ghost",
+            ui_name: "$perk_angry_ghost",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAv0lEQVR4nN2SoQ7CQAyGvxGyJXjExD3AyYk9BQluDrUHQ+HmluwpEMg9wMQEfslmhiBdrscNcCT86tprv/Z6hV8r8h2ZMTNAvEs4H46Lv2xqpmEE4NZ1URCQGTPHuwRAJbsSkEA2oaC15NCdAkh1gGvbLud73yu/GxfsoGxqcmsVRJJza9c78CXB+zRVtqvtO4BU9YFfA/yWPz5hGkY1ZQmWIYot+/ACEPlfJTOA54BdBTfxUhQhLqeqAvQm/oEe/oxFlKI8JngAAAAASUVORK5CYII="
         },
         {
             id: "HUNGRY_GHOST",
@@ -3048,7 +3204,9 @@ const apothIcons = {
             name: "Hungry Ghost",
             description: "Summons a happy minion who'll eat enemy projectile every now and then.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Hungry_Ghost"
+            wiki_url: "https://noita.wiki.gg/wiki/Hungry_Ghost",
+            ui_name: "$perk_hungry_ghost",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2ElEQVR4nN2SMQrCQBBFnyIRvELYIjmAYC8WksobCGKRwsoLWFp5AQ9gEQjewYgEe8EDJEXIFQRttFpxsru2gr+b2flv/zILv1ar2Rgo9QTwel1W26FhWMcZl6p6+wRgoNTT63UBWG2HBKFvAMqiFpC2LZbLDBh9AdC366E0yQE4Hq6i1nPOBIvJHoDpbCT6zdoJaGoc9Z1nXwE6+jcZgM/VjaM+aZKTJvkbVha1mO98Fo/bnSD0BcT27sft7k4A5qq0yqJmszyLnvUn7k5zq3kdZwDiJ/6BXt0HQnQF0D9tAAAAAElFTkSuQmCC"
         },
         {
             id: "DEATH_GHOST",
@@ -3056,7 +3214,9 @@ const apothIcons = {
             name: "Mournful Spirit",
             description: "Dying creatures leave behind a spirit that deals damage in a small area.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mournful_Spirit"
+            wiki_url: "https://noita.wiki.gg/wiki/Mournful_Spirit",
+            ui_name: "$perk_death_ghost",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArUlEQVR4nGNgGGjAiC5gKCv7n4GBgYGNi50hJLsWQ8Oy7hqG848fw/WhGGAoK/ufjYudgYGBgSEku5ZBUUkNw4D7926hGMKEzVm4NDMwMGCIoxgAsx2maNGCmSiKYXyYOpwu6C6OZWBgYGCIS0hHEUfn4zSAFIDXAJiT0Wm8BmCLOmRw/94tFD5GNFZPX8Vw/94tnLFAVDTi07xmajNuFyC7ApfNDAwMKClxGAAA4+ZAO9W+bW4AAAAASUVORK5CYII="
         },
         {
             id: "HOMUNCULUS",
@@ -3064,7 +3224,9 @@ const apothIcons = {
             name: "Homunculus",
             description: "Every time you leave a Holy Mountain, a helpful homunculus is summoned.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Homunculus"
+            wiki_url: "https://noita.wiki.gg/wiki/Homunculus",
+            ui_name: "$perk_homunculus",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA20lEQVR4nGNgGGjAiC5gKCv7n42LnYGBgYFByjCQ4dn59XC5X99+MjAwMDCcf/wYro8Rl2YGBgYGm4A4BlUVZTh/fk893CCYIUyEnDh//kIUGh2gGIBsOwwkJsaj0OjqCLoAn+0MDAwMLLgkEksaGRgYGBhu37nLYGNrw3D7zl2s6rC6ILGkEa4BFoiPHz0kzoDEkkZ4aCODh+cOMsgb2WOIo3jh17efcM2qKsoYzn547iBcHV4vMDBA/H5kwyKGIxsW4VKCacD5x48ZYaYj+xnG/vXtJ0oiGiYAAJiJVzRFPWtDAAAAAElFTkSuQmCC"
         },
         {
             id: "LUKKI_MINION",
@@ -3072,7 +3234,9 @@ const apothIcons = {
             name: "Lukki Minion",
             description: "Summons a lukki minion to your help.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Lukki_Minion"
+            wiki_url: "https://noita.wiki.gg/wiki/Lukki_Minion",
+            ui_name: "$perk_lukki_minion",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDklEQVR4nN2SvUoDQRSFv4joYre9W20Vhi1SWOwTLBZ2slho4wv4CmrhY4hgJ2JjIT7BFgYshuU2SZMMpAxpQpImVjPMZAdbwVvNz7nnfHMZ+Ovq7R4MsmwLcHB02BFvlmsAvqdT1xcYDLJsG2uMGVmT/d+Etxd3pEnOfDUmTXJuni47mj1/46dXqqbRLQBpkjvDXV1AUKnarctC0eiW+WpMo1vKQkUpAwMxQv+4jxgJTOzehny2L/EnTBbaXYqRILksFGIEMRKQRofoUzS65fr0nMePVyYL3dEGBJvlmkrViBEntiT+jEazYZzg7OTKNftGfnKlat6/nuME928PPUviD87WaDZEjAQ/8R/UD9WEfpuJRJvoAAAAAElFTkSuQmCC"
         },
         {
             id: "ELECTRICITY",
@@ -3080,7 +3244,9 @@ const apothIcons = {
             name: "Electricity",
             description: "You're immune to electric damage, but metal and liquids around you electrify constantly. Look out!",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Electricity"
+            wiki_url: "https://noita.wiki.gg/wiki/Electricity",
+            ui_name: "$perk_electricity",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA90lEQVR4nNWSMWoCQRSGP4O4YTAEISgINnZWwZBttkqRG3iVLfQEa+FVvMaCWIiVBGwWQViVNSFhoiGghTjszlNTBv9mhjfv+94MDPx3cnahWavtAArKEc0/egvAaDYz3I0NF5STgeduy+yPZ8chQmBn7rbo9LoZiZ2MwJ7c6XUJ/LaA0n35S5MBswY+VId90XtSUB32CXyMIPDbJ2HxBDt/wWdvkL7FJVgI6k/uoaiK3D5UeGk8wuszAMlkzGYV86u/ABi8TaUgiiKUUsASJ0lYL2JK5QrrRcz3e8L28wMArbVhxE/0PG93kIBzd2/qaTgMQ8Fdcfa/ZlY5nfrD3gAAAABJRU5ErkJggg=="
         },
         {
             id: "ATTRACT_ITEMS",
@@ -3088,7 +3254,9 @@ const apothIcons = {
             name: "Attract Gold",
             description: "Gold nuggets gravitate towards you.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Attract_Gold"
+            wiki_url: "https://noita.wiki.gg/wiki/Attract_Gold",
+            ui_name: "$perk_attract_items",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAq0lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/bBrd1TMZGBgYGHbenA43CGYIEzHO3HlzOsPOm9PhBiEDFAOw2Y5ukLt6Joo6gi44ceM2Xnm8Bpy4cZuB4c10hn5PNhRX4DUA2Z+3V4Ux3N63n6Fw+y+clrDgc0Fs3Xl80pgu+PXtJ87QRleH1QAYgBlCyCAGBiqkxGEAAJdjP2yYW8O1AAAAAElFTkSuQmCC"
         },
         {
             id: "EXTRA_KNOCKBACK",
@@ -3096,7 +3264,9 @@ const apothIcons = {
             name: "Extra Knockback on Spells",
             description: "Your spells knock enemies around with more force.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Extra_Knockback_on_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Knockback_on_Spells",
+            ui_name: "$perk_extra_knockback",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/UlEQVR4nN2SsWoCQRCGP4O4IOQRtBAltqbR8uAOrotXWPgAkkbBl0newcLi2pM72CqYKq3BYOMjCMKJoNUu683FNpC/2d1Zvn9mdhb+WpVioNdoXABqdXUTX2+2PDebAHzt95Z7KMK1uhKwkbkzSYRBUfPJkPlkyHqztVXcbaH/1L7oOMSLElG+q0G3w+f3T6W0giK8WLwL2DW8MdBxKODxeMqg27GwuwoDL0rQcUg6O4gWXMhV1T2kswOq5aNefXSQ4UXTUuhXg2owsnvV8tExnNOlyH465uUtnNMl+S4DIN9leFFC8PYIyPcxKv2JH6sXOw13rCaz+xP/ga6wqVa/GsKj7AAAAABJRU5ErkJggg=="
         },
         {
             id: "LOWER_SPREAD",
@@ -3104,7 +3274,9 @@ const apothIcons = {
             name: "Concentrated Spells",
             description: "Your spells have lower spread and extra damage, but have increased cast delay.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Concentrated_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Concentrated_Spells",
+            ui_name: "$perk_lower_spread",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAo0lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHhK6ZjYsdq+YTN24xnHv0kIGNix1uCYYB2MCJG7eI94K5ugrc5BM3bjFYaKjh1Hjy5h1GrC44MEebgYGBAUUzPldgGOCQchVDkYWGGk5DcLoAGeDzDk4XINuILyxQDIDFM7ImmEEnbtyCs5HVEYxGfLYzMFAhJQ4DAACKRj/+KLeqHAAAAABJRU5ErkJggg=="
         },
         {
             id: "BOUNCE",
@@ -3112,7 +3284,9 @@ const apothIcons = {
             name: "Bouncing Spells",
             description: "Almost all your spells bounce around and last longer.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Bouncing_Spells"
+            wiki_url: "https://noita.wiki.gg/wiki/Bouncing_Spells",
+            ui_name: "$perk_bounce",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAApklEQVR4nNWROw7CMBBEnxECiTs4FRFpQ0N6H8pn8KHcQ0ULgi53QILGVI78iUOoEFOuZt7O2vBriXTQSukAVpt1Zn49ngCc+37IRYBWSjcWHAN5yPKbusfLDYB9VQ2zRWjw272xpLBldMJht3Xhtq6pi5DT9S6yBlMqtSoCuqYeQlNtZjcoKQL4f05bpNtDX/SIWmvHTBljRAYAUEp9hFhrs9wf6w27zzR40he73gAAAABJRU5ErkJggg=="
         },
         {
             id: "FAST_PROJECTILES",
@@ -3120,7 +3294,9 @@ const apothIcons = {
             name: "Faster Projectiles",
             description: "Your projectile spells fly faster than before.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Faster_Projectiles"
+            wiki_url: "https://noita.wiki.gg/wiki/Faster_Projectiles",
+            ui_name: "$perk_fast_projectiles",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfUlEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHhKwgesX//2xc7BiaVRpvM8AMZeNih1uCYUCDJ0IxMeIYBhBrCLILMQwg1SVYDSDFENwGbGdguFOvSlAcuxeI1IzVAGI0w9IDhgGk2AwDFKfEYQAAGrw/XOZJKV8AAAAASUVORK5CYII="
         },
         {
             id: "ALWAYS_CAST",
@@ -3128,7 +3304,9 @@ const apothIcons = {
             name: "Always Cast (One-off)",
             description: "A random Always Cast spell is added to the wand in your hand, up to a maximum of 4.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Always_Cast"
+            wiki_url: "https://noita.wiki.gg/wiki/Always_Cast",
+            ui_name: "$perk_always_cast",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABBUlEQVR4nN2Sv2oCQRCHvwtB4aqkuC7XKab1Gq+0MiDcCyR93sAmXCmB4BOYKnmGBSFWKa/SVkh56SysPNBmLPRWZ40QbAL5VTv755vfzA78tTx3oxmGAlDxq2SjDnF3jEkDkv6cdbECYJrn3o+AZhjKx/MNSX9+MmM26hC1jYIoQKtRk1ajJrIcioiILIfydn8lImLPSpcAl4eAil/dZpn0iKMBMNjFL7w/XJPNFsS3dXsP4MK1B4D/qK05sUkDu1YO4u54D5t9nWqD6pFycEj+rRTAkotXfcuJbamuzvmFozmYfCaqF65MGnD39G3nQJUwzXMvahs7cWVPSsvrYqUe/xNtAJSBgP5/WLKkAAAAAElFTkSuQmCC"
         },
         {
             id: "EXTRA_MANA",
@@ -3136,7 +3314,9 @@ const apothIcons = {
             name: "High Mana, Low Capacity (One-off)",
             description: "Your currently held wand loses half its capacity, but gains more mana.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/High_Mana,_Low_Capacity"
+            wiki_url: "https://noita.wiki.gg/wiki/High_Mana,_Low_Capacity",
+            ui_name: "$perk_extra_mana",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA20lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHhK6ZjYudgY2LneFX10kMA2ByMEswDIDb1HWSgc9KCKsh6ADFAJiz+ayEGOawQ2hsANl7WF3w6dg7hpSfEJokF8BtKDNn+HTsHQNbmTmDassh0g2AGcLAwMBwu8YObsiJG7cIG6DacoiBJXkRwxMlDzh9//4DhqLdlxlWPf7JULT7Mop6lHQAi0Zsht6usWP4O/kEA3OuBcOvbz/haQGnF9A1MzAwMDDnWmDIU5wShwEAADBJTDyfwqebAAAAAElFTkSuQmCC"
         },
         {
             id: "NO_MORE_SHUFFLE",
@@ -3144,7 +3324,9 @@ const apothIcons = {
             name: "No More Shuffle",
             description: "Most of the wands will be non shuffling. The wands you carry with you turn into non-shufflers too.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/No_More_Shuffle"
+            wiki_url: "https://noita.wiki.gg/wiki/No_More_Shuffle",
+            ui_name: "$perk_no_more_shuffle",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnklEQVR4nMVTMQqAMAy8iCj4h46Cq5v/n9xcBUf/IOgSFyOpxgh28KBDaC65CwkxM1KQJbEB5DogIrQhMAAUVXlL3pYVADDMM4nyqEAbAltEgfwdTQh4sdCP0/kkdi3o7v04oWvqKLbyTAUe2VUg0GQr1nhUoL17StwhXm1YSiIL27KeA+qaOuqoybIPtwLXZM+7gPQtfNlE+v2YkgvstulOJ7LkXsMAAAAASUVORK5CYII="
         },
         {
             id: "NO_MORE_KNOCKBACK",
@@ -3152,7 +3334,9 @@ const apothIcons = {
             name: "No More Knockback",
             description: "Enemies can no longer knock you back.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/No_More_Knockback"
+            wiki_url: "https://noita.wiki.gg/wiki/No_More_Knockback",
+            ui_name: "$perk_no_more_knockback",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6klEQVR4nGNgGGjAiC5gKCv7n4GBgaHAnYFh2mF2FLlf334yMDAwMJx//BiujwldMxsXO0NtkTaGZgYGBgY2LnYGNi52uCUYBqCDEzduE/QCigFsXOwM5RkqDJ0z7uDVxMaFcB2KAciaYbb39lQS7wJ0zQwMDAzWPkkM+Sn+xBkA02yhocrw4MIuuNjEORtxGoJhgIWGKgMDAwNDREQ2AwMDA9ygiXM2MjAwMDBk2f7EbQAsnpFBREQ2w4oVU+F8Xm1tFHV4oxHmGhjAFkMoBpx//Jjx17efGC6Beeffn38Mv779REmJwwAAANheUIjRevBjAAAAAElFTkSuQmCC"
         },
         {
             id: "APOTHEOSIS_NO_RECOIL",
@@ -3160,7 +3344,9 @@ const apothIcons = {
             name: "No Recoil",
             description: "Your spells have no recoil.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/No_Recoil"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/No_Recoil",
+            ui_name: "$perk_apotheosis_no_recoil",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2klEQVR4nN2SMQrCMBSGP0Va6B06Cl3t0i4KdfEMgqA4unS1J9DVC5RuXT2Co1nqKjj2DoIuOr1gNLWj4JuSl/xf/iQ//Lo6742B7z8A4mREpZSxdr/eADjVtdZ138WO5+J4LgDpOjMAsiaHfACkwijS4+P58vUKBsDxXC0eJuNGkTj8AIRRRKWUFk8Xy1YXvddJpRTpOmO33bRatzoAtHg1nxn9JqD1EeOgT6UUZZEbPRvEAMg/v7oBKIuc4/lCHPQ57CfGPiNIkgNbCUAOkjA1JtEGsiXxD+oJBAFREwBzGCsAAAAASUVORK5CYII="
         },
         {
             id: "DUPLICATE_PROJECTILE",
@@ -3168,7 +3354,9 @@ const apothIcons = {
             name: "Projectile duplication",
             description: "Your projectile spells have a chance to duplicate, but you're more vulnerable to projectile damage",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Duplication"
+            wiki_url: "https://noita.wiki.gg/wiki/Projectile_Duplication",
+            ui_name: "$perk_spell_duplication",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAk0lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHgq4Zm0YY2HXuHAMDAwODm5HRf5ghTOQ4GxmgGIDL9i1HjjMwMDAw+NhYMvjYWKKoI+iCLUeOM/jYWOKUZ0EXgNkGA/g0YzUAXQMhFxD0go+NJYarkAFKOiAUjTCD3IyMGKgWjRSnxGEAAMh+LeAUsMKDAAAAAElFTkSuQmCC"
         },
         {
             id: "FASTER_WANDS",
@@ -3176,7 +3364,9 @@ const apothIcons = {
             name: "Faster Wands (One-off)",
             description: "All wands you're currently carrying gain a bonus to their cast delay & reload time.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Faster_Wands"
+            wiki_url: "https://noita.wiki.gg/wiki/Faster_Wands",
+            ui_name: "$perk_faster_wands",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA3ElEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/bBqxGQQzhAmXov+67xgad6QynLhxm+HEjdtwPl4vmKur/IdpPrn6LYN5qDAD42UhOJ+BgYHBQkOVgYGBgeHkzTu4XdDUXQ7XDOPjAlhdcOLGbbhNuABeF+x80MXwX/cditgnkfcMITM1MdRiNaCutJPh5Oq3cEM+ibxnSGq1YphXfQxDLQsy59e3nwxsXOwMjJeFGMxDhVH8XhjTxcD3RhCuDgYoTgcUp8RhAADVSWCO2VaMEQAAAABJRU5ErkJggg=="
         },
         {
             id: "EXTRA_SLOTS",
@@ -3184,7 +3374,9 @@ const apothIcons = {
             name: "Extra Wand Capacity (One-off)",
             description: "The wands you're currently carrying gain 1-3 additional spell slots (to a maximum of 25).",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Extra_Wand_Capacity"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Wand_Capacity",
+            ui_name: "$perk_extra_slots",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8klEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/Ni52BgluTgZpPm6Gp5++YtAvvn5n+PXtJ9wQJmzOkubjZjj7/A1WGh2gGABz9tNPXxmMJUWw0ujeY8HmghdfvzO8+PqdgYGBgYG3cifDixo7OB+vC7CB2zV2DKothxgYGBgYTty4RdgA1ZZDDCzJixieKHnA6fv3HzAU7b7MsOrxT4ai3ZdR1KPEgrm6yn9srlBtOcRwu8aO4e/kEwzMuRYMDAwMDCdv3sGMBVg8Y9PMwMAA14ysjqgwwAcoTonDAAAA1vdrZiYmxqkAAAAASUVORK5CYII="
         },
         {
             id: "CONTACT_DAMAGE",
@@ -3192,7 +3384,9 @@ const apothIcons = {
             name: "Contact Damage",
             description: "You take no damage from close-range enemy attacks but enemies near you take damage.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Contact_Damage"
+            wiki_url: "https://noita.wiki.gg/wiki/Contact_Damage",
+            ui_name: "$perk_contact_damage",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDklEQVR4nGNgGGjAiC6Q51P2vy6oE85vWlfOcPL2OgYGBgaGX99+MjAwMDCcf/wYrg/FgDfz/v8/fvcQw5Sd3XCxHPdSBktlOwbvTlW42K9vP+GGoBjgbuLzH8YOsfaDi685uolhadZmuCHIBjBh8xdMc8+mboY1RzcxMDAwMERP82XYWn6bgYGBgYGNix2uFqsBMM3oANkQvAY8eXoHl7kMx+8eYjBXDYLzsYaBhYIWXOzEg2sYhizN2swgksSIPQxCrP0YZKRVcLoAHeAMA2INwWmAmc5ihiD34wxC/Bwo4jnupQxN68pxG7Dm6CYGr+z/DKeuxDKs22nJ0FQrjCJvqWzHMGlLF0YKHsIAAA/cVd6hJor0AAAAAElFTkSuQmCC"
         },
         {
             id: "EXTRA_PERK",
@@ -3200,7 +3394,9 @@ const apothIcons = {
             name: "Extra Perk",
             description: "From now on you will find an extra perk in every Holy Mountain.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Extra_Perk"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Perk",
+            ui_name: "$perk_extra_perk",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0UlEQVR4nN2SMQuCUBSFvyKUFJ0EEXFqcVSc+hf+1P5FQ0iNLbWIiOCkKOhi0xOeGhQFQWe6nHfeuee+d+HXWE2J0PMGAEVTZ+K+7QA4p+l4TzIIPW9QNJXIsciqZmbgmjpJXtK33WiymYoix+JwuWIbBiKJ6Hy6p8SBz/GWjXrJQNFUsqrBNgxpBFHbQFY10tl6lvNNLBosPeAzftFAzPwK/90R+rbDNXWKuqZvu7GjqIu6xjV1KcnsG5O8JA58eQ/0LQD7nUuSl5L+4038AzwAn3BTt3+gLeEAAAAASUVORK5CYII="
         },
         {
             id: "PERKS_LOTTERY",
@@ -3208,7 +3404,9 @@ const apothIcons = {
             name: "Perk Lottery",
             description: "When you pick a perk, there's a 50% chance the others won't disappear.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Perk_Lottery"
+            wiki_url: "https://noita.wiki.gg/wiki/Perk_Lottery",
+            ui_name: "$perk_perks_lottery",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6klEQVR4nN2SPwtBURTAfyTKbnyD6SWTwVuUL2BQFtPzPaQkJZ9DmZVexlcSBgaTdFdvfKsUC4Pu7d13PYtBOdP9c36/c04d+HWk4g8Vy3oAZPM5I/l+vQFwCALFaYKKZT3ege9EUpKJfkRh1/M1SOx37IZdIy8dt7uer8GzQQ8Au+rgej5Of6zlax3IShIAaA1G6m89nRjjGAKA42KuznbVUaDYrLBrdS3XGAGg3GhqHYnN6iWLwYmCeEhQihIF9+uNUJzUXY4S7SAMzmof4MMeFNsdCnYJgFCcCIMzl+1SFZJ78PUm/kE8AUaWW+WRj1tWAAAAAElFTkSuQmCC"
         },
         {
             id: "GAMBLE",
@@ -3216,7 +3414,9 @@ const apothIcons = {
             name: "Gamble (One-off)",
             description: "You gain two random perks.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Gamble"
+            wiki_url: "https://noita.wiki.gg/wiki/Gamble",
+            ui_name: "$perk_gamble",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJklEQVR4nGP8//8/AyWAiSLdDAwMLMgcRkZGBkNZ2f8MDAwMbFzsGIp/ffvJwMDAwHD+8WNGmMtRDDCUlf2/YO1UFE3i4iIM/m5xDMiGQi1hxPBCuhAbg15FOQP3vXsMehXlDHoV5QwvX75h2LhrEU4vMKIEorMWaojuOsnA8PsFhiYLAy+GEzduY7oAl2YbpwicylAMuJuWjuCgacZlCIoBX5WUUAxB14TNEAwvfFVSYrjU0YkipqWhgtV2DAM2rNyKIjm5v44hOMCd4dqNOwzBAe4Mk/vrGBgYEOkB04BV21AMMNTXYli7YScDAwMDw9oNOxkM9bUwnfD//384vnhqE4OhrOz/xuL0//+/38LAM7qq/xvKyv7///0WXA/jgGcmig0AAF4of+B4OMuRAAAAAElFTkSuQmCC"
         },
         {
             id: "EXTRA_SHOP_ITEM",
@@ -3224,7 +3424,9 @@ const apothIcons = {
             name: "Extra Item In Holy Mountain",
             description: "There will be an additional item in every Holy Mountain you haven't discovered yet.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Extra_Item_in_Holy_Mountain"
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Item_in_Holy_Mountain",
+            ui_name: "$perk_extra_shop_item",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0klEQVR4nN1SKw7CQBQcCNkNe4e6TdYWzDY47lCJ6xU4AAeoxuG4QQ9AMKSq9A5NcNgSQDwMLLx2W4MgYcxkP2/evMkDfo1B82ISBAQAQsnW51t9BQAcq8rVDZvFQkkUZQIAyA8LJiCUhFDSNWkJAECehsB4zrkHTKAoE0TLEgAY+5x0OvAhmm25wy5Yo4mymKjeM7ZGk3u7n4iymDoFrNFE9Z7zecVErNH+EJuzesd5ZvPC6PMwDTco1pbNmqchywB470PLgetw2XHuwdeb+Ad4APwqcXTdneyJAAAAAElFTkSuQmCC"
         },
         {
             id: "GENOME_MORE_HATRED",
@@ -3232,7 +3434,9 @@ const apothIcons = {
             name: "More Hatred",
             description: "Creatures become more aggressive towards each other.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/More_Hatred"
+            wiki_url: "https://noita.wiki.gg/wiki/More_Hatred",
+            ui_name: "$perk_genome_more_hatred",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8ElEQVR4nN2SsYrCQBRFz4Ks4BeIMFZCGkFEZAN+yoI/kCbodyjb2KYI+BdpAy4SFmGbgJUDsl8gaBMLM+HNTlJZLOyt3rw378693IG/xsvvxlipAuC103Yu3y5XAL60rvYsgrFShVxc9Sb01YiTPrA8ZxaRIWkk2M03jgI/DhyClrwgl9MkAqgUmL4fB5Y9i8DIBvj4+QYgFPWsnEs7loU3b1Ds5ht0nqG8B1Fd7ccBn/nRtQCQJhF9NSJNoupl9lvC7rDqSzgEy3PGqpS9nr6jvAk6z1jst4TlXKIxBROhgYyyMYU6JfJch6d/4j/AHbC0c0+nf72UAAAAAElFTkSuQmCC"
         },
         {
             id: "GENOME_MORE_LOVE",
@@ -3240,7 +3444,9 @@ const apothIcons = {
             name: "More Love",
             description: "Creatures become more friendly towards each other.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/More_Love"
+            wiki_url: "https://noita.wiki.gg/wiki/More_Love",
+            ui_name: "$perk_genome_more_love",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABCklEQVR4nN2SLW/CUBSGHxBtUktAwQQjmUGAWkOyjQTHX0AswSFnNoVCgUHOkSD6F3BLBktIUSAwJNvEqGqDJdkMU+emt00JjoRj7r3nnPe57/2Ac0cqmqgWCgcAwzJjzX/7XwCW263SpaNiwzKVuNMYMO7O6DQGCNSwTLVJzIEAAMbdWczBY+9eOREXmoOoeOj08b2AodPX8uHjaQCxDeB7gZaXtdQTAXbNVs1PrRdt9L0Au2YfB7hzFwBnOlJzd+7iTEdaXUK7xNub0kFsFq+ulQig9dDm++eL17dnABabz1QMEH4FgeTyWXwv0MThV0gEANxVmpQzdda7dz5WE5VPBAgETv+JFxD/uVVyOCyTyroAAAAASUVORK5CYII="
         },
         {
             id: "PEACE_WITH_GODS",
@@ -3248,7 +3454,9 @@ const apothIcons = {
             name: "Peace with Gods",
             description: "You make peace with your Gods.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Peace_with_Gods"
+            wiki_url: "https://noita.wiki.gg/wiki/Peace_with_Gods",
+            ui_name: "$perk_peace_with_steve",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIElEQVR4nMWTMWvCUBSFv1eKgnTrHKmQGreatBBd3PpP+gOkiKWb4GT/SMzSjv0J6dahQ0M6RHDp4iZSFbwdSiQviThk6IHH5cE9l3POu0+JCGVwUooNnKYvSilsw5BKrXqQsFmteZ/PVaJcU3CMDFCpVbENY+87Z+Hh7Fyrx6DSIb7cdHKJTpaLQuJb+KVyCrLNk+WC/mhMEEYEYUR/NM5PEpH9cS1TXMuU52tXXMsUz/MkjZ3sxPM8cS1TEo5modO61Cx8/2yJZzGNiwYA8SwGoNtqFlvIIiEnRAB/6ms9mgKnXteeMQij3NBuqwkcCDELf+pzd+Xuq2M7DNo9Nqt1sYJkE+FvYQAG7R6vnx8A3D7e8zQcapuo/v0zlR7wCyeNk0VjQLFBAAAAAElFTkSuQmCC"
         },
         {
             id: "MANA_FROM_KILLS",
@@ -3256,7 +3464,9 @@ const apothIcons = {
             name: "Kills to mana",
             description: "Every time an enemy near you dies, you release mana-recharging liquid.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Kills_To_Mana"
+            wiki_url: "https://noita.wiki.gg/wiki/Kills_To_Mana",
+            ui_name: "$perk_mana_from_kills",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAo0lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNfHhK6ZjYsdRfOvrpNwNkwOZgmGARg2dp1k4LMSQjEEHaAYgG4zn5UQwxx2BgxDkNXhdAFMMwMDA9wQgi5ABnPY8fMJGpDyEz+foAGfjr2Da0r5CeETNAAWzwwMDAxsZeZwQz4de8fAVmaOVR3eaIQZgqwZHVCcEocBAAC5MD6SjEaRLAAAAABJRU5ErkJggg=="
         },
         {
             id: "ANGRY_LEVITATION",
@@ -3264,7 +3474,9 @@ const apothIcons = {
             name: "Rage-fueled Levitation",
             description: "Killing an enemy makes you replenish some of your levitation power.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Rage-fueled_Levitation"
+            wiki_url: "https://noita.wiki.gg/wiki/Rage-fueled_Levitation",
+            ui_name: "$perk_angry_levitation",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABBklEQVR4nKWTIW/CQBTHf7eQNulH6FZqQDTBdKLJ1CwSPsAc4SMgsEsmFjQKh2+RIGcRqxgJAgww+AgkYA5BIL1eKSH9m8vdvfd/v7u8J6SUFNFToWyglNwIIfAdRwIYlglAq94B4H+75OW5Qj/8JN5sxIVcIfAdRxqWeU0GCGpDpaJhmdciGkFarXqH6exsEtSg3Qu1GIUgWTmpcPLGdPaRGZf7iYPxd941cOMJX6MfPNdmvtrRbbyfD/+yDTSCKF7guTYAnmsTxYtcAs1gvtrR9KvKmieR7MTXclkalqlUbfpVLem4P/C7XotMgjTFPYn0LFwosnTcHwCUTtQMHlXhYSpscAL1UFf34yMT2QAAAABJRU5ErkJggg=="
         },
         {
             id: "LASER_AIM",
@@ -3272,7 +3484,9 @@ const apothIcons = {
             name: "Pinpointer",
             description: "Your spells fly faster and have lower spread, and you have a handy sightline for aiming!",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Pinpointer"
+            wiki_url: "https://noita.wiki.gg/wiki/Pinpointer",
+            ui_name: "$perk_laser_aim",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyUlEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/bBqxGQQzhIlEF2MAFAOIsR1dHYoBqi2HGBgYGBhO3LjFwMDAwNAmIk7QMJQwsO469j8vwhDO73PVZWgTEWe4+f07gzonJ8O+798ZpBkYGJ4yMDC0njvHyMDAwMCCbICiogJDn6suw9/JJxiYcy0Y2kTEGarevIRIfv1E2AXm6ir/CboZCk7evIMZC7B4JgSQ1VEcjRSnxGEAALHaOvOek+HQAAAAAElFTkSuQmCC"
         },
         {
             id: "PERSONAL_LASER",
@@ -3280,7 +3494,9 @@ const apothIcons = {
             name: "Personal Plasma Beam",
             description: "You constantly fire a devastating plasma beam, but you fire spells much slower",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Personal_Plasma_Beam"
+            wiki_url: "https://noita.wiki.gg/wiki/Personal_Plasma_Beam",
+            ui_name: "$perk_personal_laser",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABA0lEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/mMYUjzK4+JwdXRgGwQxhweYsmOaeTd0MQu58DEyO/CjyHAwMDAwzHjNgGIDs7J5N3Qzx9wIZGBgYGLIYKlEMmMbQznB8xllMA2DgydM7DAwMDAwLldYzCLnzMWxm2ItNGW4DGBgYGCKMIbbv2L8Op2YGBgYGJnSBFI8yBhlpFbya8BoAA8QaguIFWDwzMDAwmOksZjDTYWC49d6A4d6TCwy41GG4YM6OLgav7P8Mp67EMqzbacnQVCuM1wUYKXF2/qz/MPaTp3cYdlxGBCK2lDgMAAAIp0mpfCrQ0QAAAABJRU5ErkJggg=="
         },
         {
             id: "MEGA_BEAM_STONE",
@@ -3288,7 +3504,9 @@ const apothIcons = {
             name: "Summon S\u00e4dekivi (One-off)",
             description: "You gain an artefact that allows you to call the celestial rage.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Summon_S\u00e4dekivi"
+            wiki_url: "https://noita.wiki.gg/wiki/Summon_S\u00e4dekivi",
+            ui_name: "$perk_mega_beam_stone",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6klEQVR4nGNgGHTAUFb2v6Gs7H+bOOP/B/5v/P//////B/5v/G8TZ/wfJoesngldMxsXOwMbFztWw2FyyIYwYVWJB3yw/orCZ0G3gRAQOMrNwMCF4KO4QHmeLAMDAwND541ehtcsz7AaAFOD1QV3kx4zMDAwMJRrFDPMvDEDq2aYGqwuQLbh6IN9KOKejTYMd5MeY7gAw4C7SY8Z/HZ4MyxqXoUibq3gRNgFfju84TbMnIvphTSrAhQ1DAxoYXD12SUUmoGBgYFBAeEdFHEoYEQXUE+SRElpxskaDGfn3kBRc3Pecwx9QxgAADj2UM3Fv7KOAAAAAElFTkSuQmCC"
         },
         {
             id: "APOTHEOSIS_GHOSTLY_VISION",
@@ -3296,7 +3514,9 @@ const apothIcons = {
             name: "Ghostly Vision",
             description: "You can see things which aren't there.. Without assistance.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Ghostly_Vision"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Ghostly_Vision",
+            ui_name: "$perk_apotheosis_ghostly_vision",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVR4nGNgGGjAiC5gKCv7n4GBgYGNix1D8a9vPxkYGBgYzj9+DNeHYoChrOx/bBqxGQQzhIlEF2MAFmQOuu2P/yIcKMv8H6s6FAPQNepYBsPFrhxfi2EQAwMWL6BrbqvMROEju4qBAS0QzdVV/hPrgpM37zDi9AJMEUwTNqfDAIoBv779RAkgXJpg6YGBgQrRSHFKHAYAAN7wOnE8kD3+AAAAAElFTkSuQmCC"
         },
         {
             id: "APOTHEOSIS_HASTE",
@@ -3304,7 +3524,9 @@ const apothIcons = {
             name: "Haste",
             description: "You move faster and levitate quicker.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Haste"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Haste",
+            ui_name: "$perk_apotheosis_haste_name",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0ElEQVR4nN1SsQnDMBC8hGCDd3BncNpUUpvO3sHgLVx/7S00hVeQqrQp3HkHgd0oRXgllgQpUgRyIJBe+vs7ccCvcQgLl7J0AJAVefR4sysA4LYsvu8YNmdFjqzI0SoZEfAdD4kIGK2SGAQlSULsCHjyIAgAdiTvZCl7AADSnbNujhbXSXdO1JUTdZW2MPUa13OD0TwVjIb8PlTEOH3yyHZ2Z0Uwco4VpBCqGA1h6nVawWbX6IP48XB/NXMegCBInIMUWiU92WZXH6avk/gHeACRamtedCkQowAAAABJRU5ErkJggg=="
         },
         {
             id: "APOTHEOSIS_VOID",
@@ -3312,7 +3534,9 @@ const apothIcons = {
             name: "Void",
             description: "Gain immense power, but the void grows jealous of your options.",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Void"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Void",
+            ui_name: "$perk_apotheosis_void",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABX0lEQVR4nN2SvW7bQBCEv9s7ior+ZbIKwDKtA3Z8mvCV4vdQpYdgmyeQAMOAATdBAghIyPvZFIoc/9C1gUy5OzPYmxt4b5iXg7qqFOD+1BNSICZFALGWavkBgG93d2bUoK4qffgV6P2AD54YIyFFBME6wUlGnjk+LqaPJu7lBb0f6H2P9wMxJZImDAaJQrQJUGD6yJen4vvTb3wY/oojq/Waz9fXbLYbkkZ8HPBh4PbHadwgpEAMkZAS26uCtv3C15sb2ralKEtSioToEWfHE90stppnuYoRbZpGu67TGKN2XadN0ygYddbpYrbQi+ZVBhccDgd2ux3ee/b7Pcfj8S3qPxTrK53nM7XWqTGiRVFoXddalqUaY1SM0TzLdDVf6qhBXVW6mi81zyZqRRSMco5dxZzPn09neunK6BMyNyHpeW/Mk280grMZmZs847/ZxMP3n6+K9KnYAs+b+B/gD0ZNq82RrwYYAAAAAElFTkSuQmCC"
         }
     ],
     spells: [
@@ -7346,7 +7570,161 @@ const apothIcons = {
             name: "Spell Infusion",
             description: "The first spell slotted in your wand will be applied to the wand as an always cast. Spell is voided upon use!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Spell_Infusion"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Spell_Infusion",
+        }
+    ],
+    pseuds: [
+        {
+            id: "$item_essence_air",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1klEQVR4nN2SQQrCMBBFn1JyjnYhCILgEXqZQKEgCF14AhcFQSgUepk5heDOnqMU6ip10kS3gn81Cfw3P5OBX2u1vOi6brpebpjEUFYFAE3dAjCMAwCP530VBWyz3WQSA0BZFeR5DoCI0NTtDLxebjMk+RTNmXWt76y1BADd3anv+8Cs5QF0bGdO0zSotdb60NQtIjKfYwY3DydviPvNYYqlEREvmYhgrf0+RN1lKQ3zAMM4cDofZ/MSohNFn6D3wD1DQ2J7EGziNttN8P7SZULwN/EP9AJpJlrW+6/lYQAAAABJRU5ErkJggg==",
+            name: "Essence of Air",
+            description: "Your being controls the air around you!",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Essence_of_Air"
+        },
+        {
+            id: "$item_essence_fire",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1UlEQVR4nNWSMQrCQBBFX1TSaOUFgp1gKSixEKzEm3gLsfManiKkEiwSFCwFO8kFUlktkVjILpPNGkvxV8My/78/sPBrefbDcDAqAfyOD0A6ywmTPgCqUFzmD7r7zPhatvkyfxgzQHu5MrPf8QmTvoHUAgBD03TXLFUJkLWlzttpJUg2rDWQkvXtIGeAJOvlchG8F3drJ6QSoO/XZG0uFwHeIXO2ajzBpWccfQ5QhQJgsjkBGKrdUu81NpAkHWTT4ctPTGe5ufkZR4yPPQBu92vN98d6AYCIR5LIThyLAAAAAElFTkSuQmCC",
+            name: "Essence of Fire",
+            description: "Your entire being is fluctuating!",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Essence_of_Fire"
+        },
+        {
+            id: "$item_essence_laser",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwElEQVR4nGNgGGjAiC6goaj9n4GBgYGNhQ1D8a8/vxgYGBgYbty/CteHYoCGovZ/bBqxGQQzhIlEF2MAFAOw2Z447xtD6y4phou3zjGsveWFoY4Fm6mJ874xqMioMNx5cofBxyaEQYWhhYGBgYFBhaGFYe0tBoZgtW3YXQDTzMDAwHDnyR0GFRkVCJuhBk7feHABRT2GC+YncSEZdgchoQDRXO32DL8BmIbBNDzDqgbFC7B4JgSQ1VEcjRSnxGEAAMs5QT4qVw20AAAAAElFTkSuQmCC",
+            name: "Essence of Earth",
+            description: "Your being releases damaging light!",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Essence_of_Earth"
+        },
+        {
+            id: "$item_essence_alcohol",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABPElEQVR4nN2SMWvCUBSFP0uSxUmXQsEhAYkkUCjo4OoQBLN08gdkcpV2kc6dSld/hotC2z+QQaEgKC2BZAgUsujkEoV0MY9E41zom9679577zj33wF+f0mngwb5JpqsKiqScFceHGICvYCVwuQYN1UxOgaPuBoDnt6qIWXrEy/SnBHBVRMvSIybDMqPuhkWwp+90mAzLIj9dVcQ910CRFCw9oqnKAPSdjshp7bpgk2WZG+G2fpdYeiTeTVWmZdQYz3yaqkzf6eC7HvevO5beZ/EIH9/XOfB8HTLoabSMGr7rMV+HuXqpaH6AllFDa9cF/cen92Pzaq6+UMRUA9/1GM98fNdj0NOEBhcZxIf4+EsEhCyCPYDQIF2lpUcsvQIGtrkVOqTglFHWB9k1njmxoZoJcNGJtrkVJvon5xcNLWsmNZtxaQAAAABJRU5ErkJggg==",
+            name: "Essence of Spirits",
+            description: "That was not the best of ideas",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Essence_of_Spirits"
+        },
+        {
+            id: "$item_essence_water",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABN0lEQVR4nN2SLW/CUBSGn46bm4U5mqsvQ41uQ+BB7B8QZmfRVM/MoIuZwWJH+h/AT7CtzOyjugG3iqakE0tvKMVNLNkxNzd53+e85+TAX5e1+8myjGbjIgOQQlK5mXDbcxj5AdvpgCRNAFi9P1uWZZUBZ6fnmRSSTcdl7PYBWKdVbBEDMPRm1BYeSZrw+vFiARztR8rN67SK/xgxX4YGNHb7bDpuQV8ASCFN57yCMDKgHCKFPAyo3ExMt/kyJAgjHK0IwohDutIOHp6+sl1z9LlC1ZvmdbSi29LYIub68qS8g5EfYIuYbkvjaIWqN2m83Rlzr62wRczIDw6PsJ0OClEdrTi+usfRyoy2rysAkjRh6M1Mil77x9htaRN96M3MPZQAALWFZyC52RaxMdcWXkH/60v8B/UNZU2TLdUxmBAAAAAASUVORK5CYII=",
+            name: "Essence of Water",
+            description: "The earth flows around you!",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Essence_of_Water"
+        },
+        {
+            id: "$item_apotheosis_polymorphine_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOklEQVR4nN2SMWvCQBTHfynHOTslkMWG0Da0U6aQr+AnEMHVXeIszoq7qyB+gg7dnMTJqSVVxHYJmKlzwkE65TA1W4dC33K8d///7z3uHvx1GJdJURR4zlMBIIVkZo/xo4DddMsgGZGrHID49GoYhnENeLh9LKSQ9EWXzqQHQONLkDUVAKvhgrlakquc9483A+Dm50ilufElSJ4/OW2OGtSZ9OiLbkVfAUghdecy0visQSVEClkPmNlj3e20OZLGZ0zPIo3P1OkAxOWFHwUV8z49AOgTwAld/CiAdQ1gN93iRwFO6OraPj1wb95hehZ2u0WGYjfd1k8wSEasedG56VmYnqXz8kcGyaj+DXKVsxouyJoKJ3Sx2y09thO6ZE3FarjQ+3AFAJirpYaU5qyptHmulhX9rzfxH8Q3uoWSXptVMD0AAAAASUVORK5CYII=",
+            name: "",
+            description: "",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/"
+        },
+        {
+            id: "$item_apotheosis_skill_angler_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAqUlEQVR4nGNgGGjAiC6goaj9n4GBgYGNhQ1D8a8/vxgYGBgYbty/CteHYoCGovZ/bBqxGQQzhIlEF2MAFAPQbRcIDGcwrFiAoQlZHVYXwDR9WL+S4f7N7VgNgQGUMNBTNfyPbLvAEx4UxdPs9zC4zvjIwPrlA8Ol2+cJh8Ht62sZbl9fC+fDNCMDFlxeON+RwMAK5X+Q+cLwYf1KOB+nFwYkGilOicMAAAB9AUBFLfhKewAAAABJRU5ErkJggg==",
+            name: "Angler Skill",
+            description: "Increase your fishing skill level by 1.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Angler_Skill"
+        },
+        {
+            id: "$item_apotheosis_essence_fungus_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/UlEQVR4nGNgGGjAiC6goaj9n4GBgYGNhQ1D8a8/vxgYGBgYbty/CteHYoCGovZ/ZI2eW/fC2du9nVEMghnCgstpnlv3MtzecBKFj2wIDKAYALMdpvnHrXNwudsbEIYgu5IJ3cTZRw9iaOZQM2L4cescw+0NJ1G8hdWAzgVHGRgYGBgSyyPgYqguOYmiHiMMyhOsGToXHGWY8eQrA0O0L4ocx+mnDKoB5gx3ZuMxINXaHu5XldQ2hoc7TzL8frSRgYGBgcEES0CieAEWz9u9nRlEZy1keLjzJAOvgDxcHqYZpg7DAGTwoWUdA6+APANzjjEuJQwMDFRIicMAAAAEh2bSXnPXbgAAAABJRU5ErkJggg==",
+            name: "Essence of Fungus",
+            description: "Your very being is infecting the environment around it!",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Essence_of_Fungus"
+        },
+        {
+            id: "$curse_apotheosis_alchemistdream_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABgElEQVR4nMWTMUjDUBRFT7RDhw4iWOxmTSMWpDpUCF06SgaXitBFhDpKVwUhlFro4ODiKLroIEhF6CDiVCilUkchQxIdRJQOIUOHbHHQhNQUBBG88Jf/7r3/Pt778Jd4u7lxAS5k2R1V9+49HkAkKE4oiqAfHbmxVIpcrRYyyasqumG4CUURPL4QJHjiVrXK6fMzm/V1ACzboXnQpJRMkq9UGBgGUrksAIwF43niuqbx7ji+8eRElNWdVeqaRqtaJZZK+e0MJcjlcm7MNH3x7uEGlu1wftYGIJuZQ7+9ZyCKdDqd4QQegmKA87M2s1uFz1aWF4aSjTT4jmxmjqeTKwDsxl2oHgndfL2um30kMc784ucBON6//NnAiy6JcXSzD8DLq0XvugfAdDTKYFQLF7LsNlSV8eMHLNvxTSQxzlJmhsL2CgClZJKGqvpT8A2K3a4wMAzylQpTl4+hqC+vFnvptL8HxW5XgMAYv2/iWq0WMmmoqr9EHn+I8Ju/8P/4ABO6ssiSm3n9AAAAAElFTkSuQmCC",
+            name: "Alchemist's Dream",
+            description: "All potions are replaced with Large Potions.\\nAll liquid bubbles are blessed with glass cannon.\\nAlchemists & Liquid bubble appear much more frequently.\\nNew Liquid Bubbles appear.",
+            bgImage: null,
+            wiki_url: null
+        },
+        {
+            id: "$curse_apotheosis_hardcore_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABcklEQVR4nMVTLWzCQBh9x8+oaIIZSUkwDWViRQy1jgnEZhBkFoHCkrrZhjTYOrIENU1CEFOYGcQIjinE+BLmmCWpgJBwM+vlSju3ZM/d99737t3dd8BfYjOZcAAYWhaP44N6oAOAlNycr9fZqt/nqmGg2utFTGqOgxURz9frLNAzWRA0T10Xz+s1vnY7wWmKgrauo9btwidCybYZACTkeEHz5eGAl0YjtLtXKOChXMbUdaEahjhOKEG1WuWD/V6sS5UKrkcjPBoGrqTa3XKJ2WwWThCH1WKBm1xONAc1GRGD95N1J5vFK+e/8hEDjygketpucS/dtUcU0qdwAk1RxE5v2y062WyE9+MSDC2Ljx0HbV3HZzIJjwi3UvzWT7K2rmPsOOIVhEFzPmc+EWrdLi4SCWiKAo8I54yhRQRNUXCWTos5aM7n4VfYTCa8ZNvMJ8LH8Qi/WIRqmhhkMlBNE36xGBoieZwhmwTHiZCI/wv/j2/cIaI0920rXAAAAABJRU5ErkJggg==",
+            name: "Hardcore",
+            description: "Healing Spells are uncopyable.\\nMost enemies have additional health depending on the biome.\\nSome creatures from late game biomes may have additional attack speed.\\nMost bosses have significantly increased health.\\nEnemies drop 50% less gold.\\nAlt-Fire teleport bolt replaces normal teleport bolt.\\nEnemies spawn 1 NG+ level earlier.",
+            bgImage: null,
+            wiki_url: null
+        },
+        {
+            id: "$curse_apotheosis_everything_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABTUlEQVR4nM2SoWtCURTGf28omESYMGEI20MNzxUdgphcsDzLTAabSRiY/B80mAZicl3TwvBPML6mSVQwqDBBHmMIhrMw3uWJb2PBsA9uuPd8v++eAwfOqd1yKABW3xCvuvPu+AB8bjgUNbX1+FkCwRjFYuckRM89sR5PJRQ1NcevuQ0OPBs1eHl9Z7M9qNrVpZ/qYxg912ZvT4kk6xrAhbs9B272VgouhHUANtsDzd6K2ahBIBhT46iAdHmiVWodUvGs+rUQ1onfB1UIQCqepVLrkC5Pjjtwa9AqKTj/cKtCBq3SidfnwQMomIRBHoC5p8+zAxKGghdm9+j+twCAVI+F2eX6bqVCfpXVN2S3HIrVN0SsqshHW0RE3m4MEZHvu1UVtw/gfHuwWw4lkqxre3uKnmsztzN8+nPqzO3MEexeZ9whzjg/jen2/Q99AbU4uYtNGq7DAAAAAElFTkSuQmCC",
+            name: "Tuonela",
+            description: "All seeds are applied at once.\\nEnemies drop significantly less gold.\\nThe world is upsidedown.\\nHardcore changes apply.\\nNightcore damage increases apply.\\nYou are blessed with additional health.\\nYou can only win by Ascension, but are allowed to visit parallel worlds.\\n\\nThere is no escape.\\nThere is no freedom.\\nThis is your purgatory now.",
+            bgImage: null,
+            wiki_url: null
+        },
+        {
+            id: "$curse_apotheosis_downunder_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOklEQVR4nMWTrY7CQBSFv25WNGQeoNQ16YqmDwApAoEg1WvQeF6AZNI0fQReYkOCqEJjSHEYFEWgtpqM74rdafoDiM0me9TN3HPOvXfmDvwlPrfbEuBjOCzv5fW55gG81sX9MDTOq1UpXJcgSTomYyk553nZD0ND8406QYt3cczatrler/i+j1IKpRTz241xFKHynLfFwgB4qbdXFwsh6PV6HNMUIQQAa9tmF8cI163GaXQQBEEpLhes6ZRjmmINBhSHAwDuZIIQgqIoUEqx3++bHWiI0Yhjmn7HP5V1XO9Go2vQEmncM707gjqd2p4dCN9/PIJlmk/F7XzjFTZSMnecpwZzx2EjZfUKlcEsywyV54yjiKXndSpZpsnS86o9mGWZAbU7aG/ie5J0qm+krJZI8xuE3/yF/8cXgZyVC9rw2cAAAAAASUVORK5CYII=",
+            name: "Down Under",
+            description: "The world is flipped upsidedown.\\nBest of luck!",
+            bgImage: null,
+            wiki_url: null
+        },
+        {
+            id: "$curse_apotheosis_nightcore_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABj0lEQVR4nMVTMUgCYRT+zrQO9EiI4gwy5DQhqXAJvQKHWlyKBkEEB6dACJdWiWizWySotraQRGoTpEUwbRODhroDQSgjCIozCIn+pvu562wL+rb/fe9973u89wN/iVq5SwAgFiqQQbwW1/IAwKovXo66mNMDmbi9DjzsiSaRTDaCDUUmy1EXo+Uz+gStOL9bRbN9AvXjiXIcyyPoSSGzE0FH6SGx5WMAwKK3pxWzn7PYXLswdA9P7WNxbh353SrcXgcdx+BAFEUi9I/pez7og3QWQti7DY5ZoLHz2xXU63Wjg0G4acqYHg/TYi2mh0lAJS3D2+9M4+Xr8lfeJNBQJEPS3eshxiyrBl4PK36AY3na6fHtCn5negCvmh3EQgWSy5YQ9KTQH2qjoUiYHF2i9ityEippIehJIZct0S1QgeJ1nOkoPWR2IrBbZsCxPBqKhGFmHBU5CY7lYbPZ6B0Ur+PGLdTKXZLY8jEdpYf3r3tMCCqEgB3PI0cQAnZMCKrhiPTnDL2INo6JxOC/8P/4BpVvrGJ015iJAAAAAElFTkSuQmCC",
+            name: "Nightcore",
+            description: "Healing Spells are uncopyable.\\nMost enemies have additional health depending on the biome.\\nSome creatures from late game biomes may have additional attack speed.\\nMost bosses have significantly increased health.\\nEnemies drop 50% less gold.\\nAlt-Fire teleport bolt replaces normal teleport bolt.\\nEnemies spawn 1 NG+ level earlier.\\nPlayer suffers from nightmare damage increases.",
+            bgImage: null,
+            wiki_url: null
+        },
+        {
+            id: "$curse_apotheosis_missingspells_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABd0lEQVR4nMWTP0vDUBTFf5GkiVr8B0J1kdKKOruEDHbuZ3Cyez9CKKXQzcnBbyAuBbcOTjrUSfHPEMGIo9IOpU2MTRqI0wuJqZvgGe+957xz3rsP/hLv3W4EcK7r0ay+qIs5ADlJ3qhWpZeTkyhfLmO0WhmRimnyYtvRRrUqiXkpOSDIV80mp8oOw8eLuLdl1Dgc3lBpNHBtm+16XQKYS9oT5LZl4Xmj1OnB1KdtWVw1m+TL5ThOyoFhGFH+9ZVBYZ+lpXU0dZGcosYCOUXFvzvDLZXo9XppBwIfkwkAnjdi4n/y8HRJMPUzfYGMQBJvb7cE4QTr+Tp28RO/Cnhfo0xNxElC/lkoaBpDOYcs5wBwxgP2dg9iBwVNw53l4FzXo45pUisWCcOAMAxwxoNUBIBasUjHNGe/QnIPjqcFvK8RC/PLrK1uAnDk3v2+B+/dbrRdr0uubVNpNFDUPssrPorax/Hucbz7FDm5ziRFRJzstc7+C/+Pb/V7wUQdPpYwAAAAAElFTkSuQmCC",
+            name: "Missing Spells",
+            description: "Half of all spells are removed from reality.",
+            bgImage: null,
+            wiki_url: null
+        },
+        {
+            id: "$curse_apotheosis_poverty_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABbklEQVR4nMWTsUvDQBjFX8VRzCD0KOlYM1bHI4tbILMoOLo52D9A0gMhQkeHQJEu4halxTFbKy462WbQIcmkDZXWIQGHbp+DJKRNQBDBD265997vvuEd8JczcRwCAJtzKtKT+8QHAKvZcEXXS75l0VqtBtU0c5AdIeAHAVV0vZT4Fwy+ZdHEccjmnDTGKBoaVJckqksSaYyRzTlNHId8y8pvmIg252koexJY1peDqKpKGmNEs3YaJKIFkMYYqaqahleWIe/zObZqJwAAN2ghHjVxf3ec6qcHGwv+HCAZN2ghHoeQqjKmngc3igAAR5fhz4BuR/sOb58hHocoKwriURNu0Mp5c4CLQxllRQEA+Df7kKpyukU8DtHtaMUAm3PqCYHXx3VMPQ8vV7coKwr8/gB+f4CPh2dIVRlP52/oCVFctmwPoqFBNGuTd71HNGtTNDQKe5A2abmJu6aZe6AnBD6DAJuNRnETf/MX/n++AHjl6mwNsA0PAAAAAElFTkSuQmCC",
+            name: "Poverty",
+            description: "You're Affluen't\\nMost enemies drop no gold.",
+            bgImage: null,
+            wiki_url: null
+        },
+        {
+            id: "$curse_apotheosis_towerclimb_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAElEQVR4nMVTvQrCMBD+Kg4dhI6tg0NAcescsnQrdHZ36J5HCCJ9BHfnLp07+xwWHBzsAzi4nYMkpE0rKIIHx5F8P1zgC/DLutU1AUDJOQ3h+l7zAGBqi+dZ5p0PB5otlxBF4ZgkSuHcNDTPMk/zPZugxaf9HsfLBe3jYbDI95EzhmS3w71psJKyo0XJOd3qmkrOKQ6C0bZ5zhuFEJSGIcVBQFLKwZmGIQkhjHjSN7HXTrZbAMA6TQfxQYNPazoGtG379jy6QeT7rxlFZuq2cceg5JwqpZAz9nblnDFUSplQjeagWiwc8eZ6dXJgDPpJ3BSFY1ApZcSa3yF88xf+X08du5kbVZ2wkAAAAABJRU5ErkJggg==",
+            name: "Towerclimb",
+            description: "All biomes can spawn any creature.",
+            bgImage: null,
+            wiki_url: null
+        },
+        {
+            id: "$curse_apotheosis_addict_name",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABb0lEQVR4nMWTv0vDQBTHvxHBCsWMaTdbY0uXziEdKhQKmTr4N7gIBR3cDCXETYpKts4OdXAQhIBUsENKB6EgFn8kglNTlwqaYrdzKHdcmuIggg+O+/X9vPfu3R3wl+bbNgGApqKQeft0neoAYJGHk5omuJZF4rIM1TQjToq6DtfzSFLTBKoXeAGF24aBVLoegqX4Crp3WyjWagg8D+vVqgAAC3x6PJwpZRmcKWXxFnwgla6jbRiIyzI7TigDVVXJ0eohRoEPAMglpiCdK5UNPF8/Yfd1D51ORwjVgNoo8DEYTwEMpx2ddy9uIoWNOBiMffTfH1HYWUZibQlyroCryy6c468IHKrBrPEAPz653f85g7P7AwwnEwCAkduG9+Cg9XIKAGgBSMRiCOZFbCoK8W2bNBWF5EWR9JwG6TkN8jnqk7wossbrIk5cy2KbZUkKOShLEoNdy2Iwu8bZl7hpmpEA57rOHhHVhwS/+Qv/b99uN8yYVzctQQAAAABJRU5ErkJggg==",
+            name: "Addict",
+            description: "20 Fungal & Creature shifts occur at the start of the run.",
+            bgImage: null,
+            wiki_url: null
+        },
+        {
+            id: "$perk_apotheosis_infinite_flight",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5UlEQVR4nN2SMQrCMBSG/0qxIHQq2dJNENw6OdU72EO4CV5A8AgFj+AVOrpnEXqIZiudGoS61Cmhr6/FUfAtCeH/vuSFB/y6vPFBEsc9ACxXAQu/Xx0AoKwqxxFBEsf9FDglshL/W/jxLNnZfrt1e/KC3WbdW8gYAwDouo4JoihCGIYeE7Rt2xtjJiGtNaSUTLAYhpqmIbDWmsE2Z2v2D+q6hpSSwEVRsJw/hoQQbgWAIAgcfL/lTEBaOGYZgZVSEEJAKUVgOw9MAMDBw+fm18tcp7SFsqq8Q5qSSWxOZ3bzcBL/oD5m+2Wb1Bxq9QAAAABJRU5ErkJggg==",
+            name: "Our Gift",
+            description: "A divine blessing grants you infinite flight.\\nSo long, and thanks for all the fish!",
+            bgImage: null,
+            wiki_url: null
+        },
+        {
+            id: "$perk_apotheosis_copy_spells",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABBUlEQVR4nN2SoW/CQBjFfyxLJllCgquqoRgCgtTsDyCZaSaLr50CgcagsHgqm8r5baKZKMGAoaquCQmKZBgQ5I5c7xAoEp653Lv3vXvflw/ujUqZaFvWESD5+tDEbi8CYJHnsk4xaFvWcTp+w+3USdKC5WpLGGf4nk2rWZP85+hHmjxpv3TqALIYIIwzlqut8i6gGIjYSVrIYoEwzkjSQtEZEwA07KqJNvKKwWy+BuC1+mI0ELzQaQZhnLHe7ACYjLpKsbiX29NaCIa/wHlYvmcD4Hu2HN5g/He9hcP+X4nYataUU/BCB/BcTvAdvZepS7q+Q9B35EJpBos8r7i96KZNfACcAO4nYr0zRHgaAAAAAElFTkSuQmCC",
+            name: "Copy Spells",
+            description: "Copy the Uncopyable.",
+            bgImage: null,
+            wiki_url: null,
         }
     ]
 }

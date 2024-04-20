@@ -12,6 +12,13 @@ function get_player()
     end
 end
 
+function get_world_state()
+    local world = EntityGetWithTag("world_state") or nil
+    if world ~= nil then
+        return EntityGetFirstComponentIncludingDisabled(world[1],"WorldStateComponent")
+    end
+end
+
 function get_player_pos()
     local x, y = EntityGetTransform(get_player())
     if (x ~= nil) then
@@ -48,6 +55,49 @@ function get_wands()
     end
 
     return wands or nil
+end
+
+function get_perks()
+    local childs = EntityGetAllChildren(get_player())
+    local perks = {}
+    local order = {}
+    for _, child in ipairs(childs) do
+        local is_perk = EntityHasTag(child,"perk_entity")
+        local is_essence = EntityHasTag(child,"essence_effect") and not EntityHasTag(child,"essence")
+        local is_pseudo = EntityHasTag(child,"pseudo_perk")
+        if is_perk or is_essence or is_pseudo then
+            local ui_comp = EntityGetFirstComponentIncludingDisabled(child,"UIIconComponent")
+            if ui_comp ~= nil then
+                local name = ComponentGetValue2(ui_comp,"name")
+                if perks[name] == nil then
+                    perks[name] = 1
+                    table.insert(order,name)
+                else
+                    perks[name] = perks[name] + 1
+                end
+            end
+        end
+    end
+    return { perks=perks, order=order } or nil
+end
+
+function get_player_info()
+    local player = get_player()
+    local hp_comp = EntityGetFirstComponentIncludingDisabled(player,"DamageModelComponent")
+    local money_comp = EntityGetFirstComponentIncludingDisabled(player,"WalletComponent")
+    local money = ComponentGetValue2(money_comp, "money")
+    local max_hp = ComponentGetValue2(hp_comp, "max_hp")
+    local hp = ComponentGetValue2(hp_comp, "hp")
+    return {hp, max_hp, money}
+end
+
+function get_shift_info()
+    local world_comp = get_world_state()
+    local mats = ComponentGetValue2(world_comp, "changed_materials")
+    for _, mat in ipairs(mats) do
+        mats[_]=GameTextGetTranslatedOrNot("$mat_" .. mat)
+    end
+    return mats
 end
 
 function get_inventory()
@@ -299,10 +349,26 @@ function serialize_data()
 
     local version = get_version()
 
+    local info = {}
+    local names = {}
+    local amounts = {}
+    local perk_order = get_perks()
+    local shifts = get_shift_info()
+    for i = #perk_order.order, 1, -1 do
+        table.insert(names,perk_order.order[i])
+        table.insert(amounts,perk_order.perks[perk_order.order[i]])
+    end
+
+    local player_info = get_player_info()
+    local health = { player_info[1], player_info[2] }
+    local gold = player_info[3]
+    table.insert(info, { names, amounts, shifts, health, gold })
+
     for _, wand in ipairs(wands_ids) do
         local stats = get_wand_stats(wand)
         local always_cast, deck = get_wand_spells(wand)
         table.insert(serialized, { stats, always_cast, deck })
     end
-    return json.encode({ wands = serialized, inventory = inventory, items = items, progress = progress, version = version })
+
+    return json.encode({ wands = serialized, inventory = inventory, items = items, progress = progress, version = version, info = info })
 end

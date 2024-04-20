@@ -418,6 +418,242 @@ const ItemTooltip = Vue.component('item-tooltip', {
     </div>`,
 })
 
+const worldComp = Vue.component('world-comp', {
+    data() {
+        return {
+            state: {
+                shifts: false,
+                mods: false,
+            }
+        }
+    },
+    computed: {
+        seedInfo() {
+            let seedIndex = streamerVersion.findIndex((x) => x.indexOf('seed=') > -1)
+            if (seedIndex == -1) return false
+            let seed = streamerVersion[seedIndex]
+            let url = `https://noitool.com/info?${seed}`
+            // uncomment when noita starts receiving beta pushes again
+            // if (this.switches.betaContent.state) {
+            //     url = `https://dev.noitool.com/info?${seed}`
+            // }
+            if (this.switches.apothContent.state) {
+                url = false
+            }
+            return { seed: seed, url: url }
+        },
+        updateWorld() {
+            let update = this.info[0]
+            return {
+                shifts: update.shifts,
+            }
+        },
+        mods() {
+            return streamerVersion.filter((x) => x != "beta").slice(0, -1)
+        }
+    },
+    props: ['info'],
+    inject: ['switches'],
+    template: `<div class="world-info">
+        <div class="world-header">
+            <p v-if="!seedInfo">No current run</p>
+            <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
+                <p>{{ seedInfo.seed }}</p>
+            </a>
+            <p v-else>{{ seedInfo.seed }}</p>
+            <v-switch v-model="state.shifts" title="Show Shifts" class="perk-switch"></v-switch>
+            <v-switch v-model="state.mods" :title="'Show Mods [' + mods.length + ']'" class="perk-switch"></v-switch>
+        </div>
+        <div class="world-body">
+            <fungal-comp v-if="state.shifts" :shifts="updateWorld.shifts"></fungal-comp>
+            <div v-if="state.mods" class="mods">
+                <p><u>Mods:</u></p>
+                <p v-for="mod in mods" :key="mod">{{ mod.length < 20 ? mod : mod.slice(0,20) }}</p>
+            </div>
+        </div>
+    </div>`
+})
+
+const fungalComp = Vue.component('fungal-comp', {
+    computed: {
+        shiftInfo() {
+            let in1 = this.shifts.filter((arr, ind) => !(ind % 2))
+            let out1 = this.shifts.filter((arr, ind) => (ind % 2))
+            console.log(in1, out1)
+            return out1.map((mat, ind, arr) => {
+                let input = in1[ind]
+                let io = mat
+                let out = in1.indexOf(mat) > -1 ? arr[in1.indexOf(mat)] : false
+                console.log(ind, input, io, out)
+                return {
+                    x: input,
+                    y: io,
+                    z: out,
+                    i: ind,
+                }
+            })
+        }
+    },
+    props: ['shifts'],
+    template: `<div class="shifts">
+            <p><u>Shifts:</u></p>
+            <div v-for="shift in shiftInfo" :key="shift.ind">
+                <p>{{ shift.x }} &#8594; {{ shift.y }}
+                    <span v-if="shift.z"> &#8594; {{ shift.z }}</span>
+                </p>
+            </div>
+    </div>`
+})
+
+const playerComp = Vue.component('player-comp', {
+    data() {
+        return {
+            tipHP: null,
+            tipGold: null,
+            state: false,
+        }
+    },
+    mounted() {
+        if (this.$refs.tipHP)
+            this.tipHP = Popper.createPopper(this.$refs.slotHP, this.$refs.tipHP, {
+                placement: 'bottom',
+            })
+        if (this.$refs.tipGold)
+            this.tipGold = Popper.createPopper(this.$refs.slotGold, this.$refs.tipGold, {
+                placement: 'bottom',
+            })
+    },
+    beforeDestroy() {
+        if (this.tipHP) {
+            this.tipHP.destroy()
+            this.tipHP = null
+        }
+        if (this.tipGold) {
+            this.tipGold.destroy()
+            this.tipGold = null
+        }
+    },
+    computed: {
+        updatePlayer() {
+            let update = this.info[0]
+            return {
+                hp: (update.health[0] * 25).toLocaleString('en-US'),
+                maxHP: (update.health[1] * 25).toLocaleString('en-US'),
+                gold: (update.gold).toLocaleString('en-US'),
+                shortHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(update.health[0] * 25),
+                shortMaxHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(update.health[1] * 25),
+                shortGold: Intl.NumberFormat('en-US', { notation: "compact" }).format(update.gold),
+                names: update.names,
+                amounts: update.amounts,
+            }
+        }
+    },
+    props: ['info'],
+    template: `<div class="info-wrapper">
+        <div class="player-info">
+            <div class="tip">
+                <p class="health" ref="slotHP">{{ updatePlayer.shortHP }} / {{ updatePlayer.shortMaxHP }}</p>
+                <p class="tooltip fit" ref="tipHP">HP: {{ updatePlayer.hp}} / {{ updatePlayer.maxHP }}</p>
+            </div>
+            <div class="tip">
+                <p class="money" ref="slotGold">{{ updatePlayer.shortGold }}</p>
+                <p class="tooltip fit" ref="tipGold">$: {{ updatePlayer.gold}}</p>
+            </div>
+            <v-switch v-model="state" title="Show All Perks" class="perk-switch"></v-switch>
+            <perks-comp :names="this.updatePlayer.names" :amounts="this.updatePlayer.amounts" :state="state"></perks-comp>
+        </div>
+    </div>`
+})
+
+const keyVal = (keys, vals) => Object.fromEntries(keys.map((val, ind) => [val, vals[ind]]));
+
+const perksComp = Vue.component('perks-comp', {
+    computed: {
+        playerPerks() {
+            let perks = this.names.map((name, ind) => ({
+                name: name,
+                amount: this.amounts[ind],
+            }))
+            return {
+                first8: perks.slice(0, 8),
+                over8: perks.slice(8),
+            }
+        },
+        perks() {
+            return this.perkTable.reduce((obj, item) => {
+                obj[item.ui_name] = item
+                return obj
+            }, {})
+        },
+        pseuds() {
+            return this.pseudTable.reduce((obj, item) => {
+                obj[item.id] = item
+                return obj
+            }, {})
+        },
+
+    },
+    props: ['names', 'amounts', 'state'],
+    inject: ['perkTable', 'pseudTable'],
+    template: `<div class="perks">
+        <perk-comp v-for="perk in playerPerks.first8" :key="perk.name" 
+        :icon="perks[perk.name] ? perks[perk.name] : pseuds[perk.name]" :amount="perk.amount"></perk-comp>
+        <perk-comp v-if="state" v-for="perk in playerPerks.over8" :key="perk.name" 
+        :icon="perks[perk.name] ? perks[perk.name] : pseuds[perk.name]" :amount="perk.amount"></perk-comp>
+    </div>`
+})
+
+const perkComp = Vue.component('perk-comp', {
+    data() {
+        return {
+            tooltip: null,
+        }
+    },
+    mounted() {
+        if (this.$refs.tooltip)
+            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip.$el, {
+                placement: 'bottom',
+                modifiers: [{ name: 'offset', options: { offset: [0, 10] } }],
+            })
+    },
+    beforeDestroy() {
+        if (this.tooltip) {
+            this.tooltip.destroy()
+            this.tooltip = null
+        }
+    },
+    props: ['icon', 'amount'],
+    template: `<div class="icon-slot no-bg">
+        <div class="zoom no-bg">
+            <a v-if="icon.wiki_url" :href="icon.wiki_url" tabindex="-1" target="_blank" rel="noopener noreferrer">
+                <img ref="slot" :src="'data:image/png;base64,' + (icon.ui_img ? icon.ui_img : icon.image)"/>
+            </a>
+            <img v-else ref="slot" :src="'data:image/png;base64,' + (icon.ui_img ? icon.ui_img : icon.image)"/>
+        </div>
+        <perk-tooltip ref="tooltip" :icon="icon" :amount="amount"></perk-tooltip>
+    </div>`,
+})
+
+const perkTooltip = Vue.component('perk-tooltip', {
+    computed: {
+        desc() {
+            if (this.icon.description) {
+                return this.icon.description.replace(/\\n/g, '<br>')
+            }
+            return null
+        },
+    },
+    props: ['icon', 'amount'],
+    template: `<div class="tooltip">
+        <p class="tooltip-title">{{ amount }} x {{ icon.name }}</p>
+        <p class="tooltip-wiki">({{ icon.id }})</p>
+        <div class="desc-container">
+            <p v-if="icon.description" class="tooltip-description" v-html="desc"></p>
+            <img :src="'data:image/png;base64,' + (icon.ui_img ? icon.ui_img : icon.image)"/>
+        </div>
+    </div>`,
+})
+
 const containerComp = Vue.component('wands-container', {
     data() {
         return {
@@ -427,6 +663,7 @@ const containerComp = Vue.component('wands-container', {
             retries: 0,
             wands: streamerWands,
             inventory: streamerInventory,
+            info: streamerInfo,
             items: streamerItems,
             newData: null,
             switches: {
@@ -466,6 +703,8 @@ const containerComp = Vue.component('wands-container', {
     provide() {
         return {
             switches: this.switches,
+            perkTable: this.dataVersion.icons.perks,
+            pseudTable: this.dataVersion.icons.pseuds,
         }
     },
     computed: {
@@ -530,20 +769,6 @@ const containerComp = Vue.component('wands-container', {
                 },
             ]
         },
-        // last minute add current seed with correct seedtool open in new tab link
-        seedInfo() {
-            let seedIndex = streamerVersion.findIndex((x) => x.indexOf('seed=') > -1)
-            if (seedIndex == -1) return false
-            let seed = streamerVersion[seedIndex]
-            let url = `https://noitool.com/info?${seed}`
-            if (this.switches.betaContent.state) {
-                url = `https://dev.noitool.com/info?${seed}`
-            }
-            if (this.switches.apothContent.state) {
-                url = false
-            }
-            return { seed: seed, url: url }
-        },
     },
     watch: {
         switches: {
@@ -566,6 +791,7 @@ const containerComp = Vue.component('wands-container', {
             this.progress = data.progress
             this.items = data.items
             this.version = data.version
+            this.info = data.info
             this.genKeys()
         },
         connect() {
@@ -575,6 +801,7 @@ const containerComp = Vue.component('wands-container', {
             this.ws.onmessage = (msg) => {
                 try {
                     const data = JSON.parse(msg.data)
+                    // console.log(data)
                     if (data.type == 'wands') {
                         if (this.switches.autoRefresh.state) {
                             this.updateData(data)
@@ -597,24 +824,20 @@ const containerComp = Vue.component('wands-container', {
         },
     },
     template: `<div class="content">
-        <div class="inventory-wrapper" v-if="inventory.length > 0">
-            <spell-inv :spells="inventory" :items="items"></spell-inv>
-        </div>
-        <div class="outdated" v-else>
-            <p>Streamer is running an outdated version of the mod.</p>
+        <div class="top-wrapper">
+            <div class="inventory-wrapper" v-if="inventory.length > 0">
+                <spell-inv :spells="inventory" :items="items"></spell-inv>
+            </div>
+            <div class="outdated" v-else>
+                <p>Streamer is running an outdated version of the mod.</p>
+            </div>
+            <player-comp :info="info"></player-comp>
         </div>
         <div class="wands-wrapper">
             <wand-comp v-for="(wand, i) in wands" :key="fKeys[i]" :stats="wand.stats" :ac="wand.always_cast" :deck="wand.deck"></wand-comp>
         </div>
         <div class="disclaimer">
-            <p v-if="!seedInfo">No current run</p>
-            <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
-                <p>{{ seedInfo.seed }}</p>
-            </a>
-            <p v-else>{{ seedInfo.seed }} No seed-tool for apotheosis</p>
-            <div>
-                <p>Disclaimer: Spell tooltips are <span class="strike">not</span> <i>mostly</i> accurate at the moment.</p>
-            </div>
+            <world-comp :info="info"></world-comp>
         </div>
         <div class="switches">
             <v-switch v-for="(sw, i) in switches" :key="i" v-model="sw.state" :title="sw.label" :class="sw.className"></v-switch>
@@ -849,13 +1072,6 @@ const Progress = Vue.component('prog-comp', {
         </div>
     </div>`,
 })
-// <search-tip ref="tooltip" :tip="tip[tName]"></search-tip>
-// const searchTip = Vue.component('search-tip', {
-//     props: ['tip'],
-//     template: `<div class="tooltip">
-//         <p>{{ tip }}</p>
-//     </div>`,
-// })
 
 const IconComp = Vue.component('icon-comp', {
     data() {
@@ -898,7 +1114,7 @@ const IconComp = Vue.component('icon-comp', {
             <img v-else ref="slot" :src="'data:image/png;base64,' + icon.image"/>
         </div>
         <spell-tooltip v-if="tName=='Spells'" ref="tooltip" :spell="icon.id"></spell-tooltip>
-        <icon-tooltip v-else ref="tooltip" :icon="icon" :iName="this.names[tName]"></icon-tooltip>
+        <icon-tooltip v-else ref="tooltip" :icon="icon"></icon-tooltip>
     </div>`,
 })
 
@@ -911,7 +1127,7 @@ const IconTooltip = Vue.component('icon-tooltip', {
             return null
         },
     },
-    props: ['icon', 'iName'],
+    props: ['icon'],
     template: `<div class="tooltip">
         <p class="tooltip-title">{{ icon.name }}</p>
         <p class="tooltip-wiki">({{ icon.id }})</p>
