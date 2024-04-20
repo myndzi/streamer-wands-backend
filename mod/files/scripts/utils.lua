@@ -96,6 +96,9 @@ function get_shift_info()
     local mats = ComponentGetValue2(world_comp, "changed_materials")
     for _, mat in ipairs(mats) do
         mats[_]=GameTextGetTranslatedOrNot("$mat_" .. mat)
+        if mats[_] == "" then
+            mats[_]=mat
+        end
     end
     return mats
 end
