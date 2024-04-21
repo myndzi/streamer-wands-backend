@@ -43,6 +43,18 @@ const getZipStream = async (relPath, extrafiles = []) => {
     return zip.generateNodeStream()
 }
 
+const getHostFile = () => {
+    const backendBaseUrl = process.env.BACKEND ?? 'wss://onlywands.com/'
+    if (!backendBaseUrl.endsWith('/')) backendBaseUrl += '/'
+    return Buffer.from(
+        [
+            `local token = dofile("mods/streamer_wands/token.lua")`,
+            `HOST_URL = "${backendBaseUrl}" .. token`,
+            ``,
+        ].join('\n'),
+    )
+}
+
 const getReleases = () => {
     const now = Date.now()
     const timeToNext = lastUpdated + updateFrequency - now
@@ -89,6 +101,7 @@ router.post(
             const extrafiles = [
                 ['token.lua', Buffer.from(`return "${jwt}"`)],
                 ['stats.lua', req.file ? await convertNoitaStats(req.file.buffer) : emptyStats],
+                ['files/ws/host.lua', getHostFile()],
             ]
 
             const filename = PATH.basename(relpath)
