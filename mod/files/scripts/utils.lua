@@ -62,10 +62,12 @@ function get_perks()
     local perks = {}
     local order = {}
     for _, child in ipairs(childs) do
-        local is_perk = EntityHasTag(child,"perk_entity")
-        local is_essence = EntityHasTag(child,"essence_effect") and not EntityHasTag(child,"essence")
-        local is_pseudo = EntityHasTag(child,"pseudo_perk")
-        if is_perk or is_essence or is_pseudo then
+        local ui_comp = EntityGetFirstComponentIncludingDisabled(child,"UIIconComponent")
+        local perk_comp = (ui_comp ~= nil and string.sub(ComponentGetValue2(ui_comp,"name"),1,5) == "$perk")
+        local perk_tag = EntityHasTag(child,"perk_entity")
+        local essence_tag = EntityHasTag(child,"essence_effect") and not EntityHasTag(child,"essence")
+        local pseudo_tag = EntityHasTag(child,"pseudo_perk")
+        if perk_tag or essence_tag or pseudo_tag or perk_comp then
             local ui_comp = EntityGetFirstComponentIncludingDisabled(child,"UIIconComponent")
             if ui_comp ~= nil then
                 local name = ComponentGetValue2(ui_comp,"name")
