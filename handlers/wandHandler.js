@@ -22,23 +22,16 @@ function statsValidation(stats) {
     return stats
 }
 
-function amtValidation(amounts) {
-    for (const amt in amounts) {
-        if (typeof amounts[amt] != 'number') amounts[amt] = 0
+function numbersValidation(arr) {
+    for (const key in arr) {
+        if (typeof arr[key] != 'number') arr[key] = 0
     }
-    return amounts
+    return arr
 }
 
-function healthValidation(hp) {
-    for (const val in hp) {
-        if (typeof hp[val] != 'number') hp[val] = 0
-    }
-    return hp
-}
-
-function goldValidation(gold) {
-    if (typeof gold != 'number') gold = 0
-    return gold
+function numberValidation(value) {
+    if (typeof value != 'number') value = 0
+    return value
 }
 
 exports.validate = (data) => {
@@ -92,13 +85,16 @@ exports.validate = (data) => {
 
     const validatedInfo = []
 
-    for (const player of info) {
+    for (const field of info) {
         valid = {}
-        valid.names = player[0].filter(strFilter)
-        valid.amounts = amtValidation(player[1])
-        valid.shifts = player[2].filter(strFilter)
-        valid.health = healthValidation(player[3])
-        valid.gold = goldValidation(player[4])
+        valid.names = field[0].filter(strFilter)
+        valid.amounts = numbersValidation(field[1])
+        valid.shifts = field[2].filter(strFilter)
+        valid.count = numberValidation(field[3])
+        valid.health = numbersValidation(field[4])
+        valid.gold = numberValidation(field[5])
+        valid.x = numberValidation(field[6])
+        valid.y = numberValidation(field[7])
         validatedInfo.push(valid)
     }
 

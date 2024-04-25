@@ -8,9 +8,15 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-body {
+:root {
     margin: 0;
+    --border-color: rgb(145, 129, 103) solid 2px;
 }
+
+/* 
+    border: solid 2px #ded7ce;
+    border-radius: 2px;
+*/
 
 img {
     border-style: none;
@@ -553,12 +559,14 @@ a:visited {
     justify-content: center;
 }
 
-.world-info,
+.world-info {
+    width: 100%
+}
+
 .world-info>div {
     display: flex;
     flex-flow: row wrap;
     column-gap: 1rem;
-    max-width: 800px;
 }
 
 .world-body,
@@ -567,21 +575,51 @@ a:visited {
     justify-content: center;
 }
 
-.world-body p {
+.world-body p,
+.world-body span {
     font-family: 'Inter', sans-serif;
 }
 
-.world-body>div {
+.world-body>div,
+.preview img,
+.preview {
     background-color: rgba(42, 33, 30, 0.25);
     color: rgba(255, 255, 255, 0.8);
     padding: 5px;
     margin: 5px;
-    border: solid 2px #ded7ce;
-    border-radius: 2px;
+    border: var(--border-color);
 }
 
-.shifts p {
+.preview {
+    display: flex;
+    max-width: 25rem;
+}
+
+.preview-info {
+    display: flex;
+    flex-flow: column;
+    margin: 5px;
+}
+
+.preview-info p:last-child {
+    margin-top: auto;
+}
+
+.preview img {
+    max-height: 10rem;
+}
+
+.shifts p,
+.preview-info p:first-child {
     text-transform: capitalize;
+}
+
+.shifts-header {
+    display: flex;
+}
+
+.strike {
+    text-decoration: line-through;
 }
 
 .info-wrapper {
@@ -594,7 +632,7 @@ a:visited {
     top: 4px;
 }
 
-.perk-switch {
+.base-switch {
     align-items: baseline !important;
 }
 
@@ -640,23 +678,6 @@ a:visited {
     color: rgb(204, 204, 204);
 }
 
-.strike {
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-}
-
-.strike:after {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 50%;
-    width: 125%;
-    top: -1px;
-    left: -3px;
-    border-bottom: 3px solid;
-}
-
 .switches {
     display: flex;
     flex-direction: row;
@@ -680,7 +701,8 @@ a:visited {
 }
 
 .switch-group.show-all,
-.switch-group.beta-content {
+.switch-group.beta-content,
+.map-testing {
     display: none !important;
 }
 
@@ -700,8 +722,7 @@ a:visited {
     color: rgba(255, 255, 255, 0.8);
     padding: 5px;
     margin: 5px;
-    border: solid 2px #ded7ce;
-    border-radius: 2px;
+    border: var(--border-color);
     width: 18.5rem;
     min-height: 350px;
 }
@@ -920,8 +941,7 @@ a:visited {
     background-color: rgba(17, 13, 12, 0.95);
     color: white;
     padding: 10px;
-    border: solid 2px #ded7ce;
-    border-radius: 2px;
+    border: var(--border-color);
 
     position: absolute;
     z-index: 3;
@@ -935,15 +955,15 @@ a:visited {
     display: inline;
 }
 
-.tip .tooltip {
+.tip .tooltip,
+.shifts-header .tooltip {
     min-width: 220px;
     min-height: 20px;
     visibility: hidden;
     background-color: rgb(17, 13, 12, 0.95);
     color: white;
     padding: 10px;
-    border: solid 2px #ded7ce;
-    border-radius: 2px;
+    border: var(--border-color);
     font-family: 'Inter', sans-serif;
     position: absolute;
     z-index: 3;
@@ -952,6 +972,15 @@ a:visited {
     /* transform: translateX(-50%); */
     font-size: 1rem;
     text-wrap: balance;
+}
+
+.shifts-header .tooltip {
+    max-width: 400px;
+}
+
+.shifts-header .tooltip p {
+    text-transform: none !important;
+    box-sizing: border-box;
 }
 
 .fit {
@@ -971,8 +1000,7 @@ a:visited {
     background-color: rgba(17, 13, 12, 0.95);
     color: white;
     padding: 10px;
-    border: solid 2px #ded7ce;
-    border-radius: 2px;
+    border: var(--border-color);
 
     position: absolute;
     z-index: 3;
@@ -985,6 +1013,7 @@ a:visited {
 .spell-slot:hover .tooltip,
 .icon-slot:hover .tooltip,
 .tip:hover .tooltip,
+.shifts-header:hover .tooltip,
 .item-slot:hover .tooltip {
     visibility: visible;
     transform: none;
