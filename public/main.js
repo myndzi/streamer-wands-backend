@@ -657,7 +657,7 @@ const playerComp = Vue.component('player-comp', {
                 maxHP: (info.health[1] * 25).toLocaleString('en-US'),
                 gold: (info.gold).toLocaleString('en-US'),
                 finite: {
-                    gold: info.gold < (2 ^ 31 - 1),
+                    gold: info.gold < (2 ** 31) - 1,
                     hp: bigHealth < maxHealth,
                 },
                 shortHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(info.health[0] * 25),
