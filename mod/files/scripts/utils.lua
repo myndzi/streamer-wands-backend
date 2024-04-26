@@ -24,6 +24,7 @@ function get_player_pos()
     if (x ~= nil) then
         return x, y
     end
+    return 0, 0
 end
 
 function str_to_table(data)
@@ -97,9 +98,9 @@ function get_shift_info()
     local world_comp = get_world_state()
     local mats = ComponentGetValue2(world_comp, "changed_materials")
     for _, mat in ipairs(mats) do
-        mats[_]=GameTextGetTranslatedOrNot("$mat_" .. mat)
+        mats[_] = GameTextGetTranslatedOrNot("$mat_" .. mat)
         if mats[_] == "" then
-            mats[_]=mat
+            mats[_] = mat
         end
     end
     return mats
@@ -289,6 +290,7 @@ function get_version()
     if GameIsBetaBuild() then
         table.insert(versions, "beta")
     end
+    table.insert(versions, "NG+" .. SessionNumbersGetValue("NEW_GAME_PLUS_COUNT"))
     local seed = StatsGetValue("world_seed")
     table.insert(versions, "seed=" .. seed)
     return versions
@@ -359,6 +361,7 @@ function serialize_data()
     local amounts = {}
     local perk_order = get_perks()
     local shifts = get_shift_info()
+    local count = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
     for i = #perk_order.order, 1, -1 do
         table.insert(names,perk_order.order[i])
         table.insert(amounts,perk_order.perks[perk_order.order[i]])
@@ -367,7 +370,8 @@ function serialize_data()
     local player_info = get_player_info()
     local health = { player_info[1], player_info[2] }
     local gold = player_info[3]
-    table.insert(info, { names, amounts, shifts, health, gold })
+    local x, y = get_player_pos()
+    table.insert(info, { names, amounts, shifts, count, health, gold, x, y })
 
     for _, wand in ipairs(wands_ids) do
         local stats = get_wand_stats(wand)

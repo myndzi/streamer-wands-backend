@@ -424,14 +424,16 @@ const worldComp = Vue.component('world-comp', {
             state: {
                 shifts: false,
                 mods: false,
-            }
+                map: false,
+            },
+            input: "3985&y=7392&zoom=1185",
         }
     },
     computed: {
         seedInfo() {
-            let seedIndex = streamerVersion.findIndex((x) => x.indexOf('seed=') > -1)
+            let seedIndex = this.version.findIndex((x) => x.indexOf('seed=') > -1)
             if (seedIndex == -1) return false
-            let seed = streamerVersion[seedIndex]
+            let seed = this.version[seedIndex]
             let url = `https://noitool.com/info?${seed}`
             // uncomment when noita starts receiving beta pushes again
             // if (this.switches.betaContent.state) {
@@ -440,68 +442,178 @@ const worldComp = Vue.component('world-comp', {
             if (this.switches.apothContent.state) {
                 url = false
             }
-            return { seed: seed, url: url }
+            return { seed: seed.replace("=", ": "), url: url }
         },
         updateWorld() {
             let update = this.info[0]
             return {
                 shifts: update.shifts,
+                count: update.count || 0,
             }
         },
         mods() {
-            return streamerVersion.filter((x) => x != "beta").slice(0, -1)
+            let filtered = this.version.filter((x) => x != "beta").slice(0, -1)
+            let ngp = Number(filtered[filtered.length - 1].slice(3))
+            return {
+                list: filtered.slice(0, -1),
+                ngp: (ngp > 0) ? `+${ngp}` : ""
+            }
+        },
+        osd() {
+            let x = this.info[0].x || 0
+            let y = this.info[0].y || 0
+
+            let PW = Math.sign(x) * Math.floor((Math.abs(x / 512) + 35) / 70)
+            let zoom = 3
+            let xOffset = Math.floor(((x / 512) + (1 - 2 * PW) * 35) / (2 ** zoom))
+            let yOffset = Math.floor(((y / 512) + 62) / (2 ** zoom))
+            let src = "https://regular-main-branch-middle.acidflow.stream/maps/regular-main-branch-middle/regular-main-branch-middle-2024-04-08-78633191_files/"
+            let pwName = "Main"
+            if (PW >= 1) {
+                src = "https://regular-main-branch-right.acidflow.stream/maps/regular-main-branch-right/regular-main-branch-right-2024-04-08-78633191_files/"
+                pwName = "East"
+            } else if (PW <= -1) {
+                src = "https://regular-main-branch-left.acidflow.stream/maps/regular-main-branch-left/regular-main-branch-left-2024-04-08-78633191_files/"
+                pwName = "West"
+            }
+            // console.log({ x: x, y: y, pw: PW, zoom: zoom, mapX: xOffset, mapY: yOffset })
+            let mapName = "regular-main-branch"
+            return {
+                img: `${src}${17 - zoom}/${xOffset}_${yOffset}.webp?v=1712752623`,
+                url: `https://map.runfast.stream/?map=${mapName}&x=${x}&y=${y}&zoom=1200`,
+                // x: Intl.NumberFormat('en-US', { 
+                //     notation: "compact", 
+                //     maximumSignificantDigits: 4,
+                //     maximumFractionDigits: 2 }).format(x),
+                // y: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(y),
+                x: x.toLocaleString('en-US', { maximumFractionDigits: 2 }),
+                y: y.toLocaleString('en-US', { maximumFractionDigits: 2 }),
+                pw: (PW != 0) ? `${pwName} ${Math.abs(PW)}` : pwName
+            }
+
         }
     },
-    props: ['info'],
+    props: ['info', 'version'],
     inject: ['switches'],
     template: `<div class="world-info">
         <div class="world-header">
-            <p v-if="!seedInfo">No current run</p>
-            <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
-                <p>{{ seedInfo.seed }}</p>
-            </a>
-            <p v-else>{{ seedInfo.seed }}</p>
-            <v-switch v-model="state.shifts" title="Show Shifts" class="perk-switch"></v-switch>
-            <v-switch v-model="state.mods" :title="'Show Mods [' + mods.length + ']'" class="perk-switch"></v-switch>
+            <v-switch v-model="state.shifts" :title="'Show Shifts [' + updateWorld.count + ']'" class="base-switch"></v-switch>
+            <v-switch v-model="state.mods" :title="'Show Mods [' + mods.list.length + ']'" class="base-switch"></v-switch>
+            <v-switch v-model="state.map" title="Show Map and Game info (spoilers!!!)" class="base-switch"></v-switch>
+            <input v-model="input" class="map-testing">
         </div>
         <div class="world-body">
             <fungal-comp v-if="state.shifts" :shifts="updateWorld.shifts"></fungal-comp>
             <div v-if="state.mods" class="mods">
                 <p><u>Mods:</u></p>
-                <p v-for="mod in mods" :key="mod">{{ mod.length < 20 ? mod : mod.slice(0,20) }}</p>
+                <p v-for="mod in mods.list" :key="mod">{{ mod.length < 20 ? mod : mod.slice(0,20) }}</p>
+            </div>
+            <div class="preview" v-if="state.map">
+                <a :href="osd.url" tabindex="-1" target="_blank" rel="noopener noreferrer">
+                    <img :src="osd.img"/>
+                    <p>Click for Fullscreen Map</p>
+                </a>
+                <div class="preview-info">
+                    <p v-if="!seedInfo">No current run</p>
+                    <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
+                        <p>Map {{ seedInfo.seed }}</p>
+                    </a>
+                    <p v-else>Map {{ seedInfo.seed }}</p>
+                    <p>x: {{ osd.x }}</p>
+                    <p>y: {{ osd.y }}</p>
+                    <p>In {{ osd.pw }} NG{{ mods.ngp }}</p>
+                    <p>Note:  Player is *somewhere* on the preview, Map preview is being reworked to detect and switch map based on NG+, gamemode, and mods</p>
+                </div>
             </div>
         </div>
     </div>`
 })
 
 const fungalComp = Vue.component('fungal-comp', {
+    data() {
+        return {
+            calc: true,
+            tooltip: null,
+        }
+    },
+    mounted() {
+        if (this.$refs.tooltip) {
+            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
+                placement: 'top',
+                modifiers: [{ name: 'offset', options: { offset: [0, 35] } }],
+            })
+        }
+    },
+    beforeDestroy() {
+        if (this.tooltip) {
+            this.tooltip.destroy()
+            this.tooltip = null
+        }
+    },
     computed: {
         shiftInfo() {
-            let in1 = this.shifts.filter((arr, ind) => !(ind % 2))
-            let out1 = this.shifts.filter((arr, ind) => (ind % 2))
-            console.log(in1, out1)
-            return out1.map((mat, ind, arr) => {
-                let input = in1[ind]
-                let io = mat
-                let out = in1.indexOf(mat) > -1 ? arr[in1.indexOf(mat)] : false
-                console.log(ind, input, io, out)
-                return {
-                    x: input,
-                    y: io,
-                    z: out,
-                    i: ind,
+            let inputs = this.shifts.filter((_arr, ind) => !(ind % 2))
+            let outputs = this.shifts.filter((_arr, ind) => (ind % 2))
+            let calculated = []
+            let original = []
+            let transformed = {}
+            for (let i = 0; i < outputs.length; i++) {
+                let inInd = inputs.lastIndexOf(outputs[i])
+                let inputMat = inputs[i]
+                let originalOutput = outputs[i]
+                if (inInd < i && inInd > -1) {
+                    outputs[i] = outputs[inInd]
+                    inInd = inputs.lastIndexOf(outputs[i])
                 }
-            })
+                let secondMat = outputs[i]
+                transformed[inputMat] = secondMat
+                let thirdMat = false
+                if (inInd > i) {
+                    thirdMat = outputs[inInd]
+                } else if (transformed[secondMat] != secondMat) {
+                    thirdMat = transformed[secondMat]
+                }
+                let overwrittenShifts = inputs.map((mat, ind) => (mat == inputMat && ind != i) ? ind : false)
+                overwrittenShifts.forEach((prevInd) => {
+                    if (prevInd && calculated[prevInd]) {
+                        calculated[prevInd].strike = prevInd < i
+                    }
+                })
+                calculated[i] = {
+                    matInput: inputMat,
+                    matInputOutput: secondMat,
+                    matOutput: thirdMat,
+                    i: i,
+                }
+                original[i] = {
+                    matInput: inputMat,
+                    matInputOutput: originalOutput,
+                    i: i,
+                }
+            }
+            return {
+                calculated: calculated,
+                original: original,
+            }
         }
     },
     props: ['shifts'],
     template: `<div class="shifts">
+        <div class="shifts-header" ref="slot">
             <p><u>Shifts:</u></p>
-            <div v-for="shift in shiftInfo" :key="shift.ind">
-                <p>{{ shift.x }} &#8594; {{ shift.y }}
-                    <span v-if="shift.z"> &#8594; {{ shift.z }}</span>
-                </p>
+            <v-switch v-model="calc" title="Show Broken Chains/Overwrites"></v-switch>
+            <div ref="tooltip" class="tooltip fit">
+                <p>"Water &#8594; Poison &#8594; Polymorphine" means
+                Water is a broken chain, so Water looks and hurts like poison,
+                but Water gets stain and ingestion effects from Polymorphine</p>
             </div>
+        </div>
+        <div v-for="shift in (calc ? shiftInfo.calculated : shiftInfo.original)" :key="shift.i">
+            <p :class="{ strike: shift.strike }">{{ shift.matInput }} &#8594; {{ shift.matInputOutput }}
+                <span v-if="shift.matOutput"> &#8594; {{ shift.matOutput }}</span>
+            </p>
+        </div>
+        <div
     </div>`
 })
 
@@ -535,16 +647,24 @@ const playerComp = Vue.component('player-comp', {
     },
     computed: {
         updatePlayer() {
-            let update = this.info[0]
+            let info = this.info[0]
+            // comparing health to 2^63 - 1, use BigInt cuz > 2^53-1
+            let bigHealth = BigInt(info.health[1] * 25)
+            // 2^63-1
+            let maxHealth = 9223372036854775807n
             return {
-                hp: (update.health[0] * 25).toLocaleString('en-US'),
-                maxHP: (update.health[1] * 25).toLocaleString('en-US'),
-                gold: (update.gold).toLocaleString('en-US'),
-                shortHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(update.health[0] * 25),
-                shortMaxHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(update.health[1] * 25),
-                shortGold: Intl.NumberFormat('en-US', { notation: "compact" }).format(update.gold),
-                names: update.names,
-                amounts: update.amounts,
+                hp: (info.health[0] * 25).toLocaleString('en-US'),
+                maxHP: (info.health[1] * 25).toLocaleString('en-US'),
+                gold: (info.gold).toLocaleString('en-US'),
+                finite: {
+                    gold: info.gold < (2 ^ 31 - 1),
+                    hp: bigHealth < maxHealth,
+                },
+                shortHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(info.health[0] * 25),
+                shortMaxHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(info.health[1] * 25),
+                shortGold: Intl.NumberFormat('en-US', { notation: "compact" }).format(info.gold),
+                names: info.names,
+                amounts: info.amounts,
             }
         }
     },
@@ -552,20 +672,20 @@ const playerComp = Vue.component('player-comp', {
     template: `<div class="info-wrapper">
         <div class="player-info">
             <div class="tip">
-                <p class="health" ref="slotHP">{{ updatePlayer.shortHP }} / {{ updatePlayer.shortMaxHP }}</p>
+                <p v-if="updatePlayer.finite.hp" class="health" ref="slotHP">{{ updatePlayer.shortHP }} / {{ updatePlayer.shortMaxHP }}</p>
+                <p v-else class="health" ref="slotHP">&#8734; / &#8734;</p>
                 <p class="tooltip fit" ref="tipHP">HP: {{ updatePlayer.hp}} / {{ updatePlayer.maxHP }}</p>
             </div>
             <div class="tip">
-                <p class="money" ref="slotGold">{{ updatePlayer.shortGold }}</p>
+                <p v-if="updatePlayer.finite.gold" class="money" ref="slotGold">{{ updatePlayer.shortGold }}</p>
+                <p v-else class="money" ref="slotGold">&#8734;</p>
                 <p class="tooltip fit" ref="tipGold">$: {{ updatePlayer.gold}}</p>
             </div>
-            <v-switch v-model="state" title="Show All Perks" class="perk-switch"></v-switch>
+            <v-switch v-model="state" title="Show All Perks" class="base-switch"></v-switch>
             <perks-comp :names="this.updatePlayer.names" :amounts="this.updatePlayer.amounts" :state="state"></perks-comp>
         </div>
     </div>`
 })
-
-const keyVal = (keys, vals) => Object.fromEntries(keys.map((val, ind) => [val, vals[ind]]));
 
 const perksComp = Vue.component('perks-comp', {
     computed: {
@@ -663,6 +783,8 @@ const containerComp = Vue.component('wands-container', {
             retries: 0,
             wands: streamerWands,
             inventory: streamerInventory,
+            progress: streamerProgress,
+            version: streamerVersion,
             info: streamerInfo,
             items: streamerItems,
             newData: null,
@@ -709,7 +831,7 @@ const containerComp = Vue.component('wands-container', {
     },
     computed: {
         dataVersion() {
-            const progress = streamerProgress[0] || {
+            const progress = this.progress[0] || {
                 perks: [],
                 spells: [],
                 enemies: [],
@@ -837,7 +959,7 @@ const containerComp = Vue.component('wands-container', {
             <wand-comp v-for="(wand, i) in wands" :key="fKeys[i]" :stats="wand.stats" :ac="wand.always_cast" :deck="wand.deck"></wand-comp>
         </div>
         <div class="disclaimer">
-            <world-comp :info="info"></world-comp>
+            <world-comp :info="info" :version="version"></world-comp>
         </div>
         <div class="switches">
             <v-switch v-for="(sw, i) in switches" :key="i" v-model="sw.state" :title="sw.label" :class="sw.className"></v-switch>
@@ -1449,9 +1571,6 @@ Vue.mixin({
             },
             get spellDataApoth() {
                 return spellDataApoth
-            },
-            get streamerVersion() {
-                return streamerVersion
             },
             get icons() {
                 return icons
