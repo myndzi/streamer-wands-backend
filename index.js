@@ -43,3 +43,4 @@ secureServer.listen(443, () => {
     console.log("[APP] Running port 443.")
 })
 */
+console.log('streamer wands', process.env.NODE_ENV, process.env.BACKEND || 'backend not set!')

@@ -10,9 +10,11 @@ module.exports = {
             max_memory_restart: '1G',
             env: {
                 NODE_ENV: 'development',
+                BACKEND: 'wss://dev.onlywands.com/'
             },
             env_production: {
                 NODE_ENV: 'production',
+                BACKEND: 'wss://onlywands.com/'
             },
         },
     ],
