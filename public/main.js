@@ -575,7 +575,7 @@ const fungalComp = Vue.component('fungal-comp', {
                 }
                 let overwrittenShifts = inputs.map((mat, ind) => (mat == inputMat && ind != i) ? ind : false)
                 overwrittenShifts.forEach((prevInd) => {
-                    if (prevInd && calculated[prevInd]) {
+                    if (prevInd && calculated[prevInd] && !calculated[prevInd.strike]) {
                         calculated[prevInd].strike = prevInd < i
                     }
                 })
@@ -609,11 +609,52 @@ const fungalComp = Vue.component('fungal-comp', {
             </div>
         </div>
         <div v-for="shift in (calc ? shiftInfo.calculated : shiftInfo.original)" :key="shift.i">
-            <p :class="{ strike: shift.strike }">{{ shift.matInput }} &#8594; {{ shift.matInputOutput }}
-                <span v-if="shift.matOutput"> &#8594; {{ shift.matOutput }}</span>
+            <p :class="{ strike: shift.strike }">
+                <mat-comp :material="shift.matInput" side="left"></mat-comp> &#8594; 
+                <mat-comp :material="shift.matInputOutput" side="top"></mat-comp>
+                <span v-if="shift.matOutput"> &#8594; 
+                    <mat-comp :material="shift.matOutput" side="right"></mat-comp>
+                </span>
             </p>
         </div>
         <div
+    </div>`
+})
+
+const materialComp = Vue.component('mat-comp', {
+    data() {
+        return {
+            tooltip: null,
+        }
+    },
+    mounted() {
+        if (this.$refs.tooltip)
+            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
+                placement: this.side,
+                modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
+            })
+    },
+    beforeDestroy() {
+        if (this.tooltip) {
+            this.tooltip.destroy()
+            this.tooltip = null
+        }
+    },
+    computed: {
+        mat() {
+            let both = this.material.split("@")
+            return {
+                raw: both[0],
+                ui: both[1],
+            }
+        }
+    },
+    props: ['material', 'side'],
+    template: `<div class="material tip" ref="slot">
+        <span>{{ mat.ui }}</span>
+        <div class="tooltip fit" ref="tooltip">
+            <p>{{ mat.raw }}</p>
+        </div>
     </div>`
 })
 
@@ -649,7 +690,7 @@ const playerComp = Vue.component('player-comp', {
         updatePlayer() {
             let info = this.info[0]
             // comparing health to 2^63 - 1, use BigInt cuz > 2^53-1
-            let bigHealth = BigInt(info.health[1] * 25)
+            let bigHealth = BigInt(Math.floor(info.health[1] * 25))
             // 2^63-1
             let maxHealth = 9223372036854775807n
             return {

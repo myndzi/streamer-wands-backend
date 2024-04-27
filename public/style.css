@@ -618,6 +618,14 @@ a:visited {
     display: flex;
 }
 
+.material {
+    display: inline;
+}
+
+.material .tooltip p {
+    text-transform: none !important;
+}
+
 .strike {
     text-decoration: line-through;
 }
@@ -1013,6 +1021,7 @@ a:visited {
 .spell-slot:hover .tooltip,
 .icon-slot:hover .tooltip,
 .tip:hover .tooltip,
+.material:hover .tooltip,
 .shifts-header:hover .tooltip,
 .item-slot:hover .tooltip {
     visibility: visible;
