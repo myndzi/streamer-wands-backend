@@ -3,6 +3,7 @@ dofile_once("data/scripts/perks/perk.lua")
 dofile_once("data/scripts/gun/gun_actions.lua")
 dofile_once("mods/streamer_wands/files/scripts/enemyNames.lua")
 dofile_once("mods/streamer_wands/files/scripts/enemyNamesApoth.lua")
+dofile_once("mods/streamer_wands/files/scripts/materials.lua")
 dofile_once("mods/streamer_wands/stats.lua")
 
 function get_player()
@@ -99,10 +100,14 @@ function get_shift_info()
     local mats = ComponentGetValue2(world_comp, "changed_materials")
     for _, mat in ipairs(mats) do
         local mat_name = GameTextGetTranslatedOrNot("$mat_" .. mat)
-        mats[_] = mat .. "@" .. mat_name
         if mat_name == "" then
-            mats[_] = mat .. "@" .. mat
+            if materials[mat] then
+                mat_name = GameTextGetTranslatedOrNot(materials[mat])
+            else
+                mat_name = mat
+            end
         end
+        mats[_] = mat .. "@" .. mat_name
     end
     return mats
 end
