@@ -5960,7 +5960,17 @@ const icons = {
             name: "Essence of Water",
             description: "The earth flows around you!",
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Essence_of_Water",
+            wiki_url: "https://noita.wiki.gg/wiki/Essence_of_Water"
+        },
+        {
+            id: "$perk_respawn_spent",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/0lEQVR4nMWTIW8CQRBG3wEBMqpuPUkTDKI5cUHVV1RVY7HYShQWiwF3NacQ/AuSJmuo6TmSlQguAXMYdnPHLZgTjNvJfG++ndkN8jynTjRqqYFW8fDf7+dfWQZAWzqV4nN2AiARobfbBRUHWikSEa/YQhMRtFIuVwJM0xStFDFNLyCmiVaKaZr6AW3pMDN7L8SKZ2Zfcugd4vLlUIJY8ev6o1Lbuk2M5yHR8A0A/bkhNsZ1XnqaVRwsJlu+Rz8ADK7igTE+o/evYP6OdKOV6/xosCWA3XNxYICDdKMV43no6rwObsU2LOR98nvfgX0kxT0Xw76TRMTlgqd/ptqAC9J0ZOAqPZ07AAAAAElFTkSuQmCC",
+            name: "Extra Life (One-Off)",
+            description: "Upon death you respawn with 100 health.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Life",
+            ui_name: "$perk_respawn_spent",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/0lEQVR4nMWTIW8CQRBG3wEBMqpuPUkTDKI5cUHVV1RVY7HYShQWiwF3NacQ/AuSJmuo6TmSlQguAXMYdnPHLZgTjNvJfG++ndkN8jynTjRqqYFW8fDf7+dfWQZAWzqV4nN2AiARobfbBRUHWikSEa/YQhMRtFIuVwJM0xStFDFNLyCmiVaKaZr6AW3pMDN7L8SKZ2Zfcugd4vLlUIJY8ev6o1Lbuk2M5yHR8A0A/bkhNsZ1XnqaVRwsJlu+Rz8ADK7igTE+o/evYP6OdKOV6/xosCWA3XNxYICDdKMV43no6rwObsU2LOR98nvfgX0kxT0Xw76TRMTlgqd/ptqAC9J0ZOAqPZ07AAAAAElFTkSuQmCC"
         }
     ]
 }
