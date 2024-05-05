@@ -90,7 +90,7 @@ exports.validate = (data) => {
         valid.names = field[0].filter(strFilter)
         valid.amounts = numbersValidation(field[1])
         valid.shifts = field[2].filter(strFilter)
-        valid.count = numberValidation(field[3])
+        valid.shiftInfo = numbersValidation(field[3])
         valid.health = numbersValidation(field[4])
         valid.gold = numberValidation(field[5])
         valid.x = numberValidation(field[6])

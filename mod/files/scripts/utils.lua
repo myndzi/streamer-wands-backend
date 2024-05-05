@@ -363,11 +363,19 @@ function serialize_data()
     local version = get_version()
 
     local info = {}
+    local fungal_info = {}
+    local shifts = get_shift_info()
+    table.insert(fungal_info,tonumber(GlobalsGetValue("fungal_shift_iteration", "0")))
+    local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
+    local shift_timer = (GameGetFrameNum() - last_trip) / 60
+    if shift_timer > 300 then
+        shift_timer = -1
+    end
+    table.insert(fungal_info,shift_timer)
+
     local names = {}
     local amounts = {}
     local perk_order = get_perks()
-    local shifts = get_shift_info()
-    local count = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
     for i = #perk_order.order, 1, -1 do
         table.insert(names,perk_order.order[i])
         table.insert(amounts,perk_order.perks[perk_order.order[i]])

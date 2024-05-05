@@ -601,6 +601,26 @@ a:visited {
     margin: 5px;
 }
 
+.preview-icon {
+    position: relative;
+    font-size: 20px;
+    line-height: 50%;
+    color: rgb(255, 0, 255);
+    -webkit-text-stroke: white 1px;
+}
+
+.preview a p {
+    text-align: center;
+}
+
+.preview-icon-wrapper {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top: 12px;
+    left: 12px;
+}
+
 .preview-info p:last-child {
     margin-top: auto;
 }
@@ -710,7 +730,7 @@ a:visited {
 
 .switch-group.show-all,
 .switch-group.beta-content,
-.map-testing {
+.hide-input {
     display: none !important;
 }
 
