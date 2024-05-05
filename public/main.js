@@ -569,7 +569,7 @@ const worldComp = Vue.component('world-comp', {
                     <p>x: {{ osd.x }}</p>
                     <p>y: {{ osd.y }}</p>
                     <p>In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
-                    <p>Note:  Player is *somewhere* on the preview, Map preview is being reworked to detect and switch map based on NG+, gamemode, and mods</p>
+                    <p>Note:  Map preview is being reworked to detect and switch map based on NG+, gamemode, and mods</p>
                 </div>
             </div>
         </div>
