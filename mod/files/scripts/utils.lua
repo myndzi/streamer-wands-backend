@@ -385,7 +385,7 @@ function serialize_data()
     local health = { player_info[1], player_info[2] }
     local gold = player_info[3]
     local x, y = get_player_pos()
-    table.insert(info, { names, amounts, shifts, count, health, gold, x, y })
+    table.insert(info, { names, amounts, shifts, fungal_info, health, gold, x, y })
 
     for _, wand in ipairs(wands_ids) do
         local stats = get_wand_stats(wand)
