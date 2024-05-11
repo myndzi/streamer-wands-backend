@@ -3,7 +3,7 @@ const infoSchema = new mongoose.Schema({
     names: [String],
     amounts: [Number],
     shifts: [String],
-    count: Number,
+    shiftInfo: [Number],
     health: [Number],
     gold: Number,
     x: Number,

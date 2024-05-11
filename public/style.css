@@ -609,7 +609,7 @@ a:visited {
     -webkit-text-stroke: white 1px;
 }
 
-.preview a p {
+.preview-link {
     text-align: center;
 }
 
@@ -1127,11 +1127,10 @@ a:visited {
     white-space: nowrap;
 }
 
-.stats-title {
-    display: block;
+.stats-header {
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
 }
 
 .tooltip-description {

@@ -1,7 +1,7 @@
 const WandContainer = Vue.component('wand-comp', {
     props: ['stats', 'ac', 'deck'],
     template: `<div class="wand">
-        <wand-stats :stats="stats"></wand-stats>
+        <wand-stats :stats="stats" :deck="deck"></wand-stats>
         <template v-if="ac.length > 0">
             <wand-ac :spells="ac"></wand-ac>
         </template>
@@ -18,46 +18,62 @@ const WandStats = Vue.component('wand-stats', {
                     classes: 'crisp shuffle-deck',
                     label: 'Shuffle',
                     key: 'shuffle_deck_when_empty',
+                    newSim: 'x'
                 },
                 {
                     classes: 'crisp spells-cast',
                     label: 'Spells/Cast',
                     key: 'actions_per_round',
+                    newSim: 'a',
                 },
                 {
                     classes: 'crisp cast-delay',
                     label: 'Cast Delay',
                     key: 'fire_rate_wait',
+                    simName: 'cast_delay',
+                    newSim: 'd',
                 },
                 {
                     classes: 'crisp recharge-time',
                     label: 'Recharge Time',
                     key: 'reload_time',
+                    newSim: 'r',
                 },
                 {
                     classes: 'crisp mana-max',
                     label: 'Mana Max',
                     key: 'mana_max',
+                    newSim: 'm',
                 },
                 {
                     classes: 'crisp mana-charge',
                     label: 'Mana chg spd',
                     key: 'mana_charge_speed',
+                    newSim: 'c',
                 },
                 {
                     classes: 'crisp deck-capacity',
                     label: 'Capacity',
                     key: 'deck_capacity',
+                    newSim: 'l',
                 },
                 {
                     classes: 'crisp wand-spread',
                     label: 'Spread',
                     key: 'spread_degrees',
+                    simName: 'spread',
+                    newSim: 'q',
+                },
+                {
+                    classes: 'crisp speed-mult',
+                    label: 'Speed',
+                    key: 'speed_multiplier',
+                    newSim: 'v',
                 },
             ],
         }
     },
-    props: ['stats'],
+    props: ['stats', 'deck'],
     computed: {
         sprite() {
             return wandSprites[this.spriteKey] || wandSprites['bomb_wand']
@@ -78,15 +94,41 @@ const WandStats = Vue.component('wand-stats', {
                 } else if (key == 'deck_capacity') {
                     const ac = this.$parent.ac.length
                     stats[key] = ac ? stats[key] - ac : stats[key]
+                } else if (key == 'speed_multiplier') {
+                    stats[key] = `x ${stats[key].toFixed(2)}`
                 } else {
                     stats[key] = stats[key].toFixed && stats[key].toFixed(0)
                 }
             }
             return stats
         },
+        // old wand sim site, URL breaks if spell not present on page
+        // wandSim() {
+        //     let link = 'https://noita-wand-simulator.salinecitrine.com/?'
+        //     let statsLink = this.propOrder.map((prop) => {
+        //         let name = prop.simName || prop.key
+        //         let value = +this.stats[prop.key]
+        //         return `${name}=${value}`
+        //     }).join('&')
+        //     let deckLink = this.deck.map((spell) => spell.split("_#")[0]).join('%2C')
+        //     return link + statsLink + '&spells=' + deckLink
+        // },
+        // new wand sim site, URL does not break if spell not on page
+        wandSim() {
+            let link = 'https://tinker-with-wands-online.vercel.app/?'
+            let statsLink = this.propOrder.map(
+                (prop) => `${prop.newSim}=${+this.stats[prop.key]}`).join('&')
+            let deckLink = this.deck.map((spell) => spell.split("_#")[0]).join('%2C')
+            return link + statsLink + '&spells=' + deckLink
+        },
     },
     template: `<div class="stats-wrapper">
-        <p class="stats-title">{{ stats.ui_name }}</p>
+        <div class="stats-header">
+            <p class="stats-title">{{ stats.ui_name }}</p>
+            <a :href="wandSim" tabindex="-1" target="_blank" rel="noopener noreferrer">
+                <p>Tinker</p>
+            </a>
+        </div>
         <div class="stats">
             <div class="stats-props">
                 <p v-for="prop in propOrder" :class="prop.classes" :key="prop.label">{{prop.label}}</p>
@@ -448,7 +490,7 @@ const worldComp = Vue.component('world-comp', {
         },
         updateWorld() {
             let update = this.info[0]
-            let shiftInfo = update.shiftInfo || [0, -1]
+            let shiftInfo = update.shiftInfo
             return {
                 shifts: update.shifts,
                 count: shiftInfo[0],
@@ -511,18 +553,17 @@ const worldComp = Vue.component('world-comp', {
             }
             let yMap = Math.floor(((y / 512) + y0 - HH * yLoop) / zoom)
             let yStar = -6 + ((y + (y0 - yLoop * HH) * 512) - (yMap * 4096)) * 192 / 4096
-
-            console.log({
-                x: x || 0,
-                y: y || 0,
-                pw: PW || 0,
-                hh: HH || 0,
-                // hhMap: hhMap || 0,
-                xMap: xMap || 0,
-                yMap: yMap || 0,
-                xStar: xStar || 0,
-                yStar: yStar || 0,
-            })
+            // debug map stuff
+            // console.log({
+            //     x: x || 0,
+            //     y: y || 0,
+            //     pw: PW || 0,
+            //     hh: HH || 0,
+            //     xMap: xMap || 0,
+            //     yMap: yMap || 0,
+            //     xStar: xStar || 0,
+            //     yStar: yStar || 0,
+            // })
             let mapName = "regular-main-branch"
             return {
                 img: `${src}14/${xMap}_${yMap}.webp?v=1712752623`,
@@ -558,7 +599,7 @@ const worldComp = Vue.component('world-comp', {
                 </div>
                 <a :href="osd.url" tabindex="-1" target="_blank" rel="noopener noreferrer">
                     <img :src="osd.img"/>
-                    <p>Click for Fullscreen Map</p>
+                    <p class="preview-link">Click for Fullscreen Map</p>
                 </a>
                 <div class="preview-info">
                     <p v-if="!seedInfo">No current run</p>
