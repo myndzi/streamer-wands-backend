@@ -506,7 +506,7 @@ const worldComp = Vue.component('world-comp', {
             }
         },
         osd() {
-            zoom = 8
+            const zoom = 8
             // map constants, get from tileSources future me
             // chunks from map start(0,0) to noita start(0,0) 
             const x0 = 35

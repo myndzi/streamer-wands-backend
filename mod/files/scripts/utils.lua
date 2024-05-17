@@ -304,9 +304,20 @@ end
 
 function get_spells_progress()
     local spells = {}
+    local mods = get_version()
+    local lock = false
+    for i, mod in ipairs(mods) do
+        if mod == "conga_spell_lock" then
+            lock = true
+        end
+    end
     for _, spell in ipairs(actions) do
         if HasFlagPersistent("action_" .. string.lower(spell.id)) then
-            table.insert(spells, spell.id)
+            if lock and not HasFlagPersistent("disabled_" .. string.lower(spell.id)) then
+                table.insert(spells, spell.id)
+            elseif not lock then
+                table.insert(spells, spell.id)
+            end
         end
     end
     return spells
