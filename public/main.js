@@ -1,7 +1,7 @@
 const WandContainer = Vue.component('wand-comp', {
     props: ['stats', 'ac', 'deck'],
     template: `<div class="wand">
-        <wand-stats :stats="stats"></wand-stats>
+        <wand-stats :stats="stats" :deck="deck"></wand-stats>
         <template v-if="ac.length > 0">
             <wand-ac :spells="ac"></wand-ac>
         </template>
@@ -18,46 +18,62 @@ const WandStats = Vue.component('wand-stats', {
                     classes: 'crisp shuffle-deck',
                     label: 'Shuffle',
                     key: 'shuffle_deck_when_empty',
+                    newSim: 'x'
                 },
                 {
                     classes: 'crisp spells-cast',
                     label: 'Spells/Cast',
                     key: 'actions_per_round',
+                    newSim: 'a',
                 },
                 {
                     classes: 'crisp cast-delay',
                     label: 'Cast Delay',
                     key: 'fire_rate_wait',
+                    simName: 'cast_delay',
+                    newSim: 'd',
                 },
                 {
                     classes: 'crisp recharge-time',
                     label: 'Recharge Time',
                     key: 'reload_time',
+                    newSim: 'r',
                 },
                 {
                     classes: 'crisp mana-max',
                     label: 'Mana Max',
                     key: 'mana_max',
+                    newSim: 'm',
                 },
                 {
                     classes: 'crisp mana-charge',
                     label: 'Mana chg spd',
                     key: 'mana_charge_speed',
+                    newSim: 'c',
                 },
                 {
                     classes: 'crisp deck-capacity',
                     label: 'Capacity',
                     key: 'deck_capacity',
+                    newSim: 'l',
                 },
                 {
                     classes: 'crisp wand-spread',
                     label: 'Spread',
                     key: 'spread_degrees',
+                    simName: 'spread',
+                    newSim: 'q',
+                },
+                {
+                    classes: 'crisp speed-mult',
+                    label: 'Speed',
+                    key: 'speed_multiplier',
+                    newSim: 'v',
                 },
             ],
         }
     },
-    props: ['stats'],
+    props: ['stats', 'deck'],
     computed: {
         sprite() {
             return wandSprites[this.spriteKey] || wandSprites['bomb_wand']
@@ -78,15 +94,41 @@ const WandStats = Vue.component('wand-stats', {
                 } else if (key == 'deck_capacity') {
                     const ac = this.$parent.ac.length
                     stats[key] = ac ? stats[key] - ac : stats[key]
+                } else if (key == 'speed_multiplier') {
+                    stats[key] = `x ${stats[key].toFixed(2)}`
                 } else {
                     stats[key] = stats[key].toFixed && stats[key].toFixed(0)
                 }
             }
             return stats
         },
+        // old wand sim site, URL breaks if spell not present on page
+        // wandSim() {
+        //     let link = 'https://noita-wand-simulator.salinecitrine.com/?'
+        //     let statsLink = this.propOrder.map((prop) => {
+        //         let name = prop.simName || prop.key
+        //         let value = +this.stats[prop.key]
+        //         return `${name}=${value}`
+        //     }).join('&')
+        //     let deckLink = this.deck.map((spell) => spell.split("_#")[0]).join('%2C')
+        //     return link + statsLink + '&spells=' + deckLink
+        // },
+        // new wand sim site, URL does not break if spell not on page
+        wandSim() {
+            let link = 'https://tinker-with-wands-online.vercel.app/?'
+            let statsLink = this.propOrder.map(
+                (prop) => `${prop.newSim}=${+this.stats[prop.key]}`).join('&')
+            let deckLink = this.deck.map((spell) => spell.split("_#")[0]).join('%2C')
+            return link + statsLink + '&spells=' + deckLink
+        },
     },
     template: `<div class="stats-wrapper">
-        <p class="stats-title">{{ stats.ui_name }}</p>
+        <div class="stats-header">
+            <p class="stats-title">{{ stats.ui_name }}</p>
+            <a :href="wandSim" tabindex="-1" target="_blank" rel="noopener noreferrer">
+                <p>Tinker</p>
+            </a>
+        </div>
         <div class="stats">
             <div class="stats-props">
                 <p v-for="prop in propOrder" :class="prop.classes" :key="prop.label">{{prop.label}}</p>
@@ -426,7 +468,9 @@ const worldComp = Vue.component('world-comp', {
                 mods: false,
                 map: false,
             },
-            input: "3985&y=7392&zoom=1185",
+            input: "0,0",
+            // debug: "",
+            debug: "hide-input",
         }
     },
     computed: {
@@ -446,9 +490,11 @@ const worldComp = Vue.component('world-comp', {
         },
         updateWorld() {
             let update = this.info[0]
+            let shiftInfo = update.shiftInfo
             return {
                 shifts: update.shifts,
-                count: update.count || 0,
+                count: shiftInfo[0],
+                timer: shiftInfo[1],
             }
         },
         mods() {
@@ -460,13 +506,30 @@ const worldComp = Vue.component('world-comp', {
             }
         },
         osd() {
+            const zoom = 8
+            // map constants, get from tileSources future me
+            // chunks from map start(0,0) to noita start(0,0) 
+            const x0 = 35
+            const y0 = 62
+            // world half-length and full length in chunks
+            const xHalf = 35
+            const xFull = 70
+            // chunks from noita start to hell and heaven
+            const yHell = 34
+            const yHeaven = -14
+            // chunk height of heaven/hell loop
+            const yLoop = 48
+
             let x = this.info[0].x || 0
             let y = this.info[0].y || 0
+            // debug coord input
+            // let [x, y] = this.input.split(",").map((x) => Number(x)) || [0, 0]
 
-            let PW = Math.sign(x) * Math.floor((Math.abs(x / 512) + 35) / 70)
-            let zoom = 3
-            let xOffset = Math.floor(((x / 512) + (1 - 2 * PW) * 35) / (2 ** zoom))
-            let yOffset = Math.floor(((y / 512) + 62) / (2 ** zoom))
+            // Parallel world x-only calculation
+            let PW = Math.sign(x) * Math.floor((Math.abs(x / 512) + xHalf) / 70)
+            let xMap = Math.floor(((x / 512) + x0 - xFull * PW) / zoom)
+            let xStar = -7 + ((x + (x0 - xFull * PW) * 512) - (xMap * 4096)) * 192 / 4096
+
             let src = "https://regular-main-branch-middle.acidflow.stream/maps/regular-main-branch-middle/regular-main-branch-middle-2024-04-08-78633191_files/"
             let pwName = "Main"
             if (PW >= 1) {
@@ -476,19 +539,41 @@ const worldComp = Vue.component('world-comp', {
                 src = "https://regular-main-branch-left.acidflow.stream/maps/regular-main-branch-left/regular-main-branch-left-2024-04-08-78633191_files/"
                 pwName = "West"
             }
-            // console.log({ x: x, y: y, pw: PW, zoom: zoom, mapX: xOffset, mapY: yOffset })
+            // Heaven/hell y-only calculation
+            let HH = 0
+            let hhName = ""
+            // threshold for hell loops
+            if (y > (yHell * 512)) {
+                HH = Math.floor((y / 512 - yHell) / yLoop)
+                hhName = ` Hell ${HH + 1}`
+                // theshold for heaven loops
+            } else if (y < (yHeaven * 512)) {
+                HH = Math.ceil((y / 512 - yHeaven) / yLoop)
+                hhName = ` Heaven ${Math.abs(HH) + 1}`
+            }
+            let yMap = Math.floor(((y / 512) + y0 - HH * yLoop) / zoom)
+            let yStar = -6 + ((y + (y0 - yLoop * HH) * 512) - (yMap * 4096)) * 192 / 4096
+            // debug map stuff
+            // console.log({
+            //     x: x || 0,
+            //     y: y || 0,
+            //     pw: PW || 0,
+            //     hh: HH || 0,
+            //     xMap: xMap || 0,
+            //     yMap: yMap || 0,
+            //     xStar: xStar || 0,
+            //     yStar: yStar || 0,
+            // })
             let mapName = "regular-main-branch"
             return {
-                img: `${src}${17 - zoom}/${xOffset}_${yOffset}.webp?v=1712752623`,
+                img: `${src}14/${xMap}_${yMap}.webp?v=1712752623`,
                 url: `https://map.runfast.stream/?map=${mapName}&x=${x}&y=${y}&zoom=1200`,
-                // x: Intl.NumberFormat('en-US', { 
-                //     notation: "compact", 
-                //     maximumSignificantDigits: 4,
-                //     maximumFractionDigits: 2 }).format(x),
-                // y: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(y),
                 x: x.toLocaleString('en-US', { maximumFractionDigits: 2 }),
                 y: y.toLocaleString('en-US', { maximumFractionDigits: 2 }),
-                pw: (PW != 0) ? `${pwName} ${Math.abs(PW)}` : pwName
+                pw: (PW != 0) ? `${pwName} ${Math.abs(PW)}` : pwName,
+                hh: hhName,
+                xStar: xStar + 'px',
+                yStar: yStar + 'px',
             }
 
         }
@@ -500,18 +585,21 @@ const worldComp = Vue.component('world-comp', {
             <v-switch v-model="state.shifts" :title="'Show Shifts [' + updateWorld.count + ']'" class="base-switch"></v-switch>
             <v-switch v-model="state.mods" :title="'Show Mods [' + mods.list.length + ']'" class="base-switch"></v-switch>
             <v-switch v-model="state.map" title="Show Map and Game info (spoilers!!!)" class="base-switch"></v-switch>
-            <input v-model="input" class="map-testing">
+            <input v-model="input" :class="debug">
         </div>
         <div class="world-body">
-            <fungal-comp v-if="state.shifts" :shifts="updateWorld.shifts"></fungal-comp>
+            <fungal-comp v-if="state.shifts" :shifts="updateWorld.shifts" :timer="updateWorld.timer"></fungal-comp>
             <div v-if="state.mods" class="mods">
                 <p><u>Mods:</u></p>
                 <p v-for="mod in mods.list" :key="mod">{{ mod.length < 20 ? mod : mod.slice(0,20) }}</p>
             </div>
             <div class="preview" v-if="state.map">
+                <div class="preview-icon-wrapper">
+                    <p class="preview-icon" :style="{ left: osd.xStar, top: osd.yStar }"><b>&#9733;</b></p>
+                </div>
                 <a :href="osd.url" tabindex="-1" target="_blank" rel="noopener noreferrer">
                     <img :src="osd.img"/>
-                    <p>Click for Fullscreen Map</p>
+                    <p class="preview-link">Click for Fullscreen Map</p>
                 </a>
                 <div class="preview-info">
                     <p v-if="!seedInfo">No current run</p>
@@ -521,8 +609,8 @@ const worldComp = Vue.component('world-comp', {
                     <p v-else>Map {{ seedInfo.seed }}</p>
                     <p>x: {{ osd.x }}</p>
                     <p>y: {{ osd.y }}</p>
-                    <p>In {{ osd.pw }} NG{{ mods.ngp }}</p>
-                    <p>Note:  Player is *somewhere* on the preview, Map preview is being reworked to detect and switch map based on NG+, gamemode, and mods</p>
+                    <p>In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
+                    <p>Note:  Map preview is being reworked to detect and switch map based on NG+, gamemode, and mods</p>
                 </div>
             </div>
         </div>
@@ -575,7 +663,7 @@ const fungalComp = Vue.component('fungal-comp', {
                 }
                 let overwrittenShifts = inputs.map((mat, ind) => (mat == inputMat && ind != i) ? ind : false)
                 overwrittenShifts.forEach((prevInd) => {
-                    if (prevInd && calculated[prevInd]) {
+                    if (prevInd && calculated[prevInd] && !calculated[prevInd.strike]) {
                         calculated[prevInd].strike = prevInd < i
                     }
                 })
@@ -597,7 +685,7 @@ const fungalComp = Vue.component('fungal-comp', {
             }
         }
     },
-    props: ['shifts'],
+    props: ['shifts', 'timer'],
     template: `<div class="shifts">
         <div class="shifts-header" ref="slot">
             <p><u>Shifts:</u></p>
@@ -608,12 +696,53 @@ const fungalComp = Vue.component('fungal-comp', {
                 but Water gets stain and ingestion effects from Polymorphine</p>
             </div>
         </div>
+        <p>{{ timer >= 0 ? Math.floor(300 - timer) + ' seconds remaining' : 'Ready to Shift' }}</p>
         <div v-for="shift in (calc ? shiftInfo.calculated : shiftInfo.original)" :key="shift.i">
-            <p :class="{ strike: shift.strike }">{{ shift.matInput }} &#8594; {{ shift.matInputOutput }}
-                <span v-if="shift.matOutput"> &#8594; {{ shift.matOutput }}</span>
+            <p :class="{ strike: shift.strike }">
+                <mat-comp :material="shift.matInput" side="left"></mat-comp> &#8594; 
+                <mat-comp :material="shift.matInputOutput" side="top"></mat-comp>
+                <span v-if="shift.matOutput"> &#8594; 
+                    <mat-comp :material="shift.matOutput" side="right"></mat-comp>
+                </span>
             </p>
         </div>
-        <div
+    </div>`
+})
+
+const materialComp = Vue.component('mat-comp', {
+    data() {
+        return {
+            tooltip: null,
+        }
+    },
+    mounted() {
+        if (this.$refs.tooltip)
+            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
+                placement: this.side,
+                modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
+            })
+    },
+    beforeDestroy() {
+        if (this.tooltip) {
+            this.tooltip.destroy()
+            this.tooltip = null
+        }
+    },
+    computed: {
+        mat() {
+            let both = this.material.split("@")
+            return {
+                raw: both[0],
+                ui: both[1],
+            }
+        }
+    },
+    props: ['material', 'side'],
+    template: `<div class="material tip" ref="slot">
+        <span>{{ mat.ui }}</span>
+        <div class="tooltip fit" ref="tooltip">
+            <p>{{ mat.raw }}</p>
+        </div>
     </div>`
 })
 
@@ -649,7 +778,7 @@ const playerComp = Vue.component('player-comp', {
         updatePlayer() {
             let info = this.info[0]
             // comparing health to 2^63 - 1, use BigInt cuz > 2^53-1
-            let bigHealth = BigInt(info.health[1] * 25)
+            let bigHealth = BigInt(Math.floor(info.health[1] * 25))
             // 2^63-1
             let maxHealth = 9223372036854775807n
             return {

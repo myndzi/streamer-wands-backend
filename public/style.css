@@ -601,6 +601,26 @@ a:visited {
     margin: 5px;
 }
 
+.preview-icon {
+    position: relative;
+    font-size: 20px;
+    line-height: 50%;
+    color: rgb(255, 0, 255);
+    -webkit-text-stroke: white 1px;
+}
+
+.preview-link {
+    text-align: center;
+}
+
+.preview-icon-wrapper {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top: 12px;
+    left: 12px;
+}
+
 .preview-info p:last-child {
     margin-top: auto;
 }
@@ -616,6 +636,14 @@ a:visited {
 
 .shifts-header {
     display: flex;
+}
+
+.material {
+    display: inline;
+}
+
+.material .tooltip p {
+    text-transform: none !important;
 }
 
 .strike {
@@ -702,7 +730,7 @@ a:visited {
 
 .switch-group.show-all,
 .switch-group.beta-content,
-.map-testing {
+.hide-input {
     display: none !important;
 }
 
@@ -1013,6 +1041,7 @@ a:visited {
 .spell-slot:hover .tooltip,
 .icon-slot:hover .tooltip,
 .tip:hover .tooltip,
+.material:hover .tooltip,
 .shifts-header:hover .tooltip,
 .item-slot:hover .tooltip {
     visibility: visible;
@@ -1098,11 +1127,10 @@ a:visited {
     white-space: nowrap;
 }
 
-.stats-title {
-    display: block;
+.stats-header {
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
 }
 
 .tooltip-description {
