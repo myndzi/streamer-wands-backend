@@ -378,8 +378,9 @@ function serialize_data()
     local shifts = get_shift_info()
     table.insert(fungal_info,tonumber(GlobalsGetValue("fungal_shift_iteration", "0")))
     local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
-    local shift_timer = (GameGetFrameNum() - last_trip) / 60
-    if shift_timer > 300 then
+    local current_frame = GameGetFrameNum()
+    local shift_timer = (current_frame - last_trip) / 60
+    if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
         shift_timer = -1
     end
     table.insert(fungal_info,shift_timer)

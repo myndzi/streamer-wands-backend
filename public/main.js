@@ -199,18 +199,20 @@ const SpellSlot = Vue.component('spell-slot', {
         }
     },
     mounted() {
-        if (this.$refs.tooltip)
+        if (this.$refs.tooltip) {
             this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip.$el, {
                 placement: 'bottom',
                 modifiers: [{ name: 'offset', options: { offset: [0, 35] } }],
             })
+        }
     },
     updated() {
-        if (this.$refs.tooltip)
+        if (this.$refs.tooltip) {
             this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip.$el, {
                 placement: 'bottom',
                 modifiers: [{ name: 'offset', options: { offset: [0, 35] } }],
             })
+        }
     },
     beforeDestroy() {
         if (this.tooltip) {
@@ -269,18 +271,20 @@ const ItemSlot = Vue.component('item-slot', {
         }
     },
     mounted() {
-        if (this.$refs.tooltip)
+        if (this.$refs.tooltip) {
             this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip.$el, {
                 placement: 'bottom',
                 modifiers: [{ name: 'offset', options: { offset: [0, 35] } }],
             })
+        }
     },
     updated() {
-        if (this.$refs.tooltip)
+        if (this.$refs.tooltip) {
             this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip.$el, {
                 placement: 'bottom',
                 modifiers: [{ name: 'offset', options: { offset: [0, 35] } }],
             })
+        }
     },
     beforeDestroy() {
         if (this.tooltip) {
@@ -645,6 +649,17 @@ const fungalComp = Vue.component('fungal-comp', {
             let calculated = []
             let original = []
             let transformed = {}
+            let outputsLoop1 = [...outputs]
+
+            for (let i = 0; i < outputs.length; i++) {
+                let inInd = inputs.lastIndexOf(outputs[i])
+                if (inInd < i && inInd > -1) {
+                    outputsLoop1[i] = outputs[inInd]
+                    inInd = inputs.lastIndexOf(outputsLoop1[i])
+                }
+                transformed[inputs[i]] = outputs[i]
+            }
+
             for (let i = 0; i < outputs.length; i++) {
                 let inInd = inputs.lastIndexOf(outputs[i])
                 let inputMat = inputs[i]
@@ -656,29 +671,38 @@ const fungalComp = Vue.component('fungal-comp', {
                 let secondMat = outputs[i]
                 transformed[inputMat] = secondMat
                 let thirdMat = false
+
                 if (inInd > i) {
                     thirdMat = outputs[inInd]
                 } else if (transformed[secondMat] != secondMat) {
                     thirdMat = transformed[secondMat]
                 }
-                let overwrittenShifts = inputs.map((mat, ind) => (mat == inputMat && ind != i) ? ind : false)
-                overwrittenShifts.forEach((prevInd) => {
-                    if (prevInd && calculated[prevInd] && !calculated[prevInd.strike]) {
-                        calculated[prevInd].strike = prevInd < i
-                    }
-                })
+                if (transformed[thirdMat] == secondMat) {
+                    thirdMat = false
+                }
+
                 calculated[i] = {
                     matInput: inputMat,
                     matInputOutput: secondMat,
                     matOutput: thirdMat,
-                    i: i,
+                    strike: inputMat == secondMat,
                 }
                 original[i] = {
                     matInput: inputMat,
                     matInputOutput: originalOutput,
-                    i: i,
                 }
+                let overwrittenShifts = inputs.map((mat, ind) => (mat == inputMat && ind != i) ? ind : -1)
+                overwrittenShifts.forEach((prevInd) => {
+                    // console.log(prevInd, i,JSON.stringify(calculated))
+                    if (prevInd > -1 && prevInd < calculated.length && !calculated[prevInd].strike) {
+                        calculated[prevInd].strike = prevInd < i
+                        if (calculated[i].strike) {
+                            calculated[prevInd].strike = false
+                        }
+                    }
+                })
             }
+
             return {
                 calculated: calculated,
                 original: original,
@@ -700,7 +724,7 @@ const fungalComp = Vue.component('fungal-comp', {
         <div v-for="shift in (calc ? shiftInfo.calculated : shiftInfo.original)" :key="shift.i">
             <p :class="{ strike: shift.strike }">
                 <mat-comp :material="shift.matInput" side="left"></mat-comp> &#8594; 
-                <mat-comp :material="shift.matInputOutput" side="top"></mat-comp>
+                <mat-comp :material="shift.matInputOutput" :side="shift.matOutput ? 'top' : 'right'"></mat-comp>
                 <span v-if="shift.matOutput"> &#8594; 
                     <mat-comp :material="shift.matOutput" side="right"></mat-comp>
                 </span>
@@ -716,11 +740,12 @@ const materialComp = Vue.component('mat-comp', {
         }
     },
     mounted() {
-        if (this.$refs.tooltip)
+        if (this.$refs.tooltip) {
             this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
                 placement: this.side,
                 modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
             })
+        }
     },
     beforeDestroy() {
         if (this.tooltip) {
@@ -859,11 +884,12 @@ const perkComp = Vue.component('perk-comp', {
         }
     },
     mounted() {
-        if (this.$refs.tooltip)
+        if (this.$refs.tooltip) {
             this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip.$el, {
                 placement: 'bottom',
                 modifiers: [{ name: 'offset', options: { offset: [0, 10] } }],
             })
+        }
     },
     beforeDestroy() {
         if (this.tooltip) {
@@ -1343,11 +1369,12 @@ const IconComp = Vue.component('icon-comp', {
         }
     },
     mounted() {
-        if (this.$refs.tooltip)
+        if (this.$refs.tooltip) {
             this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip.$el, {
                 placement: 'bottom',
                 modifiers: [{ name: 'offset', options: { offset: [0, 35] } }],
             })
+        }
     },
     beforeDestroy() {
         if (this.tooltip) {

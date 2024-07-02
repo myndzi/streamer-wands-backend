@@ -1,6 +1,6 @@
 {
     "name": "streamer_wands",
-    "version": "1.2.4-beta.6",
+    "version": "1.2.5-beta",
     "description": "",
     "main": "index.js",
     "scripts": {
