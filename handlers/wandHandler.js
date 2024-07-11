@@ -89,7 +89,13 @@ exports.validate = (data) => {
         valid = {}
         valid.names = field[0].filter(strFilter)
         valid.amounts = numbersValidation(field[1])
-        valid.shifts = field[2].filter(strFilter)
+        valid.shifts = []
+        for (const shiftRaw of field[2]) {
+            if (shiftRaw != null && shiftRaw != "empty") {
+                const shiftList = shiftRaw.split(",").slice(1)
+                valid.shifts.push(shiftList.filter(strFilter))
+            }
+        }
         valid.shiftInfo = numbersValidation(field[3])
         valid.health = numbersValidation(field[4])
         valid.gold = numberValidation(field[5])

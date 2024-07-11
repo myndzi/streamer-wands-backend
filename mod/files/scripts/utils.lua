@@ -98,6 +98,7 @@ end
 function get_shift_info()
     local world_comp = get_world_state()
     local mats = ComponentGetValue2(world_comp, "changed_materials")
+    local mats_string = ""
     for _, mat in ipairs(mats) do
         local mat_name = GameTextGetTranslatedOrNot("$mat_" .. mat)
         if mat_name == "" then
@@ -107,9 +108,10 @@ function get_shift_info()
                 mat_name = mat
             end
         end
-        mats[_] = mat .. "@" .. mat_name
+        -- mats[_] = mat .. "@" .. mat_name
+        mats_string = mats_string .. ",".. mat .. "@" .. mat_name
     end
-    return mats
+    return mats_string
 end
 
 function get_inventory()
@@ -375,14 +377,28 @@ function serialize_data()
 
     local info = {}
     local fungal_info = {}
+    local shiftList = {}
+
     local shifts = get_shift_info()
-    table.insert(fungal_info,tonumber(GlobalsGetValue("fungal_shift_iteration", "0")))
+    local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
+    GlobalsSetValue("shift#" .. shiftNumber,shifts)
+
+    for i = 1,shiftNumber do
+        local shifts = GlobalsGetValue("shift#" .. i,"empty")
+        if i > 1 then
+            local shiftsPrev = GlobalsGetValue("shift#" .. (i - 1),"empty")
+            shifts = string.sub(shifts, string.len(shiftsPrev))
+        end
+        table.insert(shiftList,shifts)
+    end
+
     local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
     local current_frame = GameGetFrameNum()
     local shift_timer = (current_frame - last_trip) / 60
     if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
         shift_timer = -1
     end
+    table.insert(fungal_info,shiftNumber)
     table.insert(fungal_info,shift_timer)
 
     local names = {}
@@ -397,7 +413,7 @@ function serialize_data()
     local health = { player_info[1], player_info[2] }
     local gold = player_info[3]
     local x, y = get_player_pos()
-    table.insert(info, { names, amounts, shifts, fungal_info, health, gold, x, y })
+    table.insert(info, { names, amounts, shiftList, fungal_info, health, gold, x, y })
 
     for _, wand in ipairs(wands_ids) do
         local stats = get_wand_stats(wand)

@@ -586,13 +586,13 @@ const worldComp = Vue.component('world-comp', {
     inject: ['switches'],
     template: `<div class="world-info">
         <div class="world-header">
-            <v-switch v-model="state.shifts" :title="'Show Shifts [' + updateWorld.count + ']'" class="base-switch"></v-switch>
-            <v-switch v-model="state.mods" :title="'Show Mods [' + mods.list.length + ']'" class="base-switch"></v-switch>
-            <v-switch v-model="state.map" title="Show Map and Game info (spoilers!!!)" class="base-switch"></v-switch>
+            <v-switch v-model="state.shifts" :title="'Show Shifts [' + updateWorld.count + ']'"></v-switch>
+            <v-switch v-model="state.mods" :title="'Show Mods [' + mods.list.length + ']'"></v-switch>
+            <v-switch v-model="state.map" title="Show Map and Game info (spoilers!!!)"></v-switch>
             <input v-model="input" :class="debug">
         </div>
         <div class="world-body">
-            <fungal-comp v-if="state.shifts" :shifts="updateWorld.shifts" :timer="updateWorld.timer"></fungal-comp>
+            <fungal-comp v-if="state.shifts" :shifts="updateWorld.shifts" :timer="updateWorld.timer" :number="updateWorld.count"></fungal-comp>
             <div v-if="state.mods" class="mods">
                 <p><u>Mods:</u></p>
                 <p v-for="mod in mods.list" :key="mod">{{ mod.length < 20 ? mod : mod.slice(0,20) }}</p>
@@ -624,15 +624,21 @@ const worldComp = Vue.component('world-comp', {
 const fungalComp = Vue.component('fungal-comp', {
     data() {
         return {
-            calc: true,
             tooltip: null,
+            state: {
+                originalShift: false,
+                hoverInfo: true,
+                number: null,
+            },
+            rowToggles: [],
         }
     },
     mounted() {
+        this.rowToggles = Array(this.shiftInfo.length).fill(false)
         if (this.$refs.tooltip) {
             this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
                 placement: 'top',
-                modifiers: [{ name: 'offset', options: { offset: [0, 35] } }],
+                modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
             })
         }
     },
@@ -644,91 +650,150 @@ const fungalComp = Vue.component('fungal-comp', {
     },
     computed: {
         shiftInfo() {
-            let inputs = this.shifts.filter((_arr, ind) => !(ind % 2))
-            let outputs = this.shifts.filter((_arr, ind) => (ind % 2))
-            let calculated = []
-            let original = []
-            let transformed = {}
-            let outputsLoop1 = [...outputs]
+            const transformed = {}
+            const lastShift = {}
+            const sequence = []
 
-            for (let i = 0; i < outputs.length; i++) {
-                let inInd = inputs.lastIndexOf(outputs[i])
-                if (inInd < i && inInd > -1) {
-                    outputsLoop1[i] = outputs[inInd]
-                    inInd = inputs.lastIndexOf(outputsLoop1[i])
-                }
-                transformed[inputs[i]] = outputs[i]
-            }
-
-            for (let i = 0; i < outputs.length; i++) {
-                let inInd = inputs.lastIndexOf(outputs[i])
-                let inputMat = inputs[i]
-                let originalOutput = outputs[i]
-                if (inInd < i && inInd > -1) {
-                    outputs[i] = outputs[inInd]
-                    inInd = inputs.lastIndexOf(outputs[i])
-                }
-                let secondMat = outputs[i]
-                transformed[inputMat] = secondMat
-                let thirdMat = false
-
-                if (inInd > i) {
-                    thirdMat = outputs[inInd]
-                } else if (transformed[secondMat] != secondMat) {
-                    thirdMat = transformed[secondMat]
-                }
-                if (transformed[thirdMat] == secondMat) {
-                    thirdMat = false
-                }
-
-                calculated[i] = {
-                    matInput: inputMat,
-                    matInputOutput: secondMat,
-                    matOutput: thirdMat,
-                    strike: inputMat == secondMat,
-                }
-                original[i] = {
-                    matInput: inputMat,
-                    matInputOutput: originalOutput,
-                }
-                let overwrittenShifts = inputs.map((mat, ind) => (mat == inputMat && ind != i) ? ind : -1)
-                overwrittenShifts.forEach((prevInd) => {
-                    // console.log(prevInd, i,JSON.stringify(calculated))
-                    if (prevInd > -1 && prevInd < calculated.length && !calculated[prevInd].strike) {
-                        calculated[prevInd].strike = prevInd < i
-                        if (calculated[i].strike) {
-                            calculated[prevInd].strike = false
-                        }
+            let shiftsAll = []
+            const nShifts = Math.min(Math.max(this.state.number ?? this.shifts.length, 1), this.number)
+            for (let i = 0; i < nShifts; i++) {
+                const shift = this.shifts[i]
+                shiftsAll.push(shift.map((material, ioNumber) => {
+                    if (ioNumber % 2) {
+                        return material
                     }
-                })
+                    const letter = (shift.length > 2) ? String.fromCharCode(97 + ioNumber / 2) : ""
+                    return [(i + 1) + letter, material]
+                }))
+            }
+            shiftsAll = shiftsAll.flat(Infinity)
+
+            const HOP = Object.prototype.hasOwnProperty.call.bind(Object.prototype.hasOwnProperty);
+
+            let j = 0
+            for (let i = 0; i < shiftsAll.length - 1; i += 3) {
+                const shiftNumber = shiftsAll[i]
+                const input = shiftsAll[i + 1]
+                const original = shiftsAll[i + 2]
+                const final = transformed[original] ?? { mat: original }
+                transformed[input] = {
+                    mat: final.mat,
+                    j,
+                }
+
+                const shift = {
+                    shiftNumber,
+                    input,
+                    output: {
+                        original,
+                        final: final.mat,
+                    },
+                    extra: { atShift: null, now: null },
+                    cause: { output: null, extra: null },
+                    isOverwritten: false,
+                    j,
+                };
+                if (HOP(transformed, original)) {
+                    shift.cause.output = transformed[original].j
+                }
+
+                if (HOP(transformed, final) && transformed[final] !== final) {
+                    shift.extra.atShift = transformed[final].mat;
+                }
+
+                if (HOP(lastShift, input)) {
+                    lastShift[input].isOverwritten = true
+                }
+                lastShift[input] = shift
+
+                sequence.push(shift)
+                j += 2
             }
 
-            return {
-                calculated: calculated,
-                original: original,
+            for (let i = 0; i < sequence.length; i++) {
+                const shift = sequence[i]
+                const final = shift.output.final
+                if (HOP(transformed, final) && transformed[final].mat !== final) {
+                    shift.extra.now = transformed[final].mat
+                    shift.cause.extra = transformed[final].j
+                }
             }
+
+            return sequence
         }
     },
-    props: ['shifts', 'timer'],
+    methods: {
+        highlight(cause, i) {
+            if (cause.output != null) {
+                [cause.output, cause.output + 1].forEach((cellIndex) => this.$refs.cells[cellIndex].classList.add('highlight'));
+                [cause.output >> 1, i].forEach((cellIndex) => this.rowToggles.splice(cellIndex, 1, true));
+            }
+            if (cause.extra != null) {
+                this.$refs.cells[cause.extra].classList.add('highlight');
+                [cause.extra >> 1, i].forEach((cellIndex) => this.rowToggles.splice(cellIndex, 1, true));
+            }
+        },
+        clear(causes, i) {
+            Object.values(causes).forEach((cause) => {
+                if (cause != null) {
+                    [cause, cause + 1].forEach((cellIndex) => this.$refs.cells[cellIndex].classList.remove('highlight'));
+                    [cause >> 1, i].forEach((cellIndex) => this.rowToggles.splice(cellIndex, 1, false));
+                }
+            });
+        },
+        updateTip() {
+            if (this.tooltip) {
+                this.tooltip.update()
+            }
+        },
+    },
+    provide() {
+        return { shiftInfo: this.shiftInfo }
+    },
+    props: ['shifts', 'timer', 'number'],
     template: `<div class="shifts">
-        <div class="shifts-header" ref="slot">
-            <p><u>Shifts:</u></p>
-            <v-switch v-model="calc" title="Show Broken Chains/Overwrites"></v-switch>
-            <div ref="tooltip" class="tooltip fit">
-                <p>"Water &#8594; Poison &#8594; Polymorphine" means
-                Water is a broken chain, so Water looks and hurts like poison,
-                but Water gets stain and ingestion effects from Polymorphine</p>
+        <div class="shifts-header">
+            <p><b>Shift Timer:</b> {{ timer > 0 ? Math.floor(300 - timer) + ' seconds remaining' : 'Ready to Shift' }}</p>
+            <v-switch v-model="state.originalShift" title="Show Original Shift in First Column"></v-switch>
+            <div class=shifts-input>    
+                <span>Calculate up to Shift N =</span><input v-model="state.number" type="number" inputmode="numeric" min="1" :max="number" :placeholder="number">
+                <span>/ {{ number }} Total</span>
+            </div>
+            <div class="shifts-table-row header">
+                <div><b>N</b></div>
+                <div><b>Input{{state.originalShift ? " &#8594; Raw Output" : "" }}</b></div>
+                <div ref="slot" class="shifts-tip" @mouseenter="updateTip">
+                    <b>Final Result</b>
+                    <div ref="tooltip" class="tooltip fit">
+                        <p>When Final Result lists two materials:</p>
+                        <ul>
+                            <li>Material 1 determines the visuals and material damage</li>
+                            <li>Material 2 determines the stain and ingestion effects</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <p>{{ timer >= 0 ? Math.floor(300 - timer) + ' seconds remaining' : 'Ready to Shift' }}</p>
-        <div v-for="shift in (calc ? shiftInfo.calculated : shiftInfo.original)" :key="shift.i">
-            <p :class="{ strike: shift.strike }">
-                <mat-comp :material="shift.matInput" side="left"></mat-comp> &#8594; 
-                <mat-comp :material="shift.matInputOutput" :side="shift.matOutput ? 'top' : 'right'"></mat-comp>
-                <span v-if="shift.matOutput"> &#8594; 
-                    <mat-comp :material="shift.matOutput" side="right"></mat-comp>
-                </span>
-            </p>
+        <div class="shifts-table">
+            <div class="shifts-table-row" v-for="(shift,i) in shiftInfo">
+                <div>{{ shift.shiftNumber }}</div>
+                <div ref="cells" :class="{ strike: shift.isOverwritten }">
+                    <mat-comp :material="shift.input" side="left"></mat-comp>
+                    <template v-if="state.originalShift || rowToggles[i]">
+                        &#8594; <mat-comp  :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'"></mat-comp>
+                    </template>
+                </div>
+                <div ref="cells" v-if="shift.extra.now" :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
+                    <mat-comp :material="shift.output.final" :side="shift.cause.output ? 'bottom' : 'top'" :i="i"></mat-comp> +
+                    <mat-comp  :material="shift.extra.now" side="right" :i="i"></mat-comp>
+                </div>
+                <div ref="cells" v-else-if="shift.output.original != shift.output.final" :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
+                    <mat-comp :material="shift.output.final" side="right" :i="i"></mat-comp>
+                </div>
+                <div ref="cells" v-else :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
+                    <mat-comp :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'" :i="i"></mat-comp>
+                </div>
+            </div>
         </div>
     </div>`
 })
@@ -743,7 +808,14 @@ const materialComp = Vue.component('mat-comp', {
         if (this.$refs.tooltip) {
             this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
                 placement: this.side,
-                modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
+                modifiers: [{
+                    name: 'offset', options: {
+                        offset: [
+                            this.reasons.length > 0 ? 27 : 0,
+                            this.side == 'left' ? 44.5 : 10
+                        ]
+                    }
+                }],
             })
         }
     },
@@ -760,13 +832,54 @@ const materialComp = Vue.component('mat-comp', {
                 raw: both[0],
                 ui: both[1],
             }
-        }
+        },
+        reasons() {
+            if (!this.i) {
+                return false
+            }
+            const shift = this.shiftInfo[this.i]
+            const reasons = []
+            let reasonShift = {}
+            if (shift.cause.output != null) {
+                let cause = shift.cause.output >> 1
+                reasonShift = this.shiftInfo[cause]
+                reasons.push({
+                    shiftNumber: reasonShift.shiftNumber,
+                    reason: `${reasonShift.input.split("@")[0]} → ${reasonShift.output.original.split("@")[0]}`,
+                })
+            }
+            if (shift.cause.extra != null) {
+                let cause = shift.cause.extra >> 1
+                reasonShift = this.shiftInfo[cause]
+                reasons.push({
+                    shiftNumber: reasonShift.shiftNumber,
+                    reason: `${reasonShift.input.split("@")[0]} → ${reasonShift.output.original.split("@")[0]}`,
+                })
+            }
+            return reasons
+        },
     },
-    props: ['material', 'side'],
-    template: `<div class="material tip" ref="slot">
+    methods: {
+        updateTip() {
+            if (this.tooltip) {
+                this.tooltip.update()
+            }
+        },
+    },
+    // props: ['material', 'side'],
+    inject: ['shiftInfo'],
+    props: {
+        material: String,
+        side: String,
+        i: { type: Number, required: false }
+    },
+    template: `<div class="material tip" ref="slot" @mouseover="updateTip">
         <span>{{ mat.ui }}</span>
         <div class="tooltip fit" ref="tooltip">
-            <p>{{ mat.raw }}</p>
+            <p v-if="reasons.length > 0">Material ID: {{ mat.raw }}</p>
+            <p v-else>{{ mat.raw }}</p>
+            <p v-if="reasons.length > 0">Reasons: </p>
+            <p v-for="reason in reasons">    {{ reason.shiftNumber }}: {{ reason.reason }}</p>
         </div>
     </div>`
 })
@@ -835,7 +948,7 @@ const playerComp = Vue.component('player-comp', {
                 <p v-else class="money" ref="slotGold">&#8734;</p>
                 <p class="tooltip fit" ref="tipGold">$: {{ updatePlayer.gold}}</p>
             </div>
-            <v-switch v-model="state" title="Show All Perks" class="base-switch"></v-switch>
+            <v-switch v-model="state" title="Show All Perks"></v-switch>
             <perks-comp :names="this.updatePlayer.names" :amounts="this.updatePlayer.amounts" :state="state"></perks-comp>
         </div>
     </div>`
