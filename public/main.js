@@ -747,9 +747,6 @@ const fungalComp = Vue.component('fungal-comp', {
             }
         },
     },
-    provide() {
-        return { shiftInfo: this.shiftInfo }
-    },
     props: ['shifts', 'timer', 'number'],
     template: `<div class="shifts">
         <div class="shifts-header">
@@ -784,14 +781,14 @@ const fungalComp = Vue.component('fungal-comp', {
                     </template>
                 </div>
                 <div ref="cells" v-if="shift.extra.now" :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
-                    <mat-comp :material="shift.output.final" :side="shift.cause.output ? 'bottom' : 'top'" :i="i"></mat-comp> +
-                    <mat-comp  :material="shift.extra.now" side="right" :i="i"></mat-comp>
+                    <mat-comp :material="shift.output.final" :side="shift.cause.output ? 'bottom' : 'top'" :i="i" :info="shiftInfo"></mat-comp> +
+                    <mat-comp  :material="shift.extra.now" side="right" :i="i" :info="shiftInfo"></mat-comp>
                 </div>
                 <div ref="cells" v-else-if="shift.output.original != shift.output.final" :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
-                    <mat-comp :material="shift.output.final" side="right" :i="i"></mat-comp>
+                    <mat-comp :material="shift.output.final" side="right" :i="i" :info="shiftInfo"></mat-comp>
                 </div>
                 <div ref="cells" v-else :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
-                    <mat-comp :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'" :i="i"></mat-comp>
+                    <mat-comp :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'" :i="i" :info="shiftInfo"></mat-comp>
                 </div>
             </div>
         </div>
@@ -837,12 +834,12 @@ const materialComp = Vue.component('mat-comp', {
             if (!this.i) {
                 return false
             }
-            const shift = this.shiftInfo[this.i]
+            const shift = this.info[this.i]
             const reasons = []
             let reasonShift = {}
             if (shift.cause.output != null) {
                 let cause = shift.cause.output >> 1
-                reasonShift = this.shiftInfo[cause]
+                reasonShift = this.info[cause]
                 reasons.push({
                     shiftNumber: reasonShift.shiftNumber,
                     reason: `${reasonShift.input.split("@")[0]} → ${reasonShift.output.original.split("@")[0]}`,
@@ -850,7 +847,7 @@ const materialComp = Vue.component('mat-comp', {
             }
             if (shift.cause.extra != null) {
                 let cause = shift.cause.extra >> 1
-                reasonShift = this.shiftInfo[cause]
+                reasonShift = this.info[cause]
                 reasons.push({
                     shiftNumber: reasonShift.shiftNumber,
                     reason: `${reasonShift.input.split("@")[0]} → ${reasonShift.output.original.split("@")[0]}`,
@@ -866,12 +863,11 @@ const materialComp = Vue.component('mat-comp', {
             }
         },
     },
-    // props: ['material', 'side'],
-    inject: ['shiftInfo'],
     props: {
         material: String,
         side: String,
-        i: { type: Number, required: false }
+        i: { type: Number, required: false },
+        info: { type: Array, required: false },
     },
     template: `<div class="material tip" ref="slot" @mouseover="updateTip">
         <span>{{ mat.ui }}</span>
