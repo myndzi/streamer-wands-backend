@@ -622,17 +622,12 @@ a:visited {
     left: 12px;
 }
 
-.preview-info p:last-child {
-    margin-top: auto;
-}
-
 .preview img {
     max-height: 10rem;
 }
 
 .shifts p,
-.shifts li,
-.preview-info p:first-child {
+.shifts li {
     text-transform: capitalize;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.8);

@@ -1,6 +1,7 @@
 const WandContainer = Vue.component('wand-comp', {
     props: ['stats', 'ac', 'deck'],
-    template: `<div class="wand">
+    template: /*html*/`
+    <div class="wand">
         <wand-stats :stats="stats" :deck="deck"></wand-stats>
         <template v-if="ac.length > 0">
             <wand-ac :spells="ac"></wand-ac>
@@ -122,7 +123,8 @@ const WandStats = Vue.component('wand-stats', {
             return link + statsLink + '&spells=' + deckLink
         },
     },
-    template: `<div class="stats-wrapper">
+    template: /*html*/`
+    <div class="stats-wrapper">
         <div class="stats-header">
             <p class="stats-title">{{ stats.ui_name }}</p>
             <a :href="wandSim" tabindex="-1" target="_blank" rel="noopener noreferrer">
@@ -145,7 +147,8 @@ const WandStats = Vue.component('wand-stats', {
 
 const WandAc = Vue.component('wand-ac', {
     props: ['spells'],
-    template: `<div class="mt-20">
+    template: /*html*/`
+    <div class="mt-20">
         <p>Always Cast:</p>
         <div class="spells">
             <spell-slot v-for="(spell,index) in spells" :spell="spell" :key="index"></spell-slot>
@@ -170,7 +173,8 @@ const WandDeck = Vue.component('wand-deck', {
             return d
         },
     },
-    template: `<div class="mt-20">
+    template: /*html*/`
+    <div class="mt-20">
         <p>Spells:</p>
         <div class="spells">
             <spell-slot v-for="(v, index) in deck" :spell="spells[index]" :key="index"></spell-slot>
@@ -250,7 +254,8 @@ const SpellSlot = Vue.component('spell-slot', {
     },
     props: ['spell'],
     inject: ['switches'],
-    template: `<div class="spell-slot">
+    template: /*html*/`
+    <div class="spell-slot">
         <template v-if="this.spells.data[info.id]">
             <img v-if="this.spells.img[info.id].bgImage" :style="bgStyle" :src="'data:image/png;base64,' + this.spells.img[info.id].bgImage"/>
             <img ref="slot" class="spellZoom" :src="'data:image/png;base64,' + this.spells.data[info.id].sprite"/>
@@ -421,7 +426,8 @@ const ItemSlot = Vue.component('item-slot', {
     },
     props: ['item'],
     inject: ['switches'],
-    template: `<div class="item-slot">
+    template: /*html*/`
+    <div class="item-slot">
         <template v-if="this.itemInfo">
             <img v-if="this.itemInfo.color" ref="slot" :src="imgFilter"/>
             <img v-else ref="slot" :src="'data:image/png;base64,' + this.itemInfo.sprite"/>
@@ -450,7 +456,8 @@ const ItemTooltip = Vue.component('item-tooltip', {
         },
     },
     props: ['item', 'img'],
-    template: `<div class="tooltip" :class="{ book: item.book }">
+    template: /*html*/`
+    <div class="tooltip" :class="{ book: item.book }">
         <p class="tooltip-title">{{ info.name }}</p>
         <p class="tooltip-wiki">({{ item.id }})</p>
         <template v-if="item.mats"
@@ -469,12 +476,70 @@ const worldComp = Vue.component('world-comp', {
         return {
             state: {
                 shifts: false,
-                mods: false,
-                map: false,
+                mods: true,
+                map: true,
             },
-            input: "0,0",
+            // debugMods: "",
+            // debugNG: "0",
             // debug: "",
-            debug: "hide-input",
+            // debug: "hide-input",
+        }
+    },
+    computed: {
+        updateWorld() {
+            let update = this.info[0]
+            let shiftInfo = update.shiftInfo
+            return {
+                shifts: update.shifts,
+                count: shiftInfo[0],
+                timer: shiftInfo[1],
+            }
+        },
+        mods() {
+            // [0,n-2] = mods
+            // n - 1 = NG+
+            // n = seed
+            // beta is conditionally entered by utils.lua
+            let filtered = this.version.filter((x) => x != "beta").slice(0, -1)
+            let ngp = Number(filtered[filtered.length - 1].slice(3))
+            // debug new game plus number
+            // let ngp = Number(this.debugNG)
+            return {
+                list: filtered.slice(0, -1),
+                // debug mods list
+                // list: filtered.slice(0, -1).concat(this.debugMods.split(",")),
+                ngp: (ngp > 0) ? `+${ngp}` : ""
+            }
+        },
+    },
+    props: ['info', 'version'],
+    inject: ['switches'],
+    template: /*html*/`
+    <div class="world-info">
+        <div class="world-header">
+            <v-switch v-model="state.shifts" :title="'Show Shifts [' + updateWorld.count + ']'"></v-switch>
+            <v-switch v-model="state.mods" :title="'Show Mods [' + mods.list.length + ']'"></v-switch>
+            <v-switch v-model="state.map" title="Show Map and Game info (spoilers!!!)"></v-switch>
+        </div>
+        <div class="world-body">
+            <fungal-comp v-if="state.shifts" :shifts="updateWorld.shifts" :timer="updateWorld.timer" :number="updateWorld.count"></fungal-comp>
+            <div v-if="state.mods" class="mods">
+                <!--<input v-model="debugMods" :class="debug"/>-->
+                <p><u>Mods:</u></p>
+                <!--<input v-model="debugNG" :class="debug"/>-->
+                <p v-for="mod in mods.list" :key="mod">{{ mod.length < 20 ? mod : mod.slice(0,20) }}</p>
+            </div>
+            <map-comp v-if="state.map" :info="info" :version="version" :mods="mods"></map-comp>
+        </div>
+    </div>`
+})
+
+const mapComp = Vue.component('map-comp', {
+    data() {
+        return {
+            // input: "0,0",
+            // debug: "",
+            // debug: "hide-input",
         }
     },
     computed: {
@@ -490,57 +555,64 @@ const worldComp = Vue.component('world-comp', {
             if (this.switches.apothContent.state) {
                 url = false
             }
-            return { seed: seed.replace("=", ": "), url: url }
-        },
-        updateWorld() {
-            let update = this.info[0]
-            let shiftInfo = update.shiftInfo
-            return {
-                shifts: update.shifts,
-                count: shiftInfo[0],
-                timer: shiftInfo[1],
-            }
-        },
-        mods() {
-            let filtered = this.version.filter((x) => x != "beta").slice(0, -1)
-            let ngp = Number(filtered[filtered.length - 1].slice(3))
-            return {
-                list: filtered.slice(0, -1),
-                ngp: (ngp > 0) ? `+${ngp}` : ""
-            }
+            return { seed: seed.replace("=", ": ").replace("s", "S"), url: url }
         },
         osd() {
             const zoom = 8
-            // map constants, get from tileSources future me
-            // chunks from map start(0,0) to noita start(0,0) 
-            const x0 = 35
-            const y0 = 62
-            // world half-length and full length in chunks
-            const xHalf = 35
-            const xFull = 70
-            // chunks from noita start to hell and heaven
             const yHell = 34
             const yHeaven = -14
             // chunk height of heaven/hell loop
             const yLoop = 48
 
+            // from game coord input
             let x = this.info[0].x || 0
             let y = this.info[0].y || 0
             // debug coord input
             // let [x, y] = this.input.split(",").map((x) => Number(x)) || [0, 0]
 
-            // Parallel world x-only calculation
-            let PW = Math.sign(x) * Math.floor((Math.abs(x / 512) + xHalf) / 70)
-            let xMap = Math.floor(((x / 512) + x0 - xFull * PW) / zoom)
-            let xStar = -7 + ((x + (x0 - xFull * PW) * 512) - (xMap * 4096)) * 192 / 4096
+            const mapLabels = {
+                "regular-main-branch": "Regular",
+                "new-game-plus-main-branch": "NG+",
+                "nightmare-main-branch": "Nightmare",
+                "regular-beta": "Regular",
+                "purgatory": "Purgatory",
+                "apotheosis": "Apotheosis",
+                "apotheosis-new-game-plus": "Apotheosis NG+",
+                "apotheosis-tuonela": "Apotheosis Tuonela",
+                "noitavania": "Noitavania",
+                "noitavania-new-game-plus": "Noitavania NG+",
+                "alternate-biomes": "Alternate Biomes"
+            }
 
-            let src = "https://regular-main-branch-middle.acidflow.stream/maps/regular-main-branch-middle/regular-main-branch-middle-2024-04-08-78633191_files/"
+            let mapName = Number(this.mods.ngp) > 0 ? "new-game-plus-regular-main-branch" : "regular-main-branch"
+            let widthPW = 70
+
+            if (this.mods.list.includes("nightmare")) {
+                mapName = "nightmare-main-branch"
+            } else if (this.mods.list.includes("apotheosis")) {
+                mapName = Number(this.mods.ngp) > 0 ? "apotheosis-new-game-plus" : "apotheosis"
+                widthPW = 100
+            } else if (this.mods.list.includes("purgatory")) {
+                mapName = "purgatory"
+            } else if (this.mods.list.includes("biome-plus")) {
+                mapName = "alternate-biomes"
+            } else if (this.mods.list.includes("noitavania")) {
+                mapName = Number(this.mods.ngp) > 0 ? "noitavania-new-game-plus" : "noitavania"
+            }
+            let map = mapData[mapName]
+
+            // Parallel world x-only calculation
+            let PW = Math.sign(x) * Math.floor((Math.abs(x / 512) + widthPW / 2) / widthPW)
+            let xMap = Math.floor(((x / 512) + map.x0 - widthPW * PW) / zoom)
+            let xStar = -7 + ((x + (map.x0 - widthPW * PW) * 512) - (xMap * 4096)) * 192 / 4096
+
+            let src = map.urls[0]
             let pwName = "Main"
             if (PW >= 1) {
-                src = "https://regular-main-branch-right.acidflow.stream/maps/regular-main-branch-right/regular-main-branch-right-2024-04-08-78633191_files/"
+                src = map.urls[2] ?? map.urls[0]
                 pwName = "East"
             } else if (PW <= -1) {
-                src = "https://regular-main-branch-left.acidflow.stream/maps/regular-main-branch-left/regular-main-branch-left-2024-04-08-78633191_files/"
+                src = map.urls[1] ?? map.urls[0]
                 pwName = "West"
             }
             // Heaven/hell y-only calculation
@@ -555,22 +627,11 @@ const worldComp = Vue.component('world-comp', {
                 HH = Math.ceil((y / 512 - yHeaven) / yLoop)
                 hhName = ` Heaven ${Math.abs(HH) + 1}`
             }
-            let yMap = Math.floor(((y / 512) + y0 - HH * yLoop) / zoom)
-            let yStar = -6 + ((y + (y0 - yLoop * HH) * 512) - (yMap * 4096)) * 192 / 4096
-            // debug map stuff
-            // console.log({
-            //     x: x || 0,
-            //     y: y || 0,
-            //     pw: PW || 0,
-            //     hh: HH || 0,
-            //     xMap: xMap || 0,
-            //     yMap: yMap || 0,
-            //     xStar: xStar || 0,
-            //     yStar: yStar || 0,
-            // })
-            let mapName = "regular-main-branch"
+            let yMap = Math.floor(((y / 512) + map.y0 - HH * yLoop) / zoom)
+            let yStar = -6 + ((y + (map.y0 - yLoop * HH) * 512) - (yMap * 4096)) * 192 / 4096
             return {
                 img: `${src}14/${xMap}_${yMap}.webp?v=1712752623`,
+                name: mapLabels[mapName],
                 url: `https://map.runfast.stream/?map=${mapName}&x=${x}&y=${y}&zoom=1200`,
                 x: x.toLocaleString('en-US', { maximumFractionDigits: 2 }),
                 y: y.toLocaleString('en-US', { maximumFractionDigits: 2 }),
@@ -579,44 +640,30 @@ const worldComp = Vue.component('world-comp', {
                 xStar: xStar + 'px',
                 yStar: yStar + 'px',
             }
-
-        }
+        },
     },
-    props: ['info', 'version'],
+    props: ['info', 'version', 'mods'],
     inject: ['switches'],
-    template: `<div class="world-info">
-        <div class="world-header">
-            <v-switch v-model="state.shifts" :title="'Show Shifts [' + updateWorld.count + ']'"></v-switch>
-            <v-switch v-model="state.mods" :title="'Show Mods [' + mods.list.length + ']'"></v-switch>
-            <v-switch v-model="state.map" title="Show Map and Game info (spoilers!!!)"></v-switch>
-            <input v-model="input" :class="debug">
+    template: /* html */`
+    <div class="preview">
+        <div class="preview-icon-wrapper">
+            <p class="preview-icon" :style="{ left: osd.xStar, top: osd.yStar }"><b>&#9733;</b></p>
         </div>
-        <div class="world-body">
-            <fungal-comp v-if="state.shifts" :shifts="updateWorld.shifts" :timer="updateWorld.timer" :number="updateWorld.count"></fungal-comp>
-            <div v-if="state.mods" class="mods">
-                <p><u>Mods:</u></p>
-                <p v-for="mod in mods.list" :key="mod">{{ mod.length < 20 ? mod : mod.slice(0,20) }}</p>
-            </div>
-            <div class="preview" v-if="state.map">
-                <div class="preview-icon-wrapper">
-                    <p class="preview-icon" :style="{ left: osd.xStar, top: osd.yStar }"><b>&#9733;</b></p>
-                </div>
-                <a :href="osd.url" tabindex="-1" target="_blank" rel="noopener noreferrer">
-                    <img :src="osd.img"/>
-                    <p class="preview-link">Click for Fullscreen Map</p>
-                </a>
-                <div class="preview-info">
-                    <p v-if="!seedInfo">No current run</p>
-                    <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
-                        <p>Map {{ seedInfo.seed }}</p>
-                    </a>
-                    <p v-else>Map {{ seedInfo.seed }}</p>
-                    <p>x: {{ osd.x }}</p>
-                    <p>y: {{ osd.y }}</p>
-                    <p>In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
-                    <p>Note:  Map preview is being reworked to detect and switch map based on NG+, gamemode, and mods</p>
-                </div>
-            </div>
+        <a :href="osd.url" tabindex="-1" target="_blank" rel="noopener noreferrer">
+            <img :src="osd.img"/>
+            <p class="preview-link">Click for Fullscreen Map</p>
+        </a>
+        <div class="preview-info">
+            <!--<input v-model="input" :class="debug"/>-->
+            <p v-if="!seedInfo">No current run</p>
+            <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
+                <p>Map {{ seedInfo.seed }}</p>
+            </a>
+            <p v-else>Map {{ seedInfo.seed }}</p>
+            <p>x: {{ osd.x }}</p>
+            <p>y: {{ osd.y }}</p>
+            <p>In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
+            <p>World Type: {{ osd.name }}</p>
         </div>
     </div>`
 })
@@ -748,12 +795,13 @@ const fungalComp = Vue.component('fungal-comp', {
         },
     },
     props: ['shifts', 'timer', 'number'],
-    template: `<div class="shifts">
+    template: /*html*/`
+    <div class="shifts">
         <div class="shifts-header">
             <p><b>Shift Timer:</b> {{ timer > 0 ? Math.floor(300 - timer) + ' seconds remaining' : 'Ready to Shift' }}</p>
             <v-switch v-model="state.originalShift" title="Show Original Shift in First Column"></v-switch>
             <div class=shifts-input>    
-                <span>Calculate up to Shift N =</span><input v-model="state.number" type="number" inputmode="numeric" min="1" :max="number" :placeholder="number">
+                <span>Calculate up to Shift N =</span><input v-model="state.number" type="number" inputmode="numeric" min="1" :max="number" :placeholder="number"/>
                 <span>/ {{ number }} Total</span>
             </div>
             <div class="shifts-table-row header">
@@ -869,7 +917,8 @@ const materialComp = Vue.component('mat-comp', {
         i: { type: Number, required: false },
         info: { type: Array, required: false },
     },
-    template: `<div class="material tip" ref="slot" @mouseover="updateTip">
+    template: /*html*/`
+    <div class="material tip" ref="slot" @mouseover="updateTip">
         <span>{{ mat.ui }}</span>
         <div class="tooltip fit" ref="tooltip">
             <p v-if="reasons.length > 0">Material ID: {{ mat.raw }}</p>
@@ -932,7 +981,8 @@ const playerComp = Vue.component('player-comp', {
         }
     },
     props: ['info'],
-    template: `<div class="info-wrapper">
+    template: /*html*/`
+    <div class="info-wrapper">
         <div class="player-info">
             <div class="tip">
                 <p v-if="updatePlayer.finite.hp" class="health" ref="slotHP">{{ updatePlayer.shortHP }} / {{ updatePlayer.shortMaxHP }}</p>
@@ -978,7 +1028,8 @@ const perksComp = Vue.component('perks-comp', {
     },
     props: ['names', 'amounts', 'state'],
     inject: ['perkTable', 'pseudTable'],
-    template: `<div class="perks">
+    template: /*html*/`
+    <div class="perks">
         <perk-comp v-for="perk in playerPerks.first8" :key="perk.name" 
         :icon="perks[perk.name] ? perks[perk.name] : pseuds[perk.name]" :amount="perk.amount"></perk-comp>
         <perk-comp v-if="state" v-for="perk in playerPerks.over8" :key="perk.name" 
@@ -1007,7 +1058,8 @@ const perkComp = Vue.component('perk-comp', {
         }
     },
     props: ['icon', 'amount'],
-    template: `<div class="icon-slot no-bg">
+    template: /*html*/`
+    <div class="icon-slot no-bg">
         <div class="zoom no-bg">
             <a v-if="icon.wiki_url" :href="icon.wiki_url" tabindex="-1" target="_blank" rel="noopener noreferrer">
                 <img ref="slot" :src="'data:image/png;base64,' + (icon.ui_img ? icon.ui_img : icon.image)"/>
@@ -1028,7 +1080,8 @@ const perkTooltip = Vue.component('perk-tooltip', {
         },
     },
     props: ['icon', 'amount'],
-    template: `<div class="tooltip">
+    template: /*html*/`
+    <div class="tooltip">
         <p class="tooltip-title">{{ amount }} x {{ icon.name }}</p>
         <p class="tooltip-wiki">({{ icon.id }})</p>
         <div class="desc-container">
@@ -1209,7 +1262,8 @@ const containerComp = Vue.component('wands-container', {
             }
         },
     },
-    template: `<div class="content">
+    template: /*html*/`
+    <div class="content">
         <div class="top-wrapper">
             <div class="inventory-wrapper" v-if="inventory.length > 0">
                 <spell-inv :spells="inventory" :items="items"></spell-inv>
@@ -1427,7 +1481,8 @@ const Progress = Vue.component('prog-comp', {
     },
     props: ['tName', 'col', 'tableIcons', 'tableProg'],
     inject: ['switches'],
-    template: `<div class="prog" :style="{width : 1.85 * col + 'rem'}">
+    template: /*html*/`
+    <div class="prog" :style="{width : 1.85 * col + 'rem'}">
         <div ref="slot" class="header">
             <div class="stats-wrap">
                 <div class="stats">
@@ -1492,7 +1547,8 @@ const IconComp = Vue.component('icon-comp', {
         }
     },
     props: ['icon', 'tName', 'boolProg'],
-    template: `<div class="icon-slot" :class="[{ bgHide : !boolProg }, {spellTip : tName=='Spells'}]">
+    template: /*html*/`
+    <div class="icon-slot" :class="[{ bgHide : !boolProg }, {spellTip : tName=='Spells'}]">
         <div class="zoom">
             <img v-if="icon.bgImage" :style="bgStyle" :src="'data:image/png;base64,' + icon.bgImage"/>
             <a v-if="icon.wiki_url" :href="icon.wiki_url" tabindex="-1" target="_blank" rel="noopener noreferrer">
@@ -1515,7 +1571,8 @@ const IconTooltip = Vue.component('icon-tooltip', {
         },
     },
     props: ['icon'],
-    template: `<div class="tooltip">
+    template: /*html*/`
+    <div class="tooltip">
         <p class="tooltip-title">{{ icon.name }}</p>
         <p class="tooltip-wiki">({{ icon.id }})</p>
         <div class="desc-container">
@@ -1545,7 +1602,8 @@ const vSwitch = Vue.component('v-switch', {
             this.$emit('input', this.content)
         },
     },
-    template: `<div class="switch-group">
+    template: /*html*/`
+    <div class="switch-group">
         <label class="switch">
             <input :disabled="disabled" type="checkbox" ref="input" @input="handleInput" :checked="value" tabindex="1"/>
             <span class="slider round"></span>
@@ -1574,7 +1632,8 @@ const SpellInventory = Vue.component('spell-inv', {
     },
     props: ['spells', 'items'],
     inject: ['switches'],
-    template: `<div class="inventory">
+    template: /*html*/`
+    <div class="inventory">
         <item-slot v-for="(v, i) in itemSlots" :item="itemSlots[i]" :key="i+20"></item-slot>
         <spell-slot v-for="(v, index) in slots" :spell="slots[index]" :key="index"></spell-slot>
     </div>`,
@@ -1804,7 +1863,8 @@ const SpellTooltip = Vue.component('spell-tooltip', {
             return m
         },
     },
-    template: `<div class="tooltip">
+    template: /*html*/`
+    <div class="tooltip">
         <p class="tooltip-title">{{name}}</p>
         <p class="tooltip-description">{{spellVersion[spell].description}}</p>
         <template v-for="(stat, index) in stats">
@@ -1845,6 +1905,9 @@ Vue.mixin({
             },
             get apothIcons() {
                 return apothIcons
+            },
+            get mapData() {
+                return mapData
             },
         }
     },

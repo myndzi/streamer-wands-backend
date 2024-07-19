@@ -54,6 +54,7 @@ const cacheBustFiles = [
     ['icons', 'icons.js'],
     ['itemData', 'itemData.js'],
     ['apothIcons', 'apothIcons.js'],
+    ['mapData', 'mapData.js'],
     ['main', 'main.js'],
 ]
 const mtime = Object.fromEntries(
