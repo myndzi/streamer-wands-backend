@@ -476,8 +476,8 @@ const worldComp = Vue.component('world-comp', {
         return {
             state: {
                 shifts: false,
-                mods: true,
-                map: true,
+                mods: false,
+                map: false,
             },
             // debugMods: "",
             // debugNG: "0",
