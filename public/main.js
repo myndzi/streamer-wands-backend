@@ -537,17 +537,32 @@ const worldComp = Vue.component('world-comp', {
 const mapComp = Vue.component('map-comp', {
     data() {
         return {
+            tooltip: null,
             // input: "0,0",
             // debug: "",
             // debug: "hide-input",
+        }
+    },
+    mounted() {
+        if (this.$refs.tooltip) {
+            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
+                placement: 'right',
+                modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
+            })
+        }
+    },
+    beforeDestroy() {
+        if (this.tooltip) {
+            this.tooltip.destroy()
+            this.tooltip = null
         }
     },
     computed: {
         seedInfo() {
             let seedIndex = this.version.findIndex((x) => x.indexOf('seed=') > -1)
             if (seedIndex == -1) return false
-            let seed = this.version[seedIndex]
-            let url = `https://noitool.com/info?${seed}`
+            let seedNumber = Number(this.version[seedIndex].split("=")[1]) + this.mods.ngp
+            let url = `https://noitool.com/info?${seedNumber}`
             // uncomment when noita starts receiving beta pushes again
             // if (this.switches.betaContent.state) {
             //     url = `https://dev.noitool.com/info?${seed}`
@@ -555,7 +570,7 @@ const mapComp = Vue.component('map-comp', {
             if (this.switches.apothContent.state) {
                 url = false
             }
-            return { seed: seed.replace("=", ": ").replace("s", "S"), url: url }
+            return { seed: `Seed: ${seedNumber}`, url: url }
         },
         osd() {
             const zoom = 8
@@ -657,7 +672,13 @@ const mapComp = Vue.component('map-comp', {
             <!--<input v-model="input" :class="debug"/>-->
             <p v-if="!seedInfo">No current run</p>
             <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
-                <p>Map {{ seedInfo.seed }}</p>
+                <div ref="slot" class="shifts-tip">
+                    <p>Map {{ seedInfo.seed }}</p>
+                    <div ref="tooltip" class="tooltip fit">
+                        <p>Seed was incremented by {{ this.mods.ngp ? this.mods.ngp : 0 }}.</p>
+                        <p>(to display correct NG+ noitool shifts)</p>
+                    </div>
+                </div>
             </a>
             <p v-else>Map {{ seedInfo.seed }}</p>
             <p>x: {{ osd.x }}</p>
