@@ -538,24 +538,18 @@ const mapComp = Vue.component('map-comp', {
     data() {
         return {
             tooltip: null,
+            mapData: {},
+            loaded: false,
             // input: "0,0",
-            // debug: "",
-            // debug: "hide-input",
         }
     },
     mounted() {
-        if (this.$refs.tooltip) {
-            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
-                placement: 'right',
-                modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
+        fetch("https://map.runfast.stream/js/tilesources.json")
+            .then(res => res.json())
+            .then(data => {
+                this.mapData = data
+                this.loaded = true
             })
-        }
-    },
-    beforeDestroy() {
-        if (this.tooltip) {
-            this.tooltip.destroy()
-            this.tooltip = null
-        }
     },
     computed: {
         seedInfo() {
@@ -573,17 +567,19 @@ const mapComp = Vue.component('map-comp', {
             return { seed: `Seed: ${seedNumber}`, url: url }
         },
         osd() {
+            // map image zoom size
             const zoom = 8
+            // chunk coordinate offsets/distances
             const yHell = 34
             const yHeaven = -14
-            // chunk height of heaven/hell loop
             const yLoop = 48
+            const widthPW = 70
 
             // from game coord input
-            let x = this.info[0].x || 0
-            let y = this.info[0].y || 0
+            const x = this.info[0].x || 0
+            const y = this.info[0].y || 0
             // debug coord input
-            // let [x, y] = this.input.split(",").map((x) => Number(x)) || [0, 0]
+            // const [x, y] = this.input.split(",").map((x) => +x) || [0, 0]
 
             const mapLabels = {
                 "regular-main-branch": "Regular",
@@ -599,9 +595,8 @@ const mapComp = Vue.component('map-comp', {
                 "alternate-biomes": "Alternate Biomes"
             }
 
+            // determine gamemode/map type
             let mapName = Number(this.mods.ngp) > 0 ? "new-game-plus-regular-main-branch" : "regular-main-branch"
-            let widthPW = 70
-
             if (this.mods.list.includes("nightmare")) {
                 mapName = "nightmare-main-branch"
             } else if (this.mods.list.includes("apotheosis")) {
@@ -614,12 +609,20 @@ const mapComp = Vue.component('map-comp', {
             } else if (this.mods.list.includes("noitavania")) {
                 mapName = Number(this.mods.ngp) > 0 ? "noitavania-new-game-plus" : "noitavania"
             }
-            let map = mapData[mapName]
+
+            // get map URL and topleft offset
+            const mapValues = this.mapData[mapName]
+            const map = {
+                urls: mapValues.map((x) => `${x.url.slice(0, -4)}_files/`),
+            }
+            const mapDZI = JSON.parse(mapValues[0].dziContent)
+            map.x0 = +mapDZI.Image.TopLeft.X.slice(1) / 512
+            map.y0 = +mapDZI.Image.TopLeft.Y.slice(1) / 512
 
             // Parallel world x-only calculation
-            let PW = Math.sign(x) * Math.floor((Math.abs(x / 512) + widthPW / 2) / widthPW)
-            let xMap = Math.floor(((x / 512) + map.x0 - widthPW * PW) / zoom)
-            let xStar = -7 + ((x + (map.x0 - widthPW * PW) * 512) - (xMap * 4096)) * 192 / 4096
+            const PW = Math.sign(x) * Math.floor((Math.abs(x / 512) + widthPW / 2) / widthPW)
+            const xMap = Math.floor(((x / 512) + map.x0 - widthPW * PW) / zoom)
+            const xStar = -7 + ((x + (map.x0 - widthPW * PW) * 512) - (xMap * 4096)) * 192 / 4096
 
             let src = map.urls[0]
             let pwName = "Main"
@@ -642,8 +645,9 @@ const mapComp = Vue.component('map-comp', {
                 HH = Math.ceil((y / 512 - yHeaven) / yLoop)
                 hhName = ` Heaven ${Math.abs(HH) + 1}`
             }
-            let yMap = Math.floor(((y / 512) + map.y0 - HH * yLoop) / zoom)
-            let yStar = -6 + ((y + (map.y0 - yLoop * HH) * 512) - (yMap * 4096)) * 192 / 4096
+            const yMap = Math.floor(((y / 512) + map.y0 - HH * yLoop) / zoom)
+            const yStar = -6 + ((y + (map.y0 - yLoop * HH) * 512) - (yMap * 4096)) * 192 / 4096
+
             return {
                 img: `${src}14/${xMap}_${yMap}.webp?v=1712752623`,
                 name: mapLabels[mapName],
@@ -660,7 +664,7 @@ const mapComp = Vue.component('map-comp', {
     props: ['info', 'version', 'mods'],
     inject: ['switches'],
     template: /* html */`
-    <div class="preview">
+    <div class="preview" v-if="loaded">
         <div class="preview-icon-wrapper">
             <p class="preview-icon" :style="{ left: osd.xStar, top: osd.yStar }"><b>&#9733;</b></p>
         </div>
@@ -669,22 +673,54 @@ const mapComp = Vue.component('map-comp', {
             <p class="preview-link">Click for Fullscreen Map</p>
         </a>
         <div class="preview-info">
-            <!--<input v-model="input" :class="debug"/>-->
+            <!--<input v-model="input"/>-->
             <p v-if="!seedInfo">No current run</p>
             <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
-                <div ref="slot" class="shifts-tip">
-                    <p>Map {{ seedInfo.seed }}</p>
-                    <div ref="tooltip" class="tooltip fit">
-                        <p>Seed was incremented by {{ this.mods.ngp ? this.mods.ngp : 0 }}.</p>
-                        <p>(to display correct NG+ noitool shifts)</p>
-                    </div>
-                </div>
+                <map-tooltip :seed="seedInfo.seed" :mods="mods"></map-tooltip>
             </a>
             <p v-else>Map {{ seedInfo.seed }}</p>
             <p>x: {{ osd.x }}</p>
             <p>y: {{ osd.y }}</p>
             <p>In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
             <p>World Type: {{ osd.name }}</p>
+        </div>
+    </div>`
+})
+
+const mapTooltip = Vue.component('map-tooltip', {
+    data() {
+        return {
+            tooltip: null,
+        }
+    },
+    mounted() {
+        if (this.$refs.tooltip) {
+            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
+                placement: 'right',
+                modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
+            })
+        }
+    },
+    beforeDestroy() {
+        if (this.tooltip) {
+            this.tooltip.destroy()
+            this.tooltip = null
+        }
+    },
+    methods: {
+        updateTip() {
+            if (this.tooltip) {
+                this.tooltip.update()
+            }
+        },
+    },
+    props: ["seed", "mods"],
+    template: /* html */`
+    <div ref="slot" class="shifts-tip" @mouseenter="updateTip">
+        <p>Map {{ seed }}</p>
+        <div ref="tooltip" class="tooltip fit">
+            <p>Seed was incremented by {{ this.mods.ngp ? this.mods.ngp : 0 }}.</p>
+            <p>(to display correct NG+ noitool shifts)</p>
         </div>
     </div>`
 })
@@ -1926,9 +1962,6 @@ Vue.mixin({
             },
             get apothIcons() {
                 return apothIcons
-            },
-            get mapData() {
-                return mapData
             },
         }
     },
