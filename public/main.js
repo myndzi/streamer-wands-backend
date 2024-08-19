@@ -545,11 +545,12 @@ const mapComp = Vue.component('map-comp', {
     },
     mounted() {
         fetch("https://map.runfast.stream/js/tilesources.json")
-            .then(res => res.json())
+            .then(res => (res.ok ? res.json() : Promise.reject(`HTTP ${res.status}: ${res.statusText}`)))
             .then(data => {
                 this.mapData = data
                 this.loaded = true
             })
+            .catch(err => console.log(`map data fetch failed with error: ${err}`))
     },
     computed: {
         seedInfo() {
@@ -610,14 +611,14 @@ const mapComp = Vue.component('map-comp', {
                 mapName = Number(this.mods.ngp) > 0 ? "noitavania-new-game-plus" : "noitavania"
             }
 
-            // get map URL and topleft offset
+            // get map URL and topleft offsets in chunk coordinates
             const mapValues = this.mapData[mapName]
             const map = {
-                urls: mapValues.map((x) => `${x.url.slice(0, -4)}_files/`),
+                urls: mapValues.map((x) => x.url.replace(/\.dzi/, '_files/')),
             }
             const mapDZI = JSON.parse(mapValues[0].dziContent)
-            map.x0 = +mapDZI.Image.TopLeft.X.slice(1) / 512
-            map.y0 = +mapDZI.Image.TopLeft.Y.slice(1) / 512
+            map.x0 = Math.abs(mapDZI.Image.TopLeft.X) / 512
+            map.y0 = Math.abs(mapDZI.Image.TopLeft.Y) / 512
 
             // Parallel world x-only calculation
             const PW = Math.sign(x) * Math.floor((Math.abs(x / 512) + widthPW / 2) / widthPW)
