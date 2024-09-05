@@ -557,7 +557,7 @@ const mapComp = Vue.component('map-comp', {
             let seedIndex = this.version.findIndex((x) => x.indexOf('seed=') > -1)
             if (seedIndex == -1) return false
             let seedNumber = Number(this.version[seedIndex].split("=")[1]) + this.mods.ngp
-            let url = `https://noitool.com/info?${seedNumber}`
+            let url = `https://noitool.com/info?seed=${seedNumber}`
             // uncomment when noita starts receiving beta pushes again
             // if (this.switches.betaContent.state) {
             //     url = `https://dev.noitool.com/info?${seed}`
