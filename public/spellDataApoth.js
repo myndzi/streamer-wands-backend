@@ -959,7 +959,7 @@ const spellDataApoth = {
             action_mana_drain: 70,
             fire_rate_wait: 50,
             action_electricity: 1.0,
-            action_explosion: 5
+            action_explosion: 5.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAATUlEQVR4nGNgGCGg/donEqQh3P///2FRiibafu2T3aar2E39//8fmknt1z79//8PLo5iM5qo3aarEKUQKQgXnx+weoOwHkw3k6ZhWAEAsN1H0BhtiugAAAAASUVORK5CYII="
     },
@@ -972,7 +972,8 @@ const spellDataApoth = {
             fire_rate_wait: 50,
             action_speed: 800,
             action_electricity: 0.5,
-            action_explosion: 5
+            action_explosion: 0.25,
+            explosion_radius: 15.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVR4nKWTMW7DMAxFP4OO8UF0BOcAGbsWBbq2Nyigzd4s5AZuxg5F1269QI5g3cPO7N9BYiw1Tp0iBAjZgih+PlJCErfYaumA88PfGUhe5U3XkxwZ1ml/IXBkGjz5FRc0Xc+m66EZ/6UgCcr2t7t3kkRZtSyrFiRziAEYCUCcH854fb8+SfzUFXfpAWvWcP4o+GWb+o0A5FC/wPmBh/oZzh/DRTM1o6zapNYxytX6c5grlW5NIdasCYAA5OvzQ7ScoGIv1hQSM6sCaHY0XX8CU1YtYtbo50DVhSQSYLSmSBjoEErGYWESR2qb0nZO//kszMpSaGnPL03jxce0qfennt8/PHIWIBAY3GI/Up7ER5UeI/EAAAAASUVORK5CYII="
     },
@@ -1219,7 +1220,8 @@ const spellDataApoth = {
             action_max_uses: 10,
             action_mana_drain: 150,
             action_speed: 350,
-            action_fire: 2.25
+            action_fire: 2.25,
+            action_explosion: 5.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAABAElEQVR4nJ2SMY6DMBBFv61RlAax9VbuQ7ESCFGm2p6GE6TYK3ACrpCCYus0XIEyiqBLpC05QhANihCkGGJlCbGiTDH6Hs3z99gG3og69v6+PwFwfpWpY4+FuVNqtYhWdexJfzAzQqsmc0k5XXXk3B+EnRQmh/4gAJByACzXG+kPTeaaHLQJqaCr9qQCAG2eTqzkPWCF5WV3AsAMWy2i1b3VPwCA9Iex9euXK6QCUo5maAJYYdlkAAAFAPTxw5pUUMfCToqpA0/PA4zdNyH9YeZIAOykaPP0sT4/g46u2nfn7ajPW9zuXTwDmsxdrjd62eapFZYmAAD/FN579tVfiit0YF7bAKZpjgAAAABJRU5ErkJggg=="
     },
@@ -1293,6 +1295,7 @@ const spellDataApoth = {
             reload_time: 30,
             action_projectile: 2.0,
             action_explosion: 1.0,
+            explosion_radius: 20.0,
             spread_degrees: 3.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAbklEQVR4nGNgGIGAEUKdNzZmYGDg1NLSWLwYvwYmZM73a9duxMYSZQMDA0N7ezucraCgAGFo9PTcKCmJjIzE7iSIq857ecGlDbdtg3DheligEmfPImx48ABuw/dr1xi8vAjYgN/fKJ4mJpSGAwAA0iAiz/Cf4F0AAAAASUVORK5CYII="

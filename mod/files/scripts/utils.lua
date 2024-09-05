@@ -3,6 +3,7 @@ dofile_once("data/scripts/perks/perk.lua")
 dofile_once("data/scripts/gun/gun_actions.lua")
 dofile_once("mods/streamer_wands/files/scripts/enemyNames.lua")
 dofile_once("mods/streamer_wands/files/scripts/enemyNamesApoth.lua")
+dofile_once("mods/streamer_wands/files/scripts/materials.lua")
 dofile_once("mods/streamer_wands/stats.lua")
 
 function get_player()
@@ -97,13 +98,20 @@ end
 function get_shift_info()
     local world_comp = get_world_state()
     local mats = ComponentGetValue2(world_comp, "changed_materials")
+    local mats_string = ""
     for _, mat in ipairs(mats) do
-        mats[_] = GameTextGetTranslatedOrNot("$mat_" .. mat)
-        if mats[_] == "" then
-            mats[_] = mat
+        local mat_name = GameTextGetTranslatedOrNot("$mat_" .. mat)
+        if mat_name == "" then
+            if materials[mat] then
+                mat_name = GameTextGetTranslatedOrNot(materials[mat])
+            else
+                mat_name = mat
+            end
         end
+        -- mats[_] = mat .. "@" .. mat_name
+        mats_string = mats_string .. ",".. mat .. "@" .. mat_name
     end
-    return mats
+    return mats_string
 end
 
 function get_inventory()
@@ -298,9 +306,20 @@ end
 
 function get_spells_progress()
     local spells = {}
+    local mods = get_version()
+    local lock = false
+    for i, mod in ipairs(mods) do
+        if mod == "conga_spell_lock" then
+            lock = true
+        end
+    end
     for _, spell in ipairs(actions) do
         if HasFlagPersistent("action_" .. string.lower(spell.id)) then
-            table.insert(spells, spell.id)
+            if lock and not HasFlagPersistent("disabled_" .. string.lower(spell.id)) then
+                table.insert(spells, spell.id)
+            elseif not lock then
+                table.insert(spells, spell.id)
+            end
         end
     end
     return spells
@@ -357,11 +376,34 @@ function serialize_data()
     local version = get_version()
 
     local info = {}
+    local fungal_info = {}
+    local shiftList = {}
+
+    local shifts = get_shift_info()
+    local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
+    GlobalsSetValue("shift#" .. shiftNumber,shifts)
+
+    for i = 1,shiftNumber do
+        local shifts = GlobalsGetValue("shift#" .. i,"empty")
+        if i > 1 then
+            local shiftsPrev = GlobalsGetValue("shift#" .. (i - 1),"empty")
+            shifts = string.sub(shifts, string.len(shiftsPrev))
+        end
+        table.insert(shiftList,shifts)
+    end
+
+    local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
+    local current_frame = GameGetFrameNum()
+    local shift_timer = (current_frame - last_trip) / 60
+    if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
+        shift_timer = -1
+    end
+    table.insert(fungal_info,shiftNumber)
+    table.insert(fungal_info,shift_timer)
+
     local names = {}
     local amounts = {}
     local perk_order = get_perks()
-    local shifts = get_shift_info()
-    local count = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
     for i = #perk_order.order, 1, -1 do
         table.insert(names,perk_order.order[i])
         table.insert(amounts,perk_order.perks[perk_order.order[i]])
@@ -371,7 +413,7 @@ function serialize_data()
     local health = { player_info[1], player_info[2] }
     local gold = player_info[3]
     local x, y = get_player_pos()
-    table.insert(info, { names, amounts, shifts, count, health, gold, x, y })
+    table.insert(info, { names, amounts, shiftList, fungal_info, health, gold, x, y })
 
     for _, wand in ipairs(wands_ids) do
         local stats = get_wand_stats(wand)

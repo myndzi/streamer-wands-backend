@@ -35,6 +35,7 @@ exports.message = async (data, user, server) => {
     } catch (err) {
         if (data != 'im alive') {
             console.log(err)
+            console.log("err:", data.toString())
         }
     }
 }
