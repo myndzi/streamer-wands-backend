@@ -90,6 +90,13 @@ const WandStats = Vue.component('wand-stats', {
         }
     },
     props: ['stats', 'deck'],
+    methods: {
+        updateTip() {
+            if (this.tooltip) {
+                this.tooltip.update()
+            }
+        },
+    },
     computed: {
         sprite() {
             return wandSprites[this.spriteKey] || wandSprites['bomb_wand']
