@@ -13,6 +13,7 @@ const WandContainer = Vue.component('wand-comp', {
 const WandStats = Vue.component('wand-stats', {
     data() {
         return {
+            tooltip: null,
             spriteKey: this.stats.sprite,
             propOrder: [
                 {
@@ -74,6 +75,20 @@ const WandStats = Vue.component('wand-stats', {
             ],
         }
     },
+    mounted() {
+        if (this.$refs.tooltip) {
+            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
+                placement: 'bottom',
+                // modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
+            })
+        }
+    },
+    beforeDestroy() {
+        if (this.tooltip) {
+            this.tooltip.destroy()
+            this.tooltip = null
+        }
+    },
     props: ['stats', 'deck'],
     computed: {
         sprite() {
@@ -104,22 +119,28 @@ const WandStats = Vue.component('wand-stats', {
             return stats
         },
         // old wand sim site, URL breaks if spell not present on page
-        // wandSim() {
-        //     let link = 'https://noita-wand-simulator.salinecitrine.com/?'
-        //     let statsLink = this.propOrder.map((prop) => {
-        //         let name = prop.simName || prop.key
-        //         let value = +this.stats[prop.key]
-        //         return `${name}=${value}`
-        //     }).join('&')
-        //     let deckLink = this.deck.map((spell) => spell.split("_#")[0]).join('%2C')
-        //     return link + statsLink + '&spells=' + deckLink
-        // },
+        wandSimOld() {
+            let link = 'https://noita-wand-simulator.salinecitrine.com/?'
+            let statsLink = this.propOrder.map((prop) => {
+                let name = prop.simName || prop.key
+                let value = +this.stats[prop.key]
+                return `${name}=${value}`
+            }).join('&')
+            let deckLink = this.deck.map((spell) => {
+                const spellToCheck = spell.split("_#")[0]
+                return spellDataMain.hasOwnProperty(spellToCheck) ? spellToCheck : ""
+            }).join('%2C')
+            return link + statsLink + '&spells=' + deckLink
+        },
         // new wand sim site, URL does not break if spell not on page
         wandSim() {
             let link = 'https://tinker-with-wands-online.vercel.app/?'
             let statsLink = this.propOrder.map(
                 (prop) => `${prop.newSim}=${+this.stats[prop.key]}`).join('&')
-            let deckLink = this.deck.map((spell) => spell.split("_#")[0]).join('%2C')
+            let deckLink = this.deck.map((spell) => {
+                const spellToCheck = spell.split("_#")[0]
+                return spellDataMain.hasOwnProperty(spellToCheck) ? spellToCheck : ""
+            }).join('%2C')
             return link + statsLink + '&spells=' + deckLink
         },
     },
@@ -127,9 +148,25 @@ const WandStats = Vue.component('wand-stats', {
     <div class="stats-wrapper">
         <div class="stats-header">
             <p class="stats-title">{{ stats.ui_name }}</p>
-            <a :href="wandSim" tabindex="-1" target="_blank" rel="noopener noreferrer">
-                <p>Tinker</p>
-            </a>
+            <div ref="slot" class="shifts-tip wands-tip" @mouseenter="updateTip">
+                <a :href="wandSim" tabindex="-1" target="_blank" rel="noopener noreferrer">
+                    <p>Tinker</p>
+                </a>
+                <div ref="tooltip" class="tooltip fit">
+                    <a :href="wandSimOld"  tabindex="-1" target="_blank" rel="noopener noreferrer">Old Tinker Link</a>
+                    <ul>
+                        <li>Both wand simulation sites do NOT include Epilogue 2 Spells</li>
+                        <li>If the wand includes Epilogue 2 Spells they are replaced with a blank slot</li>
+                        <li>"Projectile" simulator on Old Tinker is currently more informative</li>
+                        <li>Both sites have a top right configuration button:
+                            <ul>
+                                <li>This is saved per-user, these Tinker links have no impact on the configuration</li>
+                                <li>If you are comparing your simulation to in-game or someone else's simulation, make sure these settings are all valid/matching</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="stats">
             <div class="stats-props">

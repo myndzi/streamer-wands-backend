@@ -724,6 +724,16 @@ a:visited {
     padding-left: 20px;
 }
 
+.wands-tip {
+    white-space: wrap;
+}
+
+.wands-tip>div {
+    max-width: 650px;
+    font-size: 0.9rem !important;
+
+}
+
 .strike {
     text-decoration: line-through;
 }
