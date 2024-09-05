@@ -639,19 +639,24 @@ const mapComp = Vue.component('map-comp', {
                 "noitavania-new-game-plus": "Noitavania NG+",
                 "alternate-biomes": "Alternate Biomes"
             }
+            const apothNames = ["$curse_apotheosis_everything_name", "$curse_apotheosis_downunder_name"]
 
             // determine gamemode/map type
-            let mapName = Number(this.mods.ngp) > 0 ? "new-game-plus-regular-main-branch" : "regular-main-branch"
-            if (this.mods.list.includes("nightmare")) {
+            let mapName = Number(this.mods.ngp) > 0 ? "new-game-plus-main-branch" : "regular-main-branch"
+            const mapModes = this.mods.list.map((x) => x.toLowerCase())
+            if (mapModes.includes("nightmare")) {
                 mapName = "nightmare-main-branch"
-            } else if (this.mods.list.includes("apotheosis")) {
+            } else if (mapModes.includes("apotheosis")) {
                 mapName = Number(this.mods.ngp) > 0 ? "apotheosis-new-game-plus" : "apotheosis"
                 widthPW = 100
-            } else if (this.mods.list.includes("purgatory")) {
+                if (this.info[0].names.some((x) => apothNames.includes(x))) {
+                    mapName = "apotheosis-tuonela"
+                }
+            } else if (mapModes.includes("purgatory")) {
                 mapName = "purgatory"
-            } else if (this.mods.list.includes("biome-plus")) {
+            } else if (mapModes.includes("biome-plus")) {
                 mapName = "alternate-biomes"
-            } else if (this.mods.list.includes("noitavania")) {
+            } else if (mapModes.includes("noitavania")) {
                 mapName = Number(this.mods.ngp) > 0 ? "noitavania-new-game-plus" : "noitavania"
             }
 
