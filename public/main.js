@@ -618,7 +618,7 @@ const mapComp = Vue.component('map-comp', {
             const yHell = 34
             const yHeaven = -14
             const yLoop = 48
-            const widthPW = 70
+            let widthPW = 70
 
             // from game coord input
             const x = this.info[0].x || 0
