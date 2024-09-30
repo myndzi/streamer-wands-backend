@@ -1196,7 +1196,7 @@ a:visited {
     transform: scale(120%);
 }
 
-.spellZoom:hover {
+.spell-slot:hover .spellZoom {
     transform: scale(120%);
 }
 
