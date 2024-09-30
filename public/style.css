@@ -969,10 +969,6 @@ a:visited {
     image-rendering: pixelated;
 }
 
-.spell-slot p {
-    pointer-events: none;
-}
-
 .item-slot:hover>img {
     transform: scale(120%) translate(-42%, -42%);
 }
