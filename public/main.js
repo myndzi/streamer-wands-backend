@@ -588,7 +588,7 @@ const mapComp = Vue.component('map-comp', {
         }
     },
     mounted() {
-        fetch("https://map.runfast.stream/js/tilesources.json")
+        fetch("https://noitamap.com/js/tilesources.json")
             .then(res => (res.ok ? res.json() : Promise.reject(`HTTP ${res.status}: ${res.statusText}`)))
             .then(data => {
                 this.mapData = data
@@ -600,7 +600,7 @@ const mapComp = Vue.component('map-comp', {
         seedInfo() {
             let seedIndex = this.version.findIndex((x) => x.indexOf('seed=') > -1)
             if (seedIndex == -1) return false
-            let seedNumber = Number(this.version[seedIndex].split("=")[1]) + this.mods.ngp
+            let seedNumber = Number(this.version[seedIndex].split("=")[1]) + Number(this.mods.ngp)
             let url = `https://noitool.com/info?seed=${seedNumber}`
             // uncomment when noita starts receiving beta pushes again
             // if (this.switches.betaContent.state) {
@@ -701,7 +701,7 @@ const mapComp = Vue.component('map-comp', {
             return {
                 img: `${src}14/${xMap}_${yMap}.webp?v=1712752623`,
                 name: mapLabels[mapName],
-                url: `https://map.runfast.stream/?map=${mapName}&x=${x}&y=${y}&zoom=1200`,
+                url: `https://noitamap.com/?map=${mapName}&x=${x}&y=${y}&zoom=1200`,
                 x: x.toLocaleString('en-US', { maximumFractionDigits: 2 }),
                 y: y.toLocaleString('en-US', { maximumFractionDigits: 2 }),
                 pw: (PW != 0) ? `${pwName} ${Math.abs(PW)}` : pwName,
