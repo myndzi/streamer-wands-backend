@@ -7615,6 +7615,24 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Essence_of_Water"
         },
         {
+            id: "$perk_respawn_spent",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/0lEQVR4nMWTIW8CQRBG3wEBMqpuPUkTDKI5cUHVV1RVY7HYShQWiwF3NacQ/AuSJmuo6TmSlQguAXMYdnPHLZgTjNvJfG++ndkN8jynTjRqqYFW8fDf7+dfWQZAWzqV4nN2AiARobfbBRUHWikSEa/YQhMRtFIuVwJM0xStFDFNLyCmiVaKaZr6AW3pMDN7L8SKZ2Zfcugd4vLlUIJY8ev6o1Lbuk2M5yHR8A0A/bkhNsZ1XnqaVRwsJlu+Rz8ADK7igTE+o/evYP6OdKOV6/xosCWA3XNxYICDdKMV43no6rwObsU2LOR98nvfgX0kxT0Xw76TRMTlgqd/ptqAC9J0ZOAqPZ07AAAAAElFTkSuQmCC",
+            name: "Extra Life (One-Off)",
+            description: "Upon death you respawn with 100 health.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Extra_Life",
+            ui_name: "$perk_respawn_spent",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/0lEQVR4nMWTIW8CQRBG3wEBMqpuPUkTDKI5cUHVV1RVY7HYShQWiwF3NacQ/AuSJmuo6TmSlQguAXMYdnPHLZgTjNvJfG++ndkN8jynTjRqqYFW8fDf7+dfWQZAWzqV4nN2AiARobfbBRUHWikSEa/YQhMRtFIuVwJM0xStFDFNLyCmiVaKaZr6AW3pMDN7L8SKZ2Zfcugd4vLlUIJY8ev6o1Lbuk2M5yHR8A0A/bkhNsZ1XnqaVRwsJlu+Rz8ADK7igTE+o/evYP6OdKOV6/xosCWA3XNxYICDdKMV43no6rwObsU2LOR98nvfgX0kxT0Xw76TRMTlgqd/ptqAC9J0ZOAqPZ07AAAAAElFTkSuQmCC"
+        },
+        {
+            id: "$log_curse",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+UlEQVR4nGNgGPKAEZ9k39z1/xkYGBiM9LXgYg4m6ih6mPBpPn/hEsOcGZMYGBgYGLIyMxjmLlzBcODMzf9EGcDAwMBw9sQBDP65i9dQxFjwGWBs4cBgaKDHkJWZwZCSkcdw/sIlDDVYXfDrUd3/8xcuMRga6MENYmBgYDA00MNqCAq43SH//9ejuv//////DwtEdBqnC9ZmCP7n1JVmeHV5D8Pvx/UM5y9cYvj///9/mK3YbGdEN4BZjInBxFydQUzXhYGBgYHhxs7lDHqpt3FGN0og7nkiySD8/j8DA8NNBoaTNxmUZIXwasYKMn20/teEa2L4dRgDAAgaYLUa6KkAAAAAAElFTkSuQmCC",
+            name: "Curse of greed!",
+            description: "You gain more gold but a curse will haunt you",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Curse_of_Greed",
+        },
+        {
             id: "$item_apotheosis_polymorphine_name",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOklEQVR4nN2SMWvCQBTHfynHOTslkMWG0Da0U6aQr+AnEMHVXeIszoq7qyB+gg7dnMTJqSVVxHYJmKlzwkE65TA1W4dC33K8d///7z3uHvx1GJdJURR4zlMBIIVkZo/xo4DddMsgGZGrHID49GoYhnENeLh9LKSQ9EWXzqQHQONLkDUVAKvhgrlakquc9483A+Dm50ilufElSJ4/OW2OGtSZ9OiLbkVfAUghdecy0visQSVEClkPmNlj3e20OZLGZ0zPIo3P1OkAxOWFHwUV8z49AOgTwAld/CiAdQ1gN93iRwFO6OraPj1wb95hehZ2u0WGYjfd1k8wSEasedG56VmYnqXz8kcGyaj+DXKVsxouyJoKJ3Sx2y09thO6ZE3FarjQ+3AFAJirpYaU5qyptHmulhX9rzfxH8Q3uoWSXptVMD0AAAAASUVORK5CYII=",
             name: "",
