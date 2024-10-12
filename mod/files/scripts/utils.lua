@@ -422,6 +422,5 @@ function serialize_data()
         table.insert(serialized, { stats, always_cast, deck })
     end
 
-    return json.encode({ wands = serialized, inventory = inventory, items = items, progress = progress, version = version, info =
-    info })
+    return json.encode({ wands = serialized, inventory = inventory, items = items, progress = progress, version = version, info = info })
 end
