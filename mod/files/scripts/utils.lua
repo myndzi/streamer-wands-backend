@@ -16,7 +16,7 @@ end
 function get_world_state()
     local world = EntityGetWithTag("world_state") or nil
     if world ~= nil then
-        return EntityGetFirstComponentIncludingDisabled(world[1],"WorldStateComponent")
+        return EntityGetFirstComponentIncludingDisabled(world[1], "WorldStateComponent")
     end
 end
 
@@ -64,35 +64,36 @@ function get_perks()
     local perks = {}
     local order = {}
     for _, child in ipairs(childs) do
-        local ui_comp = EntityGetFirstComponentIncludingDisabled(child,"UIIconComponent")
-        local perk_comp = (ui_comp ~= nil and string.sub(ComponentGetValue2(ui_comp,"name"),1,5) == "$perk")
-        local perk_tag = EntityHasTag(child,"perk_entity")
-        local essence_tag = EntityHasTag(child,"essence_effect") and not EntityHasTag(child,"essence")
-        local pseudo_tag = EntityHasTag(child,"pseudo_perk")
-        if perk_tag or essence_tag or pseudo_tag or perk_comp then
-            local ui_comp = EntityGetFirstComponentIncludingDisabled(child,"UIIconComponent")
+        local ui_comp = EntityGetFirstComponentIncludingDisabled(child, "UIIconComponent")
+        local perk_comp = (ui_comp ~= nil and string.sub(ComponentGetValue2(ui_comp, "name"), 1, 5) == "$perk")
+        local perk_tag = EntityHasTag(child, "perk_entity")
+        local essence_tag = EntityHasTag(child, "essence_effect") and not EntityHasTag(child, "essence")
+        local pseudo_tag = EntityHasTag(child, "pseudo_perk")
+        local greed_tag = EntityHasTag(child, "greed_curse")
+        if perk_tag or essence_tag or pseudo_tag or greed_tag or perk_comp then
+            local ui_comp = EntityGetFirstComponentIncludingDisabled(child, "UIIconComponent")
             if ui_comp ~= nil then
-                local name = ComponentGetValue2(ui_comp,"name")
+                local name = ComponentGetValue2(ui_comp, "name")
                 if perks[name] == nil then
                     perks[name] = 1
-                    table.insert(order,name)
+                    table.insert(order, name)
                 else
                     perks[name] = perks[name] + 1
                 end
             end
         end
     end
-    return { perks=perks, order=order } or nil
+    return { perks = perks, order = order } or nil
 end
 
 function get_player_info()
     local player = get_player()
-    local hp_comp = EntityGetFirstComponentIncludingDisabled(player,"DamageModelComponent")
-    local money_comp = EntityGetFirstComponentIncludingDisabled(player,"WalletComponent")
+    local hp_comp = EntityGetFirstComponentIncludingDisabled(player, "DamageModelComponent")
+    local money_comp = EntityGetFirstComponentIncludingDisabled(player, "WalletComponent")
     local money = ComponentGetValue2(money_comp, "money")
     local max_hp = ComponentGetValue2(hp_comp, "max_hp")
     local hp = ComponentGetValue2(hp_comp, "hp")
-    return {hp, max_hp, money}
+    return { hp, max_hp, money }
 end
 
 function get_shift_info()
@@ -109,7 +110,7 @@ function get_shift_info()
             end
         end
         -- mats[_] = mat .. "@" .. mat_name
-        mats_string = mats_string .. ",".. mat .. "@" .. mat_name
+        mats_string = mats_string .. "," .. mat .. "@" .. mat_name
     end
     return mats_string
 end
@@ -381,15 +382,15 @@ function serialize_data()
 
     local shifts = get_shift_info()
     local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
-    GlobalsSetValue("shift#" .. shiftNumber,shifts)
+    GlobalsSetValue("shift#" .. shiftNumber, shifts)
 
-    for i = 1,shiftNumber do
-        local shifts = GlobalsGetValue("shift#" .. i,"empty")
+    for i = 1, shiftNumber do
+        local shifts = GlobalsGetValue("shift#" .. i, "empty")
         if i > 1 then
-            local shiftsPrev = GlobalsGetValue("shift#" .. (i - 1),"empty")
+            local shiftsPrev = GlobalsGetValue("shift#" .. (i - 1), "empty")
             shifts = string.sub(shifts, string.len(shiftsPrev))
         end
-        table.insert(shiftList,shifts)
+        table.insert(shiftList, shifts)
     end
 
     local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
@@ -398,15 +399,15 @@ function serialize_data()
     if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
         shift_timer = -1
     end
-    table.insert(fungal_info,shiftNumber)
-    table.insert(fungal_info,shift_timer)
+    table.insert(fungal_info, shiftNumber)
+    table.insert(fungal_info, shift_timer)
 
     local names = {}
     local amounts = {}
     local perk_order = get_perks()
     for i = #perk_order.order, 1, -1 do
-        table.insert(names,perk_order.order[i])
-        table.insert(amounts,perk_order.perks[perk_order.order[i]])
+        table.insert(names, perk_order.order[i])
+        table.insert(amounts, perk_order.perks[perk_order.order[i]])
     end
 
     local player_info = get_player_info()
