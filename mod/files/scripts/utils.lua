@@ -294,14 +294,18 @@ function get_inventory_items()
     return inventory
 end
 
-function get_version()
-    local versions = ModGetActiveModIDs()
-    if GameIsBetaBuild() then
-        table.insert(versions, "beta")
+function get_version(ngpCheck, seedCheck)
+    local versions = {}
+    local modList = ModGetActiveModIDs()
+    versions["mods"] = modList
+    versions["beta"] = GameIsBetaBuild()
+    if ngpCheck then
+        versions["ngp"] = "NG+" .. SessionNumbersGetValue("NEW_GAME_PLUS_COUNT")
     end
-    table.insert(versions, "NG+" .. SessionNumbersGetValue("NEW_GAME_PLUS_COUNT"))
-    local seed = StatsGetValue("world_seed")
-    table.insert(versions, "seed=" .. seed)
+    if seedCheck then
+        local seed = StatsGetValue("world_seed")
+        versions["seed"] = "seed=" .. seed
+    end
     return versions
 end
 
@@ -360,67 +364,79 @@ end
 
 function serialize_data()
     local player = get_player()
+    off = "streamerOff"
     if (player == nil) then
         return ""
     end
+    local data = {}
+
     local serialized = {}
     local wands_ids = get_wands()
-    local inventory = get_inventory_spells()
-    local items = get_inventory_items()
-
-    local progress = {}
-    local perks = get_perks_progress()
-    local spells = get_spells_progress()
-    local enemies = get_enemies_progress()
-    table.insert(progress, { perks, spells, enemies })
-
-    local version = get_version()
-
-    local info = {}
-    local fungal_info = {}
-    local shiftList = {}
-
-    local shifts = get_shift_info()
-    local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
-    GlobalsSetValue("shift#" .. shiftNumber, shifts)
-
-    for i = 1, shiftNumber do
-        local shifts = GlobalsGetValue("shift#" .. i, "empty")
-        if i > 1 then
-            local shiftsPrev = GlobalsGetValue("shift#" .. (i - 1), "empty")
-            shifts = string.sub(shifts, string.len(shiftsPrev))
-        end
-        table.insert(shiftList, shifts)
-    end
-
-    local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
-    local current_frame = GameGetFrameNum()
-    local shift_timer = (current_frame - last_trip) / 60
-    if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
-        shift_timer = -1
-    end
-    table.insert(fungal_info, shiftNumber)
-    table.insert(fungal_info, shift_timer)
-
-    local names = {}
-    local amounts = {}
-    local perk_order = get_perks()
-    for i = #perk_order.order, 1, -1 do
-        table.insert(names, perk_order.order[i])
-        table.insert(amounts, perk_order.perks[perk_order.order[i]])
-    end
-
-    local player_info = get_player_info()
-    local health = { player_info[1], player_info[2] }
-    local gold = player_info[3]
-    local x, y = get_player_pos()
-    table.insert(info, { names, amounts, shiftList, fungal_info, health, gold, x, y })
-
     for _, wand in ipairs(wands_ids) do
         local stats = get_wand_stats(wand)
         local always_cast, deck = get_wand_spells(wand)
         table.insert(serialized, { stats, always_cast, deck })
     end
+    data["wands"] = serialized
+    data["inventory"] = get_inventory_spells()
+    data["items"] = get_inventory_items()
 
-    return json.encode({ wands = serialized, inventory = inventory, items = items, progress = progress, version = version, info = info })
+    local progress = {}
+    local perks = get_perks_progress()
+    local spells = get_spells_progress()
+    local enemies = get_enemies_progress()
+    data["progress"] = { perks, spells, enemies }
+
+    local ngpCheck = ModSettingGet("streamer_wands.ngp")
+    local seedCheck = ModSettingGet("streamer_wands.seed")
+    local version = get_version(ngpCheck, seedCheck)
+    data["version"] = version
+
+    local info = {}
+    local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
+    info["shiftsTotal"] = shiftNumber
+    if ModSettingGet("streamer_wands.shifts") then
+        local shiftList = {}
+
+        local shifts = get_shift_info()
+        GlobalsSetValue("shift#" .. shiftNumber, shifts)
+
+        for i = 1, shiftNumber do
+            shifts = GlobalsGetValue("shift#" .. i, "empty")
+            if i > 1 then
+                local shiftsPrev = GlobalsGetValue("shift#" .. (i - 1), "empty")
+                shifts = string.sub(shifts, string.len(shiftsPrev))
+            end
+            table.insert(shiftList, shifts)
+        end
+        info["shiftsList"] = shiftList
+    end
+    if ModSettingGet("streamer_wands.shiftsTimer") then
+        local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
+        local current_frame = GameGetFrameNum()
+        local shift_timer = (current_frame - last_trip) / 60
+        if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
+            shift_timer = -1
+        end
+        info["shiftsTimer"] = shift_timer
+    end
+
+    local perk_order = get_perks()
+    local names = {}
+    local amounts = {}
+    for i = #perk_order.order, 1, -1 do
+        table.insert(names, perk_order.order[i])
+        table.insert(amounts, perk_order.perks[perk_order.order[i]])
+    end
+    info["perks"] = { names, amounts }
+
+    local player_info = get_player_info()
+    info["health"] = { player_info[1], player_info[2] }
+    info["gold"] = player_info[3]
+    if ModSettingGet("streamer_wands.position") then
+        info["pos"] = get_player_pos()
+    end
+    data["info"] = info
+    data["version"] = "1"
+    return json.encode(data)
 end

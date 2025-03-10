@@ -29,7 +29,6 @@
     "xml.format.closingBracketNewLine": true,
     "xml.format.splitAttributes": true,
     "xml.format.splitAttributesIndentSize": 1,
-    "Lua.diagnostics.disable": ["lowercase-global", "undefined-global"],
     "Lua.workspace.ignoreDir": [
         ".vscode",
         "mod/files/scripts/json.lua",
