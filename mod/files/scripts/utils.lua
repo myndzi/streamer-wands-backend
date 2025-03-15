@@ -436,7 +436,7 @@ function serialize_data()
     if ModSettingGet("streamer_wands.position") then
         info["pos"] = get_player_pos()
     end
-    data["info"] = info
+    data["playerInfo"] = info
     data["modVersion"] = "1"
     return json.encode(data)
 end
