@@ -23,9 +23,9 @@ end
 function get_player_pos()
     local x, y = EntityGetTransform(get_player())
     if (x ~= nil) then
-        return x, y
+        return { x, y }
     end
-    return 0, 0
+    return { 0, 0 }
 end
 
 function str_to_table(data)
@@ -294,7 +294,7 @@ function get_inventory_items()
     return inventory
 end
 
-function get_version(ngpCheck, seedCheck)
+function get_run_info(ngpCheck, seedCheck)
     local versions = {}
     local modList = ModGetActiveModIDs()
     versions["mods"] = modList
@@ -311,7 +311,7 @@ end
 
 function get_spells_progress()
     local spells = {}
-    local mods = get_version()
+    local mods = get_run_info()
     local lock = false
     for i, mod in ipairs(mods) do
         if mod == "conga_spell_lock" then
@@ -343,7 +343,7 @@ end
 function get_enemies_progress()
     local enemies = {}
     local currentEnemies = enemyNames
-    for _, mod in ipairs(get_version()) do
+    for _, mod in ipairs(get_run_info()) do
         if mod == "apotheosis" or mod == "Apotheosis" then
             currentEnemies = enemyNamesApoth
         end
@@ -389,8 +389,8 @@ function serialize_data()
 
     local ngpCheck = ModSettingGet("streamer_wands.ngp")
     local seedCheck = ModSettingGet("streamer_wands.seed")
-    local version = get_version(ngpCheck, seedCheck)
-    data["version"] = version
+    local runInfo = get_run_info(ngpCheck, seedCheck)
+    data["runInfo"] = runInfo
 
     local info = {}
     local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
@@ -437,6 +437,6 @@ function serialize_data()
         info["pos"] = get_player_pos()
     end
     data["info"] = info
-    data["version"] = "1"
+    data["modVersion"] = "1"
     return json.encode(data)
 end
