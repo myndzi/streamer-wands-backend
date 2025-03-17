@@ -17,12 +17,14 @@ block scripts
 block content
   script.
     const streamerName = "#{streamer}"
+    const streamerModVersion = !{JSON.stringify(modVersion)}
+    const streamerModFeatures = !{JSON.stringify(modFeatures)}
     const streamerWands = !{JSON.stringify(wands)}
     const streamerInventory = !{JSON.stringify(inventory)}
     const streamerItems = !{JSON.stringify(items)}
     const streamerProgress = !{JSON.stringify(progress)}
-    const streamerVersion = !{JSON.stringify(version)}
-    const streamerInfo =  !{JSON.stringify(info)}
+    const streamerRunInfo = !{JSON.stringify(runInfo)}
+    const streamerPlayerInfo =  !{JSON.stringify(playerInfo)}
   div.wand-display
     div#app
     //- moved to within main.js

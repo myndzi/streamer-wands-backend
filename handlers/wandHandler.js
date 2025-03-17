@@ -34,36 +34,53 @@ function numberValidation(value) {
     return value
 }
 
+function typeValidation(varType, value) {
+    if (typeof value != varType) value = null
+    return value
+}
+
 exports.validate = (data) => {
     const legacy = Array.isArray(data)
     let wands = []
     let inventory = Array(16).fill('0')
     let items = Array(4).fill('0')
     let progress = []
-    if (legacy) {
-        wands = data
-    } else {
-        wands = data.wands
-        if (data.inventory) {
-            inventory = data.inventory
-        }
-        if (data.items) {
-            items = data.items
-        }
-        if (data.progress) {
-            progress = data.progress
-        }
-        if (data.version) {
-            version = data.version
-        }
-        if (data.info) {
-            info = data.info
-        }
+    if (data.modVersion) {
+        modVersion = data.modVersion
     }
+    if (data.modFeatures) {
+        modFeatures = data.modFeatures
+    }
+    if (data.wands) {
+        wands = data.wands
+    }
+    if (data.inventory) {
+        inventory = data.inventory
+    }
+    if (data.items) {
+        items = data.items
+    }
+    if (data.progress) {
+        progress = data.progress
+    }
+    if (data.runInfo) {
+        runInfo = data.runInfo
+    }
+    if (data.playerInfo) {
+        playerInfo = data.playerInfo
+    }
+
+    let validatedModVersion = modVersion ?? "User is on outdated mod version"
+
+    let validatedModFeatures = {}
+    for (const [feature, value] of Object.entries(modFeatures)) {
+        validatedModFeatures[feature] = typeValidation("boolean", value)
+    }
+
     const validatedWands = []
 
     for (const wand of wands) {
-        valid = {}
+        let valid = {}
         valid.stats = statsValidation(wand[0])
         valid.always_cast = wand[1].filter(strFilter)
         valid.deck = wand[2].filter(strFilter)
@@ -72,44 +89,47 @@ exports.validate = (data) => {
     let validatedSpells = inventory.filter(strFilter)
     let validatedItems = items.filter(strFilter)
 
-    const validatedProgress = []
+    let validatedProgress = {}
+    validatedProgress.perks = progress[0].filter(strFilter)
+    validatedProgress.spells = progress[1].filter(strFilter)
+    validatedProgress.enemies = progress[2].filter(strFilter)
+    let validatedRunInfo = {}
+    validatedRunInfo.mods = runInfo.mods.filter(strFilter)
+    validatedRunInfo.beta = typeValidation("boolean", runInfo.beta)
+    const ngp = runInfo.ngp ?? null
+    validatedRunInfo.ngp = typeValidation("string", ngp)
+    const seed = runInfo.seed ?? null
+    validatedRunInfo.seed = typeValidation("string", seed)
 
-    for (const table of progress) {
-        valid = {}
-        valid.perks = table[0].filter(strFilter)
-        valid.spells = table[1].filter(strFilter)
-        valid.enemies = table[2].filter(strFilter)
-        validatedProgress.push(valid)
-    }
-    let validatedVersion = version.filter(strFilter)
-
-    const validatedInfo = []
-
-    for (const field of info) {
-        valid = {}
-        valid.names = field[0].filter(strFilter)
-        valid.amounts = numbersValidation(field[1])
-        valid.shifts = []
-        for (const shiftRaw of field[2]) {
+    const validatedPlayerInfo = {}
+    validatedPlayerInfo.names = playerInfo.perks[0].filter(strFilter)
+    validatedPlayerInfo.amounts = numbersValidation(playerInfo.perks[1])
+    validatedPlayerInfo.shifts = []
+    if (playerInfo.shiftsList) {
+        for (const shiftRaw of playerInfo.shiftsList) {
             if (shiftRaw != null && shiftRaw != "empty") {
-                const shiftList = shiftRaw.split(",").slice(1)
-                valid.shifts.push(shiftList.filter(strFilter))
+                const shiftMaterials = shiftRaw.split(",").slice(1)
+                validatedPlayerInfo.shifts.push(shiftMaterials.filter(strFilter))
             }
         }
-        valid.shiftInfo = numbersValidation(field[3])
-        valid.health = numbersValidation(field[4])
-        valid.gold = numberValidation(field[5])
-        valid.x = numberValidation(field[6])
-        valid.y = numberValidation(field[7])
-        validatedInfo.push(valid)
     }
+    validatedPlayerInfo.shiftsTotal = numberValidation(playerInfo.shiftsTotal)
+    const shiftsTimer = playerInfo.shiftsTimer ?? null
+    validatedPlayerInfo.shiftsTimer = numberValidation(shiftsTimer)
+    const pos = playerInfo.pos ?? null
+    validatedPlayerInfo.health = numbersValidation(playerInfo.health)
+    validatedPlayerInfo.gold = numberValidation(playerInfo.money)
+    validatedPlayerInfo.x = pos ? numberValidation(pos[0]) : null
+    validatedPlayerInfo.y = pos ? numberValidation(pos[1]) : null
 
     return {
+        modVersion: validatedModVersion,
+        modFeatures: validatedModFeatures,
         wands: validatedWands,
         inventory: validatedSpells,
         items: validatedItems,
         progress: validatedProgress,
-        version: validatedVersion,
-        info: validatedInfo
+        runInfo: validatedRunInfo,
+        playerInfo: validatedPlayerInfo
     }
 }

@@ -12,12 +12,14 @@ exports.getWands = async (req, res, next) => {
             menu: false,
             title: `${streamer.name} wands`,
             streamer: streamer.name,
+            modVersion: streamer.modVersion,
+            modFeatures: streamer.modFeatures,
             wands: streamer.wands,
             inventory: streamer.inventory || [],
             items: streamer.items || [],
             progress: streamer.progress,
-            version: streamer.version,
-            info: streamer.info,
+            runInfo: streamer.runInfo,
+            playerInfo: streamer.playerInfo,
         })
     } else {
         next()

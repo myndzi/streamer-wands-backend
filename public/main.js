@@ -522,6 +522,7 @@ const worldComp = Vue.component('world-comp', {
                 shifts: false,
                 mods: false,
                 map: false,
+                userDisabled: false,
             },
             // debugMods: "",
             // debugNG: "0",
@@ -530,50 +531,59 @@ const worldComp = Vue.component('world-comp', {
         }
     },
     computed: {
-        updateWorld() {
-            let update = this.info[0]
-            let shiftInfo = update.shiftInfo
-            return {
-                shifts: update.shifts,
-                count: shiftInfo[0],
-                timer: shiftInfo[1],
-            }
+        info() {
+            const player = this.player
+            const output = this.run
+            output.shifts = player.shifts
+            output.count = player.shiftsTotal
+            output.timer = player.shiftsTimer
+            const ngp = Number(output.ngp)
+            output.ngp = (ngp > 0) ? `+${ngp}` : ""
+            return output
         },
-        mods() {
-            // [0,n-2] = mods
-            // n - 1 = NG+
-            // n = seed
-            // beta is conditionally entered by utils.lua
-            let filtered = this.version.filter((x) => x != "beta").slice(0, -1)
-            let ngp = Number(filtered[filtered.length - 1].slice(3))
-            // debug new game plus number
-            // let ngp = Number(this.debugNG)
+        featureOutput() {
+            features = this.features
+            delete features._id
             return {
-                list: filtered.slice(0, -1),
-                // debug mods list
-                // list: filtered.slice(0, -1).concat(this.debugMods.split(",")),
-                ngp: (ngp > 0) ? `+${ngp}` : ""
+                "Seed": features.seed,
+                "Position": features.pos,
+                "New Game Plus": features.ngp,
+                "Fungal Shifts": features.shifts,
+                "Fungal Timer": features.timer,
             }
-        },
+        }
     },
-    props: ['info', 'version'],
+    props: ['player', 'run', 'features'],
     inject: ['switches'],
     template: /*html*/`
     <div class="world-info">
         <div class="world-header">
-            <v-switch v-model="state.shifts" :title="'Show Shifts [' + updateWorld.count + ']'"></v-switch>
-            <v-switch v-model="state.mods" :title="'Show Mods [' + mods.list.length + ']'"></v-switch>
+            <v-switch v-model="state.shifts" :title="'Show Shifts [' + info.count + ']'"></v-switch>
+            <v-switch v-model="state.mods" :title="'Show Mods [' + info.mods.length + ']'"></v-switch>
+            <v-switch v-model="state.userDisabled" title="Show Feature Status"></v-switch>
             <v-switch v-model="state.map" title="Show Map and Game info (spoilers!!!)"></v-switch>
         </div>
         <div class="world-body">
-            <fungal-comp v-if="state.shifts" :shifts="updateWorld.shifts" :timer="updateWorld.timer" :number="updateWorld.count"></fungal-comp>
+            <fungal-comp v-if="state.shifts" :shifts="info.shifts" :timer="info.timer" :number="info.count" :features="features"></fungal-comp>
             <div v-if="state.mods" class="mods">
                 <!--<input v-model="debugMods" :class="debug"/>-->
                 <p><u>Mods:</u></p>
                 <!--<input v-model="debugNG" :class="debug"/>-->
-                <p v-for="mod in mods.list" :key="mod">{{ mod.length < 20 ? mod : mod.slice(0,20) }}</p>
+                <p v-for="mod in info.mods" :key="mod">{{ mod.length < 20 ? mod : mod.slice(0,20) }}</p>
             </div>
-            <map-comp v-if="state.map" :info="info" :version="version" :mods="mods"></map-comp>
+            <div v-if="state.userDisabled" class="features">
+                <div class="features-table">
+                <div class="features-row header">
+                    <div><b>Feature: </b></div>
+                    <div><b>Status</b></div>
+                </div>
+                <div class="features-row" v-for="(value, feature) in featureOutput"">
+                    <div>{{ feature }}</div>
+                    <div>{{ value ? "Enabled" : "Disabled" }}</div>
+                </div>
+            </div>
+            </div>
+            <map-comp v-if="state.map" :player="player" :seed="info.seed" :mods="info.mods" :ngp="info.ngp" :features="features"></map-comp>
         </div>
     </div>`
 })
@@ -598,9 +608,8 @@ const mapComp = Vue.component('map-comp', {
     },
     computed: {
         seedInfo() {
-            let seedIndex = this.version.findIndex((x) => x.indexOf('seed=') > -1)
-            if (seedIndex == -1) return false
-            let seedNumber = Number(this.version[seedIndex].split("=")[1]) + Number(this.mods.ngp)
+            // if (!this.seed) return null
+            let seedNumber = Number(this.seed.split("=")[1]) + Number(this.ngp)
             let url = `https://noitool.com/info?seed=${seedNumber}`
             // uncomment when noita starts receiving beta pushes again
             // if (this.switches.betaContent.state) {
@@ -621,8 +630,8 @@ const mapComp = Vue.component('map-comp', {
             let widthPW = 70
 
             // from game coord input
-            const x = this.info[0].x || 0
-            const y = this.info[0].y || 0
+            const x = this.player.x || 0
+            const y = this.player.y || 0
             // debug coord input
             // const [x, y] = this.input.split(",").map((x) => +x) || [0, 0]
 
@@ -642,14 +651,14 @@ const mapComp = Vue.component('map-comp', {
             const apothNames = ["$curse_apotheosis_everything_name", "$curse_apotheosis_downunder_name"]
 
             // determine gamemode/map type
-            let mapName = Number(this.mods.ngp) > 0 ? "new-game-plus-main-branch" : "regular-main-branch"
-            const mapModes = this.mods.list.map((x) => x.toLowerCase())
+            let mapName = Number(this.ngp) > 0 ? "new-game-plus-main-branch" : "regular-main-branch"
+            const mapModes = this.mods.map((x) => x.toLowerCase())
             if (mapModes.includes("nightmare")) {
                 mapName = "nightmare-main-branch"
             } else if (mapModes.includes("apotheosis")) {
-                mapName = Number(this.mods.ngp) > 0 ? "apotheosis-new-game-plus" : "apotheosis"
+                mapName = Number(this.ngp) > 0 ? "apotheosis-new-game-plus" : "apotheosis"
                 widthPW = 100
-                if (this.info[0].names.some((x) => apothNames.includes(x))) {
+                if (this.player.names.some((x) => apothNames.includes(x))) {
                     mapName = "apotheosis-tuonela"
                 }
             } else if (mapModes.includes("purgatory")) {
@@ -711,7 +720,7 @@ const mapComp = Vue.component('map-comp', {
             }
         },
     },
-    props: ['info', 'version', 'mods'],
+    props: ['player', 'seed', 'mods', 'ngp', 'features'],
     inject: ['switches'],
     template: /* html */`
     <div class="preview" v-if="loaded">
@@ -724,14 +733,19 @@ const mapComp = Vue.component('map-comp', {
         </a>
         <div class="preview-info">
             <!--<input v-model="input"/>-->
-            <p v-if="!seedInfo">No current run</p>
+            <p v-if="!features.seed"><i>Seed Hidden</i></p>
+            <p v-else-if="!seedInfo">No current run</p>
             <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
                 <map-tooltip :seed="seedInfo.seed" :mods="mods"></map-tooltip>
             </a>
             <p v-else>Map {{ seedInfo.seed }}</p>
+            <template v-if="features.pos">
             <p>x: {{ osd.x }}</p>
             <p>y: {{ osd.y }}</p>
-            <p>In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
+            </template>
+            <p v-else><i>Position Hidden</i></p>
+            <p v-if="features.ngp">In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
+            <p v-else><i>NG+ Tracker Hidden</i></p>
             <p>World Type: {{ osd.name }}</p>
         </div>
     </div>`
@@ -874,7 +888,7 @@ const fungalComp = Vue.component('fungal-comp', {
             }
 
             return sequence
-        }
+        },
     },
     methods: {
         highlight(cause, i) {
@@ -901,30 +915,34 @@ const fungalComp = Vue.component('fungal-comp', {
             }
         },
     },
-    props: ['shifts', 'timer', 'number'],
+    props: ['shifts', 'timer', 'number', 'features'],
     template: /*html*/`
     <div class="shifts">
         <div class="shifts-header">
-            <p><b>Shift Timer:</b> {{ timer > 0 ? Math.floor(300 - timer) + ' seconds remaining' : 'Ready to Shift' }}</p>
-            <v-switch v-model="state.originalShift" title="Show Original Shift in First Column"></v-switch>
-            <div class=shifts-input>    
-                <span>Calculate up to Shift N =</span><input v-model="state.number" type="number" inputmode="numeric" min="1" :max="number" :placeholder="number"/>
-                <span>/ {{ number }} Total</span>
-            </div>
-            <div class="shifts-table-row header">
-                <div><b>N</b></div>
-                <div><b>Input{{state.originalShift ? " &#8594; Raw Output" : "" }}</b></div>
-                <div ref="slot" class="shifts-tip" @mouseenter="updateTip">
-                    <b>Final Result</b>
-                    <div ref="tooltip" class="tooltip fit">
-                        <p>When Final Result lists two materials:</p>
-                        <ul>
-                            <li>Material 1 determines the visuals and material damage</li>
-                            <li>Material 2 determines the stain and ingestion effects</li>
-                        </ul>
+            <p v-if="features.timer"><b>Shift Timer:</b> {{ timer > 0 ? Math.floor(300 - timer) + ' seconds remaining' : 'Ready to Shift' }}</p>
+            <p v-else><i>Fungal Timer Hidden</i></p>
+            <template v-if="features.shifts">
+                <v-switch v-model="state.originalShift" title="Show Original Shift in First Column"></v-switch>
+                <div class=shifts-input>    
+                    <span>Calculate up to Shift N =</span><input v-model="state.number" type="number" inputmode="numeric" min="1" :max="number" :placeholder="number"/>
+                    <span>/ {{ number }} Total</span>
+                </div>
+                <div class="shifts-table-row header">
+                    <div><b>N</b></div>
+                    <div><b>Input{{state.originalShift ? " &#8594; Raw Output" : "" }}</b></div>
+                    <div ref="slot" class="shifts-tip" @mouseenter="updateTip">
+                        <b>Final Result</b>
+                        <div ref="tooltip" class="tooltip fit">
+                            <p>When Final Result lists two materials:</p>
+                            <ul>
+                                <li>Material 1 determines the visuals and material damage</li>
+                                <li>Material 2 determines the stain and ingestion effects</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </template>
+            <p v-else><i>Fungal Shift Info Hidden</i></p>
         </div>
         <div class="shifts-table">
             <div class="shifts-table-row" v-for="(shift,i) in shiftInfo">
@@ -1066,28 +1084,28 @@ const playerComp = Vue.component('player-comp', {
     },
     computed: {
         updatePlayer() {
-            let info = this.info[0]
+            let player = this.player
             // comparing health to 2^63 - 1, use BigInt cuz > 2^53-1
-            let bigHealth = BigInt(Math.floor(info.health[1] * 25))
+            let bigHealth = BigInt(Math.floor(player.health[1] * 25))
             // 2^63-1
             let maxHealth = 9223372036854775807n
             return {
-                hp: (info.health[0] * 25).toLocaleString('en-US'),
-                maxHP: (info.health[1] * 25).toLocaleString('en-US'),
-                gold: (info.gold).toLocaleString('en-US'),
+                hp: (player.health[0] * 25).toLocaleString('en-US'),
+                maxHP: (player.health[1] * 25).toLocaleString('en-US'),
+                gold: (player.gold).toLocaleString('en-US'),
                 finite: {
-                    gold: info.gold < (2 ** 31) - 1,
+                    gold: player.gold < (2 ** 31) - 1,
                     hp: bigHealth < maxHealth,
                 },
-                shortHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(info.health[0] * 25),
-                shortMaxHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(info.health[1] * 25),
-                shortGold: Intl.NumberFormat('en-US', { notation: "compact" }).format(info.gold),
-                names: info.names,
-                amounts: info.amounts,
+                shortHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(player.health[0] * 25),
+                shortMaxHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(player.health[1] * 25),
+                shortGold: Intl.NumberFormat('en-US', { notation: "compact" }).format(player.gold),
+                names: player.names,
+                amounts: player.amounts,
             }
         }
     },
-    props: ['info'],
+    props: ['player'],
     template: /*html*/`
     <div class="info-wrapper">
         <div class="player-info">
@@ -1205,12 +1223,14 @@ const containerComp = Vue.component('wands-container', {
             fKeys: [],
             retryTimeout: null,
             retries: 0,
+            modVersion: streamerModVersion,
+            features: streamerModFeatures,
             wands: streamerWands,
             inventory: streamerInventory,
-            progress: streamerProgress,
-            version: streamerVersion,
-            info: streamerInfo,
             items: streamerItems,
+            progress: streamerProgress,
+            runInfo: streamerRunInfo,
+            playerInfo: streamerPlayerInfo,
             newData: null,
             switches: {
                 progressTable: {
@@ -1233,7 +1253,7 @@ const containerComp = Vue.component('wands-container', {
                     className: 'beta-content',
                 },
                 apothContent: {
-                    state: streamerVersion.indexOf('Apotheosis') > -1,
+                    state: streamerRunInfo.mods.indexOf('Apotheosis') > -1,
                     label: 'Show Apotheosis Content',
                     className: 'apoth-content',
                 },
@@ -1251,11 +1271,12 @@ const containerComp = Vue.component('wands-container', {
             switches: this.switches,
             perkTable: this.dataVersion.icons.perks,
             pseudTable: this.dataVersion.icons.pseuds,
+            features: this.features,
         }
     },
     computed: {
         dataVersion() {
-            const progress = this.progress[0] || {
+            const progress = this.progress || {
                 perks: [],
                 spells: [],
                 enemies: [],
@@ -1332,12 +1353,14 @@ const containerComp = Vue.component('wands-container', {
             this.fKeys = this.wands.map((v) => 1000 + Math.random() * 9999)
         },
         updateData(data) {
+            this.modVersion = data.modVersion
+            this.features = data.modFeatures
             this.wands = data.wands
             this.inventory = data.inventory
-            this.progress = data.progress
             this.items = data.items
-            this.version = data.version
-            this.info = data.info
+            this.progress = data.progress
+            this.runInfo = data.runInfo
+            this.playerInfo = data.playerInfo
             this.genKeys()
         },
         connect() {
@@ -1378,13 +1401,13 @@ const containerComp = Vue.component('wands-container', {
             <div class="outdated" v-else>
                 <p>Streamer is running an outdated version of the mod.</p>
             </div>
-            <player-comp :info="info"></player-comp>
+            <player-comp :player="playerInfo"></player-comp>
         </div>
         <div class="wands-wrapper">
             <wand-comp v-for="(wand, i) in wands" :key="fKeys[i]" :stats="wand.stats" :ac="wand.always_cast" :deck="wand.deck"></wand-comp>
         </div>
         <div class="disclaimer">
-            <world-comp :info="info" :version="version"></world-comp>
+            <world-comp :player="playerInfo" :run="runInfo" :features="features"></world-comp>
         </div>
         <div class="switches">
             <v-switch v-for="(sw, i) in switches" :key="i" v-model="sw.state" :title="sw.label" :class="sw.className"></v-switch>
