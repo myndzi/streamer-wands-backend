@@ -395,7 +395,9 @@ function serialize_data()
     local info = {}
     local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
     info["shiftsTotal"] = shiftNumber
-    if ModSettingGet("streamer_wands.shifts") then
+    local shiftsCheck = ModSettingGet("streamer_wands.shifts")
+    local timerCheck = ModSettingGet("streamer_wands.shiftsTimer")
+    if shiftsCheck then
         local shiftList = {}
 
         local shifts = get_shift_info()
@@ -411,7 +413,7 @@ function serialize_data()
         end
         info["shiftsList"] = shiftList
     end
-    if ModSettingGet("streamer_wands.shiftsTimer") then
+    if timerCheck then
         local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
         local current_frame = GameGetFrameNum()
         local shift_timer = (current_frame - last_trip) / 60
@@ -433,10 +435,21 @@ function serialize_data()
     local player_info = get_player_info()
     info["health"] = { player_info[1], player_info[2] }
     info["gold"] = player_info[3]
-    if ModSettingGet("streamer_wands.position") then
+    local posCheck = ModSettingGet("streamer_wands.position")
+    if posCheck then
         info["pos"] = get_player_pos()
     end
     data["playerInfo"] = info
+
+    local features = {
+        seed = seedCheck,
+        pos = posCheck,
+        ngp = ngpCheck,
+        shifts = shiftsCheck,
+        timer = timerCheck,
+    }
+
+    data["modFeatures"] = features
     data["modVersion"] = "1"
     return json.encode(data)
 end
