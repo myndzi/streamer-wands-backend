@@ -7,31 +7,37 @@ mod_settings =
 {
     {
         id = "seed",
-        ui_name = "Show Seed",
+        ui_name = "Show Run Seed",
+        ui_description =
+        "Will instantly hide on onlywands, but requires a mod restart/new game to hide on pause screen + initial fading text",
         value_default = true,
         scope = MOD_SETTING_SCOPE_RUNTIME
     },
     {
         id = "position",
-        ui_name = "Show Position/Coordinates",
+        ui_name = "Show Current Position",
+        ui_description = "All of these toggles will update like any other onlywands data",
         value_default = true,
         scope = MOD_SETTING_SCOPE_RUNTIME
     },
     {
         id = "ngp",
-        ui_name = "Show New Game Plus",
+        ui_name = "Show Current New Game Plus Number",
         value_default = true,
         scope = MOD_SETTING_SCOPE_RUNTIME
     },
     {
         id = "shifts",
         ui_name = "Show Shifts",
+        ui_description =
+        "List current run's fungal shifts, cheatgui/other modded fungal shifts don't play nice with grouping shifts",
         value_default = true,
         scope = MOD_SETTING_SCOPE_RUNTIME
     },
     {
         id = "shiftsTimer",
         ui_name = "Show Shift Timer",
+        ui_description = "Show how long until next fungal shift",
         value_default = true,
         scope = MOD_SETTING_SCOPE_RUNTIME
     },

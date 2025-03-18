@@ -381,7 +381,6 @@ function serialize_data()
     data["inventory"] = get_inventory_spells()
     data["items"] = get_inventory_items()
 
-    local progress = {}
     local perks = get_perks_progress()
     local spells = get_spells_progress()
     local enemies = get_enemies_progress()
