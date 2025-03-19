@@ -743,7 +743,10 @@ const mapComp = Vue.component('map-comp', {
             <p>x: {{ osd.x }}</p>
             <p>y: {{ osd.y }}</p>
             </template>
-            <p v-else><i>Position Hidden</i></p>
+            <template v-else>
+            <p><i>Position Hidden</i></p>
+            <p><i>Map Icon shows last known position</i></p>
+            </template>
             <p v-if="features.ngp">In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
             <p v-else><i>NG+ Tracker Hidden</i></p>
             <p>World Type: {{ osd.name }}</p>
@@ -823,7 +826,10 @@ const fungalComp = Vue.component('fungal-comp', {
             const sequence = []
 
             let shiftsAll = []
-            const nShifts = Math.min(Math.max(this.state.number ?? this.shifts.length, 1), this.number)
+            let nShifts = Math.min(Math.max(this.state.number ?? this.shifts.length, 1), this.number)
+            if (!this.features.shifts) {
+                nShifts = 0
+            }
             for (let i = 0; i < nShifts; i++) {
                 const shift = this.shifts[i]
                 shiftsAll.push(shift.map((material, ioNumber) => {
