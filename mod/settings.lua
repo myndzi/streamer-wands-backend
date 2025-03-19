@@ -6,10 +6,21 @@ mod_settings_version = 2
 mod_settings =
 {
     {
+        category_id = "notice",
+        ui_name = [[
+            Show Run Seed requires a mod restart/new game with mods enabled
+            in order to hide or unhide the seed from pause menu and loading text
+
+            All mod settings will hide/show on onlywands.com at the same frequency
+            as any other onlywands data.
+            ]],
+        settings = {},
+    },
+    {
         id = "seed",
         ui_name = "Show Run Seed",
         ui_description =
-        "Will instantly hide on onlywands, but requires a mod restart/new game to hide on pause screen + initial fading text",
+        "Show Run Seed on onlywands.com, on pause menu, and on loading text",
         value_default = true,
         scope = MOD_SETTING_SCOPE_RUNTIME
     },
@@ -40,6 +51,10 @@ mod_settings =
         ui_description = "Show how long until next fungal shift",
         value_default = true,
         scope = MOD_SETTING_SCOPE_RUNTIME
+    },
+    {
+        category_id = "disclaimer"
+
     },
 }
 
