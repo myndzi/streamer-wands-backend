@@ -452,10 +452,15 @@ p {
 }
 
 .outdated {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: center;
+    align-items: center;
+}
+
+.outdated p:first-child {
+    font-size: 1.5rem;
 }
 
 .download {

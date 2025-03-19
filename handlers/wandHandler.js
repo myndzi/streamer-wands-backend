@@ -41,10 +41,34 @@ function typeValidation(varType, value) {
 
 exports.validate = (data) => {
     const legacy = Array.isArray(data)
+    let modVersion = "pre-versioning"
+    let modFeatures = {
+        seed: false,
+        pos: false,
+        ngp: false,
+        shifts: false,
+        timer: false,
+    }
     let wands = []
     let inventory = Array(16).fill('0')
     let items = Array(4).fill('0')
     let progress = []
+    let runInfo = {
+        mods: [],
+        beta: "",
+        ngp: "",
+        seed: "",
+    }
+    let playerInfo = {
+        perks: [[], []],
+        shifts: [],
+        shiftsTotal: 0,
+        shiftsTimer: 0,
+        health: [],
+        gold: 0,
+        x: 0,
+        y: 0,
+    }
     if (data.modVersion) {
         modVersion = data.modVersion
     }
@@ -70,7 +94,7 @@ exports.validate = (data) => {
         playerInfo = data.playerInfo
     }
 
-    let validatedModVersion = modVersion ?? "User is on outdated mod version"
+    let validatedModVersion = modVersion
 
     let validatedModFeatures = {}
     for (const [feature, value] of Object.entries(modFeatures)) {
@@ -89,17 +113,21 @@ exports.validate = (data) => {
     let validatedSpells = inventory.filter(strFilter)
     let validatedItems = items.filter(strFilter)
 
+    const progressKeys = ["perks", "spells", "enemies"]
     let validatedProgress = {}
-    validatedProgress.perks = progress[0].filter(strFilter)
-    validatedProgress.spells = progress[1].filter(strFilter)
-    validatedProgress.enemies = progress[2].filter(strFilter)
+    progress.forEach((table, i) => {
+        validatedProgress[progressKeys[i]] = table.filter(strFilter)
+    })
+
     let validatedRunInfo = {}
     validatedRunInfo.mods = runInfo.mods.filter(strFilter)
     validatedRunInfo.beta = typeValidation("boolean", runInfo.beta)
-    const ngp = runInfo.ngp ?? null
-    validatedRunInfo.ngp = typeValidation("string", ngp)
-    const seed = runInfo.seed ?? null
-    validatedRunInfo.seed = typeValidation("string", seed)
+    // const ngp = runInfo.ngp ?? null
+    // validatedRunInfo.ngp = typeValidation("string", ngp)
+    // const seed = runInfo.seed ?? null
+    // validatedRunInfo.seed = typeValidation("string", seed)
+    validatedRunInfo.ngp = typeValidation("string", runInfo.ngp)
+    validatedRunInfo.seed = typeValidation("string", runInfo.seed)
 
     const validatedPlayerInfo = {}
     validatedPlayerInfo.names = playerInfo.perks[0].filter(strFilter)

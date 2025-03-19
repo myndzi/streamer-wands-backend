@@ -745,7 +745,7 @@ const mapComp = Vue.component('map-comp', {
             </template>
             <template v-else>
             <p><i>Position Hidden</i></p>
-            <p><i>Map Icon shows last known position</i></p>
+            <p><i>Map/PW tracker shows 0, 0</i></p>
             </template>
             <p v-if="features.ngp">In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
             <p v-else><i>NG+ Tracker Hidden</i></p>
@@ -1229,6 +1229,7 @@ const containerComp = Vue.component('wands-container', {
             fKeys: [],
             retryTimeout: null,
             retries: 0,
+            currentVersion: "1",
             modVersion: streamerModVersion,
             features: streamerModFeatures,
             wands: streamerWands,
@@ -1401,11 +1402,12 @@ const containerComp = Vue.component('wands-container', {
     template: /*html*/`
     <div class="content">
         <div class="top-wrapper">
-            <div class="inventory-wrapper" v-if="inventory.length > 0">
-                <spell-inv :spells="inventory" :items="items"></spell-inv>
+            <div v-if="modVersion != currentVersion" class="outdated">
+                <p>Streamer is running outdated version: {{ modVersion }}</p>
+                <p>Modules will probably break, please update to version: {{ currentVersion }} </p>
             </div>
-            <div class="outdated" v-else>
-                <p>Streamer is running an outdated version of the mod.</p>
+            <div class="inventory-wrapper">
+                <spell-inv :spells="inventory" :items="items"></spell-inv>
             </div>
             <player-comp :player="playerInfo"></player-comp>
         </div>
