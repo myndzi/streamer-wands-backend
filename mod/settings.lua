@@ -31,7 +31,7 @@ mod_settings =
             {
                 id = "position",
                 ui_name = "Show Current Position",
-                ui_description = "Also pauses map + parallel world tracking",
+                ui_description = "Also pauses map and parallel world tracking",
                 value_default = true,
                 scope = MOD_SETTING_SCOPE_RUNTIME
             },
@@ -44,8 +44,12 @@ mod_settings =
             {
                 id = "shifts",
                 ui_name = "Show Shifts",
-                ui_description =
-                "List current run's fungal shifts, cheatgui/other modded fungal shifts don't play nice with grouping shifts",
+                ui_description = [[
+    List current run's fungal shifts
+    Cheatgui/other modded fungal shifts will be added into the previous input material-group shift"
+    For example if shift 1a/1b is worm blood/freezing liquid->water, then a mod shifts lava->acid,
+    lava->acid would read as shift 1c, not 2a
+    ]],
                 value_default = true,
                 scope = MOD_SETTING_SCOPE_RUNTIME
             },
