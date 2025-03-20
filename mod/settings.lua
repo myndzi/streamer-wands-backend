@@ -46,9 +46,11 @@ mod_settings =
                 ui_name = "Show Shifts",
                 ui_description = [[
     List current run's fungal shifts
-    Cheatgui/other modded fungal shifts will be added into the previous input material-group shift"
-    For example if shift 1a/1b is worm blood/freezing liquid->water, then a mod shifts lava->acid,
-    lava->acid would read as shift 1c, not 2a
+    Cheatgui/other modded fungal shifts will be added
+    into the previous input material-group shift
+
+    For example if shift 1a/1b is worm blood/freezing liquid->water,
+    then a mod shifts lava->acid,lava->it will show as shift 1c, not 2a
     ]],
                 value_default = true,
                 scope = MOD_SETTING_SCOPE_RUNTIME
