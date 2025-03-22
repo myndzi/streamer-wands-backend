@@ -13,6 +13,15 @@ function OnPlayerSpawned(player_entity)
     dofile("mods/streamer_wands/files/ws/ws.lua")
 end
 
+function OnWorldPreUpdate()
+    if ModSettingGet("streamer_wands.seed") then return end
+    if StatsGetValue("dead") ~= "1" then return end
+    local gui = GuiCreate()
+    GuiStartFrame(gui)
+    width, height = GuiGetScreenDimensions(gui)
+    GuiText(gui, 5, height - 15, "Seed: " .. StatsGetValue("world_seed"))
+end
+
 function OnPausePreUpdate()
     if (_ws_main) then
         _ws_main()

@@ -8,10 +8,10 @@ mod_settings =
     {
         category_id = "notice",
         ui_name = [[
-    Show Run Seed requires a mod restart/new game with mods enabled
+    - Show Run Seed requires a mod restart/new game with mods enabled
     in order to hide or unhide the seed from pause menu and loading text
-
-    All mod settings will hide/show on onlywands.com at the same frequency
+    - If run seed is hidden your seed will be shown upon death
+    - All mod settings will hide/show on onlywands.com at the same frequency
     as any other onlywands data.
     ]],
         settings = {},

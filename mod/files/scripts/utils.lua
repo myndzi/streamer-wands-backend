@@ -364,7 +364,6 @@ end
 
 function serialize_data()
     local player = get_player()
-    off = "streamerOff"
     if (player == nil) then
         return ""
     end
