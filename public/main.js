@@ -628,7 +628,7 @@ const mapComp = Vue.component('map-comp', {
             const yHeaven = -14
             const yLoop = 48
             let widthPW = 70
-
+            let tileWidth = 70
             // from game coord input
             const x = this.player.x || 0
             const y = this.player.y || 0
@@ -642,6 +642,7 @@ const mapComp = Vue.component('map-comp', {
                 "regular-beta": "Regular",
                 "purgatory": "Purgatory",
                 "apotheosis": "Apotheosis",
+                "apotheosis-beta-branch": "Apotheosis",
                 "apotheosis-new-game-plus": "Apotheosis NG+",
                 "apotheosis-tuonela": "Apotheosis Tuonela",
                 "noitavania": "Noitavania",
@@ -670,7 +671,11 @@ const mapComp = Vue.component('map-comp', {
             }
 
             // get map URL and topleft offsets in chunk coordinates
-            const mapValues = this.mapData[mapName]
+            let mapValues = this.mapData[mapName]
+            if (!mapValues && mapName == "apotheosis") {
+                mapName = "apotheosis-beta-branch"
+                mapValues = this.mapData[mapName]
+            }
             const map = {
                 urls: mapValues.map((x) => x.url.replace(/\.dzi/, '_files/')),
             }
@@ -680,15 +685,22 @@ const mapComp = Vue.component('map-comp', {
 
             // Parallel world x-only calculation
             const PW = Math.sign(x) * Math.floor((Math.abs(x / 512) + widthPW / 2) / widthPW)
-            const xMap = Math.floor(((x / 512) + map.x0 - widthPW * PW) / zoom)
-            const xStar = -7 + ((x + (map.x0 - widthPW * PW) * 512) - (xMap * 4096)) * 192 / 4096
+            let xMap = Math.floor(((x / 512) + map.x0 - widthPW * PW) / zoom)
+            let xStar = -7 + ((x + (map.x0 - widthPW * PW) * 512) - (xMap * 4096)) * 192 / 4096
+            let tileSelector = PW
+            if (widthPW > tileWidth) {
+                const tile = Math.sign(x) * Math.floor((Math.abs(x / 512) + tileWidth / 2) / tileWidth)
+                xMap = Math.floor(((x / 512) + map.x0 - tileWidth * tile) / zoom)
+                xStar = -7 + ((x + (map.x0 - tileWidth * tile) * 512) - (xMap * 4096)) * 192 / 4096
+                tileSelector = tile
+            }
 
             let src = map.urls[0]
             let pwName = "Main"
-            if (PW >= 1) {
+            if (tileSelector >= 1) {
                 src = map.urls[2] ?? map.urls[0]
                 pwName = "East"
-            } else if (PW <= -1) {
+            } else if (tileSelector <= -1) {
                 src = map.urls[1] ?? map.urls[0]
                 pwName = "West"
             }
@@ -740,12 +752,12 @@ const mapComp = Vue.component('map-comp', {
             </a>
             <p v-else>Map {{ seedInfo.seed }}</p>
             <template v-if="features.pos">
-            <p>x: {{ osd.x }}</p>
-            <p>y: {{ osd.y }}</p>
+                <p>x: {{ osd.x }}</p>
+                <p>y: {{ osd.y }}</p>
             </template>
             <template v-else>
-            <p><i>Position Hidden</i></p>
-            <p><i>Map/PW tracker shows 0, 0</i></p>
+                <p><i>Position Hidden</i></p>
+                <p><i>Map/PW tracker shows 0, 0</i></p>
             </template>
             <p v-if="features.ngp">In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
             <p v-else><i>NG+ Tracker Hidden</i></p>
