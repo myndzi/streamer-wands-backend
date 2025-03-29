@@ -74,6 +74,11 @@ function get_perks()
             local ui_comp = EntityGetFirstComponentIncludingDisabled(child, "UIIconComponent")
             if ui_comp ~= nil then
                 local name = ComponentGetValue2(ui_comp, "name")
+                if name == "$status_apotheosis_creature_shifted_name" then
+                    sprite = ComponentGetValue2(ui_comp, "icon_sprite_file")
+                    last_slash = sprite:match '^.*()/'
+                    name = name .. "_" .. string.sub(sprite, last_slash + 1, -5)
+                end
                 if perks[name] == nil then
                     perks[name] = 1
                     table.insert(order, name)
