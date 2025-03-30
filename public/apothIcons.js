@@ -89,20 +89,20 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Poro"
         },
         {
+            id: "cat_mocreeps_spoopy_skittle",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+0lEQVR4nNWSsVHEMBBFnzyU4FQ1GJMTO5ED10APJjsDGTTjQBtAQHQ52C1wqXtYAiyNBGfPXMhPpJF23/zVF/x7GYChsXRVCcD1y+dFgALg8e3EOC8ATH19OWBorHZVqYBuFXrvdx2Y4GAL4pyLkBRWJDUpJNPQWERE7fGAqmKPh7OAs43hTZxznG6fFIgrwFVSr2sSZmgsQEwG0Pn+BvtD0l0H47zow+sXXVUyzkv2sHfvRbbC+g9Wu8FBjDRxQPX8EfciQtu2sTedWYOmvtapr/W3vPdZSn8oqrr5FwCMMVnPZgoigjHGiAgissfMNfW1hnHCWdiHu1TfwxSDGa90OgkAAAAASUVORK5CYII=",
+            name: "",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/"
+        },
+        {
             id: "cat_mocreeps",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeUlEQVR4nGNgGAWjYEiB7dP8/zMwMDAsaXP7jyzORIohX3+f/y8swMnw9fd5uCGM2GwS4+RgePX9BwOMxgY8szYyYrjg7Pzw/wwMDAzGiStRDBbj5EDRCNOMYcCr7z8YkCXRbT924TmGS1AMQNYM0+CZtZER3UXIAAAkAy3GG4ewIwAAAABJRU5ErkJggg==",
             name: "Kissa",
             description: null,
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kissa"
-        },
-        {
-            id: "cat_mocreeps_spoopy_skittle",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+0lEQVR4nNWSsVHEMBBFnzyU4FQ1GJMTO5ED10APJjsDGTTjQBtAQHQ52C1wqXtYAiyNBGfPXMhPpJF23/zVF/x7GYChsXRVCcD1y+dFgALg8e3EOC8ATH19OWBorHZVqYBuFXrvdx2Y4GAL4pyLkBRWJDUpJNPQWERE7fGAqmKPh7OAs43hTZxznG6fFIgrwFVSr2sSZmgsQEwG0Pn+BvtD0l0H47zow+sXXVUyzkv2sHfvRbbC+g9Wu8FBjDRxQPX8EfciQtu2sTedWYOmvtapr/W3vPdZSn8oqrr5FwCMMVnPZgoigjHGiAgissfMNfW1hnHCWdiHu1TfwxSDGa90OgkAAAAASUVORK5CYII=",
-            name: "",
-            description: null,
-            bgImage: null,
-            wiki_url: null
         },
         {
             id: "eel",
@@ -178,7 +178,7 @@ const apothIcons = {
         },
         {
             id: "hiisi_thief",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJklEQVR4nMWSsUoDQRCGvxMvNsvBnVUOfAMLi6sURAvbAzsfwBeIpPIZAtcIPoFgvYLlpQ14hXVIk2ZDilM8tlGLtdA9bpNcIjb+sDDs7P/PPzML/w3vN4/SNDU2llI6nI0CTXITVmitgCUrpZz7IAgQQiCl9LY2OVBK0e9d4Ps+tzc9fN+nqiq01u0tJEli4jgG4PR4n243cvKD7J6iKDyA2kE2uDaT8dBMxsOaDPDwOGI2e3FOEAR13gN4Gt2ZMPomXfWzJUfWrhACcDex1EJz6lprqqoCqKvmee5wWofYJANO3Cpgqy+S12HbBpdnR+Z5Yd8We6IDwNs6AYDwQ/PaEfWKLIqfAru8k7e1MJ2XiCjiINxZ6WI6Lyk/Decnhyu/9p/xBaRndsC6zFIsAAAAAElFTkSuQmCC",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOElEQVR4nMWSMUvDQBiGn0ppKRyBxqmhXTuWDJ10kYJrwP8g4m9wdRX8DQpuTicoLpkL5heki6UtpUIKhkAJFs7BJr2TNIqLN919d+/zve/dwX+Pym8OeZ6nsrmU0tD8CPA8TyVJkq+FEAaoFJCJO23bqE+mS4QQSCkre2WATByOZoSjGW6vSzia0WnbZK4KHfT7feU4Tg5we11ara2Lp+chN7f3FYBqVry+ulAPj0MjpxCCyXQJhMAXZD5fbmpsHbwM71TTdjg7v8zF36PoYP0ljAiDwUDpgCRJiOMYAMuyAPB939AYl6hv6mLAmO8EZB9GFzfWKY11WigG7RJPjw/VW0HnVbVOR9QAeC8DAKxeQ+KaIAgCI2ewabBPir8rwngRIWwbt1kvtDpeREQfipOjA1V44K/jE8j3hldM69SqAAAAAElFTkSuQmCC",
             name: "Varashiisi",
             description: null,
             bgImage: null,
@@ -209,12 +209,12 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Haulikkohiisi"
         },
         {
-            id: "hisii_minecart",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABoElEQVR4nI2SP0jDUBDGf9Fa2kghClYp0kiJ4tTV1cG6OOukIIiF4igKgqM4CI5dBEV0U3AoOvhnddBFcGmxIbRFpLVgHwgqisQhvFjbBLzpuPu+73139xQ84vR225Z5TVgsTGYVLxxAh1exJixODs4B6NcS7F4s2V44XwGA4WTMFevXEn4wb4GFyawSHeoG4DpXpCYsX4FAayG7uWgD3B+VSM44Tq5zxf8JSDLASCLG/VEJgAhd/xtBnxhFnxgF4MF6YiQR8yXK+HMeeb78yh6DAxoAYnwWwzAAME3TzQFSqZTSdl8/EQDReQOA9j1GJpNR2hyAswc5RvmqwIP1xGvoi+FkjLX0fhteWV7fcRcnGnW0nj7feZv72xtpBaCjkL9DNOqOtRayrMvQevoQjTqF/J1bC6hqhGr1kUqpSDAU5vPj/Q+pUnL+gOwFQ2FUNfI7AkBqat7WeqOIl2eCobCn/c+PdyTm8ux3F4HpuVU7rhtthLe3VwD3NVWNENcN4rqB1hu1jw+3nB3EdYNK2aRSNmkWarYJ0Iqbnlu1AX4Av42XNoYIGQ4AAAAASUVORK5CYII=",
-            name: "Kaivosk\u00e4rryhaulikkohiisi",
+            id: "hisii_giga_bomb",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABFUlEQVR4nGNgoBdId7L8X5fo+59szTB2XaIvikEs2DRsOdX7/+WHewwMDAwMyW5TGZHlmuZvRuGjcGCan5z4wcDAwMAwYeYWBgYGBgZJaSW4/P5dS1H0YHUBNs2aOhYwqf/IhmC4INDD7P/1x8wYNiMbcv3KCbhLmNANcLHTx+UohutXTmCIYbiAgYGBwdEt+j8DAwPD86f3MFwBAzhdsOVU7//nT+9h1YQUDnCAYQAMwGx//vQeA8xAbF7AMODhnhsMPfNDUAyBsdGdj9WA7KrZjAwMDAyl/UYYGp8/vcfgFsKKoh5rIAZ6mP1PbgpnePnhHsOWvtMQzS/fM5w4fxureqwGBHqY/SckhtULcOe+fE+UZQC7TnKZz+jHWAAAAABJRU5ErkJggg==",
+            name: "Psykopaattihiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kaivosk\u00e4rryhaulikkohiisi"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Psykopaattihiisi"
         },
         {
             id: "hisii_minecart_tnt",
@@ -225,12 +225,12 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kaivosk\u00e4rrytappurahaulikkohiisi"
         },
         {
-            id: "hisii_giga_bomb",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABFUlEQVR4nGNgoBdId7L8X5fo+59szTB2XaIvikEs2DRsOdX7/+WHewwMDAwMyW5TGZHlmuZvRuGjcGCan5z4wcDAwMAwYeYWBgYGBgZJaSW4/P5dS1H0YHUBNs2aOhYwqf/IhmC4INDD7P/1x8wYNiMbcv3KCbhLmNANcLHTx+UohutXTmCIYbiAgYGBwdEt+j8DAwPD86f3MFwBAzhdsOVU7//nT+9h1YQUDnCAYQAMwGx//vQeA8xAbF7AMODhnhsMPfNDUAyBsdGdj9WA7KrZjAwMDAyl/UYYGp8/vcfgFsKKoh5rIAZ6mP1PbgpnePnhHsOWvtMQzS/fM5w4fxureqwGBHqY/SckhtULcOe+fE+UZQC7TnKZz+jHWAAAAABJRU5ErkJggg==",
-            name: "Psykopaattihiisi",
+            id: "hisii_minecart",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABoElEQVR4nI2SP0jDUBDGf9Fa2kghClYp0kiJ4tTV1cG6OOukIIiF4igKgqM4CI5dBEV0U3AoOvhnddBFcGmxIbRFpLVgHwgqisQhvFjbBLzpuPu+73139xQ84vR225Z5TVgsTGYVLxxAh1exJixODs4B6NcS7F4s2V44XwGA4WTMFevXEn4wb4GFyawSHeoG4DpXpCYsX4FAayG7uWgD3B+VSM44Tq5zxf8JSDLASCLG/VEJgAhd/xtBnxhFnxgF4MF6YiQR8yXK+HMeeb78yh6DAxoAYnwWwzAAME3TzQFSqZTSdl8/EQDReQOA9j1GJpNR2hyAswc5RvmqwIP1xGvoi+FkjLX0fhteWV7fcRcnGnW0nj7feZv72xtpBaCjkL9DNOqOtRayrMvQevoQjTqF/J1bC6hqhGr1kUqpSDAU5vPj/Q+pUnL+gOwFQ2FUNfI7AkBqat7WeqOIl2eCobCn/c+PdyTm8ux3F4HpuVU7rhtthLe3VwD3NVWNENcN4rqB1hu1jw+3nB3EdYNK2aRSNmkWarYJ0Iqbnlu1AX4Av42XNoYIGQ4AAAAASUVORK5CYII=",
+            name: "Kaivosk\u00e4rryhaulikkohiisi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Psykopaattihiisi"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kaivosk\u00e4rryhaulikkohiisi"
         },
         {
             id: "scavenger_smg",
@@ -274,7 +274,7 @@ const apothIcons = {
         },
         {
             id: "hisii_engineer",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABTElEQVR4nKWSv0sCYRzGP5YNGS1RLS4HcqPnKuRBi39AGQ3nYItrIEKu0Ri0tDo52BChRBCihC2BQw2ecctb4Gq/ltT1GvLeyrs8o+/yvjzv8zzv8/3yhX9WYBqSEMJ27qqq/tD4Gggh7Fo9B8DyUprZuRrbWyWpm/EzqNVz6AkDPWHw8lZGX8tzepaRiXwNvpeeMADo9V6nayG/t2trsSiP4oTNjSyVahGAg/2m1AW9hKlUygbQYlHMdoeFEFSqRSKqMWI0mWgAoETCfJl8Yma74+K5DJzfWzd3DJ8WiScVeXrVxCEOhn2uzu8nUbxbUCJhLMsCbtHUdeJJxTP+rwZaLArA5UUDU1wTT+5ILJPO+m9iqVyUi9JqdAmtvsu3o8PjHxrPBE7c5+6I+9chBgPzMvKKYjMY9jHbHSzzwc0dBwqFgg3uXh18vD4A6n9rp3uxiGwAAAAASUVORK5CYII=",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABTUlEQVR4nKWSsUtCURTGf4qLvUEIHcJFej2I0GfzS/8DNzcdamkNQuitEU1BS9Hk1OCqQ1FRg0tKS5S+EOGma0MSNLT6GvJdfPn0Gd3lXM75vu+e850L/zyBeUBCCNu5a5rm4oTmId/c7gIQXSwihLDHRYJ+Ag45mykw+Kjw1Dp01X0FHLITsxslTs9ycqSZHpT2dmxlwSIWU8hmClRrZQAO9uuS5+lBPp+3AfR0inYLeLeo1sqoWmGEqEvsVBMTahyXCNBuWRO4CQHn9YfGI8GvJZJGVEavM3ONot9F9EFbXp2K8RRIqHE6nQ7wirGeI2lEPdufKqCnUwBcXdzRfL4kaWzJ3GZx27U5zzWeV8pyzy/NAUPlTdaOj078v7LTbs/6BH48+JOJoUCYNX2FnnWPmoogrC5DJUIoEPYXME3ThrFZr0d53bR/YwG+AeexaAZfDFnwAAAAAElFTkSuQmCC",
             name: "Insin\u00f6\u00f6rihiisi",
             description: null,
             bgImage: null,
@@ -298,7 +298,7 @@ const apothIcons = {
         },
         {
             id: "hisii_rocketshotgun",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABb0lEQVR4nK2RMUgCURjH/yeNcdAtkjcEdgiFS1KDbbk1ZMQFekEQQpNjg0NBFxQh1NgQkURCKHQEgUOLjQ6GLqIlKjhoaUNwuTTUazjuuofPEOqDx+P93/f9/t/3HvDfkVGCJKMECUtn5Tv+asgEJAqlobSBgIjPO5QGABxLzChBkiiUEPF5UWx3UHx5hfbUYOYyO+i+9yjHQe5MwOXRCnGtzQD4mXvQ/H2Au6st4nS5Mb+kUl381gEHALIsEwBY9n/B6XJj+36MSjpYeEO8OoesGuYCaopk1bD1Hg6zuFwu4/SmaxXxomSt289VAEA0mSPmHlBTBABG7E4f04uIVyXwonGempygOqnUm9R5dnOfUABelKC3auBFqa/ADjtZ91sjUAATYg+9VTNgNi2azJFKvQm9VYND0zQOAARBwHN6z3KKefKIefLgRQn162PqzoyHsx2OA4zv67QbODx/xHhoFwCwMZqmki96IeYvfAOgXIk5Vv1MnwAAAABJRU5ErkJggg==",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABlElEQVR4nKWSzStEURjGf3dSUuqyYTREchk1CzOEspmULIimKTVJaSg2luIfUJiysbHAxkIWk3wtbDTLSWIz5eNOo0nTfIQa2Sg5Fte97uVOKWd1es/7/N7neTvwzyP9LJyERgRAKl9g7iwuAaz394rm2hqGdg9/9TvsqGYxwNxZXErlC7YObAGxzO9mu1pJQNjnMaKAFivs8/wNoOfcvkxwEhoRqx2K2L5M2IpLOkjlC5gnhn0e2wXaAtaWBkTTjCbWJ//ZwdHetFBaGlGTaYuLUvnh6x8Eg0EB0Od7QWlp5PpYm6g4ZdRckYoM1HfKBCKn0v78oABwub3EYjEcujjz/sTGQdYgK04Zl9uL4pTpGfcDcL61KADUXNHosUSYbqvk/eLBYtHl9hr3zM2V5U3NFSkzF3TL5qOLzKBAZFliJw5gBZghGujKBPyevjrRK/x+v7aDaDQqATxnH1m5ezNytw97KOtqQHHKbN6+Gm8/hzkAJseqmR2ts1hWk2nUZJr7qg9mR+tYaC2ne2pZ0oX6Dj4Bk9ShqSeWimAAAAAASUVORK5CYII=",
             name: "Rakettihaulikkohiisi",
             description: null,
             bgImage: null,
@@ -337,20 +337,20 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Puistokemisti"
         },
         {
-            id: "hisii_hobo",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABcElEQVR4nKWSMUjDYBCFvxRjpTg1U1UQQetQEEEdbDNUsIODooPg4GZBXJSiODg6OEhLFxdBcSq4qKODoJNQEByyKGIIhWrIEHUSJeDvUBobY6rgW/7jv3vHe4+Df0L6beCqXBIA4bYwkYhCb3zMwwk1IxfzG6Jev7+98/pqc393IRpnmi4A0HWT5dwOAItLBV8/0MLy/KzoGewjFot6/odHhjw2WoLIE/EOLkzL1/uegU/B6eaKANCMKgM9XWhGldZEP6ZpsV3Y9817MijmN0Tf3DSAS35wQqhqAuXp5UeroUby5FSG56dHNKMKwINTa+u6Sff4aPMFqpoA4Hz32G1OxDvolD+4vr4B4LCUF9/4/hDLhul5AU4OjqT11QUf2YP60cykk2ImnRQA2UzKrYPgWsitbbkJK3Kt3Du7lBRZIptJBS7xXaIiS9jO13xj/RM8GWQzKVGxbM60W5+aPymoWDbt0ahHcsWysR0RaOMTUZiAm7nEa2gAAAAASUVORK5CYII=",
-            name: "Koditonhiisi",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Koditonhiisi"
-        },
-        {
             id: "hisii_hobo_rich",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeUlEQVR4nKWSMUhCURSGP0XxooFEUYjQENoiJI2FSzycHgUOQdDYELVF0iANQdAQRkNDNNQmNElUNmlBUxAJtsTLguBB0lAuKkrQbanHM58a9C/3nHP///AfzoF/wtaNcHOdkgAu4cLt7iMwMtmksXcS7yQT8idu1BvUam88PlxKM6ejg2AwKK3qxWLR0LV1EF5LyKWFGSPfWF+w5Fk62D2bkyf2WcZyx/h8g01/y/HNJk1Lg+j5qQQoF+7oDY9SLtwx56xSKr2ytX3Qwm8aYSeZkHuBHgB6w6PEHGk+qlUikRAX/cOWI9jN4qnpKOX3F2KONAD7Vz4Anp5KxIdcnRtEIiEAFi+fObwNADAwMY7T4yGfvwfgKJVs2Yrjd8GbvQDg8/v1Alu5nG11Zd5ypQZ+jkZRFKkoigRQVdWI28EYwbweIQQAmUzGJoRAVdW2TVoOSQhBvV43cnPcFbquy2w2K3/XdF3/mwNN0/D7/ZgFmqZRqVRo1+QLpPKIX09rRSsAAAAASUVORK5CYII=",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeElEQVR4nKWSMUhCYRSFP8XoB4NQongKDZWToDQWbo+mR4FDIDg2RG2RNEhDU4MYDg3RUEsUTRGVTWrQFERCLfGQIHjQoyUXBSHobygfT31q0Fn+ey/nHM7l/vBPuPoR7u+OZbN+eTFJJFMtGncvcS6blgA+fwCfP8DkpMLpcVbaOT0ThEIh6TSvVCqWrmuC6GZari4vWv3J0ZYjzzHB7lVSXrgTTBfPUZQxFMUPgGl+sJbadvU0mLu+lADVxyd80QjVxyeSA3VM853MzkEHv2WFXDYt96aGAPBFI8Q9Z3zW68RiYUojE44ruO3i+YU5qh9vxD1nAOzfKsDP+VLjg70NYrEwACs3rxw+TAEwOjvDgNdLufwM0HFCAE/7YLhQAuDr9x0GMsWia2N9yfGkFpqfRlVVqaqqBNA0zaq7wVrBfh4hBAD5fN4lhEDTtK4mHR9JCEGj0bB6e90XhmHIQqEg22eGYfwtga7rBINB7AJd16nVanQz+QbFk4k4yUlYsQAAAABJRU5ErkJggg==",
             name: "Rikashiisi",
             description: null,
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Rikashiisi"
+        },
+        {
+            id: "hisii_hobo",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdUlEQVR4nKWSP0gCYRjGfyfZ1OI5xFkQIdkgtJcODTk4FIkIQkZDjqFI0eDY0BBGS0tQNAUt1dgQ1BQIgcMttcghWB8OdxW0CX0N0eVxdyb0Lt/D+z7Pw/vng3+G8hfhoX4mf3CzKcivbDk0gX7i87OaBAipEUJqhGhUs3MDGQCUKoesrlV5tV4oVQ5d9SFfYSEnhbAob2TtXHkjixCWg+e5g1IhJ9OxCHfvH2jaKJqmAiCERWVrV+lrcL1TlgC60WZmchzdaDMcn0aIDnv7Jy6+YwcHtaqcyi8D2OLnboBkMk7YevMcNdArXlxK8Wq9oBttAJ673+VmUzCxMNvfIJmMA3B7dGkX07EIY8FPGo1HANcJweMKdUM4XoCr0wtle3PdJXbEQa0qATLzczIzPycBiqmEjf3CHqH3POHgNzy+uVfCQYViKuFr4vqJ4aCC2f3l92KvcOygmErIVsfkRn9ydTNQB62OyYiqOlpudUzMrvQd4ws1MIn3n6TOIQAAAABJRU5ErkJggg==",
+            name: "Koditonhiisi",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Koditonhiisi"
         },
         {
             id: "sniper",
@@ -466,7 +466,7 @@ const apothIcons = {
         },
         {
             id: "blindgazer",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABO0lEQVR4nKWTMWoCQRiFv1lkPYCQIwTFNNotynoAiyRdMAdItZWtpa3VdmnSSUoVPEAWwxaBlcCGSJoUKYQUHkDIrIXMOrO70UAeDAyP997/z8w/8E+IIrIf+EkRP3K9nD5HKPMqCAsrVl3HCDIC+oGfrIKQxNrmjPWWS7myYTn5MEJKStAd9hIgNd9d3xoBLz+vADSuzllODt0Jve33xZNhbpw1c5348RQAKQQj1xNWVnDMDOBdXAKHOzIC6i33qLkIlp4GsPj+OmkqVzZmQDbEj6fpWbO4Xz8QzWKqrgNoz9gd9pLE2qbH+K1qNIv3RmkzH4xFSRcJafP2HAAYQYoDqLU7RsfGJc4HYyGkTa3dQQqRLiFtFA/7kV7Hn4A2SIpQAjVYOnQ+egwL/xHNGyc1KrHO6fuT+It4B1FQe5pkvdggAAAAAElFTkSuQmCC",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAklEQVR4nGNgoBAwYhMsPjT5PzbxXrtcDPUYAjDNNw4dx2qjhp0likEoBhQfmvwfn0YVIXaGLRsOoBjCAlPg3RKF4uy04FAUA579fc3AwMDA4BPgwLBlwwFUL6A7G6bZUMwIwyUTr26Cs3vtchmZ0BXg08zAwMCQr+3HgGwZigEadpZ4NWMDTMimMTAwMBx6/YSgJhUhdlQD0A2ZeHUTil+RwdbnO+ExwcCAFI2wWIBJ4LIVOQa21ixjZEFXCHMJskE3Dh1nuAFlw8SxBuLWmmWM+FwBE++1y2V8fuU+AwMDUkKCCcAUoCcsdPFzK45jzUcMRhGWcI0wxchiyGyCgBjFADgBasyoWfddAAAAAElFTkSuQmCC",
             name: "Sokeakatselija",
             description: null,
             bgImage: null,
@@ -489,60 +489,12 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/\u00c4itinuljaska"
         },
         {
-            id: "slime_leaker_weak",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABR0lEQVR4nJVSq27DMBQ9jgKGB/MDja4sjQT5A6qBkAblAwo2aWhwcB8wNGkDhQNBKSmYquGQWZMmRVb6A4HFZR5Ir+U42aRdYt/HOff4JOLz69FudxoAsMozHI4n+LG4vHD3w/EE07QuJyUh3j4eLA/9BmYgKYkw4jkgx3an0ZkeKSWTHiuJmTncBgD3t88j0NPLHVZ5NiRKwjQt4s70Thp7QUri+upmBH7/fgUpOfEhTimBaVos8gx0Zp0D+yAA6EwPABBFmVl+IyvhZ4WOz9Uj3yBuzLkdgklJdKYfFBTrpRuoN3sAGDnPX8I/eSZKKXGgerNHsV4ipcSpICVHYM6ZOGa2zvSoKy1SSqxfC/8Dt6zSoigzOyiotAjd9QjdnU/fm2ji1pl9rs7BiupKi4g3hk1fUUjoY5wCHgoJ/x1Fmdm/8jB+AOozzQN3p17kAAAAAElFTkSuQmCC",
-            name: "Heikko Vuotavajaska",
+            id: "poring_holy_arch",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6klEQVR4nKWSMQrCMBSG/5YOBVsQmkFw6dbBY3gQD2Cv4wHcPECWbg4ewMHBMYvgkEGIQgtCXHxpjKa2+i99hX7f+wsP+DPBkI/1ff2bgMCmAeLRYpigvrVbXRgAAqWUBoA0Tb2y82ll5sl0+SoQQmgAyLKsU+KKKFEX4EaquQaAWbJpG1RVpYuiAADkeW4aHI5H3UcaEsw5N6APtjfTeyCE0JxzlGUZbHd7AzIWQ8razL5ELkygDdPshrG4vQN3O4CPEprpGdrGq7wY0N7qg4HnJdrb+4Zavt0BtUjYuFNADcwv2OA32G7xABQaeW8PQl6sAAAAAElFTkSuQmCC",
+            name: "Korkeajumalallinenhyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Heikko Vuotavajaska"
-        },
-        {
-            id: "slime_leaker",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABRUlEQVR4nJVSq27DMBQ9jiKNjwXFoMweCbWUktB8QL6g04o31i8Y7rTCoXxAacAaKdRgS1hBgsLKizzQXstxs0m7xL6Pc+7xSdjH18ZUew0AyPIEx9MZbizu7+z9eDqjbzqbcyXANp8vhoZ+AxOQKwE/wjkgRbXXGNoRsYxueqQkJGZ/GwC8Pr5NQM/vT8jy5JIogb7pEA7taKWRF1wJrB/WE/D2ewuuxI0PYSwj9E2HRZ6AX1nnwC4IAIZ2BACwtEgMvZGU0LN8x+fqgWsQNebc9sFcCQzteFGwXGV24LCrAGDiPH0J96SZIJaRBR12FZarDLGMrAquxARMORGHxDa0I+pSs1hGxq35/wEtq0vN0iIxQSwj1KVmvrsOob3T6XoT3Lh1ZZ+rU5CiutQsoI1+01XkE7oYq4CGfMJ/R1ok5q/cjx+z3s1s6lrV0QAAAABJRU5ErkJggg==",
-            name: "Vuotavajaska",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vuotavajaska"
-        },
-        {
-            id: "slime_teleporter",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABNElEQVR4nKVSIWjDQBR9qZkrNSsMFlnTg4iqwkGYjw5hM5MTo2owEx0zqBpTU5MhOn4EAtWFq6lsoZCZEDd1U/9z16SJ2IPwk3//v//+ywH/hNOVfLr/1ADgubPW2fPbndUzMj+iINFRkGjPncFzZyhUCQBW/Hj91hcJAGAynvK7L+QgCRNEQaIn4ynLLlSJQpXwhcR7+AJfSGsQkYyo2RcSdVPxJF9I+EIinC9x/XiFcL5kEqqxFGwPe57WB1JDJJYHJvP2sO8laikgrLI1gO5fCADZbtO9Qt1U1o6kINtt8PP1i1W2ZmMBcC1fCjLyfAXzPpjnhSqR5rFz0YO6qXgNUxk9x5Nqe5DmsWPKPI9m3e2NaBMAwPGkkOYxr2Y2p3ns0GSKDLl40ORFX24Q1DSUI/wB7iWlbnfSNSwAAAAASUVORK5CYII=",
-            name: "S\u00e4r\u00f6ilev\u00e4 limanuljaska",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/S\u00e4r\u00f6ilev\u00e4 limanuljaska"
-        },
-        {
-            id: "goo_slug",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+ElEQVR4nGNgGAXUBf+/nv9Pqh4mZM7f3bfwGojNAqY/G1b+x2UzsoG/pvf9Z+Q2ZERXw/hnw0qCzmZ2VYMoxmIAC4zx7/lTnAb8W/SUgUlSGu4FZIOY/j1/CtfMJCmNoZlJUprh+rX7DFf3HmH4vWg/AwMDalgw/tmw8j8225kkpRn+PX/KcP3afQbOVBcGVWU5hksV8xg0tRTh8iwB4Yws6JphGpHF37z9gNN7LAwMDAzvnr1nEJISxBoW4gICDC/XnWH4zsAAt/3ds/cMEplFjAwM0HQA0wyTRKaFpAQZNLUUGTS1FOFiKC7AJohuCLqcRHMzPBYAYSN4NWjgcF8AAAAASUVORK5CYII=",
-            name: "Liimanetana",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Liimanetana"
-        },
-        {
-            id: "poring",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAtklEQVR4nO2RPQ7CMAyFX1PETLI13XuTHoaVg7BWPUI3dm7CXioxwMSCSsLkyElcfnY82VHe9/wS4F/Fr4L5MHjqy7Z5D+CXeZVtg+fxtLzBklCqDHDpe79xdwCAqmq4aQz9R8Cj2/tUKM38TElUN41QVR1caZaAq1R8Pd9grM4ceRQODBFofYIAgLFazB1FSd1J+I04Aqy3u4JEBKKez2lFb0D5uTuHSgbZL3BHftFYnUU0VuMFk8Ve83hDapwAAAAASUVORK5CYII=",
-            name: "Hyytel\u00f6",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyytel\u00f6"
-        },
-        {
-            id: "poring_magic",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABCklEQVR4nGNgGPKAkRTFF2pvbYaxZXzE8BuArBgZyPiIMTzZ8gq3C3BpxAVQDDgWf2kzAxOEzSXDwfDtyQ84G66B8akPVgOOJV7ajK4Rnf/x4wUfBgYGBnYRVgYeFiEGBgYGmH0I8O3JDwYuGQ64rTA+suafb34zvH3xkuHLn3eoBny5/x2uCdkVMDZMs5SOLJzNiOx8ZEN4FDlRXHb/9SkfITY2dAcjXICsEV0zMnj36xemAVbz9XxhmmAGwdgwvqKo2ZZ3v34xwFwBMwirC2AA5hpkQ54+/szw9PFnhu8vfzK8+/ULEY27HE5uRtb45f53FMPQ+TAxlIS03GjrZmE+ERSX4NIIEwMAhICI2IEwx1MAAAAASUVORK5CYII=",
-            name: "Lumottuhyytel\u00f6",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lumottuhyytel\u00f6"
-        },
-        {
-            id: "poring_devil",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQUlEQVR4nMWRMUsCYRjHf3ccIVJhECIXDtYiKQSamxC02hj0KXTrQ4RjU3MfoMWWhiA4aOhs6lrKbjg8TIcuFZE4oiFefd+jA536T8/zwP/3/J/3hf+W1mpatmiOTqv7ywJ0x3NxPJfXfhcZtqgMUQw+u1zdXyzrxxhOBwBYzy3urNvYE+R0tXpxNtcOqoc2oJjjTqnVi1yfPykzLW7LIqrVi3NAq2nZjucCUMjmkGuhle9hWQZ86ettDeCscWlHjdFeH72XAXYyJv3pBIDtjIkuEx3PpZDNzbaKXjZ3ej6jICCdSPLW8+ff+Og/UDIrSgIB0SXzXn6XcRDQ6fkAaCK+gACUzIoCmXx0y6uGQVRrqdTvCbIxapY1DkOlTyeSKI8ozvgrjZxiHIaIWgM4OW7YcZsV6MvN7BvzmwWSG1vtH98wkJAOIqP1AAAAAElFTkSuQmCC",
-            name: "Ep\u00e4pyh\u00e4hyytel\u00f6",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Ep\u00e4pyh\u00e4hyytel\u00f6"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korkeajumalallinenhyytel\u00f6"
         },
         {
             id: "poring_holy",
@@ -553,12 +505,68 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Jumalallinenhyytel\u00f6"
         },
         {
-            id: "poring_holy_arch",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6klEQVR4nKWSMQrCMBSG/5YOBVsQmkFw6dbBY3gQD2Cv4wHcPECWbg4ewMHBMYvgkEGIQgtCXHxpjKa2+i99hX7f+wsP+DPBkI/1ff2bgMCmAeLRYpigvrVbXRgAAqWUBoA0Tb2y82ll5sl0+SoQQmgAyLKsU+KKKFEX4EaquQaAWbJpG1RVpYuiAADkeW4aHI5H3UcaEsw5N6APtjfTeyCE0JxzlGUZbHd7AzIWQ8razL5ELkygDdPshrG4vQN3O4CPEprpGdrGq7wY0N7qg4HnJdrb+4Zavt0BtUjYuFNADcwv2OA32G7xABQaeW8PQl6sAAAAAElFTkSuQmCC",
-            name: "Korkeajumalallinenhyytel\u00f6",
+            id: "poring_devil",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQUlEQVR4nMWRMUsCYRjHf3ccIVJhECIXDtYiKQSamxC02hj0KXTrQ4RjU3MfoMWWhiA4aOhs6lrKbjg8TIcuFZE4oiFefd+jA536T8/zwP/3/J/3hf+W1mpatmiOTqv7ywJ0x3NxPJfXfhcZtqgMUQw+u1zdXyzrxxhOBwBYzy3urNvYE+R0tXpxNtcOqoc2oJjjTqnVi1yfPykzLW7LIqrVi3NAq2nZjucCUMjmkGuhle9hWQZ86ettDeCscWlHjdFeH72XAXYyJv3pBIDtjIkuEx3PpZDNzbaKXjZ3ej6jICCdSPLW8+ff+Og/UDIrSgIB0SXzXn6XcRDQ6fkAaCK+gACUzIoCmXx0y6uGQVRrqdTvCbIxapY1DkOlTyeSKI8ozvgrjZxiHIaIWgM4OW7YcZsV6MvN7BvzmwWSG1vtH98wkJAOIqP1AAAAAElFTkSuQmCC",
+            name: "Ep\u00e4pyh\u00e4hyytel\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korkeajumalallinenhyytel\u00f6"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Ep\u00e4pyh\u00e4hyytel\u00f6"
+        },
+        {
+            id: "poring_magic",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABCklEQVR4nGNgGPKAkRTFF2pvbYaxZXzE8BuArBgZyPiIMTzZ8gq3C3BpxAVQDDgWf2kzAxOEzSXDwfDtyQ84G66B8akPVgOOJV7ajK4Rnf/x4wUfBgYGBnYRVgYeFiEGBgYGmH0I8O3JDwYuGQ64rTA+suafb34zvH3xkuHLn3eoBny5/x2uCdkVMDZMs5SOLJzNiOx8ZEN4FDlRXHb/9SkfITY2dAcjXICsEV0zMnj36xemAVbz9XxhmmAGwdgwvqKo2ZZ3v34xwFwBMwirC2AA5hpkQ54+/szw9PFnhu8vfzK8+/ULEY27HE5uRtb45f53FMPQ+TAxlIS03GjrZmE+ERSX4NIIEwMAhICI2IEwx1MAAAAASUVORK5CYII=",
+            name: "Lumottuhyytel\u00f6",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lumottuhyytel\u00f6"
+        },
+        {
+            id: "poring_lukki",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGUlEQVR4nIWTP07DMBTGfzE9QGApJhMLErRSL9Ct4jg+gqfuLBk4DKfI2j0kWcAzEjFD9KIXxxXfYj/Z35+X5xS99xGF+/O50HXjXNyWJUMIbMtydceQoPc+atFDXRdDCADIqrESGEJgCIHGuVlEnOVcG5g0slxOSamJYCaLo/SrW9BpdqfjfHbz+sTCvfc+pm6aoIm/H5epBd2PJu9OxywZmMkARj5K41w81HUBYPd7xq5l7FqAxT5FIXOWBM8vj5OyrRaka/UmjS4YuxZjq2wCLWZgOTKAr8/vq9GFbGyFsdU0BRmTxNcidw+32d5nQZhmnSP+RwaW7wDg5/0tipAI6P1KIPe3pZfTdqQG2OinKyKakEuiDf4A3tu4TwUKal4AAAAASUVORK5CYII=",
+            name: "Lukkihyytel\u00f6",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lukkihyytel\u00f6"
+        },
+        {
+            id: "poring",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAtklEQVR4nO2RPQ7CMAyFX1PETLI13XuTHoaVg7BWPUI3dm7CXioxwMSCSsLkyElcfnY82VHe9/wS4F/Fr4L5MHjqy7Z5D+CXeZVtg+fxtLzBklCqDHDpe79xdwCAqmq4aQz9R8Cj2/tUKM38TElUN41QVR1caZaAq1R8Pd9grM4ceRQODBFofYIAgLFazB1FSd1J+I04Aqy3u4JEBKKez2lFb0D5uTuHSgbZL3BHftFYnUU0VuMFk8Ve83hDapwAAAAASUVORK5CYII=",
+            name: "Hyytel\u00f6",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyytel\u00f6"
+        },
+        {
+            id: "goo_slug",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+ElEQVR4nGNgGAXUBf+/nv9Pqh4mZM7f3bfwGojNAqY/G1b+x2UzsoG/pvf9Z+Q2ZERXw/hnw0qCzmZ2VYMoxmIAC4zx7/lTnAb8W/SUgUlSGu4FZIOY/j1/CtfMJCmNoZlJUprh+rX7DFf3HmH4vWg/AwMDalgw/tmw8j8225kkpRn+PX/KcP3afQbOVBcGVWU5hksV8xg0tRTh8iwB4Yws6JphGpHF37z9gNN7LAwMDAzvnr1nEJISxBoW4gICDC/XnWH4zsAAt/3ds/cMEplFjAwM0HQA0wyTRKaFpAQZNLUUGTS1FOFiKC7AJohuCLqcRHMzPBYAYSN4NWjgcF8AAAAASUVORK5CYII=",
+            name: "Liimanetana",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Liimanetana"
+        },
+        {
+            id: "slime_teleporter",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABNElEQVR4nKVSIWjDQBR9qZkrNSsMFlnTg4iqwkGYjw5hM5MTo2owEx0zqBpTU5MhOn4EAtWFq6lsoZCZEDd1U/9z16SJ2IPwk3//v//+ywH/hNOVfLr/1ADgubPW2fPbndUzMj+iINFRkGjPncFzZyhUCQBW/Hj91hcJAGAynvK7L+QgCRNEQaIn4ynLLlSJQpXwhcR7+AJfSGsQkYyo2RcSdVPxJF9I+EIinC9x/XiFcL5kEqqxFGwPe57WB1JDJJYHJvP2sO8laikgrLI1gO5fCADZbtO9Qt1U1o6kINtt8PP1i1W2ZmMBcC1fCjLyfAXzPpjnhSqR5rFz0YO6qXgNUxk9x5Nqe5DmsWPKPI9m3e2NaBMAwPGkkOYxr2Y2p3ns0GSKDLl40ORFX24Q1DSUI/wB7iWlbnfSNSwAAAAASUVORK5CYII=",
+            name: "S\u00e4r\u00f6ilev\u00e4 limanuljaska",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/S\u00e4r\u00f6ilev\u00e4 limanuljaska"
+        },
+        {
+            id: "slime_leaker",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABRUlEQVR4nJVSq27DMBQ9jiKNjwXFoMweCbWUktB8QL6g04o31i8Y7rTCoXxAacAaKdRgS1hBgsLKizzQXstxs0m7xL6Pc+7xSdjH18ZUew0AyPIEx9MZbizu7+z9eDqjbzqbcyXANp8vhoZ+AxOQKwE/wjkgRbXXGNoRsYxueqQkJGZ/GwC8Pr5NQM/vT8jy5JIogb7pEA7taKWRF1wJrB/WE/D2ewuuxI0PYSwj9E2HRZ6AX1nnwC4IAIZ2BACwtEgMvZGU0LN8x+fqgWsQNebc9sFcCQzteFGwXGV24LCrAGDiPH0J96SZIJaRBR12FZarDLGMrAquxARMORGHxDa0I+pSs1hGxq35/wEtq0vN0iIxQSwj1KVmvrsOob3T6XoT3Lh1ZZ+rU5CiutQsoI1+01XkE7oYq4CGfMJ/R1ok5q/cjx+z3s1s6lrV0QAAAABJRU5ErkJggg==",
+            name: "Vuotavajaska",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vuotavajaska"
+        },
+        {
+            id: "slime_leaker_weak",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABR0lEQVR4nJVSq27DMBQ9jgKGB/MDja4sjQT5A6qBkAblAwo2aWhwcB8wNGkDhQNBKSmYquGQWZMmRVb6A4HFZR5Ir+U42aRdYt/HOff4JOLz69FudxoAsMozHI4n+LG4vHD3w/EE07QuJyUh3j4eLA/9BmYgKYkw4jkgx3an0ZkeKSWTHiuJmTncBgD3t88j0NPLHVZ5NiRKwjQt4s70Thp7QUri+upmBH7/fgUpOfEhTimBaVos8gx0Zp0D+yAA6EwPABBFmVl+IyvhZ4WOz9Uj3yBuzLkdgklJdKYfFBTrpRuoN3sAGDnPX8I/eSZKKXGgerNHsV4ipcSpICVHYM6ZOGa2zvSoKy1SSqxfC/8Dt6zSoigzOyiotAjd9QjdnU/fm2ji1pl9rs7BiupKi4g3hk1fUUjoY5wCHgoJ/x1Fmdm/8jB+AOozzQN3p17kAAAAAElFTkSuQmCC",
+            name: "Heikko Vuotavajaska",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Heikko Vuotavajaska"
         },
         {
             id: "miniblob",
@@ -577,20 +585,20 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Kiukkum\u00f6ykky"
         },
         {
-            id: "blob_big",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiklEQVR4nGNgGGjAyMDAwFDaEvEfm2R3zQpGggbg0kysYUzEaGZgwO1KggYkJPHgNYSgAQvmfcErT7QXcLkCwwBkJ+MTgwGiYwEdwGKFJC9gcwlOA7ApxhagOA3AF/pPH74hbAAxmok24OnDN3DMwMDA8OblRwY3P9P/DAwMDCzoJhICb15+ROEDANjCNShCAsQ/AAAAAElFTkSuQmCC",
-            name: "Isom\u00f6ykky",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Isom\u00f6ykky"
-        },
-        {
             id: "blob_huge",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAj0lEQVR4nGMsbYn4z0AAdNesYMQlxwRjJCTxMCQk8WBVhM8SJphmQgCXIUzInAXzvqBIorsKmyFMMI3omtENwmUIE4ZqIgzBawCyQlyuQnYF49VnKf/xOR8XgEUt0V7ABZhIsR1bYOJ0AbaEhc0yir3Aguw0ZBuI9RoTMckYBrB5C+4FcgOTiVAyRgbY1AEAS1lAOWjySqUAAAAASUVORK5CYII=",
             name: "Kammottavam\u00f6ykky",
             description: null,
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kammottavam\u00f6ykky"
+        },
+        {
+            id: "blob_big",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiklEQVR4nGNgGGjAyMDAwFDaEvEfm2R3zQpGggbg0kysYUzEaGZgwO1KggYkJPHgNYSgAQvmfcErT7QXcLkCwwBkJ+MTgwGiYwEdwGKFJC9gcwlOA7ApxhagOA3AF/pPH74hbAAxmok24OnDN3DMwMDA8OblRwY3P9P/DAwMDCzoJhICb15+ROEDANjCNShCAsQ/AAAAAElFTkSuQmCC",
+            name: "Isom\u00f6ykky",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Isom\u00f6ykky"
         },
         {
             id: "ant",
@@ -601,12 +609,12 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Murkku"
         },
         {
-            id: "ant_fire",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/0lEQVR4nKVROwrCQBB9G+yCFtpoFbYSRDyAaO8N7ETINVKJR7BTwdYbaB88QQgEhGCljRYJqddCdp1sVllxmv0w7zNvgD+L2Tb63BPyvk0v1rgKWK/aT0wGJ1ZWRq2m6Dbq6k1HcGzB68UAm9m14uLrCMt+TwDA4XoDOx+NPR8JqEp4f7DxqjyGLEdP2Oee8LknuOsCANKiUCRAdYVMNqdFgSTLIVUkQRDFbNnviSCKjYGrELnrotuoI8nykjIlMRFUMqAk0oVOQt04dFYKCO8PpisHUcyCKGa74VT9OcBrTUmWq3PSaVvZB/DeNW0yAaQqVVcO9PqmOj/tS9t4AiadfeOj3CYUAAAAAElFTkSuQmCC",
-            name: "Tulimurkku",
+            id: "ant_pheromone",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAUlEQVR4nL2SsWrDQBBE54QqKxIRKKCAmrhQ587kH/wD+cjUgfxDcBNc+RoVPojASgR3PrebIl6xshQip/B2d2jezOwJuPaUDwXJs7pUpCszSfOr4/l9+F8YJ/kzTp6llMQRAMA6j7ppL6uQZymR39Hn9oXG6gRT3L/Me3c3+RWWi5IAwHzswRV45EsMlnjucOpMSRzBOj+AhVJgnQcAJDezn/Ph2EGSOKK6aVXdtD1AwB+Pja6M4iq6MirP0sESQ3a0hyM4pkyx3ugOst7owc5GfyTrPGQyFo6BAuC0aSGom1ZJZwmaF7d4Wj1SD8AQ6zyK+7ueYLkoSYKeX996Nb4B/5F8j6XgirAAAAAASUVORK5CYII=",
+            name: "Sairaanhoitajamurkku",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Tulimurkku"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sairaanhoitajamurkku"
         },
         {
             id: "ant_suffocate",
@@ -615,6 +623,14 @@ const apothIcons = {
             description: null,
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Tukahduttajamurkku"
+        },
+        {
+            id: "ant_fire",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/0lEQVR4nKVROwrCQBB9G+yCFtpoFbYSRDyAaO8N7ETINVKJR7BTwdYbaB88QQgEhGCljRYJqddCdp1sVllxmv0w7zNvgD+L2Tb63BPyvk0v1rgKWK/aT0wGJ1ZWRq2m6Dbq6k1HcGzB68UAm9m14uLrCMt+TwDA4XoDOx+NPR8JqEp4f7DxqjyGLEdP2Oee8LknuOsCANKiUCRAdYVMNqdFgSTLIVUkQRDFbNnviSCKjYGrELnrotuoI8nykjIlMRFUMqAk0oVOQt04dFYKCO8PpisHUcyCKGa74VT9OcBrTUmWq3PSaVvZB/DeNW0yAaQqVVcO9PqmOj/tS9t4AiadfeOj3CYUAAAAAElFTkSuQmCC",
+            name: "Tulimurkku",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Tulimurkku"
         },
         {
             id: "rat",
@@ -810,7 +826,7 @@ const apothIcons = {
         },
         {
             id: "hideous_mass",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIElEQVR4nIWTP2gTcRzFPzmCVcI1JZcLOJjDhGCczGAJDukgJKViqHYTherSoEJBLFmyCVlCaaWD0OoUW12CEA6HJGOmQIY4mRATTdyaP7Q5StIpDuWOu2rxwQ3vfu993/d+3/vaLs06p6fHR5iRiCUBUGQfAJ1em91iBoAZ5xwAzYpKIBzH3qyolPY3iD7ZpFsvW4zaZETtVwWv5DfO9LAZ5xzNiooQCMe5//KDIWhU83R6bbTJyNJVo5q3cL2Q/bzAIzmAMUOtT2onjjeYJBFL4pEchqZRzXPj9jKNah6hWVF5Gl7DIznIZQXebY+NlPS6SrdexiW6AchlBRrVPLmsYIQJ6XWVi6DIPhKP3yJenjUK62bdJ7x4dQXAEOhpLtFNp9cmEoxSrpfoDloApHbiRsDX/asI5pa7gxZDrY9LdDPU+hRqX4wzr+QHYGHhGS7RjSL72CttYtcrA3z//Q2v5OdzeQ+ATq/F/NIP5peu45HOOi2swt2Hh3ikE1KfWtiKH19Pz24eDgcneCQHy6sHvN96YJoKxjudh+69QZH92HNZgULtgEeRNYbaGLBels4BtrZ/Gp+iyH4WQyvYXaKbxdAKz9N38AYjACRif0/k5rVbRIJR02+doVsvY5tOp9N/jdCMRCyJIvssO6HDfoHnv9CXSujWy+iPGWa+W8zQ6bVRZJ9Fe3p8hAAQCMcJhOMW03nuEt1ok5GxD/oW/wGWg+h9ruRxAQAAAABJRU5ErkJggg==",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABiklEQVR4nHWSv0tCURTHPz7aHzi5BtEWgTxSam1oKUgH25sSWrKpwkHec2wJbGqyIYcIWhRrDVQuoril4OrUv3BaOpd7X/Vd7rlfvud7ftybmU+60mmMuX6+AmAx7XFRbQFQyBWp1PMsZ++MXrIMVwMAXj9erTYTlxLhB5V6nk5jbIVqAnicmiTlJsFwNaBSz7Nz/MVFtUWlnv+VrDg/27RxUm4CEAB0GmNGL1k0TmO4GlDIFbm7//Q4a+ASev7Xerq74C8SsEt1cduqcn626Zmv/eeclJtedV0wZO1IhVzR78BNSL+E7iY9KnEpkbiUiIjIfNKVMAxlPumKiEi/XfPuIiJhGHpaNOi3a1bgitJmqlWefrsmh7uHnsitoLxr5iIzn3RlY/vAzvv2eGm/rbvt21YVV6cI0uT61r73Gmr0VzI4/yCKIhbTHhvbB/Y77xx/WeFi2rOnxgAZEZHFtMfJ6Q0AxhgAjvaObCdqqBqFMYZAk40xNlkr6BjL2TsATw+xTX56iImiiG+U7TQssEFX9AAAAABJRU5ErkJggg==",
             name: "Hirvitt\u00e4v\u00e4massa",
             description: null,
             bgImage: null,
@@ -834,7 +850,7 @@ const apothIcons = {
         },
         {
             id: "tentacler_big",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABAklEQVR4nI1SsQrCMBQ8YydHEdRN8Euc9R+cOndxLw5uLp0FJ8EfKIiTo18R6JYUQsdsQRdfeUlj6S0tdy93R15GAHA/PT/4Yb6aAgDqqoGSBunhhct5g+V65uk0k9xPzw8nCXQ4RF01rcl8NYWIDdRV43Hp4QUljTdDSEKiLz0MUtJAcOc+hIYUIsJ6Q0GGnTvoqx8L6hgMATcSVEdJ00kv8hJFXv5tWOQlRDjAD/N/p21UT7LjzhOdthgvJsiOO48DgOV6BiUNnLatPvgOrrdtlBck0lvniWE6fbmZcNpGRW4SSyc9IYJWE2tCXPgOnLYQ19u2XQ2t5/HedxL5DG/6BZH1rV71qc9JAAAAAElFTkSuQmCC",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABCklEQVR4nJ1SsQrCMBB9xk6CWwc790uc6z84Obu4F3cXoeAgdKp/ILi1o4PfUOjWCKVjtqBDufRIoohvaXJ59+7dXSfl5fECw7PpzbmtO2x2FQDgfFgiikPYEJ+SbWx2Fdq6c+LBs+nR1p2jzqt/gyCiT93nwhHwBX8RI56ZgS30yT6Jk/Pgn8ocxoGWylv9mF5xTK+OC+IIH4En8zMvQjAtZKcSs3li3EwXM2z3K0Ok5CgO0dYdtFTITiUCImmpkBff+82LBFE83rf71TiD4XH8mbhdXp2+eTG4FUTwPXIRigHjtrRUCDiJHnxOKGavWpA6rYbWc7uvnRnYnLxIIHjvWirvqriYzXkDf0utbFK7wFAAAAAASUVORK5CYII=",
             name: "Isoturso",
             description: null,
             bgImage: null,
@@ -929,36 +945,28 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Kammolukki"
         },
         {
-            id: "sunken_creature",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB/UlEQVR4nH2TQUsbURSFv0zmoRM0hhkTQTJSlaBIG5BCFjGhi9KFWYhY2p2LFtqNP6Fr/4Qu/Aehq+66KmTh0sUUCSXQCS6SOMYxZgyTmC6SmWSS0ANvc9855577eDe0d3zSdx7uURaXcJ8c7NoNACSSPOtxPEhmHdcsAyDmFKKJVcS8ggygLC7hPNzTvmvQcR4RuRwAdc32DeLECQ8N3VIJu3ZDNLGK7HVv3zVwOw4il/OFr94kATjY2Of04nxkls36JqG945O+F/359S51zfaF8vKCL+o2Whxs7ANwenGOiLxA/f4TySNYh2+paza777dJrWQC4vXwDvLyAj/sX34tZlq4HQf59u+fYWGFujYgV3oG46j0DNbDOwABE6GnkNyO43c/+ng0JS5E8xSi+UD926cvWFSxsltIQk8RM62AyOtWiOankowjZlqjN5gkeCazMD6G7JplBCD0La7OLkl/zfiXvx9vp7qOo6mrowTeGN1G67+ibqPF1dklkp5GLV0jiTkF1yzT1NUAqdIzpoy6jRZG0UAliVq6hloVSVvbRMwpg0+hpzGKhk+ePEbRQNLTSGYdalW0tU1CmQ+f+8BgiYYLZFGdGV8lGRADg2XyFsOuVZEAKZueaSANYwO4Tw4AoZfvDvuRmEqv6xKWBeOGkxDzii9uNy0iMZV/bBLx8zmEgvQAAAAASUVORK5CYII=",
-            name: "Sukelluskello",
+            id: "star_child",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5UlEQVR4nIWTv2rbUBTGfzKGYiMCBWmxMGgRcUgdMnWIA6WkzpIXKCQZSuZCoUMWj1o8FAp+AA+OoS9QMoRSQqwOHe2WOni5YKShulAIF4tO6tDca7sR9CwX7vn3ne98h2iwmVNg0WAzF5e7+f/8pcCvM+x6a0HDrpd7ToWq7eA5lUJ/4NeJZYY17Hp5a8cllhkiUfg127yBX2cm5g/+PadCNE45Po8tS8NZDdYFtemE1aKt01sLoAwgEgXMCfw6niOJZYbnVHjceMuv6TtimdHacanajmmirQQYeAslcZsd9Pwb/onhwW12WChpxtBmaYI0bB38edrg6GCbXv+as0NJOgmNPxqnAH85EJe7uZ5Xd/4w6/D61TPT5eOn7zx99IaFkqzGxjLD+nnzIgeYiTlP9jts+CdFawfgTlzwbRQS+HUAFkpSiODr7/ccHWybxF7/mpdBWIigFI1TRKLMx0JJnjem9PrXBv7ZoTTJnlNBJIponNI6vV3qQO/fbXZIJyFV28HdvyIdtc120klo9PBAB37Npmo7S7aR3ImLJez7on4tW9NBWeugSInxKPxHidk9gfOlkPThrGpe71mzrWGLRDET87UDK7f3trj68oPj89jSVXVR3V0kysys/e29LaKBnf8BQGw8GLPDJREAAAAASUVORK5CYII=",
+            name: "T\u00e4htilapsi",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sukelluskello"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/T\u00e4htilapsi"
         },
         {
-            id: "lukki_fire_miniboss_phase2",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABvUlEQVR4nG2TMW/TUBDHfzbmybXTLCZuhsiVKhQJqXsn5kwMTB3atVM+Awt8hk5IsIShH6FfggkJZHWJF6wkT6VJ/PRkCmZI3utzyF+ydPLd/e/e/+68NycnDcCsrnkeBJTrNQBJGJIKgcGsrgFa/wB8Y6RC8PvxkX6n00oyXyoEqRCWyPgD4wSQWm8I/AaptQ1MwrDVgWsHuy2WasV8WdHrxvAH5lXFPpiiQSoE35dL65gvK0ZZxPVlRjTMAFB5wXgy5bZQrY6k1vizuiYJw03yer1NPm4lR8OM68tjGyO1RmrNq253I6LUmvlWfZOs8oKLD3e8/XSPygsARllkSewUpNbgN60AlRdc3dR8K0vK1Yqrm9qSmzjzDP/06AhgI9oW0TBj4Yi3qCr7pFEWMVWRHav/8+HBiufiRRzvtXfhu5t1WyjGkykqL/h4LugfHnLa7/Pl3cv/JmHguav8Y7GwbX5+/9qKBzCeTPn6y3vakb8eSRjinQ0GDTxtmEvidmZ0SsQBgL0b72wwaHaPxpD04hieYasm4sBuoDm+Vgd7SZyqbrLUGpqGwByNSyC1ptfp2A11D8i9xjspvX/w2feFrpo4oQAAAABJRU5ErkJggg==",
+            id: "miniboss_pit_02",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdklEQVR4nH2TQUvDQBCFv4S0ZE3S0hRCigoiFAQP0qMePXv253r0WjwIhaKIthoDXdmmJmIP9dDumqbRd0l2ePPe7MysdX51vWqEMVUsZcJH+gaA8HyCwz5WrljttclexgSHfQCcRhizlAkATVfw/VXwkb4hPJ8iUwAUmaL4XCA8nxbQ6kasNka2dmy6gvks3alEQ4tVOXbZWSZTXh9GFJlCJtMdER17uh+amPOX40V4ZP5v5dOOiBGwcsX78yPC87cSL/2zLaIWEUHbcAHsuntXk6vnMmzgzzuXoSvTE4H1qO26xJvF3b9iRaZYyoRGGP+OUaPcsLJgNa6XzwnjfWQyRX/rRMpnEbQBzDY6rheYoAjaZmHqKtG8TtSjEcZkL2OcpiuITgYABEA6GhoRjTDeN43TXCtXtLrRugdWrrByZQjaqYroZLDFBXDms5RWN0ImE2BC5/iUTtTbSnS9wLy+KhwAmUwI44N1JFfrDm+ecrnkOvwAVDms3V/iXA0AAAAASUVORK5CYII=",
             name: "",
             description: null,
             bgImage: null,
-            wiki_url: null
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/"
         },
         {
-            id: "giant_centipede",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABSElEQVR4nK2TPU7DQBCFvyURwZGtsHa0iCISpZs0KZBo6Lkb5+AKNPSRcgDkggKJNFlkWyGWHMeyTJO11tgU/Ey1Y+97++bNjOAY16GsAznBjjjdNufbRQjA/cNS2HdaCcDdzVVtg5O4QrkOOstZ7w4ALC4n6Czn5f1DdAiMGgPe7GtGoxHn4sBmXwMwn44B0FnOSR/BKkpFEleEM0VZlhRFgXIdLs4E8+kYneX40kO5TrcEU0acbhkWp/jSI3rTKNcBwJceSbrDl973HhiwzvIGqLOccKZI0l2TK9dh+JUgTrdH42i9CjRKTN7rwSpKhflpg4GmG3YJvSb+JDoEpoVGvqnZqDIlmO8dgkBO8INBAzAkxkQ7/5c29nrwuHwVSVzhS4+n53UzgcZAW9mfR7kzB/Yy+cEA4grlDtAZlGXZMrS1TL9d50+znM3ER/D8pAAAAABJRU5ErkJggg==",
-            name: "Nuori Tuhatjalkainen",
+            id: "seeker",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABgUlEQVR4nJ1SMWvCQBh9F1pwEzrr5tIOjsZAQbL4GzrERXDp4txf0NnBLgGXOPQvmCUECpdkzNAuLpLMBRExmOLXQb7rJW0p9IMb7r5377733mGe7slxA8I/ynEDEgAwT/cEADJOsJzYgpuW2VPg33qVg07TwHp7gowTMIDPmKSOq4wzT/eU7Uqi8kiOG9Bqc1DLcQOi8kjZriRdtqFrknGCVoOQFwKW2YPnRwAAz49gmT3khUCrQZWXhT6+Xp4f4fHuVhE+PL9gNOxXMOvtCWK1OdBPum+uLtBqfIWTFwKv7x/f/IAeIfvAeutL7/Mdox4N68sLURmX9/wyk6h/0Gkayiz2g2Xw+KxbxglGw/7Zg/rl++vLil7OXPfl6a1UJAY7nskUMk5UVBwhm+b5kZqGf6XnR+cYlxNbDMYzAoC21VVpsF49IRknyGQKAAgXUyEAYDCeUdvqqgYTAYBuLPcZqwjqJOFi+icxACwntjAYiFrxZb3CxVQwWSZTDMYz+gS5gU/GVdlrPwAAAABJRU5ErkJggg==",
+            name: "Etsij\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nuori Tuhatjalkainen"
-        },
-        {
-            id: "locust_swarm",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/UlEQVR4nKVTy5HFIAyTUwnjoZJ3cCkpKqW4FsbzOvFeEIGE3cv64qD4J4EF+OA/duxA1W9O34sHgNauVP1ma1cec6DqF61dCUB60EgAkN2j1lMASK2nLBNEFACQfqSHmQkAMTNh0R57U3B3dsyetBR296Sf6QjwmfklAHH3NDO4O7uP/xFFSDmiQFR1ETCiLIL9hQHAEVHGgZVJ6UFtnvJFITGJ9ggeuLtnrae0diWpSWvtBe6Sf6NxMImeSqOLSYxvgNigoKrb0XYdOdWsmXAXnjqwq5nxWl8aRZRlF0Zldu9JuaGXvJ2jdwfwfvP3lLfNe7BQ2Nnz3c84sR/HJcf5SqetMgAAAABJRU5ErkJggg==",
-            name: "Hein\u00e4sirkka",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hein\u00e4sirkka"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Etsij\u00e4"
         },
         {
             id: "devourer_magic",
@@ -969,36 +977,44 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Taikainen sy\u00f6j\u00e4"
         },
         {
-            id: "seeker",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACJElEQVR4nI2TsWsUQRTGf3O3cY9dcPCIshcsQprgKVd5kcPCIkRIwMJUVgYkkDqmDvgPJKkPg2BnpYUQIeHqwyTVQhbSiGjILSoLG7PDrW4ci3MmRiP4mnnM8L33vu99I2Zef9L8io17V4TJ1/eONEBPaWqeoKc0y01p3w1OrO8d6Z4a1OjGObNjFQt6+a4PQCtw6cY5rcC1963ApR1lCNMtVWU6cUaYFDSqDq3AxcNBeiemKU92j+2baXZmpMnAZ3p0COkKbr36zELdx8NBUdCNc57euUSaa968/46iYLkpRYlzIs01japDO8oAaEcZs2MV0lwjXYH0TujGOQDCiGFG3truMzVRYS1K2ZwZRrqCNNfc3fjCYl1aSj2l6cY5pVbgEiaDEaV3wtREBeAMWLqCzZlhCzQih0mBU/MEjapDmBRAnzAp+PiwxuHXAgDpCnt24syq36g6NKrOQMSVnUwDrEUpjarD72IaTaQreLavLNisu2SAnTjjxrHLZOADcG14iDTXFvxi/xseDgt1nzApSFWZbpwPRDR7NR4wRQAe3/RY3VUoCtpRxmJdAlg6JeMuA/7xocyD8QtMjw4BsLqrAHg07vH2/mUUhTVczRMDEVNV5mBuRCzuZJrglLPpNBn4pPmp3cOk4GBuRMwDzvz1i1bIpaYvrj4/1J14QGNru8/tCZe1KAWkpXUwN2IdbJM/Y2Un0+f9jaWm/0/MXwX+5/4nGNMhO9gFIXkAAAAASUVORK5CYII=",
-            name: "Etsij\u00e4",
+            id: "locust_swarm",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/UlEQVR4nKVTy5HFIAyTUwnjoZJ3cCkpKqW4FsbzOvFeEIGE3cv64qD4J4EF+OA/duxA1W9O34sHgNauVP1ma1cec6DqF61dCUB60EgAkN2j1lMASK2nLBNEFACQfqSHmQkAMTNh0R57U3B3dsyetBR296Sf6QjwmfklAHH3NDO4O7uP/xFFSDmiQFR1ETCiLIL9hQHAEVHGgZVJ6UFtnvJFITGJ9ggeuLtnrae0diWpSWvtBe6Sf6NxMImeSqOLSYxvgNigoKrb0XYdOdWsmXAXnjqwq5nxWl8aRZRlF0Zldu9JuaGXvJ2jdwfwfvP3lLfNe7BQ2Nnz3c84sR/HJcf5SqetMgAAAABJRU5ErkJggg==",
+            name: "Hein\u00e4sirkka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Etsij\u00e4"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hein\u00e4sirkka"
         },
         {
-            id: "miniboss_pit_02",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdklEQVR4nH2TQUvDQBCFv4S0ZE3S0hRCigoiFAQP0qMePXv253r0WjwIhaKIthoDXdmmJmIP9dDumqbRd0l2ePPe7MysdX51vWqEMVUsZcJH+gaA8HyCwz5WrljttclexgSHfQCcRhizlAkATVfw/VXwkb4hPJ8iUwAUmaL4XCA8nxbQ6kasNka2dmy6gvks3alEQ4tVOXbZWSZTXh9GFJlCJtMdER17uh+amPOX40V4ZP5v5dOOiBGwcsX78yPC87cSL/2zLaIWEUHbcAHsuntXk6vnMmzgzzuXoSvTE4H1qO26xJvF3b9iRaZYyoRGGP+OUaPcsLJgNa6XzwnjfWQyRX/rRMpnEbQBzDY6rheYoAjaZmHqKtG8TtSjEcZkL2OcpiuITgYABEA6GhoRjTDeN43TXCtXtLrRugdWrrByZQjaqYroZLDFBXDms5RWN0ImE2BC5/iUTtTbSnS9wLy+KhwAmUwI44N1JFfrDm+ecrnkOvwAVDms3V/iXA0AAAAASUVORK5CYII=",
+            id: "giant_centipede",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABRUlEQVR4nK2TvU7DQBCEP5MfYWEnOke5VEGUllJBgURDz7vxHLwCFXUkOroUCCEhmotsK+Qiy4ms0GStMzYFP1vd2jdzs7O7Hoe4jNV+pIa4kWSr6nx9EQNwezf33Du1BODm6mzvgtOkRAc+xua8pxaA89MxxuY8Lz+8BoGoEfBys6PT6xP19yw3OwBmkwEAxuYctRE8LjIvTUriqWZbFJS7LTrwGZ/0mE0GGJsTqRAd+M0SpIwkW9Et+kQqZPFm0IEPQKRC0mxNpMLvPRCwsXkFNDYnnmrSbF3lOvDpfiVIstXBOGqvApUSyVs9eFxknvx0wUDVDbeEVhN/Eg0CaaHIl5pFlZQg3xsEIzUkGnUqgJCIiW7+L21s9eB+/uqlSUmkQh6eXqoJFANdZX8e5cYcuMskXujgGGNztkVRM7S2TL9d509n/czOyeVG3wAAAABJRU5ErkJggg==",
+            name: "Nuori Tuhatjalkainen",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Nuori Tuhatjalkainen"
+        },
+        {
+            id: "lukki_fire_miniboss_phase2",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABvUlEQVR4nG2TMW/TUBDHfzbmybXTLCZuhsiVKhQJqXsn5kwMTB3atVM+Awt8hk5IsIShH6FfggkJZHWJF6wkT6VJ/PRkCmZI3utzyF+ydPLd/e/e/+68NycnDcCsrnkeBJTrNQBJGJIKgcGsrgFa/wB8Y6RC8PvxkX6n00oyXyoEqRCWyPgD4wSQWm8I/AaptQ1MwrDVgWsHuy2WasV8WdHrxvAH5lXFPpiiQSoE35dL65gvK0ZZxPVlRjTMAFB5wXgy5bZQrY6k1vizuiYJw03yer1NPm4lR8OM68tjGyO1RmrNq253I6LUmvlWfZOs8oKLD3e8/XSPygsARllkSewUpNbgN60AlRdc3dR8K0vK1Yqrm9qSmzjzDP/06AhgI9oW0TBj4Yi3qCr7pFEWMVWRHav/8+HBiufiRRzvtXfhu5t1WyjGkykqL/h4LugfHnLa7/Pl3cv/JmHguav8Y7GwbX5+/9qKBzCeTPn6y3vakb8eSRjinQ0GDTxtmEvidmZ0SsQBgL0b72wwaHaPxpD04hieYasm4sBuoDm+Vgd7SZyqbrLUGpqGwByNSyC1ptfp2A11D8i9xjspvX/w2feFrpo4oQAAAABJRU5ErkJggg==",
             name: "",
             description: null,
             bgImage: null,
-            wiki_url: null
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/"
         },
         {
-            id: "lukki_tentacle_hungry",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABUElEQVR4nG2Sq27DQBBFT62CgI1ZuS1ZWsPlMQwJzKcWhBXmAxbW0kpe5A9wFoS1oJ3xOMkwP2buPXfm7fNw+Eml0DlHEwIAOUZSKRyHAYCv65XOOVIpAHTOAdCEQNWEoB9zjEhJ865tOQ4DImIH5RipeChRfywZKIJSlagKgljftS0fp5O6ANSloKZSVgdNCIqwa1v2fc/ee1WyKBa1sjyifp8m9t7juo593wNwnyZtSqXQhMBxGKiEJ5XCuCwby8BLF5sMmhA0GF/X2nwbx02IdqjFqMQ+oA4Abt/fT4MEY1wWHaIhplLwda0/3aeJkpIOsi58XSvGu12jrun/50cMKXu1FaAPnXNc5nnNwaiLK7vCHONfiK8w7NpsXeZZmzcIcuuC0Z/PT+HlGPF1re+bENZDEi7BsA7sKdu7yTGuhySnLBg5xs1Gcoyb8MTtL3uI60jNZMEDAAAAAElFTkSuQmCC",
-            name: "Kirottuolento",
+            id: "lukki_fire_tiny",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABzElEQVR4nMWSz2vTYBjHPylNFxYoFZps0JKpaGWUHbpDj4UhzKN4ETzvMnB/gf+H4GU3T17E46QgeBns0BZKGOhwrl2gySs0VBKzDXw9dO9rw+bZ5/KS58f3x5MH/ncY/yrsbnckQCgEK44DwJuPn2/030jsbndkKIT+VsMK7H3/ODdTuI1VDQ2DiO7AZxFQ9eQAGm5VPmuta8ndgY+ZhBzueRzueZhJmLOiegEKWw/uadZQCIZBhJgl7LRWAej5F+y0VhkGkVayaKuQXF5RsSydELOEd0/vs9lc4uXbM55/+MZmc4nXWysMg0jvouFWJUDBLpnEWZaTqOJglGoVChxgls7fhluVxU8npwZAs+bIUAicss1+fwLMLTzxlgGuc/D17DvlZRumKRXLoqiQFOpGzeXg+BSYcPJqnZ5/wX5/Qi82eNFp6z0o20bbq0uAOMto1hy9pO7A15Kdss3aHXvODPjBXxCj4VZlxbKIs4xrK9rnw7W7ejehEMzShPE05Uv0Qx+T0fbqUg2rwuNHnlRsytp4mmrWOMt0b3FxEKDt1eXPX78ZTwW31eySiV0yqViWPBqdG7m7VkeVXF5hl0zUH1oMtTOAo9G58Qeam+GiQzm5aAAAAABJRU5ErkJggg==",
+            name: "Pikku Tulih\u00e4m\u00e4h\u00e4kki",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottuolento"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pikku Tulih\u00e4m\u00e4h\u00e4kki"
         },
         {
-            id: "star_child",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACyUlEQVR4nGWTTWsrZRiGr/edd2YyyXSarya1pjXBc6xSUNCVoO6EuhP/gG6FuvJ3uDugCH6gWw+4kgouPHJcuOhCjxSLSk85MW2axGSSTDuZzMzjymj13l7cFzxwP+rL9zbl9XcvFP/JvU+eFGMMWZbyylu//49/81Fb0gR0rR5w+H5b/g1/vLsnO9trPLZR4PGtNU6/eu4G//bTjniWS5LEqMM7T0hx3SOKrthuuISRISgV0UYhaQaWpmjDH4M55cBlOIywPYv5ZMH+wZnS+wdnKgqvefpWBewCZAIasiwlIyeVnFiX0LYGZdjZDoiul+wfnCkAA1D1bWbjlKBcJNjeYLow1Bq7OG6dZTJkfH5Ctdyg5BoyQm61gtU5BmBp26Rxioky1ut1mo097FIH421ix32MqbOMjpmG5wxGEZCtBOqnu7uiLQdtOaCrbLRfwqu+yDh/ntZWjW5vRFkdsRj9wOWj+0geU3SuQC3ovPpA6TXfQ2mXxXVKtb6L8TqrMkBrq8ZEXsD4bcr126TJlDgRUJqvP2iLFq3QRkAE4zewveaq/HdaWzWsQhPHbZJlGSKCiMYrFdBkOZIpsITsekga9+n2RjcE3d6INO6TxBdYlkWuNGRwNY/R08k1BZ1ia8PlxTHL6Sll62gl6fZGVPQR6fSU8eA3jLOG74JIzv7bD5UCuP/ZU4KGSlBivXIbu7yHU+xgvCZZ3CeZPmQ5P2Y263HZ76MUvPzmyT87MFmOXyrgFw3h+Jx8PKG2OcQu1EnjAaPRL0SzmEbZodXwEbW8uYNwkVJUMAsXTKKQSjlg0P0OESBXGMdnmVzSH5XYqMOvJ9OVQB9+2JaiW6B7PiNVC0QUWuVo28Z2LVzHAmI0Gq0Szk5D/MDh8M6OAKjvP39GppM5r73zaPWyD77Yk9K6RmuLdJFxFQvPvvHzit/7uCPKcgn/DPkLhXo1cOW0gMAAAAAASUVORK5CYII=",
-            name: "T\u00e4htilapsi",
+            id: "sunken_creature",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB/UlEQVR4nH2TQUsbURSFv0zmoRM0hhkTQTJSlaBIG5BCFjGhi9KFWYhY2p2LFtqNP6Fr/4Qu/Aehq+66KmTh0sUUCSXQCS6SOMYxZgyTmC6SmWSS0ANvc9855577eDe0d3zSdx7uURaXcJ8c7NoNACSSPOtxPEhmHdcsAyDmFKKJVcS8ggygLC7hPNzTvmvQcR4RuRwAdc32DeLECQ8N3VIJu3ZDNLGK7HVv3zVwOw4il/OFr94kATjY2Of04nxkls36JqG945O+F/359S51zfaF8vKCL+o2Whxs7ANwenGOiLxA/f4TySNYh2+paza777dJrWQC4vXwDvLyAj/sX34tZlq4HQf59u+fYWGFujYgV3oG46j0DNbDOwABE6GnkNyO43c/+ng0JS5E8xSi+UD926cvWFSxsltIQk8RM62AyOtWiOankowjZlqjN5gkeCazMD6G7JplBCD0La7OLkl/zfiXvx9vp7qOo6mrowTeGN1G67+ibqPF1dklkp5GLV0jiTkF1yzT1NUAqdIzpoy6jRZG0UAliVq6hloVSVvbRMwpg0+hpzGKhk+ePEbRQNLTSGYdalW0tU1CmQ+f+8BgiYYLZFGdGV8lGRADg2XyFsOuVZEAKZueaSANYwO4Tw4AoZfvDvuRmEqv6xKWBeOGkxDzii9uNy0iMZV/bBLx8zmEgvQAAAAASUVORK5CYII=",
+            name: "Sukelluskello",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/T\u00e4htilapsi"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sukelluskello"
         },
         {
             id: "worm_tiny",
@@ -1025,12 +1041,20 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/J\u00e4ttimato"
         },
         {
-            id: "worm_wall",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjUlEQVR4nKWTvUvDUBTFf0+6KoUSjAHpELtVUSc/Yp1U0NGKg4iI4OYoIoKCDg5O7n7QwUkc7a62WJdabQelOEihRkKh6B/wHEKebeIXeMbHPeeed8+9onB6K/kCrR1tgbf3lzf1blqmAAj1zvQJf2Hh9Fa+v7wxvz6PrhloYR2nbgOghXUAnjJP0rRMESADdHfFpa4ZANhOVYkAGO1RAKqvzwAEBKSUMneUZnl3TRGL5TyeoB/CTx4fmlDdiuW86yjWTyKSYTjeSbZU4bJmAeDUbVqa1IT7pZN0ipXkLLpmNJEBhuOdJCIZNQ8lIKWU14fnEmBucoGzqxxAE9mDJ2K0Rz8FhBBicGlKOZgeGVDFuxdRUg8JACI9MSI9MSX6pYPVxU3l4DeE/P8fGxyXe8fb5I7S3D3ekC1VWB8FcGOr3ZcByJYqEGpIwYtv82BfpeDUbbSwHphDYxLfzmAlOYvtVCmW81zWLLejj+zU7eAeeC4aN/DPi+ThX6sM7jEBPx7TzsYWpmUK8d9z/gAzuMBFOMbb8QAAAABJRU5ErkJggg==",
-            name: "Sein\u00e4mato",
+            id: "worm_maggot_big",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABMElEQVR4nLVTsUrEQBB9kcAGjnDccYSgB0HEwuaasxCuF9La5P5AsMwPhPsA7x/sTGN35AvstBHBwkpRWY6QEEJgFwJrcewSJRsC4muWHXbevJk3a6AnLk5OhTscgxYZ5FlyBqNvYhtokXUTXJ2di+ad+CYAgCe1iu3pkq+DS3HkHYIWmUoeTQYYTQYgvqnirQRxGInpgYv7p0fo5LvDMYhv6hUE65Vx9/JgSBXPN+/I0wp5WuHtdqvedc4gDiMRJxuUnMEmlqoMAK/bL9jE6udCU7aEtFPbQl90EsRhJACg5ExVlSg5Ay0yvQvAbpCL2Rw2sVByBm/pKAuPnX14S6d9BpIgTjaqb7kHAJCnFXhS620M1ivj45NiMZv/kN0ELTLwpP77Kv/vZ2oj+v2dvwFqtIrbuLnLIgAAAABJRU5ErkJggg==",
+            name: "Pieni Limatoukka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sein\u00e4mato"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pieni Limatoukka"
+        },
+        {
+            id: "worm_wall",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeElEQVR4nKWTP0tCURjGf6/0AS5dD16EaOi61eJo4qhNQf/oC0jREE4hNLY4NDa1tDlEuUazKDRZoZtKiCE3boYfQDgNem8XuUrUM51z3vM853n/HGGK0sm5Bvj6HDKL5ajpnz8+17FUHGVYAEgY+fLuWgDODo61J/Ly/oYyLNyR45PdkcNSkOwRPexubQNwVCqykUiSMWtgQqULyrBw3AFL88haaw2QTeV88ub6yjTaodKFjUSSSBjZg4iIMizisdWwMBmzNnEwjwxwun/IUanIq7KBDgDVYRplTJyEvhxMI5vKAfiFi8dWGXz0aLYbWCpOZJGAl4KHYCpeKxcK/AYLBbTW2h05/n7w0fPXjjvAHTlEgsMyCxGRi3zBv5wxa9jjMjBp4d5aZ34XtNZaROTq/pZcegd7XP6Zg1aNStcGEyLLUZN5LrwUgtaDqA7TkxqEiYiIPN08cJEv0Gw3qA7T1Ft96q0+la6NMiya7cb/P5M/SH/9zt8M4rtPwK7rMQAAAABJRU5ErkJggg==",
+            name: "Sein\u00e4toukka",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sein\u00e4toukka"
         },
         {
             id: "worm_skull",
@@ -1049,12 +1073,12 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Helvetinmato"
         },
         {
-            id: "worm_end_big_apotheosis",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIUlEQVR4nJWSIY6DQBiFPwgKheACaxCLWNNusqoSuXqzd+ACRZYL9AQ1HKByTtAENAbTCyBGjWVF809+CJDsM5OZ5Hvz5s0f3E6HKc1yAMahx1hHkcSkWU7TdhRJDECa5bx9f7FUqGGRsY5x6CmSGGPdJgwQ3E6HSYNakmQLBog0KHFlb6yj2oEBQnmzwNro9/O4CwNEuiTdAzCLfjlfZwmrunwlSLMcKVJWY93sdoGNdf6XLufry2AZSUz07QJXdUlVl95k1eC/ipYH0sPz/vAplrEl0REIx6H3kKxFEtO0nTfVsfVzAIKfj/dJf6FIitwbIoBQt6thYJZit4PlBIqKJJ51sZpAz8HaNDZtx/P+2DaQ4sRE4DTLfXHj0G+a/AE1NpedLBcl2gAAAABJRU5ErkJggg==",
-            name: "Suur-Helvetinmato",
+            id: "worm_spine",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGUlEQVR4nJWTsWqDUBSGvyu+ieBy36AZQrdmEVx9gECCczs5ZeouCnmArEKWZCsO9QECQmlxK+Qx7GDO5XpNiz0gnKt+5/zc8x/FLa6Xpgf4fD8RLlbcywGWm50q0qQH0DrAs2GAtu0MIDlgCl0vTR+vU/OvV5eZ6Vzt8wksnSXkHK9TtA7ww8VqBGzzg7KBQe7JqHh9eSZsO0SFX+3zCWSHfBOlAMdzg9yB/xd8L+LocXQn3lxQADef3d2elB2zFfwW/y7gjnV2ARu0c78us3652c2+i+r4xsfXN1Hbja0sjwvUZTZ5Hz09GCOpIk16rQPEkYDJ7XG50mHYBQVi18FZNuRuY3uTLTBYPhAlbgcX2OYHVaSJ2cgfTM6l+x2lrUoAAAAASUVORK5CYII=",
+            name: "Kirottuselk\u00e4ranka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Helvetinmato"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottuselk\u00e4ranka"
         },
         {
             id: "worm_mechanical",
@@ -1065,12 +1089,12 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mekaaninenmato"
         },
         {
-            id: "worm_spine",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGUlEQVR4nJWTsWqDUBSGvyu+ieBy36AZQrdmEVx9gECCczs5ZeouCnmArEKWZCsO9QECQmlxK+Qx7GDO5XpNiz0gnKt+5/zc8x/FLa6Xpgf4fD8RLlbcywGWm50q0qQH0DrAs2GAtu0MIDlgCl0vTR+vU/OvV5eZ6Vzt8wksnSXkHK9TtA7ww8VqBGzzg7KBQe7JqHh9eSZsO0SFX+3zCWSHfBOlAMdzg9yB/xd8L+LocXQn3lxQADef3d2elB2zFfwW/y7gjnV2ARu0c78us3652c2+i+r4xsfXN1Hbja0sjwvUZTZ5Hz09GCOpIk16rQPEkYDJ7XG50mHYBQVi18FZNuRuY3uTLTBYPhAlbgcX2OYHVaSJ2cgfTM6l+x2lrUoAAAAASUVORK5CYII=",
-            name: "Kirottuselk\u00e4ranka",
+            id: "worm_end_big_apotheosis",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIUlEQVR4nJWSIY6DQBiFPwgKheACaxCLWNNusqoSuXqzd+ACRZYL9AQ1HKByTtAENAbTCyBGjWVF809+CJDsM5OZ5Hvz5s0f3E6HKc1yAMahx1hHkcSkWU7TdhRJDECa5bx9f7FUqGGRsY5x6CmSGGPdJgwQ3E6HSYNakmQLBog0KHFlb6yj2oEBQnmzwNro9/O4CwNEuiTdAzCLfjlfZwmrunwlSLMcKVJWY93sdoGNdf6XLufry2AZSUz07QJXdUlVl95k1eC/ipYH0sPz/vAplrEl0REIx6H3kKxFEtO0nTfVsfVzAIKfj/dJf6FIitwbIoBQt6thYJZit4PlBIqKJJ51sZpAz8HaNDZtx/P+2DaQ4sRE4DTLfXHj0G+a/AE1NpedLBcl2gAAAABJRU5ErkJggg==",
+            name: "Suur-Helvetinmato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottuselk\u00e4ranka"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Helvetinmato"
         },
         {
             id: "drone_physics",
@@ -1081,20 +1105,20 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Lennokki"
         },
         {
+            id: "drone_mini",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwElEQVR4nGNgGAWMyJzbt2//Z2BgYLj88AMDAwMDw/a9RxkYGBgYPJ2tGXTlBeDiQS6mKPpwgoD4ov+6Zg7/8alhwid59/o5gpbgdMrEBRtRbM5P8MeqFqsLUisn/GdgYGAIfmXCEPzKBEWMoAETF2z8f2LvBoYrN+/Dxa7cvM9wYu8GDFdhGJBaOeH//v0HGVKyChlO7N3AsFbsDMNasTMMJ/ZuYEjJKmTYv/8gTpegOBObTTAxvAagG0RIbJgAAGSRUSPv0/YJAAAAAElFTkSuQmCC",
+            name: "Pieni Lennokki",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pieni Lennokki"
+        },
+        {
             id: "drone_status_ailment",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABa0lEQVR4nNWSP0hCURSHP7NBXMSGiCfBK4o39pbo1WaLiPaHhoSWoIZoi5Zocm7JmqKGmt8SGIW41FaJy3MpHooIoUQP7tLiIrfJiw9fc3Smw7nf/d3fOffAv4/Qbwf7h0ey024BoCV0Lk5PAtnA4louJ/sXAfpCRdse4n2Fs8tr6bou45MTyG6PUCQMoPKvj08Mw+Bgb0fdGxkUeHosAxCPxqg5VaY0nSlNp+ZUiUdjPmZIIF8oSC2h02m3EEKQXE6xvbnOyvcxyeUUQgg67RZaQidfKMghgXg0pnoNRcIIIdgqvTG2+44QQrXTabeUG5+A67oAzJnzClj4qHB+daMemDPnfSzAaD8xDEMNr/Rwz/TMrII8z6Py8szC4hKmZQU7eHosI7s9ak6VdCZLs1FXULNRJ53JUnOqyG7PN0jlwLQsnNdXirYdKto2qdUN6XmeAge+TpqWRdG2/Q7Avyjlu9vAPGiZ/jZ+APEFkfLCW4ItAAAAAElFTkSuQmCC",
             name: "Parannuskeinolennokki",
             description: null,
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parannuskeinolennokki"
-        },
-        {
-            id: "drone_mini",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAx0lEQVR4nO2QMQqDQBREnyG1J7Cy8ShJa+E5trO2EARTeQ6x8RR7AY8QWBayC1soVpsqksRECKQKmW7+nz/MfPgjeB60besBnHNorVFKYa1lnmemaaLv+9XNW9Rl6usy9Vua3ceZv23wsk+e5z5JkoWHYcgwDBRFsdKvEgghvLUWgMPlyOFyxDnHOI7LgzcNAOI4Rkq5cCkl94neGgghfNM0AYAxhtO55nSuMcagtSbLsqCqqocU+1euSim6rnvoG0WRv+1+DFfDslTGzLEJdAAAAABJRU5ErkJggg==",
-            name: "Pieni Lennokki",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pieni Lennokki"
         },
         {
             id: "drone_lasership",
@@ -1111,6 +1135,14 @@ const apothIcons = {
             description: null,
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Teslat\u00f6tter\u00f6"
+        },
+        {
+            id: "gazer_robot",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQ0lEQVR4nIWTPY6DMBBGXxCX2C6FJV/AZVIlh6CjyFZEot6cgB4pVEtB5zuELinnApbc7zGyBTH/m/0kJDDzvhl7xpvD4fAEOB6PABhjmMtaS5Ik/beI0LYt2+2W+B34l4wxGGMQEaJ3sIhgre2rWDOK12ARwXvPvq750hqAxjksoJSaJNzcbrfnHP64XEi1hjyfOpcljXP8FEVvEs2ze+8HOMu6xSzrnjwn1RrvfR8fj2FrLfu6hut1Cge93vfnMxZIkmQwEBGALjtAVS3AsJZqzf3FRCLSwwsgqKoGw9m/KPQ0HErjXBc83//IrHEO6Nq46IK1lu/HY3qI40rKks/drp/MRReUUl2GshzKDlt4tVEp1ccvKoDpIKWjQbqfTstBKori+W6Uxz0fX6igKASuyRjTQ2uwiBC3bbuA/tP4Ov8CqD2lSSRgSb8AAAAASUVORK5CYII=",
+            name: "Aluebotti",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Aluebotti"
         },
         {
             id: "drone_shield",
@@ -1337,20 +1369,20 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Stendari"
         },
         {
-            id: "watermage",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4nK1QMUvDQBh9J4XQ4q01HUJoHESyiBYcuolLUXDoH3BzkfQXONXNqZ30HzjoIBScHIVW0joFJ1tChKYiIlxpORHO6UpiLhHBt3x873vfu/cdQQp2DgctTcuDUgrGGG4v1hsq3VLWMgAwxkApRe3oqaXS5qJNtd4UJauCt8kEnK+0NS0PzucAAEqpMmkswf31CRkPXXx9TvHx/grO55AmjLHfDSR0YxmFAnOkiawqEBUpTwmDKWYz2rbWhHN1VlNqcyry5eESAFCyKgCEo3w66wSJ8dCNVYnG3qlINTANW+jFcsLMNOzFUjfspifQi2X0+p3FvY935wAAP/CIadhie2tfROfKP0iDH3jED7wYl0jQ63fIxu6x+MmrOKXBX/H/BtGo4cjF8+CGhCM3MctEtd4Uq5sHItqnab8BLBF+gUu5/fEAAAAASUVORK5CYII=",
-            name: "Vesimagi",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vesimagi"
-        },
-        {
             id: "watermage_greater",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABWklEQVR4nKWRu04CURRF18AgIrnRgAFEG4QCExtxOju1scLSUiv9C/Ev8AusqahorAk0JtgACTG8Eo1mQIZXxkJmeIxDSNzluWevs8+58E9Jdg+n14WU2+1BCIGqqmQfD1J/9TmWmQFUVUUIwcVtaTWAYe73ewD0+72lEHmx8PnRZssXwEgwCxNCWBKYgGgiqR+d3dGud0DSkZxeZKeLZjWPf/f8wYDYrlAuZKRiLk0g7GU06KL1uozGQ0IRhVYtez+bZFZzvxBNJPVQRGFnX6Fd7yKveVn3eH9h2hfPT1eWX5u7QbmQkQAdMCEa4NsG2CSaSOqTHusKhmrtMgCNSp6xVpqYYaB1zDdbgGvvUF9sKObSNCp5i9ECmDX7w3EANoIKoYhCszoFLA6xrDB8ezF3/G7ZT7YF2Om9/mrCPceXZgqHUZCDsbnpq8qSIH5yYzkkTO8iB2Nz9R8c8ofiMAa2EgAAAABJRU5ErkJggg==",
             name: "Suur-Vesimagi",
             description: null,
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Vesimagi"
+        },
+        {
+            id: "watermage",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4nK1QMUvDQBh9J4XQ4q01HUJoHESyiBYcuolLUXDoH3BzkfQXONXNqZ30HzjoIBScHIVW0joFJ1tChKYiIlxpORHO6UpiLhHBt3x873vfu/cdQQp2DgctTcuDUgrGGG4v1hsq3VLWMgAwxkApRe3oqaXS5qJNtd4UJauCt8kEnK+0NS0PzucAAEqpMmkswf31CRkPXXx9TvHx/grO55AmjLHfDSR0YxmFAnOkiawqEBUpTwmDKWYz2rbWhHN1VlNqcyry5eESAFCyKgCEo3w66wSJ8dCNVYnG3qlINTANW+jFcsLMNOzFUjfspifQi2X0+p3FvY935wAAP/CIadhie2tfROfKP0iDH3jED7wYl0jQ63fIxu6x+MmrOKXBX/H/BtGo4cjF8+CGhCM3MctEtd4Uq5sHItqnab8BLBF+gUu5/fEAAAAASUVORK5CYII=",
+            name: "Vesimagi",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vesimagi"
         },
         {
             id: "icemage",
@@ -1386,7 +1418,7 @@ const apothIcons = {
         },
         {
             id: "barfer_greater_apotheosis",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQklEQVR4nMWRMWvCQBiG38tPcMjSktEtWV2UgquLS1IF6SaFnDjVpQYHiaVgJuGC4FAoHWwCblmFgHRyafsPMnTwF3RLpzsuMYljXzi477vvfe69BPhvEbkYOE7K92+uS87HLwAA4DF4T+X6ybqtBCkDx0n5zXlzWa8wAYdohp4ZWJgWpmFQmkThG83QM+aFaQEApmFQmUQpasrGSxKAiPmImH82wHsR8wtTiHft1t1UvTJAvVgc6q0WNENHxHx0qI2I+fiMY1IIaN+1UwCYm01xyGEdaote/mOKouf0RLxTcoIMo16MDrWRfH3jJ/nA/nVPMgDZLEsGUS8Ge7jBLDwAgICQMnMeNDebGE82WC2HGYj4C6NGHdb1r1iyVE3FLDxgtRxiPNmIp+3W3VTZulsyatRx//yCY60vFo9fpWOtjz+4GYPRBjbfRwAAAABJRU5ErkJggg==",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABRUlEQVR4nMWRMUvDQBTH/yl+ATtkUTK6JatLi9C1i0tiA8WtCD3pZBcbKpRWhGYqpAgdBHExAbeuhXDFqVPzDTI49BO4nYv3uCRNHf3Dwb279/+99+6A/5amBm3PE3L/Nh5rxfQ/AABwH74LNX50rg6CKm3PE7Jy3lx2trcDCTEsM5MwsR0MorC0k4rcGJZJ5ontUMIgCjMFSgHpNimYlsGczhLO94KO1ISEc5j1OgzLxDKYo8m6SLcJEs7RZF0AEPkRCfDgHkM/scD8mKrJ0aR+IRnRwzSuGwIARnaNLpkfF4z5x6Sg5bVotl26gwpjfkzjfKWfWL2utAxANatSQcyPEdxdYBitAYAgWpk5DxrZNfT6C8ymnQyEvvH2/AzO6TctVbqhYxitMZt20OsvaLSP50tRkeabpxdsqi4t2f4hbaoufgCuGoqLuxrfgAAAAABJRU5ErkJggg==",
             name: "Suur-Turvonnu velho",
             description: null,
             bgImage: null,
@@ -1473,68 +1505,124 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/S\u00e4tkymestari"
         },
         {
-            id: "wizard_ambrosia",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOUlEQVR4nGNgoBAw4pL4cVLtPzs7OwMDqwQDw+8XDIwGl7GqZcKrmYGBgeH3CwYGVgmG/xd0/xNtwPfPTxl+/vzJwMDAAKGhhhBtwLPXf+CGsLOzIwwhxoC0hJD/y87GoRiC7CKCBty684Dh6InzDMiGBDZoMnCY3yIciA42JvCAghmiF8/DYG1hyKCvow6XQw5QFnQTrS0MGV6/eY/VuUoKMv/PzkGVQzHA2sKQYfma7Qx3NwgyMDAwMNQssUBRDBEXxO2F12/eM9zdIMjw4c09rC5QDnjPULPEAiVRYY1GBgYGBoOYX7ikcHth1oI1jHsOyPxnYBBk4OUhSj9mIPLycDMwMDAwCArwYgTmvQdPGFt7ZuM3QFCAF8MWXLGCYUBaQsh/BgYGBlERQQyN5ia6DBev3MQwAAAx2YRp9ZciBgAAAABJRU5ErkJggg==",
-            name: "Kuolemattomuudenmestari",
+            id: "flesh_wizard_twitchy",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABPUlEQVR4nIWSMWrDQBBFnxcXKhaBb6AFgdNZkFJbqjJp3AbcpM013KbMCYQPYDCuUroNqDUY1jcwCBXqnEKMWMsrZ5oFzb4/f/9o8rVY3FKtSbKMS1URqiTLAIJ9NQYLJKDfPzdNf2eyy/Pb2ERfYAinWncOBHhZrYJWh3CqNYW1vZACiIxBTmmEbMvUyJheRAHsy5LWOVrnSLXuRXy4sPbueZExvK3XTOU9P8cjQHexqu5ECmuJjCEBvg8HPpdLImNonesciEhhbW9b7AoM8LHdPpwqFJ6/BYFb5wD4vV4BeN9suhBb5+7CG65QQJk6LHWpKvZl2YckTs5Nw6muR0GpyS7Pb6E/UQTE8lipc9MEYanX2ey5wKmuH/ZeWEuqNfM4/ldEAfgiEqIf5rNnTOdx3O8cugAlE//7mMgf1hG0xnwCGbQAAAAASUVORK5CYII=",
+            name: "Kirottu S\u00e4tkij\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kuolemattomuudenmestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottu S\u00e4tkij\u00e4"
         },
         {
-            id: "wizard_copeseethmald",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJklEQVR4nJWSIWvDQBTHfxlTVVGFZiYinI4vdKbEVNSEQFPoFxjUhOlSqCqZGcxMhi6DuYiaUNUPUKIv1RP9EjeVki1cmj1z3Lv3fvf+/zu4EdvhULWd33Vt1IG0AICd76v62hmw831lDQYAPEcRANW+E+BUlgDMw5BovWYehtop7/8m8jxXQghep1NIU15WKz7StDug2GwogGWWXSHflwtWv39bwnY0upr1tViwzDJOZUmQJBylvNbVTW1MECQJslZcj4njqEfL0ksIkoSn8ZiZ6wIg4vhXcZXXAqSUzFxXq/mzKHg7HLBt26hy2o901MhoncDzPGPiOArgodf7P6De6Jhmw8z9+Wzsbbsd4Jhm4xbdqzQAeZ4rACFEo9GPY949rwH4AbR3ZCNzypkZAAAAAElFTkSuQmCC",
-            name: "Uistelunmestari",
+            id: "flesh_wizard_swapper",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABcklEQVR4nH2TMY7CMBBFHxEFRZaOglSJhARleii3IVlpT8AJch4OQpFUlBzA2xEpkqmgNy7SsUUYrxN2140t+8//M+M/o8N6/eC54jQF4KIUw9VYyyIMHUZwwfDCJ/KDa2N6mItSNNYy8jMQlaHiJEloteZ4OrEIQxprAViEIcFQsbxeidOUj93OBQNMksQR1sY4odFXUTwknffNBoDZdgvA/XzuldJq7bK5KEWcpgR+sKgBzPOct9WqR+Bn01jbNVEaJI+z7ZZ5njuS6PPz5UdaramNobGWoDaGIstotQbgbbnsge91/UIwSRKKLKM2hiCPol5618OBW1kCcCvLlz74JHkUMfY77VT/CPJLmCRJ18Tj6eTSl11I/iNqtWZfVQSLMERIfrPwkBh+3LicTjsrC4kP9oMuSr3ciyvHAhKLllVFkWWdUQaqMbCvKpbTqXNlbxbgZwb8AZIA/x26ERjLQeqSR9n9c5ym8MQ11oJSfAPI3eGNbq4YvgAAAABJRU5ErkJggg==",
+            name: "Kirottu Korvaaja",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Uistelunmestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottu Korvaaja"
         },
         {
-            id: "wizard_duck",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABa0lEQVR4nKWSP0gCcRTHP5diKRRCUUMgB8mBSzm5hFEZtzTkUDYEUQgRSEugS4NLk7a6NES41RA2uJwJgbRIgZtwNOTW/6GGC0GuITw87y6C3vS473uf9+X7O/hnCU7CbG5F7/Y3mUvHOVthZn9BB/CMDAHg8XkcQQN2AO35E4D2xxcAnYsnJwP2DqbWwrpr0I13fJiuk+TorWlmd+9FAHD3LyuKokuSRCwdN5wAvAkdoz/IvhuHLYBG5ZBGBar5ErF0HIANV4dMz1JvmTLIpeeM5M8Lm1TzJQKtRxKpIjvr04a2mNk2eouDRKqIqqp2x1ieD+pNz5jpmwmQSBVJbS2hRaIAnEhZ07AWiSL2QU0AVVXRIlEeGk3EcMjiwFuvUTi9QhRFIw/b/wAg2LpzkkxlAsiyLHjrNULt1z8tg02IkxO+HwcBvyXM8vW9UBbF3wHBgN9yxelVLABFUXQASZIsi6vJI47PZAvgG3EzaFzfgAh0AAAAAElFTkSuQmCC",
-            name: "Sinisorsienmestari",
+            id: "flesh_wizard_neutral",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABp0lEQVR4nH2QQUsbURSFv0gWmhn8AULFYtBSSid7pQY3IaSbQhbZuRBmMVm1/gzz3M1ishV0ITQaKhQqtAWhdJcURTOktdh/MGZSd7cLfa9jJvFs3rvv3XPuOTfzZnNDuEfn23eWXr4gZ1kADOMYgNvhX677P/l1fgFAs9lk77jNdG6GrCbr5vDHGfP5RaZzM3zcPzCEbrdr7q7r8v7zJ3KWRXYYx2ZCubgOgO/7WtcQRu8GMgLP8yQIAhERc2qM1qVaVVICyWbP81Lk5FmqVYXkxHEijznZrpQl8/T5MykX13EcByCVcWzu+/eofQilWnXi1GSESQ5TAiJ3ixwl9xqNsYOmxlkDTCSNpa2tVKxQKdiulFOqk2rtIggC6TUacrSy8t9BvV5/sKxQqdTiNIo3N1y2WgBMAbwrruH7forkuq6JpP/aq6t82N0FYKFQIPN27ZUA7Hz5app03lApbq+uODk9JW/bD8T7gwF52yYbX//Bmn9CqBSXrRb9wYDXgPJ9lmdnydu2IS8UCvzudADMW0Y5jvSiyDRr9V4UUZmbM8QktAjAP5+v3MVppgCqAAAAAElFTkSuQmCC",
+            name: "Kirottu Neutraloija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sinisorsienmestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottu Neutraloija"
         },
         {
-            id: "enchanted_duck",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2klEQVR4nGNgGAUEgV+b8X+/NuP/uOSZCGk+2HkHrwUshFxgX67CwMDAwPBxSwjcFfw+axiJNoCBgYHhzZ2PDM9Z9jAwMDAwaJR9YESWg3th2eQSDH9uqjrLyMDAwCCiws+QdEMEQzOGC5ZNLvn/7fJhBi5dW4Zvlw9DDGH4g9d1cBfANHDp2jIc2rQerkBq/wcGvwe4fQo3IGXWSUaYIQwMDAxn7r9hOHP/DYOJoggDAwMDw7F5dzCcz8DAwIAhOCfN/D+yF1JmncSqES9AjjJCAGdCIsUQigAAVKJGA5PVAuYAAAAASUVORK5CYII=",
-            name: "Lumottu ankka",
+            id: "flesh_wizard_manaeater",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABq0lEQVR4nIWTsWrjQBRFj0TKQaDWhbBhiEBNBG4ETrmFTb4gzX6AXeRLtlCx/oA0qVOEuNgyxTQCbSNQENiocCsQ03uL7JuVtGz2NRLDu/e+e+eN97xaXQDmaYrUqSwB0FEEwKGq+HJ7y6ksaayl7nviIADAn4Lk21jL9WIBQN33/Hh74+V8BuBuNkMrhVbqD0Fj7Qhc9z0AuTEUXUfd9zxkGVophhN7325uLlopdBRxqCq0Uk6p6DqWYchDln0Qt+0IDOBrpWisJTeGdZKgo4ii61xD0XXOSmPtX3b9eZqilXKhXC8WmO12RALw9fWVuu9prB3Z9U9liZDkxpDt90wr2+9ZhqELdJ0kjshlMAxuqj4ss90CsHt6Ig4CvOfV6vJyPn8KmtYyDLmbzZinKVcAcRDw/f7ejfsZUPrlJq4aa1knCe/HI7kx/x1d+vTv7Lyfu91luKLw7wweNxv3LzvjA+4WBCxq08qN4VBVNG3r+v1hQxwETkX8CtnwGmWh5mn6sQeyFGLh/XgcgR43G4quIw4C95BkmTx5zhJm07Y01roR5Vw8i7KI/gIezfb3vduHlAAAAABJRU5ErkJggg==",
+            name: "Kirottu Manavampyyri",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lumottu ankka"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottu Manavampyyri"
         },
         {
-            id: "wizard_explosive",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABTElEQVR4nGNgoBAw4pKYn+byH8ZOnLUHpzqsEvPTXP7/1HFkYGBgYHj6/DXDq9dvGGbOWYJVLQs+5+07eJzh7r2H+JQwMGET3PToEwMDAwODk70lg4mxPoOJsT7xBuzatet//4xVDAwMEOeLiYqQ5oKdyycwTG7MYvDwi4aLvX//Aa8hcFCc6PUfGT948OC/lor0/wcPHvyP8LaExwpyDGEEYm79NIZbt25htcDVSue/BNMfFDEUA3LrpzGkRvkwROlIMDAwMDCoVc1BUQwTx2nArVu3GKJ0JBj2XXvC4KQlg6F42ZUXDLOXbWFQUFCApwms0cjAwMCw8+lXXFIoAMUANzc3xmVXXjC8+Ic3faEADJXCgrwMDAwMDNJighiBufvYFUYFBQX8BkiLCWLYgitWMAzYtWvXfwYGBgY1NTUMjUn5jQwrtrphGAAAb2Zs6f25nAoAAAAASUVORK5CYII=",
-            name: "R\u00e4j\u00e4hteidenmestari",
+            id: "flesh_wizard_wands",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhUlEQVR4nH2TrXLCQBSFPzIIxBZXUVQykxlwrAeJKfQFKrA1kX2Gyso+SEXBIPMAiyMzmSGqpm67oi4VcLc3MNM1+dl77jln79ne+2zWAtQh8Lzf91DrdTptc2OoQ2AxnwPQONep7afWnqqd43U6bSvvGQ+H5MYAkFoLztE4R2otqbXUZRlJ+rqrgHJjkMaNc4hCzk2kDqC/K0tyY6JEzoBLsIAatQ+QiEe9Id91CNQhUHl/UqD2n7KsjRakCWfQ48sLX9stkyzj53hkAQzO77uypPL+T4F4rbwntZaH9Zq71Yrb+/tYJGCAxXxOsVzGKSUitVguGWQZN5MJADfjcQTLU953ZclqNCI3hkS6CosAv6sqKhB2saBHnKTWdlgE+H04dE7753jkbbPp5kMOURgGWXYFlLVT4Ynhg5MF7fWSXctejUZXI0+ks/b5n2ydm8Y5evuiaGUSlfdxRFqyjjZ009jbF0Wrf358fnYuk45xau1VYhMNrkOI89XsEmO5kVJbec8vQGUAzSyVyIcAAAAASUVORK5CYII=",
+            name: "Kirottu Nukketaiteilija",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/R\u00e4j\u00e4hteidenmestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottu Nukketaiteilija"
         },
         {
-            id: "wizard_jackofalltrades",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABXElEQVR4nI1SPUsDQRB9J2kSiCnkimCzl8RtEkiV4sBK5QoLNyqc+APsLCKBCPkDgmA+EP9AmmAgxlgeCQgWKWytDs+kstBKSxHGQnJw7G7IVMPOvDdv5i2giPXTTZrnZrlAqp55rOgKy5LEFrHnmiIEft6/LE8Qz66Fubt3CADoAfR6NjQWDQzDdIuUawqqBx0y3SKZbpHqQUe5hqTA8zzinKNUE+ihj5OL6r+Ch75ymCTJbj8SAHQFQ6kmkLIZAEAnP+LCHAwAx8MZni+H+Bi8Y7TfRqFyE9ayrYMwl1boCgbf95VyM0dV+v4dRd4iBF3BsHV+DcOeAgDGvBFpNuwpUsjqV/B9H4Y9xddToFRAEwvjcgNB5S68h/YnxmfbupJegeM4Bk0srMZ2lgIrFSTSGSTSGSStvHTMt9srgzEWsVNyIWnlpSk6VyQCz/MI+AHnXAI2djfgtGSCP8cCbCTdBRAhAAAAAElFTkSuQmCC",
-            name: "Eimit\u00e4\u00e4nmestari",
+            id: "lukki_tentacle_hungry",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABUElEQVR4nG2Sq27DQBBFT62CgI1ZuS1ZWsPlMQwJzKcWhBXmAxbW0kpe5A9wFoS1oJ3xOMkwP2buPXfm7fNw+Eml0DlHEwIAOUZSKRyHAYCv65XOOVIpAHTOAdCEQNWEoB9zjEhJ865tOQ4DImIH5RipeChRfywZKIJSlagKgljftS0fp5O6ANSloKZSVgdNCIqwa1v2fc/ee1WyKBa1sjyifp8m9t7juo593wNwnyZtSqXQhMBxGKiEJ5XCuCwby8BLF5sMmhA0GF/X2nwbx02IdqjFqMQ+oA4Abt/fT4MEY1wWHaIhplLwda0/3aeJkpIOsi58XSvGu12jrun/50cMKXu1FaAPnXNc5nnNwaiLK7vCHONfiK8w7NpsXeZZmzcIcuuC0Z/PT+HlGPF1re+bENZDEi7BsA7sKdu7yTGuhySnLBg5xs1Gcoyb8MTtL3uI60jNZMEDAAAAAElFTkSuQmCC",
+            name: "Kirottuolento",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Eimit\u00e4\u00e4nmestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kirottuolento"
         },
         {
-            id: "wizard_manaeater",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABSUlEQVR4nKWSv07CUBTGvxpt0qQLqQOQNBFINC5sdGnD0FAcfQGi0YnF1UWfwLULE4svIIkd8BIGQhlYeALAtAlF5zvRxDoYq+3tbUw82z3nO7/z7wL/NIEXcE0zortd/D6bTjO1e3nJZrOJmedh5nkYGkb0J8DQMOLKN70e3ijFfafDHSGzg2+zu13QMMSVbXM1zFz91TLSS2W8WlbCL4si9PGY0TMdHFxcYm5ZOCIEsihCFkW853SZADz+WtTcsnDoOLhbLKARgqcg+Bmt0Yh1+2miRgjcYJNZ7bxYjD5SvgRAIwS3lQpaqvrlmEwS4tjPA7jBBi1VxYvvo50hHvk+HtZrnEhSvEzuGT1KeaGEJQDX1Zow8v38z5EyZonHhQIAoK4ozDIH260wkKR8QF1RmCq8qzCA/moZhQD0UplJPHWegWqNAXwCoaNtBYREQDMAAAAASUVORK5CYII=",
-            name: "Mananmestari",
+            id: "wizard_corrupt_weaken",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJUlEQVR4nGNgwAHU1FT/Xzlz7D+MvXTOtP/Y1DHh0lxfVghnMzAwMOgbGDBgM4QFmwHySpoMDAwMDEFR8Qy3bt1mhLKxugCn85G9AAPofKxegDkZ5gWYs9XUVP9fvHCBsO1L50z7f+XMsf+wgEMOSKKcHxmT+D8yJhFuCEwzUbEQGZMIV9Q6YTbDumUL4TGyYM0OrBZihEF1QSqDj4Mpg4+DKVxM38CAgYGBgcHYxAJ/NFYXpDLEZxQxfP70loGBgYFh3bKFGDZeOXPsv46JFSNWF1y8cAGumViANSXiA+hRiWJAdEoWIy+fMAMvnzDRBmIkZSERMQYGBgYGNQ1NDNvOnjnBGJ1yAr8BIiKYtuNLgSgGwBILLNqQNSaEeDDs3rEJwwAA4x99l99rW44AAAAASUVORK5CYII=",
+            name: "Korruptoitunut Turvattomuusmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mananmestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Turvattomuusmestari"
         },
         {
-            id: "wizard_transmutation",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABi0lEQVR4nLWRSyhEURzGf3e85TFDEzPyKHcySaGIJEUmCyRZ2JA9RlayEWXFxmIie1mOmpCFbCQWFDYTuotJZOPmkTC65lhgdB8jG//l/3zf73znO/Af4y/qFP6iTgHQ62wUvc5GkUgrWZkBkmzgtbuJxkDLTiGy4k0PeMaiRr3NuAhcb0rlGYV47W583U5SCtK4XW2gbPDs1SqBCQBw8HCOpsHezhPvDzHyxsPYnt8tn2ACLCqKmLxY5/Tliub2DpJyc7lbGEJkZlgCTB3Mt4wLAF9wiqW6AaqyStGy04isjKYHPJ7fO/g2A2z3zTJ8vEpIPaJ1a4Zo32S8g4m2/rgu2Uj0habZV9WvfJIuZpfcIt5ijzq9DuALTTNV30NliQuApuCyTvy5dyUG7KsqlSUuTiLn1JRVGMMRvrxh9jBErcMR787yGwHub7VER7rRAUZkWQpf3pBqy/mTGSxKdGc6AZDtxT9lfs2GsittOBy/A2R7sekWIyghYFFRBEBTfr7JWL02B3LQBPgAkyl5fyf30HMAAAAASUVORK5CYII=",
-            name: "Transmutaatioidenmestari",
+            id: "wizard_corrupt_twitchy",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABc0lEQVR4nI2SsUsCcRTHv4aDkOLQdBdcyw0ORSBICOGQSyZC1yZ4QwY2CIJLCBLhcK3KQUMOEShFhAhFapBQIUgELbrVYpC39CcEr+kO734/rS/8+P14vPd53/f4ARypWpz+G5/jJY6GBg4fD2zJqhan0dDgpbPq9XoUSQbJhKhanCLJoAWchLt4gN39bep033B9foH7nxs8nT4AAJaWBQBArXjHrbMkyBIVS1kynUzezly3M5CrpigWVpBW8gCA46wOAHh//Ua7e8k0Y6wEoiECgHKlgLSSR1pNYDz+giguQjs6mW09EA3R5OkMGiTIErUHDZLXViz7xVLWejMjlCsFtPtNbgNBlmgzGrTFbP/AtO0z/PAZfgaQVhMQxcXpgHa/ac3M01ntFus7G7ZdcH8iAFy1nrlx53i2HeiZukuQJQKA+QV2BJ6YJZqFbq8HLUc34+PTpWfqswFur+dP21MBuWqKACAWVpjCrb1V6C8DBvAL1aaQ/YwnE50AAAAASUVORK5CYII=",
+            name: "Korruptoitunut S\u00e4tkymestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Transmutaatioidenmestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut S\u00e4tkymestari"
+        },
+        {
+            id: "wizard_corrupt_teleport",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABKklEQVR4nGNgwAPK42z/45NnYGBgYCJGc6CDJk6DGIm1uXPRYaxqsbrg1qM3KDQ+gNWAhy8+MDAwMDCoyYkw3Hr0huHWozc4vYFhwLoZAf8ndacy7D51h+HWozcManIicMOIMmDxtecMvbt3MkzqToW7hGgvBOaZw50JM2T3qTsMxcWhDCd/voOrQw5kFnQTi13dGV49vYTVNm1r2f9qrDwoYigGFLu6M6R3zGfwUVZgYGBgYPANRTUAJo7TC6+eXmLwUVbAGX1b7j5g8A11REkTOFMisp/RLUEGKF4IytjAqG0t+5+BgYFBlIEPl9m4DWBgYGAQlYFoFBTnwbDt6tHHjEFHH+M3QFCcB10IZ6xgGLBuRsB/BgYGBjFpPQyNeY6qDAdWXsUwAAB1HWnakn2QRgAAAABJRU5ErkJggg==",
+            name: "Korruptoitunut Siirt\u00e4j\u00e4mestari",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Siirt\u00e4j\u00e4mestari"
+        },
+        {
+            id: "wizard_corrupt_swapper",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABU0lEQVR4nI3QsUsCYRjH8e+lnH9BHBcOSbRE4JQSNEmQoGumnEODVIMEkQ4uTZGLh1PgEDmJCA5FDQ0iBZKUkyBup0ND/0BLLtfkoXfvac9y8Lzv+3l+z4Gg0rG0KeqLasXtYIokD5ILMSFg7p8BoJU7pieaXYg4gMPzWxPgd2PX6nmi2f8n0LMxRtU8ciDIZNwHsL7/Aoa9AY1mnVE1j8/oMhn3kQNBK9lS4P3tibtSkUazjvFlIAeCSK0KPqO7PMHVyak1ZYqMqnluytfI3h/rnlbuWPe8djGTKzDsDYTTIqGwuba6yewuc0AmV+A4fYSa0gEo2gA1pWP/EXMrDHsD1JSO1KoIE3zXLynG/NQu9iQhMFu+15Kwb19vboWoFpciobAJsK6qbrY7MPvQryiOae3PD6mtxRcDfkVZGtsVeKk9mwBbO9uOh4lEhvvHBwfwB9d7b+0AJG7kAAAAAElFTkSuQmCC",
+            name: "Korruptoitunut Vaihdosmestari",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Vaihdosmestari"
+        },
+        {
+            id: "wizard_corrupt_neutral",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABpUlEQVR4nIWSP0gCURzHv8aNNwiGDqFQQpmdgiC3iFtBHHIdDUUYEbRGiOUUNBS0FUXYEATRElRDg0LgIIgItYQKyd0kt5T453QRBK/XlGHvLr/Tg/f9ft73994DRqher5OfdblcJn/3GbNgMpkkHMeh1+shnU6TarUKjuMon8UMoGkaKZVKsNvtcDgcaDQaaLfb4Hl+KGPaoNlswu/3g2VZMAwDXdfR6XQo35hReNLrIW63G4qioFKpQNd1ZLNZsCw7GhA7PSGJwyNMzc1C0zT4fD5kMhkEg0H0+32zwr8SxCgRxCi5fHwgk14PKRaLJJ/Pk263S70A1UAQowNT6vYJicMjSGurKH1+YH5xeeBTVXXgoy4xsiFBUVXDdjPeADnY34PT6TRuENmQcH5wjAn9C9viEgW4v7tBOBxGoVAwBiiqiuurCwiCgFarRQFW1jaRen1BKBQa/AVqBFmWUavVkHrOYX1ni4L8HW8IcBbftcx4AwQAbOMOKmwkqsFP0Gq1UafJ728WOf72P8BqtY2sbQqInZ4QAJh2uaggLy2gkHumAN/UD6OIdfXsVgAAAABJRU5ErkJggg==",
+            name: "Korruptoitunut Maadoittajamestari",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Maadoittajamestari"
+        },
+        {
+            id: "wizard_corrupt_manaeater",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABe0lEQVR4nKWSv0sCYRjHP0YJERGHDVfQkIahg1uRetNLuBj4D/QDGvwP0ilwcBHHmhxcXGrLwSXB4eDWhpYwssHBkwgaGg4cetquzjsr6Jme93m/z/d5nu/zwD8tNOvDUkrGkwl6OAxAttcLxM79lHw/HHL79ERGKSyl5E8E3ytXikUGb29UGo2ZI8xPB+7e3wHQw2GOajU3Pp5MAgl8HSxdX5EzTZcIoFIsulr8ai3DkJZhSN9xRKpV2VtZkcPlZfmTBi3D8IDS9brrr3Y6rv+dzKfBbreLZY+w7NEXcbnMI1DQddnf2PDgPbvtO46UNjcpJZMAZJQiXa+z9fHB+csLr/m8iw28i+bzQCyl5GJnRyylXB36jiNniYQUdF36juMZM/CQAG5sG4DLdnsWBJjS4DQaCxV0XQDimoZlj8iZpkePafN1ENc04ppGKhJh4fgEgIf8AQDt8Ti0vbjomd23hVQk4nn/VB2mttB8HghAdm09MPk0GvMp/wlDQZhAJA//cgAAAABJRU5ErkJggg==",
+            name: "Korruptoitunut Mananmestari",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Mananmestari"
+        },
+        {
+            id: "wizard_corrupt_hearty",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLElEQVR4nM2RPUgCcRjGfxet2kkODrdYOB2EIMQRCAU3CoJDe3BrIOba4iyH8yEERYtDINh22HBgLlHiGNEiGORHckvbNYSH+r9Lx97x/fg9z8ML/7qerQtv3c5WULOiqt6tpnmbQATAtF7wmuMZb67LqN8DYA7b2IHdLdIcz3hsDxn1e8RVlYqqBkK2VxumNQGrhd0toms1aAMM2Y9E1ju4PDz2VczTlu/k/P4M++vb33vIZv09wUGpkQO7E6iWSShefncnPEKpkUPXalRTSQDS+jJg3g+NgN2hmkriTCaBDsqv76Rv8pw4jhQMWKjrTzd4sBJvKULMuJMyCcUDOJDjYexwwOKhEpUFtaePgRQzBn8DlKgsyoR8RQBM64Xf/+pHwqFZ3uPKeBEAPzv3YtSokz9AAAAAAElFTkSuQmCC",
+            name: "Korruptoitunut Haavoittajamestari",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Haavoittajamestari"
+        },
+        {
+            id: "wizard_corrupt_returner",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLElEQVR4nJVRsU7DMBS8IIYKiYE0XZwhVSe6gLcIRkuFsR0qVWJirMIe8Qv0C1B/gaULquSO/EB/IUunYjbEdgyRrbZxUjjJ8ntPvnv3/AAPSNJISRsDALWmjRthpOQyTUmSluTuLDsu4FxYkoXWXnLALCNGozIbDP7cAKuVv75MU772+/Q5qHOxByNldfb//MFYDR3JfubhRprJWnOshrSxPTfXt26duVJO6MQnNDcF5qYok8XC1ZNI8H463Xt7upu8PT+h+/CIydUlAODlQNjWa2GkZK4U73o95kqRWjNptdwISSQqm/COAAAfnz/e+lee148QrtdBEgkCgDhvdusVAAARdwEAcbtT6VZsN0G43TQLxO1Oje2z4w6MlIQpcDGb7RBLvAffCD0Cvxzd5vzC4AD4AAAAAElFTkSuQmCC",
+            name: "Korruptoitunut Palauttajamestari",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Palauttajamestari"
+        },
+        {
+            id: "wizard_corrupt_ambrosia",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABB0lEQVR4nGNgGAXUB9Ulqf+VFGTg2MHG5D8+9UzoAkdPnGeIDPGE8x89ecGAzxAUA2AKYYb8/v2b4ffv3wx37z9mqC5JhRvyYqEBnM2CbqK1hSHD6zfvEV4qzWZ4/folw4+fvxiUFGT+z09iRlHPgq55+ZrtDMcaRRgYGBgYONhDGBgYGBhmLVjDEBfpBxfH6YXXb94zHGsUYbj58D1cIwMDA0NaAsQgq/o3DJMvmzJIxF9gxGoAMph82RSuEWYQNoBiwKwFaxit6t8wJM77S1AjDGAEIi8PN9w7DAwMDK3dU+Fy9x48YWztmY3fAEEBXqw2IccMTgPSEkL+MzAwMIiKCOLUgA4AzOBjPNoI6mIAAAAASUVORK5CYII=",
+            name: "Korruptoitunut Kuolemattomuudenmestari",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Kuolemattomuudenmestari"
         },
         {
             id: "wizard_corrupt_wands",
@@ -1546,75 +1634,75 @@ const apothIcons = {
         },
         {
             id: "wizard_z_poly_miniboss",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABXElEQVR4nK2QPUhCYRSGnxvR4tLfEgjRVEPjxYSgQSIahKQUpLQxwkUJsaWmpsDBFrE1ryFkYeAQDgUtOUjgEgVBSOJiP3dxaTlN93LNaxH1wgff+Tjvc877wX8r6o7Jn41ZvyZ27z/KajTuv4Z9NdqBrFIMsupUCRdCSq9GgHAhpNgC7CKETtYA0AK5DnPUHZODSqoLxG3qWlq1pkTdMcn6NRERuUlUREQk69fM0zN7xuuT7dm5byF2vj5rMTE0TDISZOcwQbVRRQvkcO/PAFBtVG0Hm1kyXp854en9jXg6z+ryOu2PNuelU5KRIAAPry8AFO/vFIB+w7RZKioZr09c81u4egaF8cEFAHxTSMcGAK1aUy72Ls16cddju8X02Eb3HxjmXlmtsvaYEZ6vHjsa6nqZRTy2gLpe7t7AkOpUzXsyEuT47AjHgIMl7wrxdB6AyZFR6nqZul7mE91DvOXTwCHBAAAAAElFTkSuQmCC",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABSUlEQVR4nK2QP0hCURTGfy+ixak/o0tT0fywB0FDNDQ8SEpBSpvDRQmxpaYgCBxsEVvzGUIaBg5NBS05PAIhoiBoSFzsz+TScpreTeu9QuqDC+cezve757vw30oYSfmzsRCyxK3/q7qNTt037KvRDdQtzSHrfp1YOap5DQLEylHNFeAWIXq8CoAVLvaYE0ZS9uvZbyCus5fSbrQkYSSlELJEROQqXRcRkULIUscze94MyubM7I8QN99A92V8eIRMPMLWQRq7aWOFixh70wDYTdv1YZUlbwbVC49vr6RyJVaW1ui8dzitVcjEIwDcvzwDUL271QAGHdN6rarlzaAE5jcIeAb9VHBySno2AGg3WnK2c67uC9tzP27R8weO2SurlxTg6eJBNe2mTeVmtz+AI92vqzoTj3B0cohvyMeiuUwqVwJgYnRMzXwAhxSzdOBXym4AAAAASUVORK5CYII=",
             name: "Yli-innokas Muudonmuutosmestari",
             description: null,
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Yli-innokas Muudonmuutosmestari"
         },
         {
-            id: "wizard_corrupt_ambrosia",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABB0lEQVR4nGNgGAXUB9Ulqf+VFGTg2MHG5D8+9UzoAkdPnGeIDPGE8x89ecGAzxAUA2AKYYb8/v2b4ffv3wx37z9mqC5JhRvyYqEBnM2CbqK1hSHD6zfvEV4qzWZ4/folw4+fvxiUFGT+z09iRlHPgq55+ZrtDMcaRRgYGBgYONhDGBgYGBhmLVjDEBfpBxfH6YXXb94zHGsUYbj58D1cIwMDA0NaAsQgq/o3DJMvmzJIxF9gxGoAMph82RSuEWYQNoBiwKwFaxit6t8wJM77S1AjDGAEIi8PN9w7DAwMDK3dU+Fy9x48YWztmY3fAEEBXqw2IccMTgPSEkL+MzAwMIiKCOLUgA4AzOBjPNoI6mIAAAAASUVORK5CYII=",
-            name: "Korruptoitunut Kuolemattomuudenmestari",
+            id: "wizard_transmutation",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABi0lEQVR4nLWRSyhEURzGf3e85TFDEzPyKHcySaGIJEUmCyRZ2JA9RlayEWXFxmIie1mOmpCFbCQWFDYTuotJZOPmkTC65lhgdB8jG//l/3zf73znO/Af4y/qFP6iTgHQ62wUvc5GkUgrWZkBkmzgtbuJxkDLTiGy4k0PeMaiRr3NuAhcb0rlGYV47W583U5SCtK4XW2gbPDs1SqBCQBw8HCOpsHezhPvDzHyxsPYnt8tn2ACLCqKmLxY5/Tliub2DpJyc7lbGEJkZlgCTB3Mt4wLAF9wiqW6AaqyStGy04isjKYHPJ7fO/g2A2z3zTJ8vEpIPaJ1a4Zo32S8g4m2/rgu2Uj0habZV9WvfJIuZpfcIt5ijzq9DuALTTNV30NliQuApuCyTvy5dyUG7KsqlSUuTiLn1JRVGMMRvrxh9jBErcMR787yGwHub7VER7rRAUZkWQpf3pBqy/mTGSxKdGc6AZDtxT9lfs2GsittOBy/A2R7sekWIyghYFFRBEBTfr7JWL02B3LQBPgAkyl5fyf30HMAAAAASUVORK5CYII=",
+            name: "Transmutaatioidenmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Kuolemattomuudenmestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Transmutaatioidenmestari"
         },
         {
-            id: "wizard_corrupt_hearty",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLElEQVR4nM2RPUgCcRjGfxet2kkODrdYOB2EIMQRCAU3CoJDe3BrIOba4iyH8yEERYtDINh22HBgLlHiGNEiGORHckvbNYSH+r9Lx97x/fg9z8ML/7qerQtv3c5WULOiqt6tpnmbQATAtF7wmuMZb67LqN8DYA7b2IHdLdIcz3hsDxn1e8RVlYqqBkK2VxumNQGrhd0toms1aAMM2Y9E1ju4PDz2VczTlu/k/P4M++vb33vIZv09wUGpkQO7E6iWSShefncnPEKpkUPXalRTSQDS+jJg3g+NgN2hmkriTCaBDsqv76Rv8pw4jhQMWKjrTzd4sBJvKULMuJMyCcUDOJDjYexwwOKhEpUFtaePgRQzBn8DlKgsyoR8RQBM64Xf/+pHwqFZ3uPKeBEAPzv3YtSokz9AAAAAAElFTkSuQmCC",
-            name: "Korruptoitunut Haavoittajamestari",
+            id: "wizard_manaeater",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABS0lEQVR4nKWSr08CYRjHPzhlY47ArhxsBuCm8wLBQIERbnKjsdnVzcCfAMFChT+BYKFok00KtxHYKIajkUAad43wJjCcwck43zuG84nf9/t8nh/vA/+MSNjD2DA8d7NBjUYBKAyHgd6jfck3lQqD2YzBbMbYMLyDALuVb1st5qsVzVotdAQJYAvBcr0GoNtoANDsdHA3m0DA8W/h9OWZQjLFoFSC4ZBsIoGpaYd3cHJ3z3u5jDkaYQuBqWnYQhwG6BaL20X9QB4nE8zRiFfH2fp2FyqNkLcsxs4ysFpVVb3rszOf5gPkLYt6Ok1d17+Fft9n3uphgLGzpK7r2EJwFY9L5vZ0Snux4CIW2x5V4CEBvpn3ha+Dh0w2UlVVD+A8kfg7YDcxpyjSMnuuG+nFYvsBOUWRqoT9igR4+ph7n0AhmZISL/tvkMlKgC8G83XwC4os3AAAAABJRU5ErkJggg==",
+            name: "Mananmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Haavoittajamestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Mananmestari"
         },
         {
-            id: "wizard_corrupt_manaeater",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeElEQVR4nKWSv0sCcRjGP6cZCS1iwxUE/gDDpSG4lsxBsqZwbBElpxIca4j+i0MxiKKaGhsc6ppEHfIvcNDhpNOWpsODgr4tcXR6htC7ve/7vM/743nhnyZNSzRTKWF+fNj+XqPhivX8VdzSdVq6TiqZ5DGREDMRPCYSdufzbJY306RUrU5dYW5qBjhU1b/S7hO83t4Q0jQARl4vI6+X61KJxfn52Qh8uTwv6TQhTeO+WATgoFKZbYK7sUNtl8sYQvAuSSzVanZcVRQbN3GDTU2jOTBoDgw7ph0f0wMysiy+xvAObTuWJU7DYXZWVwE4SqfZLpdZ8Hi4MAyekkkbW2q3J//iqtcVqqKIfVkWqqKIjmWJz7Mz0bEscRKPi4wsi45lOdZ0fSQA3TQBqP4oMs0cBIVIVHru9+1gc2CwW6/PTgAQCwSIBQKsB4P4cnkALjc2AHgYDqU1v9+x+4QK68Ggw/+thps52K56XQGwtbziWlyIRCcu/w2YSIgEoXOUiwAAAABJRU5ErkJggg==",
-            name: "Korruptoitunut Mananmestari",
+            id: "wizard_jackofalltrades",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABXElEQVR4nI1SPUsDQRB9J2kSiCnkimCzl8RtEkiV4sBK5QoLNyqc+APsLCKBCPkDgmA+EP9AmmAgxlgeCQgWKWytDs+kstBKSxHGQnJw7G7IVMPOvDdv5i2giPXTTZrnZrlAqp55rOgKy5LEFrHnmiIEft6/LE8Qz66Fubt3CADoAfR6NjQWDQzDdIuUawqqBx0y3SKZbpHqQUe5hqTA8zzinKNUE+ihj5OL6r+Ch75ymCTJbj8SAHQFQ6kmkLIZAEAnP+LCHAwAx8MZni+H+Bi8Y7TfRqFyE9ayrYMwl1boCgbf95VyM0dV+v4dRd4iBF3BsHV+DcOeAgDGvBFpNuwpUsjqV/B9H4Y9xddToFRAEwvjcgNB5S68h/YnxmfbupJegeM4Bk0srMZ2lgIrFSTSGSTSGSStvHTMt9srgzEWsVNyIWnlpSk6VyQCz/MI+AHnXAI2djfgtGSCP8cCbCTdBRAhAAAAAElFTkSuQmCC",
+            name: "Eimit\u00e4\u00e4nmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Mananmestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Eimit\u00e4\u00e4nmestari"
         },
         {
-            id: "wizard_corrupt_neutral",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABpUlEQVR4nIWSP0gCURzHv8aNNwiGDqFQQpmdgiC3iFtBHHIdDUUYEbRGiOUUNBS0FUXYEATRElRDg0LgIIgItYQKyd0kt5T453QRBK/XlGHvLr/Tg/f9ft73994DRqher5OfdblcJn/3GbNgMpkkHMeh1+shnU6TarUKjuMon8UMoGkaKZVKsNvtcDgcaDQaaLfb4Hl+KGPaoNlswu/3g2VZMAwDXdfR6XQo35hReNLrIW63G4qioFKpQNd1ZLNZsCw7GhA7PSGJwyNMzc1C0zT4fD5kMhkEg0H0+32zwr8SxCgRxCi5fHwgk14PKRaLJJ/Pk263S70A1UAQowNT6vYJicMjSGurKH1+YH5xeeBTVXXgoy4xsiFBUVXDdjPeADnY34PT6TRuENmQcH5wjAn9C9viEgW4v7tBOBxGoVAwBiiqiuurCwiCgFarRQFW1jaRen1BKBQa/AVqBFmWUavVkHrOYX1ni4L8HW8IcBbftcx4AwQAbOMOKmwkqsFP0Gq1UafJ728WOf72P8BqtY2sbQqInZ4QAJh2uaggLy2gkHumAN/UD6OIdfXsVgAAAABJRU5ErkJggg==",
-            name: "Korruptoitunut Maadoittajamestari",
+            id: "wizard_explosive",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABTElEQVR4nGNgoBAw4pKYn+byH8ZOnLUHpzqsEvPTXP7/1HFkYGBgYHj6/DXDq9dvGGbOWYJVLQs+5+07eJzh7r2H+JQwMGET3PToEwMDAwODk70lg4mxPoOJsT7xBuzatet//4xVDAwMEOeLiYqQ5oKdyycwTG7MYvDwi4aLvX//Aa8hcFCc6PUfGT948OC/lor0/wcPHvyP8LaExwpyDGEEYm79NIZbt25htcDVSue/BNMfFDEUA3LrpzGkRvkwROlIMDAwMDCoVc1BUQwTx2nArVu3GKJ0JBj2XXvC4KQlg6F42ZUXDLOXbWFQUFCApwms0cjAwMCw8+lXXFIoAMUANzc3xmVXXjC8+Ic3faEADJXCgrwMDAwMDNJighiBufvYFUYFBQX8BkiLCWLYgitWMAzYtWvXfwYGBgY1NTUMjUn5jQwrtrphGAAAb2Zs6f25nAoAAAAASUVORK5CYII=",
+            name: "R\u00e4j\u00e4hteidenmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Maadoittajamestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/R\u00e4j\u00e4hteidenmestari"
         },
         {
-            id: "wizard_corrupt_swapper",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABU0lEQVR4nI3QsUsCYRjH8e+lnH9BHBcOSbRE4JQSNEmQoGumnEODVIMEkQ4uTZGLh1PgEDmJCA5FDQ0iBZKUkyBup0ND/0BLLtfkoXfvac9y8Lzv+3l+z4Gg0rG0KeqLasXtYIokD5ILMSFg7p8BoJU7pieaXYg4gMPzWxPgd2PX6nmi2f8n0LMxRtU8ciDIZNwHsL7/Aoa9AY1mnVE1j8/oMhn3kQNBK9lS4P3tibtSkUazjvFlIAeCSK0KPqO7PMHVyak1ZYqMqnluytfI3h/rnlbuWPe8djGTKzDsDYTTIqGwuba6yewuc0AmV+A4fYSa0gEo2gA1pWP/EXMrDHsD1JSO1KoIE3zXLynG/NQu9iQhMFu+15Kwb19vboWoFpciobAJsK6qbrY7MPvQryiOae3PD6mtxRcDfkVZGtsVeKk9mwBbO9uOh4lEhvvHBwfwB9d7b+0AJG7kAAAAAElFTkSuQmCC",
-            name: "Korruptoitunut Vaihdosmestari",
+            id: "enchanted_duck",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2klEQVR4nGNgGAUEgV+b8X+/NuP/uOSZCGk+2HkHrwUshFxgX67CwMDAwPBxSwjcFfw+axiJNoCBgYHhzZ2PDM9Z9jAwMDAwaJR9YESWg3th2eQSDH9uqjrLyMDAwCCiws+QdEMEQzOGC5ZNLvn/7fJhBi5dW4Zvlw9DDGH4g9d1cBfANHDp2jIc2rQerkBq/wcGvwe4fQo3IGXWSUaYIQwMDAxn7r9hOHP/DYOJoggDAwMDw7F5dzCcz8DAwIAhOCfN/D+yF1JmncSqES9AjjJCAGdCIsUQigAAVKJGA5PVAuYAAAAASUVORK5CYII=",
+            name: "Lumottu ankka",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Vaihdosmestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lumottu ankka"
         },
         {
-            id: "wizard_corrupt_teleport",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABKklEQVR4nGNgwAPK42z/45NnYGBgYCJGc6CDJk6DGIm1uXPRYaxqsbrg1qM3KDQ+gNWAhy8+MDAwMDCoyYkw3Hr0huHWozc4vYFhwLoZAf8ndacy7D51h+HWozcManIicMOIMmDxtecMvbt3MkzqToW7hGgvBOaZw50JM2T3qTsMxcWhDCd/voOrQw5kFnQTi13dGV49vYTVNm1r2f9qrDwoYigGFLu6M6R3zGfwUVZgYGBgYPANRTUAJo7TC6+eXmLwUVbAGX1b7j5g8A11REkTOFMisp/RLUEGKF4IytjAqG0t+5+BgYFBlIEPl9m4DWBgYGAQlYFoFBTnwbDt6tHHjEFHH+M3QFCcB10IZ6xgGLBuRsB/BgYGBjFpPQyNeY6qDAdWXsUwAAB1HWnakn2QRgAAAABJRU5ErkJggg==",
-            name: "Korruptoitunut Siirt\u00e4j\u00e4mestari",
+            id: "wizard_duck",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABa0lEQVR4nKWSP0gCcRTHP5diKRRCUUMgB8mBSzm5hFEZtzTkUDYEUQgRSEugS4NLk7a6NES41RA2uJwJgbRIgZtwNOTW/6GGC0GuITw87y6C3vS473uf9+X7O/hnCU7CbG5F7/Y3mUvHOVthZn9BB/CMDAHg8XkcQQN2AO35E4D2xxcAnYsnJwP2DqbWwrpr0I13fJiuk+TorWlmd+9FAHD3LyuKokuSRCwdN5wAvAkdoz/IvhuHLYBG5ZBGBar5ErF0HIANV4dMz1JvmTLIpeeM5M8Lm1TzJQKtRxKpIjvr04a2mNk2eouDRKqIqqp2x1ieD+pNz5jpmwmQSBVJbS2hRaIAnEhZ07AWiSL2QU0AVVXRIlEeGk3EcMjiwFuvUTi9QhRFIw/b/wAg2LpzkkxlAsiyLHjrNULt1z8tg02IkxO+HwcBvyXM8vW9UBbF3wHBgN9yxelVLABFUXQASZIsi6vJI47PZAvgG3EzaFzfgAh0AAAAAElFTkSuQmCC",
+            name: "Sinisorsienmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Siirt\u00e4j\u00e4mestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sinisorsienmestari"
         },
         {
-            id: "wizard_corrupt_twitchy",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABc0lEQVR4nI2SsUsCcRTHv4aDkOLQdBdcyw0ORSBICOGQSyZC1yZ4QwY2CIJLCBLhcK3KQUMOEShFhAhFapBQIUgELbrVYpC39CcEr+kO734/rS/8+P14vPd53/f4ARypWpz+G5/jJY6GBg4fD2zJqhan0dDgpbPq9XoUSQbJhKhanCLJoAWchLt4gN39bep033B9foH7nxs8nT4AAJaWBQBArXjHrbMkyBIVS1kynUzezly3M5CrpigWVpBW8gCA46wOAHh//Ua7e8k0Y6wEoiECgHKlgLSSR1pNYDz+giguQjs6mW09EA3R5OkMGiTIErUHDZLXViz7xVLWejMjlCsFtPtNbgNBlmgzGrTFbP/AtO0z/PAZfgaQVhMQxcXpgHa/ac3M01ntFus7G7ZdcH8iAFy1nrlx53i2HeiZukuQJQKA+QV2BJ6YJZqFbq8HLUc34+PTpWfqswFur+dP21MBuWqKACAWVpjCrb1V6C8DBvAL1aaQ/YwnE50AAAAASUVORK5CYII=",
-            name: "Korruptoitunut S\u00e4tkymestari",
+            id: "wizard_copeseethmald",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABNUlEQVR4nJWSsUtCURTGvxdNTTo4GSp4x6AH8Rqr8ZEEgtfh0ZItQdDY/HhrLoFbhBU8iJDIRXF5oC1NkoVT2KDU1B9xmrxcvZ6XneVwz73n933n3gvEROA4FLcPACvLNMaBFgIAIJSS9PwvQD6bVfmw0VDrpeMgn6ZQSiIiChyHiIj+cqKi3wno5+uNdEgoJQtYnS9EdxGACPVeG8e7+0C5jM/xmB1j5g4uvB2lcnN+hnqvjYfXF5w+XeP5+0Od090YDirVGibD5kK1ghC0nUzyI1SqNRztleDZNgAgc1mcOTyts4DJsAnPttmZ7wcD3HYfkVrftKY19iPpM8+LsA62XN8qCEEAkE6tcWweoDeKXMJQa41GVsv14wEilzBUuFcxAP1OQACQ2SgajSd+CVfuuwH4BZQjeBVFm/mGAAAAAElFTkSuQmCC",
+            name: "Uistelunmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut S\u00e4tkymestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Uistelunmestari"
         },
         {
-            id: "wizard_corrupt_weaken",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJUlEQVR4nGNgwAHU1FT/Xzlz7D+MvXTOtP/Y1DHh0lxfVghnMzAwMOgbGDBgM4QFmwHySpoMDAwMDEFR8Qy3bt1mhLKxugCn85G9AAPofKxegDkZ5gWYs9XUVP9fvHCBsO1L50z7f+XMsf+wgEMOSKKcHxmT+D8yJhFuCEwzUbEQGZMIV9Q6YTbDumUL4TGyYM0OrBZihEF1QSqDj4Mpg4+DKVxM38CAgYGBgcHYxAJ/NFYXpDLEZxQxfP70loGBgYFh3bKFGDZeOXPsv46JFSNWF1y8cAGumViANSXiA+hRiWJAdEoWIy+fMAMvnzDRBmIkZSERMQYGBgYGNQ1NDNvOnjnBGJ1yAr8BIiKYtuNLgSgGwBILLNqQNSaEeDDs3rEJwwAA4x99l99rW44AAAAASUVORK5CYII=",
-            name: "Korruptoitunut Turvattomuusmestari",
+            id: "wizard_ambrosia",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOUlEQVR4nGNgoBAw4pL4cVLtPzs7OwMDqwQDw+8XDIwGl7GqZcKrmYGBgeH3CwYGVgmG/xd0/xNtwPfPTxl+/vzJwMDAAKGhhhBtwLPXf+CGsLOzIwwhxoC0hJD/y87GoRiC7CKCBty684Dh6InzDMiGBDZoMnCY3yIciA42JvCAghmiF8/DYG1hyKCvow6XQw5QFnQTrS0MGV6/eY/VuUoKMv/PzkGVQzHA2sKQYfma7Qx3NwgyMDAwMNQssUBRDBEXxO2F12/eM9zdIMjw4c09rC5QDnjPULPEAiVRYY1GBgYGBoOYX7ikcHth1oI1jHsOyPxnYBBk4OUhSj9mIPLycDMwMDAwCArwYgTmvQdPGFt7ZuM3QFCAF8MWXLGCYUBaQsh/BgYGBlERQQyN5ia6DBev3MQwAAAx2YRp9ZciBgAAAABJRU5ErkJggg==",
+            name: "Kuolemattomuudenmestari",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Korruptoitunut Turvattomuusmestari"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kuolemattomuudenmestari"
         },
         {
             id: "enlightened_alchemist",
@@ -1666,27 +1754,27 @@ const apothIcons = {
         },
         {
             id: "wraith_alchemy_apotheosis",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABX0lEQVR4nL2Qu04CQRSGPxl22SCsGi4VFiY2FBRUvIGJrSE0hFZfgJbW0naDz7BvQWUwYGIC9m6FELlMwrJmszY6YUBMiIl/NXMu3znnhz/q4Lek4zhtgFwuB0C1Wr3Ze4LjOG3Xddu78rG9if8KcF23/X1/v9//8YydJt42m9FoNsNIJgE4MQwu6/X7crmsGbkFqBQK0UWtxng6VbFUOg2AJQRXjYYGiW02T3yf8XTKx3KJWK1ICKHyfhhy12pdr/fE1z950+QsmyUhBIswxA9DLClJAaswJJVO8x4E2sY/miil1KYCJIRALhZbtRrg0LZ59DyeOx0VOzYMxrMZUkpePY+XXk8DKBMrhUKUN00AhvM5GcvitFRSGwC8DQYAPHie6osDnGezUd40Gc7nFG2bom0D8NTtApCxLCa+r+LrUiaOgkAVjL6M0v6xiFEQaNM1wKYmwVJ7F1NHCryuT/YehqsoOBcEAAAAAElFTkSuQmCC",
-            name: "Alkeeminen Outo",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABfElEQVR4nKWRQUsCQRiGH3eXaSHciMk96RyiSxeJLnbxJwR1C+kPhD9gf5b9AS95qUuEUB2CAlsyRgdEiZZV2Q6ltNoW1Xeame+bZ973Hfhn5b5rBkHQUEpRLpdpt9vU6/XDX79Qq9UaQRA0svrWT4BSqYRSKrP/IwCg0+n8DTDLQClFq9X60kZmiCfHx4knJSu5HLJYZLdSATitVqupIJcA+5ubSWFvj3g6pVAoAJB3nEyI8/ny0c5O8tDvszadImybaDDAk5LRZAJhyCVgwvAgM4OX4RATRQjbpqs1o/GYXq9H3nEYTSY8PT5y3+2mFKcUAEjXxfT7ABhjkFISas2KZdEbjxG2nZqfK6gUi8mq5+ELwfPNzXzAGENXa560BuD67OxrwMyCjmN8Ibi7upqfC8siv77OebO5KPjdwtbGRuILwe1wiHRdALY9j9sPiHRdrqOIbc9bAuRmAOm6+EIAoOMYILX3hUDHMRdhmPr6pRDn3uPX1HoGW6w3A9uL9nvmA2cAAAAASUVORK5CYII=",
+            name: "Alkeeminen H\u00e4r\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alkeeminen Outo"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alkeeminen H\u00e4r\u00f6"
         },
         {
             id: "wraith_returner_apotheosis",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5ElEQVR4nLWRT0iTYRzHP7OF4AgvibNRh/7AC2s4g+wgdFEGMYKiFIKooEOHDoIn6d7FgzBB0IPgwZAQKbDTyCStwxhz71ijV1IR25/33ebaK44hEk+H+T6be/XY9/I8z+/5fb/P8/3+4H9g51NQFOLjwjoX4uPiqKKL03qdzYXVqV6xmy5whWVZq2Rq+6OKLs673I7Gfgdn4CC7JgBa228A0Ey00NL8dYs8v2Iwv2IQ3/qDs60Ty0KjNZvAbrrAQXZNvHrzjnLJpNvn5bZPqXltEDlTYCliUjWiAOjZNIlkimhSA5BrR8+I41SBb++HBNQCc3d1odz0Ui6ZUiSRTHFo/rJlIKdw0X2V+3d2cHn6cV9qp9vnJZFMof1IUS6Zx12dtknYxljJLKPGLksbei4n76pG3aLNQv7nF5YiJpOLm7x9/Bs1FpVkPZdjdOgCYxPTdPSMOBonIb+ifR0VADOzHwB4/ei6fMXl6WdsYpo+v4sHw+snQnQCfAzdkoovXzwEYPJYqIZNWYf1ExZkBpoaRvEHKOrbFPU6oahvE4ltoKlh+u4+bY6sLjAwGOLzwjCKP0AktgGEAdjK/OXZk+fs7efZ28/bBGSIVSPKwGAITQ0TDN5D8QcAuOY5x/fVORvRwj8COdktm6SPbwAAAABJRU5ErkJggg==",
-            name: "Heijastava Outo",
+            name: "Heijastava H\u00e4r\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Heijastava Outo"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Heijastava H\u00e4r\u00f6"
         },
         {
             id: "wraith_weirdo_shield",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABY0lEQVR4nK2SP0hCURTGf0aDSxD0EIsQ6mEERTxoEdpqyE3DhiKXhsilNcghabEGh9rcDQIpbNSsNYRAHuYQkhktSpg6pZO36V2e+A+qM93L+b7fvd/hwH9WrBQRf9b6EtpQiFljGSTwan7sVgcAldYHt/olADcbuvSN9nvFMEczYYrJKqpbwav5JWRgxUoRkS7HhbY/LdLluPAlNHkfOienx9Zl8iW0DphZP2K+bN0ty2YxWSWaCaO6FRnBiNMXMGObk2fVrRBwBaW5mKwScAVR3Ur/7x/p28LpsYlfzWD3fUcYADPEyO9LaCJWiojZdaUDYDED7I02ANehBwCOzw879iAUOGPiYpKn+WdLTwCAATGDjNo8WQPgVLvqv0iV8RGahRfqr9/SUPos8Jb6IvuoU1vttHQB8q0cOMCSapJFB6BebLJwsAJArZXrDbA32txb87Ih9saoAYvWJaZMBnN+gB9b1c/3E0IOXQAAAABJRU5ErkJggg==",
-            name: "Outo",
+            name: "H\u00e4r\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Outo"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/H\u00e4r\u00f6"
         },
         {
             id: "statue",
@@ -1721,68 +1809,12 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Elvytyskristalli"
         },
         {
-            id: "whisp",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQklEQVR4nGNgQAIW5oYOuPjocjDAiC7g7mrvICoqwjC7lIeBRdKWwSd2MQMDAwPDzt0HD2AzAAX8fjHHgYGBgSE3O9mBgYGB4Uunk0NMVDCcDZPHC76fj29A5sdEBTdgE4cBFnSBv7seM0Bd0cDAwMAwqcalRVBQoOHvrvtYLcQIAwYGBob/z5dzMBw7Is4gKSHCwMDAwPD8xRsGK5uXjJKRP9DVMsEYMBv/35nJwsAl9J2Bg8Pq6+H9Zxh+/Ypk4OCwYuAS+v7/zkwMF2O44P/z5RwM9+9oM4iJnPnx+QTD312PGbiDQxkYXr0xYVBUuZrXsqdi8tS5DRguQAc/Pp9gYJG0ZWB2k2VguHmnFyaOrBm7AV8//WF4/uINi6Qtw8+Fyxg4Psr1fr1yvpjh+Ys3DF8//SHoBbg3iAzEUUAFAAC5LHapbobvqgAAAABJRU5ErkJggg==",
-            name: "Palavakeiju",
+            id: "worm_esoteric",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABsklEQVR4nJ2Tz6raUBDGfzlJG5NjtBcpFJddFx/AhW8Q6EpcC6KPpOL1AUShy659hULfooKC+ePJ5HRxk5BVK3dgODMHzndmvpnPsda6gAsowAEsUAJSxRbAcRxLy6y1DoAHfAA+VqeqHpvKa5DSWtsGcGr3AB/QQFhVIkBWeVHlUgGX1cO6atcDAqAP/K7hR6MReZ5jjEFEMMY08eVyGQyHwz+dTgff93GstV+Bz8CnOI5/GmPI85yiKBARRIQ8z0nTlKIo8DyPKIro9/torXGstd+AX/Xvs9mMoig4Ho9tzphMJhhj8H2fwWDA6XSiJrEDfAcGq9Xqtdfrsd1uWSwWKKUQEbIs43w+E8cxQRBwOBwaYFWx/wN4Xa/XBEEAgNaazWbDbrdDaw1AGIZNDLDf71E8YfUERYTH49Hcz+dzPN7m3bRQliUA9/ud5XKJiJCmKQDX6xWlFNPptGnjaRLH4zFJklCWJUEQEEURYRg+N8Ysy0iShDRNERFc18X3/WYPvgAv/GeR6vx2u+lut3t3XRelFI61ts9zq9xeZ2hpIedNMDn/EBMtZbbNea+ca/sLNSwGsxqnzEIAAAAASUVORK5CYII=",
+            name: "Esoteerinenmato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Palavakeiju"
-        },
-        {
-            id: "whisp_big",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACqklEQVR4nG2TTWhcZRSGn/e7P5k7d5jJTDJJai0yCJZIi5tSJc0ixWLXuhJBSPGnC7fSlWJHS6GrLhVctK4V3LkTLUxXbcVF7aw0CdYSSDp/nXEmM/fe42LSpEjP5uVwvuecl49zxHPCvvlwDrM5nOvr4rePnvfmaciaDdPyqg7grz8IgBrSm4hboA5YipFg1gHs2Vk+cNmaDePXGw4QTg5wSLeZCSp4XsA4WWE8+RHwgcI+nLF2oeX2k8usXcjwXAW0YOHMooUz580Pj5rnf2xOu4Z7xeQWgSrSWVbfa2FWd4dm0q84/c6Ohf5HyM4QBifBHWe49yqZ3iYIjxN4Fy0K51h593uSyTX2LR38B/8+vqljy5/bxoM/NBxVbP7I+6qWsE4XdbbP2WzhJ9VWGjhdJYgTED4gMMhS4fyM1vaGEj9n80tHCCMsEVpcwgK/qv7ueQbtH8DPEwc9JHzMYK8fIbuEPHj85L4tHTuhhQXIlUACM+R5GG5Jf/2+xmtvzUMKqC5rNozJCLZ++5nAxTZM3lB1EaISOAdyYBlkGfZoC5I9VCn+QvnlewTxpz5mdZJxntkXKrQfnlCpiPX6KD87hWGqMvB8VMiBV9xmPJzBz3/pkCBXGJIvt6m81LR2D9IUzKaTYapmqFjA2j3o7pRx4R4YDjDkjKgwtPt369rcusNkDKMeZBlk6VRHPWxnF21u3bO//7yElIFM1mx8oeXVenb9E8d4XCCKXlSSfGe12ilV57Fef+poMkabm3fN99cZDf8hcn35SXp4A1fWZUHgyLKYOD6qJLlhtdrrmitjuy20sXHHgmCdweAhzg00mWT67KbpmUU6bAIxpVKRSrlILgoYDRNa7Sd0ux3gAJ5u3/9P+cq6LI6F54lS6bDQ7UKamgYDewoD/AeBZCzMf36GhwAAAABJRU5ErkJggg==",
-            name: "J\u00e4ttipalavakeiju",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttipalavakeiju"
-        },
-        {
-            id: "whisp_giga",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABR0lEQVR4nJWTT07CQBTGf1MHEATSICRuJl11RbgHIR7Ac3kD1xoTVy48g6sGY1I3TTcmpYRYGhM246KdMkUg8HbtvO/P++aN2DzfrwG5fntpueMJq3mAO51RqzhmNQ8AMD3927sV7c6PFLJJ9vrYcseTomE6Q3h+Da8BVymIY+unlgIhHafZuDBglEJ4PjoK0VFY9VaESlUunE4b0WjgiK/g0j60geTpQRI+3rtsfvuyUh4OtsCra+iN6jlkSUE0HKBNLk8PXVkpL5aFyi7QVG+E8CxXSuECsmbvENgiMQTC89GAczLYHo8iK+H5OKehdlxYVYSYp6c7oAjSOJHm2sTNGS5KMGCNUF7TOaWj0ArRWpqjVQoZ57K2eVlyPIssqW9qHOPYD0RH4f5RsgS+PyFPtxtbvlBpPvQem+QperH8T1iKuuMJf3Ziev39UaKcAAAAAElFTkSuQmCC",
-            name: "Kolossaalinenpalavakeiju",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalinenpalavakeiju"
-        },
-        {
-            id: "fairy",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1klEQVR4nO2Rrw7CQAzGv9tu/EmWCUKCwMwjISGZmsdgJ3mTewGeBQx+ioQEJAZ1BkFCEAvjYNxWxMBsI5Bg+VSbNu2vX4G/2LsCETggeJ4JzRj01wOIREPKsOM4zTYARJE6uq5/YExci71G1eY4nijbtDytKdCaAtu0vDieqJzqAwGRaJxOq55Bo3Wi5gCAWnOMjC0GrdZwW6QoEbyUqNm0Kv6CAFxKv2ublpfVzT4AGLd0c07vS9cN90UzyzcxaCL/IGW4dDjfAUB0uT9NDCs/8dePegANUVZ88czaggAAAABJRU5ErkJggg==",
-            name: "Keiju",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Keiju"
-        },
-        {
-            id: "fairy_big",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACwUlEQVR4nIWTvY5bVRSF195nnzl3ri/jXII1GNGliOSUiSIehIYHoOcR6FEkqKlS0afNG1BNinFniSKKPXGcO765f8fnZ1MYCQQFq17SKtb3keqPBXAr6zVmq9W+2O/xmYjMmJ3j7sIBQK5OPmfvY4z9YoFP6/ViWq3QA0+iALcCYFbX07xpFnVK3UMiO58muSolXADAMLiTtaZNKRybpjrU9dQABYDbntp281PX/fDr5aX5wgb7VcxYGokPY5YHFHMBACo8Ccf7FOUgjG2w4d04pg9V9fP31LY3vzB/LDndzbv2t9+tc18r8KWq1sTkAECzeiJqCNgF799WV989z+b6mPPngxBNNsZ9afL7ypXPvs2nmx2xuYbyI1IVAIByJOgGORWufPZNSu8/JuVgTBk4hBcviUaXeCxVuyqb66cgPAbTQhPVmqgG0wKEx9lcP1XtqsRjSTS6EF685L5vy75/9ZrSqcg6FZQPTsE1KcGwg2EHUoKCa8oHl3UqKJ2Kvn/1uu/bkudUSsnm4uTf3BBlIVZBUgAWyoAyAFggKYhViLKc/Jubks3FnEph/COqd3/gf/LvDh91iENOJxGeNKvXTBGGAARQBigDQAAMQTNFzepFeBpyOh11iDKbXQ0p+TaR3nOWJkM3BipKXKfkzzOGQMhNImyYqEkc761NbVFcDRIj+pTC8ZL0oCw7k1MBNoDqIzLnGzUjgrAxOd3BmJ3EeBg1HlVdL95jnM2qg0SUg/fOOgcFJkVuQX+BRNmDqCFjdsH7t6Urtk5w6HuM0rbojJkMXRpTwiFmeJF4H7M8oPBflEvntsGGd9OYmrYtOjlbVWC7naCFTd53g6j9ECJdlXyWaYz2ZG1qo05HJ9VhGlOzXBbH5RK9AE8icNs3TYHVau/3e/TGhJm1f+tcVt7n7L1q7Ot6/LReL6bl8qzzn4yHshjSTgevAAAAAElFTkSuQmCC",
-            name: "J\u00e4ttikeiju",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttikeiju"
-        },
-        {
-            id: "fairy_giant",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB7UlEQVR4nKWSu25TQRCG/5099u762MexLTsoSoSFUExcIVHxAChvgEQPKB2ioUlFT4dC74KHyBOkSRckZBOiFFGCfI98zLmfpWF9ORAJib8Zzaz++WZnl81uzzrQYY6s0nw0li8VvT5w+9MXqkxtsLzQOvKD2+RLsbHZ+Zl+7FQr488MwgdEyJgVExGh33tVSOPhJgDEwfRQOmyPhF2nfM7hotCQZd6Ogv57AIAObK0jCUQ5sDRvaR0oIqs0/P5GyQ1+zUVpB79Vqe1jMjoGicI9AEDw/GrwLa3Wd484mMXSaJpaYCkYt7go6YdcFOtYkZV/CuB4kXNR2lYVj0bnby+0jlQaxyENegcN4egHxdqTNXOltr8WjezK4y3h6LbW2mk8+hSSLPMmF8Udb96FsltQdmuFvozmzJt3QaJQlRu0pXUoiEvnPjLKUrO5uY47fLdHq0Vv3oWUzQV1dRdSNuHNu2t1BpKsf/VMG0rW+DfF4Qkmo+ViWeR90P9ivKvR/09gGhjd1ShrBIDEd/trS1R2C75/iTg8+cPs+5eLJ17idUBJMPuRpWVJ2RwAkmB2nVPVQ/InyXniz4bmk5inMlOYaM6U3ULiuzfBNPka+4mgVCdu6ObO3PHp2iSGmqW7o9NhMGO98vbuERgGvwAdE/Gg5U2F0gAAAABJRU5ErkJggg==",
-            name: "Kolossaalinenkeiju",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalinenkeiju"
-        },
-        {
-            id: "fairy_big_discord",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACo0lEQVR4nIWTsY4cRRiEq/7p2d6bWXy3Z3RnEEJINhfwCMiJn8FPwBMQkfMoOCIjRw6xiECyRIIMJ1kGccfZ69ld78xtz3T/RXDIskgoqbKKqurjqx92c58UXj8Z2uPPm/nwYnzParasGcvOIwBUC0ualHxS33w8e/P6x2F/fL/prWYOPikAaONJOExXeQnHbWUclt5vcYYZAOS1jxa5hWOTrvIqnoQOAHxSHyB93/82fVEt7H0VfciKHzDgthmPVDQHADvgnoY1wJWKmmphVf9sRPtp/V1Qxk/tvfpbnxSH59M3VWMfyXEHjqXVjACgjCSgg+Ey7zw2n9Rf250qKeNJAFCXwX/1Sct4Gr6c1uVnkqeS7gIMACAp03kuaR5Pw8My+C+q2Vm0Ooyr8qhq+RXAxkdtqmgP3FXoWProAAALBAyhMvvMR/1hNRsJw7gqj2zsSpMuymO55iqal+QJriUIWG2w2gACcC1L8qSiuVzzdFEej11prIoMFjmbOn9KQ2DN4FmAE7QbwwnPAmsGGsLU+VOLnFWRwfCOlPEc/6P/ZkJJylZhtAPulZEkZQsEKMj/TZlgJDQpg0wWufdrjV6Uw2xZDZ60BbCGoaPzHIYA19LzuyWyo+Mchg7A2iK3IdoQPKlX0QbCihUvJc2ZCQl3bWY3M07KdJxL+pvgpYpWcGw8oQ9l79f1YbVSUZN3HqvGAGBP55ZABACQCYaO4GUZ/M+wsAtWXE2bch3Gl2VHsqoWVoWFQRmJAWsBRz7dXJnVzZWVsQoLuwD5V956N74su3B8v+kBoH82Ityy4skHgK886S1Mfq3RIrcq2li0Vd56157NNu3ZrA9WM/ukPl1ltPeaNLwYewa04cDe4hyObnCW0MeT8Kb/fdi3Z7PeauZ/AI93ptD6JopLAAAAAElFTkSuQmCC",
-            name: "J\u00e4ttiristiriitakeiju",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttiristiriitakeiju"
-        },
-        {
-            id: "fairy_esoteric",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACSklEQVR4nI2Tv2tTURTHP+fy0r6m1ZgaaG0lBrHGBhdnXSSUDC4WcZKA7mImp66WzM4O2n/ANzmE0ilOBUtLIUiXNpoUC6ZJatv3ni+516E3GAr+OPCBw+Uc7rn3+z0CuIADjNv8gs1HLQCh5QT4AQQ276mh5gQwbYzZbjQab4F54JZlHrgOpFutlmdrxwHH8X2/MjY29gxINZvNNyLyArhsm1w7QbCzs/Nwbm7umog8BlIAvu+/l3q9/npiYuJeEASjs7Oz74CrwDSQPPeENvANaDSbzaeu64bHx8cfnSAIYo1G4/Ph4WGyVquVcrncJ2BqcXFxRmsdA1BKRZ7n7QNurVZ7tLGxsT05OdlOpVIxJ5vNrqytrb30fT9erVa76+vr95eXl08WFhYSxhgFICJaax1bWlrKVavVr8lkMh4EwWk2m11RQDyfz6+GYehGUeSWy+VOoVBIaK2dYQqFQqJcLneiKHLDMHTz+fwqEB+oMFIsFjf7/b6jtY4ZY5RFLMoYo7TWsX6/7xSLxU1gBHAUQ1Eqlfb4R5yvUUCvXq8/t+YIlVKRiGiLsWgR0UqpyCoSAD8HRjpNp9M3gQ7Q9jxvv1KpdJVSvWEqlUrX87z9ra2tO7b2CDgV4DaQNsZ8EJHXQOYvMh4Ae8aYkog8AL44gN9qtV5Zh2UGzvM87+hPRrJnLcAXYIozb6eAGeAKZ1a+xJCVgc7u7u6TTCZzQ0TuAt+BrgAT/F6mpG1OABetVNgPOwK69ua2zU8coMfZag5GPeH/1vkA4Be8eSHmJQ8UvAAAAABJRU5ErkJggg==",
-            name: "Esoteerinenkeiju",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenkeiju"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenmato"
         },
         {
             id: "esoteric_being",
@@ -1793,12 +1825,68 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenolento"
         },
         {
-            id: "worm_esoteric",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABsklEQVR4nJ2Tz6raUBDGfzlJG5NjtBcpFJddFx/AhW8Q6EpcC6KPpOL1AUShy659hULfooKC+ePJ5HRxk5BVK3dgODMHzndmvpnPsda6gAsowAEsUAJSxRbAcRxLy6y1DoAHfAA+VqeqHpvKa5DSWtsGcGr3AB/QQFhVIkBWeVHlUgGX1cO6atcDAqAP/K7hR6MReZ5jjEFEMMY08eVyGQyHwz+dTgff93GstV+Bz8CnOI5/GmPI85yiKBARRIQ8z0nTlKIo8DyPKIro9/torXGstd+AX/Xvs9mMoig4Ho9tzphMJhhj8H2fwWDA6XSiJrEDfAcGq9Xqtdfrsd1uWSwWKKUQEbIs43w+E8cxQRBwOBwaYFWx/wN4Xa/XBEEAgNaazWbDbrdDaw1AGIZNDLDf71E8YfUERYTH49Hcz+dzPN7m3bRQliUA9/ud5XKJiJCmKQDX6xWlFNPptGnjaRLH4zFJklCWJUEQEEURYRg+N8Ysy0iShDRNERFc18X3/WYPvgAv/GeR6vx2u+lut3t3XRelFI61ts9zq9xeZ2hpIedNMDn/EBMtZbbNea+ca/sLNSwGsxqnzEIAAAAASUVORK5CYII=",
-            name: "Esoteerinenmato",
+            id: "fairy_esoteric",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADD0lEQVR4nH2TQWgcZRiGn/+f2Zl1t01M1mamGDRatI1NoiQiMQFDqc2h4MUKnop6VAiCF0ERRFEoRUmwkpZeNvZgPYg3D8lBY7rGbVNtU5rEUmnSRpiAaZLdTHb+SWY+D40hJ5/Tywff4ft4HwUtWQht8ipPYmVJ070IeUS7WIkLQGIZVGpQhGhdxUoiQgkhv6V3lrfSepLUFxPcmLn+8/eopBXUIVCHUEkriidR6rH5P8ujbKX15FUeQptarVaqVKpl7Kaemdm5e7jeAI7/MRlvsPjNxSlc7ywZb/DKlaurIiI4/mvYTT2VSrVcq9VKamHh3tBapZorFBpffPSJjiKpakbhAw1ign6V9ccRDLCCEKBl8e87028uL9+frK/bu2FHxmSq62Fu4e7i3Zlrl94d/+XX8O2B91eAOgCEZsAAdcNnTj3X91JP/vc/pm80NjbkXNfZ1AcP945EUeTWalFuolRe6+rs2C8m6EYoAIgJDiAUxATdXZ0d+ydK5bVaLcpFUeQePNw7YmOp3NH+E2MXil+/tRnH2fGJSWNMHEsceJ9+/uUmgMSBd6lUjn+7fNU8lM1mjTHZo/0nxrB0DtymY7jeAK53dujM+flTp7+6LyLyyWdfxLLN7iwisv3cAdymYzbbFM8PPf/Gydcf539Qrv8XikVgbmdG1j8yfXns246uly+iaAWaEQq7T/jog/cyyvGXUCwDiwizILNY+pZNIhvt7W0eSq2CrAB1EgfPKMdfkjjwAP7LyvXvlH76oa/3yKuTQIVENsDx2nD94yIiZLzB4XPFORxvEse7iePdflAe7yaONzl8rjhHxhsUEcH1j+N4bQq36cD8rakfW5564UNU2rK7SChciYI+5fqju4sk0dJp5fjdaPnHxma95enOV0j1I2gNWgyiVhF5GEV25MJ3exBmUWr12tToO892tO9TGa8XK13B1usK9u3ZkSm1GtCqgEg9InVo5QCQSoxSFZRaI5VldLKCrdcIJbQhv0UYhuQ1JNqQpuEDnS0XtnUWy0BqQEIsXcWSHZ3/BTswjobAQjTuAAAAAElFTkSuQmCC",
+            name: "Esoteerinenp\u00e4iv\u00e4uni",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenmato"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Esoteerinenp\u00e4iv\u00e4uni"
+        },
+        {
+            id: "fairy_big_discord",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACo0lEQVR4nIWTsY4cRRiEq/7p2d6bWXy3Z3RnEEJINhfwCMiJn8FPwBMQkfMoOCIjRw6xiECyRIIMJ1kGccfZ69ld78xtz3T/RXDIskgoqbKKqurjqx92c58UXj8Z2uPPm/nwYnzParasGcvOIwBUC0ualHxS33w8e/P6x2F/fL/prWYOPikAaONJOExXeQnHbWUclt5vcYYZAOS1jxa5hWOTrvIqnoQOAHxSHyB93/82fVEt7H0VfciKHzDgthmPVDQHADvgnoY1wJWKmmphVf9sRPtp/V1Qxk/tvfpbnxSH59M3VWMfyXEHjqXVjACgjCSgg+Ey7zw2n9Rf250qKeNJAFCXwX/1Sct4Gr6c1uVnkqeS7gIMACAp03kuaR5Pw8My+C+q2Vm0Ooyr8qhq+RXAxkdtqmgP3FXoWProAAALBAyhMvvMR/1hNRsJw7gqj2zsSpMuymO55iqal+QJriUIWG2w2gACcC1L8qSiuVzzdFEej11prIoMFjmbOn9KQ2DN4FmAE7QbwwnPAmsGGsLU+VOLnFWRwfCOlPEc/6P/ZkJJylZhtAPulZEkZQsEKMj/TZlgJDQpg0wWufdrjV6Uw2xZDZ60BbCGoaPzHIYA19LzuyWyo+Mchg7A2iK3IdoQPKlX0QbCihUvJc2ZCQl3bWY3M07KdJxL+pvgpYpWcGw8oQ9l79f1YbVSUZN3HqvGAGBP55ZABACQCYaO4GUZ/M+wsAtWXE2bch3Gl2VHsqoWVoWFQRmJAWsBRz7dXJnVzZWVsQoLuwD5V956N74su3B8v+kBoH82Ityy4skHgK886S1Mfq3RIrcq2li0Vd56157NNu3ZrA9WM/ukPl1ltPeaNLwYewa04cDe4hyObnCW0MeT8Kb/fdi3Z7PeauZ/AI93ptD6JopLAAAAAElFTkSuQmCC",
+            name: "J\u00e4ttiristiriitakeiju",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttiristiriitakeiju"
+        },
+        {
+            id: "fairy_giant",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB7UlEQVR4nKWSu25TQRCG/5099u762MexLTsoSoSFUExcIVHxAChvgEQPKB2ioUlFT4dC74KHyBOkSRckZBOiFFGCfI98zLmfpWF9ORAJib8Zzaz++WZnl81uzzrQYY6s0nw0li8VvT5w+9MXqkxtsLzQOvKD2+RLsbHZ+Zl+7FQr488MwgdEyJgVExGh33tVSOPhJgDEwfRQOmyPhF2nfM7hotCQZd6Ogv57AIAObK0jCUQ5sDRvaR0oIqs0/P5GyQ1+zUVpB79Vqe1jMjoGicI9AEDw/GrwLa3Wd484mMXSaJpaYCkYt7go6YdcFOtYkZV/CuB4kXNR2lYVj0bnby+0jlQaxyENegcN4egHxdqTNXOltr8WjezK4y3h6LbW2mk8+hSSLPMmF8Udb96FsltQdmuFvozmzJt3QaJQlRu0pXUoiEvnPjLKUrO5uY47fLdHq0Vv3oWUzQV1dRdSNuHNu2t1BpKsf/VMG0rW+DfF4Qkmo+ViWeR90P9ivKvR/09gGhjd1ShrBIDEd/trS1R2C75/iTg8+cPs+5eLJ17idUBJMPuRpWVJ2RwAkmB2nVPVQ/InyXniz4bmk5inMlOYaM6U3ULiuzfBNPka+4mgVCdu6ObO3PHp2iSGmqW7o9NhMGO98vbuERgGvwAdE/Gg5U2F0gAAAABJRU5ErkJggg==",
+            name: "Kolossaalinenkeiju",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalinenkeiju"
+        },
+        {
+            id: "fairy_big",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACYElEQVR4nJWTu24bVxCGv5nd5VLL5VqkIAGqbMBIk8KG4caFmxTKC+QN0vgVAqmRigCyEbgPEORBQsSGXdmVIBduZL2ADYoRJe6VO5NiqQvcGB5ggMHBfGcu5z/CLXNHYJ+qOFKA+VluANk4UYB47ZHBPiL4FSNlWb4G6Pf7P12e31f4USFXN8RMFEDVTRSHxOCjpXdO7YoLgTcAZVm+LuZPdzQoosuLXk912UMIutakNQvrdFjU1o6asiz/veIUHDCgebuWTV7lC0l7YbsdCE8C5G6A3A2EJ72w3c4Xkq5lk1fQvO0YR+P4+QGYQhWYzd4N13cn7nIPkT1E/lz5nrvcG67vTsxm76AKwDSOnx+EVXGk6BKzOsC+JHgriB+CPLxZr4D4Id4K9iUx+q1qaFVxpArQFL/8DmXQNp/G+cWLooOd0cYOo40dujHlYX7xomibT2Mog44BnZ/lZiZ6Pn32UnRzAdIHGG38fF3/Jpa+6ObifPrspZno/Cw3va2DfP7HX3zDvs7RbJyoqhtOC74FXgLMpv9cJ93EXoJv4bSqbtk46XYgipuFtYic4LIPfgzCbDphNp10S8SPcdkXkROzsO6EBdrJM7F02NRL8yl4g8tv4O+B4879/eqsWZpP02FTQ2Lx2iMTd2Qxvy9NNVKdD+K810tClQ13/wHk86r1LRE5WZpPk7rOLVtUUTyzQXbqcjXn5fmv2lQfVIP16PIi+krKrKTc1Nb+10TxA0vv/G0rhdzY93ym61e4fcEgO/VB9rgNo7SN4nRZFVJWhZRRnC7DKG0H2eN2kJ36beZ/jCZE3h5NfkUAAAAASUVORK5CYII=",
+            name: "J\u00e4ttikeiju",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttikeiju"
+        },
+        {
+            id: "fairy_cheap",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1klEQVR4nO2Rrw7CQAzGv9tu/EmWCUKCwMwjISGZmsdgJ3mTewGeBQx+ioQEJAZ1BkFCEAvjYNxWxMBsI5Bg+VSbNu2vX4G/2LsCETggeJ4JzRj01wOIREPKsOM4zTYARJE6uq5/YExci71G1eY4nijbtDytKdCaAtu0vDieqJzqAwGRaJxOq55Bo3Wi5gCAWnOMjC0GrdZwW6QoEbyUqNm0Kv6CAFxKv2ublpfVzT4AGLd0c07vS9cN90UzyzcxaCL/IGW4dDjfAUB0uT9NDCs/8dePegANUVZ88czaggAAAABJRU5ErkJggg==",
+            name: "Keiju",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Keiju"
+        },
+        {
+            id: "whisp_giga",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABR0lEQVR4nJWTT07CQBTGf1MHEATSICRuJl11RbgHIR7Ac3kD1xoTVy48g6sGY1I3TTcmpYRYGhM246KdMkUg8HbtvO/P++aN2DzfrwG5fntpueMJq3mAO51RqzhmNQ8AMD3927sV7c6PFLJJ9vrYcseTomE6Q3h+Da8BVymIY+unlgIhHafZuDBglEJ4PjoK0VFY9VaESlUunE4b0WjgiK/g0j60geTpQRI+3rtsfvuyUh4OtsCra+iN6jlkSUE0HKBNLk8PXVkpL5aFyi7QVG+E8CxXSuECsmbvENgiMQTC89GAczLYHo8iK+H5OKehdlxYVYSYp6c7oAjSOJHm2sTNGS5KMGCNUF7TOaWj0ArRWpqjVQoZ57K2eVlyPIssqW9qHOPYD0RH4f5RsgS+PyFPtxtbvlBpPvQem+QperH8T1iKuuMJf3Ziev39UaKcAAAAAElFTkSuQmCC",
+            name: "Kolossaalinenvirvatuli",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalinenvirvatuli"
+        },
+        {
+            id: "whisp_big",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACqklEQVR4nG2TTWhcZRSGn/e7P5k7d5jJTDJJai0yCJZIi5tSJc0ixWLXuhJBSPGnC7fSlWJHS6GrLhVctK4V3LkTLUxXbcVF7aw0CdYSSDp/nXEmM/fe42LSpEjP5uVwvuecl49zxHPCvvlwDrM5nOvr4rePnvfmaciaDdPyqg7grz8IgBrSm4hboA5YipFg1gHs2Vk+cNmaDePXGw4QTg5wSLeZCSp4XsA4WWE8+RHwgcI+nLF2oeX2k8usXcjwXAW0YOHMooUz580Pj5rnf2xOu4Z7xeQWgSrSWVbfa2FWd4dm0q84/c6Ohf5HyM4QBifBHWe49yqZ3iYIjxN4Fy0K51h593uSyTX2LR38B/8+vqljy5/bxoM/NBxVbP7I+6qWsE4XdbbP2WzhJ9VWGjhdJYgTED4gMMhS4fyM1vaGEj9n80tHCCMsEVpcwgK/qv7ueQbtH8DPEwc9JHzMYK8fIbuEPHj85L4tHTuhhQXIlUACM+R5GG5Jf/2+xmtvzUMKqC5rNozJCLZ++5nAxTZM3lB1EaISOAdyYBlkGfZoC5I9VCn+QvnlewTxpz5mdZJxntkXKrQfnlCpiPX6KD87hWGqMvB8VMiBV9xmPJzBz3/pkCBXGJIvt6m81LR2D9IUzKaTYapmqFjA2j3o7pRx4R4YDjDkjKgwtPt369rcusNkDKMeZBlk6VRHPWxnF21u3bO//7yElIFM1mx8oeXVenb9E8d4XCCKXlSSfGe12ilV57Fef+poMkabm3fN99cZDf8hcn35SXp4A1fWZUHgyLKYOD6qJLlhtdrrmitjuy20sXHHgmCdweAhzg00mWT67KbpmUU6bAIxpVKRSrlILgoYDRNa7Sd0ux3gAJ5u3/9P+cq6LI6F54lS6bDQ7UKamgYDewoD/AeBZCzMf36GhwAAAABJRU5ErkJggg==",
+            name: "J\u00e4ttivirvatuli",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttivirvatuli"
+        },
+        {
+            id: "whisp",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABVElEQVR4nGNgQAIW5oYOuPjocjDAiC7g7mrvICoqwjC7lIeBRdKWwSd2MQMDAwPDzt0HD2AzAAX8fjHHgYGBgSE3O9mBgYGB4Uunk0NMVDCcDZPHC76fj29A5sdEBTdgE4cBFnSBv7seM0Bd0cDAwMAwqcalRVBQoOHvrvtYLcQIAwYGBob/H3f+Z9izSYFBUkKEgYGBgeH5izcMLn4PGPndMdQzwRgwG//fmcnC8P0TA4O+zoOvh/efYfj1K5JBX+cBw/dPEDlcBkyeOhfiR24+FoZ7N0wYnjzrZXaTZfh68mgxw807vQz3bpgwcPOxwCzC6YX/z5dzMNy/o80gJnLmDw8rw5/nhxk4eC0YGF69MWFQVLnKKBn5A6sL4ODrpz8Mz1+8+cPDyvBz4TIGjo9yvV/XroaEw9dPf9CVYw/E58s5GI4dEUcJRCubl+i2jwIqAQDTtH01CzOUZwAAAABJRU5ErkJggg==",
+            name: "Virvatuli",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Virvatuli"
         },
         {
             id: "ghost",
@@ -1825,20 +1913,20 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Olematon"
         },
         {
-            id: "musical_being",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAKMGlDQ1BJQ0MgUHJvZmlsZQAAeJydlndUVNcWh8+9d3qhzTAUKUPvvQ0gvTep0kRhmBlgKAMOMzSxIaICEUVEBBVBgiIGjIYisSKKhYBgwR6QIKDEYBRRUXkzslZ05eW9l5ffH2d9a5+99z1n733WugCQvP25vHRYCoA0noAf4uVKj4yKpmP7AQzwAAPMAGCyMjMCQj3DgEg+Hm70TJET+CIIgDd3xCsAN428g+h08P9JmpXBF4jSBInYgs3JZIm4UMSp2YIMsX1GxNT4FDHDKDHzRQcUsbyYExfZ8LPPIjuLmZ3GY4tYfOYMdhpbzD0i3pol5IgY8RdxURaXky3iWyLWTBWmcUX8VhybxmFmAoAiie0CDitJxKYiJvHDQtxEvBQAHCnxK47/igWcHIH4Um7pGbl8bmKSgK7L0qOb2doy6N6c7FSOQGAUxGSlMPlsult6WgaTlwvA4p0/S0ZcW7qoyNZmttbWRubGZl8V6r9u/k2Je7tIr4I/9wyi9X2x/ZVfej0AjFlRbXZ8scXvBaBjMwDy97/YNA8CICnqW/vAV/ehieclSSDIsDMxyc7ONuZyWMbigv6h/+nwN/TV94zF6f4oD92dk8AUpgro4rqx0lPThXx6ZgaTxaEb/XmI/3HgX5/DMISTwOFzeKKIcNGUcXmJonbz2FwBN51H5/L+UxP/YdiftDjXIlEaPgFqrDGQGqAC5Nc+gKIQARJzQLQD/dE3f3w4EL+8CNWJxbn/LOjfs8Jl4iWTm/g5zi0kjM4S8rMW98TPEqABAUgCKlAAKkAD6AIjYA5sgD1wBh7AFwSCMBAFVgEWSAJpgA+yQT7YCIpACdgBdoNqUAsaQBNoASdABzgNLoDL4Dq4AW6DB2AEjIPnYAa8AfMQBGEhMkSBFCBVSAsygMwhBuQIeUD+UAgUBcVBiRAPEkL50CaoBCqHqqE6qAn6HjoFXYCuQoPQPWgUmoJ+h97DCEyCqbAyrA2bwAzYBfaDw+CVcCK8Gs6DC+HtcBVcDx+D2+EL8HX4NjwCP4dnEYAQERqihhghDMQNCUSikQSEj6xDipFKpB5pQbqQXuQmMoJMI+9QGBQFRUcZoexR3qjlKBZqNWodqhRVjTqCakf1oG6iRlEzqE9oMloJbYC2Q/ugI9GJ6Gx0EboS3YhuQ19C30aPo99gMBgaRgdjg/HGRGGSMWswpZj9mFbMecwgZgwzi8ViFbAGWAdsIJaJFWCLsHuxx7DnsEPYcexbHBGnijPHeeKicTxcAa4SdxR3FjeEm8DN46XwWng7fCCejc/Fl+Eb8F34Afw4fp4gTdAhOBDCCMmEjYQqQgvhEuEh4RWRSFQn2hKDiVziBmIV8TjxCnGU+I4kQ9InuZFiSELSdtJh0nnSPdIrMpmsTXYmR5MF5O3kJvJF8mPyWwmKhLGEjwRbYr1EjUS7xJDEC0m8pJaki+QqyTzJSsmTkgOS01J4KW0pNymm1DqpGqlTUsNSs9IUaTPpQOk06VLpo9JXpSdlsDLaMh4ybJlCmUMyF2XGKAhFg+JGYVE2URoolyjjVAxVh+pDTaaWUL+j9lNnZGVkLWXDZXNka2TPyI7QEJo2zYeWSiujnaDdob2XU5ZzkePIbZNrkRuSm5NfIu8sz5Evlm+Vvy3/XoGu4KGQorBToUPhkSJKUV8xWDFb8YDiJcXpJdQl9ktYS4qXnFhyXwlW0lcKUVqjdEipT2lWWUXZSzlDea/yReVpFZqKs0qySoXKWZUpVYqqoypXtUL1nOozuizdhZ5Kr6L30GfUlNS81YRqdWr9avPqOurL1QvUW9UfaRA0GBoJGhUa3RozmqqaAZr5ms2a97XwWgytJK09Wr1ac9o62hHaW7Q7tCd15HV8dPJ0mnUe6pJ1nXRX69br3tLD6DH0UvT2693Qh/Wt9JP0a/QHDGADawOuwX6DQUO0oa0hz7DecNiIZORilGXUbDRqTDP2Ny4w7jB+YaJpEm2y06TX5JOplWmqaYPpAzMZM1+zArMus9/N9c1Z5jXmtyzIFp4W6y06LV5aGlhyLA9Y3rWiWAVYbbHqtvpobWPNt26xnrLRtImz2WczzKAyghiljCu2aFtX2/W2p23f2VnbCexO2P1mb2SfYn/UfnKpzlLO0oalYw7qDkyHOocRR7pjnONBxxEnNSemU73TE2cNZ7Zzo/OEi55Lsssxlxeupq581zbXOTc7t7Vu590Rdy/3Yvd+DxmP5R7VHo891T0TPZs9Z7ysvNZ4nfdGe/t57/Qe9lH2Yfk0+cz42viu9e3xI/mF+lX7PfHX9+f7dwXAAb4BuwIeLtNaxlvWEQgCfQJ3BT4K0glaHfRjMCY4KLgm+GmIWUh+SG8oJTQ29GjomzDXsLKwB8t1lwuXd4dLhseEN4XPRbhHlEeMRJpEro28HqUYxY3qjMZGh0c3Rs+u8Fixe8V4jFVMUcydlTorc1ZeXaW4KnXVmVjJWGbsyTh0XETc0bgPzEBmPXM23id+X/wMy421h/Wc7cyuYE9xHDjlnIkEh4TyhMlEh8RdiVNJTkmVSdNcN24192Wyd3Jt8lxKYMrhlIXUiNTWNFxaXNopngwvhdeTrpKekz6YYZBRlDGy2m717tUzfD9+YyaUuTKzU0AV/Uz1CXWFm4WjWY5ZNVlvs8OzT+ZI5/By+nL1c7flTuR55n27BrWGtaY7Xy1/Y/7oWpe1deugdfHrutdrrC9cP77Ba8ORjYSNKRt/KjAtKC94vSliU1ehcuGGwrHNXpubiySK+EXDW+y31G5FbeVu7d9msW3vtk/F7OJrJaYllSUfSlml174x+6bqm4XtCdv7y6zLDuzA7ODtuLPTaeeRcunyvPKxXQG72ivoFcUVr3fH7r5aaVlZu4ewR7hnpMq/qnOv5t4dez9UJ1XfrnGtad2ntG/bvrn97P1DB5wPtNQq15bUvj/IPXi3zquuvV67vvIQ5lDWoacN4Q293zK+bWpUbCxp/HiYd3jkSMiRniabpqajSkfLmuFmYfPUsZhjN75z/66zxailrpXWWnIcHBcef/Z93Pd3Tvid6D7JONnyg9YP+9oobcXtUHtu+0xHUsdIZ1Tn4CnfU91d9l1tPxr/ePi02umaM7Jnys4SzhaeXTiXd272fMb56QuJF8a6Y7sfXIy8eKsnuKf/kt+lK5c9L1/sdek9d8XhyumrdldPXWNc67hufb29z6qv7Sern9r6rfvbB2wGOm/Y3ugaXDp4dshp6MJN95uXb/ncun572e3BO8vv3B2OGR65y747eS/13sv7WffnH2x4iH5Y/EjqUeVjpcf1P+v93DpiPXJm1H2070nokwdjrLHnv2T+8mG88Cn5aeWE6kTTpPnk6SnPqRvPVjwbf57xfH666FfpX/e90H3xw2/Ov/XNRM6Mv+S/XPi99JXCq8OvLV93zwbNPn6T9mZ+rvitwtsj7xjvet9HvJ+Yz/6A/VD1Ue9j1ye/Tw8X0hYW/gUDmPP8uaxzGQAAANJJREFUeJyNki8OgzAUh7+S3QOPRuwGO8GCJlNIxLYzsInJqWWacAJugEDja1DcgZmVtIW2vKSiee/7vb+CDbu/6ln/V2UmtuIADj4QYBqliwUg8jmnUVLkGf0gZ/XsGAHQD3Ju2s5wVGUmtgBlaRKLVQt7YZUUwAhs2m4Fv781AJ/nTdgwWDM4n45GFgUDXK6PBVLlrwR0h53VJeLdwpaIbUGBkIhXILQJp4A9C594pAfrGdMkFi4h5xptZwiG/ynvgfWbKPJsqdI4ZVVyqAq9tR/Yi20EayqVwwAAAABJRU5ErkJggg==",
-            name: "Kuulumaton",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kuulumaton"
-        },
-        {
             id: "musical_being_weak",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeElEQVR4nGNgIACkVFT/S6mo/sclz0RIMzY20QbgM5AkA57duc2IyxCiXYDLEJK8gGwIWQZgM4hkA9BdgdcAHctgggYSdAEhQ8gKA7wGnLn28D8Mk2wAuqa2ykyCBqCEKC5bTbTkMeIfqwvIASgGYLMJn+0MDAwMANWALL6ZCdQbAAAAAElFTkSuQmCC",
             name: "Hiljainen",
             description: null,
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hiljainen"
+        },
+        {
+            id: "musical_being",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAKMGlDQ1BJQ0MgUHJvZmlsZQAAeJydlndUVNcWh8+9d3qhzTAUKUPvvQ0gvTep0kRhmBlgKAMOMzSxIaICEUVEBBVBgiIGjIYisSKKhYBgwR6QIKDEYBRRUXkzslZ05eW9l5ffH2d9a5+99z1n733WugCQvP25vHRYCoA0noAf4uVKj4yKpmP7AQzwAAPMAGCyMjMCQj3DgEg+Hm70TJET+CIIgDd3xCsAN428g+h08P9JmpXBF4jSBInYgs3JZIm4UMSp2YIMsX1GxNT4FDHDKDHzRQcUsbyYExfZ8LPPIjuLmZ3GY4tYfOYMdhpbzD0i3pol5IgY8RdxURaXky3iWyLWTBWmcUX8VhybxmFmAoAiie0CDitJxKYiJvHDQtxEvBQAHCnxK47/igWcHIH4Um7pGbl8bmKSgK7L0qOb2doy6N6c7FSOQGAUxGSlMPlsult6WgaTlwvA4p0/S0ZcW7qoyNZmttbWRubGZl8V6r9u/k2Je7tIr4I/9wyi9X2x/ZVfej0AjFlRbXZ8scXvBaBjMwDy97/YNA8CICnqW/vAV/ehieclSSDIsDMxyc7ONuZyWMbigv6h/+nwN/TV94zF6f4oD92dk8AUpgro4rqx0lPThXx6ZgaTxaEb/XmI/3HgX5/DMISTwOFzeKKIcNGUcXmJonbz2FwBN51H5/L+UxP/YdiftDjXIlEaPgFqrDGQGqAC5Nc+gKIQARJzQLQD/dE3f3w4EL+8CNWJxbn/LOjfs8Jl4iWTm/g5zi0kjM4S8rMW98TPEqABAUgCKlAAKkAD6AIjYA5sgD1wBh7AFwSCMBAFVgEWSAJpgA+yQT7YCIpACdgBdoNqUAsaQBNoASdABzgNLoDL4Dq4AW6DB2AEjIPnYAa8AfMQBGEhMkSBFCBVSAsygMwhBuQIeUD+UAgUBcVBiRAPEkL50CaoBCqHqqE6qAn6HjoFXYCuQoPQPWgUmoJ+h97DCEyCqbAyrA2bwAzYBfaDw+CVcCK8Gs6DC+HtcBVcDx+D2+EL8HX4NjwCP4dnEYAQERqihhghDMQNCUSikQSEj6xDipFKpB5pQbqQXuQmMoJMI+9QGBQFRUcZoexR3qjlKBZqNWodqhRVjTqCakf1oG6iRlEzqE9oMloJbYC2Q/ugI9GJ6Gx0EboS3YhuQ19C30aPo99gMBgaRgdjg/HGRGGSMWswpZj9mFbMecwgZgwzi8ViFbAGWAdsIJaJFWCLsHuxx7DnsEPYcexbHBGnijPHeeKicTxcAa4SdxR3FjeEm8DN46XwWng7fCCejc/Fl+Eb8F34Afw4fp4gTdAhOBDCCMmEjYQqQgvhEuEh4RWRSFQn2hKDiVziBmIV8TjxCnGU+I4kQ9InuZFiSELSdtJh0nnSPdIrMpmsTXYmR5MF5O3kJvJF8mPyWwmKhLGEjwRbYr1EjUS7xJDEC0m8pJaki+QqyTzJSsmTkgOS01J4KW0pNymm1DqpGqlTUsNSs9IUaTPpQOk06VLpo9JXpSdlsDLaMh4ybJlCmUMyF2XGKAhFg+JGYVE2URoolyjjVAxVh+pDTaaWUL+j9lNnZGVkLWXDZXNka2TPyI7QEJo2zYeWSiujnaDdob2XU5ZzkePIbZNrkRuSm5NfIu8sz5Evlm+Vvy3/XoGu4KGQorBToUPhkSJKUV8xWDFb8YDiJcXpJdQl9ktYS4qXnFhyXwlW0lcKUVqjdEipT2lWWUXZSzlDea/yReVpFZqKs0qySoXKWZUpVYqqoypXtUL1nOozuizdhZ5Kr6L30GfUlNS81YRqdWr9avPqOurL1QvUW9UfaRA0GBoJGhUa3RozmqqaAZr5ms2a97XwWgytJK09Wr1ac9o62hHaW7Q7tCd15HV8dPJ0mnUe6pJ1nXRX69br3tLD6DH0UvT2693Qh/Wt9JP0a/QHDGADawOuwX6DQUO0oa0hz7DecNiIZORilGXUbDRqTDP2Ny4w7jB+YaJpEm2y06TX5JOplWmqaYPpAzMZM1+zArMus9/N9c1Z5jXmtyzIFp4W6y06LV5aGlhyLA9Y3rWiWAVYbbHqtvpobWPNt26xnrLRtImz2WczzKAyghiljCu2aFtX2/W2p23f2VnbCexO2P1mb2SfYn/UfnKpzlLO0oalYw7qDkyHOocRR7pjnONBxxEnNSemU73TE2cNZ7Zzo/OEi55Lsssxlxeupq581zbXOTc7t7Vu590Rdy/3Yvd+DxmP5R7VHo891T0TPZs9Z7ysvNZ4nfdGe/t57/Qe9lH2Yfk0+cz42viu9e3xI/mF+lX7PfHX9+f7dwXAAb4BuwIeLtNaxlvWEQgCfQJ3BT4K0glaHfRjMCY4KLgm+GmIWUh+SG8oJTQ29GjomzDXsLKwB8t1lwuXd4dLhseEN4XPRbhHlEeMRJpEro28HqUYxY3qjMZGh0c3Rs+u8Fixe8V4jFVMUcydlTorc1ZeXaW4KnXVmVjJWGbsyTh0XETc0bgPzEBmPXM23id+X/wMy421h/Wc7cyuYE9xHDjlnIkEh4TyhMlEh8RdiVNJTkmVSdNcN24192Wyd3Jt8lxKYMrhlIXUiNTWNFxaXNopngwvhdeTrpKekz6YYZBRlDGy2m717tUzfD9+YyaUuTKzU0AV/Uz1CXWFm4WjWY5ZNVlvs8OzT+ZI5/By+nL1c7flTuR55n27BrWGtaY7Xy1/Y/7oWpe1deugdfHrutdrrC9cP77Ba8ORjYSNKRt/KjAtKC94vSliU1ehcuGGwrHNXpubiySK+EXDW+y31G5FbeVu7d9msW3vtk/F7OJrJaYllSUfSlml174x+6bqm4XtCdv7y6zLDuzA7ODtuLPTaeeRcunyvPKxXQG72ivoFcUVr3fH7r5aaVlZu4ewR7hnpMq/qnOv5t4dez9UJ1XfrnGtad2ntG/bvrn97P1DB5wPtNQq15bUvj/IPXi3zquuvV67vvIQ5lDWoacN4Q293zK+bWpUbCxp/HiYd3jkSMiRniabpqajSkfLmuFmYfPUsZhjN75z/66zxailrpXWWnIcHBcef/Z93Pd3Tvid6D7JONnyg9YP+9oobcXtUHtu+0xHUsdIZ1Tn4CnfU91d9l1tPxr/ePi02umaM7Jnys4SzhaeXTiXd272fMb56QuJF8a6Y7sfXIy8eKsnuKf/kt+lK5c9L1/sdek9d8XhyumrdldPXWNc67hufb29z6qv7Sern9r6rfvbB2wGOm/Y3ugaXDp4dshp6MJN95uXb/ncun572e3BO8vv3B2OGR65y747eS/13sv7WffnH2x4iH5Y/EjqUeVjpcf1P+v93DpiPXJm1H2070nokwdjrLHnv2T+8mG88Cn5aeWE6kTTpPnk6SnPqRvPVjwbf57xfH666FfpX/e90H3xw2/Ov/XNRM6Mv+S/XPi99JXCq8OvLV93zwbNPn6T9mZ+rvitwtsj7xjvet9HvJ+Yz/6A/VD1Ue9j1ye/Tw8X0hYW/gUDmPP8uaxzGQAAANJJREFUeJyNki8OgzAUh7+S3QOPRuwGO8GCJlNIxLYzsInJqWWacAJugEDja1DcgZmVtIW2vKSiee/7vb+CDbu/6ln/V2UmtuIADj4QYBqliwUg8jmnUVLkGf0gZ/XsGAHQD3Ju2s5wVGUmtgBlaRKLVQt7YZUUwAhs2m4Fv781AJ/nTdgwWDM4n45GFgUDXK6PBVLlrwR0h53VJeLdwpaIbUGBkIhXILQJp4A9C594pAfrGdMkFi4h5xptZwiG/ynvgfWbKPJsqdI4ZVVyqAq9tR/Yi20EayqVwwAAAABJRU5ErkJggg==",
+            name: "Kuulumaton",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kuulumaton"
         },
         {
             id: "playerghost",
@@ -1865,12 +1953,20 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Kiukkukalma"
         },
         {
-            id: "phantom_c_apotheosis",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAsklEQVR4nJVTsQ3DIBA8XpkiXYq0niGyFIkqa1ieyPIarpAsIc/AQqQJ6Hk/AV9Dwd39/SEAhtlO8XF/xtlOEQK1u5skAoALHpLogteousE/gQTxiD0imY56xMe2V02IX9hhrIrTKTmmZ4Vj2/H6vItBi1tNNujdP4ld8NmEAGBxq9Hia+LEvZyAizgoie0wqiW2QC1Cy7Qw6C2yMOgpMDWvfbL8CpdH/3D6TDINL1gb9AX05mlKzltjGgAAAABJRU5ErkJggg==",
-            name: "Pakkomielteinenkalma",
+            id: "forsaken_eye",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVUlEQVR4nI2T30tTcRjGP+fsV4796OTc7CoEYYutH6AjXAUiZYJBYd14ZQqV+A8EmlngBC+kGxEl8MdVRDfd7GZdJCwclF4IJ9zEGARBbo6D25g7s+10ETup86L36v3C8zzv8314X4FTSh4eHwJt1uCwNYiiQLWqUckVDgLzk9aTWOHo49vjZ/fAFNQMwtPG2zdc5uZGxAYL1QOV8q8s2Y+f94SKtuB/M/m8TuBQVZ9US+UFJfaV3IZMZnO1zlnTlU4cbQGkm0EsTrsAYAT49OjlWWCh9OMn3xdnAbg8Pa0T1XQagOTMDJnNVQIXpjhUVc1ksQhGALeh1FYtlZEnRmkZGgIgn0wCYJYkLG63Lqqm08gTo7QvrQBglIfHHrr7et7XpuUTCQBMksQZj4eyolBWlDoxgEw0phmb+nrOKbEvbM+/1qefFLP7fLwdG6PVZmOnUGBgbo71wQGa/NcR9z5EIpViuS6wGrFGTuZydC0vk8zlWBkZAaBSLCMe/Nb2rRdbdItmSaoTarXZmIlG6QwG2VAUWm02AKwXWzA2GAVncSsFQDYe10mNHR3633cKBSLd3QC0SRI7hQIuj4fiVgrRdb+312A1H7NtkiSy8bieQX84jNfh4IXfj9fhoD8cBsBgNf9dpEw0pjmuXWV9cABXKITd5zs1k1qlFhdpX1rB4rQLIkD6XeTWyfRLu7t6n08ksHu9en+0jq6yVtxOIU+MAuAKhYB/+5BPJNhbWwMg8GoK5yWfcEwAQN3Pa/9zC813u3SeUIcC5OHxzGnXeP7BnTr8H7nY9KXl7ILyAAAAAElFTkSuQmCC",
+            name: "Hyl\u00e4ttysilm\u00e4",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pakkomielteinenkalma"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyl\u00e4ttysilm\u00e4"
+        },
+        {
+            id: "ghost_bow",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABZ0lEQVR4nIWTv0sCYRjHP+8hIjhYEGLCkRIXBI4ZaksNQVOzDoJCQ1MO/QHRn9DWULO7a6ENBRHuSUfc6SARgjVE0NA1eO/13p1XDxw8PO/z/T7f58eJfNYAcPg1ofhYY5O/TJsDcpQPt0A0gVJBzHn/l0STMhu1Oo1aXdx0rlhbNYKKIkliAMO+rSaLymaJp2dT8DsbBxD5rBGaiQiCAVY2cmpF34CDBJqS5IFlWxI0V7tCEAJLm7NCJxiIRYFb7aTrjQFE5zjrFJtT9gvJHGCf1T5mBCd366TSmgfQMzp6RicRT9B96HqsS8YX1m2S5cKnBeQBG0C02skdN2dXJlf3qmXX3Zax0sKFp+7+7YDy4qUAiL2/fvdSaQ2gJxWMXkYhBUfn1xZA5XCCq2DWwunWI/4ZDICBbMmWiRMzTrE5lWAvLoZ9O3IL4F2gN31rbPrWqrlgB3wXqYJVC92E+jf6SCIuMWQ/LrN22+2IEE4AAAAASUVORK5CYII=",
+            name: "Haamujousi",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Haamujousi"
         },
         {
             id: "devourer_ghost",
@@ -1881,20 +1977,12 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/N\u00e4lk\u00e4inenaave"
         },
         {
-            id: "ghost_bow",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGklEQVR4nGNgoBAwInOkVFT/I/Of3bnNyEAAMOHSjEuMIHh45sF/mGYYJlkzsgsIGQD3wsMzD/7Lmyhg9TNBV6DbTIormPDZTJIrCGmWUlH9n7+cuyJ/ObcYshzjibeJ7FD2PwYGBlYGBoa/MEk2Bgk2VZ48BiMzz09snH8ZUppEzF9/vlvOysJR3Oh/6wEDAwMDy38mpmW4bP7D+JmBg4WPYUJnBwMDAwODl6t7OQMDA8Ppj7nHGhluSTEwMDCwMP77F8GAiA1mKP2XgYGBgYWBl+HHn0/MBeUVQWycfxkesU/vffzufDErC4cV3Jb//xkY8eP/jIgw4KkoXikkjuJMfFGIHIB4Y4GidMDAwMAgb6LAiM0QYuIeAASef/yYYsb9AAAAAElFTkSuQmCC",
-            name: "Haamujousi",
+            id: "phantom_c_apotheosis",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAsklEQVR4nJVTsQ3DIBA8XpkiXYq0niGyFIkqa1ieyPIarpAsIc/AQqQJ6Hk/AV9Dwd39/SEAhtlO8XF/xtlOEQK1u5skAoALHpLogteousE/gQTxiD0imY56xMe2V02IX9hhrIrTKTmmZ4Vj2/H6vItBi1tNNujdP4ld8NmEAGBxq9Hia+LEvZyAizgoie0wqiW2QC1Cy7Qw6C2yMOgpMDWvfbL8CpdH/3D6TDINL1gb9AX05mlKzltjGgAAAABJRU5ErkJggg==",
+            name: "Pakkomielteinenkalma",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Haamujousi"
-        },
-        {
-            id: "forsaken_eye",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVUlEQVR4nI2T30tTcRjGP+fsV4796OTc7CoEYYutH6AjXAUiZYJBYd14ZQqV+A8EmlngBC+kGxEl8MdVRDfd7GZdJCwclF4IJ9zEGARBbo6D25g7s+10ETup86L36v3C8zzv8314X4FTSh4eHwJt1uCwNYiiQLWqUckVDgLzk9aTWOHo49vjZ/fAFNQMwtPG2zdc5uZGxAYL1QOV8q8s2Y+f94SKtuB/M/m8TuBQVZ9US+UFJfaV3IZMZnO1zlnTlU4cbQGkm0EsTrsAYAT49OjlWWCh9OMn3xdnAbg8Pa0T1XQagOTMDJnNVQIXpjhUVc1ksQhGALeh1FYtlZEnRmkZGgIgn0wCYJYkLG63Lqqm08gTo7QvrQBglIfHHrr7et7XpuUTCQBMksQZj4eyolBWlDoxgEw0phmb+nrOKbEvbM+/1qefFLP7fLwdG6PVZmOnUGBgbo71wQGa/NcR9z5EIpViuS6wGrFGTuZydC0vk8zlWBkZAaBSLCMe/Nb2rRdbdItmSaoTarXZmIlG6QwG2VAUWm02AKwXWzA2GAVncSsFQDYe10mNHR3633cKBSLd3QC0SRI7hQIuj4fiVgrRdb+312A1H7NtkiSy8bieQX84jNfh4IXfj9fhoD8cBsBgNf9dpEw0pjmuXWV9cABXKITd5zs1k1qlFhdpX1rB4rQLIkD6XeTWyfRLu7t6n08ksHu9en+0jq6yVtxOIU+MAuAKhYB/+5BPJNhbWwMg8GoK5yWfcEwAQN3Pa/9zC813u3SeUIcC5OHxzGnXeP7BnTr8H7nY9KXl7ILyAAAAAElFTkSuQmCC",
-            name: "Hyl\u00e4ttysilm\u00e4",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyl\u00e4ttysilm\u00e4"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Pakkomielteinenkalma"
         },
         {
             id: "confusespirit",
@@ -1969,20 +2057,12 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Taivaankatse"
         },
         {
-            id: "gazer_greater_sky",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABYklEQVR4nIVTIW/CUBD+aDpVTdJUEp4hMwNLUBiqMExiCA1mkxgMhoQgJx8OyQzqNZNLZltZ8xBTTf8AmUAwUQ56fYx9SZO+63ffXe++V+mORqdMa7hCAAAyrXEP08aMnW0AcIVgiURaJQsjeTBus5hFidQBkQbjtlGtVnWNjqxy9SKp+E4FyrCLH10hIJ0Qwa4HAJBOeDcZACxPCNBDkE4I6YSIlWLzkU6IaLdnApXHTudUDLhnsVgpTBszrJLFpQMqEhx6V4HN5IMJUMLce0WrX0e022OevgHgK276fi7wEx2YwPv6C6tkgabvIzj0IJ0QqdbItGZboUL2X8NJtYYUYMnMA+sZNset2QF1sTluL+fhw7NhIOJZt6qXDXPLQBS3ymshZOfW/4NdNA5h8vnC7oMUOafVrxsCleFyacyg+/10+WeahycE2z+QG8uOlQLA7VrzrsRa1QXS61aKiJXCL6vCnmwhxgW7AAAAAElFTkSuQmCC",
-            name: "Suur-Taivaankatse",
+            id: "gazer_parasitic",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABSklEQVR4nJVTsWqEQBB9yiLCFtqsjWJ11hYWl/6KcE3SB665FNekS3XllSnvB/Ib+YYrUgiHcMQiiGm00UIIIWAKmc26FxPyQFxm572dNztr7FaLPvRcEIqqkWs9XrcdVAiHg0FD6LlS5PnlTd+GcLhc120HphLUjSnUbSdFhMNh6qWq5CTykeYlbq4vkeYlksgf5dRtB2O3WvQ6OYl8PD4d8P7xOTrdtgbH8SyQVTAqichpXiLNyzMyABlLIl/aZmpTDtnrpPcpmP9m6AJq08jjb9hvNwC+G2+Sf+FwPNzf/ilyyo4oqgZF1SD03MECXc8pOyKeBbAtdiakx2h+TABSjcTWy7kU2m83sC2GeBZgvZzLkaa/cXd10as3AQzzQFWpUCeWbJvC4fJ0aqhwuPT5E9TZYXXbjYj6O9AHTc8zKaAm06fu6XmELxjwq0Mtjs8OAAAAAElFTkSuQmCC",
+            name: "Parasiittinenkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Taivaankatse"
-        },
-        {
-            id: "gazer_cold_apotheosis",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQklEQVR4nG2SMY7CMBBF3yLTUKSxlEQCmo3EASjSwxn2FHsDToDEAThOIuUA6WgiQZVIhpKCJsVukYw1MfzG9mjmz58//vo5nf7S5QqB61p/D+PP+wONKIkxBEiXK0/S1DVREgPwvD947XfT5KLE6AKB7iT3137HMc8neQdgFkrVBbrj2tpQLMc8x+jun7odgEVRvhULTGhM2G1tLf3ow0cC6ShYFCV9VXEe3/Z6w43nGfjNsilBaM4BiC4X7PUGDJuAwSchmRCE5qytpR/vTV17dU1RstluPTEMf8OI3FCa69o3M5ui9P9CVBmZM5w5Xa6YK3XHPPfjSbHr2oHAdS2pkh0lMa5rmWffH8eTzT3vj2GNUgDD/5ZYaFpfVW85JkpiL0eCMqdWBuDGU/K8ApEkQQ2dLNDvmQR0slahXdd5gn/7BLyyi5Fi9gAAAABJRU5ErkJggg==",
-            name: "J\u00e4\u00e4nkatse",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4\u00e4nkatse"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parasiittinenkatse"
         },
         {
             id: "gazer_greater_cold",
@@ -1993,20 +2073,20 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-J\u00e4\u00e4nkatse"
         },
         {
-            id: "gazer_parasitic",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABSklEQVR4nJVTsWqEQBB9yiLCFtqsjWJ11hYWl/6KcE3SB665FNekS3XllSnvB/Ib+YYrUgiHcMQiiGm00UIIIWAKmc26FxPyQFxm572dNztr7FaLPvRcEIqqkWs9XrcdVAiHg0FD6LlS5PnlTd+GcLhc120HphLUjSnUbSdFhMNh6qWq5CTykeYlbq4vkeYlksgf5dRtB2O3WvQ6OYl8PD4d8P7xOTrdtgbH8SyQVTAqichpXiLNyzMyABlLIl/aZmpTDtnrpPcpmP9m6AJq08jjb9hvNwC+G2+Sf+FwPNzf/ilyyo4oqgZF1SD03MECXc8pOyKeBbAtdiakx2h+TABSjcTWy7kU2m83sC2GeBZgvZzLkaa/cXd10as3AQzzQFWpUCeWbJvC4fJ0aqhwuPT5E9TZYXXbjYj6O9AHTc8zKaAm06fu6XmELxjwq0Mtjs8OAAAAAElFTkSuQmCC",
-            name: "Parasiittinenkatse",
+            id: "gazer_cold_apotheosis",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQklEQVR4nG2SMY7CMBBF3yLTUKSxlEQCmo3EASjSwxn2FHsDToDEAThOIuUA6WgiQZVIhpKCJsVukYw1MfzG9mjmz58//vo5nf7S5QqB61p/D+PP+wONKIkxBEiXK0/S1DVREgPwvD947XfT5KLE6AKB7iT3137HMc8neQdgFkrVBbrj2tpQLMc8x+jun7odgEVRvhULTGhM2G1tLf3ow0cC6ShYFCV9VXEe3/Z6w43nGfjNsilBaM4BiC4X7PUGDJuAwSchmRCE5qytpR/vTV17dU1RstluPTEMf8OI3FCa69o3M5ui9P9CVBmZM5w5Xa6YK3XHPPfjSbHr2oHAdS2pkh0lMa5rmWffH8eTzT3vj2GNUgDD/5ZYaFpfVW85JkpiL0eCMqdWBuDGU/K8ApEkQQ2dLNDvmQR0slahXdd5gn/7BLyyi5Fi9gAAAABJRU5ErkJggg==",
+            name: "J\u00e4\u00e4nkatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Parasiittinenkatse"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4\u00e4nkatse"
         },
         {
-            id: "gazer_robot",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABVklEQVR4nI2TPU/CYBDHfzSVmNB26JMumKCJi47sJAysLmxuDmzgwszXIG58ExcTdkYmEx2YSDH2JSEy4FDu8SjW+E+a9u56/3uvjcaTPQfE8Vo+MSZC67M0QcPzAwBcrTQm4v3tFaDSQSB2V0fN0oTBYk4Zs3aHLE2OSDw/IEsTXGMim+JgMafXbJ0QcCCdtTtcXl3bsjw/KDL4zfmr0QCgnuc/+sWc2SG6BHallpswP3LehaGV63lh6zVbBUm7Y3vmeH5w0iCNXRjabIRE+hTHaxxjIoyJmHaHrLZLG/Fss6kk0XDieI08f5FUwcnSxM70PySr7ZLn/oNdNFfXL53VkAbKWyDTq9317/faICN6fHkC4OL81kYGmHaHR6vtVq3otDsEsEQii7NsYm00nuy1UqN8UBJAnD0/wJXjEWU5m7Jey1maFIukf9aLVT4eXSJA+vnBN6zu2jZf30W0AAAAAElFTkSuQmCC",
-            name: "Aluebotti",
+            id: "gazer_greater_sky",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABc0lEQVR4nH2ToW/CQBTGf5CiqiZIAEGWZlVTBLugMKBmNjlDRuZOz+1fYPJwSDB1zZKpBttMoY6QBdGSIFBkAsHE7Upbyr6kud67d+99733vSt3B4LiLY67qdQB2cUwal+wGlnFKO4imAGC0HhXaMwFMdhNENAUPz3f6dKyDGDjVGu37m0yAcj67U60V/ptSLpZg1tV2A54+lLb/72WAcsN1MR/A5/UXq+0GafssgiDTH2n7hN7ynAFApNRprbRYBAGiKRitRxkGaYYApXa/f8zTEk2RNCz0lrxF78lZw3WJlOKp8qgDTF4+MgFM1287HYb7HtL2E3Z5SSeHKVYimcGfdJFSSFeXZC4WzUHpJ9yflTAbz5kcpsne0M0nm43npyam4VRrEGX3+QEy9nJeFoNdHF+c/zQsafsMvV7GKMLXzHuQrvYpYmGBHpDudwvQg5R/DxM1RbqcJZK2j7UIAgCiutY2UgqncXI0/TCqpBMtgoBfDfixhBIR5psAAAAASUVORK5CYII=",
+            name: "Suur-Taivaankatse",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Aluebotti"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Suur-Taivaankatse"
         },
         {
             id: "spitmonster",
@@ -2017,20 +2097,20 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Helvetin sylkij\u00e4"
         },
         {
+            id: "triangle_gem",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDklEQVR4nJ2SMW7CQBBF32JLvgGVhdybBreIAk6AK1L6AoiCc1DlApTp4ARQRLROE/dWRJUbWMLaVLNZ490Q8RvLs7Pz3x+twqP1Dj1dJOb/ZVIrV9/AN+C/cg4Q98up5nKqAXj7SLSrt4e13qEBvr9ChqObqUuc+yhOAju7DAMMjZdA0A/7KwB5EXcuSqzX7e+9HsFhf6UqA/IiNju4J3JGWG1CfT5G5sB2tWvTRWL2ZCKsNqGuyoA0a6nKgPmycS7RFeXPdyDLsymkZgh87raERBY8HN0MRbcTOB8j5sumUxMCuWwbqPEs0uIuX5/SrO0RqfEscj7RR0qzlryI+zt45C4SCgXwLMXne6N+AF70h0jK6//1AAAAAElFTkSuQmCC",
+            name: "Kolmionmuotoinenkristalli",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolmionmuotoinenkristalli"
+        },
+        {
             id: "sentry",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+UlEQVR4nLWRLU/EQBBA316wa67p5VBnEGgU4hQJKQpLUCTUUDcOew7Nh60gJCT8AFQJGkUqEfWUllJ3sou6BGh3W0IYs5vdmTdvduE/op7PzZ8AaZoOBoxcl0EQ9IKcgCEg9fMgSRLj+z5lWXYWZFkGQBRFCmCtK+nk7BhvMgZA9k+ddi2D7YMt403GXK/vAHD0+sj95YMKw9DEcdzKH/QGtuJOg68WABveJueLq848q8HT3bOaLmdMl7NeO+sIWmu01ry9vLN3uGv9Risgz3MA6rrGfIyckG8hIkZEzGoP/N6gagpExFRN0duwBaiagpuLW7VaAecIn2pdWiqD3P19AAAAAElFTkSuQmCC",
             name: "Vartiomies",
             description: null,
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Vartiomies"
-        },
-        {
-            id: "triangle_gem",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOUlEQVR4nI2SP07DMBjFf44SR0ldVUDVoUPFFbgKEwfhGEwsLD0AEysTUw/AFVCHLiD+qG6iOChmiOyUxIW+ydb3+b33fX6CA1iuZlap3N+vLl5EqC86RHAsggROXeuCqjIA3D+f21DvwNZyNbMAtWlIZMfvxumPEnRQmyZ417r4ewSnvq+qVE4iI6rKoFQ+6Bk4qE1DqS0np4qqMv5hXX+HzHYEfWYHmXZnrYuBiwjg7mlqP18brz5fjP32TYV3AQxGOSoH+y6KnflVE7ePZ9aUgtGEgXofaSr5eNckMsLlJO43bdZb5otxkMA93v/m2JQCmVlKDZkSlNqyWW+DBJkSPmBuFzGAKdtw7b4gEE6Ptg7QMJoY0lQSy8ziXDiiPmTW/loiu3oiI7QuWrmbh2kwA//h+vJN/AAAXZnP88nFMAAAAABJRU5ErkJggg==",
-            name: "Kolmionmuotoinenkristalli",
-            description: null,
-            bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolmionmuotoinenkristalli"
         },
         {
             id: "crystal_physics",
@@ -2079,6 +2159,14 @@ const apothIcons = {
             description: null,
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Jalkamatkatavara"
+        },
+        {
+            id: "snowman",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQklEQVR4nGNgGGjAiEuiccMlBlUhNjg/yk4DqzomXJoZGBj+I+Nlh24QbwADA8N/ZNuramoYGBgY/kMNxm8ATBFUEwMDAwNDYlEdw+13v2CuIuiC/6pCbAzHE/4zON6pZmDamIYSFkR5oaqmhmG/SivDLKF6hk0yFQy33/1imN/XhN2A8ggLFGfdvP8E7uT5fU0M6ooyDPP7mhgSi+oYbt5/gmEA46wij/93n31g6FxxAh6lUf3b/qsryjCgG7ys0Asj2pnS+nYwKksJMGBzCTINMxjDBTDGrCKP/2l9Oxix2Y4O6gP0GGF64F6AAa6IWfBQh4VDYlEditi3FWkMylICDHeffUC4oDzC4j+yZlzg4rQEuObOFScY4dGIHIgwgJyYkF14QDYPrp4FWRISYBD/qwqxMbS1tKBohqZGBuQwAgCgTouJU/jbcQAAAABJRU5ErkJggg==",
+            name: "Lumiukko",
+            description: null,
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Lumiukko"
         },
         {
             id: "miner_hell",
@@ -2337,28 +2425,28 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Toveri"
         },
         {
-            id: "boss_toxic_worm",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABr0lEQVR4nJWSz2sTQRTHPxMmu5t03QkFbUpoqtbSVsFF6K9r6cmDF48998/y7NH/QMRrQKSC2GqKZEO1raVkl5JsNiXrYZlptlkV32ln33uf933fGcF/xP7Lp+nk+dWbT0L8rWFj309rdcX2eVZ26Fzm8qvxLPLJ7mpqjW0AktKQz28PBcCzHd9Ma/f7qIaHvKzizNj0fkQ4ykZ5VcTW8/WcrKvkCoDqgwz6SDhczNl0Wl1To5pelostSgBJPDJJ13IBuD6G/vch7TTONS5uLpjzxf0KpSQe8fHdgUjikQG5lovllHEtlzCI6J2GLG4umO9aXREGEZ1WFymXYGPpZt8xGaR0UmbcGEEwbW6n1TVryFpdFd7AydlPOLvZV6uYbAaQTsUuBDT8eXqnYeHkMIiMJzIeDCmCOBUbrU6DdLNWEAYRUptSBPhXqKaHgOzF3U7enq5jUgGA9PfW0qSfMDi65uuHb+ZpP36xbKAzc9VCBWEQIe89vAvAOb/wV9ZSgIPXX0T5jpwq1rJzJupdNQjA3yPV/5yKzdH7NqrpUaur6WuMB0Mgb5qG/al50offkJSwC5tfB1wAAAAASUVORK5CYII=",
-            name: "J\u00e4ttim\u00e4inenmyrkkymato",
+            id: "forest_monolith",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAx0lEQVR4nJWSsQqDMBRFj+IXCILg5uTSuWs/sdAf6F84WXSra13q0slAQPAX2iliYtKYOyWXvHvvey8RGzye3RcLXuOImCSzXFbufrtGALH5EKBuuvVeNx1ikjZdABLT3RTxIVHFKmYoYuXqK972vxMIdc7yVBewubkczTRWgRAkJjHLhc9brPdtXK/ALBeyPNWKFOeC1oJy7tuBvh007lCCsioAOF9OO+6QQJan2gzKqgibgRJxnW2rPbxG17/YJTCd/xUD/ADv3GOqVonPZAAAAABJRU5ErkJggg==",
+            name: "Monoliitti",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttim\u00e4inenmyrkkymato"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Monoliitti"
         },
         {
-            id: "boss_toxic_worm_minion",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOUlEQVR4nOWSvUoDQRSFv4G1sNhdE4QEJAmChLggwkqsrCNYWPgCeYGAzyJYprHwFQL2IYWLC4uQWNi4IZAESdxdQiwiY+NMVhR/sPRWc+/cc+bcMxf+Z5RPSlKdjc8a8tV1aWVM7KLFWt4G4GkY4TUDAWAsVijXNiWAeMf8VgSIpwkAVsbU+c6hw8N1HwC7aOE1A6EJji4OJIB/fvcBmM5L+wVur7r6UUMBR/6EnJvFbVRo1duCKlIB7aJFPxhokKrNxjPE3qkjAZLeHHN7lZybJa2ksLtBFMZadhTGWhWAkfTmWmrcWV78NAzFNvQelR8y3RCFsR4hbaQawXAbFdUrW/W2UPn95WCpbJpoE9M1YOmBmn3kTwAYdMbaMAX68hsV0c1ZV3y3SM7xllw8v/zaLx3pVf5zvAKac5L6kypJxQAAAABJRU5ErkJggg==",
-            name: "Myrkyllinenmato",
+            id: "boss_flesh_monster",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABiElEQVR4nIWTMUvDUBDHfw0OHVKooKLUQgKBZJE+EFzsZLuIk7ODm+CH8bM4OdqpLkJLRCgVCg3UYimFBOzgpkN6ZxJbvOW9l+T+97v/y5Wur26/F8mc2qBPL44B2D9tATCdRNTqDjvVPQAWyVz3crYWyZzZ0yMAx9vbANQG/XStO0wnkSbsVPdYJPOcWOmu0fhmQ3QOPSVpHJ3kKguJ5dm2vvBsm3azqfuz95GSvLw+55KFZMsxBsIQAMcYyq5LeyXoAHS7dA49FRESEbGkumMMu+fnSlN2XQDazSY3yewPiYhYZdfVyhXfz3kgIsBGESWoBAG251EJglxilrDoibaQRRcxgK/xGIDg8lLbyYpMJ1GGoIBfbEPW4u1YUs320js/uLhQimwrX+MxURgyWi7T5NXPtrW2bCYkcV3UBv1UoIhf8X0+394UPXBd9YMVhcyNBejHEsWzCMmVw+/c/NuCxPD+HkA96MUx+6ctrM/hEICPhwcAlqPUYXkOqQ+OMTjGILMjI/8DMF6oNomEZ5gAAAAASUVORK5CYII=",
+            name: "Kerettil\u00e4inenhirvi\u00f6",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Myrkyllinenmato"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kerettil\u00e4inenhirvi\u00f6"
         },
         {
-            id: "boss_musical_ghost",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2klEQVR4nJ1SsRGDMAyUOE/hhsZuqBmBS+kNMkA2IBkgyQYZIBtQ5jICNQ00NKzhVPIJIZxcvsLC/3q9jMBwOLYRAOB6PqVaXZXYD3Pk9+qqRPo2oIBIITRgnY8hNKv/1vkkiPzwD1QHGpZpRK2eHCzTiJTB63lHAACaXY7ABYuceg7UeEWkjpQyd0BNZGZGrkjDHjmNwHG5PbKWJQx/FBSitJ/DxgEnf8MyjZjNYG99NI51PqoOcrDOR752VaCuSuTZSBIPtOAXiayJ9sMcu+69qRsi/boBKfIBfP1vf3eiJmMAAAAASUVORK5CYII=",
-            name: "Hyl\u00e4ttyorkesteri",
+            id: "boss_fire_lukki_phase2",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABn0lEQVR4nGWTMUvDUBSFvxQpIVdxSCIdJIKUoiAIOojg7uQPkPYfdHBy7NTF1cF/YPE3uAecdBKU0sVMhZcumsRucUjfMy+98Ia8d85559174pzt7paL5RIAlWUAhJubAPiuC0DzvI5p0ahQBJVlBrwmLmLhW03AiV8SihCK8JmmUJbVWpFP/NLCb6yrl7zcRAB4vYhimhC/Km5jDDkUQeU5Kstwtl231HYuI4+HwR5eLzIWi2liWa7EflF5Xjk4CAI+05RQhIfBP7E/nlnEyahLMU24OA0hrkQPguC/B9qe14voj2ekec77fG5WfzwzzjTW9EDfXifPf34sB+nKsq5QhMVyWY2xrjgZdWlWZ2vL6sfbwjFnLb0RvyoDCBqzDkR4vjsGYPj4BWCm0FJZhspznj4KIzIZdTnqdKzbdb0tHDMB4wDgOSm4jX8ZPn5ZIoGI9SwdNF1WDqDKwvWhV41rVTpQ2n7didP8mepxrQud3yfm7fVyrvb3S4CP72981zWh0iK6400iVEHa0B++67LTbsMqmfjeWsOa5J12mz+FhePZaUIPwwAAAABJRU5ErkJggg==",
+            name: "",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyl\u00e4ttyorkesteri"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/"
         },
         {
             id: "blob_titan",
@@ -2369,28 +2457,28 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Kolossaalim\u00f6ykky"
         },
         {
-            id: "boss_fire_lukki_phase2",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABn0lEQVR4nGWTMUvDUBSFvxQpIVdxSCIdJIKUoiAIOojg7uQPkPYfdHBy7NTF1cF/YPE3uAecdBKU0sVMhZcumsRucUjfMy+98Ia8d85559174pzt7paL5RIAlWUAhJubAPiuC0DzvI5p0ahQBJVlBrwmLmLhW03AiV8SihCK8JmmUJbVWpFP/NLCb6yrl7zcRAB4vYhimhC/Km5jDDkUQeU5Kstwtl231HYuI4+HwR5eLzIWi2liWa7EflF5Xjk4CAI+05RQhIfBP7E/nlnEyahLMU24OA0hrkQPguC/B9qe14voj2ekec77fG5WfzwzzjTW9EDfXifPf34sB+nKsq5QhMVyWY2xrjgZdWlWZ2vL6sfbwjFnLb0RvyoDCBqzDkR4vjsGYPj4BWCm0FJZhspznj4KIzIZdTnqdKzbdb0tHDMB4wDgOSm4jX8ZPn5ZIoGI9SwdNF1WDqDKwvWhV41rVTpQ2n7didP8mepxrQud3yfm7fVyrvb3S4CP72981zWh0iK6400iVEHa0B++67LTbsMqmfjeWsOa5J12mz+FhePZaUIPwwAAAABJRU5ErkJggg==",
-            name: "",
+            id: "boss_musical_ghost",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2klEQVR4nJ1SsRGDMAyUOE/hhsZuqBmBS+kNMkA2IBkgyQYZIBtQ5jICNQ00NKzhVPIJIZxcvsLC/3q9jMBwOLYRAOB6PqVaXZXYD3Pk9+qqRPo2oIBIITRgnY8hNKv/1vkkiPzwD1QHGpZpRK2eHCzTiJTB63lHAACaXY7ABYuceg7UeEWkjpQyd0BNZGZGrkjDHjmNwHG5PbKWJQx/FBSitJ/DxgEnf8MyjZjNYG99NI51PqoOcrDOR752VaCuSuTZSBIPtOAXiayJ9sMcu+69qRsi/boBKfIBfP1vf3eiJmMAAAAASUVORK5CYII=",
+            name: "Hyl\u00e4ttyorkesteri",
             description: null,
             bgImage: null,
-            wiki_url: null
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Hyl\u00e4ttyorkesteri"
         },
         {
-            id: "boss_flesh_monster",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABiElEQVR4nIWTMUvDUBDHfw0OHVKooKLUQgKBZJE+EFzsZLuIk7ODm+CH8bM4OdqpLkJLRCgVCg3UYimFBOzgpkN6ZxJbvOW9l+T+97v/y5Wur26/F8mc2qBPL44B2D9tATCdRNTqDjvVPQAWyVz3crYWyZzZ0yMAx9vbANQG/XStO0wnkSbsVPdYJPOcWOmu0fhmQ3QOPSVpHJ3kKguJ5dm2vvBsm3azqfuz95GSvLw+55KFZMsxBsIQAMcYyq5LeyXoAHS7dA49FRESEbGkumMMu+fnSlN2XQDazSY3yewPiYhYZdfVyhXfz3kgIsBGESWoBAG251EJglxilrDoibaQRRcxgK/xGIDg8lLbyYpMJ1GGoIBfbEPW4u1YUs320js/uLhQimwrX+MxURgyWi7T5NXPtrW2bCYkcV3UBv1UoIhf8X0+394UPXBd9YMVhcyNBejHEsWzCMmVw+/c/NuCxPD+HkA96MUx+6ctrM/hEICPhwcAlqPUYXkOqQ+OMTjGILMjI/8DMF6oNomEZ5gAAAAASUVORK5CYII=",
-            name: "",
+            id: "boss_toxic_worm_minion",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOUlEQVR4nOWSvUoDQRSFv4G1sNhdE4QEJAmChLggwkqsrCNYWPgCeYGAzyJYprHwFQL2IYWLC4uQWNi4IZAESdxdQiwiY+NMVhR/sPRWc+/cc+bcMxf+Z5RPSlKdjc8a8tV1aWVM7KLFWt4G4GkY4TUDAWAsVijXNiWAeMf8VgSIpwkAVsbU+c6hw8N1HwC7aOE1A6EJji4OJIB/fvcBmM5L+wVur7r6UUMBR/6EnJvFbVRo1duCKlIB7aJFPxhokKrNxjPE3qkjAZLeHHN7lZybJa2ksLtBFMZadhTGWhWAkfTmWmrcWV78NAzFNvQelR8y3RCFsR4hbaQawXAbFdUrW/W2UPn95WCpbJpoE9M1YOmBmn3kTwAYdMbaMAX68hsV0c1ZV3y3SM7xllw8v/zaLx3pVf5zvAKac5L6kypJxQAAAABJRU5ErkJggg==",
+            name: "Myrkyllinenmato",
             description: null,
             bgImage: null,
-            wiki_url: null
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Myrkyllinenmato"
         },
         {
-            id: "forest_monolith",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAx0lEQVR4nJWSsQqDMBRFj+IXCILg5uTSuWs/sdAf6F84WXSra13q0slAQPAX2iliYtKYOyWXvHvvey8RGzye3RcLXuOImCSzXFbufrtGALH5EKBuuvVeNx1ikjZdABLT3RTxIVHFKmYoYuXqK972vxMIdc7yVBewubkczTRWgRAkJjHLhc9brPdtXK/ALBeyPNWKFOeC1oJy7tuBvh007lCCsioAOF9OO+6QQJan2gzKqgibgRJxnW2rPbxG17/YJTCd/xUD/ADv3GOqVonPZAAAAABJRU5ErkJggg==",
-            name: "Monoliitti",
+            id: "boss_toxic_worm",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABr0lEQVR4nJWSz2sTQRTHPxMmu5t03QkFbUpoqtbSVsFF6K9r6cmDF48998/y7NH/QMRrQKSC2GqKZEO1raVkl5JsNiXrYZlptlkV32ln33uf933fGcF/xP7Lp+nk+dWbT0L8rWFj309rdcX2eVZ26Fzm8qvxLPLJ7mpqjW0AktKQz28PBcCzHd9Ma/f7qIaHvKzizNj0fkQ4ykZ5VcTW8/WcrKvkCoDqgwz6SDhczNl0Wl1To5pelostSgBJPDJJ13IBuD6G/vch7TTONS5uLpjzxf0KpSQe8fHdgUjikQG5lovllHEtlzCI6J2GLG4umO9aXREGEZ1WFymXYGPpZt8xGaR0UmbcGEEwbW6n1TVryFpdFd7AydlPOLvZV6uYbAaQTsUuBDT8eXqnYeHkMIiMJzIeDCmCOBUbrU6DdLNWEAYRUptSBPhXqKaHgOzF3U7enq5jUgGA9PfW0qSfMDi65uuHb+ZpP36xbKAzc9VCBWEQIe89vAvAOb/wV9ZSgIPXX0T5jpwq1rJzJupdNQjA3yPV/5yKzdH7NqrpUaur6WuMB0Mgb5qG/al50offkJSwC5tfB1wAAAAASUVORK5CYII=",
+            name: "J\u00e4ttim\u00e4inenmyrkkymato",
             description: null,
             bgImage: null,
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Monoliitti"
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/J\u00e4ttim\u00e4inenmyrkkymato"
         },
         {
             id: "boss_sky",
@@ -2527,6 +2615,16 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Repelling_Cape",
             ui_name: "$perk_repelling_cape",
             ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGklEQVR4nGP8//8/AyWAiSLdDAwMLMgcRkZGBkNZ2f8MDAwMbFzsDAwMDAweukEMMtIqDAwMDAzT1jUzMDAwMJx//JgR5nIUAwxlZf/DNCJr7tnUzSDA9h9uKNQSRoJekJFWYVh1eDleL6AYALPBIrmcgYGBgeHJ0zsM4mzCDHKCMijiyK5kRI4FCw1VlCjx0A2Cs3dcXodi84kbt7F7AWYLcuBhkyfoAiUZAwYnHTcGM53FDAwMDAwdK8QZ7j25QNgFMFvuPbnA4JX9n+HUlViGdTstGZpqhbEpRXWBkZwcPBphLmBggAQmchj8+vaT4dyjR/jDQE1QiaD/GRjQEtL5x48ZGSY34cwchyY3IdRh8wI5gOLMRLEBAPCWXtbssNcpAAAAAElFTkSuQmCC"
+        },
+        {
+            id: "APOTHEOSIS_ABSORBENT_CAPE",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABnklEQVR4nKWTv0tCURzFP09CQXkSUTg8CwqDiIIoqCc0RA3VEKVTSxC8pvbybyjbAiMoCqqhxX4tvaUfICQSEeQQJAX23mA6RI8kXWzylVmPqO/0vfd7zrnn3MuFf5ZQbmYH5JL+8vorkuR2ETmLC6bA7IBc2r++xSOKANidDgBmRuYBWDteBKCYLwCQMQwmutqInMUFG4D+8opHFLE7HVXkpcOw2ZfnHlGk7NZmZXXpMAxAUhJ+xJgC5ZMBZCWEpqfMdXx9oYL0Gfutg1FpA4DJngCTPQErk98L+Jrr8QdieCUf/kDMUqDm64ashDjdLQGg6Sm0vX5kpbUqRpWD6NEcMyPz1F3e09i7CYBX8gHwpKrISshaIDgWJikJ9I2fk9bfKkD32jVPqkqLt4vt1aGKmQAw3t1ZSmefsTsd7Gy0A5B6yPGYmDZf4/gmapKK+QJNDbUcXN0IVZd4EtMASOtv9HZsERy+IDh8YR1BcrvIGAbFfIGV5SyphxyD/V4SySkSySmiqp/axB2yEqKYL5AxDCS36yMC/P0z/bveAYDVkKMV0h8HAAAAAElFTkSuQmCC",
+            name: "Absorbent Cape",
+            description: "Stains drop at a slower rate (when moving).",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Absorbent_Cape",
+            ui_name: "$perk_apotheosis_absorbent_cape",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABPklEQVR4nN2SP0vDUBTFfxFJpYJQLTi8VGiMuCjooGnFyS4RClK/QorfwHYXwX/dXBQUF0F0cNDFLIqaQUXQoYtYujRF6OQk6BKHkmKaxlXwbu/de88953Dgr0tq/5hMJFwAORoBwBhfRBEaexebAHx9fPJUq7X2utqX5WgksFw62yJvFPCAvSMBgPZShMbJ7REAZREgC0D3z4d3GSBlFnEeXhmUByAGd/sbHedCGcyLAwCGFZUZdSqUZSiAloyTztkoQiOds0MBfML0Uc316I/Vmz459QoA79MjPhn3LxUpwOD0fJm8UaD/sYordoCmkQANyyJlFn+XkM2sUhYS+sI1Q6LHN1h1nmlYFqoyweFuprMELwem2cfcrMKl7aDHelv9pdIb4A9TaBLX1hNoyThXx1mfDzfbK74k/oP6BrT7W207RJcGAAAAAElFTkSuQmCC"
         },
         {
             id: "EXPLODING_CORPSES",
@@ -3530,13 +3628,13 @@ const apothIcons = {
         },
         {
             id: "APOTHEOSIS_VOID",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAByElEQVR4nKWTvW4TQRSFv5nZDTjRGuMIRSKKkbCQKOkcujyCG1fkCfJA6S25dIH9BFtZkWgoaRYEq0RK7I1D4giv54/C6w0hLhC51ZVm7qdz5p6BR5ZYNUcH+/70+vafhnarWxzHJ6IEHB3s+4+fv7ATRQCczXKMM3jncYAEpFLsRRUAzm9uaL97y3F8IgKA0+tbdqKI81+GXC/QRmOtxTqLByQSFUi+TS1PwoCXUcRKbfCntFwvyHWO1gusc3jv8IBAIK3EKgd44Gk5UwLOZnO0WRTDluqzGq8aewD8SFOuplO09UgD369mNF7U7gOMM1hjMc5Rr29zePiBdrsNwGAwoNfrMRmPMVZTqWw+VGAtGGfxztFsvqbT6dBqtQAIw5DRaMTFxRjrPPN8XgLkqvH4wp9fuzohRHnm/d2dUoFAFFsVJElCv99Haw3AcDgkSRJWsVnC/gIoJQikwkjLZJLR7XaJ4xjvPWmakmUZUoCSArkO0KhukRhN4CTGO7LskizL7rwKgZSKQIU067WHAIAw2MAV/oRwOO9Ke1JIAhUSBhv33iaAZbY/fU1pVCNgk+Ty59okvtl+Diyj/L65W8CL+t/P9Oj6DVgJ2yDok4ltAAAAAElFTkSuQmCC",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABpElEQVR4nJWTwWrbQBCGP5tSm8BWQlZRGyQ3Ilt00UE6yQ/Qh9AhL6GLHyJPYvokzck6+BJQD44vFcQqQVDSgtkenF1rmxTaOc3O7P/P/Duz8H+m/gyMtLNMU3X3+AjAqmkopeRL27IIAguwahqWacr1ZmOwLNNUnbuuyqNIAapIpCoSaXzfEeYMqHPXVcs0VQBjgM/bLYEQvD6bAHBz2xjyr99aK+Y7gkAIdLdjgEUQsO06C3hz2+B5M6L4kvuH3sQv39mSXmnnY/jeVLx/6PG8GV23p+v25FnGuq7xHQHAerfjuxAnllJKS2OeZQpQVVWpqqoUoDxvZvJFIlUppZmIPjwDa3uJRBOMgdGqOWnf3u34m32YR8YfYiilPSpdaShBd+Y7YtjBUcaFEGb2+oIGvKTfd4QlgUUQ8OvHTwAzsnVdk2eZmcbQojeu8cfDhN6DIpH4jmBd13TdHt8RFIm07lgE8+mUtj9WzqPjQ+mF0cBhru175tPpieB6sxldhSEAyWRCfID4ABdCEB/g09uA+HBcoFJKrsLQ/kxP9uyr/ov9Bsf12TmYf8SWAAAAAElFTkSuQmCC",
             name: "Void",
             description: "Gain immense power, but the void grows jealous of your options.",
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Void",
             ui_name: "$perk_apotheosis_void",
-            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABX0lEQVR4nN2SvW7bQBCEv9s7ior+ZbIKwDKtA3Z8mvCV4vdQpYdgmyeQAMOAATdBAghIyPvZFIoc/9C1gUy5OzPYmxt4b5iXg7qqFOD+1BNSICZFALGWavkBgG93d2bUoK4qffgV6P2AD54YIyFFBME6wUlGnjk+LqaPJu7lBb0f6H2P9wMxJZImDAaJQrQJUGD6yJen4vvTb3wY/oojq/Waz9fXbLYbkkZ8HPBh4PbHadwgpEAMkZAS26uCtv3C15sb2ralKEtSioToEWfHE90stppnuYoRbZpGu67TGKN2XadN0ygYddbpYrbQi+ZVBhccDgd2ux3ee/b7Pcfj8S3qPxTrK53nM7XWqTGiRVFoXddalqUaY1SM0TzLdDVf6qhBXVW6mi81zyZqRRSMco5dxZzPn09neunK6BMyNyHpeW/Mk280grMZmZs847/ZxMP3n6+K9KnYAs+b+B/gD0ZNq82RrwYYAAAAAElFTkSuQmCC"
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABG0lEQVR4nMWSMWvDMBCFv7bgQIwxKIa2UNGhKlqlSWv7k/QzMzlrIJm8JJAGQvZel0jEjqBb+0AgTnfv3t0T/CGkFLyfBrzW4rUWQII1EqyRrm0kWAOQ3soEXmup5jP6YeBSwHK9GTXoh4EpSYaqawnWyEWudG2T7+kEa0YqRgreX55Zrjd0bQPA90OFdw7vHABd27Dd7anms+IIAhCs4XA6453jePzi4/OTfrVCqQWH05m3p8ei+kySZHvnJMYoIiIxRvHOTce5xfX8Si0EkBhjJkwNrvJuCZJtqcg7l8lS/EJwC6/1aPNTF1IDVddlF4C8pGBNvidX0p94VSrn35UW6bWmms/Y7vYj0uV6g9eafhhKdb+iPPe/4wdwpYWJOrHRdgAAAABJRU5ErkJggg=="
         }
     ],
     spells: [
@@ -3550,7 +3648,7 @@ const apothIcons = {
         },
         {
             id: "APOTHEOSIS_BOMB_GIGA",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzklEQVR4nGNgoDVId7L8X5fo+x+XPCMhzTP3HWdkYGBgQDakaf5mvPpQDCCkBsMkDW2IJklpJRTxz58+MJw5sRVDPYoAumZNHQu43PUrJ7AawohLMzKAGYTNECZkheiakTXC+Lx8AihqUAx4/vQeiiRMIzobGbDgsp1YAHcBzHZ0VzAwYHoFqwEMDJCoQqZhAFkjuhyKAV8+v2Pg4RVi+PL5HcPzp/dQFGNzGQMDjnSADnh4hRh4+QQYnj+9x3Dj6nHs6YCQIQwMDBiaqQIAU8thOv51jrkAAAAASUVORK5CYII=",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAsElEQVR4nGNgoDVId7L8X5fo+x+XPCMhzTP3HWdkYGBgQDakaf5mvPpQDCCkBsMkDW2IJklpJQzF+3ctxVCPIoCuWVPHAi53/coJrIYw4tKMDGAGYTOECVkhNs3IGpFdhNWA50/vYTUA2RB0wELIdkIA7gKY7dhcgR4GWA3AB3A5H8OA50/vMUhKKzE8f3oPwyW4wgdrOkAHsPB5/vQew42rx7GnA0KGMDAwYGimCgAACaRJkFPKRQAAAAAASUVORK5CYII=",
             name: "Giga Bomb",
             description: "Explosion!!",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
@@ -3925,6 +4023,22 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Star_Shot"
         },
         {
+            id: "APOTHEOSIS_ORB_KNOWLEDGE",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABPElEQVR4nLWSv0vDQBiGn4hbhw4SqIh00NBBGhQnxQ4udWkQ3Bx17OIqdDAOgquLo/4HgtBF14hOUmnqcKQORaTBoNAhU4dzOHs0tbUO9Z2O7773ue/HwaTlNqT8N+Cf4cMSR5mnxkHchpS/vTzdOxTW16RpzuiLfBreu8roheB3FKxecYiiD7z7BwPAANjZLsnTswuEaPM4Z5NPK8PdzROpxRQrC5aOrb7VyeVmOTzY5+q6augWrKxJqWirajJJc+0loJBReaWijZU1f7YwqO7nK3FznhoBcTMelTZ8iF4Im7vONyRmY2sZLxwzxJ6OluD4WQ2x7Doa6HfU3UhA9VYNx8qaGuJ3kmCAoBUhRFvHDUiucK98okFBKwLQZyHaXJ5XAPQqjf5y+kG9tQJ6bf3GRAWDGvxUw4wT0xeV9plu3LnRZQAAAABJRU5ErkJggg==",
+            name: "Learning Orb",
+            description: "Sui generis. Casts an orb that grows alongside your knowledge, even tainted...",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Learning_Orb"
+        },
+        {
+            id: "APOTHEOSIS_SPELL_WORM",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQklEQVR4nLVSMW7CQBCc4wM2co1sV5bccJHcmCpfoE4XynCU/CCNS+yUTkedX0BjKU5jydVhUVuYF2wK6w5jECJImeZOe7szN7sL/DccEdGt90E/mSepLuBJSodsr+9dspvEPEnJCAUpGKGgawU8SWnQDzgiIrnO4b5wHR8GI5ieBSMU1FVvyvpkgScp2b6LQ7ZHs1nB9l2YkwWePj6xi5esKWudp0hMz2oJHBFRPp+xn68Mx23MGGOsKiSO21gX7uIlGwYjNGUN07MAALbvgt1o8FU4IqLxNEBVSMh1fj6FR6AtdM++1646AFSFRFPWeH6ftgS7eMl4ktJ4GkCNz/ZdGKEg5dcRER2yPUzPgupLVciThXw+Y1Uh25FNFq3KZoXvt1fdcZWnRBXRBdT371mks8C1VVbL86dV7pPelfgofgE69MJ8ySCXVAAAAABJRU5ErkJggg==",
+            name: "Ethereal Wyrm",
+            description: "Summons the ghostly visage of a wyrm containing great power",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Ethereal_Wyrm"
+        },
+        {
             id: "ROCKET",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAAAfUlEQVR4nGNgGArgrYPoWwdRotTB2V+7Xb52u3w/H0+UNrjSr90u35+3////H1kBI1ZtX7tdmFykGSQ0/i3ZyxTjzCFRwcDAwMjIiJCGuwdu/Pfn7XAbICSaVQhtED2YqiEayHISmtLv5+O/P2/H5WlE4ODSRhgQG3GDBgAAYYhrmVipdvgAAAAASUVORK5CYII=",
             name: "Magic missile",
@@ -4243,6 +4357,14 @@ const apothIcons = {
             description: "A projectile that at first deals damage, then heals over time",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
             wiki_url: "https://noita.wiki.gg/wiki/Deadly_Heal"
+        },
+        {
+            id: "APOTHEOSIS_SUPPORT_BULLET",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+klEQVR4nK2TPXLCMBCFP3lMcgZ3OYTIDC5d0sfXyAWcCucAvoZTm5ISz4g03MAdZzCZ8VIIgX+UX/Ia/b23u1o9wY1Q4424MJJE2kveHN7ZPj8ONJdFX7h6msQF4OVNJoEUQFZ2snj4YDm/A2C9O1I3s4HYd56ngQpdRNDUjc2Qp/feErKyswRmZ803iAsjcWHkK04wzuAEridJpOnvXavwlFeZ9kKoTCsOlWnFx5lU8BeEbpKngcrKTlxzXus9dWOfdXPYn0fb7DwN/O88xk+aqByx777PMvTv7swUAiSRHhhlYVrxG8nGXe+OgGbLf1l5fO/ffKabcQJ9JqP67lT1EwAAAABJRU5ErkJggg==",
+            name: "Cleansing Bolt",
+            description: "Cures most negative status effects from it's target",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Cleansing_Bolt"
         },
         {
             id: "SPIRAL_SHOT",
@@ -5566,11 +5688,11 @@ const apothIcons = {
         },
         {
             id: "PIERCING_SHOT",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVR4nGNgoAb4/////xFsCCMuifsvDvxnYGBgePH+EoOlZh5OdUz4NDMwMDBICOoxHL8+CaersBoAAwkpsQwv3l9iqCjtxqcMuwtgOLfJ+D/JLlCUcGB88f4SAwMDA4ORpQJptiMDmM34XEASoGo6ociw/1DAwEAgGvG5gGoAALmEVR6d5Le7AAAAAElFTkSuQmCC",
-            name: "Piercing shot",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0UlEQVR4nKWTLQ7CQBCFv2m4AK4SLoAAheMiJAgskgSNxfVEdfU1lbXreoRBdKfZ/iwL4SWTNDtv3nv7U/gTAqCqiEiSrKrjYREy+5g2F916E/UF0AukRNQjTP11zEBgkbeKxKR1pQK4rkZExIsIoNJjvIUQNgyQr3dUTaF+QqcpM1uwCnG5nnFdzeP+GgIS3FwUrSvV6vY8aNUUA3tqtLiFbX4S19UA7I+bWT/6Zrz6IG/OYYIkdOnOAoPkcIpovRkn5hoTMXr6D4okgA+H+QveSo2ZOgPVQwUAAAAASUVORK5CYII=",
+            name: "Penetrating Shot",
             description: "Makes a projectile penetrate 5 times",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
-            wiki_url: "https://noita.wiki.gg/wiki/Piercing_Shot"
+            wiki_url: "https://noita.wiki.gg/wiki/Penetrating_Shot"
         },
         {
             id: "CLIPPING_SHOT",
@@ -5957,6 +6079,14 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Circle_of_Vigour"
         },
         {
+            id: "APOTHEOSIS_FIELD_SUPPORT",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIElEQVR4nKWTv0rDUBjFf1eEdJDuPkHBbv5pEcRBBJHOHX0HH6DtYF4g+ArZ2lmkEDKIECo1m4JP4B6CJEtvh/hdbtK0FXum+++ce77vngs7Qq3beHrLP+x5r+O0687t25MT90Xfnx8DMJrOcJoNAPIkww9SDeBFMe/DS3OxqpK9KDbEKvIkQ86IiBHwg1QL+erwtFYg/J4bkbvrA7VSwm3rAre/ti24nDGcaODHrCkoGjaazo7E+iYHUsrDTfez13Hae7Jpk8WF21elsQjbPTIC/4XpQZ5kOM1GYXNS3FTUixnbJazAD1I9GC/0NgzGCy2ZKDkAeP56JXzc/oyt37CVBLwoNiEJmdcK2EESlB7djrKdSCHKem2Uq/jrZ9oZS8izqfaK3CZgAAAAAElFTkSuQmCC",
+            name: "Circle of Trueform",
+            description: "Cures most negative status effects from targets within it's radius",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoklEQVR4nGP8//8/AzUBE1VNY2BgYEHm9DlINjAwMNSTYU5j0YHnDSgGhpkqNzAwcJFlmAX3t3oGBgZUAy24v9Wf+MrFwMDAwLjq9F2iTQszVUaJBNqGITroc5DEKVd04DnpBuLShA9Q3cujBo4aSAZASdgW3N8aT3zl+h9mqkyqOY0YBp74ytVowf2t3oL7G0kmnfjK1XjiK1cDjM846EtsALeIK65H2BliAAAAAElFTkSuQmCC",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Circle_of_Trueform"
+        },
+        {
             id: "TELEPORTATION_FIELD",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAn0lEQVR4nGNgoBAw4pJY9vjrdGR+lCx3JlEGwDQuPPkTRTzenB2rQSgGLHv8dTq6RnQQb86OYggTuuYdwYIZO4IFM3AZsPDkTxTvMeFSSCxgRLYdzakZC0/+nIFLI8wrOF2w8OTPGfHm7Bkww3Cpw+sFZEPIMoCQZgYGpGgkFIWwmPFY+34GclRSJxaIdQUDA2ZCom5SxmYQDODKTBQDAK0WUhfuIlwBAAAAAElFTkSuQmCC",
             name: "Circle of displacement",
@@ -6085,14 +6215,6 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Sea_of_Flammable_Gas"
         },
         {
-            id: "SEA_MIMIC",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVR4nK2T0UtTYRjGf6/tmBVGTRjREkXn1jmlTNFlhM5MUqILHfNGg66q2/1ZXQVBF4EESRTZBqnMA3pMzhpbF8ouKlPcyc+L4WeneTc/+ODj4X1+PO8DnyilaOQ0NeQ+M8DsdErNTqe0+PTFQyUivsHM+F2f9nzqvgIIAATvPKay9EaJiMzMpNRIZhxAiYgopcjMJVS6v1drzybH1OSDBBpwDEkHlEom71HlgPh8DZKZS5CeMGEN0v0Wf5pbtNkHAEgmR3yxw08GeOT88Gn/musAEdNkw1mn1HS861VW2mo9/+4tYXUNw5JbX2JrdZ/RWDvLboHOm7fZ9WDXAytoYcTG9LC99RkvKvpqAMDXvIPVHcH+tgnAUMjCrthU19/7IP+fAEDkoALAl40icJ72nUPaLhwS9pr5Xr5B/JKwvT1U6yUewi2vYlQ9fwKAvkiXfq8VbWKhGPGeHpYdB4BbZhS3vErn9T72fl08SRAI7QGwmCsCBpdbrgCQzxYwPv7lGtA6+JOdco6oNcBmPu8v8d1itm63wY7wqTtvuTXz64XsSYKXrxYEUMGEqQdzhdKpgMo5gw9vPwEIgDT6nY8Ac3yUG6mNWXcAAAAASUVORK5CYII=",
-            name: "Sea of Mimicium",
-            description: "Summons a large body of mimicium under the caster",
-            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Sea_of_Mimicium"
-        },
-        {
             id: "APOTHEOSIS_SEA_BERSERK",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArUlEQVR4nK1SuRHEIAxcGCeEl14vqoMmXA5NuA71QuqQEEdiBBaHPXOKWO2yegD4V5wp1Se5Mfxbc9M0x1h/4TOlKjkxEOwBIBC1RI6xagwAhblpPvvuRAMAm4gCETLQCMFytjSdgRbOsJXrlliYbxdWvNdkIOpEhbnDVkdek2KiDUfTqcGswmqM6Q6kstWV1r16hXHM1oE142xu3Q0AOCH071pFYcb3ONxa+SAuCPh3ftrGuOMAAAAASUVORK5CYII=",
             name: "Sea of Berserkium",
@@ -6101,12 +6223,12 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sea_of_Berserkium"
         },
         {
-            id: "APOTHEOSIS_POTION_TO_SEA",
+            id: "SEA_MIMIC",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+UlEQVR4nL1SK24DMRScF5WnJKi1YeBKOYCPsarkI+wFFgQHmIVsj7BSVOo7BFZaqQWGNmsLcgMHJLbsjWNQVR3y5NGbeR8/4D/hv199wK/EWbyaUJrU970HAM45mqaJvBCCTu/brOry+Qm06miRkkopcs7BWgutNbTWEEIQAHwZg8fNjkIMmod5q4yx2ME0TZFfv7yRObT+5/gBc2g9rToqGqRIxwgmAID9Z+SyEe4Ja8gMpJSec54lDMNQ/bJoIKX0jLFiNzWTRRDXqtRMijtIt196p8h+wTkH4HJIc5G1tmgQDyIdo7QLpRTdkJid8r1djONYFP8JzriBZ5dMTv7eAAAAAElFTkSuQmCC",
             name: "Potion to Sea",
             description: "The first flask in your inventory is shattered and converted into a sea of the same material",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmmBW4NjAwMNSTYU7jqQm7G1AMNPA0J9swNnW+egYGBlQD2dT56n/d/MTAwMDAeGH7SaJNM/A0R4kE2oYhOjArcMUpd2rCbtINxKUJH6C6l0cNHDWQDICSsNnU+Rp/3fz038DTnFRzGjEM/HXzUyObOl89mzofSSb9uvmp8dfNTw0wPuOgL7EB53MrpBgtX1MAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Potion_To_Sea"
+            wiki_url: "https://noita.wiki.gg/wiki/Potion_To_Sea"
         },
         {
             id: "CLOUD_WATER",
@@ -6190,7 +6312,7 @@ const apothIcons = {
         },
         {
             id: "APOTHEOSIS_GLUE_CHARGE",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVR4nL2QvQ3DIBBGPyJX3sELIMuuvUlSpImUNVJkjUhpUiSbUIPQLcAOVEikOoRt/NMkn4SEgHu8O+DX8cHFtfvDFoBIrcJmgNIjPsthiwAilQp8cNFomwqNttsAoy0+78cufQCopqpEClIOABClHHifYD64WFeNKAKIVNI8nq4jAwaxXbEFoy26vh31mhtIOaDr22XA5XwXRtvR71lLxcyGmP8w7Z8t8wgUwsPMQWySD7BoAAB11Yhcm4unA1zN83WLPri09lf+O192eIJqYYm3jQAAAABJRU5ErkJggg==",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAt0lEQVR4nGNgGLTgzKVV/2HseYvrsLJRwLc/j1EUnbm06j+yGDaDsRqCbMOZS6vgfJihJDn725/H/2GG4nIRVkNgms9cWgXXiOwSrBrRnQ6znZAhjOiG6OnrMGhpWTJcu3YcxQKYGIy+dPEKQ1JsEyMTsqKk2CbGSxevYGiEgUsXrzBwscgymuiFMSbFNqFYzsDAAIkFXGGAHMA4YwNfLKCHD4Zm9NSGnAaIjkJCTsQZhSQroiYAAIE05YW/8P9ZAAAAAElFTkSuQmCC",
             name: "Glue Charge",
             description: "Imbues a projectile with a sticky charge, that it will release on impact",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
@@ -6936,7 +7058,7 @@ const apothIcons = {
             id: "APOTHEOSIS_RANDOM_HOMING",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA4klEQVR4nLWSMQ7CMAxFvzpxFw5AD9AD9AxsbLmB1YWBC7Cgjp2zMHSpGBiMKjHSmYkzsGCG1iVNW6hAfCmK5eQ/W06ARlSwxbeigq2IiEIoY0sZW+L9IJQp7efVvKEapiJeW98sIjIIOTTmnMlumzUG0ThwD2a4tPEqTGKN57h3CoXJMsaYcqaWTryr2y1eucnSwf5mTun26W4AABl5f+CMBQDgipNvqIyRTiJrJl/vD3HzvrmMIqmMkTKK+pAhqPtclTGi1d24J+2C6Ti9A1fuM/pQrf7WrD/RN07WUAd/1RMEdMvww2SdJQAAAABJRU5ErkJggg==",
             name: "Random Homing",
-            description: "Cast one random homing spell     ",
+            description: "Cast one random homing spell",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAo0lEQVR4nGP8//8/AzUBE1VNY2BgYIExPn3+xWDjUdnAwMBQT4Y5jZeO9jagGKhvHkm2YbyCCvUMDAyoBvIKKtR/fv+AgYGBgfHiyeVEm6ZvHokSCbQLQ2zAxqMSp9yRHe2kG4hLEz5AdS+PGjhqIBkAJWHzCio0fn7/4L++eSSp5jRiGPj5/YNGXkGFel5BBZJM+vz+QePn9w8aYHzGQV9iAwADiC6wybU+TgAAAABJRU5ErkJggg==",
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Random_Homing"
         },
@@ -6944,7 +7066,7 @@ const apothIcons = {
             id: "APOTHEOSIS_RANDOM_BURST",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/UlEQVR4nKWSMU7EMBBF31JxDloOsHuBVBRwBUpOkHLYhoIL0KCUqd1GliIKitkGpaKn2sLaA1ANTZz1OglLxJdceKz/5o9t+KdW6UZqdQBcHdhubu4WkZ5FnSUSfXJ/Nr/15kbFvfTrHESlcgAXAJd8DgcPm+0Q/ZrvWfP68f42QgBoVIaN6KszM9P2WAsh2FSCkaTVSXO65sY6mivZp/UcEEIw771BfweDPlgD8MVuLjpA13UURbHK6wDUokP0sixHndPuI1PdP6dK5RaZzcwiROXdLeqex47y3v9qlnbsOfkL3nvLIREQX+sE0vTfN4WkoDz62QRTI03VfwBI7UXSiDkrZAAAAABJRU5ErkJggg==",
             name: "Random Cast",
-            description: "Multicasts between 4 to 8 random spells     ",
+            description: "Multicasts an unknown amount of spells",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAApUlEQVR4nGP8//8/AzUBE1VNY2BgYIEx7t+/z2DXP7WBgYGhngxzGh9P6mlAMdA5NaOBlUzDfmvp1jMwMKAa+FtLt5712mUGBgYGxr2zZxBtmnNqBkok0C4MsQG7/qk45Q4VZpNuIC5N+ADVvTxq4KiBZACUhP1bS7eR9drl/86pGaSa04hhIOu1y42/tXTrf2vpkmQS67XLjazXLjfA+IyDvsQGAJ4JLvIcIyzhAAAAAElFTkSuQmCC",
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Random_Cast"
         },
@@ -7397,6 +7519,22 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Cessation"
         },
         {
+            id: "APOTHEOSIS_TERMINUS",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8ElEQVR4nLWSsQ2DMBBFv6NswAZIbECRdEHMwAgRFdNAg1KnYging8JFRGuJCbAli4bOqbAMNqRJfnm+/+7bZ+DfYlLqo/PTN3M9DIcDdgH25KMUuwB78lEKL6DkXANAK4RT8wJKzvUSs+RcP99vp3GpMSm1DTMJWiHApPSaFzEptZ3KAIooIr1SaIVAlaZec5WmaIVArxSKKCJOAj5N8EHyMDQJe6XAp8lNAADzOK4gAHANAgOxzZemcd+gyzJiQ/IwNOurh8GY53FEl2XmCmc7jjmg1PsDX0lCtjWnsOjO2Grvjzje7d3VjVK9Bf1cH7AWnu4XfHQ1AAAAAElFTkSuQmCC",
+            name: "Sealed Magic",
+            description: "This spell appears to have been sealed within crytallized barriers of protective magic. However barriers can only handle so much before breaking...",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Sealed_Magic"
+        },
+        {
+            id: "APOTHEOSIS_UPGRADE_ALWAYSCAST",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfElEQVR4nGNgGPTg/72Z/////////72Z/xkYGBj+////nyTN2PhEG4KuEMZHFmch1RB0wESUU8g24P4s/HxiAEWxQDF4Nj2GcttghuByOiOywgf3HzAsP3GfIdJCEU4zMDAwGLrnwjVwOoczYhpDhAtep5iS7h2qhAEhAADq3lp1KNDnowAAAABJRU5ErkJggg==",
+            name: "Spell Infusion",
+            description: "The first spell slotted in your wand will be applied to the wand as an always cast. Spell is voided upon use!",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Spell_Infusion"
+        },
+        {
             id: "APOTHEOSIS_MASS_MATERIA_CONVERSION",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACHklEQVR4nLWTT0iTYRzHP28IbjoHwmToknqn8er0ILWTFIkyobIi6NBFEYLNhC6j2w4hJAV1CcEoMMibEEzI/sDAS9phaCq8jETpRRyMBjJena9Bwq/DeF99QwiCvrf3ed7vX3jgf2BoTpUpmZEpmZGiqUvR1OXD1/ty0r+njn8MPuqTKZmRy9eesMgsAHsHBQCiLQmKpi4vP15yCSnHyT2pOIvMUs7lAPBFItxeCaA13aDO28jeQYE6byPpL/dIXPmsAFTZAj2puCuax9jlV7rI9oU8APW1qnN3q/sFCTqPKgzNqQI47h5jl5+qH2vDQ3Owi6vnJ5TSvuEysDepArA722RZDePhO9Nv3ivBsxEB2P6xCsEjgWhLAphwjwggq2GsDQ/TA4YyePeOTI7llNGHEWkOdlFfq1LaN6jzNrpH1E1TAJ6tr7OUyRCNxVhZWGAtmVTexS4KgHV4iKq1EezrxxdupTrQgO+MqjgJ8pZFq8+HPxJhKZNhLZlUOsfHBeDcwE1UrQ1/ewe+cKsrcZXt/EDTKieaxmYoBCDRWIzrqZSyFR8VAG9TiOpAQ8Vw9u1RBbtG3rJYKpUc9c1ymdHXk/jbO/A2hQBc8Z0EAPH5eV719gJwuqaGvGUBEOzrd4gA1YEGco/H/ty+gu50WnTTFN005VOhILppys5yVnaWs1LeMqS8ZUh2ZPjEN+HCcDbrCNnEb8+f/p34L/gNYd7sPCbdzU0AAAAASUVORK5CYII=",
             name: "Mass Materia Conversion",
@@ -7406,7 +7544,7 @@ const apothIcons = {
         },
         {
             id: "APOTHEOSIS_BUNGAL_SHIFT",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABMElEQVR4nKWRMUvDUBSFvxQFC7WlItQuDm1JDJ2cOmQM/gnXQjfBwR9S6FYogrtDwEkoZAnExQ5a0ILiZCxICraSMQ72PZLGYKxneffde8+5574H/4TyU3I2eA9Xc1v7m+SPSon+WEIQJ8PHhGilUKTUqiaEZPDSuQuniw9JUE1NCkVjIVRu7yoAOYCbYycstaqS7C88XMumUigC4Fo2/sJDNTXEEOF2A+B+eotveVLg9XMZv8XvrmUvTw99T4uvMDB78uHGsweM0zy1ukpDN7i+OsfpBjTLB3JIe3iiSAfRhBByugG13nfN6QYJYibM/XE4cvqJL40iVU0QG7rB9k4ztS+XVjg0OpmspgqI6VE3f8bI6Ydzf7z+Gzw/TajVVSD7SgBcXpyFqw7WXuM3fAHEM37cAyZbOAAAAABJRU5ErkJggg==",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABE0lEQVR4nGNgoBAwYhN8P/fNf3QxDjlWBk5Xfgz1KAIwjbf23sQwVJyHj4HfXBLDIEYGBgaGB2mX/zMwMDC8/PIJrkHNWR1uEDIb3SAmmEZ+c0m45ndfnjOc2HiAQZyHj4GBgYHhxMYDDO++PGdQc1aHW/Lj0W8GBgYGBhYGBgaGKy/PMbzb+BxuwLOvUPYLVP6JjQeg9HMGTQl11DCY6zwZHnBX399gsC7gZFBSVmNQ0bRm2LVlPsPRCd8ZtAU14JYk783FGgEo4PzRWf8/v7uKESPIgAmfpIqmNcOd60fxWoLXgDvXjzKoaFqTbwAxgKAXKDKAkP8ZGKDpABe4d/cW+S5Yu6jkPywdnD86C29UUgQAMWhiiWLhJ7kAAAAASUVORK5CYII=",
             name: "Fungal Shift",
             description: "Cave quid volunt",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoklEQVR4nGP8//8/AzUBE1VNY2BgYEHm9DlINjAwMNSTYU5j0YHnDSgGhpkqNzAwcJFlmAX3t3oGBgZUAy24v9Wf+MrFwMDAwLjq9F2iTQszVUaJBNqGITroc5DEKVd04DnpBuLShA9Q3cujBo4aSAZASdgW3N8aT3zl+h9mqkyqOY0YBp74ytVowf2t3oL7G0kmnfjK1XjiK1cDjM846EtsALeIK65H2BliAAAAAElFTkSuQmCC",
@@ -7414,7 +7552,7 @@ const apothIcons = {
         },
         {
             id: "APOTHEOSIS_BUNGAL_SHIFT_SPAM",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABe0lEQVR4nKWSv0/CQBTHv2ccMGAIJMKAcQBs0jB1YugmOvMHsNmkqwt/QCd3FgYSMCFxZDEmRANsjWXqYmNCtDFGG+3QDlQD07l4J6X4I/qd3n3z3ufevXfAP0VWmb7ZpstebGsHG9sHkfyQwQon5igCzebiSGbKERAP7i9U+vL0ygsE2sCEHEViBkpJCgGANQAYd2o0+XjMi71ZAGOuIJuLAwCMuQJvFkCgDbBLWLfrAHD98Awvo3CA4wah9tnZ+Mgxrs4gFrLhJ7S1Ch+cZfuQ9/eQLwgoijIuz0+gD0Yo5VMcqmhDwjtYNBhIH4yQLwhg8XLerzT1LGrqrchKF/UljRUWRRmb6RIBgH6zSgEgHUugfHj6uYVVkmQ1BO83q9RxAzhuAG8WYNyp0QiAmUxFUebdOG4Ay/Zh2T6HhNTWKrTfrNJFiKm36NSzQtBetx468w4UbUjeErv8babeovbdBLc3Or4b5MoZ9Lp1KskqYf9AklXy0zb+rHfW+q4+ZyuMEAAAAABJRU5ErkJggg==",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABPUlEQVR4nLVSsUrDUBQ9L23HriKUUqpB3DKWTpmdOhQcujjnAwLFqRWE/EFxyRinIFn8gkAIyZAPEEIIATtnKg7XQe7jJZrgoHe5cO8555777gP+ItJ9Ru3aaUf04RFx7sMCABjUJrQFe52ogNy0KTdterm+pe1kKeunXVNEqOTRRojctCUgOxaI6xKL8RQAENclnCoSjAUAjfdicnYsJBkAFuMp4rqUE7eTJY02QvBbaABQvH+Bn97CxmSeypmdqBwNANaHlfCtgJwqEgweGHOkF0MYdzcYGHM4VSR4Bd8KaH1YCQAYsuLsfNbYE1WExPXo7OoSuq7j8dXrPQDSfUbqjRPXoyKM6fn+gbiv5m/hW4EE8KmKMKbE9eT/6CSrwb9PdcJ1Fuokc5PB6nSV+KOTdpFFOP/Kfpejf41PLCz2gT4tsTsAAAAASUVORK5CYII=",
             name: "Hyper Fungal Shift",
             description: "Insane....",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoklEQVR4nGP8//8/AzUBE1VNY2BgYEHm9DlINjAwMNSTYU5j0YHnDSgGhpkqNzAwcJFlmAX3t3oGBgZUAy24v9Wf+MrFwMDAwLjq9F2iTQszVUaJBNqGITroc5DEKVd04DnpBuLShA9Q3cujBo4aSAZASdgW3N8aT3zl+h9mqkyqOY0YBp74ytVowf2t3oL7G0kmnfjK1XjiK1cDjM846EtsALeIK65H2BliAAAAAElFTkSuQmCC",
@@ -7430,7 +7568,7 @@ const apothIcons = {
         },
         {
             id: "APOTHEOSIS_RAT_BITE_CRIT",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIUlEQVR4nM2SMUvDQBTHfzkylhZLDLSbOIiDswhudY978wWyFty7+zXqB+jsIIgogpuDOEi3BGNIaeicOMg77y7N5uBbLv+7/+/de+8Cfx2zaNLMk7iRcLXrVy7cH49aSas067zQmydxU6UZAnaZ++MRVZqxeHoFIM9zD0AJUKWZhs0quhKHYdgA+LKRrzeEewMAbu8eST7XTMuS8+NDAB7ePn6Mlxe6Cj0DE35+XwHQU4qb4VAbl0GgL4rPTn5b2AUDXO8P6Cll6WUQsMpLy6cENuPqa6OhXVq3IxW4cFQUlt7WdSu5NQPp7fTowDIDREXBtCy13ta1NRtvFk1af5cZMiO30sX9iwfgy4HMwjWasHwLDODLpvkaJiSrCf2v+AbwHbAxOTbXCwAAAABJRU5ErkJggg==",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeklEQVR4nJ2TMUjDQBSGv1QHpxaFiulQsK1oOwiCEMHiooODYlFw6iYIgpNtBjcnF4mDi7PgLAoulbpIHQqCo4rVQAeFDA3p4ngOeselVqj+yx3/e/e99+4S+FbBmhQFa1LQod98qX6ZJA0hhAAoFRZUknNeBRCGYRidgIjcpEbipEbiKhBNmEQTZih5Z2X+RyeGNKMJk/bbewjQfnun/uQCYI2PqtjhxbXqJCKT9dXzAxZfPJyxKWoPLzjJDM55lfqTy/pHnxpT3YGU7GD3+ITNtWVoNqgBpWaDmm0DMHN1ZQjbVgBjb6so5EHPD9geGMKqVMhn053jcvv42v0SowkTzw9wvRalZgO+q/Wiflnd9VrKzF+e9VQdIOL5Qc/VugLga3b9mf4EGB6MoUNqS6sqqO9/BcgRhgdjeH5A6fkeJ5n5OnxwoECzEykBIMrl0NdoFOemlSG70bWxf0QulyOfTeMkM1iVCvo/EQLoEP1yde/05q7ra/xbn/PGkjkb66h+AAAAAElFTkSuQmCC",
             name: "Bloody Bite",
             description: "Magic...............................?",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAoUlEQVR4nO3UsQ3DIBAF0E+U6jbA42QWT0CNBae49gRpLXkolJYNriUVBUpsBUSkFP4VCPHEHQiVUkLPXLpqAK558Nw2TNZ6AK7B4TUEDwAql3wbhmZME7k1BFWcUBO5KAIA6rEsX2ujMcUl/K6HnzJZu7t2n+d6cG/TUbqXfIIn2JDiYWsijiJpNKbW4TcwirAmcpqoSooiHEV8nqu//7FfVnQzUETyGIMAAAAASUVORK5CYII=",
@@ -7525,6 +7663,14 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alt_Fire_Circle_of_Vigour"
         },
         {
+            id: "APOTHEOSIS_ALT_FIRE_COT",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeUlEQVR4nKWTMUvDUBSFvxQhLYjgpFl0kihFh6qFLoIiLnXt6H/oD7AixFUILv4ANx2liFA6FCG0aECkxVhwTR1bRJNBn0N9z8RUFDzT43Hveefcex78E5o8nF/eivuHR3oHexw+3WnVVtiOFhbzenYUwZhsNk0DgIXMG0wtir3LJvpEGoBwEHBSexYAtuNyU1lTD6cATNNgbvoV0zTIzoSsZ95UM4A+kea43cF2XMqFHMtWQ8QsRBUAeJ5Ps7+YkFv3rwkHAeVCjp3NcU1ZkAq+YLA9qyUILFapnAngJT6DURgWJhUAXHgB1VbYLub1bEpK7vYyAHR7GTzPH75Y0rBKmjpvGCtqJhIpgNTkfEeSeJ7P9tbST8ISUBb2W330+xCAZl8kbFTOhLIQDoIk00ntWeyevovfsHv6LmQmYgqGw7mifpRWXr9DrtEs5JIWZEhsx6XO9UgCmQHbcdVdbNnLVkOUP9ltx41FOXofjXIyLZ/462f6Nz4A4M7GhhYnnRsAAAAASUVORK5CYII=",
+            name: "Alt Fire Circle of Trueform",
+            description: "Right Click to summon a circle capable of curing most negative status effects from targets within it's radius",
+            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAqklEQVR4nGP8//8/AzUBE1VNY2BgYIEx0ieVMuyet6mBgYGhngxzGu9duNnAwMDAwAjzsqSSDNmGcfJx19+7cJMRxYWcfNz13z99ZWBgYGD0K4gk2rRNE5ajRALtwhAb2D1vE0451yQ/0g3EpQkfoLqXRw0cNZAMgJKwOfm4G79/+vp/04TlpJrTiGHg909fGzn5uOs5+bhJMun7p6+N3z99bYDxGQd9iQ0AoiczZoxCV3EAAAAASUVORK5CYII=",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Alt_Fire_Circle_of_Trueform"
+        },
+        {
             id: "APOTHEOSIS_ALT_FIRE_TARGETTER",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABK0lEQVR4nLVTMWrDQBAciTQqXAhCTDpDCpOAyQ/S5hf6gEmV+BVXBoPqfMCF0ugFqVVKLnKpZERAhcUqIoRJ4eiQkCy5ycDBLrc7O7t7B4yAJIfu7doIwojqecPH6aKVUJblYIGzOnk+vwQAXDs/wHTBhycP55MJAKDwfX7u95itVlatyrIsy7AkOiO/PpjojO93V3yd3RgVImJsrRSbvlEQxymAg4LvlzcwToH7WwBAVVUm+GK5RLZed/uoFdQn0RnzPG9VavpaKWPbOALXda1jfj0bQxDHKbY7BwCw3Tl/LXWR5zlFhLbnQUTYWnEQRkx0xiCMBvcOHLbSe9Hs7dQZ9JI0V9VMFBEOJvcFjb2DFppD0Uqx8H2KCAvfb5GO/Y+OopODx1T9C34BUKLeIZFxZbQAAAAASUVORK5CYII=",
             name: "Alt Fire Targetter",
@@ -7562,15 +7708,7 @@ const apothIcons = {
             name: "The Knowledge of Kings",
             description: "Casting this spell causes something irreversibly permanent to occur",
             bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVR4nGP8//8/AzUBE1VNY2BgYEHmFPmYNDAwMNSTYU5j35YzDSgGelnpk22YhhBrPQMDA6qBGkKs9Tfe/WZgYGBg3HbsItGmeVnpo0QCbcMQHRT5mOCU69tyhnQDcWnCB6ju5VEDRw0kA6AkbA0h1sYb737/97LSJ9WcRgwDb7z73aghxFqvIcRKkkk33v1uvPHudwOMzzjoS2wA82wro46n0lQAAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/The_Knowledge_of_Kings"
-        },
-        {
-            id: "APOTHEOSIS_UPGRADE_ALWAYSCAST",
-            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfElEQVR4nGNgGPTg/72Z/////////72Z/xkYGBj+////nyTN2PhEG4KuEMZHFmch1RB0wESUU8g24P4s/HxiAEWxQDF4Nj2GcttghuByOiOywgf3HzAsP3GfIdJCEU4zMDAwGLrnwjVwOoczYhpDhAtep5iS7h2qhAEhAADq3lp1KNDnowAAAABJRU5ErkJggg==",
-            name: "Spell Infusion",
-            description: "The first spell slotted in your wand will be applied to the wand as an always cast. Spell is voided upon use!",
-            bgImage: "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAkklEQVR4nO3UQQrDIBCF4d+S0yh4EcHbZBdQIbvcppCLCHoduyrUlpQqBrrI2w3iB+MMilIKI3MbqgHTa7Go2QOuwwlr2nwFWmW6MY10QA1qpItkAHFP+8+aVaYawrlv+J5FzYdna9rawaNL3zK85Qu8wI5Ui62RIZKLVabVCR9gJAeNdBrZJEVyiGT/rMXf/9gPvlAmm3fJns8AAAAASUVORK5CYII=",
-            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Spell_Infusion",
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/The_Knowledge_of_Kings",
         }
     ],
     pseuds: [
@@ -7615,6 +7753,14 @@ const apothIcons = {
             wiki_url: "https://noita.wiki.gg/wiki/Essence_of_Water"
         },
         {
+            id: "missingPerk",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAq0lEQVR4nN2SsQrDMAxELyWk0H/ID3gwZPH/z1kCGbJlMgQC8Wqwl3apjOQ4OFuhN8q655MQ8Gs1eWHo+3f3ehabow8AgMna5BOA3Ky0EYBlHhOIIC1vyM3ucAKgtMEyj6LvUcwKJPO+rdi3VdS42lPlKzLVdJmAi3ZRglYBtIurRFVAaW4usYPoA/IbKP1M93ArgdLmdA9cAjBZ20QfxA/ucGkMeuOX+Af6APU6UToO4F1tAAAAAElFTkSuQmCC",
+            name: "No perk found",
+            description: "Either this perk is missing from onlywands or it is modded and onlywands doesn't support this mod yet",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Perks"
+        },
+        {
             id: "$perk_respawn_spent",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/0lEQVR4nMWTIW8CQRBG3wEBMqpuPUkTDKI5cUHVV1RVY7HYShQWiwF3NacQ/AuSJmuo6TmSlQguAXMYdnPHLZgTjNvJfG++ndkN8jynTjRqqYFW8fDf7+dfWQZAWzqV4nN2AiARobfbBRUHWikSEa/YQhMRtFIuVwJM0xStFDFNLyCmiVaKaZr6AW3pMDN7L8SKZ2Zfcugd4vLlUIJY8ev6o1Lbuk2M5yHR8A0A/bkhNsZ1XnqaVRwsJlu+Rz8ADK7igTE+o/evYP6OdKOV6/xosCWA3XNxYICDdKMV43no6rwObsU2LOR98nvfgX0kxT0Xw76TRMTlgqd/ptqAC9J0ZOAqPZ07AAAAAElFTkSuQmCC",
             name: "Extra Life (One-Off)",
@@ -7631,6 +7777,24 @@ const apothIcons = {
             description: "You gain more gold but a curse will haunt you",
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Curse_of_Greed",
+            ui_name: "greed_curse",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/0lEQVR4nMWTIW8CQRBG3wEBMqpuPUkTDKI5cUHVV1RVY7HYShQWiwF3NacQ/AuSJmuo6TmSlQguAXMYdnPHLZgTjNvJfG++ndkN8jynTjRqqYFW8fDf7+dfWQZAWzqV4nN2AiARobfbBRUHWikSEa/YQhMRtFIuVwJM0xStFDFNLyCmiVaKaZr6AW3pMDN7L8SKZ2Zfcugd4vLlUIJY8ev6o1Lbuk2M5yHR8A0A/bkhNsZ1XnqaVRwsJlu+Rz8ADK7igTE+o/evYP6OdKOV6/xosCWA3XNxYICDdKMV43no6rwObsU2LOR98nvfgX0kxT0Xw76TRMTlgqd/ptqAC9J0ZOAqPZ07AAAAAElFTkSuQmCC"
+        },
+        {
+            id: "creature_shift_ui",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA80lEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1DAwMDCzImsV0pjA+3xr8n1lekiHKSBjDEFsbKYbn/iL/xXSmMMLUMyIrgGk+POkyw+JDLxlefP4El5Pg5WOItRNnsM3TZfj78DmDpPdaRgYGBgYmZOfBNHdvvY2imYGBgeHF508M3VtvMxyedJmBWV4S7h0UF0TNCPr/bcI1DM3IQIKXj4GrQIthWcY6VBcg24QPoMtjGEAqoL4BErx8eDWgy6PEwgQbKYZYO3G8BsTaiTNMsJHCHgvkpAO4AegpseDIMwzbJ9hIwTXD1KMoICcvDDwAAElAg4G6h/8AAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$status_apotheosis_creature_shifted_name_creature_shift_ui_backup",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABUElEQVR4nMWTv0sCYRjHP5dCEJwghT/exdXCljbj1EGcGqLaBFdpCBH6B9pdDnFoD9pscylaMjih0UjBqeFOa1QIguIa7H2502uJoGd8n+/383zfu+eFv6zXxxMXoF0tuEF9eS51AGGvOZZpaePOkRtKJSnvrC9BcoZgvL/hxjItTeo1r0Cau80+F3cvTGZT1UvoESr5OLnaNp/PY5J7bQ1gxRtPmhudkc8MMJlNaXRGdJt9Qqmkuo4vQfn80H0zn5TZchyyQvhACT3CWn2Ly+MrfwLvJACrVCQrBJbjBPZlLQHU5Jtbdu15AqtUDJIFA+TkqD2fbNlz2E+QJcBB7wGATWAAnAJn35Dax4yEHgkGtKsF1zQElXycqO0w8ECugajt0AzrVPJxTEME/4XFPXgfDlVvNZ0O3AMFWNzE+r3/6wOYhlBmqfcJfvMW/r++ANc9rGhq2uPfAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
         },
         {
             id: "$item_apotheosis_polymorphine_name",
@@ -7742,7 +7906,767 @@ const apothIcons = {
             name: "Copy Spells",
             description: "Copy the Uncopyable.",
             bgImage: null,
-            wiki_url: null,
+            wiki_url: null
+        },
+        {
+            id: "$cs_base_goo_slug",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABcUlEQVR4nMWTv0sCYRzGP3e2VCj9Ir1ziBYhsYa26NSlJoeghqBoCZKGKP+HlsBFJCJoMygINERsKQlSaCkc+gU1RINdRUHU0BB5TXd4vdYQQc90vN/neXie974v/CUeTucMgHQ0bNSbm+cmD6ChVtwZWJb0/Jjh6FKY6G8XTIKaij7SYXQGliWTL9USTHExecL6wT3bx5sM+CIAeJwupkJugvO9fNzoKJG0BCDXxjPF8fwVd68vfOxeWuZbC1Hi+SuKyRMcXYpVx5ZgYnXUSHnGhe6OYR8AA74IHqeLppifjdmMZLsDE1W9IhhUUxVkxcvhZR6AyfVFayYL7C+QFS8X59ecFUq8p/bF+U9CgLNCicaZIfqWprk4vxZMhAqy4qWqV2xVHp+ev09ofqSjYSOhqWR3VmwEd0sLzZkj3tb26PF3kytnSWhq/b9QuweD7hBtaqvNLFfOCntgGXzdxFjpVoib0FRLbPJthN+8hf/HJ+6OorR3LiYsAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_drone_mini",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdUlEQVR4nMWTv0tCURzFP6+aglz6ZWZEDgmRDSG4+GNUaAi0FitqSQpCgsb+iVcIhdEUtD2XCFrLhhe8zSxoiUDShHj0AsUhXtO7qO8tRdDZ7vec77nnwrnwl6jf75gASiZmOvHW3NIB9LUvj8zmpOplyuydHCM9P2gziYQ9VBeHzJHZnGTppXaBtVw8LHF280bt0xCce8DFWnSUSDbA10uVsQVFAhAGSiZmRrIBrh9jABiGQb1ep1aroes6rVaLZrPJuvuDSDZA8bBEKn/dmSB9nDQb8oO4ObkdAqBwdNeRpH93hvOtggTQ0/3O9thO6OZtBj9Fn9MwurKK3+8X5z05Tblc5uokb9PaEoSWltF1HYD4e4L4ewLDMGg0GuzJB7gHXM4GSiZmymEPAD6fD1VVhUhVVZFoLTqKHPaIUjn24PRiHE3T8Hq9AFQqFYLBINPPVzxNJdiY0+w96G7i7u1rR9Thxwn2N79EiSx9h+g3f+H/8Q0LNasU1xz/YQAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_miner_weak",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABh0lEQVR4nMWTP0hCURTGf08jGkoCK/URKkERkgmuqQ3ZJNQgNAi2iC5FBM1tbS0STbYlNATSJA219GxpilIcFMwi/NMUGi1Rr0Hew6evJYK+7Z7zfd85595z4S/xUtiUATKJRVkvr8QVHsBAt3hi7lCoZ8Oy0WEj4jX3mfh9IvXVMXli7lBQ+EI3QRHnDvKkpSbL6341d3GcIxqw4N9y8/lYxxbKCACG7vYU8X62jOA0cSndEYu7icXdCE4T+9kyuYM8RodNHUcdIZy6EiJes/wuNQEIBjya9u2T49Tzz6SlJhmvmZPUlaAxUNBotwBwBGcBuHz4AGB+zcnN+S2NdoupLn6fQXQjpDnv7Rzh8thZWJnupeobAJQqNYZeB7GMdmoV754onhV0DQy9gVKlxsyUyP1pleZrhfjuEi6PXc1bR0z6BpnEopz0iQQMb5QqNZVwf1rVVI8GLCR9ovoKP+6B9DVMe6hzgcWzAtYRk+4eqAa9m7h9XaMXSZ+oihW+hvCbv/D/+AaJ7qxtYkzmdgAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_ghost_bow",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhElEQVR4nMWTvy9DURTHP897nry2SsSPvhKNQSRSiVWiikXEINGNiK0xIB2M/gMkIiTSP6CLVCxdG4LNINFYuiDRlrFVRTzXQF/ea2sgEme753vO93zuzbnwl/GQWhIA8XBQ1NLL+XIdgGJtbvfvSNlESMg+HW8yIwBGVwdMg8Cwl+x0q2j370jlesk6IZsIideOTc6jCywnM2a+u1TE0+hmfqSDwMoAxk0WfSouAdRZ8WSfznl0gfVEmu5S0YafK+RZT6Q52b5E9unmdWwEs3sz4mnrilwhD8Ct5rRRAHga3Tgi/cQWD+wE1kmVTd/pNQ2+CyvNjwysFPrYM4rr3aYrtoMMnS1NJqZSL1MnqTg1J6pm8HLdzOCcIC+/VhvEw0ERGPKS6qsnnXv8xJNUerR5XhQHAA7DoNfjQm3YZzocFKHocfUeSD4PZ7spYqcP3BcKyLJKxuVG1QzWxtsoBYtMvnWZe2AaVG5i5PTuS5E42rgE4OJwwlyicr3tQX7zF/4/PgB5vaQZtPV3twAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_star_child",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB1ElEQVR4nMWTTW8SURSGnztfMrSU4buDEIqRdEHjot1oYtOVK3aydd1Vf45/g8QNf8BVo2HXsjCGaoKMMIxUWoXADNdFhQyBpYlnec553nu+LvxLG1xdSIDG+ZncFl/6l3kAIgxnj94Kp1mXasnG7Vwi/QBUhagO39x7Dk9eEXx1sGsNscwX4RecZl123Gv2rB2kDJBSIhUFIxJj9MNlL2oSjUiiwRPsWkMAKOHy1JJNsZhHGCnSxVMeV16TK74EP0LSyhKPJVB0FbVkr9pZq6D97ljG008x4lX0nTKauU8w7TMbd5j/ajP+6eB6LhBw+uaTANDWpqSnMBJVzOQLRotjCvspuj0PK9NCKILF7YiklSFq/F4hSphPpg/RzPIDnE8BUMinuJUnaLsHWOkK/mzMdCa3C2i7WXQzt4KXVsinUCM5jEc5guBhuFsFgskQf9qn2/PWBLo9D3/aZzb9jqqqLISyKdA4P5MismA+vsFSWyuRbs8jobTwxzeM3M9oRozswfPtW3CadRnsqehWFSNaRjNzf7fwhfl9m7u7HoN+n0rmaPMOBlcX0q41hDoOEMJl4n1kOrxkMvzAwHlPt9clWXy2gsPnTFhk2c5GkO1/4f/bH7Tyz/BC7u9IAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_wraith_alchemy_apotheosis",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjElEQVR4nMWTv0tbURTHP8+rREpShTbaBEHnki4iBSHq5NAGWlAk9kEHl9DhIfk/XIJkcBfcolPq7o8uHVO6OJVCkjYaH7mX+OLj5nV6z/dMcBChZ7zn+/2e7+F8Lzxl/f1heQCVwoo3rO+/+ziA0TB5KlM2GtV1T8ymMOdfDIgsZdM0Pr70pjJlw8cbYYBPPt2tsX/yh6bssPg+RzwRp/b1mM/L0yxtv0H/apDKVQyAkbA9n7xTvaApO5HpTdlhp3rB6W4NMZsK1ok4MPfWvG7pZ0BezeeDXjKZ5KBc5lXiOc+Krzn4chh1EJ4E8OGTiZQKR/dxdB911ca0rAFnAwKeMcJqfpPf7TY9rVFSAnDturRal5iW9bDAleNwadu4NzeIXo+YEEHP0Zrv598eFliYmSEmBI7W2K6LUgq3271zcns7XKBSWPFK2TQbbydQSkWmAsSEQEnJ1lyPUjY9/ArhHBzZ0wBMjo1huy7jQvAuUR/IQSBwP4nFs/r97Shl0wHZx0cAj/kL/7/+AZR500oJTkoIAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fairy_cheap",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABgElEQVR4nMWTv0tCURzFP6/3MjI0wSh1cZdqaPYltDg0hLkJQS3iEGF/R0u/hoi2oCgwWnRqKZ0bLCIQg4bUCksNFa3HbYj38tdUQWe63O85h/P93u+Fv8TT9bIAiIV9olddv9d5AEqreHR8W8rHg0J2OwlN2btMVK+L/NyIGB3flnS+1ErQxcnNK/YvHim8VYyaw2JlYXoMdWUC7T6PczYmAfS1xtPFa/EMz7UypgEZ04CMLAsKbxXW4hmSm1fIbqfRTluC0M68qK3f8NKsYrVJ2Oz9AJSK71RKgmZDw2GxYo56OIictCfQ8Vwrk0in8EwOofptqH4bnskhEumUkaQVSqeBrChEAjNsHa7SrJ8CYFpcIhKYQVYUNE1r43cl0HG8t9fz3ImuBCODZkrFOtnbBqdHrwBkbxuUiu9oHx84LMO9DWJhn1C9LpKXRTbO7rhJV8k9NIHvIWqa9PWUXhfBsE8Ed89/vweGQecmRlO5rn7XvS5DrPPbCD/5C/+PT7CbxRHkOD16AAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_tank_rocket",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABL0lEQVR4nMVTsUrDUBQ9Lzq42A5KTRPEqZChHeIiQmI+wMEhm+CaSUo+JZRO2cQ5o3tiA+KUoQ4FpyImsVt0KQX7nN7jpYmtiOAZ7z3n3Hsf5wF/idnTNQWAwLFoXZ/VGQ8AtkVxqzsk2Z1Nt47auDzeq5iYhoLsYp+2ukPC+EQkMPFoMMbt/Rvyj3fek3cbuDo7gNnv4XOaoX0eEADgBoFjUbPfw2gwxuHJaWX910kCVdPx8vgAxrP9iEiMYPsRceO0VixCau7AjVPYfkRKbyBOYlA1fa0ZAEirBVXToWo6nvNio7h2gzAM0ZGbPxLXGjBxPMnRkZNSTzyPgZ8QOBb1DAXLYr524rKYwzMUHqpvc3CTTDFLF7y3MQerSXTjtDLdMxQuZvwS4Td/4f/xBZGvjIGitnleAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_zombie_weak",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhUlEQVR4nMWTPSxDURiGn+tnZCFFFyGxaSSsvToYG5Ho1tRgKQPVhGIQgxjqL7l+hurSQWNySfyMEm2tIg2xuCEVUVzLJbHJNZ0Tt2URiXc6+b73fb/35HwH/hLPlyM2gB722d/1RV3wAKq+il3tG0rxKGBXNjcR7KwrM1G9bop99barfUMRfOUrQYhzaxdsZZ94fHuVvcaaWga6G1AjHj4KRZr8uuJIoId9Urx0dO2YvLmbBMAyDXJre6gRD3rYZweSGWeCYKLffteuHJOFWMAyDRL3WbaHdxWAitJ7CnF0pge1t1XWxyfGsEyDuYV1B7+KEkRnekpLAKwsr5JOxZmdGiVxn5X1sgQCZ/lbQoPTpFNxLNMAoKujpYz3rcFZ/laeQ4PTHBzuYJkG2vzxzwZ62GdrXjfV53fkDm4kIZ2KAzA5tAiAub+H5nXLpZIGgWRG+SgUUSMeYv42rk9eAKRZY00tMX+b3INAMqMAyGcs3cTo6UNZXM3rlksk+A7Cb/7C/+MTj6CxxI6ZiUwAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_tank_flame_apotheosis",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeUlEQVR4nMWTsUvDUBCHv9iCitUKaRPTpdRJSgVxcWkUcRIHh26CixRFLdo/wNHNRcTJsQ4uxs1ZanRxUNCSRRBUaGsVxLaKglIHzSNpdVAEDw4e7373cffuHvyllXKpGoAxPVT7Km7f2zoArzNZia1Lhd1EzRPWmOiXGyB6PERhPFBTYuuSrZecAjvZXDtjc/+GYqUsYl3tHSSHVQamengt3aGNGRJAk7M8T1jjaEdjZffclQxQrJTZOS3QeniBJ6yJdgQgsZGVtpfvAViamW/oPyA3E40qePpDpA/yJDay7goAjJNjcW7z+YXr0Rhql5/UYh9Sp+oCuwAAWTMLwGP1Qbhp5T7EHd3Q9OTSe+sBtunRGAAROUjG3KN0+8xsMkNLqw9Gle8BETnIlWVxfHXtgkXk4GeLL6gOgGsKW8aICDjLN60cGXOPx+oDc0MKq/GQmMKP9mByUEVf6OXtsiD2QADqNzF9kG94l9V4SCTbepfgN3/h/+0dXamxBDsVPJoAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fairy_big_discord",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABfklEQVR4nMWTu0oDQRiFv5mdhIBLLLyQDQYtRC3UwjriA1gI2qUVxELE0kawESxDULCxtdPOJ9AnMDaWihoNgZCQyyabnbEIG7JGFETwwBQzc875L/MP/CWK9zsG4HJrxXx1H5wHPADVLx6fPxGF6w1jTTpklkYGTJbTSQpro2Z8/kQEfNFPCMQ3uTx2Yh9jSQDarTa+30SXT1neXcB/LOCsXgoA2Z9eII5PHOKMTZNKzJBKzDDlzGEPjaGHd7jJ5bEmnV45oQwyZ+vmMJrD8zzsWBzd6VYhlaDmVlFKUakXyUaPuNi+CmcQwK03sWNxECAjEhmRIMCOxWk1XMAK8QcMrKjqRtYCIbsLLdAdgxVVKEt9b/ATiqWX0F59JhjPR8YECIPRQRiDFAK/0UH4OsQPvUI2neThbpOaWwUD2tNoT4OBmlvlvfxM7e2YbDr59Sv0z8Hs4jki0m2Y3+5QrhQoPR0MzEHP4PMk7t2+DtSfTSd74oAfbtAv/sL/4wPVQLbKX7bWBAAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_plague_rat",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABWElEQVR4nMWTsUsCYRjGf9dFQ3i3FKcegdAShUGUEdipf0BDYU6CqzRESf0ZLoc4tAdNmSD4D2SEQ0sYLU4uaY6ntMk16HfceTdEBD3Ly/e9z/N87/t97wd/ieHbuQ1QK2bsoLzYFzyARbdYi1elfvPUlmNR8rsrPpOUodM/XrW1eFUSfMlNEOJWpcPt4yeDkeXkIopKIR0mdbHNpNcnelSTABbc5Qlxudn1iAEGI4tys0ur0kGORZ12PBXkb7L2l/nuE7sRUVSWS1vcnT1InjsQ2EllAbCGY55f7n0Gg5HFumu94GPMxADJRI7I2t705FmcR6CBgKqFqLcbJBM56u3Gzwys4RhVC6FqIQCuTy4BMDaT04oUNdigVszYpqFzGH51WhAR4GBjH4BCOoxp6MGvEDQHshJjMuohKzGu0ku+OXAM5iex9PTh69c0dEcs+B7Cb/7C/+MbW+effedxdxYAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_miner",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhUlEQVR4nMWTzysEYRjHP2ON9mBdlv0xly0HOZBam1Kzq+Tm4OCm3HAh+Qv8Ay6bnJQLpajNQXtEO5Q9r2nTbia0O2NRNqQtMU7v2FmrJOV7fJ7P9+l53ud54S91qy/YAKm5EbtZXsQFB9Babw70rUlWetL2RMJMRf1fisRVBWui0w70rUmCl+oBYT5ePWNLqzCzOUulagCwv3jAdCJIfLGftyuL8HhKAmipb0+YV9JFZjZnKWVrvJ4rXB7JBNUYK+kix6tneCJhZxxnhMn1jDQV9dsvWsXV9mHmlAvjCgAZ2NIqpKJ+ttcz7g6Ebp4eAdhY3gFgdGSY2OAAscEBV/7LIwpNz48DEBnrpZStUbbuCHR1cnt334g2LwBQMEy81TbKluzEHh6qPytQMEx6uhVyu5eEhroo5kwArrM6ACFfh4t3bSGpKiRanikYpgP4ajL5Pf1zxESQpKo4W/j2DrT3dp68rwDk93RCvo6md+AUaLzEpROTRiVVxTEL3gX85i/8vz4ANe+3LNAC/2IAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fly",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABkElEQVR4nMWTv0sCcRjGP6cG0g8JMk+PIBqLlGhpSBODwAoKcomiNYoi/AeaGltEgsIpCKPFhqBoLaM5qCSIkiBSw0AuDEnlGuSOO42GCHrG933e5/u8P77wl3i9WVUAEot+5bu8Gld5ABZ9saN/S8gchxRzt4u5wY4GEZ9XIjNtVxz9W4LKF/QEtTgZvWbvPEf2XUaulrGZm3C22VgYEfGtuak+ZXBNJgQAk96eWrx5fE/Q/Wl4Pfsus36UIhm9xtzt0toxOJjbmVE+IilWAiYe8iV2L0vM2ytaPl0s82gRaQ73sb90KBhmoGIlYOLg5BmAebuV7VxtFMuiQE9LE6e5NwZ0fFO9wN1lvj70IxocAAy0W7kqlLgqlFgWrYZcsLVC9icHUOsVYHaii3j+2zcaBRKLfiXilZCGehkfc3FbadVI8byFdLFMulhmeNRDxCtpW9AEQrEzofqUwbfmRq524myzsX5UYGOqHYBHi8jwqEe7g1DsTADdGusvMXzx0mA34pW0I1L5BsJv/sL/4wvyWKt3js6cbwAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_triangle_gem",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOklEQVR4nMWTsUvDQBTGf2mbFMpVaIdKOrSDo/4JSqFru2VRcC4O/jXi6Ch2ipNZi1D/A3V0cAo4KMgZuaR6TncmTQYRwW+6u/d9733v7h38JZ7ujjVAOBvpqrg5NzwAJy/u7Zw6cRTo+tBnkV0hZYLrNmg2PQDG7pSPxxh/EjqG7+QrxFGgo40lAFn6ievVbEyIVikJgGWEs5GuD30rzsPspUxYntxSH/q2nYKDs2VP5wWdrrBC04qUCYv7XS6OLosO8tXepabTFSiVolSKEC2ybFV1r+UE6/Ca32spE4RoMd6+qU5gqvcHbZRKAUgV1gUU1z9ysO4ieUurWwhnIx1s7heqG6y7GLvT6leIo0DPV9f0B+1KJy/PEterMXnds3PQMMHCJLo+5w/zUoLDrYPSJBYIv/kL/48vCeeoVWGin0QAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_blindgazer",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABU0lEQVR4nMWTz0sCQRTHP6Oh9wxxCfImhBthV9O9J6ix3ToW28U89Td08VaepMh/YKEE7/08BYq0Xbp22JDy0qkgp4Pssutudgl6MDDvzft+3/u+mYG/tKFVkwCmocmwcyfu5AHMecFJtSnsri6jaYXS0mKApFCdx64syKTaFE6+8CbYXV3u9uPIyGegejZfJJ4Y0T9/4iT3gVIyha8D09BkNK0gBy8A7G1u+wjuvwYA5KoZorxiGprUW1f+DjYOt6QXnEuuBTo5ti4AaGh1ARCZTpgFBthXKz7fR5DNF2eCwyzQwe3w+VdQPDH6mQAmOh2t09ayz+h1LNd3h2gamizUV2i8ZWZW7XUs2uUUN0cPBG7B7upyZzAJOfMAeLy7dvfL6xoH75fuO3AlDK2aVEqmOF2VtMspxkK4S4xjiHGMdjnlgr3PGS+JIydMRthf+H/7BjOshDyFb/thAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_wizard_z_poly_miniboss",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABu0lEQVR4nMWTP0hbURSHv2ccSiESrRUTW5+lnUomB/viv4DYEukg5EUo0aFLRZqA0iEZVOhYo4OIgkoHadIOStwyFFzEIQaCkpqtk43kQVI6OlWO03vkETMIgme7957f737nnnPhLqNSjApAetovN52b+2YeQHOtuMO7rhgZXRyqm3DvIwF4vNNN9f0fAIYGPRjj7dLhXVfMfKX2BlN8tHbG5b8PbGRjRHwJNrIxOp0tqK4A81//c3Vu4H6bVgCaavEcqpufnzWWM7/r8HXvArnSLkdrZzhUt1WOjSC8GZSxg2DDNzJJHs695MfMvp0AoFY8tTfJ1N6kTQygugI2U5tBYHGE/EXeWh/Hc5ZJxJcg4kuQK+02JCQ+MCzVQllmtTlJhlIiIpKNHYuISDKUEq3LI1qXR8KbQauNNoJnrW2sfHzHwlaM/EWe1MR3tKVXABZZp7Pl5hLS034JfnliM/l2usNAdz9/fxk8cJzg73kBNLE66LG6YA2Svn2oGOPt0jf6ib7GVaK63nB1XkLfPrR10BpPI6NLpRiVZCgl1UJZXj8flf6nPqkWylIpRsXI6HXjXGdym79w/3ENvOXGPWL+oWsAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_acidshooter",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABO0lEQVR4nMWTsUrDUBSGv9hCh3ZSKTRL6+QSFx2b0gdwEHSyZi5SRN3jGkVwaEspboKIBaFu+gI1T9DsrYtBB6csGSRO55I0VUEE//Hc//84595z4S/15h1EAMNmPZp3LnXxAWTj4aLR0/yHnShTLtFYX0pBaqaOv7UcFY2eJn4tbpDwqDvmem+DwPUSgNY0pHa4xsezT2lzqAEsxNuTcL+SI3A9OpZDx3IA6FgOqycXjLpjMuWSGifRQeNyO3p9D1RIdHRjKwjA6eMZt/v3yQ5Es+GflALYkwH2ZJCo+eOXLwHZ2ULgehSqhoI4K7vcnV8pOED+O0AcIiF5jULVIHA98ouF9AjDZj1qmzqtaZgASVCArWlI29Tnv0J8D/qVnAoJbN4eKMDsJh4/pS+ubeoqLP6E4Td/4f/1CU37osIlPCsbAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_pebble_physics",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABgElEQVR4nMWTsUsCYRiHn8tAGmpJM2/QIRwCdaihRYuoIQqJECQCiZamCP+CIsdaJISgrW4LpCEcHVJXGzqh4ZZyODVr0cnBriG+D+2qIYLe8fue34/nuPeDv5zn6p4FkNtdsL66F+eCAxjuD08Es0o9H7ccfi9bM+O2kmhEpb7usiaCWUXwSj8gwqVTHa3YhLlV3KoP/fKYydExkvMeovshek91vGs5BWCoX0+ET/KGDAMsXmzT6LQ5yRuUTnUcfq/8HFkQP79VUmUTrdjEfTSLW/XRMmvS7uxuBwCt2CRVNomf3w4aiJnObpCOhWlMFaTBS8HDlf7G5PImjU57gLcVCNhRCgDgWmoC8KB1OTwe+YzbC1pmjQetK8OJ0BCNqQKAtPixQGhPJ50kQh/X6ViYXtTgpeD53iC3u2BlIiorr9e4VR/Vx6oNbpk1ks4KmYgq/8L3e9CdpRc1SMfCHNzc4ygFSDortj2QBZ83MVU2bQaZiCrDgh8AfvMW/n/eATj6tpSq/ZGgAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_sentry",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABgElEQVR4nMWTvUtCYRjFf1cbIqhA8+MKcaEagpSwqUENmoqgoBYRRIqIhJA2J6EtokWkoaGlP0CHIGpqsaUpQmvJJYJ8UcxSsIbiNsS1e/NSS9AZn+ec8z5fL/wlKsUNFSC7NqWa5bW4xgPo0oud3j2pfLykWhWZyIS9wyQY8FBeGFCd3j1J40t6giZ+eFtlKxzmRVF4LhYAcPf2EQ25CCZ8vN+VkeeyEoBFX55VkclnPgWi2Wgb93t9iGaD3eNb8pkCVkVut2OoILK/qC4Px3E4HFSrVdM5lUolAOLxuGSYgR7r2yvYnTYANueTpkYaOgxSB0nsThuH8jQAsaMdarkbxmZmuT49AWAoNdnmW74bmEEv/rUC91ULMQ4xzgAYsY9ykct95Xv7DHzDFtIBD9GQC84F7paCu6V0vBgNuUgHPOZb0O4gnymQ7/EDIITgSarRfXn/8x1UihuqPJeV3u/KBBM+hBAA1Ot11EcLr/5Bg1h/zuhNtHbMBmb2F/4fHwQRn3kqVhrEAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_drone_status_ailment",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABqUlEQVR4nMWTsUtbURTGf69xECkEtaTJDcXnIFmUJ4LUIWnRRYqWFgMOAXUQpEORrv0bukTJULIIDm4WiklDoSiii7oolhaMaETynvjwQHFxCa/Tu7zX1A5F8EyXe77zne+751y4y7j8/tYDWJ177v0t79/7OICWYHGst2A45awX6UqQG+hsIsmkFc6rR16st2D4eCMI8Iu3Fg/59nAIu14DQCVNnC+fmXr2mMx8H40zh8TYqgHwICjPL17+Fceu11BJE5U0ses1PMviQ7nK1uIhka6EthNSkPs44UWPeog9iePdNDBaIwD6fHl+QSqVYtcrsfLmU1hBMNrbohzs79GtTLqVycH+Hu1tUQA21r+GsE0Edr2GiDA8MsrM5GteXr9neGQUEdG2/kkAYLRGEBFylR90zP5ERLQd/2FvJbD6B7Xcp+c7LBSXtC2rf7CpWWgK+bTCOl2jUi7hui4igojgui6VcgmA6egF+bTSU9AE2eKm0ThzyMz3MRe/4uS4qrucHFd5MTaOdbqm9yBb3DQgMMY/N/Hdtt0kN59Weol8fAjwP3/h/uM3ronEB+e7IK4AAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_rat",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABW0lEQVR4nMWTsUsCYRjGf6cNEnhLot5RSDXEhUHEQWCnErQ1FLUJrtIQIfVnuIg4tAdt5uQ/kBEOLWIUIQQNedZ4QjQk15DfcefdFEHP8vJ97/M83/t+3/vBX+L9/tgGaJTydlBe7AsewIxbHE/XJbN1aIdTCoWNOZ9J1lAx92J2PF2XBF9yE4S4Xetxcf3GcGQ5uWRUpphLkD1ZY/xiouw2JICQuzwhrrT6HjHAcGRRafVp13qEU4rTjqeCwvmB/VF98IndSEZlZsurXB5dSZ47EFjf1gGwBia3d48+g+HIYsm1DvkYEzFARtdIzsd+Tp7EaQQaCMiqQrPTJaNrNDvdQI6vBWtgIquKsz7b3wHA0JbJ6BrPT6/BFTRKebtqqGwlvpwWRATYXFkEoJhLUDXU4FcImoNwNMJ49Ek4GuE0t+CbA8dgehLLNwNfv1VDdcSC7yH85i/8P74BXSSg6u3DwqIAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_poring_magic",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeklEQVR4nMWTMUvDQBTHf2lT46KIjdVEpeIkWBwUwUHJ4iZStCK0q9BB/AS6u7hJByn4ETL2A1QHB0cFB1EogjFiRVoU01rOoeaaUF1E8D8dd+//e+/dvYO/1OPljgCw85b47tzf9+MA1KA5kSooTikjokmD3Gy8C7K0aOKkdZFIFRQ/XgKC5tPDC95OXB7qNWke6evn+jbL4EQ/TgmRSBWUUAV23pLmg9I128v7XS3cuK/o8wNEkwZ23hKZYllRggG5o3WRPl/H+/j48Z40VSU62cfGXjpcAcDKVZaa+9IOjMfwqk259jU1OgpexxMCEOkYg2Z/PdajcX95h6bHfgAAXrUpM/ogLR5jqB5pA/UY3lMzmLOjd7eBpqqhCnxQ0GymxrsBdt4Sq7tn6E14fwg0+aXnRkNmNjZtOVQSkCmWlVbFwVzQmZ4ZRFO7upOgVsUhUyyHX6EziQhzzcA5toi4DQB6h3sAmNsq06o4GCu2nMQQ/Td/4f/1CRFUsX8JWywlAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_tentacler_big",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJklEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1WDU/3xr8/9WVnP99SUv/f76WAsd9SUv/v7qS8//51mAUQ1hgBojpTGF8vjX4/4ELaQzP175hSC3Zj2HJ3o2+DBBLGP6L6UxhZGBgYGBCdh6zvCRO7yEbyCwvCfcO3IDgWQcZYTYQAns3+jIEzzqI6gIYeH4Xu/NhcugAwwBiALJBTOgSyLZPrN/CMLF+C14X4nQBssaJ9VsY/r74hlUdPBrXptn/t807zvD3xTcGZgkuhvxGH7gimGZJZRGG53ffMHz/x8GwNs3+f/Csg4wosfD34XNcDmKYt8QbYeDD55ix8OpKzn9J77WM37//ZPj+jwOr7c7+mxkig9cxSHqvZcSbnMnKCwMGAEODoUT6RUF5AAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_tesla_turret",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdklEQVR4nMWTPUsDQRCGnzNWglFINN6CBNNIggGxsjAJ2lpYHDaBtAElBksbW0GwUBCEYKfYXZHifkD8A7EIEbGQIO75XUQsLMJa6B53yZWCU+3uzDzzDjMLf2nPrYoCsMsFFebX7zoOwPAnT84dG65jqUjSpP2+gTCjAEi3izCjjH/t0+u4mKu2oeMNfwXXsdRpc5l0Zg6AeHwCAGFGkW6Xt/NNctWsBwEY9suLJE2kc+8BNUhDdpxbAHLVLHa5oKxaw/AAVq1hFBdiKi1WkDIIeX198e5nl0/YCzEuao2gAm1S3iPEtHfuhzx+dEn54of6Ac362QDout3iYKvYH0qoAgDnZI+x+XUUnwBc1Y9Ck0MVTI3+jM6VN9x15ECC9g8A7HJBHS4JSvkEAKaYDa1Yyic4XBLeUgWm4K7FVa6aBaD2ADNJEahcyie8PbB+p+ApeG5VlLlqG72Oi4boFlK7i4xsZwJL5F9n/BDdTpj8sL/w//YNvFOggl8NcmUAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_creature_shift_ui_backup",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABUElEQVR4nMWTv0sCYRjHP5dCEJwghT/exdXCljbj1EGcGqLaBFdpCBH6B9pdDnFoD9pscylaMjih0UjBqeFOa1QIguIa7H2502uJoGd8n+/383zfu+eFv6zXxxMXoF0tuEF9eS51AGGvOZZpaePOkRtKJSnvrC9BcoZgvL/hxjItTeo1r0Cau80+F3cvTGZT1UvoESr5OLnaNp/PY5J7bQ1gxRtPmhudkc8MMJlNaXRGdJt9Qqmkuo4vQfn80H0zn5TZchyyQvhACT3CWn2Ly+MrfwLvJACrVCQrBJbjBPZlLQHU5Jtbdu15AqtUDJIFA+TkqD2fbNlz2E+QJcBB7wGATWAAnAJn35Dax4yEHgkGtKsF1zQElXycqO0w8ECugajt0AzrVPJxTEME/4XFPXgfDlVvNZ0O3AMFWNzE+r3/6wOYhlBmqfcJfvMW/r++ANc9rGhq2uPfAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_frog_big",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABO0lEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1DAwMDCzImsV0pjA+3xr8n1lekiHKSBjDEFsbKYbn/iL/xXSmMMLUMyIrgGk+POkyw+JDLxn4csQZGBgYGG6132ZQStFiCH7+m8E2T5fh78PnDJLeaxkZGBgYmJCdB9PcvfU2XPObKz8Z1CpVGRgYGBjmMv1kODzpMgOzvCTcOyguiJoR9J/h+ScGFtHfOMPp05SXDFwFWgzLMtYxooQBPFCQNEfrSKLILb3ynIErXAZFjIkBB0DXDBNDdx1WA7BpxiWH1YCJKx4wPHv6BachWA1Ym2b/f4KNFIP/JQYGER12htWH32A15Muy5wwTbKSwxwJyOtioB4nCUFsRBilpHrhm9HQANwA9JRYceYZh+wQbKbhmmHoUBeTkhYEHACKokw81cOvQAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_devourer_magic",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABU0lEQVR4nMVTPUvDQBh+Lg1CjUMCUggUq0tdOnWXQNYOIpmchQzS2UXpr2iX/AWbsaPS0B/gIg7iUmg5W7UfyLW2tHdOPZs0zSCC7/je8/XCc8BfTv+xLADAdy0R977ar3AAoK6TM4UqoQ1HpHImrrS9DZGTiyPQ032RKVTJCk/WAbThiEr9A4aubbg/v7xiseA4VFRcXx7ALPkklMB3LZHKmTD0LwxHDG/vnwCALFfQUTgYm4FzDmgqUjkTvmsJxwuIFHC8gERjMzYD0ukfMgC7mMd5+R53zScCAEo06nDEYOiaJNnFvCTHjRpdGLqGyXQeC6a9MW7qze0Ck+kcu+kddLoDuau1HkB7460JNk6IuieRQwK+a4lK+Rid7gBZriTe3bw9k6WSAo4XkGWbgrEZ7GI+0X3ZpnC8INyDcBMN1Frxzss2hVnyZRNDgN/8hf+fbynermrMOcGPAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fireskull",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABZUlEQVR4nMWTv0sCYRjHv1pTRxB5+KuhpZtUhFoiFNuCQgxziFvuEHOSDPwf3IIsB3MI2jsIRLDFgqKtIU9pbjgN6aJFarmeprtO7zKIoO/2vs/n++V93+d5gb9Uv50jAJCyMbKr6/s6BwCTZrM7WHb06ls0Me8Dv+iyhEQjfvQSLLmDZYfOO8yAbr4+lLG69AwAYFbCRr1+pCC6G4L22INvQxryQsrGqN/OkZSNkaY2SJemNkhTG6QeB+hd5snMWe7IV5JDZrPMIXwlaZid45/1S87ZNcyk9q37dnD3cgcix0DkGMibXny8XEDkGHTSAga39z8HeMMpFKs8CoFpuPJxdNICilUeADB4eBsf8HpWQCctwBtOIXByCgAInT8BgLG21WgXWgkPKc0MCQtTpDQz1Ep4bLvw7Rwsb3NQSzW48nGopRrm1llc3bGWOTACRidx76ZrOeVBxG+YdX4I+M1f+H99ApiY5+OYtLRcAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_bubble_liquid",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLElEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1DAwMDCzImsV0pjA+3xr8n1lekiHKSBjFEFbRLgZb9QkMz/1F/ovpTGGEqWdEVgTTfHjSZYbFh14y8LduYWBgYGAI1RRgWH39A1xdB0c5g6T3WkYUF6xNs4drbpctZmCIZmDgh8rBNIdqCjAwMDAwMP+TZFibZv8/eNZBVBdEzQj6/23CNYYn0V0M2lpaWMMJZoiPlgiqC2AAn2Zk18AAE7oCbJphtmIDKAbcep1A0FZ0wzBccPXaNaxsbIahGLA2zf7/tsBdRBnSrT4BnqjggRg86yDjc38RlMSDKzD/PnzOEDzrIGosIFIiw39meUkGr/WoBly9do1hW+Auhr8PnzNIeq+Fp0QUk8nJCwMPAE/YiC5cAk7VAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_shaman_greater_apotheosis",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeElEQVR4nMWTv0tCURTHP09DItJ+EC+1QYwcEoX+gGctQYFDg4NTazREuDQ2RkNLhEE4RUM1ZA3hnv2gWbQaCuIN9vS1SDUV8hri3d59NkXQgQuHc7/n+/3ee+6FvwyztmQBFBemrJ/27bqNA+hyNquJvGKUMpY3EmLWMyRAgxNfaUoLY8wNWWoir9h4xalglDJWdu8NgPHUGAB6rQFA99kN85PDpJaTtHWDULqoAHic9ryRkNQMEEkEAWi8vrBRuudiq4o3EhLHkRxMZmeEbbeD1uk1AEF/gJ5cnP3FY0W6A3fcXTyIvGegV+SN1xdGHTiPIxeqZr0pkbVOr/FpSXxaskPI4y7YJO+X1W+CqIpZb2LWmx0kEoHTdiuqCrL+R1MstztpCkerMcqHVwCoI8OSI2dsamExBUGQKZSVtm5wvqOxFu9jsKJTWT8RTUF/gJV0jI/6M23dIFMoK+AYo/sl5i6fJNXWwS2729PiEdl4CfSbv/D/8QlPlqHwqBt66wAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_wizard_duck",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABxklEQVR4nMWTP0gbYRjGf9eLMVpqC4bAORgptpMpHUqWemRoBSGDxYCDgm0pSFHbodKxuHQLSAkRJEMKQqEUTrI4SYY0i4hCIP6BqMWbzl7/IAn0rPQ4B7nPO5tuBV/4+D7e93mf73m+P/A/w9ycdgC0iYTTrO7mXRxAwNsc6ctKxnLKkaMK93tvCFC0QwZA7e/CGAo7kb6s5OIl7w5u80B+C4BgR+hsbg8C8GrvCPVlDFs3UJKaBHDFK0+OKpQzVSyzAcBJ/RgAe+krAOnlXcqZKnJUEXZ8CkYXhp1f77apxkLIrQHaIteEkmed677zeP7im1+BG5OZDMV0Afv3HyyzgWU2OKkf8+OnLcbnFlXgAxcJKitvqaxAMV3gwetHAIzJNku5kMDcfHOO9ym4u/9drD/Nj1NMF+jWDxmZWuROf1jUDr9c/7eCkalFarXaxTQAnbfa2QmG6fHkBIE2kXDUxzGePnmIFT/zmL896yOw4io9wMfxq5SPEk4qV5KEhVSuJNm6gRVXOajsNFXQtlYmPzmLrRukciX/LZib046S1KQPiTqrc/fo1Tf+InifHaR1awYlqUne54yXxLXTTEGzv3D5cQr4g7CgydFc9wAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_ultimate_killer",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABRElEQVR4nMVTvWoCQRicjbEJ3DUR76exShO0CdjdnQ9gIeQsRLhWUgSxSeETWNgcYhFshZDCS3cPoKZLaUhjlSarKRVsJGyKsMvunSCEQKZZ2G9mdr7db4G/xOfrLQOAqFVhh+p8n/MA4FQW54tDQmOfZQoWmlfnKRPXsUFrOZYvDgnnE5nAxfPBAuPZGqvtRtRMTUfgGXDbJXy9U1jViADAiRyPi/vxUohZtw7WrWO13aAfLzEfLJApWKIdJUHz/prtwjdFLIP0JjA1HWedSzzcPKkJOJLi/eOLWHkSGSmDJLKNsrImcdSAn86THDUwNR3AT79yimyjLO7goEHUqrDQsRF4hkIgvYliFngGQscWryAGyR9NCa3lmNsuAQDGszVoIt1d9ULMgT+aEkB6xuQkdp4/Uv2Gji2GiPMVwm/+wv/jG4kMnLpMSIDMAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_ant",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABa0lEQVR4nMWTvUtCURjGf1dryT6EQtMMt5S0pdmPnBwigtokV2mI8P9wEXFoD9qMFodagmy0oMxUnETxazJNh6JuQ5zrVW9LBD3je57nOc/7nvfAX6L9dCQDpCJ+Wetc1AUPYEotNrmTUiO9L+vtFkKbixMmXo+Vxu6SbHInJcGX1AQhziRynN60aPa6OA0uiv08y3PzhH1mvMcbfFQaWLZTEoBOHU+IY+kyzV4XgFKnhtPgwvi5SixdJpPIobdblHZGEoRO9uRB/FkRA0jvC6wkD6hnC6xdtOjoqsxE1zk7PB9NIDAudhht1LMFzfORIY4jaA4AcFW7x3ExrDsNLt5UvIkEgiQgT79Q6tR+umfSwGlwYZ81AVB5bQPgMNoo9vMAdHRVbYNUxC/HPVZ2toYBi/08QXNAERf7ecI+M3GPVfsV1HvwmLVx2boGvufxMLjT3APFYHwTo7f1iX7jHqsiFvwRwm/+wv/jC6rTsSnhW734AAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_shaman",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABUklEQVR4nMWTP0vDQBjGn1MpIrQZLG0ahy4uSoPgnDQfwEEwW6FrcJCm36NLkA6SVXCLWz9ATL5BxArt0qGmyeCgIKVQzkHuuPyZRPBZXi73PL+8l7wH/KXS5xsKAJ5l0LJ99pz5AGBPDDc6YxJPTLrbbqF3fliA6JqC+LJOG50xYX4iGlg4uI1w/5Rg9fnB9+RqDf1uE/pAxXYRo3XhkUwHnmXw8GgyQ0VTURHgqzDCaPID1AcqPMugputnO+jdXdEv5wXvZ+1M6yf6MabBHJswglyt4WB4iofrRwIAO/lzvtb3kS4TpMuEh8UqHqsU0DhqZtbTYM5rRVPz9iKgTAxSplJAvgtRcrVWDvAsgzqaAltacwj7DqL63SYcTeFDxQGm65PtIoY+UGFL60x4E0YAAFta8zkwXZ8AAP+N+Ukchm+FtzuawoeI+TOG39yF/9c3H9qYg6aOwQYAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_wraith_returner_apotheosis",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABxElEQVR4nMWTv2sTYRjHPzEVwSCVKrbXVALiEGxFpxRqIUMGBy2oJw66FIQgmD9AnBxqh8aWEhXbwbmD3iByk0htDwQNsY13weJvsea9RKgNJC0S5HHKNdeUCiL4LC88P97n8+X9vvAvo+ykBMBIxmWreiPf6AMINA8f6LsTUKYuwYjG2udPXF/eBcBoz09C4QSy8yO/vii0U0ag0e/boExdyk5KjGRcqkVLqkVL6jVX6jVXzkSjYiTjUnZSokzdI9jRjBeMaFgZm5M3RpiZLTEzW2Lhww/adnfyIPeMtPmOQP0QwYi2tcz5qZhUi5ZcGr4i6dv35eXrN9Ic9Zor3xcm5OLUuVYCgMcvKqyXsgC4xWXydoGsvQTgnUOnb/mWtm2mqH17SpcWI9rXy+pKhbxdACBvFziyv7OF2kcw1N9OKJygq7uHY0d72dvRzpJTYG7uOasrFQCst6/+TLCYO+jJcJXyauulDYktBEYyLtHBGHeN99w8/5XFXNYbdpXi2oU9jGWmmb/3iMnBbu8VfEZQpi4TDx0AruqHvXwonGAsM82J4yEGEgOemXwXbHZievyJD/Xy8Fk69lW3d+Lf/IX/H78Bwfj1BM02tVEAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_shotgunner",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABaklEQVR4nMWTv0tCURzFPy+NhlCEwh+PwBCTBnVo1mxoE4owGiIHoVwK8f9oCXHSIcglBBMEh0Z/zYG2lCK2qC8aROd4DXEfT80lgs527/ecw/lyz4W/xPvzlQpQiIfUn+biXvAAjHqx1ZuWBuWIanA6ON1ZmzMJBmQGh+uq1ZuWBF/SE4S4lmqxcn4AgDLqko0VsZvMRHdtBBM+Pt8GOMIFCWBJH0+IR8deHu4eAbBZXFzcHjGcjLkut6mlWhicDm0dzSCSqUjJep9cVQFgyy9rCWwWl5YyV1VI1vtEMpXpBALDyZhsrIh1cxWARqmNMupOzfUwMoPoZRiAZr6H/+Q7SaPUnqUtNhDwuGSa+R4AJpYXGsyt4NzfBuC128fjkucEdpN56qw9YyEeUoMJH7VUi+7LBxt2CwCjvTPcbjcAnU4H69M9ghfJVBb3YNYE0MT6HmgGs01M1vtz8W8CsiYW/CnCb/7C/+MLAjaoTDzt9Z4AAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_wizard_manaeater",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABtElEQVR4nMWTP0hbURTGf8+nb5AsgkReIKZ2iyhuSv9ES/EJpUOHN7ikFQclQwwuTu3YrZtxkEAp1qyBLm/pK0JedXFJoaEgOjQ8mqsZ2weBSLwO8m7zxw6FQr/p8p3vfOeee86Ff4lGNSsBSusL8rZ4yIc6gMHO5OjUjiYcW+oJk6MzXQatlkreS0dJPYwhno3K6NSOFuq1zgph8mnuG0GrxeP5eV4XiwDcHx8nmNRJ5aZp1wTm05IGMNB5PT1hUsl8Iay8sbvLRRDwKp0G4I1zyuftr+gJU7WjDOxCWds8rHf1nM9kCC4vWc3nFbfvXbB5WMculLWuNwjx4/0eD8wY3y2LA8/j+cwMABHDAOD810/udugHeg2GXqxwbFnccV0ihkHEMGj0iv5k8KT4W3psWYw6Di8rFWZdlw9CqNi9t74697Uw67ociXovDcBY+4qrHk4ZlNYXZCo3zdrEBIvx+A3peV3ikF9+N0dse1jahbLWNYV2TbAYj/PR97kNn3yfJc+jXRNqCgrhegrHlo1qVm4lk/Kk2ZSPRkbkSbMpt5JJ2ahmpXDsvnXuM/mbv/D/cQ27trznCiQGZQAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_slime_leaker",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABU0lEQVR4nMVTMUvDQBh9aQQXJyuVy3JZnBKhunRIahc3B0G3gI5aioiLg7/BJZZW2j+QreLi1qXWDJ0sJAUHhWbxRHAqCAolTnfkkkwi+Lbvu/ce7777DvhLvIcnMQD0jmpx3jnvcx4ALCTFJbOlsLv9WKUEzmYxY1K1NbDdlbhkthTOV5IELh42A9zSJVzWryUD/+IQ1dN1zCMGstNTAKCQjMfFY6eSEbeDNsZOBcNmAJUScR0pgdPZi9WPr1zx1J+Iel5chFe/UaQZcOiWgfNOA7plSCJe65aBl6dn0S+kDTg5DS5OmuYmGHT7AABqEtGLQgZqEgy6famfm6B2vA1qEpFCtwxQkwiTdDrpFVxbQ9kbIQoZpv4EUchEIo6yN4Jra/mvkNyDq9kM3/dvWGtsIAoZlh8/cbC1mtkDYZDexLOH18wgXVsTYs6XCL/5C/+PH6+yqus0bFqdAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fungus_smoking_creep",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABSUlEQVR4nMWTP0vDQBiHn2utmxH/UEyWTN0SoeKYUOiaQTDgUHC0OEhx8XtI6SB1dxDq5loodXa5foEbaqBUxK5S4nQh19oOInjLHXfP7/e+99578JdjMrpKAXrNWvrTud7XHMBGXlz2OiJ5jtOia9M42lsyCQOH5GQ/LXsdoXmRB7R42Jb0Sx4ASilc1wWg/jUibPnMVYId9QRAIZ9eXqyUAsjESin6JY9hW1J07ew6RgaNu9N0R9ora6Sz+fATHi6fhFGDRVBHl1JiWRYAs9kMpRSWv5mxhUWxlNIw0mLAWK800JFWzXq91mCdye5kYnBZDXrNWhoGDsPXd7bPLqhW6wYYHR4DcB5VCAOHuFlL4+5AZBnE3YGYq4Sw5fP5eM90OjYMDrYsbqJK1gdxdyAg94yLnXj98rZ0rdvAyZpI8wbwm7/w/+Mb+tup7uWRBQ4AAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_giant",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABYUlEQVR4nMWTsUsCYRjGf6dC0Gpq3qCQk6CLOKScOLQECRXCDUGrU4RzEASBs4iTa5sgLQUtDuJhi0hwgpNRDiel/QENdU33eddZQQS92/u9z/N8z/e+7wd/Gc/DIxOgVcqby+rWuYUD8NnJwURdml4XTW80zEHK7xLJKTLT3TUzmKhLFl6yAyxyt6Zz499nZkwYjwZsbu0BsP1ySe44ydvjlPBOSwLw2O1Z5LM7SZALlYy4oK9m6dZ0vNGweI4QKDY6Ulkz2DhXKFQyjEcDYvEUatLDzJgAMLp4pa9mKWsGxUbH6eC7CMgRZsaEgBxh3g45ar5lBDXpgUqGeTtEU39yiACsRhfYHx0MH4aOPH644shdAk39feECWB9vAYimWucugVYpb1YVmXSzJ0Qsy/aJ3J9qVBVZTOHLPeirWa5ObonFU8J6utlz7YEQ+LyJZc1w9aOqyIJs4R2A3/yF/48Prl6xmiL6AaEAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_lukki_fungus",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABlElEQVR4nMWTP0jDUBDGf2kFXVQkojYdOiiKYAfFQah/JqHgIBhEKIhbcagOgqCDVHFQcBEpGArqLnQMLg4WyeQgmIqILp1iQ+ug4Faeg+bR0A4Kgt9yvHt333fv7h78JdxCSgDkklOi0b3n9+IAmmqTu4YyimPqIhgJkRhRxWZsB4A9Kw3AxLiGM9spuoYyihev1Cp4yddHNv0rGZ/61vw8i5PdTKxGqRYdQjM5BSBQW56XfGA+fVXlutK+vL9xYD5xfWQTjITkc3wV3FpZkb/5QFVVNE3zVWDbNgBXhkH6ZI3hWFLx9QCgbzAGWOQuHqlUKj6CcrnM5dkpx+fb33ENkDDmxPvrvRgLa2IsrIlbK9vwnDDm5BQCjanq4SlPR6d9/h8R1Cb3tLaxHo3XE+SSU+Jw/Ktxam+JSPRFBu3vLkvl9Mka4fY7OQVJoGfzSrXo8Pxg0dkBLc2KbNbGlsHAaAm1t0TfYIxq0UHP5n0TlOvpmLpwCymxNBsUC/GAtAvxgHALKeGYet0615H85i/8Pz4B53fBZR/RgnIAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_esoteric_being",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxklEQVR4nMVTMQ6DMAw8isTAxIaYEC/pIyK+0Imvdcw3mNgZo2Zi8tDFnRzcJBVIrVRLluLYPp8dB/il+GViALjfrpzzy73EZZOdNeyXiVG1ifplYmfNZxBnDaNqmYgS1UACAgAXTa/sO9C2om4G1M0AAOFM2xoKlX0X2ik0AyJiSYpFAILv+SiSIKEYU9Z2OMctaIkZ5BhlAXSfZ+wE4KhyjsnbK/h5PFXZz2N+2Zw1yQD18MSn92BHzWxiPP3DTfzqL/xNXu0nwjtNzRIZAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_poring",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOElEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1DAwMDCzImsV0pjA+3xr8n1lekiHKSBjDEFsbKYbn/iL/xXSmMMLUMyIrgGk+POkyw+JDLxlefP4El5Pg5WOItRNnsM3TZfj78DmDpPdaRhQXrE2zh2vu3nqbgYGBgeHI1H4Mb2ycNI3BNk+XYW2a/f/gWQdRXRA1I+j/twnXGNZ0NOINq7gXKxmWZaxjZGBgYGBCl5xVWMjw7/lThn/PnzIwMDCgsLEBFnQBgX9fGZgkpVE0wvhwgORuDBfAbGWSlGZgkpRG4WMDGAa8e/Yeq9ORXYPVgLVp9v8n2EgxHH15iOHds/dwg9DBxm3TGCbYSMETFc504Gvoj6F58/mNGOkAbgB6Siw48gzDgAk2UnDNMPUoCsjJCwMPAE2gqEMMeuz4AAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_creature_shift_ui",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA80lEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1DAwMDCzImsV0pjA+3xr8n1lekiHKSBjDEFsbKYbn/iL/xXSmMMLUMyIrgGk+POkyw+JDLxlefP4El5Pg5WOItRNnsM3TZfj78DmDpPdaRgYGBgYmZOfBNHdvvY2imYGBgeHF508M3VtvMxyedJmBWV4S7h0UF0TNCPr/bcI1DM3IQIKXj4GrQIthWcY6VBcg24QPoMtjGEAqoL4BErx8eDWgy6PEwgQbKYZYO3G8BsTaiTNMsJHCHgvkpAO4AegpseDIMwzbJ9hIwTXD1KMoICcvDDwAAElAg4G6h/8AAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_blob",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABKklEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1DAwMDCzImsV0pjA+3xr8n1lekiHKSBjDEFsbKYbn/iL/xXSmMMLUMyIrgGk+POkyw+JDLxlefP4El5Pg5WOItRNnsM3TZfj78DmDpPdaRhQXrE2zh2vu3nobYmOmHdyAw9MPMXRvhRhom6fLsDbN/n/wrIOoLoiaEfT/24RrDKoxBljD6PD0QwwSvHwMXAVaDMsy1jEyMDAwMKErwqU5IYmHwTbTDsVbWA3ABRbM+4LhLaIMSEjiwSuPYcDTh2+w2gwzDF0ebsDaNPv/E2ykGIIZfzM8ffgGBSMbFsz4m2GCjRQ8UeFMB2v/s2I4N5jxN0Y6gBuAnhILjjzDMGCCjRRcM0w9igJy8sLAAwBoc5fQY6J7zwAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fairy_esoteric",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABgUlEQVR4nMVTTUsCURQ9z5ExhKGFJTgt/AO6EaKNMhGpAy1azM6+NjEQiLQJ9yGURiDiIkQICtrNUhAFQdQgopX+gQgccNuynNsiZvCNQhBBFy68+965557HOw/4y5iMsgQAhq7QonN738YBgHe2ORipMrOhkRAOIRMLzJEk4jLM3RUKRqrMxnMAs6HRZJQlQ1do1e8nSRRJEkVa9vloTZLI0BWajLJkNrR5BYaukBAOoVcZ4uj2EVvJJCz6xnkYQ6fdxvHdE+oAErkoDF0hrdZlDoFW67JMLEAne+fYfLvEdjrNqbOIcJbP43kwgNF/wUOtywDA477nVbGIlKqCAC5TqorrUgkflsXh5whs2QBARKCZ2nLVCwl+iotCgau9boBXEJw1Y/wreRjDkpdvcRQYukLluIwD+R2tZhMM4LLVbKLTbuNmfx3luOyYihthm6hXGeJ+LOFzOnUm9zod1A83kMhFMX01EdoxGEfgduJpfzx3/3JcdpoXOvE3f+H/4wtIuLK9Y9BCLAAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_tentacler",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABP0lEQVR4nMWTsUvDQBTGf2nzHxgKyXJDcWsX55SCg0sEh27uLQilZujURfwPYgkIGTp1cOmmi6ClNP9B3cShg0kRZ4dCiINcyCXVQQS/6e7d9733vbt38Jd4e+qnALNeO911LuOSB6DnxbWGr8V3nbQqTE4P9kpJWrZFfGKktYavSb6WJ0jxcrxiK0ZfsZd3usM5APfeM61Bk2QdYzozDaCSt7dLnMeRu89yvKIqzKydLEEnWGhuGGViCVldYitGuGFEJ1hoyh0orRQq/4RSgrxYVr+6uAWgf3ZYSlApBrrDuWJbigH868eSu5KDZPOhrM8vj5X9ZPqNg1mvnXq2xcPNK5Opg1k3mEydgthB6AGebe1+hWQd0xo0EXoAgFk3FEdCD7I5kK+QDVJxEt0wKnaHZ1vZEEm+QvjNX/h/fAJUjaRIpMF+QQAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_hisii_engineer",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABm0lEQVR4nMWTP0hCURjFf6+a+kdQVNqQEG2Z1FSkNRVEQ5BNRkuENETh2tLmEoGEUNoYtak1BFEEmQUNFrz3pCWCHMI/1KLlJq/B7uO9lKagD+7yfecczrn3u/CXlU+tagAR74RWay76AgfQYCR3DgSlzKlbq++14BlurxJxOa1kZju0zoGgJPCSESDIiR2Vg+sc2WKBg6u4Ple2lnGt2SmnM1hmIhJAndGeIG+dPunks3MfZ+c+kskk5SkbiR2V+l6LHsfkwLM3p5UCj2SLBQAWNoZxOT0AJG6OmJ/zk7jd5vityNFK1OxAlCBX568I5XLvpn6VgKixhXla22aJxvYBiMb22Q2tc+h/MOEafhJ7RkYBGHTYUWSVpsYKua/f843Y/F0AwNbXYxCp9BRZBaC7pbV2hIh3Qgs4rQDc3d5zd/ECQCnfwqDDrp/F8S4CTqv+CrqAOxyXyumMrvxZ+uDyJFXlTuyBOxw3v0I+tapZZiJScAlioSGeX5M0NTYzMmlDkVUUWWXaIetLZFxnjCIiTq27qfUX/r++AJUatR5/1fI4AAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_ccc_bat_psychic",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABfUlEQVR4nMWTPyxDYRTFf08rsfgT1VapFJMmuojN0y4khDDYJBJTazCImUVsIhrpUDpoENu3SBqDLqjNRgyERryqEuJfxCLP4n3pq3YRiTvd3HvOuedLzgd/WXcnkzqACAb0YntjbuAArPlkR3tEySZGdIvHxWiH7YdIt9pAdrhOd7RHFAOv5AMM8sHyMRv7OW5fX+SuvrKKMb8TsV7NoijHNSAUkwMRDEjyQuIcgLn+FTJpDYDGFjeZCw3YweJxIYIBfWR1z+xgtGJIB7i0HRFqm5VEgExak318M8bWx7YCUFb4ziZbC60Pnewe7kiidPDd93b1S7y1UMCofFBvbFD28Z6oCWd2ELZy/ZDG6/HJ0XhygvtUjqfjR+5TOcaTE2iaVkIAeG8+K2WqaEkBEQzoYbWBMb+TxNuavBLviWJXndT4arGrTubbZgiJZxmqkjk43VMBcLvdP672TSdlDqRAYRKnUjd4l7wmYkg883mVxTUgZBJNgN/8hf+vLytspCb08NLwAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_whisp",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwklEQVR4nMWTsUsbYRjGf+cXB7VJ2yhnLrVcC1FsMYuTQ0+dXAwEmi3QkskKLeJS/wkXmyqUOrRFuC0ukqWlQ0wHRyGiYoRWKoltIOG8NESTcJ3uyJm2Qyn0Gd/v977f8708H/xLfd97ZgGk5qasX53bdZsD8LQ3y2OrUjEds4SqEB/vt0aaDY6q3XADRpoNtGmVYnTAksdWJZuX2m8opmNWz5Cfj2tHbGx/48w8x68OUT455WniHr2lJtpCmNZJEWU2JQF0tdsTqsIXPc9yOk/XLZngaAjjtEBwNIR5UGI5nSebzCFUxXmOy0H81UOrtrJP+aKGv6+b6zevAWBUqpR/NLi8bBLw+uhdvI8+v+l2YKtUM8nsrhMOyaxF+pmZuEs4JJPZXUcIiTPz3MV7rg4QQpCILPH2zTx1c4fo+6/EnzwmEVlCCMHg8B0X3+HAVt3cwaNoiJnb6C+3nHrh8PjPAwZ6+jAqVTyKxsU7nU3dIBqsY1SqtFotAl6fi3eWmJqbsrSFMNlkjhcfPv92ic9nh7G52OtMZw6EqpBN5pwc2Ap4fTyaHOzIgTPgahIXPxU69rLyIOg027wL+Ju/8P/1E7Iyzo8S6CjhAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_firebug",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABbklEQVR4nMWTv0tCURTHP0+jIdEhH/kDRFzjtQRBg9pSQzRERVKCazVEuDU1FUG0iDj0F1QYNgTS0mb2A4QGny0NIYI+4kFQOETEa4h3ey91iaCz3Hvu+X6/99xzzoW/tCd13QAorEwY3eLmuYkD6LOSh5Sc1CouGM5wgOSot0MkFg3SmpWNISUnmXjJCjDJpWwV+W2Jcq0CwFnrHL/bQyruI7Yxwke9RWCmIAE4rOmZ5LHZDJHEuBDem9xCe31hv/hAKVvFGQ6I59gySB7MG6vXUwBEEuM85m8o1yq8e+8F5q7+zEB6mMO1U8lWA9M2L7YJyS4UTUbVdBS/zOKRxMnyV0l2rwbZyX/jOwSmlTAAqqaLM5Ms9nPfeAc9TPHLAJyr9a5rzwx+3m71VU3H7/bYYrYuZKJBlHC/CDb0NiHZRUNvCz8V95GJBrt3wToHx7dNm0CvORACPycxfdnseFomGhRkE28D/OYv/L99Ass/sNMHW5eOAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_enchanted_duck",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABaElEQVR4nMWTv0tCURTHP08bQsiI5Nl7EBE46hJN4Y+xQajBLRAiwggj3PobwsXEhlydJZAcIiF8Sv+AIYFCBeFTaUiFpuo1vZsvLSKCznQ55/v9nvO991z4y+he7xkA+VjIGFc38yYOYGKYLHszkl6MGPYFhY2l2RGRgF9FX3cZsjcjmXhpGGCSK+kaOa1De9AXtbkpJ9Ggm8C+j9d7HSWclwBsw+OZ5GSxIchyXEGOK7QHfZLFBpV0DfuCIuwIgUi2LCWqLXJaR3SV4wrlw6bFRk7rkKi2iGTLkuUOzBgeGyB04AHg/GRF5HYf3sTZxg/isdlDr5fQ6yVWd64stW8Fusc6AC7PNFs3LjaPHCOYEQvb4XkcvgDPtQoABV4s9bkp5/gJ8rGQkfKrzDCJVjgVAPXyibW7jz7RoJuUXxWv8OUeXNw+ALC86ALgTOuN3QMh8HkTE9XWiN+UXxVkE28B/OYv/H+8A/Axo21jOGNjAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_hisii_rocketshotgun",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABf0lEQVR4nMWTzyvDYRzHX1+TtNgR3y2++RHRHDYtJVpzWsnFKM1BrbYkCVcHjkpp5KDUTjhgDmp/gLipOVgcRDnYhoOytRTr66Dv0/exuUh519Pz+fH+fJ730/N54C/xlJrRAeIRr14ub8QNHoBiLq5zbiqZREC3aCpzZ2mpeOLkA89iE8X7DOpQXDH4ipmUSQT05M47sWSKolJFNvcqco6aaoLeRgZmu0UTgAqzPIumAhByO6ViI7aauOF04xKLporrSAqCWyN6IXpF2NVOLJki5HZykX7kIvvMQ/4NgIZaG9a5LvamjmQFBrK5V55yeUJup3S6OW9GSYPp+V7sQRcAsWRK2stBajBpa6be3kLf8LKkwqzgOyrNzmP6jnp7C76FdVAHv4Lt4PG9YO0IUthewBpeA/ZLFcQjXt3vd4iEzdEm1nFxFICelTgA0X57+VfIJAL6xPmY8DtbNWFf394Le9dzIObgx0kcP+yX7trZqrHk2i2ZRIn0m7/w//gEKkWi4yTPJs4AAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_mudman_friendly",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABpUlEQVR4nMWTvUsbcRzGP3cXSUy8E19zd9C6VFKDdRB1ujTi6lBoBiHQNXSQkv4F/QNcgmToLrilnQ6hm7ppoYMvTc1UBC/GkNAkxIRLPQe5kDQJlFLwGX/f53l4vi8/+J8onG46AJlE1OlXd99dHoCnUzw9nxYsM+ZIMxrxxYkek4ihY72adKbn04LLFzoJrvhw+4Sdg2vy1Uq7psoKb14Gibx7we+fFtp6RgAQO+O54i0zx5OnWTZWy8yFrvjyrU5kIcuWmeNw+wRpRmu305Ug/vG1U0+dk69WWFkuIbUaBP2QKw6BY3N2oaPKCv5kmN23n7oTuHBjHx2PU6lDzYZgUOTsQu+q9wzxTxgrN4hDo1jVYQI0B9F6EwBsRG9Ym7UpFptogTxCq8xsqPx3Bqqs4BFtPh+BPOJFuhWZlDVyP8ZYXmqhykp/g0wi6qQMnUQsy+UtjA5DsfQLyxYx9x9mffzVw91IlpSh99+CZcacD+k9JLuON+CjUGpw14JnKpx+f973DgZe4vvNNFMKlGpQaPrwJ8NEDL0tdvld/fzLX3h83AN1Lb2JU6jOzAAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_seeker",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABm0lEQVR4nMWTvUsjURTFf6OjkaQI6BBMEBQbmaAWIoJsxMIVlizsQhZB0i5os6iI/0JKNYhCQrax0iaViGDYSmEXtMvuQDotNhHFYoQZSKJcC5kxOrERwdu8x73nnPvx7oO3tMu/PwQgPzcpzeKO38EBqI3k0OCmUtn/Jq29YZIjXR6RiViEyldNQoObioNXGgEO+WijyOKHHeajAfyo2Nzy+6LK970ZJhaGuDuvEP6cVwBaGstzyHqqwHCnStawAMgaFon+DvRUgaONIq294eZtJjMJ+bR1LasnlvRsl8W4qsn/m7oYVzXp2S7L6oklP//dSDKTcMktz0WmxzoAOIxrBH0KZlUI+hQO49pDm/bTxB6BdcNkedRP0Pcwnsbz14XlqdojMNypsnZqY1YfMzn38W6fO5cXBaa6AwDoWhtmVdwWdks1/KjMRwPNBfJzk5KORejLxQFYO7U5OKuja23slmrY3LJumERzX0jHIu4rvLgHeqrAwVndjc0OtPNn5aNnD1yB55u4dFz2DCwdi7hkB/8E8Jq/8P52D91axdqrOwXBAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_shotgunner_weak",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABb0lEQVR4nMWTv0tCURzFP69clSIzFUGShy052JwZLRFCBa8pcmnQoTAXoT8haAlxSQgClyAVBx0c/QGNDbZUEgTijxAMm+M1xH08fblE0Nnu/Z5zON/v/V74S7w9HKsAuUhQ/aku7gUPwKQX25ZTUqekqNNuB/srcwaTwKqTzo5VtS2nJMGX9AQhriUbLB2eADDot0hEz7CbLYTXFgjEfHy+dnCEchLAlD6eENu2Fa6ubwGYtbo4vzyl+zHkvPRMLdlg2u3Q2tEMlHRFitfbZKo9APw+WUswa3VpKTPVHvF6GyVdGU0g0P0YkoieseieByBfvGPQb43U9TAxhvBRCIBsocze7iZ+n0y+eDdOm2wg4PU4yRbKE4UChhaCG1sAPL208XqcBoHdbBk5a8+YiwTVQMxHLdng5bGPyz4DwPv6AbL8PdBms4nt/gbBU9KVyXswbgJoYv0eaAbjmxivtw3xL1admljwRwi/+Qv/jy98wKdk/wDKRQAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_frog",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOElEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1DAwMDCzImsV0pjA+3xr8n1lekiHKSBjDEFsbKYbn/iL/xXSmMMLUMyIrgGk+POkyw+JDLxlefP4El5Pg5WOItRNnsM3TZfj78DmDpPdaRgYGBgYmZOfBNHdvvY2imYGBgeHF508M3VtvMxyedJmBWV4S7h24AcGzDjIWHHnGsPjQSxSNapWqKPTiQy8ZCo48YwiedRDVBcg2IWu+sIATTqPLYzUA3WaDhO9wGiaGDFgwRJA0w0C0jiQDAwMDQ330IQy1GC6Q4OWDs99c+YmhAVkexYC1afb/J9hIMcTaicM150coYBgQayfOMMFGCh4LONPBRj2EIUuvPGf4NOUl1nQANwA9JRYceYZh+wQbKbhmmHoUBeTkhYEHAC6pnaPBjbBXAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_scavenger_grenade",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABgUlEQVR4nMWTvUuCURTGf29FOPZSChpklIKQNghB+UEQNEU0GA3+AQUR4n9Qe4uIS61Bm6NLQqDZxyhZkwq+Un7kpkMIig11b6/5ThF0lnN5zvM83HPPufCX8fZ0NABI7q8PjOoCFzyACb3Y4k4o9VRoMG63EvZOj5gEAzbqOzMDizuhCL6iJwjxTbxAJRSW+F36Ft+mn/nkJcGIh75Wx7qVVADG9NcT4tNUUYpPztIyn6aK3MQLjNutsh1pEDrPKNFcjYtsE4CXSu1TeLA5lC+yTaK5GqHzjDL0BiIanTZ7h0s4p165rnzjwrDRabOg448YzK6u4XSoFEsaG44vcGUSeOX+J9nIwO9tAypOh51iSZO402E3kBsYvOcVHvNV5hbNmLEAUC23eMxX2fa5AXjW8YemEAvYcKldWayWW/Kc6ZkAcKldYgGb8RT6Wp1gxINL7ZJ+KLO8O8fxVYFMz0RJq+BSu3IPxBTkIv3cxGiuNtJvLGCTSyT4Q4Tf/IX/jw/aVrDRL12RkQAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_firemage_weak",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABd0lEQVR4nMWTMUgCURzGv/NaFUJR74k4BTfo0i0GntIihEGiTZKFixCItARtTU1CiDiICA25Oh4RNWTn0BA02GZRLp416tBQ8hriPTzPICLov7zj/b/vx/+99x3wl/V6X6AA0MrH6Lw+22c6AFiYNruDVcHQ0lQMSMgsOy0QNUJgbLioO1gVmF6YFjCzXuni9PoFzRzhva2TAbJRD9RiCJO+ASnREgDANj0eM5e0Hpo5AjHuhxj3AwCG4xFKWg96pQsxIM0/ZqaWoklZpmebB/TtbocqikLfhw2qKAoN+wgN+whNyjLN1FLcbJuFKE7n1+VIKm60XQBApxHk/eF4ZNJbAKwuCw/8e3X94juZFaA9P+HW0Dnkw9BxuLL9c4DX7jBBro4k82RFeT6glY/RcoQgG/XAsC0CAIewFQDOHycoRwh/BQ5I19vCpG9ALYZwvOayjOq1O7CfWOI5SNfbAgDwIM0mca8zsEDKEcJDxPQmwW/+hf+vT7myqqZSh26jAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_bigbat",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIUlEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1DAwMDCzImsV0pjA+3xr8n1lekiHKSBjDEFsbKYbn/iL/xXSmMMLUMyIrgGk+POkyw6uHMQxPnjyBy8nIyDCIyS9hsM3TZfj78DmDpPdaRhQXrE2zx9DccqUBxQU1Ok8YGBgOMNjm6TKsTbP/HzzrIIoDGKJmBP3//////+nus/8jAw4GBjh7uvvs/1EzguDeY0L3JyeqrwgCDAO+/8caAcQbsCVjBwqNbCiyGAywoAs8efAETqNrgMlhdcHaNPv/E2ykGMTklzBk7EiBa0DBT54wiMkvYZhgIwVPVDjTwbmjDhi2GVkfwEgHcAPQU2LBkWcYBkywkYJrhqlHUUBOXhh4AAAnfraP9hoOQQAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_zombie",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABfElEQVR4nMWTsUtCURjFf69acykqXWpx0yVoEDSXNocgN0FoiGdDSClCf0IgpZRDPhoU4TXIa2vPDBwih1e0tBRB7xXBg6K2eE334tNqiKAzXb7vnPN9l3su/CWertZcAEONu1/1RV3wAEZ6xROhimIdJ93haT+p2bEBk1g0gLU47k6EKorgK70EIW7vXtI4fcR+fZG9qVEf6flJYtkwH3cW/oSheDYw1LgUF49vPJMPL3QAbMekXTKIZcMYatxNai3vBqn9Jfe9fO2ZLMQCtmOy1zpBXz1SAIb67ynEmVqEuYxf1pdX0tiOyWah6OEPGGRqETK1SH+Z2kEDvVlnq1j42UCg27klp26zo+WxHROA2cjMAO9Lg27nVp5z6jZ6s47tmFSXO98bGGrcLUcD+JrPnFctSdjR8gBsLGwB8FAyKEcDMlTSIKm1lI87i1g2TCER5F5/A5BmU6M+ComgzEFSaykA8hn7k7h+9jCwbjkakCESfA/hN3/h//EJXyuwVPTxVw8AAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_wand_ghost",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABaElEQVR4nMWTP0tCURiHH7stKtpQ+OcmuJlQoTQJXXWroaGwMDDcxCki/QKBH8BEHAramrogtETYmH6AwCalIYi0lkADJzsNdm/m1SWC3uXAeX+/5z3nPe+Bv4zX+30BUE5Hxbi8tq/pAKaHzY6lkql1tS0kr5vEyqwBElZkWptzwrFUMml607BAM1eLdXLWJmb1O+ey2UlGnIQPluk/tnBvlE0AU8PHm2QGaHc75KxNqsU6ktc9/pqJk5jY8vvF0bVThOZlEcjI+pqvvQshPkQgI4vESczYAy0Cx29UUhLrZ/3BxhrM2B7IrFoAuMs/sXe6w0SAZq6kJHpxMKvQi/uABplVC8Gsh8WFkK6fGgUAXN5IAHofzCqouz6CWY+hNwaAy2b/qmoEm9VBfiygnI6KgiKTjDh1cfyiYYAkI04Kiqy/wsQ5OL99od3t/DjZuDnQAaOTeFh7NlQvKLJu1vQ/BL/5C/8fnzmfpF9tTIVhAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_gazer",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABVElEQVR4nMWTMUtCURTHfy8NeripCL5AhxZ7WYM0PnEQWxoa3PwAUhAROPUhIhHhgR+gzbGlJtHZJdNZ4SpEg8sjw1evod7tvVSCCDrT5Z7//8c5554LfxmPvVMHoFnOOcvy7r2rAwh6zbF0XZncFJ1AMk4pE1mAZA2NyVHUiaXriqtXvALX3K7dc3U79Jkr2LwdbJE92+V1OCF+2FQA1rzlec0VbCrYEpAKWxR6c9q1ewLJuGxHtlBstJRSJuKMPs15LfGRGI+4/JJR6M057oy5brT8FXgjFbZ852gotEzGSsDFi4aYDRCzAaaqA2CqOmI2+Bng9m2qOqaq0xWCJ8taCVkAeMvvCiGH2RVCQpYCmuWcUzU0+vt7AIymUznMvJaQkNxOkKqhyVdYuQetB5uT5z6bG9syf5deX9gDCfi+ieed8cLAqoYmza7eJ/jNX/j/eAdFG65eh2gJXQAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_forsaken_eye",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABpUlEQVR4nMWTPUgjQRiGn9H4U2RXBkMkaRRRsoc/zZEiBolcIUKKA1NZyBUHKURsLQQ7CwsbkRSCmCvExrUyYHscsr0nmEA4rC4YTgKbLbxDHAvJsKvLVYJfNXzzvu/3M+/AW0bzalUB2MWcCrvv5Ds4gIifHJ/cE41KQXUPJ7j4M/hKZHwtSeNzTMUn90QHL/yARqWgfh0886a3t3X+b7MJQG1nB4DRr4JE3hYAWsAu5tTs2hQPNwuBqr1S0hePB8QeB475sfuTwv73YAcXi4sqNjMDQI+U9A8NhYpdrq+TPT0NdgDw++wsMHe7WgXAsCyONzYYi0apex5fSiVi2awA6Hq5KH8YlqXJNdflU7lMzXX5trKiMRE/oVdKAP61WgGhsWiU4skJc+k0APlkMlzgznH0eTCT0UJ1z6MyPw/ARympe57G6RHsYk7JhRsMy6JHSu4cR+9gaWuLlGmyOTFByjRZPprVpnrlA/c6g2FZ/1sNQhxqH+gOmlerKpG3hfnBITJyzv3tLfD8Eu1qFSOVIjJyrsl+O+MX6YwTVjnsL7x/PAHWHp9LfTVSbgAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fish_large",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABWUlEQVR4nMWTMUgCURjH/6dtoUthekJSEjicS9MJmk0uNxS6HTQFLhdSQW5N4qJLiIIEtjjf+NzT4NrPzSHOIS1wUQSXeE3vceedSwX9p/d93+/73vfe9x7wl/ocXlEA0ItZ6hVnfsYBwJY9OSQ1hQkpUH8sAvV4x1UkkxYxOdulIakpMF6wAyx50DDR7X9gupjzWDgQxMXJHjKlJL6sCSKKLgCAz94eS66TEW7L+yCGBmJoAIDpYo46GWHQMOGPRbyPqbbzdDauUjkqUjkq0v5Tjs7GVYfvPJGgajvvvgMmJdVCrSIhTpYAWWJFeo74dDHHoc32YYM6poWOaXGbGBp0+cDFuToghgYl1eL2qbKNOFliddNbR707uMx1+bpWkVC+H6Lw+sZ94UDQwfMx6sUszZSSfAqbdKccgXGFx+ffvwNeYP0lXr+8u3Z/SIs8mfEO4Cd/4f/1DY/7s9CojVK3AAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_hiisi_thief",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABX0lEQVR4nMVTPU8CQRSc46PyOg1y2/AHsEHLQzoLLSyuIRhDR3URMDT+AgpNJOQSE1q0pCLQGj4KKhqsMBQ278DChAMaozmrXW85bIyJk2yyb3dmdjb7FvhLvD6ZLgA0cil30z5f5zwACHnFkbil2C3DDcY0ZBLbPpOkzmCf7riRuKVwvuIlcHGvOkK9O8N04SCyfyD2s9E5khd7+HyxoZ00FAAIeONx8XXrWRITEYgI5eEKveoIwZgmriMMjFpHKfQJ9e5Mik1EKBXTCIfDuLOKuBm9o9AnGLWOnIBjunDwoTFx+ln6CACQNw1MJjbypiHxfQb3jw9gjIm62R7Att+k4UVo3eCydCvVqqqi2R6IOQCox98yXwIvlssliAiO44g6MB5vvkIjl3IrOkM2OhdkLgQg5ueHu6joTLzCj31QHq58ia4SW74+EAbrnVjok8+gojMh5nyJ8Ju/8P/4Ah72uvwKpFsPAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_miner_fire",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhUlEQVR4nMWTO0sDURCFv/VVCD5wxegiioKiMREJIigbg2ChSBC0EyxsgoWI/8MmSAqxT7oVQvAHaFawMfjCJgaJiUaEK+IjTZC10F3cbGxEcJqBmXMOZy7nwl/Ww8WaAaCFAkalvTk3cQA138ltnohU2Fs0qrs7WPLJDhG/qlCYbzXaPBHJxEvfASY5uXVOunfWmgshSCcSLE+68K97ec8W6JjTJJsDLRSwyEdNY8hAPB63RNRgkM1Y9NPJuhctFDAWd/btDpa2F4xi+JK+YBBZlm32hRAkY1HaGxqp33ATW92VAKrK7+wa9aLrOqlUCsDq2WwWgPuXZxveITDbr+CfcJPL5RBCWP3mUC+HYnsDs86u80z1dCIPKNS5avFPuDn4ur1SORwM93Rydp3ntlSFqg4hPz7Z9jMrI5UFtFDACKsKxfwJt6XPcSZToHt63Eb2PrwRVhUrVD/m4KrUimhpxucbBKD4ekrT8Y0jB5ZAeRI39DvHvWFVscgm3gb4zV/4//oAOz2zDa5vxgMAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fairy_big",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeElEQVR4nMWTPS9DURjHf889bRVVg0bSDqRBLCysVxqzhIRYfAAxiIhvYLBK03TwCcRSg8RsqJWFLyBRDSGhqVy9t+ceQ92mbyERiWc85///neftwF/G0+22AShsZkyv++A80AGEWs2jM3kpn68ZNZ5kY26kC7JgpyivJMzoTF4CvbQKAnMxd0NiOQqqwXBrPtoR3i9cFnZm0XdlkksFAbBa0wvMyfV+xiYGSE8Nkp4aZHJ6iHhC0b8oFHM3qPFks5y2DDaOVs2+PUxf9JVYPAL6qwolVCsujjNM3YlycP3E8daptPWg2RTVMIsRLCsCgG88YvEI2nujHrLa9FYnQIX5ejmMscBYAGHQBhUG1fFkF+CneCzdfw/w6wJKAA/xQXwAD5SgPUBLb0BhM2OydoqrwxeqFRcjBu3X0H4NI4ZqxaV07/B89kHWTvWeQusezO+NYIUaU9AevJRd7k6qXXvQBHRu4u7lQ1f9WTvVNAf6NsFv/sL/xydqDbOeYbQPhAAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_lukki_swarmling",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABuklEQVR4nMWTP0gbcRTHP9eY0wpaaGJMjtLYJS3xirRL/3A22sGlQ8FzUQh0EqGlZHR2FWkUC5Klm1u6tBlLK7F1EVR6pJAObSh4MadDlV6rMfw6lPy4eE5F8I3vfd/393m894OzjJr1TADkJ1PitHoz39QBtHmbI/qiYhdMEYjHmLgd8pkMGhr247CI6ItKU694BXbBFNPTKgA/6xtUD/ZlLdrVTfpBL4PPb9Ko2MQe5RWAC168QDz2j8Z1uBS81fJ69WCf2cJXigufCcRjcpwWgomlURF82Q7A1MNRwuoAu0dbhNUB0stDkqQzk2R56nUrgTf0qM5qqYxwHULHGsJ1eDE2L0m84TPQozpGMsH9a7183HiF+2acxt4XQscaZvKp77FTCQA2S1v07bznVzDI4acZ5j/MYSQTPl3byYRVtQC413eV39/+QEcH5SsjpPvvUCyVuX45RZ1DP0F+MiWyhiZN1n/scXE4w1v1Bgn9LsXvNayqRc11yBqa3II0MHMrSqNiU3MdAOpqF2s7R4yNPCG39k42Rzp7aFRszNyKAp41nrzEzOq2b96sockjaupbBP/zF84//gKWf76YDG3KZgAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_firemage",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABcklEQVR4nMWTP0hCURTGf0+DpgIxNF+FQQQOuvQWA/9sQRgkmYtg1NIU0hK0tbQJYeEgrrU6BInQVhYtbgYNDenSsxZB5zhN76I9g4igs9zL/b7z41zud+Ev6/1xTwAqu3EZpVvnlg9gbLDZEyxqZjUlTr+PzJLbBolGdMz1KfEEi5rl1wYNVnP9rMn57Rvd65rSXCurZGNeorkQH20TX6KiATgGx7Oa89Vnutc10nMd0nMdADr9HvnqM/WzJk6/b/Q1M6UNSQYCUts8lKI8iGEY0hJTDMOQ8Iwu4RldkoGAZEobqtnxFWK43QCsMU+lcQXATqOo9E6/N+S3Aax6Sp+q/cVs6jubHVBtvdAw6wpyRYuj5a2fA6YnJocgC+nLIX384X40oLIbl0JEJxvzYjpcAApirQC5420KEV29ggKkyjfaR9skmgtxsjplG3V6YpKDxKLKQap8owGoIH1N4v7dqw1SiOgqRJZ/yPCbv/D/9QlzP6vPwmcKIQAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_wraith_weirdo_shield",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABlUlEQVR4nMWTP0gjQRTGfzEi17ssricXzOKfwmKxSnFieQGLBAMWwVojpArEIoVuc0EwqCcpto+VGCKCEAhWKqQUzFXHErTZEKJ1ijuf1Q6Jic0h+FVvZt73zXtvvoGPRLuRFoDyxrIMO/f3/TyA0V6yvlAMeJcJCYYMkovjAyJL3yfxYproC8WAnx/oTfDJW39uAIhb60x8+QZAq/vI+d0JAMUxE2OlHAAY6S0vGDK4Pr7vIzv1PFk7w/ndCXFrHYBgyBjeZtJZlfj8vJSaBal5p2JtTknNO5VExVLrUrMgSWdVkUfeivyee1Y379sHZO0MAFk7w759oNoYKvASflCxW+3g1POYUQ232sGMajj1PG61877AtD6rYjOqkYrkFNmtdkhFcphR7X0BH63uI6lITpUNqHb8QQ6gvLEs7UZaZmK6zMR0NchExRJrc0oSFUtKzYKEf2jSbqTFf4UBHxx/HeNs9wqAnaPtPh/spvYY/2Vw4c4qHyiBt048/PukhHzc/lzj34OHsVJWTuxL+J+/8Pl4BXEdzxNYGgMcAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fungus_giga",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABPElEQVR4nMWTMUvDUBSFv5iOnVRaEqoFRV3q4uKS4g/oIOjWJUOLOIgIboKTIHUQQungJg661U4dndrFuQ5WUBBDAxFSKVlLHEpCklcziOBZHuR953Au7wb+UvbTgQfQ3Nvypt37330OIBU2ZwoNyWrvenJeobwxJ4QUNRVre97LFBqSz0thwDd36j2+Lq7puw5r6Vn6rgPA5tkxxcN1xu8WSqkpAcyE68XNQBAC8Hh6SafeQ84rwTiRBuWrHS9XOhFmD7cAMNvn3O3fRxskKWyOSwgwB+PEsPh9Kg64joPJZOacKgtG13FIJwX4EMDzz80DRV7B0FT0Vg27WmFojgJoaI7QPx+wqxX0Vg1DU6e/QngPPrKLLKxkWVpe5e31ZXLe3Ap7EATEN/GoOxDqGpoamH0+AvzmX/h/fQPnSKSXygPmaQAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_whisp_big",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB50lEQVR4nMWTTWtTURCGn3PvzZfG3NQkt7lFjIlEqw1FutFFNW4lC4Us3Ajuuuq+v8B/0P8gLrIQjMsiCKJQECUBITbS2ibNTUI+FBokybjIBwnNUnA2hzMz7zvzzpkD/9KcwrYA5LbSsig+8U/yAIxZsJXaVdV8VvSYzc6GJT5No4eQxMX+sMf9TZvq47BYqV01yVezFar5rLiiUYovy5TrQ77X29xJRPhcOoW+zuaqn7vPb/KnXsPO5BSANtueHrNx3tYoVs6wwhe4GgkQX/Lx4NYK/os6tV/C11dl9Jg9lTPXwbs3LyTtvcTBp4+YLg+heBxlmki7Q/vkkA8nLTJPn/G6UeLJox01NwMAUYpKqYQHN6H4dXD7kL5CLUcJugzueX6yt/ce95o1xcwRPAwnOdj/RmJ9DWVZ4DVBKRBB6TqX0dgYlAnaqSlGmyUoVQsk1m+jImOwpoGmj07fEhgezCsJirUviwlUf4AyA0j396iyGoeVNrrrBipo0hka5wlyW2kxV9tIqwuDAYiADMfDGY5kBPxIq0vy2vHiV6jmsxKqWBihOGrZAm9gOgN6XcSp02/+oGkv2AOnsC12JqeaKw6NG0eIU4ezDnJ6jFSOkJpDI3k4Bc+uM7MkEznngiz+C//f/gL6Xsgr+Lav/wAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_bat",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABRklEQVR4nMWTMUsDQRCFvzVapFYCCQvxB1yatOZICgtBQfS6kFJCCgmCbYr8BDlShNQiWMROtDSctjZneg8WD/IHUh1rIXveetFCBF+1zLw383ZnFv4Si5dTDTDtNvWqvIkbHsB6VlxyRiK+9XShWqZd38wVcRsV4sMtXXJGwvBFlmDEgR+yiDoAyG0JgHpVlKqXuP0aSRRT3p8KgLWsve/E5ryIOgR+SKFaTq9jOWiPj3VyvgFAq7Gbc2AQHN1x1buxHWRhxEZ4MN6jd3+yivr5iKvEQCosCsFSawbO0MrnHCilUEpZsaL91j8XmCfXVueBM2Spddrd5A3S0tNuU7v9GoEf8vzUAkBKabmRUqajDPwQbzITqQNvMhNJFOP2a9R3HqwuUn5MIrsH3mQmLAdfN/Hs8S1334tGJV0iw7cIv/kL/493CFKfbOfTaBMAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_eel",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABUklEQVR4nMWTv0sCcRjGP5cO4SQVkkbY5BAe/aCiQfEPaAh0CNwzh5BobqwpiBAHKaIhCAQNF6E1bSkEiatbmhrqqqGuBAehrul73HkXQQQ943vP5+H5vrwHf6nn61UDoJJJGG7fxVz4ALxWOBAtSFotZXjCQdLTg46QeCyEtjhkBKIFSfglq0HAjbzCUf2Jx/Y71XKEm80L5kdjnH52iedkPu40ggsVCaDPWk/A27VbiofDVMsRALpJmfrsG/77Sxp5BU84aD7H1iBdTBo7Ey/f7qildpga97F+NcBx9sTeoFf7pQdWNlTXuVWuAS21Q1PRmZH9tNSOOXOTI0DUzKbHWF4KOeCmotv8XlwkQnrBpqKT629zYPGaS6xkEkY8J9PIK6g+zREqYH1kDuFL7Z39fAdCW5OvJmy9AzOg9xLXzu3bBtiNhUxY+G2G3/wL/68vq/y2az0rbiEAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_miniblob",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABNElEQVR4nMVTPUvDQBh+0jqJyaLUJEtBcJG6OCfND+ggmK0giENQEOni3KlTllIKiqvgFre42zi7VLoUpBli0hKXBNzknO64M6mDCj7jPR/vB+8Bf4nF8xkBAM+xSBlP36kOAFZ4c60xlGLfJtW6hvbeeiHENHTE+xuk1hhKVC/xAmoOBmPcjOZI8oxxqqzgsLkJ83wXH2EMreVJAFDh26Nm158KZgBI8gyuP0UwGKNa19g4QgftqwPy3p8UzDxUWcFqZwe3J3eSsAO+Epv5tClwweUISZ5hi3urYAmo+eh4bWngtwFRmCIKU/S6M0RhKgTxKIygykrpDnrdGeNLAzzHIqahI3h6g+tneLmflFa8aG3DNHTYjkXs64ff3wEL+HqJncfXQvW+oTMz1QuCn/yF/8cn6CigAh/Ifl8AAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fungus_big",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABUElEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1DAwMDCzImsV0pjA+3xr8n1lekiHKSBjDEFsbKYbn/iL/xXSmMMLUMyIrgGk+POkyg7lDOoYLTh6YyWCbp8vw9+FzBknvtYwMDAwMTMjOg2lWMAhB0fjyw1sGBgYGBgWDEIbDky4zMMtLwr2D4oKoGUH/u/hCGF5+eMsgLiCMQiODXqb9DMsy1qG6AB3ANKFrfnPtCgqfhQENoGuAaapfvxnOV9KxgLNxuuDNtSsM79UEGd6rCTIo5KbgUobpguZJUxlefP7E0LKwi0FWVh1FbuG+jQwMDAwMjfvbMU1am2b//9WVnP9r0+z/W0hL/b958/T/t2+fwfHNm6f/W0hL/UdWx8CAFgvI6cChfTmKBcnWTgyxduIY6QBuAHpKLDjyDMOVE2yk4Jph6lEUkJMXBh4AAN25s6hU2jfVAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_tank_super",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABU0lEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1DAwMDCzImsV0pjA+3xr8n1lekiHKSBjDEFsbKYbn/iL/xXSmMMLUMyIrgGk+POkyw+JDLxlefP4El5Pg5WOItRNnsM3TZfj78DmDpPdaRhQXrE2zh2t+5R3E4O6NMHhhVieDbIYtQ3f3VohL8nQZ1qbZ/w+edZARbkDwrIOMUUbC/229gzD8/lNVGM4+oKXGsPbIM4Zlsw6iugAGrt2/AmdrKeowMDAwMNgEWDAwMDAwyIabYRjOhC6gpajDoKWow/Di0Wu42JENJzA04jRg38H9KK5AdsGdc3cJGyAhJwpXfO3+FYZr96/AXcB++y2Ky1AMWJtm/3+CjRSDw7VbGLYga4z48p5hgo0UPFHhTActt94xsN9+i3AZjnQANwA9JRYceYbhkgk2UnDNMPUoCsjJCwMPAHUwoiUJyo2FAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_necromancer_shop",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABaklEQVR4nMVTMU/CUBD+0DrqokGpw5OtJDBYBx2qjQOJxEECG4lrXToYICH8AhIHAgkDg3t1qLIQhq6GxNFAwliMjSWM6qici20KfZMx8bvhvdx999295HvAX2I61AkATE0lXt3LezwAEILN0WQr4nbztMxiKMjrIZFDRYR7tkHRZCvi8ecIbjdP06FOpqZSVpLIMAya/YRhGGRqKk2HOrndfHhDr2hqKn3UdL85iKAI95mFdo7u9vbpYFv0JzPGiDHm37OSRIV2zm9eWhS5mrwAAG5vbv2cPbYR34nDHtuYvL/N8UMCHprlkt8cPBch8JIl5QQAIO/KkGcrSFeLsGp1pKvFEDe0Qd9x0BsN8JlNo1KpAACsWh2ZRArNcglbq2t8AVNTqaGIuL84xvXTI4SOBaFjIZNIIZNIoTcaoO84OD/aREMR+WYL+mDGCZ4PfCctOvHy4TU0oKGI+Hp2ETs1+U78zV/4f3wDTun5g0B9UDUAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_ceiling_fungus",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABTklEQVR4nMWTMUtCURiGn6NB4BaCcEUQNMjAFhcXwSEn7xB0t5Y2J39Bf8FFxMkhCKntDg33B6hTsxKCJhTSTZeoQHCI03QO5+BtC3qXy/ed933O+Tjnwl9qPWlKAL9RlVHrqq98AMIMp4pdEQaejGcd5q+nZHIFAJaLKd1Fn3YlzfdziOP6QvljCmCGR52xDitt2o+MOmPiWYcw8GSq2BUAGuA3qjrcCmY6uFxMyeQKvH190gpmGqLG2VNGrzcQF6Wk3AxXVtj8AvSHK/xSkrveQFgApfL5MQC311dW/+yyDMD9zQM5o28BTl4kTupA1+H63aoVaGzUMXNRmfNbJ7LOb50d4M4ISipk1k/74Y7PuoV6LfEbz4K2K2l9C8I0hIEn55NCRBS9e72W0I/JOsF60pSO64vD4pQj9yNydzNsPmdMiBon6hRR/8L/6weSxJb5fda9AgAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_poisonmushroom",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABmElEQVR4nMWTO0gDQRRFzxoLFUylrisxAQ1CjCtqpyF+QEVIIZjKQmzEKsSUglgKlhaBYLARC0GMKCgKxl8RS5sYBYnCqrAxpdZhLcKOu8ZKBG8zzLz73pyZNwN/qeJtxABIzQ8ZP8XNddMHIFmTm7rikn4UNhwehfS2v6LA6HSOkqajhFKS6ZesBv0obFxcj4r589srE+owNY21AOyfH+OWXYwMpFFCKQmgyorn8CgA9PlVANyyi7tinptclptcln5vL51NXhweRRzHRrA6t2QATKjDnGQvRRGTxqrFjRU7AYBWeMEtu2zJz2+v4ihm3KoKAq3wUnF5pjzNrZiEPQtjEkD1d4LArBMAf0s3Xl9AxA7OEmQ2y8XXC1ti3VYgMOtkdzlN4eOdxE43APn7DADx2B6RtSnhTRyWR1sXxn0wMygLU/4+Y6OIx/aoPc0y7vt6VIIgnLyS9MkGIxgtt/Dp8YG29g6R3FzvZGZQJhhVKWk64eSVvQvF24ihhFJSSdMJRlXa2jtsu9fFOkWy+RL5rt/8hf/XJ3NWpycQRl3oAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_scavenger_smg",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABd0lEQVR4nMWTv0tCURTHPy+rISqKF5UFCaFTtgiBQi9DqKWhQWgQ3MIgwrK/oDFw6JeLrkJD4ChEgqD2Cxpr00Ehsxe1FDhE8Rrsvny9goig73K553y/X84591z4S9xdrWgAqZBX+yov4oIH0Nos7nfGpFrar1lsVgIu2WSiTA5Rm+/T+p0xSfClZoIQF3YvSeZVlJ2IniusbhGcGkAJj/NaqWGdS0kALc3lCXE0XTSITzMnKDsRoukihd1LLDar3o7egj+RkwIuWavnVUPZG/EMs6MdbMQzjAHJvErKJbOfyBkrELh9egTgunzTMFiaMZwibxpiMxaWx3D0VMmWP2LC8DNMBsNuDw57L8VSBZ/9PTjRDlQ5+4lB9eUB6MVht1EsVcieDxryg13dhrv+jKmQV1PC441XUCWCnc8AtE2vGwTyxR6C50/kvt+DqCrhqd/jW3RzWBjhKH/Apls27YFu8HkT147NQ9ueHNLFgm8g/OYv/D/eAEvEqrpw0z9BAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_giant_centipede",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABs0lEQVR4nMWTu25TQRCGv509ey62V0GJZWSJxBJCFJShoKBwB0VKi1eIKPxELqho3eGCMrRp/QBEQjKyQOKS+HLO2R0KFGMrrhASU87M/2l+zQz8y5hPhwowPu/rvvpt/rZvr3g2Geh8OlTvvbbbbX160lHvvXrvdT4d6mwy2IGYbchsMtCz1x9oZhmXn77gnOPhQU4zdWQu4cdiRRUj70d9umdjAyDb49lel9xZrss1z46PeHzY4KhRcLOuKGOgyB2pCLbX3djZmeD0pKNOwBgDxtJ0CV9vlog1iMJhq2D+c4GzlsuPnw1Asg1IRFiUFQBFqkQsiRUUSJ0w+3aNL3LuNbI/mh2AFaz8diZGMBiqEFCFEJWosKorVBr7AeuywoklopR1xEqgmaYoEVUoUoeGGqtxo5FtgFjBiGFZBawYxEAEVlVNWUc0BnyWgti7gPF5XyfvXrEsA9YYlmVFiJEy1Dgr5KmlyDO+r2vevH2x2cIGMBhdmHA1AwN5Itw/aIEqrdRhRQghEsqaOtSEqxmD0cXOBu9cYp7n6r3X0+OOPn/0QF8+6e29xL2Qv/qF/xa/AMS30qtQovr+AAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_slime_leaker_weak",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABU0lEQVR4nMVTv0vDQBh9abt0clAiOYQ6hiMu4pSmCg4uDkKFDoVu4g8oIq7+DxJKwA5ddSg0myDdJLaboDSEDA51uUBHUbqocbojl2QSwbd93733ePfdd8BfYua3YwAYHG7Feee8z3kAUEqKVcNRotv9uFjR0FxfzJjULIJobylWDUfhfCVJ4GKvM8HjygLOTxzJ4P6ihdrpGr5eI2i7AwUACsl4XDxvVDPiu+cu5o0qvM4ExYomriMlaHbr8ersM1ccjH1RT9USbo5dRZoBBzUNXF61QU1DEvGamgamL6HoF9IGnJwGFydNcxO4vSEAQKdE9MKAQacEbm8o9XMT1A92oFMiUlDTgE6JMEmnk17BtgjK/RHCgCEY+wgDJhJxlPsj2BbJf4XkHly/fYB5DNtHGwgDhu+nd7Q2lzN7IAzSm3j2wDKDtC0ixJwvEX7zF/4fP+AhrCbET/zpAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fungus",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABL0lEQVR4nGNgoCZ4dSXnPwMDA8PaNPv/2ORh4jB1DAwMDCzImsV0pjA+3xr8n1lekiHKSBjDEFsbKYbn/iL/xXSmMMLUMyIrgGk+POkywzn9FgwXGF2sYbDN02X4+/A5g6T3WkYGBgYGJmTnwTQf+pOI1Yvn9FsYDk+6zMAsLwn3DooLomYE/Rc95cfAY6zM8OXsXTgNAzD+a7NNDMsy1qG6AAbevn8O1wSj375/jsJHBizoAndOTWZgMMvFUAgzhKABcEMYGBhWHdyLIRdm78yg5G4B52N4QYKXD85+cu8GCvvJvRso8igGrE2z/z/BRooh1k4cbntRYjZcIwzE2okzTLCRwh4LyOlAMqQAw/nP10zASAdwA9BTYsGRZxgGTLCRgmuGqUdRQE5eGHgAAKeDoPxTJSGnAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_longleg",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABTklEQVR4nMWTP0hCURjFf+aDMNKG4qpv0Nl4LUHbU6HVIahNcJWGCBvc2x16iEN70Gabq0O2BS1KDk4taQ8X/5AExmuIe3nP91oi6Ewf9zvn3PNxvwt/Cbt35gA0y3knqC/PJQ9Ac4uF0QgNWydOOJ2kuL/tM8maOsOjHUcYjZDkh9wEKe7Uu9zcvzGOpABY2j0S0RilXJzs+R6fL0OShWYIYM0dT4prrQHjSApBBkEGTRiMZlNqrQGdepdwOqnG8SQoXh8779azElfbc2qHm98j0ldJNiq73J7eeRNIjGZTVUtxtT0P7AcaaMJgYi88QmkUBJ+BhE3fE39iL9CE4eNpqwcTe8GWiAAwsJ9ULZGIxoITNMt5xzJ1Lgs/hgKglItjmXrwK7j34OpxXaVZ2j00YXBx8OHbA2WwuomVh1ff7ZapK7Hkewi/+Qv/jy+rD6LBHAxWkQAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_locust_swarm",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4nMVTLUzDQBh928RqVllaEEuqZkiQM/QMCgzpXDNsVUOmJhFIhkLNM1tDVodZMWio2xlUR2Vn2iXkQ/W4YyUBQsJLLpd8P+979+Ud8JfIkoAAIPQZ1eWreFVX25xGA8qSgDjn5E1d8qYucc7Jtm3KkoDSaKCQNGSSNBpQq2vh4eYZt/ErVutc5MyOjjNnB4fn+3h7SWGdhA0AaMryWl0LuTbCJFoqzQBwPZ9jEi2RayO0ulb9M23bptNeT0jmnFN/b1ecKu9NXdHclAn64wOs1jmGzIFRFhgyRxlglMWWMoVAxmwRK3eFrK19j2DIHGRtTVExW8QwygKXR1dfE5gdXUwyymKL1OzouLgfb08MfUZZElDoM7E8eYlyrKoDfuiDp80Gj3fHig8+lvPJiZUD5bvOibUkv/oL/4Z3SqnfyvuluCgAAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_necromancer_super",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABS0lEQVR4nMWTvUoDQRSFP38QG0VQAkmz2AkmjZ2QuL0KQrYJwSLVBjVIsMojbBkkapIqoLjbbJlSjOgDBNxAuqyNC3kHGasZ9idEEMHTzDD3nI87zB34S029mgBwTV3Mqstz6QNYDodT2dZC0DfEkpamvLeZgBTyGYKTLZHKthakP2II+oaYejXhmrqQsm1b7V1TF1OvJoK+kexQFsPhOMS2bRH2JSDldlEcHFYjQU3ThKZpan92ZYlyu6jCi3HI7s42juPgOA4ApVIpso7Gk4g/ARiNJ9zdDxgOhwBYloXv+zQaDXzfZ+3pcT6gelEBwGve8lAxVSeWZQGQrZ/PB3RueuznNpRZdnK8uq7AYal3dE1dFC5zvF6/U+wMVEDqtNcFYOW5jfQZ3Zef5yCsWXOgCPFJrL99xm9HM5/h6yMgfeTOnsTf/IX/1zdDF/792vPBOwAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_bigfirebug",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABU0lEQVR4nMWTvUvDUBTFf7HiIgpiqElAguBmHBRFwdRODsWhVFFswbWKiLj5B7hLKB3c3FQodRMXtwriIkKzdCyFtkjWDioSp/eamLiI4Fnu+zjnvPvuuw/+Eq/uoQ9QLab9uH2xLngAg0Fx0iorndtNP2HqFObHIyYp26CTVf2kVVYEXwkShLhWqtN4nmZlZoGT+1MAtJFRdlcnSB3N8tnsoK9XFYCBYHpCvJh1pGnGMslYJnPmGG7znVqpTsLU5XVCGRTON/y9xzU5L7+cYWlqpBaNnM7l/k04A4Gp7eWIeOuqf05wHCqiwEXpAABLU3G7HpamUsn361nJ+5Dr8yMZCLhdT8Y7twkgYxCxBkL8k2GsQbWY9h3bwDKHAGh5PVpeTxLFeGfJwLGN+FcI9sH1U1uKJtVhPt4SsX0gDb534vFDO3INxzakWPBDhN/8hf/HFykPoT4Wf2rtAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_ant_suffocate",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABe0lEQVR4nMWTvUtCYRTGf1dtSSrSqK4opm2hEFHQ4McmRENREBK0SkNELfU/1CLR0B5Eiw2RDU2VSYM03XCRyrjRtcDyA5qK23Qv93qlIYLO9L7nec5zznnPeeEv7fV2RQXIpOJqO1zzazwAhzG4P7QrKNl51e4XWRxzW0SiEQ/KTJ/aH9oVNL5gJGjBuR2J/csXCg4nLm8QgOGyxFJsgOhqmK9HBXE6IwDYjOVpwdvZEpVmw5T9bijMdrZEbkfC7hf1dkwVLO7NqR/pIpVmA7lXxOUNIp+MUivKhDeqSFtuZhfO6Vwb4WD5SDC9gTFTj+gjADwULqgV3Sa80mwQNNwtAq0W3qjq58mpYwtua3X0iD4A6oqM713h7en+xwQWAc2cUh5HIonLG8Qp5XX/YFd3e4FMKq6mIx7qiqyDn2eHekWayFJsgHTE034KSnZeHd8sE5iI03d9qo/SkUgCsN5xY9kDXaB1E9euni1tpSMePVjjmwi/+Qv/b994+aPFi0e3ZgAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_tentacler_small",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABaklEQVR4nMWTv0sCcRjGP6fS0GaKdi4GrgYhLYImtIlDkEMgiLRIhVRD/QVBk5CJ9GswJGkIrKFCWoI0ElptPdCl0zhsc5NruuvsboqgZ3y+z/t83+f9vl/4S3y85VSAWjamWp1rvKYDcBiLPcGSIN8nVbtfJBVymUyiER/yklv1BEuCpheMAq24WWzjjOV1vt8Z4J2Z4vNph+jmLKOujJioCQA2Y3tWxSHxgHi4Qr8zwBnL0yy2sftFPc5YB6mTZXX+NYkYcAMQD1ewT08CMOoNqbcyANy6TrlcuxbGZmBEPFyh3spQOn4c4wNzGWRJAdc3Z2mg3ZRbX9Q7ALi7MWttZgpkSUGWFOqtDKPeUI9gBUsDo1G5mtDzy5JC42XP2qCWjamFiA+/40wfooZyNYEsKVw97JJe8FKI+KxfwbgHF40+K+lDAA6PVtnaOGeiu2/aA93g5yZuP7+bIhUiPr1Y048JfvMX/h9fOu2tDnxBrQ8AAAAASUVORK5CYII=",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_fish",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABWUlEQVR4nMWTv0sCYRjHP5fiEKlB4Y9bpEkIW5pPb3I4GoLaFFdpCHFpaXBodTkOCfcwaLg2cWnK/gMjORwikDSXUqNBiGvIO+7yaJCg7/Y8z/f7vN/3eZ8X/hKj+2MTQC/Kplfdyls8AL9THEnVhEHz0PQl4uR2NxaapCWRwf6mGUnVBIsvOAmWuK11uLh9YTid2LVYMEQhEyVd2uHzaUB8TxcAVpz2LHG12XOJAYbTCdVmj7bWwZeI29dxOcjVD8wP9cEWB/IltpIKRkVxOVktb3N5dO124DwpedYCYNbQeDRadmzVnfDjAaOiEMiXWO+vQR9e+20i8inn8g3Z+tjFXXDgRK+r0+vqdpytjwmPjN8dxIIhwidXGBWF8Dz3ln1n1tAIz+ueDvSibKqSSCETdQ0NvmdhoZCJokqi9yssswd2g5+bWL57XpiJKom22OK7CMv8hf/HF+MMrHCfvt9TAAAAAElFTkSuQmCC",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_ant_fire",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABcklEQVR4nMWTvUtCURjGf6fUClESw9JFanFQGmrV+gMSgtyEtoiGhrb21hYJh7Ctoc2mlMTJjKZoKQtJSJduH0ShaOVHt+ke7k1BiKBnOpz3eZ7zfh34SzxdrasAydV5tVdcu9d4ACa92BWICyUVUQe9bqIzzi6TUNCDsjimugJxofGlgV6c37mkcfLIQ60KgN9i5mVohPzFC+lsGSUVUV2BuAAY0KenibdTt1IMUKzWcH6+k86WARj0umU5Qp9idHdJbcSuDWLTxwc+u429rWlEKcPKvpv3zVkO1g6FoQca9OKwYxSAY+UBUcr06mu3gQa/xSzP7eFhQnHw2W39DTThpNUKwF29Lk0ACs0WUzr+AH1QaLZkKYVmiwmb3RA3TCEW9FCs1gwvAxy9vkmT5blxYkGPnII0iCRyolNR8NltFKs1aaThvP1F2DHKzdkznYpCJJEToBvjz03cOL3vKicW9NCpKLgXknITDYTf/IX/xzfOUK0uc7332gAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift"
+        },
+        {
+            id: "$cs_base_tank",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABYElEQVR4nMWTMUhCURiFv1dBkdRSWb6gqKgIdHFJQ3NoCRyK3ARpk4KQCJpamlsSkYhoKigXq6XNELOhpQgUIiEyyHwFLTXHa/FefL4CiaB/Otz//Oee+3Mu/GW95pd0gGTYp3/XF+eCB9BUPWy1x5XyaUBv7LcRdHaYRLwelfJMp261xxXBV6oJYjgby7F//oL28S57PW3thCa78UYcfD6WsfmTCoAUSIZ9ujfiIBvL8TSxYrj5cG1R4lX/MIIX2MkYHQS35/TxlnnT23e3NgEYGnMC0OoucrBwpBh2ICp/9yCxfXQAANfULLm9DbRSAYBBt0tyTAJiKJ3OQAVfnp1A74h0AEXJb6gVSKczBhfCgaVUQEsl0FIJQ8/koEvtA+D+9lriuhwkwz496lGZfjuu1cRSKkgHoeYroh5VhurHHKzfKFgqS4M6clCbxOWLZ5OTqEeVw4JvIPzmL/x/fQGi956aJ9dKMwAAAABJRU5ErkJggg==",
+            name: "The evolution has shifted",
+            description: "You sense life is no longer what it used to be.",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Mod:Apotheosis/Creature_Shift",
         }
     ]
 }

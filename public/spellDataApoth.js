@@ -23,7 +23,7 @@ const spellDataApoth = {
             action_explosion: 10.0,
             explosion_radius: 120.0
         },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzklEQVR4nGNgoDVId7L8X5fo+x+XPCMhzTP3HWdkYGBgQDakaf5mvPpQDCCkBsMkDW2IJklpJRTxz58+MJw5sRVDPYoAumZNHQu43PUrJ7AawohLMzKAGYTNECZkheiakTXC+Lx8AihqUAx4/vQeiiRMIzobGbDgsp1YAHcBzHZ0VzAwYHoFqwEMDJCoQqZhAFkjuhyKAV8+v2Pg4RVi+PL5HcPzp/dQFGNzGQMDjnSADnh4hRh4+QQYnj+9x3Dj6nHs6YCQIQwMDBiaqQIAU8thOv51jrkAAAAASUVORK5CYII="
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAsElEQVR4nGNgoDVId7L8X5fo+x+XPCMhzTP3HWdkYGBgQDakaf5mvPpQDCCkBsMkDW2IJklpJQzF+3ctxVCPIoCuWVPHAi53/coJrIYw4tKMDGAGYTOECVkhNs3IGpFdhNWA50/vYTUA2RB0wELIdkIA7gKY7dhcgR4GWA3AB3A5H8OA50/vMUhKKzE8f3oPwyW4wgdrOkAHsPB5/vQew42rx7GnA0KGMDAwYGimCgAACaRJkFPKRQAAAAAASUVORK5CYII="
     },
     LIGHT_BULLET: {
         name: "Spark bolt",
@@ -609,6 +609,29 @@ const spellDataApoth = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA4UlEQVR4nJVRsRHCMAz8eIKUWcF7qAobwAJ0DEDhYwx6xtCZATJAipTOnYs0TBDR2JxJHHDU2JKl1/8byAQz61w9FyoM1Iv6tRQg3drGu/dedgMkQEZEhJnN3kHNzMY5N4mIOOcmZjZRXkYmAKAKhl2VUietNZqm+WoYx3EehkHN83wmovtf+sz8FBGx1krI2/D2KJVivPcrD0JtJUMtC0R06/seALoUNEi7FLOIp7VWlsamvdUGQAvgWGDsYYtBnbLZMrY4towtGfwwCdvjl+5jEFnkwFff+CO6NCGiFwC8AW2MunqOgJt7AAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_ORB_KNOWLEDGE: {
+        name: "",
+        description: "",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 50,
+            fire_rate_wait: 25,
+            reload_time: 60,
+            action_speed: 45,
+            action_projectile: 0.04
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABPElEQVR4nLWSv0vDQBiGn4hbhw4SqIh00NBBGhQnxQ4udWkQ3Bx17OIqdDAOgquLo/4HgtBF14hOUmnqcKQORaTBoNAhU4dzOHs0tbUO9Z2O7773ue/HwaTlNqT8N+Cf4cMSR5mnxkHchpS/vTzdOxTW16RpzuiLfBreu8roheB3FKxecYiiD7z7BwPAANjZLsnTswuEaPM4Z5NPK8PdzROpxRQrC5aOrb7VyeVmOTzY5+q6augWrKxJqWirajJJc+0loJBReaWijZU1f7YwqO7nK3FznhoBcTMelTZ8iF4Im7vONyRmY2sZLxwzxJ6OluD4WQ2x7Doa6HfU3UhA9VYNx8qaGuJ3kmCAoBUhRFvHDUiucK98okFBKwLQZyHaXJ5XAPQqjf5y+kG9tQJ6bf3GRAWDGvxUw4wT0xeV9plu3LnRZQAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_SPELL_WORM: {
+        name: "",
+        description: "",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 600,
+            reload_time: 600
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQklEQVR4nLVSMW7CQBCc4wM2co1sV5bccJHcmCpfoE4XynCU/CCNS+yUTkedX0BjKU5jydVhUVuYF2wK6w5jECJImeZOe7szN7sL/DccEdGt90E/mSepLuBJSodsr+9dspvEPEnJCAUpGKGgawU8SWnQDzgiIrnO4b5wHR8GI5ieBSMU1FVvyvpkgScp2b6LQ7ZHs1nB9l2YkwWePj6xi5esKWudp0hMz2oJHBFRPp+xn68Mx23MGGOsKiSO21gX7uIlGwYjNGUN07MAALbvgt1o8FU4IqLxNEBVSMh1fj6FR6AtdM++1646AFSFRFPWeH6ftgS7eMl4ktJ4GkCNz/ZdGKEg5dcRER2yPUzPgupLVciThXw+Y1Uh25FNFq3KZoXvt1fdcZWnRBXRBdT371mks8C1VVbL86dV7pPelfgofgE69MJ8ySCXVAAAAABJRU5ErkJggg=="
+    },
     ROCKET: {
         name: "Magic missile",
         description: "A fiery, explosive projectile",
@@ -1149,6 +1172,18 @@ const spellDataApoth = {
             spread_degrees: 3.0
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHUlEQVR4nLVSsU7DMBQ8V1nYQII9SMRhQkh8BEPtP+mAwsrggZUOqH/BGDPwBUxIjDhGanYi0Y2l4jFYz2lJgtKBm+zn0717vgf8FxqtyUhJq6KgRmsa4om+opGSLp6yrdrLpYepqg5/8pcLlVqo1AIAZnney0n6irM8x2d6Fu+n6TmS7KtXIDowUhLPPeSo0brDEfzwfP8duzFOcAsAeMdNrL3VrwAAffzY/oeRksrllMaiXE5jMhOeeVckWUgpaS8OtlajR1h73wrsz+dihYLW3mPhHnClFD7u9rY6Hl2HFA58+PeFc4gjsOJhWQpTVYLVf4M5AOJSDS4SW+VzcOc6vCiw+chnWyvYWgFA7DwaHBMvDxDi3klkU2gIP5PWq5UQNkXbAAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_SUPPORT_BULLET: {
+        name: "",
+        description: "",
+        meta: {
+            action_type: 0,
+            action_mana_drain: 15,
+            fire_rate_wait: 4,
+            action_speed: 625,
+            spread_degrees: 2.0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+klEQVR4nK2TPXLCMBCFP3lMcgZ3OYTIDC5d0sfXyAWcCucAvoZTm5ISz4g03MAdZzCZ8VIIgX+UX/Ia/b23u1o9wY1Q4424MJJE2kveHN7ZPj8ONJdFX7h6msQF4OVNJoEUQFZ2snj4YDm/A2C9O1I3s4HYd56ngQpdRNDUjc2Qp/feErKyswRmZ803iAsjcWHkK04wzuAEridJpOnvXavwlFeZ9kKoTCsOlWnFx5lU8BeEbpKngcrKTlxzXus9dWOfdXPYn0fb7DwN/O88xk+aqByx777PMvTv7swUAiSRHhhlYVrxG8nGXe+OgGbLf1l5fO/ffKabcQJ9JqP67lT1EwAAAABJRU5ErkJggg=="
     },
     SPIRAL_SHOT: {
         name: "Spiral shot",
@@ -2792,7 +2827,8 @@ const spellDataApoth = {
         meta: {
             action_type: 2,
             action_mana_drain: 0,
-            fire_rate_wait: -8
+            fire_rate_wait: -8,
+            speed_multiplier: 1.2
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAXklEQVR4nGNgoDWQSV78Hx+fKGA97fz/+qMf/1tPO0+aZpnkxf//////v/7oRzhNtCv+//8PV0S2C5BtgxlI0HZkm6kKiDKYZrbT3HCibKC9CwiB/1CALs40EI5BAQDoQlPlDTC58AAAAABJRU5ErkJggg=="
     },
@@ -2802,7 +2838,8 @@ const spellDataApoth = {
         meta: {
             action_type: 2,
             action_mana_drain: 0,
-            fire_rate_wait: -8
+            fire_rate_wait: -8,
+            speed_multiplier: 1.2
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVR4nGNgoBf4DwXo4kx0cwFBgM15pMjTHhDlApo6k2jDqe4KmeTF/5ENhvFJcon1tPP/649+/G897TxprpNJXvz//////+uPfoTTJLmCYhdgs41k2wkBAJTCU+XAcVmPAAAAAElFTkSuQmCC"
     },
@@ -2856,7 +2893,8 @@ const spellDataApoth = {
         meta: {
             action_type: 2,
             action_mana_drain: 2,
-            fire_rate_wait: -12
+            fire_rate_wait: -12,
+            speed_multiplier: 0.33
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAd0lEQVR4nL2QwRGAIAwE76hES6IAS7EaCrAUSzofmhl0gOE+5hUy3LIE+Lv0VJyTG/720wBJS2tuGQBYoyFJM3tb9Ex6gSKpjO50v1AHR5AmwNEcLXGPhuQ2C3xZuAvLkrL7UIpwDbIAlmbPAMAZA5KHTbEXVtUFT79KQ+fhS/wAAAAASUVORK5CYII="
     },
@@ -2980,6 +3018,7 @@ const spellDataApoth = {
             action_type: 2,
             action_mana_drain: 60,
             fire_rate_wait: 8,
+            speed_multiplier: 0.75,
             spread_degrees: 6
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAxUlEQVR4nK2TQQ6CMBBFX1l7EBcGNx4BLoI72cBJWOEOL8IRdKMhwYO4/26YBGtRSPhJ02k7/89PO4WZkIQk+qKQxZJwU4TmrtriLCa/pakANrsdr64D4NC23/zmrnpMturXJNHYga2dTz7uXe6L9kUhi7dV5Z5lKT8Hv+pcB9EUKQS7B5tnVTcH/isEBfwTDQiJGicCyGJOAM45NyH0McaIAC4PzuNNExrmyV4JWlqau+gVVnHxNyfUyr/2Z30mgFCLr4I3zH6uY584tfgAAAAASUVORK5CYII="
@@ -2994,13 +3033,14 @@ const spellDataApoth = {
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVR4nGNgoBAw4pI47eLyn0dHh+HLlSsMpnv24FSHUzMDAwPD9YKC/8h8kjQjG4DPEAynTdPXhyt0dHREkdOcMIGwV5BtQjaMLG/ADIDx////h2EI3lg4/fo1g6moKEYs/P//7z8jIxNpMUN1gM072AXpDohxBVEupZp3kA36//8/9cMIAPZ+Ub/p41QHAAAAAElFTkSuQmCC"
     },
     PIERCING_SHOT: {
-        name: "Piercing shot",
+        name: "",
         description: "Makes a projectile penetrate 5 times",
         meta: {
             action_type: 2,
-            action_mana_drain: 60
+            action_mana_drain: 60,
+            damage_projectile_add: -0.6
         },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVR4nGNgoAb4/////xFsCCMuifsvDvxnYGBgePH+EoOlZh5OdUz4NDMwMDBICOoxHL8+CaersBoAAwkpsQwv3l9iqCjtxqcMuwtgOLfJ+D/JLlCUcGB88f4SAwMDA4ORpQJptiMDmM34XEASoGo6ociw/1DAwEAgGvG5gGoAALmEVR6d5Le7AAAAAElFTkSuQmCC"
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0UlEQVR4nKWTLQ7CQBCFv2m4AK4SLoAAheMiJAgskgSNxfVEdfU1lbXreoRBdKfZ/iwL4SWTNDtv3nv7U/gTAqCqiEiSrKrjYREy+5g2F916E/UF0AukRNQjTP11zEBgkbeKxKR1pQK4rkZExIsIoNJjvIUQNgyQr3dUTaF+QqcpM1uwCnG5nnFdzeP+GgIS3FwUrSvV6vY8aNUUA3tqtLiFbX4S19UA7I+bWT/6Zrz6IG/OYYIkdOnOAoPkcIpovRkn5hoTMXr6D4okgA+H+QveSo2ZOgPVQwUAAAAASUVORK5CYII="
     },
     CLIPPING_SHOT: {
         name: "Drilling shot",
@@ -3517,6 +3557,17 @@ const spellDataApoth = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2ElEQVR4nKVTOw6CQBB9EBMuQbExFFbEHipjuQeBM2ApZ5CDbGmsoDdUFsZQcAk7qyGzn1ETXrU7nzfzdmaBlYgkx/g2F37PE12H4jZS4tA3QbtLFLlBlJhu04r75tfcAUBRthZJHEomaGWglbFsQ99Y8mII2Kl98Owi4tWpbUrIcAYAPHECADym+yKHpHiP6LbMiTIFmElbPlHCv/A6MJP+KYFjGaM7heNBV5zgejMd+fgoRQm8WqgyYSHIE10XZevJcR/NXSTvL0irTORfVzlExDuUYlfhA02EZQMiH5PjAAAAAElFTkSuQmCC"
     },
+    APOTHEOSIS_FIELD_SUPPORT: {
+        name: "",
+        description: "",
+        meta: {
+            action_type: 1,
+            action_max_uses: 2,
+            action_mana_drain: 80,
+            fire_rate_wait: 15
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIElEQVR4nKWTv0rDUBjFf1eEdJDuPkHBbv5pEcRBBJHOHX0HH6DtYF4g+ArZ2lmkEDKIECo1m4JP4B6CJEtvh/hdbtK0FXum+++ce77vngs7Qq3beHrLP+x5r+O0687t25MT90Xfnx8DMJrOcJoNAPIkww9SDeBFMe/DS3OxqpK9KDbEKvIkQ86IiBHwg1QL+erwtFYg/J4bkbvrA7VSwm3rAre/ti24nDGcaODHrCkoGjaazo7E+iYHUsrDTfez13Hae7Jpk8WF21elsQjbPTIC/4XpQZ5kOM1GYXNS3FTUixnbJazAD1I9GC/0NgzGCy2ZKDkAeP56JXzc/oyt37CVBLwoNiEJmdcK2EESlB7djrKdSCHKem2Uq/jrZ9oZS8izqfaK3CZgAAAAAElFTkSuQmCC"
+    },
     TELEPORTATION_FIELD: {
         name: "Circle of displacement",
         description: "A field of teleportative magic",
@@ -3693,17 +3744,6 @@ const spellDataApoth = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnklEQVR4nK1RsRHCMBCTfXS0DMA+6Sk9BANQZACGSEnPPhkgbepQKaf7k7HD8Z2kl/7fBv5VZRy2Hq5Z9+lmTT+FHQ5yotuotuWxad8aex6UOAPA5XreiTIOm2LHEQNA0puWeQUFYg5QjvhZXumka2mjw47LcZrDUbMBbs14ArEG7gEq0FwLVT5HY+3WaKYnsUG/plXLvGJ6vFO7s6M+reRo6MXUChMAAAAASUVORK5CYII="
     },
-    SEA_MIMIC: {
-        name: "Sea of Mimicium",
-        description: "Summons a large body of mimicium under the caster",
-        meta: {
-            action_type: 4,
-            action_max_uses: 3,
-            action_mana_drain: 140,
-            fire_rate_wait: 15
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwUlEQVR4nK2T0UtTYRjGf6/tmBVGTRjREkXn1jmlTNFlhM5MUqILHfNGg66q2/1ZXQVBF4EESRTZBqnMA3pMzhpbF8ouKlPcyc+L4WeneTc/+ODj4X1+PO8DnyilaOQ0NeQ+M8DsdErNTqe0+PTFQyUivsHM+F2f9nzqvgIIAATvPKay9EaJiMzMpNRIZhxAiYgopcjMJVS6v1drzybH1OSDBBpwDEkHlEom71HlgPh8DZKZS5CeMGEN0v0Wf5pbtNkHAEgmR3yxw08GeOT88Gn/musAEdNkw1mn1HS861VW2mo9/+4tYXUNw5JbX2JrdZ/RWDvLboHOm7fZ9WDXAytoYcTG9LC99RkvKvpqAMDXvIPVHcH+tgnAUMjCrthU19/7IP+fAEDkoALAl40icJ72nUPaLhwS9pr5Xr5B/JKwvT1U6yUewi2vYlQ9fwKAvkiXfq8VbWKhGPGeHpYdB4BbZhS3vErn9T72fl08SRAI7QGwmCsCBpdbrgCQzxYwPv7lGtA6+JOdco6oNcBmPu8v8d1itm63wY7wqTtvuTXz64XsSYKXrxYEUMGEqQdzhdKpgMo5gw9vPwEIgDT6nY8Ac3yUG6mNWXcAAAAASUVORK5CYII="
-    },
     APOTHEOSIS_SEA_BERSERK: {
         name: "Sea of Berserkium",
         description: "Summons a large body of Berserkium below the caster",
@@ -3715,13 +3755,14 @@ const spellDataApoth = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArUlEQVR4nK1SuRHEIAxcGCeEl14vqoMmXA5NuA71QuqQEEdiBBaHPXOKWO2yegD4V5wp1Se5Mfxbc9M0x1h/4TOlKjkxEOwBIBC1RI6xagwAhblpPvvuRAMAm4gCETLQCMFytjSdgRbOsJXrlliYbxdWvNdkIOpEhbnDVkdek2KiDUfTqcGswmqM6Q6kstWV1r16hXHM1oE142xu3Q0AOCH071pFYcb3ONxa+SAuCPh3ftrGuOMAAAAASUVORK5CYII="
     },
-    APOTHEOSIS_POTION_TO_SEA: {
+    SEA_MIMIC: {
         name: "Potion to Sea",
         description: "The first flask in your inventory is shattered and converted into a sea of the same material",
         meta: {
             action_type: 4,
             action_max_uses: 1,
-            action_mana_drain: 200
+            action_mana_drain: 200,
+            fire_rate_wait: 15
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA+UlEQVR4nL1SK24DMRScF5WnJKi1YeBKOYCPsarkI+wFFgQHmIVsj7BSVOo7BFZaqQWGNmsLcgMHJLbsjWNQVR3y5NGbeR8/4D/hv199wK/EWbyaUJrU970HAM45mqaJvBCCTu/brOry+Qm06miRkkopcs7BWgutNbTWEEIQAHwZg8fNjkIMmod5q4yx2ME0TZFfv7yRObT+5/gBc2g9rToqGqRIxwgmAID9Z+SyEe4Ja8gMpJSec54lDMNQ/bJoIKX0jLFiNzWTRRDXqtRMijtIt196p8h+wTkH4HJIc5G1tmgQDyIdo7QLpRTdkJid8r1djONYFP8JzriBZ5dMTv7eAAAAAElFTkSuQmCC"
     },
@@ -3838,7 +3879,7 @@ const spellDataApoth = {
             action_mana_drain: 20,
             fire_rate_wait: 30
         },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVR4nL2QvQ3DIBBGPyJX3sELIMuuvUlSpImUNVJkjUhpUiSbUIPQLcAOVEikOoRt/NMkn4SEgHu8O+DX8cHFtfvDFoBIrcJmgNIjPsthiwAilQp8cNFomwqNttsAoy0+78cufQCopqpEClIOABClHHifYD64WFeNKAKIVNI8nq4jAwaxXbEFoy26vh31mhtIOaDr22XA5XwXRtvR71lLxcyGmP8w7Z8t8wgUwsPMQWySD7BoAAB11Yhcm4unA1zN83WLPri09lf+O192eIJqYYm3jQAAAABJRU5ErkJggg=="
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAt0lEQVR4nGNgGLTgzKVV/2HseYvrsLJRwLc/j1EUnbm06j+yGDaDsRqCbMOZS6vgfJihJDn725/H/2GG4nIRVkNgms9cWgXXiOwSrBrRnQ6znZAhjOiG6OnrMGhpWTJcu3YcxQKYGIy+dPEKQ1JsEyMTsqKk2CbGSxevYGiEgUsXrzBwscgymuiFMSbFNqFYzsDAAIkFXGGAHMA4YwNfLKCHD4Zm9NSGnAaIjkJCTsQZhSQroiYAAIE05YW/8P9ZAAAAAElFTkSuQmCC"
     },
     HITFX_BURNING_CRITICAL_HIT: {
         name: "Critical on burning",
@@ -4416,7 +4457,7 @@ const spellDataApoth = {
         description: "Creatures hit by a projectile are temporarily revealed through fog of war",
         meta: {
             action_type: 2,
-            action_mana_drain: 10
+            action_mana_drain: 1
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwElEQVR4nGNgoDbYX338P0UG/L79nzwD9lcf///79v//////+//79v//ZLuEVBcwoQscWXCCJAsZsQnicr5jqyWGehZsGifuaWF4+eE1AwcbOwMDAwPDj18/GcQFROHyyAYxImuGaYSBQ1tOMjAwMDDY+ZjDxcQFRBnyXWrghjBh08zBxs5waMtJBhaV/wwsKv8ZDm05CXfNyw+vGSbuaYG7BiMQSQUUewElVAkFYr5LDQMDA45AxGYQOsAWjQMPAMe/cngjCD3zAAAAAElFTkSuQmCC"
     },
@@ -5332,11 +5373,31 @@ const spellDataApoth = {
         description: "The caster enters the realm of no realm",
         meta: {
             action_type: 5,
+            action_max_uses: 25,
             action_mana_drain: 0,
             fire_rate_wait: 600,
             reload_time: 600
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmklEQVR4nGP8//8/AyWABcbo799OkkmFhZ6MDAwMDIz///9n6O/f/v/y5Usk2ayrq8dQWOjJyIIseO/eNaI0Kylpwdks6JLPnt3Fq1lKShmFj2EAAwMDw/v3z7BqFhSUwhDDagADAwPDjx+fUfgcHLxY1THhMoBYMPAG4AwDXH4mygBsoU20AejxTJIByCmMWMAIy40UZSZKAAA1wihBM86yagAAAABJRU5ErkJggg=="
+    },
+    APOTHEOSIS_TERMINUS: {
+        name: "",
+        description: "",
+        meta: {
+            action_type: 5,
+            action_max_uses: 1,
+            action_mana_drain: 10000
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8ElEQVR4nLWSsQ2DMBBFv6NswAZIbECRdEHMwAgRFdNAg1KnYging8JFRGuJCbAli4bOqbAMNqRJfnm+/+7bZ+DfYlLqo/PTN3M9DIcDdgH25KMUuwB78lEKL6DkXANAK4RT8wJKzvUSs+RcP99vp3GpMSm1DTMJWiHApPSaFzEptZ3KAIooIr1SaIVAlaZec5WmaIVArxSKKCJOAj5N8EHyMDQJe6XAp8lNAADzOK4gAHANAgOxzZemcd+gyzJiQ/IwNOurh8GY53FEl2XmCmc7jjmg1PsDX0lCtjWnsOjO2Grvjzje7d3VjVK9Bf1cH7AWnu4XfHQ1AAAAAElFTkSuQmCC"
+    },
+    APOTHEOSIS_UPGRADE_ALWAYSCAST: {
+        name: "Spell Infusion",
+        description: "The first spell slotted in your wand will be applied to the wand as an always cast. Spell is voided upon use!",
+        meta: {
+            action_type: 6,
+            action_mana_drain: 0
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfElEQVR4nGNgGPTg/72Z/////////72Z/xkYGBj+////nyTN2PhEG4KuEMZHFmch1RB0wESUU8g24P4s/HxiAEWxQDF4Nj2GcttghuByOiOywgf3HzAsP3GfIdJCEU4zMDAwGLrnwjVwOoczYhpDhAtep5iS7h2qhAEhAADq3lp1KNDnowAAAABJRU5ErkJggg=="
     },
     APOTHEOSIS_MASS_MATERIA_CONVERSION: {
         name: "Mass Materia Conversion",
@@ -5360,7 +5421,7 @@ const spellDataApoth = {
             fire_rate_wait: 60,
             reload_time: 30
         },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABMElEQVR4nKWRMUvDUBSFvxQFC7WlItQuDm1JDJ2cOmQM/gnXQjfBwR9S6FYogrtDwEkoZAnExQ5a0ILiZCxICraSMQ72PZLGYKxneffde8+5574H/4TyU3I2eA9Xc1v7m+SPSon+WEIQJ8PHhGilUKTUqiaEZPDSuQuniw9JUE1NCkVjIVRu7yoAOYCbYycstaqS7C88XMumUigC4Fo2/sJDNTXEEOF2A+B+eotveVLg9XMZv8XvrmUvTw99T4uvMDB78uHGsweM0zy1ukpDN7i+OsfpBjTLB3JIe3iiSAfRhBByugG13nfN6QYJYibM/XE4cvqJL40iVU0QG7rB9k4ztS+XVjg0OpmspgqI6VE3f8bI6Ydzf7z+Gzw/TajVVSD7SgBcXpyFqw7WXuM3fAHEM37cAyZbOAAAAABJRU5ErkJggg=="
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABE0lEQVR4nGNgoBAwYhN8P/fNf3QxDjlWBk5Xfgz1KAIwjbf23sQwVJyHj4HfXBLDIEYGBgaGB2mX/zMwMDC8/PIJrkHNWR1uEDIb3SAmmEZ+c0m45ndfnjOc2HiAQZyHj4GBgYHhxMYDDO++PGdQc1aHW/Lj0W8GBgYGBhYGBgaGKy/PMbzb+BxuwLOvUPYLVP6JjQeg9HMGTQl11DCY6zwZHnBX399gsC7gZFBSVmNQ0bRm2LVlPsPRCd8ZtAU14JYk783FGgEo4PzRWf8/v7uKESPIgAmfpIqmNcOd60fxWoLXgDvXjzKoaFqTbwAxgKAXKDKAkP8ZGKDpABe4d/cW+S5Yu6jkPywdnD86C29UUgQAMWhiiWLhJ7kAAAAASUVORK5CYII="
     },
     APOTHEOSIS_BUNGAL_SHIFT_SPAM: {
         name: "Hyper Fungal Shift",
@@ -5372,7 +5433,7 @@ const spellDataApoth = {
             fire_rate_wait: 60,
             reload_time: 30
         },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABe0lEQVR4nKWSv0/CQBTHv2ccMGAIJMKAcQBs0jB1YugmOvMHsNmkqwt/QCd3FgYSMCFxZDEmRANsjWXqYmNCtDFGG+3QDlQD07l4J6X4I/qd3n3z3ufevXfAP0VWmb7ZpstebGsHG9sHkfyQwQon5igCzebiSGbKERAP7i9U+vL0ygsE2sCEHEViBkpJCgGANQAYd2o0+XjMi71ZAGOuIJuLAwCMuQJvFkCgDbBLWLfrAHD98Awvo3CA4wah9tnZ+Mgxrs4gFrLhJ7S1Ch+cZfuQ9/eQLwgoijIuz0+gD0Yo5VMcqmhDwjtYNBhIH4yQLwhg8XLerzT1LGrqrchKF/UljRUWRRmb6RIBgH6zSgEgHUugfHj6uYVVkmQ1BO83q9RxAzhuAG8WYNyp0QiAmUxFUebdOG4Ay/Zh2T6HhNTWKrTfrNJFiKm36NSzQtBetx468w4UbUjeErv8babeovbdBLc3Or4b5MoZ9Lp1KskqYf9AklXy0zb+rHfW+q4+ZyuMEAAAAABJRU5ErkJggg=="
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABPUlEQVR4nLVSsUrDUBQ9L23HriKUUqpB3DKWTpmdOhQcujjnAwLFqRWE/EFxyRinIFn8gkAIyZAPEEIIATtnKg7XQe7jJZrgoHe5cO8555777gP+ItJ9Ru3aaUf04RFx7sMCABjUJrQFe52ogNy0KTdterm+pe1kKeunXVNEqOTRRojctCUgOxaI6xKL8RQAENclnCoSjAUAjfdicnYsJBkAFuMp4rqUE7eTJY02QvBbaABQvH+Bn97CxmSeypmdqBwNANaHlfCtgJwqEgweGHOkF0MYdzcYGHM4VSR4Bd8KaH1YCQAYsuLsfNbYE1WExPXo7OoSuq7j8dXrPQDSfUbqjRPXoyKM6fn+gbiv5m/hW4EE8KmKMKbE9eT/6CSrwb9PdcJ1Fuokc5PB6nSV+KOTdpFFOP/Kfpejf41PLCz2gT4tsTsAAAAASUVORK5CYII="
     },
     APOTHEOSIS_RAT_BITE: {
         name: "Bite",
@@ -5396,7 +5457,7 @@ const spellDataApoth = {
             action_melee: 1.0,
             damage_critical_chance: 50
         },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIUlEQVR4nM2SMUvDQBTHfzkylhZLDLSbOIiDswhudY978wWyFty7+zXqB+jsIIgogpuDOEi3BGNIaeicOMg77y7N5uBbLv+7/+/de+8Cfx2zaNLMk7iRcLXrVy7cH49aSas067zQmydxU6UZAnaZ++MRVZqxeHoFIM9zD0AJUKWZhs0quhKHYdgA+LKRrzeEewMAbu8eST7XTMuS8+NDAB7ePn6Mlxe6Cj0DE35+XwHQU4qb4VAbl0GgL4rPTn5b2AUDXO8P6Cll6WUQsMpLy6cENuPqa6OhXVq3IxW4cFQUlt7WdSu5NQPp7fTowDIDREXBtCy13ta1NRtvFk1af5cZMiO30sX9iwfgy4HMwjWasHwLDODLpvkaJiSrCf2v+AbwHbAxOTbXCwAAAABJRU5ErkJggg=="
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeklEQVR4nJ2TMUjDQBSGv1QHpxaFiulQsK1oOwiCEMHiooODYlFw6iYIgpNtBjcnF4mDi7PgLAoulbpIHQqCo4rVQAeFDA3p4ngOeselVqj+yx3/e/e99+4S+FbBmhQFa1LQod98qX6ZJA0hhAAoFRZUknNeBRCGYRidgIjcpEbipEbiKhBNmEQTZih5Z2X+RyeGNKMJk/bbewjQfnun/uQCYI2PqtjhxbXqJCKT9dXzAxZfPJyxKWoPLzjJDM55lfqTy/pHnxpT3YGU7GD3+ITNtWVoNqgBpWaDmm0DMHN1ZQjbVgBjb6so5EHPD9geGMKqVMhn053jcvv42v0SowkTzw9wvRalZgO+q/Wiflnd9VrKzF+e9VQdIOL5Qc/VugLga3b9mf4EGB6MoUNqS6sqqO9/BcgRhgdjeH5A6fkeJ5n5OnxwoECzEykBIMrl0NdoFOemlSG70bWxf0QulyOfTeMkM1iVCvo/EQLoEP1yde/05q7ra/xbn/PGkjkb66h+AAAAAElFTkSuQmCC"
     },
     APOTHEOSIS_MASS_STATUS_DRUNK: {
         name: "Mass Drunk",
@@ -5526,6 +5587,16 @@ const spellDataApoth = {
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABWklEQVR4nKWSsUrDUBSGv0il5AlsIdBaWqODpau0g4g43WfonD5DxSkdnRtXFx/ALILo0uKqFaFpSwkaaPQFShGJQ0m4SVoo9J+Se8/5/nPOPbCllPDj/uEtGI6m+OYV19/vymBhd+XAala0VgEyYbKu5wE4Uv9g7zjo99qWHBgCkyAFYOT+BJXcnLGvsts84eMzS/C8H3Pypp4FUG90YpAdAMeZMfZVAH5vXwhu7gAQRRtRtGOgfq+N3F4GQNfzVHJzKSyPUqhFf4fFGt7UWzWCZQWb6PxMGFpJM7SSZshVpFoY+yqOM6OMGSWXMSljptqJAIXTLyuEOM4McVHdtLDlDAC8TNMi0AwOYEItcgaYcAnA0H1NAaJFGizsbr/XjvUsAx6f7Ggv5KdcO0TZbZVzqAhQzYpWvdGJXdquwHZF7Cy5SAoJhc8jtxMmhkbyeQqQBMkVrovdSv8kPItc8F4u2wAAAABJRU5ErkJggg=="
     },
+    APOTHEOSIS_ALT_FIRE_COT: {
+        name: "",
+        description: "",
+        meta: {
+            action_type: 7,
+            action_max_uses: 2,
+            action_mana_drain: 80
+        },
+        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeUlEQVR4nKWTMUvDUBSFvxQhLYjgpFl0kihFh6qFLoIiLnXt6H/oD7AixFUILv4ANx2liFA6FCG0aECkxVhwTR1bRJNBn0N9z8RUFDzT43Hveefcex78E5o8nF/eivuHR3oHexw+3WnVVtiOFhbzenYUwZhsNk0DgIXMG0wtir3LJvpEGoBwEHBSexYAtuNyU1lTD6cATNNgbvoV0zTIzoSsZ95UM4A+kea43cF2XMqFHMtWQ8QsRBUAeJ5Ps7+YkFv3rwkHAeVCjp3NcU1ZkAq+YLA9qyUILFapnAngJT6DURgWJhUAXHgB1VbYLub1bEpK7vYyAHR7GTzPH75Y0rBKmjpvGCtqJhIpgNTkfEeSeJ7P9tbST8ISUBb2W330+xCAZl8kbFTOhLIQDoIk00ntWeyevovfsHv6LmQmYgqGw7mifpRWXr9DrtEs5JIWZEhsx6XO9UgCmQHbcdVdbNnLVkOUP9ltx41FOXofjXIyLZ/462f6Nz4A4M7GhhYnnRsAAAAASUVORK5CYII="
+    },
     APOTHEOSIS_ALT_FIRE_TARGETTER: {
         name: "Alt Fire Targetter",
         description: "Right Click to fire a projectile which causes irresistible hatred towards anything it hits",
@@ -5580,14 +5651,5 @@ const spellDataApoth = {
             reload_time: 100
         },
         sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAsUlEQVR4nGNgoBAw4pL4/+PUfxSFHGY41WJoRNeMTxyvrSSpIUYzNrVMcNE/hyCSX3rgkv+/9PxH5yOrZcCQgGmC2oDs7/8/TmE1jIkBHdy6huFMOBsqhwxYsHoS5kQWO1Q+FoDhggP776MahKQZRQ7ZBYw8JYz/v/T8Z+QpYcTlVGSAohYueC6J+GjEpZYYQwiq+X8u6f/+XkcMRft7Hf9j04wzg6Ab4li8n7jMRCoAAM9IjbE8H21pAAAAAElFTkSuQmCC"
-    },
-    APOTHEOSIS_UPGRADE_ALWAYSCAST: {
-        name: "Spell Infusion",
-        description: "The first spell slotted in your wand will be applied to the wand as an always cast. Spell is voided upon use!",
-        meta: {
-            action_type: 6,
-            action_mana_drain: 0
-        },
-        sprite: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfElEQVR4nGNgGPTg/72Z/////////72Z/xkYGBj+////nyTN2PhEG4KuEMZHFmch1RB0wESUU8g24P4s/HxiAEWxQDF4Nj2GcttghuByOiOywgf3HzAsP3GfIdJCEU4zMDAwGLrnwjVwOoczYhpDhAtep5iS7h2qhAEhAADq3lp1KNDnowAAAABJRU5ErkJggg=="
     }
 }
