@@ -19,6 +19,7 @@ exports.getWands = async (req, res, next) => {
             items: streamer.items || [],
             progress: streamer.progress,
             runInfo: streamer.runInfo,
+            apothInfo: streamer.apothInfo,
             playerInfo: streamer.playerInfo,
         })
     } else {

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const wandSchema = require('./wandModel').schema
 const progSchema = require('./progModel').schema
+const apothSchema = require('./apothModel').schema
 const playerSchema = require('./playerModel').schema
 const runSchema = require('./runModel').schema
 const featureSchema = require('./featureModel').schema
@@ -14,6 +15,7 @@ const streamerSchema = new mongoose.Schema({
     items: [String],
     progress: progSchema,
     runInfo: runSchema,
+    apothInfo: apothSchema,
     playerInfo: playerSchema,
 })
 

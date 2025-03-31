@@ -40,7 +40,6 @@ function typeValidation(varType, value) {
 }
 
 exports.validate = (data) => {
-    const legacy = Array.isArray(data)
     let modVersion = "pre-versioning"
     let modFeatures = {
         seed: false,
@@ -48,6 +47,8 @@ exports.validate = (data) => {
         ngp: false,
         shifts: false,
         timer: false,
+        apothCreatureTimer: false,
+        apothCreatureShifts: false,
     }
     let wands = []
     let inventory = Array(16).fill('0')
@@ -68,6 +69,11 @@ exports.validate = (data) => {
         gold: 0,
         x: 0,
         y: 0,
+    }
+    let apothInfo = {
+        csShifts: [],
+        csTotal: 0,
+        csTimer: 0,
     }
     if (data.modVersion) {
         modVersion = data.modVersion
@@ -93,6 +99,9 @@ exports.validate = (data) => {
     if (data.playerInfo) {
         playerInfo = data.playerInfo
     }
+    if (data.apothInfo) {
+        apothInfo = data.apothInfo
+    }
 
     let validatedModVersion = modVersion
 
@@ -100,7 +109,6 @@ exports.validate = (data) => {
     for (const [feature, value] of Object.entries(modFeatures)) {
         validatedModFeatures[feature] = typeValidation("boolean", value)
     }
-
     const validatedWands = []
 
     for (const wand of wands) {
@@ -122,12 +130,21 @@ exports.validate = (data) => {
     let validatedRunInfo = {}
     validatedRunInfo.mods = runInfo.mods.filter(strFilter)
     validatedRunInfo.beta = typeValidation("boolean", runInfo.beta)
-    // const ngp = runInfo.ngp ?? null
-    // validatedRunInfo.ngp = typeValidation("string", ngp)
-    // const seed = runInfo.seed ?? null
-    // validatedRunInfo.seed = typeValidation("string", seed)
     validatedRunInfo.ngp = typeValidation("string", runInfo.ngp)
     validatedRunInfo.seed = typeValidation("string", runInfo.seed)
+
+    const validatedApothInfo = {}
+    validatedApothInfo.shifts = []
+    if (apothInfo.csShifts) {
+        for (const shiftRaw of apothInfo.csShifts) {
+            if (shiftRaw != null && shiftRaw != "empty") {
+                const shiftMaterials = shiftRaw.split("<,>")
+                validatedApothInfo.shifts.push(shiftMaterials.filter(strFilter))
+            }
+        }
+    }
+    validatedApothInfo.shiftsTotal = numberValidation(apothInfo.csTotal)
+    validatedApothInfo.shiftsTimer = numberValidation(apothInfo.csTimer)
 
     const validatedPlayerInfo = {}
     validatedPlayerInfo.names = playerInfo.perks[0].filter(strFilter)
@@ -136,14 +153,13 @@ exports.validate = (data) => {
     if (playerInfo.shiftsList) {
         for (const shiftRaw of playerInfo.shiftsList) {
             if (shiftRaw != null && shiftRaw != "empty") {
-                const shiftMaterials = shiftRaw.split(",").slice(1)
+                const shiftMaterials = shiftRaw.split("<,>")
                 validatedPlayerInfo.shifts.push(shiftMaterials.filter(strFilter))
             }
         }
     }
     validatedPlayerInfo.shiftsTotal = numberValidation(playerInfo.shiftsTotal)
-    const shiftsTimer = playerInfo.shiftsTimer ?? null
-    validatedPlayerInfo.shiftsTimer = numberValidation(shiftsTimer)
+    validatedPlayerInfo.shiftsTimer = numberValidation(playerInfo.shiftsTimer)
     const pos = playerInfo.pos ?? null
     validatedPlayerInfo.health = numbersValidation(playerInfo.health)
     validatedPlayerInfo.gold = numberValidation(playerInfo.money)
@@ -158,6 +174,7 @@ exports.validate = (data) => {
         items: validatedItems,
         progress: validatedProgress,
         runInfo: validatedRunInfo,
+        apothInfo: validatedApothInfo,
         playerInfo: validatedPlayerInfo
     }
 }

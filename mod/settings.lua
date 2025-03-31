@@ -43,7 +43,7 @@ mod_settings =
             },
             {
                 id = "shifts",
-                ui_name = "Show Shifts",
+                ui_name = "Show Fungal Shifts",
                 ui_description = [[
     List current run's fungal shifts
     Cheatgui/other modded fungal shifts will be added
@@ -57,8 +57,28 @@ mod_settings =
             },
             {
                 id = "shiftsTimer",
-                ui_name = "Show Shift Timer",
+                ui_name = "Show Fungal Shift Timer",
                 ui_description = "Show how long until next fungal shift",
+                value_default = true,
+                scope = MOD_SETTING_SCOPE_RUNTIME
+            },
+        },
+    },
+    {
+        category_id = "apoth_toggles",
+        ui_name = "Apotheosis Feature Toggles",
+        settings = {
+            {
+                id = "apothCreatureTimer",
+                ui_name = "Show Creature Shift Timer",
+                ui_description = "Show how long until next creature shift",
+                value_default = true,
+                scope = MOD_SETTING_SCOPE_RUNTIME
+            },
+            {
+                id = "apothCreatureShifts",
+                ui_name = "Show Creature Shift Info",
+                ui_description = "List current run's creature shifts",
                 value_default = true,
                 scope = MOD_SETTING_SCOPE_RUNTIME
             },

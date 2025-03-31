@@ -101,11 +101,21 @@ function get_player_info()
     return { hp, max_hp, money }
 end
 
-function get_shift_info()
+function get_shift_timer()
+    local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
+    local current_frame = GameGetFrameNum()
+    local shift_timer = (current_frame - last_trip) / 60
+    if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
+        shift_timer = -1
+    end
+    return shift_timer
+end
+
+function get_shift_materials()
     local world_comp = get_world_state()
     local mats = ComponentGetValue2(world_comp, "changed_materials")
-    local mats_string = ""
-    for _, mat in ipairs(mats) do
+    local mats_table = {}
+    for i, mat in ipairs(mats) do
         local mat_name = GameTextGetTranslatedOrNot("$mat_" .. mat)
         if mat_name == "" then
             if materials[mat] then
@@ -114,10 +124,57 @@ function get_shift_info()
                 mat_name = mat
             end
         end
-        -- mats[_] = mat .. "@" .. mat_name
-        mats_string = mats_string .. "," .. mat .. "@" .. mat_name
+        table.insert(mats_table, mat .. "^@^" .. mat_name)
     end
-    return mats_string
+    return table.concat(mats_table, "<,>")
+end
+
+function get_shifts()
+    local shiftList = {}
+    local shiftMaterials = get_shift_materials()
+    local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
+    GlobalsSetValue("shift#" .. shiftNumber, shiftMaterials)
+
+    for i = 1, shiftNumber do
+        shiftMaterials = GlobalsGetValue("shift#" .. i, "empty")
+        if i > 1 then
+            local shiftsPrev = GlobalsGetValue("shift#" .. (i - 1), "empty")
+            shiftMaterials = string.sub(shiftMaterials, string.len(shiftsPrev) + 4)
+        end
+        table.insert(shiftList, shiftMaterials)
+    end
+    return shiftList
+end
+
+function get_creature_shift_timer()
+    local last_trip = tonumber(GlobalsGetValue("apotheosis_creature_shift_last_frame", "0"))
+    local current_frame = GameGetFrameNum()
+    local shift_timer = (current_frame - last_trip) / 60
+    if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
+        shift_timer = -1
+    end
+    return shift_timer
+end
+
+function get_creature_shifts(n)
+    local shiftList = {}
+    for i = 1, n do
+        local creatures = {}
+        local pre = "apotheosis_global_Cshift_"
+        for j = 2, 1, -1 do
+            local creature = GlobalsGetValue(pre .. i .. "_targ" .. j, "")
+            local creature_name = GameTextGetTranslatedOrNot("$animal_" .. creature)
+            if creature_name == "" then
+                creature_name = GameTextGetTranslatedOrNot("$enemy_apotheosis_" .. creature)
+                if creature_name == "" then
+                    creature_name = creature
+                end
+            end
+            table.insert(creatures, creature .. "^@^" .. creature_name)
+        end
+        table.insert(shiftList, table.concat(creatures, "<,>"))
+    end
+    return shiftList
 end
 
 function get_inventory()
@@ -395,34 +452,30 @@ function serialize_data()
     local runInfo = get_run_info(ngpCheck, seedCheck)
     data["runInfo"] = runInfo
 
+    local apothInfo = {}
+    local creatureShiftNumber = tonumber(GlobalsGetValue("apotheosis_creature_shift_iteration"))
+    apothInfo["csTotal"] = creatureShiftNumber
+    local apothTimerCheck = ModSettingGet("streamer_wands.apothCreatureTimer")
+    local apothShiftsCheck = ModSettingGet("streamer_wands.apothCreatureShifts")
+    if apothTimerCheck then
+        apothInfo["csTimer"] = get_creature_shift_timer()
+    end
+    if apothShiftsCheck then
+        apothInfo["csShifts"] = get_creature_shifts(creatureShiftNumber)
+    end
+    data["apothInfo"] = apothInfo
+
     local info = {}
     local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
     info["shiftsTotal"] = shiftNumber
     local shiftsCheck = ModSettingGet("streamer_wands.shifts")
     local timerCheck = ModSettingGet("streamer_wands.shiftsTimer")
     if shiftsCheck then
-        local shiftList = {}
-
-        local shifts = get_shift_info()
-        GlobalsSetValue("shift#" .. shiftNumber, shifts)
-
-        for i = 1, shiftNumber do
-            shifts = GlobalsGetValue("shift#" .. i, "empty")
-            if i > 1 then
-                local shiftsPrev = GlobalsGetValue("shift#" .. (i - 1), "empty")
-                shifts = string.sub(shifts, string.len(shiftsPrev))
-            end
-            table.insert(shiftList, shifts)
-        end
+        local shiftList = get_shifts()
         info["shiftsList"] = shiftList
     end
     if timerCheck then
-        local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
-        local current_frame = GameGetFrameNum()
-        local shift_timer = (current_frame - last_trip) / 60
-        if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
-            shift_timer = -1
-        end
+        local shift_timer = get_shift_timer()
         info["shiftsTimer"] = shift_timer
     end
 
@@ -450,9 +503,11 @@ function serialize_data()
         ngp = ngpCheck,
         shifts = shiftsCheck,
         timer = timerCheck,
+        apothCreatureTimer = apothTimerCheck,
+        apothCreatureShifts = apothShiftsCheck,
     }
 
     data["modFeatures"] = features
-    data["modVersion"] = "1"
+    data["modVersion"] = "1.1"
     return json.encode(data)
 end

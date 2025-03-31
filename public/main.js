@@ -425,7 +425,7 @@ const ItemSlot = Vue.component('item-slot', {
 
                 let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height)
                 let data = imageData.data
-
+                // console.log(data)
                 const mat = vm.itemInfo.color
                 // get fullness of material container as a decimal from 0-1
                 const perc = 1 - vm.itemInfo.mats.reduce((n, { amt }) => n + amt, 0) / 100
@@ -520,6 +520,7 @@ const worldComp = Vue.component('world-comp', {
         return {
             state: {
                 shifts: false,
+                apothCS: false,
                 mods: false,
                 map: false,
                 userDisabled: false,
@@ -534,15 +535,21 @@ const worldComp = Vue.component('world-comp', {
         info() {
             const player = this.player
             const output = this.run
+            const apoth = this.apoth
             output.shifts = player.shifts
             output.count = player.shiftsTotal
             output.timer = player.shiftsTimer
+            output.apoth = {
+                csShifts: apoth.shifts,
+                csCount: apoth.shiftsTotal,
+                csTimer: apoth.shiftsTimer,
+            }
             const ngp = Number(output.ngp)
             output.ngp = (ngp > 0) ? `+${ngp}` : ""
             return output
         },
         featureOutput() {
-            features = this.features
+            const features = this.features
             delete features._id
             return {
                 "Seed": features.seed,
@@ -550,21 +557,29 @@ const worldComp = Vue.component('world-comp', {
                 "New Game Plus": features.ngp,
                 "Fungal Shifts": features.shifts,
                 "Fungal Timer": features.timer,
+                "Creature Shifts": features.apothCreatureShifts,
+                "Creature Timer": features.apothCreatureTimer,
             }
-        }
+        },
+        apothCheck() {
+            const switches = this.switches
+            return switches.apothContent.state
+        },
     },
-    props: ['player', 'run', 'features'],
+    props: ['apoth', 'player', 'run', 'features'],
     inject: ['switches'],
     template: /*html*/`
     <div class="world-info">
         <div class="world-header">
-            <v-switch v-model="state.shifts" :title="'Show Shifts [' + info.count + ']'"></v-switch>
+            <v-switch v-model="state.shifts" :title="'Show ' + (apothCheck ? 'Fungal ' : '') + 'Shifts [' + info.count + ']'"></v-switch>
+            <v-switch v-if="apothCheck" v-model="state.apothCS" :title="'Show Creature Shifts [' + info.apoth.csCount + ']'"></v-switch>
             <v-switch v-model="state.mods" :title="'Show Mods [' + info.mods.length + ']'"></v-switch>
             <v-switch v-model="state.userDisabled" title="Show Feature Status"></v-switch>
             <v-switch v-model="state.map" title="Show Map and Game info (spoilers!!!)"></v-switch>
         </div>
         <div class="world-body">
             <fungal-comp v-if="state.shifts" :shifts="info.shifts" :timer="info.timer" :number="info.count" :features="features"></fungal-comp>
+            <creatureShift-comp v-if="state.apothCS" :shifts="info.apoth.csShifts" :timer="info.apoth.csTimer" :number="info.apoth.csCount" :features="features"></creatureShift-comp>
             <div v-if="state.mods" class="mods">
                 <!--<input v-model="debugMods" :class="debug"/>-->
                 <p><u>Mods:</u></p>
@@ -1015,7 +1030,7 @@ const materialComp = Vue.component('mat-comp', {
     },
     computed: {
         mat() {
-            let both = this.material.split("@")
+            let both = this.material.split("^@^")
             return {
                 raw: both[0],
                 ui: both[1],
@@ -1033,7 +1048,7 @@ const materialComp = Vue.component('mat-comp', {
                 reasonShift = this.info[cause]
                 reasons.push({
                     shiftNumber: reasonShift.shiftNumber,
-                    reason: `${reasonShift.input.split("@")[0]} → ${reasonShift.output.original.split("@")[0]}`,
+                    reason: `${reasonShift.input.split("^@^")[0]} → ${reasonShift.output.original.split("^@^")[0]}`,
                 })
             }
             if (shift.cause.extra != null) {
@@ -1041,7 +1056,7 @@ const materialComp = Vue.component('mat-comp', {
                 reasonShift = this.info[cause]
                 reasons.push({
                     shiftNumber: reasonShift.shiftNumber,
-                    reason: `${reasonShift.input.split("@")[0]} → ${reasonShift.output.original.split("@")[0]}`,
+                    reason: `${reasonShift.input.split("^@^")[0]} → ${reasonShift.output.original.split("^@^")[0]}`,
                 })
             }
             return reasons
@@ -1057,6 +1072,7 @@ const materialComp = Vue.component('mat-comp', {
     props: {
         material: String,
         side: String,
+        creatureShift: { type: String, required: false },
         i: { type: Number, required: false },
         info: { type: Array, required: false },
     },
@@ -1064,10 +1080,184 @@ const materialComp = Vue.component('mat-comp', {
     <div class="material tip" ref="slot" @mouseover="updateTip">
         <span>{{ mat.ui }}</span>
         <div class="tooltip fit" ref="tooltip">
-            <p v-if="reasons.length > 0">Material ID: {{ mat.raw }}</p>
+            <p v-if="reasons.length > 0">{{ creatureShift ? "Creature" : "Material" }} ID: {{ mat.raw }}</p>
             <p v-else>{{ mat.raw }}</p>
             <p v-if="reasons.length > 0">Reasons: </p>
             <p v-for="reason in reasons">    {{ reason.shiftNumber }}: {{ reason.reason }}</p>
+        </div>
+    </div>`
+})
+
+const creatureShiftComp = Vue.component('creatureShift-comp', {
+    data() {
+        return {
+            tooltip: null,
+            state: {
+                originalShift: false,
+                hoverInfo: true,
+                number: null,
+            },
+            rowToggles: [],
+        }
+    },
+    mounted() {
+        this.rowToggles = Array(this.shiftInfo.length).fill(false)
+        if (this.$refs.tooltip) {
+            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
+                placement: 'top',
+                modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
+            })
+        }
+    },
+    beforeDestroy() {
+        if (this.tooltip) {
+            this.tooltip.destroy()
+            this.tooltip = null
+        }
+    },
+    computed: {
+        shiftInfo() {
+            const transformed = {}
+            const lastShift = {}
+            const sequence = []
+
+            let shiftsAll = []
+            let nShifts = Math.min(Math.max(this.state.number ?? this.shifts.length, 1), this.number)
+            if (!this.features.apothCreatureShifts) {
+                nShifts = 0
+            }
+            for (let i = 0; i < nShifts; i++) {
+                const shift = this.shifts[i]
+                shiftsAll.push(shift.map((material, ioNumber) => {
+                    if (ioNumber % 2) {
+                        return material
+                    }
+                    const letter = (shift.length > 2) ? String.fromCharCode(97 + ioNumber / 2) : ""
+                    return [(i + 1) + letter, material]
+                }))
+            }
+            shiftsAll = shiftsAll.flat(Infinity)
+
+            const HOP = Object.prototype.hasOwnProperty.call.bind(Object.prototype.hasOwnProperty);
+
+            let j = 0
+            for (let i = 0; i < shiftsAll.length - 1; i += 3) {
+                const shiftNumber = shiftsAll[i]
+                const input = shiftsAll[i + 1]
+                const original = shiftsAll[i + 2]
+                const final = transformed[original] ?? { mat: original }
+                transformed[input] = {
+                    mat: final.mat,
+                    j,
+                }
+
+                const shift = {
+                    shiftNumber,
+                    input,
+                    output: {
+                        original,
+                        final: final.mat,
+                    },
+                    // extra: { atShift: null, now: null },
+                    cause: { output: null, },
+                    isOverwritten: false,
+                    j,
+                };
+                if (HOP(transformed, original)) {
+                    shift.cause.output = transformed[original].j
+                }
+
+                // if (HOP(transformed, final) && transformed[final] !== final) {
+                //     shift.extra.atShift = transformed[final].mat;
+                // }
+
+                if (HOP(lastShift, input)) {
+                    lastShift[input].isOverwritten = true
+                }
+                lastShift[input] = shift
+
+                sequence.push(shift)
+                j += 2
+            }
+
+            for (let i = 0; i < sequence.length; i++) {
+                const shift = sequence[i]
+                const final = shift.output.final
+                if (HOP(transformed, final) && transformed[final].mat !== final) {
+                    shift.output.final = transformed[final].mat
+                    shift.cause.output = transformed[final].j
+                }
+            }
+
+            return sequence
+        },
+    },
+    methods: {
+        highlight(cause, i) {
+            if (cause.output != null) {
+                [cause.output, cause.output + 1].forEach((cellIndex) => this.$refs.cells[cellIndex].classList.add('highlight'));
+                [cause.output >> 1, i].forEach((cellIndex) => this.rowToggles.splice(cellIndex, 1, true));
+            }
+        },
+        clear(causes, i) {
+            Object.values(causes).forEach((cause) => {
+                if (cause != null) {
+                    [cause, cause + 1].forEach((cellIndex) => this.$refs.cells[cellIndex].classList.remove('highlight'));
+                    [cause >> 1, i].forEach((cellIndex) => this.rowToggles.splice(cellIndex, 1, false));
+                }
+            });
+        },
+        updateTip() {
+            if (this.tooltip) {
+                this.tooltip.update()
+            }
+        },
+    },
+    props: ['shifts', 'timer', 'number', 'features'],
+    template: /*html*/`
+    <div class="shifts">
+        <div class="shifts-header">
+            <p v-if="features.apothCreatureTimer"><b>Shift Timer:</b> {{ timer > 0 ? Math.floor(300 - timer) + ' seconds remaining' : 'Ready to Shift' }}</p>
+            <p v-else><i>Creature Timer Hidden</i></p>
+            <template v-if="features.apothCreatureShifts">
+                <v-switch v-model="state.originalShift" title="Show Original Shift in First Column"></v-switch>
+                <div class=shifts-input>    
+                    <span>Calculate up to Shift N =</span><input v-model="state.number" type="number" inputmode="numeric" min="1" :max="number" :placeholder="number"/>
+                    <span>/ {{ number }} Total</span>
+                </div>
+                <div class="shifts-table-row header">
+                    <div><b>N</b></div>
+                    <div><b>Input{{state.originalShift ? " &#8594; Raw Output" : "" }}</b></div>
+                    <div ref="slot" class="shifts-tip" @mouseenter="updateTip">
+                        <b>Final Result</b>
+                        <div ref="tooltip" class="tooltip fit">
+                            <p>When Final Result lists two materials:</p>
+                            <ul>
+                                <li>Material 1 determines the visuals and material damage</li>
+                                <li>Material 2 determines the stain and ingestion effects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <p v-else><i>Fungal Shift Info Hidden</i></p>
+        </div>
+        <div class="shifts-table">
+            <div class="shifts-table-row" v-for="(shift,i) in shiftInfo">
+                <div>{{ shift.shiftNumber }}</div>
+                <div ref="cells" :class="{ strike: shift.isOverwritten }">
+                    <mat-comp creatureShift="true" :material="shift.input" side="left"></mat-comp>
+                    <template v-if="state.originalShift || rowToggles[i]">
+                        &#8594; <mat-comp creatureShift="true" :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'"></mat-comp>
+                    </template>
+                </div>
+                <div ref="cells" v-if="shift.output.original != shift.output.final" :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
+                    <mat-comp creatureShift="true" :material="shift.output.final" side="right" :i="i" :info="shiftInfo"></mat-comp>
+                </div>
+                <div ref="cells" v-else :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
+                    <mat-comp creatureShift="true" :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'" :i="i" :info="shiftInfo"></mat-comp>
+                </div>
+            </div>
         </div>
     </div>`
 })
@@ -1155,28 +1345,14 @@ const perksComp = Vue.component('perks-comp', {
                 over8: perks.slice(8),
             }
         },
-        perks() {
-            return this.perkTable.reduce((obj, item) => {
-                obj[item.ui_name] = item
-                return obj
-            }, {})
-        },
-        pseuds() {
-            return this.pseudTable.reduce((obj, item) => {
-                obj[item.id] = item
-                return obj
-            }, {})
-        },
-
     },
     props: ['names', 'amounts', 'state'],
-    inject: ['perkTable', 'pseudTable'],
     template: /*html*/`
     <div class="perks">
-        <perk-comp v-for="perk in playerPerks.first8" :key="perk.name" 
-        :icon="perks[perk.name] ? perks[perk.name] : pseuds[perk.name]" :amount="perk.amount"></perk-comp>
-        <perk-comp v-if="state" v-for="perk in playerPerks.over8" :key="perk.name" 
-        :icon="perks[perk.name] ? perks[perk.name] : pseuds[perk.name]" :amount="perk.amount"></perk-comp>
+    <perk-comp v-for="perk in playerPerks.first8" :key="perk.name" 
+    :icon="perk""></perk-comp>
+    <perk-comp v-if="state" v-for="perk in playerPerks.over8" :key="perk.name" 
+    :icon="perk""></perk-comp>
     </div>`
 })
 
@@ -1184,6 +1360,7 @@ const perkComp = Vue.component('perk-comp', {
     data() {
         return {
             tooltip: null,
+            url: null,
         }
     },
     mounted() {
@@ -1200,16 +1377,140 @@ const perkComp = Vue.component('perk-comp', {
             this.tooltip = null
         }
     },
-    props: ['icon', 'amount'],
+    computed: {
+        tableObj() {
+            const out = {}
+            Object.keys(this.tables).forEach((x) => {
+                out[x] = this.tables[x].reduce((obj, item) => {
+                    obj[x == "perks" ? item.ui_name : item.id] = item
+                    return obj
+                }, {})
+            })
+            return out
+        },
+        getPerk() {
+            if (this.tableObj.perks.hasOwnProperty(this.icon.name)) {
+                return this.tableObj.perks[this.icon.name]
+            } else if (this.tableObj.pseuds.hasOwnProperty(this.icon.name)) {
+                return this.tableObj.pseuds[this.icon.name]
+            } else if (this.icon.name.includes("creature_shift")) {
+                creature = JSON.parse(JSON.stringify(this.tableObj.pseuds.creature_shift_ui))
+                creature.id = this.icon.name
+                return creature
+            } else {
+                const missing = JSON.parse(JSON.stringify(this.tableObj.pseuds.missingPerk))
+                missing.id = this.icon.name
+                return missing
+            }
+        },
+        getImage() {
+            const xyToIndex = (x, y) => x * 4 + (y * 4 * 16)
+            const indexToXY = (i) => [Math.floor(i % (16 * 4) / 4), Math.floor(i / (16 * 4))]
+            // get image keys/b64 string
+            const name = "$cs_base_" + this.icon.name.slice(41)
+            const icon = this.tableObj.enemies[name.slice(9)]
+            const frame = this.tableObj.pseuds.creature_shift_ui
+            const iconB64 = 'data:image/png;base64,' + icon.image
+            const frameB64 = 'data:image/png;base64,' + frame.image
+            // apotheosis edge case for miniblob
+            const offset = icon.id == "miniblob" ? -4 * 4 * 16 : 0
+            if (this.icon.name.includes("creature_shift") && !this.tableObj.pseuds.hasOwnProperty(this.icon.name)) {
+                // img.onload changes "this" scope so we need to be able to get to "this" via vm
+                let vm = this
+                // initialize three 16x16 canvas contexts for pixel retrieval/manipulation
+                let img = []
+                let canvas = []
+                let ctx = []
+                for (let i = 0; i < 2; i++) {
+                    img.push(document.createElement('img'))
+                    canvas.push(document.createElement('canvas'))
+                    canvas[i].width = 16
+                    canvas[i].height = 16
+                    ctx.push(canvas[i].getContext('2d'))
+                }
+                // initialize single pixel data arrays
+                let frameBGColor = []
+                let frameCleanColor = []
+                let iconArray = []
+                let rgbaChannels = [0, 1, 2, 3]
+                // extract background frame data
+                img[0].src = iconB64
+                img[0].onload = function () {
+                    ctx[0].drawImage(img[0], 0, 0)
+
+                    let imageData = ctx[0].getImageData(0, 0, canvas[0].width, canvas[0].height)
+                    let data = imageData.data
+
+                    iconArray = [...data]
+                    img[1].src = frameB64
+                }
+                // compose creature shift icon image
+                img[1].onload = function () {
+                    ctx[1].drawImage(img[1], 0, 0)
+                    // hardfixed cleanup pixel co-ords
+                    let cleanup = [
+                        [4, 3],
+                        [12, 3],
+                        [4, 11],
+                        [12, 11],
+                    ]
+
+                    let imageData1 = ctx[1].getImageData(0, 0, canvas[1].width, canvas[1].height)
+                    let data1 = imageData1.data
+                    frameBGColor = rgbaChannels.slice(0, 3).map((ch) => data1[xyToIndex(5, 4) + ch])
+                    frameCleanColor = rgbaChannels.map((ch) => data1[xyToIndex(5, 2) + ch])
+
+                    for (let i = 0; i < data1.length; i += 4) {
+                        [x, y] = indexToXY(i)
+                        // let resPix = false
+                        if ((x > 3 && y > 2) && (x < 13 && y < 12)) {
+                            // let iconPix = [iconArray[i], iconArray[i + 1], iconArray[i + 2]]
+                            let iconPix = iconArray.slice(i, i + 4)
+                            let a = iconArray[i + 3] / 255
+                            for (let ch = 0; ch < 4; ch++) {
+                                if (a < 1 && a > 0) {
+                                    data1[i + ch + offset] = Math.ceil(frameBGColor[ch] * (1 - a) + iconPix[ch] * a)
+                                    if (ch == 3) {
+                                        data1[i + ch + offset] = 0xFF
+                                    }
+                                } else if (iconPix.every((x) => x != 0)) {
+                                    data1[i + ch + offset] = iconPix[ch]
+                                }
+                            }
+                        }
+                        cleanup.forEach((coord) => {
+                            if (x == coord[0] && y == coord[1]) {
+                                for (let ch = 0; ch < 4; ch++) {
+                                    data1[i + ch] = frameCleanColor[ch]
+                                }
+                            }
+                        })
+                    }
+                    ctx[1].putImageData(imageData1, 0, 0)
+                    vm.url = canvas[1].toDataURL()
+                }
+            }
+            return this.url
+        }
+    },
+    props: ['icon'],
+    inject: ['tables'],
     template: /*html*/`
     <div class="icon-slot no-bg">
         <div class="zoom no-bg">
-            <a v-if="icon.wiki_url" :href="icon.wiki_url" tabindex="-1" target="_blank" rel="noopener noreferrer">
-                <img ref="slot" :src="'data:image/png;base64,' + (icon.ui_img ? icon.ui_img : icon.image)"/>
+            <a v-if="getPerk.wiki_url" :href="getPerk.wiki_url" tabindex="-1" target="_blank" rel="noopener noreferrer">
+                <img v-if="icon.name.includes('creature_shift') && !tableObj.pseuds.hasOwnProperty(icon.name)" ref="slot" :src="getImage"/>
+                <img v-else ref="slot" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"/>
             </a>
-            <img v-else ref="slot" :src="'data:image/png;base64,' + (icon.ui_img ? icon.ui_img : icon.image)"/>
-        </div>
-        <perk-tooltip ref="tooltip" :icon="icon" :amount="amount"></perk-tooltip>
+            <template v-else>
+                <img v-if="icon.name.includes('creature_shift') && !tableObj.pseuds.hasOwnProperty(icon.name)" ref="slot" :src="getImage"/>
+                <img v-else ref="slot" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"/>
+            </template>
+            </div>
+        <perk-tooltip v-if="icon.name.includes('creature_shift') && !tableObj.pseuds.hasOwnProperty(icon.name)" 
+            ref="tooltip" :icon="getPerk" :amount="icon.amount" :name="icon.name" :src="getImage"></perk-tooltip>
+        <perk-tooltip v-else 
+            ref="tooltip" :icon="getPerk" :amount="icon.amount" :name="icon.name" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"></perk-tooltip>
     </div>`,
 })
 
@@ -1222,14 +1523,14 @@ const perkTooltip = Vue.component('perk-tooltip', {
             return null
         },
     },
-    props: ['icon', 'amount'],
+    props: ['icon', 'amount', 'name', 'src'],
     template: /*html*/`
     <div class="tooltip">
         <p class="tooltip-title">{{ amount }} x {{ icon.name }}</p>
         <p class="tooltip-wiki">({{ icon.id }})</p>
         <div class="desc-container">
             <p v-if="icon.description" class="tooltip-description" v-html="desc"></p>
-            <img :src="'data:image/png;base64,' + (icon.ui_img ? icon.ui_img : icon.image)"/>
+            <img :src="src"/>
         </div>
     </div>`,
 })
@@ -1241,7 +1542,7 @@ const containerComp = Vue.component('wands-container', {
             fKeys: [],
             retryTimeout: null,
             retries: 0,
-            currentVersion: "1",
+            currentVersion: "1.1",
             modVersion: streamerModVersion,
             features: streamerModFeatures,
             wands: streamerWands,
@@ -1249,6 +1550,7 @@ const containerComp = Vue.component('wands-container', {
             items: streamerItems,
             progress: streamerProgress,
             runInfo: streamerRunInfo,
+            apothInfo: streamerApothInfo,
             playerInfo: streamerPlayerInfo,
             newData: null,
             switches: {
@@ -1288,8 +1590,11 @@ const containerComp = Vue.component('wands-container', {
     provide() {
         return {
             switches: this.switches,
-            perkTable: this.dataVersion.icons.perks,
-            pseudTable: this.dataVersion.icons.pseuds,
+            tables: {
+                perks: this.dataVersion.icons.perks,
+                pseuds: this.dataVersion.icons.pseuds,
+                enemies: this.dataVersion.icons.enemies,
+            },
             features: this.features,
         }
     },
@@ -1379,6 +1684,7 @@ const containerComp = Vue.component('wands-container', {
             this.items = data.items
             this.progress = data.progress
             this.runInfo = data.runInfo
+            this.apothInfo = data.apothInfo
             this.playerInfo = data.playerInfo
             this.genKeys()
         },
@@ -1427,7 +1733,7 @@ const containerComp = Vue.component('wands-container', {
             <wand-comp v-for="(wand, i) in wands" :key="fKeys[i]" :stats="wand.stats" :ac="wand.always_cast" :deck="wand.deck"></wand-comp>
         </div>
         <div class="disclaimer">
-            <world-comp :player="playerInfo" :run="runInfo" :features="features"></world-comp>
+            <world-comp :apoth="apothInfo" :player="playerInfo" :run="runInfo" :features="features"></world-comp>
         </div>
         <div class="switches">
             <v-switch v-for="(sw, i) in switches" :key="i" v-model="sw.state" :title="sw.label" :class="sw.className"></v-switch>

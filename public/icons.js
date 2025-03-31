@@ -5963,6 +5963,14 @@ const icons = {
             wiki_url: "https://noita.wiki.gg/wiki/Essence_of_Water"
         },
         {
+            id: "missingPerk",
+            image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAq0lEQVR4nN2SsQrDMAxELyWk0H/ID3gwZPH/z1kCGbJlMgQC8Wqwl3apjOQ4OFuhN8q655MQ8Gs1eWHo+3f3ehabow8AgMna5BOA3Ky0EYBlHhOIIC1vyM3ucAKgtMEyj6LvUcwKJPO+rdi3VdS42lPlKzLVdJmAi3ZRglYBtIurRFVAaW4usYPoA/IbKP1M93ArgdLmdA9cAjBZ20QfxA/ucGkMeuOX+Af6APU6UToO4F1tAAAAAElFTkSuQmCC",
+            name: "No perk found",
+            description: "Either this perk is missing from onlywands or it is modded and onlywands doesn't support this mod yet",
+            bgImage: null,
+            wiki_url: "https://noita.wiki.gg/wiki/Perks"
+        },
+        {
             id: "$perk_respawn_spent",
             image: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/0lEQVR4nMWTIW8CQRBG3wEBMqpuPUkTDKI5cUHVV1RVY7HYShQWiwF3NacQ/AuSJmuo6TmSlQguAXMYdnPHLZgTjNvJfG++ndkN8jynTjRqqYFW8fDf7+dfWQZAWzqV4nN2AiARobfbBRUHWikSEa/YQhMRtFIuVwJM0xStFDFNLyCmiVaKaZr6AW3pMDN7L8SKZ2Zfcugd4vLlUIJY8ev6o1Lbuk2M5yHR8A0A/bkhNsZ1XnqaVRwsJlu+Rz8ADK7igTE+o/evYP6OdKOV6/xosCWA3XNxYICDdKMV43no6rwObsU2LOR98nvfgX0kxT0Xw76TRMTlgqd/ptqAC9J0ZOAqPZ07AAAAAElFTkSuQmCC",
             name: "Extra Life (One-Off)",
@@ -5979,6 +5987,8 @@ const icons = {
             description: "You gain more gold but a curse will haunt you",
             bgImage: null,
             wiki_url: "https://noita.wiki.gg/wiki/Curse_of_Greed",
+            ui_name: "greed_curse",
+            ui_img: "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/0lEQVR4nMWTIW8CQRBG3wEBMqpuPUkTDKI5cUHVV1RVY7HYShQWiwF3NacQ/AuSJmuo6TmSlQguAXMYdnPHLZgTjNvJfG++ndkN8jynTjRqqYFW8fDf7+dfWQZAWzqV4nN2AiARobfbBRUHWikSEa/YQhMRtFIuVwJM0xStFDFNLyCmiVaKaZr6AW3pMDN7L8SKZ2Zfcugd4vLlUIJY8ev6o1Lbuk2M5yHR8A0A/bkhNsZ1XnqaVRwsJlu+Rz8ADK7igTE+o/evYP6OdKOV6/xosCWA3XNxYICDdKMV43no6rwObsU2LOR98nvfgX0kxT0Xw76TRMTlgqd/ptqAC9J0ZOAqPZ07AAAAAElFTkSuQmCC"
         }
     ]
 }

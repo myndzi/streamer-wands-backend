@@ -5,6 +5,8 @@ const featureSchema = new mongoose.Schema({
     ngp: Boolean,
     shifts: Boolean,
     timer: Boolean,
+    apothCreatureShifts: Boolean,
+    apothCreatureTimer: Boolean,
 })
 
 module.exports = mongoose.model('Feature Info', featureSchema)
