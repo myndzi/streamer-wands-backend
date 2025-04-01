@@ -1542,7 +1542,7 @@ const containerComp = Vue.component('wands-container', {
             fKeys: [],
             retryTimeout: null,
             retries: 0,
-            currentVersion: "1.1",
+            currentVersion: currentVersion,
             modVersion: streamerModVersion,
             features: streamerModFeatures,
             wands: streamerWands,

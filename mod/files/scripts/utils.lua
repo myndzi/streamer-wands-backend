@@ -508,6 +508,6 @@ function serialize_data()
     }
 
     data["modFeatures"] = features
-    data["modVersion"] = "1.1"
+    data["modVersion"] = dofile("mods/streamer_wands/version.lua")
     return json.encode(data)
 end

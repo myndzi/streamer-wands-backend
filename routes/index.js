@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const multer = require('multer')
 const { convertNoitaStats } = require('../lib/noitastats')
+const modVersion = require('../package.json').modVersion
 
 const storage = multer.memoryStorage({
     limits: {
@@ -100,6 +101,7 @@ router.post(
             const jwt = getJWT(req.user)
             const extrafiles = [
                 ['token.lua', Buffer.from(`return "${jwt}"`)],
+                ['version.lua', Buffer.from(`return "${modVersion}"`)],
                 ['stats.lua', req.file ? await convertNoitaStats(req.file.buffer) : emptyStats],
                 ['files/ws/host.lua', getHostFile()],
             ]

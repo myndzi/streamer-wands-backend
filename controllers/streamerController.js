@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const Streamers = mongoose.model('Streamers')
+const currentModVersion = require("../package.json").modVersion
 
 exports.getWands = async (req, res, next) => {
     const { name } = req.params
@@ -12,6 +13,7 @@ exports.getWands = async (req, res, next) => {
             menu: false,
             title: `${streamer.name} wands`,
             streamer: streamer.name,
+            currentVersion: currentModVersion,
             modVersion: streamer.modVersion,
             modFeatures: streamer.modFeatures,
             wands: streamer.wands,
