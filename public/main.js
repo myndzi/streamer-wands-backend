@@ -270,16 +270,11 @@ const SpellSlot = Vue.component('spell-slot', {
     },
     computed: {
         info() {
-            return {
-                // spell string contains both the ID and uses remaining
-                id: this.spell && this.spell.split('_#')[0],
-                uses: this.spell && +this.spell.split('_#')[1],
-                // hide uses remaining overlay if in always cast slot
-                ac: this.$parent.$options.name == 'wand-ac',
-            }
-        },
-        // use icons objects to retrieve spell border images
-        spells() {
+            if (this.spell == "0" || this.spell === undefined) return false
+            const spell = this.spell
+            let [id, uses] = spell.split('_#')
+            const ac = this.$parent.$options.name == 'wand-ac'
+
             let data = spellDataMain
             let img = icons.spells.filter((x) => spellDataMain.hasOwnProperty(x.id))
             if (this.switches.betaContent.state) {
@@ -290,9 +285,18 @@ const SpellSlot = Vue.component('spell-slot', {
                 data = spellDataApoth
                 img = apothIcons.spells
             }
+            let keyedImages = img.reduce((obj, item) => Object.assign(obj, { [item.id]: item }), {})
+            const missing = {
+                name: id,
+                description: "Either this spell is missing from onlywands or it is modded and onlywands doesn't support this mod yet",
+                sprite: icons.pseuds.find((x) => x.id == "missingSpell").image,
+            }
             return {
-                data: data,
-                img: img.reduce((obj, item) => Object.assign(obj, { [item.id]: item }), {}),
+                id: id,
+                uses: +uses,
+                ac: ac,
+                img: (keyedImages.hasOwnProperty(id) ? keyedImages[id] : icons.pseuds.find((x) => x.id == "missingSpell")),
+                data: (data.hasOwnProperty(id) ? data[id] : missing),
             }
         },
     },
@@ -300,13 +304,13 @@ const SpellSlot = Vue.component('spell-slot', {
     inject: ['switches'],
     template: /*html*/`
     <div class="spell-slot">
-        <template v-if="this.spells.data[info.id]">
-            <img v-if="this.spells.img[info.id].bgImage" :style="bgStyle" :src="'data:image/png;base64,' + this.spells.img[info.id].bgImage"/>
-            <img ref="slot" class="spellZoom" :src="'data:image/png;base64,' + this.spells.data[info.id].sprite"/>
+        <template v-if="info">
+            <img v-if="info.img.bgImage" :style="bgStyle" :src="'data:image/png;base64,' + info.img.bgImage"/>
+            <img ref="slot" class="spellZoom" :src="'data:image/png;base64,' + info.data.sprite"/>
             <p v-if="(info.uses > -1) && !info.ac" :style="pStyle">
                 {{ info.uses }}
             </p>
-            <spell-tooltip ref="tooltip" :spell="info.id"></spell-tooltip>
+            <spell-tooltip ref="tooltip" :spell="info"></spell-tooltip>
         </template>
     </div>`,
 })
@@ -472,9 +476,9 @@ const ItemSlot = Vue.component('item-slot', {
     inject: ['switches'],
     template: /*html*/`
     <div class="item-slot">
-        <template v-if="this.itemInfo">
-            <img v-if="this.itemInfo.color" ref="slot" :src="imgFilter"/>
-            <img v-else ref="slot" :src="'data:image/png;base64,' + this.itemInfo.sprite"/>
+        <template v-if="itemInfo">
+            <img v-if="itemInfo.color" ref="slot" :src="imgFilter"/>
+            <img v-else ref="slot" :src="'data:image/png;base64,' + itemInfo.sprite"/>
             <item-tooltip ref="tooltip" :item="itemInfo" :img="imgFilter"></item-tooltip>
         </template>
     </div>`,
@@ -509,8 +513,8 @@ const ItemTooltip = Vue.component('item-tooltip', {
         </template>
         <div class="desc-container">
             <p class="tooltip-description" v-html="item.desc"></p>
-            <img v-if="this.item.color" ref="slot" :src="img"/>
-            <img v-else ref="slot" :src="'data:image/png;base64,' + this.item.sprite"/>
+            <img v-if="item.color" ref="slot" :src="img"/>
+            <img v-else ref="slot" :src="'data:image/png;base64,' + item.sprite"/>
         </div>
     </div>`,
 })
@@ -1328,7 +1332,7 @@ const playerComp = Vue.component('player-comp', {
                 <p class="tooltip fit" ref="tipGold">$: {{ updatePlayer.gold}}</p>
             </div>
             <v-switch v-model="state" title="Show All Perks"></v-switch>
-            <perks-comp :names="this.updatePlayer.names" :amounts="this.updatePlayer.amounts" :state="state"></perks-comp>
+            <perks-comp :names="updatePlayer.names" :amounts="updatePlayer.amounts" :state="state"></perks-comp>
         </div>
     </div>`
 })
@@ -1579,6 +1583,7 @@ const containerComp = Vue.component('wands-container', {
                     className: 'apoth-content',
                 },
             },
+            progTables: false,
         }
     },
     created() {
@@ -1668,6 +1673,15 @@ const containerComp = Vue.component('wands-container', {
                     this.updateData(this.newData)
                     this.newData = null
                 }
+                if (newVal.progressTable.state) {
+                    setTimeout(() => {
+                        this.progTables = true
+                    }, 0)
+                } else if (!newVal.progressTable.state) {
+                    setTimeout(() => {
+                        this.progTables = false
+                    }, 0)
+                }
             },
             deep: true,
         },
@@ -1719,8 +1733,8 @@ const containerComp = Vue.component('wands-container', {
     },
     template: /*html*/`
     <div class="content">
-        <div class="top-wrapper">
-            <div v-if="modVersion != currentVersion" class="outdated">
+    <div class="top-wrapper">
+    <div v-if="modVersion != currentVersion" class="outdated">
                 <p>Streamer is running outdated version: {{ modVersion }}</p>
                 <p>Modules will probably break, please update to version: {{ currentVersion }} </p>
             </div>
@@ -1736,9 +1750,10 @@ const containerComp = Vue.component('wands-container', {
             <world-comp :apoth="apothInfo" :player="playerInfo" :run="runInfo" :features="features"></world-comp>
         </div>
         <div class="switches">
+            <div v-if="switches.progressTable.state ^ progTables" class="loader"></div>
             <v-switch v-for="(sw, i) in switches" :key="i" v-model="sw.state" :title="sw.label" :class="sw.className"></v-switch>
         </div>
-        <div v-if="switches.progressTable.state" class="prog-wrapper">
+        <div v-if="progTables" class="prog-wrapper">
             <div class="top-border"></div>
             <prog-comp
                 v-for="(table, i) in this.tables"
@@ -2002,7 +2017,36 @@ const IconComp = Vue.component('icon-comp', {
             this.tooltip = null
         }
     },
+    computed: {
+        spell() {
+            if (this.tName != "Spells") return false
+            const id = this.icon.id
+
+            let data = spellDataMain
+            let img = icons.spells.filter((x) => spellDataMain.hasOwnProperty(x.id))
+            if (this.switches.betaContent.state) {
+                data = spellData
+                img = icons.spells
+            }
+            if (this.switches.apothContent.state) {
+                data = spellDataApoth
+                img = apothIcons.spells
+            }
+            let keyedImages = img.reduce((obj, item) => Object.assign(obj, { [item.id]: item }), {})
+            const missing = {
+                name: id,
+                description: "Either this spell is missing from onlywands or it is modded and onlywands doesn't support this mod yet",
+                sprite: icons.pseuds.find((x) => x.id == "missingSpell").image,
+            }
+            return {
+                id: id,
+                img: (keyedImages.hasOwnProperty(id) ? keyedImages[id] : icons.pseuds.find((x) => x.id == "missingSpell")),
+                data: (data.hasOwnProperty(id) ? data[id] : missing),
+            }
+        },
+    },
     props: ['icon', 'tName', 'boolProg'],
+    inject: ['switches'],
     template: /*html*/`
     <div class="icon-slot" :class="[{ bgHide : !boolProg }, {spellTip : tName=='Spells'}]">
         <div class="zoom">
@@ -2012,7 +2056,7 @@ const IconComp = Vue.component('icon-comp', {
             </a>
             <img v-else ref="slot" :src="'data:image/png;base64,' + icon.image"/>
         </div>
-        <spell-tooltip v-if="tName=='Spells'" ref="tooltip" :spell="icon.id"></spell-tooltip>
+        <spell-tooltip v-if="tName=='Spells'" ref="tooltip" :spell="spell"></spell-tooltip>
         <icon-tooltip v-else ref="tooltip" :icon="icon"></icon-tooltip>
     </div>`,
 })
@@ -2238,25 +2282,14 @@ const SpellTooltip = Vue.component('spell-tooltip', {
         }
     },
     props: ['spell'],
-    inject: ['switches'],
     computed: {
-        spellVersion() {
-            let out = spellDataMain
-            if (this.switches.betaContent.state) {
-                out = spellData
-            }
-            if (this.switches.apothContent.state) {
-                out = spellDataApoth
-            }
-            return out
-        },
         name() {
-            let name = this.spellVersion[this.spell].name
+            let name = this.spell.data.name
             return name ? name.toUpperCase() : 'UNKNOWN'
         },
         meta() {
             const m = {}
-            let data = this.spellVersion[this.spell] && this.spellVersion[this.spell].meta
+            let data = this.spell.data && this.spell.data.meta
             const keys = this.stats.map((x) => x.key)
             if (!data) {
                 return m
@@ -2322,13 +2355,13 @@ const SpellTooltip = Vue.component('spell-tooltip', {
     template: /*html*/`
     <div class="tooltip">
         <p class="tooltip-title">{{name}}</p>
-        <p class="tooltip-description">{{spellVersion[spell].description}}</p>
+        <p class="tooltip-description">{{spell.data.description}}</p>
         <template v-for="(stat, index) in stats">
             <p v-if="typeof meta[stat.key] != 'undefined'" :key="stat.key" :class="stat.classes">
             {{stat.label}} <span>{{meta[stat.key]}} </span> </p>
             <br v-if="(index + 1) % 3 == 0 && typeof meta[stat.key] != 'undefined'">
             </template>
-        <img :src="'data:image/png;base64,' + spellVersion[spell].sprite"/>
+        <img :src="'data:image/png;base64,' + spell.data.sprite"/>
     </div>`,
 })
 
