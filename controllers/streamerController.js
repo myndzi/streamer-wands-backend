@@ -15,14 +15,14 @@ exports.getWands = async (req, res, next) => {
             streamer: streamer.name,
             currentVersion: currentModVersion,
             modVersion: streamer.modVersion,
-            modFeatures: streamer.modFeatures,
-            wands: streamer.wands,
+            modFeatures: streamer.modFeatures || {},
+            wands: streamer.wands || [],
             inventory: streamer.inventory || [],
             items: streamer.items || [],
-            progress: streamer.progress,
-            runInfo: streamer.runInfo,
-            apothInfo: streamer.apothInfo,
-            playerInfo: streamer.playerInfo,
+            progress: streamer.progress || {},
+            runInfo: streamer.runInfo || {},
+            apothInfo: streamer.apothInfo || {},
+            playerInfo: streamer.playerInfo || {},
         })
     } else {
         next()
