@@ -3,7 +3,6 @@ dofile_once("data/scripts/perks/perk.lua")
 dofile_once("data/scripts/gun/gun_actions.lua")
 dofile_once("mods/streamer_wands/files/scripts/enemyNames.lua")
 dofile_once("mods/streamer_wands/files/scripts/enemyNamesApoth.lua")
-dofile_once("mods/streamer_wands/files/scripts/materials.lua")
 dofile_once("mods/streamer_wands/stats.lua")
 
 function get_player()
@@ -111,29 +110,9 @@ function get_shift_timer()
     return shift_timer
 end
 
-function get_shift_materials()
-    local world_comp = get_world_state()
-    local mats = ComponentGetValue2(world_comp, "changed_materials")
-    local mats_table = {}
-    for i, mat in ipairs(mats) do
-        local mat_name = GameTextGetTranslatedOrNot("$mat_" .. mat)
-        if mat_name == "" then
-            if materials[mat] then
-                mat_name = GameTextGetTranslatedOrNot(materials[mat])
-            else
-                mat_name = mat
-            end
-        end
-        table.insert(mats_table, mat .. "^@^" .. mat_name)
-    end
-    return table.concat(mats_table, "<,>")
-end
-
 function get_shifts()
     local shiftList = {}
-    local shiftMaterials = get_shift_materials()
     local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
-    GlobalsSetValue("shift#" .. shiftNumber, shiftMaterials)
 
     for i = 1, shiftNumber do
         shiftMaterials = GlobalsGetValue("shift#" .. i, "empty")
@@ -371,11 +350,20 @@ function get_run_info(ngpCheck, seedCheck)
     return versions
 end
 
+function apotheosis_check()
+    for _, mod in ipairs(ModGetActiveModIDs()) do
+        if mod == "apotheosis" or mod == "Apotheosis" then
+            return true
+        end
+    end
+    return false
+end
+
 function get_spells_progress()
     local spells = {}
     local mods = get_run_info()
     local lock = false
-    for i, mod in ipairs(mods) do
+    for _, mod in ipairs(ModGetActiveModIDs()) do
         if mod == "conga_spell_lock" then
             lock = true
         end
@@ -405,10 +393,8 @@ end
 function get_enemies_progress()
     local enemies = {}
     local currentEnemies = enemyNames
-    for _, mod in ipairs(get_run_info()) do
-        if mod == "apotheosis" or mod == "Apotheosis" then
-            currentEnemies = enemyNamesApoth
-        end
+    if apotheosis_check() then
+        currentEnemies = enemyNamesApoth
     end
     for _, enemy in ipairs(currentEnemies) do
         local flag = "kill_" .. string.lower(enemy)
@@ -452,18 +438,20 @@ function serialize_data()
     local runInfo = get_run_info(ngpCheck, seedCheck)
     data["runInfo"] = runInfo
 
-    local apothInfo = {}
-    local creatureShiftNumber = tonumber(GlobalsGetValue("apotheosis_creature_shift_iteration"))
-    apothInfo["csTotal"] = creatureShiftNumber
     local apothTimerCheck = ModSettingGet("streamer_wands.apothCreatureTimer")
     local apothShiftsCheck = ModSettingGet("streamer_wands.apothCreatureShifts")
-    if apothTimerCheck then
-        apothInfo["csTimer"] = get_creature_shift_timer()
+    if apotheosis_check() then
+        local apothInfo = {}
+        local creatureShiftNumber = tonumber(GlobalsGetValue("apotheosis_creature_shift_iteration", "0"))
+        apothInfo["csTotal"] = creatureShiftNumber
+        if apothTimerCheck then
+            apothInfo["csTimer"] = get_creature_shift_timer()
+        end
+        if apothShiftsCheck then
+            apothInfo["csShifts"] = get_creature_shifts(creatureShiftNumber)
+        end
+        data["apothInfo"] = apothInfo
     end
-    if apothShiftsCheck then
-        apothInfo["csShifts"] = get_creature_shifts(creatureShiftNumber)
-    end
-    data["apothInfo"] = apothInfo
 
     local info = {}
     local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))

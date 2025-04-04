@@ -964,41 +964,45 @@ const fungalComp = Vue.component('fungal-comp', {
                     <span>Calculate up to Shift N =</span><input v-model="state.number" type="number" inputmode="numeric" min="1" :max="number" :placeholder="number"/>
                     <span>/ {{ number }} Total</span>
                 </div>
-                <div class="shifts-table-row header">
-                    <div><b>N</b></div>
-                    <div><b>Input{{state.originalShift ? " &#8594; Raw Output" : "" }}</b></div>
-                    <div ref="slot" class="shifts-tip" @mouseenter="updateTip">
-                        <b>Final Result</b>
-                        <div ref="tooltip" class="tooltip fit">
-                            <p>When Final Result lists two materials:</p>
-                            <ul>
-                                <li>Material 1 determines the visuals and material damage</li>
-                                <li>Material 2 determines the stain and ingestion effects</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </template>
             <p v-else><i>Fungal Shift Info Hidden</i></p>
         </div>
         <div class="shifts-table">
-            <div class="shifts-table-row" v-for="(shift,i) in shiftInfo">
-                <div>{{ shift.shiftNumber }}</div>
-                <div ref="cells" :class="{ strike: shift.isOverwritten }">
+            <div class="shifts-column">
+                <div class="shifts-header-cell"><b>N</b></div>
+                <div v-for="(shift,i) in shiftInfo">{{ shift.shiftNumber }}</div>
+            </div>
+            <div class="shifts-column">
+                <div class="shifts-header-cell"><b>Input{{state.originalShift ? " &#8594; Raw Output" : "" }}</b></div>
+                <div ref="cells" :class="{ strike: shift.isOverwritten }" v-for="(shift,i) in shiftInfo">
                     <mat-comp :material="shift.input" side="left"></mat-comp>
                     <template v-if="state.originalShift || rowToggles[i]">
                         &#8594; <mat-comp  :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'"></mat-comp>
                     </template>
                 </div>
-                <div ref="cells" v-if="shift.extra.now" :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
-                    <mat-comp :material="shift.output.final" :side="shift.cause.output ? 'bottom' : 'top'" :i="i" :info="shiftInfo"></mat-comp> +
-                    <mat-comp  :material="shift.extra.now" side="right" :i="i" :info="shiftInfo"></mat-comp>
+            </div>
+            <div class="shifts-column">
+                <div ref="slot" class="shifts-tip shifts-header-cell" @mouseenter="updateTip">
+                    <b>Final Result</b>
+                    <div ref="tooltip" class="tooltip fit">
+                        <p>When Final Result lists two materials:</p>
+                        <ul>
+                            <li>Material 1 determines the visuals and material damage</li>
+                            <li>Material 2 determines the stain and ingestion effects</li>
+                        </ul>
+                    </div>
                 </div>
-                <div ref="cells" v-else-if="shift.output.original != shift.output.final" :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
-                    <mat-comp :material="shift.output.final" side="right" :i="i" :info="shiftInfo"></mat-comp>
-                </div>
-                <div ref="cells" v-else :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
-                    <mat-comp :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'" :i="i" :info="shiftInfo"></mat-comp>
+                <div ref="cells" :class="{ strike: shift.isOverwritten }" v-for="(shift,i) in shiftInfo" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
+                    <template v-if="shift.extra.now">
+                        <mat-comp :material="shift.output.final" :side="shift.cause.output ? 'bottom' : 'top'" :i="i" :info="shiftInfo"></mat-comp> +
+                        <mat-comp  :material="shift.extra.now" side="right" :i="i" :info="shiftInfo"></mat-comp>
+                    </template>
+                    <template v-else-if="shift.output.original != shift.output.final">
+                        <mat-comp :material="shift.output.final" side="right" :i="i" :info="shiftInfo"></mat-comp>
+                    </template>
+                    <template v-else>
+                        <mat-comp :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'" :i="i" :info="shiftInfo"></mat-comp>
+                    </template>
                 </div>
             </div>
         </div>
@@ -1095,7 +1099,6 @@ const materialComp = Vue.component('mat-comp', {
 const creatureShiftComp = Vue.component('creatureShift-comp', {
     data() {
         return {
-            tooltip: null,
             state: {
                 originalShift: false,
                 hoverInfo: true,
@@ -1106,18 +1109,6 @@ const creatureShiftComp = Vue.component('creatureShift-comp', {
     },
     mounted() {
         this.rowToggles = Array(this.shiftInfo.length).fill(false)
-        if (this.$refs.tooltip) {
-            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
-                placement: 'top',
-                modifiers: [{ name: 'offset', options: { offset: [0, 5] } }],
-            })
-        }
-    },
-    beforeDestroy() {
-        if (this.tooltip) {
-            this.tooltip.destroy()
-            this.tooltip = null
-        }
     },
     computed: {
         shiftInfo() {
@@ -1211,11 +1202,6 @@ const creatureShiftComp = Vue.component('creatureShift-comp', {
                 }
             });
         },
-        updateTip() {
-            if (this.tooltip) {
-                this.tooltip.update()
-            }
-        },
     },
     props: ['shifts', 'timer', 'number', 'features'],
     template: /*html*/`
@@ -1229,37 +1215,32 @@ const creatureShiftComp = Vue.component('creatureShift-comp', {
                     <span>Calculate up to Shift N =</span><input v-model="state.number" type="number" inputmode="numeric" min="1" :max="number" :placeholder="number"/>
                     <span>/ {{ number }} Total</span>
                 </div>
-                <div class="shifts-table-row header">
-                    <div><b>N</b></div>
-                    <div><b>Input{{state.originalShift ? " &#8594; Raw Output" : "" }}</b></div>
-                    <div ref="slot" class="shifts-tip" @mouseenter="updateTip">
-                        <b>Final Result</b>
-                        <div ref="tooltip" class="tooltip fit">
-                            <p>When Final Result lists two materials:</p>
-                            <ul>
-                                <li>Material 1 determines the visuals and material damage</li>
-                                <li>Material 2 determines the stain and ingestion effects</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </template>
-            <p v-else><i>Fungal Shift Info Hidden</i></p>
+            <p v-else><i>Creature Shift Info Hidden</i></p>
         </div>
         <div class="shifts-table">
-            <div class="shifts-table-row" v-for="(shift,i) in shiftInfo">
-                <div>{{ shift.shiftNumber }}</div>
-                <div ref="cells" :class="{ strike: shift.isOverwritten }">
+            <div class="shifts-column">
+                <div class="shifts-header-cell"><b>N</b></div>
+                <div v-for="(shift,i) in shiftInfo">{{ shift.shiftNumber }}</div>
+            </div>
+            <div class="shifts-column">
+                <div class="shifts-header-cell"><b>Input{{state.originalShift ? " &#8594; Raw Output" : "" }}</b></div>
+                <div ref="cells" :class="{ strike: shift.isOverwritten }" v-for="(shift,i) in shiftInfo">
                     <mat-comp creatureShift="true" :material="shift.input" side="left"></mat-comp>
                     <template v-if="state.originalShift || rowToggles[i]">
                         &#8594; <mat-comp creatureShift="true" :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'"></mat-comp>
                     </template>
                 </div>
-                <div ref="cells" v-if="shift.output.original != shift.output.final" :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
-                    <mat-comp creatureShift="true" :material="shift.output.final" side="right" :i="i" :info="shiftInfo"></mat-comp>
-                </div>
-                <div ref="cells" v-else :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
-                    <mat-comp creatureShift="true" :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'" :i="i" :info="shiftInfo"></mat-comp>
+            </div>
+            <div class="shifts-column">
+                <div class="shifts-header-cell"><b>Final Result</b></div>
+                <div ref="cells" :class="{ strike: shift.isOverwritten }" v-for="(shift,i) in shiftInfo" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
+                    <template v-if="shift.output.original != shift.output.final">
+                        <mat-comp creatureShift="true" :material="shift.output.final" side="right" :i="i" :info="shiftInfo"></mat-comp>
+                    </template>
+                    <template v-else>
+                        <mat-comp creatureShift="true" :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'" :i="i" :info="shiftInfo"></mat-comp>
+                    </template>
                 </div>
             </div>
         </div>

@@ -581,6 +581,12 @@ a:visited {
     align-items: start;
 }
 
+.world-header {
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+}
+
 .world-body p,
 .world-body span {
     font-family: 'Inter', sans-serif;
@@ -641,11 +647,19 @@ a:visited {
 .shifts {
     padding: 0px !important;
     font-size: 0.9rem;
+    border-top: none !important;
 }
 
 .shifts-header {
     position: sticky;
-    top: 0;
+    top: 24px;
+    background-color: rgb(11, 8, 8);
+    border-top: var(--border-color);
+}
+
+.shifts-header-cell {
+    position: sticky;
+    top: 95px;
     background-color: rgb(11, 8, 8);
 }
 
@@ -678,12 +692,39 @@ a:visited {
     padding: 0 !important;
 }
 
-.shifts-table,
+.shifts-table {
+    display: grid;
+    text-transform: capitalize;
+    font-family: 'Inter', sans-serif;
+    grid-template-columns: 0.1fr 1fr 1fr;
+}
+
 .features-table {
     display: flex;
     flex-direction: column;
     text-transform: capitalize;
     font-family: 'Inter', sans-serif;
+}
+
+.shifts-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.shifts-column>div:first-child {
+    border-top: var(--border-color);
+}
+
+.shifts-column>div {
+    padding: 3px 4px 1px;
+}
+
+.shifts-column>div:not(:last-child) {
+    border-bottom: var(--border-color);
+}
+
+.shifts-column:not(:last-child)>div {
+    border-right: var(--border-color);
 }
 
 .shifts-table-row.header {
@@ -703,7 +744,7 @@ a:visited {
 
 .shifts-table-row {
     display: grid;
-    grid-template-columns: 40px 1fr 1fr;
+    grid-template-columns: 0.1fr 1fr 1fr;
 }
 
 .features-row {

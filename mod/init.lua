@@ -1,12 +1,45 @@
+dofile_once("mods/streamer_wands/files/scripts/materials.lua")
 function is_valid_entity(entity_id)
     return entity_id ~= nil and entity_id ~= 0
 end
 
 function OnWorldPostUpdate()
+    function get_world_state()
+        local world = EntityGetWithTag("world_state") or nil
+        if world ~= nil then
+            return EntityGetFirstComponentIncludingDisabled(world[1], "WorldStateComponent")
+        end
+    end
+
+    function get_shift_materials()
+        local world_comp = get_world_state()
+        local mats = ComponentGetValue2(world_comp, "changed_materials")
+        local mats_table = {}
+        for i, mat in ipairs(mats) do
+            local mat_name = GameTextGetTranslatedOrNot("$mat_" .. mat)
+            local mat_name_apoth = GameTextGetTranslatedOrNot("$material_" .. mat)
+            if mat_name_apoth ~= "" then
+                mat_name = mat_name_apoth
+            end
+            if mat_name == "" then
+                if materials[mat] then
+                    mat_name = GameTextGetTranslatedOrNot(materials[mat])
+                else
+                    mat_name = mat
+                end
+            end
+            table.insert(mats_table, mat .. "^@^" .. mat_name)
+        end
+        return table.concat(mats_table, "<,>")
+    end
+
     local world_state = GameGetWorldStateEntity()
     if (_ws_main and is_valid_entity(world_state)) then
         _ws_main()
     end
+    local shiftMaterials = get_shift_materials()
+    local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
+    GlobalsSetValue("shift#" .. shiftNumber, shiftMaterials)
 end
 
 function OnPlayerSpawned(player_entity)
