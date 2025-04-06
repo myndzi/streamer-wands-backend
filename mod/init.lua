@@ -65,7 +65,8 @@ function OnModInit()
     if not ModSettingGet("streamer_wands.seed") then
         local path = 'data/translations/common.csv'
         local text = _G['ModTextFileGetContent'](path)
-        local item = text:match('menu_no,.-')
+        local item = text:match('menu_no,.-\n')
+        print("hey idiot", item)
         local entries = {}
         item:gsub('([^,]*),', function(x)
             if x == '' then x = entries[2] end
@@ -83,9 +84,9 @@ function OnModInit()
             end)
         end
         local updated = text
-            :gsub('menupause_worldseed,.-',
+            :gsub('menupause_worldseed,.-\n',
                 no_seed)
-            :gsub('log_worldseed,.-', no_seed)
+            :gsub('log_worldseed,.-\n', no_seed)
         _G['ModTextFileSetContent'](path, updated)
     end
 end
