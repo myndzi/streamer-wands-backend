@@ -149,7 +149,7 @@ function get_creature_shifts(n)
                     creature_name = creature
                 end
             end
-            table.insert(creatures, creature .. "^@^" .. creature_name)
+            table.insert(creatures, creature .. "%@%" .. creature_name)
         end
         table.insert(shiftList, table.concat(creatures, "<,>"))
     end
@@ -341,11 +341,10 @@ function get_run_info(ngpCheck, seedCheck)
     versions["mods"] = modList
     versions["beta"] = GameIsBetaBuild()
     if ngpCheck then
-        versions["ngp"] = "NG+" .. SessionNumbersGetValue("NEW_GAME_PLUS_COUNT")
+        versions["ngp"] = tonumber(SessionNumbersGetValue("NEW_GAME_PLUS_COUNT"))
     end
     if seedCheck then
-        local seed = StatsGetValue("world_seed")
-        versions["seed"] = "seed=" .. seed
+        versions["seed"] = tonumber(StatsGetValue("world_seed"))
     end
     return versions
 end

@@ -1,3 +1,5 @@
+const HOP = (obj, key) => Object.prototype.hasOwnProperty.call(obj, key)
+
 const WandContainer = Vue.component('wand-comp', {
     props: ['stats', 'ac', 'deck'],
     template: /*html*/`
@@ -135,7 +137,7 @@ const WandStats = Vue.component('wand-stats', {
             }).join('&')
             let deckLink = this.deck.map((spell) => {
                 const spellToCheck = spell.split("_#")[0]
-                return spellDataMain.hasOwnProperty(spellToCheck) ? spellToCheck : ""
+                return HOP(spellDataMain, spellToCheck) ? spellToCheck : ""
             }).join('%2C')
             return link + statsLink + '&spells=' + deckLink
         },
@@ -146,7 +148,7 @@ const WandStats = Vue.component('wand-stats', {
                 (prop) => `${prop.newSim}=${+this.stats[prop.key]}`).join('&')
             let deckLink = this.deck.map((spell) => {
                 const spellToCheck = spell.split("_#")[0]
-                return spellDataMain.hasOwnProperty(spellToCheck) ? spellToCheck : ""
+                return HOP(spellDataMain, spellToCheck) ? spellToCheck : ""
             }).join('%2C')
             return link + statsLink + '&spells=' + deckLink
         },
@@ -276,7 +278,7 @@ const SpellSlot = Vue.component('spell-slot', {
             const ac = this.$parent.$options.name == 'wand-ac'
 
             let data = spellDataMain
-            let img = icons.spells.filter((x) => spellDataMain.hasOwnProperty(x.id))
+            let img = icons.spells.filter((x) => HOP(spellDataMain, x.id))
             if (this.switches.betaContent.state) {
                 data = spellData
                 img = icons.spells
@@ -295,8 +297,8 @@ const SpellSlot = Vue.component('spell-slot', {
                 id: id,
                 uses: +uses,
                 ac: ac,
-                img: (keyedImages.hasOwnProperty(id) ? keyedImages[id] : icons.pseuds.find((x) => x.id == "missingSpell")),
-                data: (data.hasOwnProperty(id) ? data[id] : missing),
+                img: (HOP(keyedImages, id) ? keyedImages[id] : icons.pseuds.find((x) => x.id == "missingSpell")),
+                data: (HOP(data, id) ? data[id] : missing),
             }
         },
     },
@@ -359,7 +361,7 @@ const ItemSlot = Vue.component('item-slot', {
         itemInfo() {
             // streamer-wands noita mod transfers item data via a concatenated string
             let [path, id, desc, mats] = this.item.split('$')
-            if (!itemData.hasOwnProperty(id)) return false
+            if (!HOP(itemData, id)) return false
             if (!this.switches.apothContent.state && this.item.indexOf('potheosis') > -1)
                 return false
             path = path.replace(new RegExp('mods/apotheosis/files', 'ig'), 'data')
@@ -548,8 +550,6 @@ const worldComp = Vue.component('world-comp', {
                 csCount: apoth.shiftsTotal,
                 csTimer: apoth.shiftsTimer,
             }
-            const ngp = Number(output.ngp)
-            output.ngp = (ngp > 0) ? `+${ngp}` : ""
             return output
         },
         featureOutput() {
@@ -602,7 +602,7 @@ const worldComp = Vue.component('world-comp', {
                 </div>
             </div>
             </div>
-            <map-comp v-if="state.map" :player="player" :seed="info.seed" :mods="info.mods" :ngp="info.ngp" :features="features"></map-comp>
+            <map-comp v-if="state.map" :player="player" :info="info" :features="features"></map-comp>
         </div>
     </div>`
 })
@@ -628,7 +628,7 @@ const mapComp = Vue.component('map-comp', {
     computed: {
         seedInfo() {
             // if (!this.seed) return null
-            let seedNumber = Number(this.seed.split("=")[1]) + Number(this.ngp)
+            let seedNumber = this.info.seed + this.info.ngp
             let url = `https://noitool.com/info?seed=${seedNumber}`
             // uncomment when noita starts receiving beta pushes again
             // if (this.switches.betaContent.state) {
@@ -671,12 +671,12 @@ const mapComp = Vue.component('map-comp', {
             const apothNames = ["$curse_apotheosis_everything_name", "$curse_apotheosis_downunder_name"]
 
             // determine gamemode/map type
-            let mapName = Number(this.ngp) > 0 ? "new-game-plus-main-branch" : "regular-main-branch"
-            const mapModes = this.mods.map((x) => x.toLowerCase())
+            let mapName = this.info.ngp > 0 ? "new-game-plus-main-branch" : "regular-main-branch"
+            const mapModes = this.info.mods.map((x) => x.toLowerCase())
             if (mapModes.includes("nightmare")) {
                 mapName = "nightmare-main-branch"
             } else if (mapModes.includes("apotheosis")) {
-                mapName = Number(this.ngp) > 0 ? "apotheosis-new-game-plus" : "apotheosis"
+                mapName = this.info.ngp > 0 ? "apotheosis-new-game-plus" : "apotheosis"
                 widthPW = 100
                 if (this.player.names.some((x) => apothNames.includes(x))) {
                     mapName = "apotheosis-tuonela"
@@ -686,7 +686,7 @@ const mapComp = Vue.component('map-comp', {
             } else if (mapModes.includes("biome-plus")) {
                 mapName = "alternate-biomes"
             } else if (mapModes.includes("noitavania")) {
-                mapName = Number(this.mods.ngp) > 0 ? "noitavania-new-game-plus" : "noitavania"
+                mapName = this.info.ngp > 0 ? "noitavania-new-game-plus" : "noitavania"
             }
 
             // get map URL and topleft offsets in chunk coordinates
@@ -751,7 +751,7 @@ const mapComp = Vue.component('map-comp', {
             }
         },
     },
-    props: ['player', 'seed', 'mods', 'ngp', 'features'],
+    props: ['player', 'info', 'features'],
     inject: ['switches'],
     template: /* html */`
     <div class="preview" v-if="loaded">
@@ -767,7 +767,7 @@ const mapComp = Vue.component('map-comp', {
             <p v-if="!features.seed"><i>Seed Hidden</i></p>
             <p v-else-if="!seedInfo">No current run</p>
             <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
-                <map-tooltip :seed="seedInfo.seed" :mods="mods"></map-tooltip>
+                <map-tooltip :seed="seedInfo.seed" :mods="info.mods"></map-tooltip>
             </a>
             <p v-else>Map {{ seedInfo.seed }}</p>
             <template v-if="features.pos">
@@ -778,7 +778,7 @@ const mapComp = Vue.component('map-comp', {
                 <p><i>Position Hidden</i></p>
                 <p><i>Map/PW tracker shows 0, 0</i></p>
             </template>
-            <p v-if="features.ngp">In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
+            <p v-if="features.ngp">In {{ osd.pw }}{{ osd.hh }} NG{{ info.ngp > 0 ? ('+' + info.ngp) : "" }}</p>
             <p v-else><i>NG+ Tracker Hidden</i></p>
             <p>World Type: {{ osd.name }}</p>
         </div>
@@ -873,7 +873,7 @@ const fungalComp = Vue.component('fungal-comp', {
             }
             shiftsAll = shiftsAll.flat(Infinity)
 
-            const HOP = Object.prototype.hasOwnProperty.call.bind(Object.prototype.hasOwnProperty);
+            // const HOP = Object.prototype.hasOwnProperty.call.bind(Object.prototype.hasOwnProperty);
 
             let j = 0
             for (let i = 0; i < shiftsAll.length - 1; i += 3) {
@@ -1038,7 +1038,7 @@ const materialComp = Vue.component('mat-comp', {
     },
     computed: {
         mat() {
-            let both = this.material.split("^@^")
+            let both = this.material.split("%@%")
             return {
                 raw: both[0],
                 ui: both[1],
@@ -1056,7 +1056,7 @@ const materialComp = Vue.component('mat-comp', {
                 reasonShift = this.info[cause]
                 reasons.push({
                     shiftNumber: reasonShift.shiftNumber,
-                    reason: `${reasonShift.input.split("^@^")[0]} → ${reasonShift.output.original.split("^@^")[0]}`,
+                    reason: `${reasonShift.input.split("%@%")[0]} → ${reasonShift.output.original.split("%@%")[0]}`,
                 })
             }
             if (shift.cause.extra != null) {
@@ -1064,7 +1064,7 @@ const materialComp = Vue.component('mat-comp', {
                 reasonShift = this.info[cause]
                 reasons.push({
                     shiftNumber: reasonShift.shiftNumber,
-                    reason: `${reasonShift.input.split("^@^")[0]} → ${reasonShift.output.original.split("^@^")[0]}`,
+                    reason: `${reasonShift.input.split("%@%")[0]} → ${reasonShift.output.original.split("%@%")[0]}`,
                 })
             }
             return reasons
@@ -1133,7 +1133,7 @@ const creatureShiftComp = Vue.component('creatureShift-comp', {
             }
             shiftsAll = shiftsAll.flat(Infinity)
 
-            const HOP = Object.prototype.hasOwnProperty.call.bind(Object.prototype.hasOwnProperty);
+            // const HOP = Object.prototype.hasOwnProperty.call.bind(Object.prototype.hasOwnProperty);
 
             let j = 0
             for (let i = 0; i < shiftsAll.length - 1; i += 3) {
@@ -1374,9 +1374,9 @@ const perkComp = Vue.component('perk-comp', {
             return out
         },
         getPerk() {
-            if (this.tableObj.perks.hasOwnProperty(this.icon.name)) {
+            if (HOP(this.tableObj.perks, this.icon.name)) {
                 return this.tableObj.perks[this.icon.name]
-            } else if (this.tableObj.pseuds.hasOwnProperty(this.icon.name)) {
+            } else if (HOP(this.tableObj.pseuds, this.icon.name)) {
                 return this.tableObj.pseuds[this.icon.name]
             } else if (this.icon.name.includes("creature_shift")) {
                 creature = JSON.parse(JSON.stringify(this.tableObj.pseuds.creature_shift_ui))
@@ -1399,7 +1399,7 @@ const perkComp = Vue.component('perk-comp', {
             const frameB64 = 'data:image/png;base64,' + frame.image
             // apotheosis edge case for miniblob
             const offset = icon.id == "miniblob" ? -4 * 4 * 16 : 0
-            if (this.icon.name.includes("creature_shift") && !this.tableObj.pseuds.hasOwnProperty(this.icon.name)) {
+            if (this.icon.name.includes("creature_shift") && !HOP(this.tableObj.pseuds, this.icon.name)) {
                 // img.onload changes "this" scope so we need to be able to get to "this" via vm
                 let vm = this
                 // initialize three 16x16 canvas contexts for pixel retrieval/manipulation
@@ -1484,15 +1484,15 @@ const perkComp = Vue.component('perk-comp', {
     <div class="icon-slot no-bg">
         <div class="zoom no-bg">
             <a v-if="getPerk.wiki_url" :href="getPerk.wiki_url" tabindex="-1" target="_blank" rel="noopener noreferrer">
-                <img v-if="icon.name.includes('creature_shift') && !tableObj.pseuds.hasOwnProperty(icon.name)" ref="slot" :src="getImage"/>
+                <img v-if="icon.name.includes('creature_shift') && !tableObj.HOP(pseuds,icon.name)" ref="slot" :src="getImage"/>
                 <img v-else ref="slot" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"/>
             </a>
             <template v-else>
-                <img v-if="icon.name.includes('creature_shift') && !tableObj.pseuds.hasOwnProperty(icon.name)" ref="slot" :src="getImage"/>
+                <img v-if="icon.name.includes('creature_shift') && !tableObj.HOP(pseuds,icon.name)" ref="slot" :src="getImage"/>
                 <img v-else ref="slot" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"/>
             </template>
             </div>
-        <perk-tooltip v-if="icon.name.includes('creature_shift') && !tableObj.pseuds.hasOwnProperty(icon.name)" 
+        <perk-tooltip v-if="icon.name.includes('creature_shift') && !tableObj.HOP(pseuds,icon.name)" 
             ref="tooltip" :icon="getPerk" :amount="icon.amount" :name="icon.name" :src="getImage"></perk-tooltip>
         <perk-tooltip v-else 
             ref="tooltip" :icon="getPerk" :amount="icon.amount" :name="icon.name" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"></perk-tooltip>
@@ -1596,12 +1596,12 @@ const containerComp = Vue.component('wands-container', {
             let out = {
                 icons: {
                     perks: icons.perks,
-                    spells: icons.spells.filter((x) => spellDataMain.hasOwnProperty(x.id)),
+                    spells: icons.spells.filter((x) => HOP(spellDataMain, x.id)),
                     enemies: enemies,
                 },
                 prog: {
                     perks: progress.perks,
-                    spells: progress.spells.filter((x) => spellDataMain.hasOwnProperty(x)),
+                    spells: progress.spells.filter((x) => HOP(spellDataMain, x)),
                     enemies: progress.enemies.filter((x) => enemies.map((y) => y.id).includes(x)),
                 },
             }
@@ -1612,7 +1612,7 @@ const containerComp = Vue.component('wands-container', {
                         perks: progress.perks.filter((x) =>
                             icons.perks.map((y) => y.id).includes(x),
                         ),
-                        spells: progress.spells.filter((x) => spellData.hasOwnProperty(x)),
+                        spells: progress.spells.filter((x) => HOP(spellData, x)),
                         enemies: progress.enemies.filter((x) =>
                             icons.enemies.map((y) => y.id).includes(x),
                         ),
@@ -1626,7 +1626,7 @@ const containerComp = Vue.component('wands-container', {
                         perks: progress.perks.filter((x) =>
                             apothIcons.perks.map((y) => y.id).includes(x),
                         ),
-                        spells: progress.spells.filter((x) => spellDataApoth.hasOwnProperty(x)),
+                        spells: progress.spells.filter((x) => HOP(spellDataApoth, x)),
                         enemies: progress.enemies.filter((x) =>
                             apothIcons.enemies.map((y) => y.id).includes(x),
                         ),
@@ -1872,7 +1872,7 @@ const Progress = Vue.component('prog-comp', {
                     if (!meta[metaKeys[metaInd]]) return
                     const keys = meta[metaKeys[metaInd]]
                     const re = new RegExp('[><][d.-]*')
-                    if (keys.some((key) => spell.hasOwnProperty(key))) {
+                    if (keys.some((key) => HOP(spell, key))) {
                         // check if current spell has the meta property we are searching by
                         if (/type=\w+/.test(metaSearch)) {
                             // check if we are searching by spell type
@@ -1890,7 +1890,7 @@ const Progress = Vue.component('prog-comp', {
                             // otherwise we are searching by a meta property
                             const parts = metaSearch.split(/([><])+/)
                             if (!parts[2]) return
-                            const cmpFilter = keys.filter((key) => spell.hasOwnProperty(key))
+                            const cmpFilter = keys.filter((key) => HOP(spell, key))
                             let val = parseFloat(parts[2])
                             if (dmg25.indexOf(keys[0]) > -1) {
                                 val *= 25
@@ -2004,7 +2004,7 @@ const IconComp = Vue.component('icon-comp', {
             const id = this.icon.id
 
             let data = spellDataMain
-            let img = icons.spells.filter((x) => spellDataMain.hasOwnProperty(x.id))
+            let img = icons.spells.filter((x) => HOP(spellDataMain, x.id))
             if (this.switches.betaContent.state) {
                 data = spellData
                 img = icons.spells
@@ -2021,8 +2021,8 @@ const IconComp = Vue.component('icon-comp', {
             }
             return {
                 id: id,
-                img: (keyedImages.hasOwnProperty(id) ? keyedImages[id] : icons.pseuds.find((x) => x.id == "missingSpell")),
-                data: (data.hasOwnProperty(id) ? data[id] : missing),
+                img: (HOP(keyedImages, id) ? keyedImages[id] : icons.pseuds.find((x) => x.id == "missingSpell")),
+                data: (HOP(data, id) ? data[id] : missing),
             }
         },
     },

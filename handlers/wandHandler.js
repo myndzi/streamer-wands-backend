@@ -57,8 +57,8 @@ exports.validate = (data) => {
     let runInfo = {
         mods: [],
         beta: "",
-        ngp: "",
-        seed: "",
+        ngp: 0,
+        seed: 0,
     }
     let playerInfo = {
         perks: [[], []],
@@ -130,8 +130,8 @@ exports.validate = (data) => {
     let validatedRunInfo = {}
     validatedRunInfo.mods = runInfo.mods.filter(strFilter)
     validatedRunInfo.beta = typeValidation("boolean", runInfo.beta)
-    validatedRunInfo.ngp = typeValidation("string", runInfo.ngp)
-    validatedRunInfo.seed = typeValidation("string", runInfo.seed)
+    validatedRunInfo.ngp = numberValidation(runInfo.ngp)
+    validatedRunInfo.seed = numberValidation(runInfo.seed)
 
     const validatedApothInfo = {}
     validatedApothInfo.shifts = []
