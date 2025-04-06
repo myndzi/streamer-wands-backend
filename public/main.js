@@ -767,7 +767,7 @@ const mapComp = Vue.component('map-comp', {
             <p v-if="!features.seed"><i>Seed Hidden</i></p>
             <p v-else-if="!seedInfo">No current run</p>
             <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
-                <map-tooltip :seed="seedInfo.seed" :mods="info.mods"></map-tooltip>
+                <map-tooltip :seed="seedInfo.seed" :ngp="info.ngp"></map-tooltip>
             </a>
             <p v-else>Map {{ seedInfo.seed }}</p>
             <template v-if="features.pos">
@@ -812,12 +812,12 @@ const mapTooltip = Vue.component('map-tooltip', {
             }
         },
     },
-    props: ["seed", "mods"],
+    props: ["seed", "ngp"],
     template: /* html */`
     <div ref="slot" class="shifts-tip" @mouseenter="updateTip">
         <p>Map {{ seed }}</p>
         <div ref="tooltip" class="tooltip fit">
-            <p>Seed was incremented by {{ this.mods.ngp ? this.mods.ngp : 0 }}.</p>
+            <p>Seed was incremented by {{ this.ngp }}.</p>
             <p>(to display correct NG+ noitool shifts)</p>
         </div>
     </div>`
