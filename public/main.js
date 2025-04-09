@@ -1431,14 +1431,6 @@ const perkComp = Vue.component('perk-comp', {
                 // compose creature shift icon image
                 img[1].onload = () => {
                     ctx[1].drawImage(img[1], 0, 0)
-                    // hardfixed cleanup pixel co-ords
-                    let cleanup = [
-                        [4, 3],
-                        [12, 3],
-                        [4, 11],
-                        [12, 11],
-                    ]
-
                     let imageData1 = ctx[1].getImageData(0, 0, canvas[1].width, canvas[1].height)
                     let data1 = imageData1.data
                     frameBGColor = rgbaChannels.slice(0, 3).map((ch) => data1[xyToIndex(5, 4, 16) + ch])
@@ -1462,14 +1454,18 @@ const perkComp = Vue.component('perk-comp', {
                                 }
                             }
                         }
-                        cleanup.forEach((coord) => {
-                            if (x == coord[0] && y == coord[1]) {
-                                for (let ch = 0; ch < 4; ch++) {
-                                    data1[i + ch] = frameCleanColor[ch]
-                                }
-                            }
-                        })
                     }
+                    let cleanup = [
+                        [4, 3],
+                        [12, 3],
+                        [4, 11],
+                        [12, 11],
+                    ].map((xy) => xyToIndex(...xy, 16))
+                    cleanup.forEach((i) => {
+                        for (let ch = 0; ch < 4; ch++) {
+                            data1[i + ch] = frameCleanColor[ch]
+                        }
+                    })
                     ctx[1].putImageData(imageData1, 0, 0)
                     this.url = canvas[1].toDataURL()
                 }
