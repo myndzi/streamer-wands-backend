@@ -1581,10 +1581,11 @@ const containerComp = Vue.component('wands-container', {
     },
     computed: {
         dataVersion() {
-            const progress = Object.keys(this.progress).length > 0 ? this.progress : {
+            const progress = {
                 perks: [],
                 spells: [],
                 enemies: [],
+                ...this.progress,
             }
             let enemies = icons.enemies.filter((x) => !x.beta)
             let out = {
