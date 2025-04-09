@@ -1554,7 +1554,7 @@ const containerComp = Vue.component('wands-container', {
                     className: 'beta-content',
                 },
                 apothContent: {
-                    state: streamerRunInfo.mods.indexOf('Apotheosis') > -1,
+                    state: HOP(streamerRunInfo, "mods") && HOP(streamerRunInfo.mods, "apotheosis"),
                     label: 'Show Apotheosis Content',
                     className: 'apoth-content',
                 },
@@ -1581,12 +1581,11 @@ const containerComp = Vue.component('wands-container', {
     },
     computed: {
         dataVersion() {
-            const progress = this.progress || {
+            const progress = Object.keys(this.progress).length > 0 ? this.progress : {
                 perks: [],
                 spells: [],
                 enemies: [],
             }
-
             let enemies = icons.enemies.filter((x) => !x.beta)
             let out = {
                 icons: {
@@ -1713,6 +1712,7 @@ const containerComp = Vue.component('wands-container', {
     <div v-if="modVersion != currentVersion" class="outdated">
                 <p>Streamer is running outdated version: {{ modVersion }}</p>
                 <p>Modules will probably break, please update to version: {{ currentVersion }} </p>
+                <p>Note: If you just installed the mod try refreshing the page after you load into Noita with the mod enabled</p>
             </div>
             <div class="inventory-wrapper">
                 <spell-inv :spells="inventory" :items="items"></spell-inv>

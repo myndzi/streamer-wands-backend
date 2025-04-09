@@ -14,7 +14,7 @@ exports.getWands = async (req, res, next) => {
             title: `${streamer.name} wands`,
             streamer: streamer.name,
             currentVersion: currentModVersion,
-            modVersion: streamer.modVersion || "",
+            modVersion: streamer.modVersion || "no version found",
             modFeatures: streamer.modFeatures || {},
             wands: streamer.wands || [],
             inventory: streamer.inventory || [],

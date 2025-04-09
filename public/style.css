@@ -460,7 +460,11 @@ p {
 }
 
 .outdated p:first-child {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.outdated p:last-child {
+    font-size: 0.8rem;
 }
 
 .download {
