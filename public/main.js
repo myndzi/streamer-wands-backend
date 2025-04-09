@@ -1,4 +1,6 @@
 const HOP = (obj, key) => Object.prototype.hasOwnProperty.call(obj, key)
+const xyToIndex = (x, y, w) => x * 4 + (y * 4 * w)
+const indexToXY = (i, w) => [Math.floor(i % (w * 4) / 4), Math.floor(i / (w * 4))]
 
 const WandContainer = Vue.component('wand-comp', {
     props: ['stats', 'ac', 'deck'],
@@ -374,11 +376,12 @@ const ItemSlot = Vue.component('item-slot', {
                 // streamer-wands noita mod outputs as an ABGR 8 byte number
                 // so & with relavent FF byte and shift the bits
                 color = {
-                    r: c & 0x000000ff,
-                    g: (c & 0x0000ff00) >> 8,
-                    b: (c & 0x00ff0000) >> 16,
-                    // a: 0xFF + ((c & 0xFF000000) >> 24),
+                    r: c & 0xFF,
+                    g: c >> 8 & 0xFF,
+                    b: c >> 16 & 0xFF,
+                    a: c >> 24 & 0xFF,
                 }
+                // color = [c & 0xFF, c >> 8 & 0xFF, c >> 16 & 0xFF, c >> 24 & 0xFF]
                 let table = both.splice(1)
                 table.forEach((x) => {
                     let [mat, amt] = x.split('#')
@@ -416,33 +419,37 @@ const ItemSlot = Vue.component('item-slot', {
 
         imgFilter() {
             b64 = 'data:image/png;base64,' + this.itemInfo.sprite
-            // img.onload changes "this" scope so we need to be able to get to "this" via vm
-            let vm = this
             let img = document.createElement('img')
             let canvas = document.createElement('canvas')
-            // material flasks are always 16x16
-            canvas.width = 16
-            canvas.height = 16
+            // upscale from 16x16 to 32x32 image cause thats what the game does when drawing liquid fill lines
+            canvas.width = 32
+            canvas.height = 32
             let ctx = canvas.getContext('2d')
-
+            // make the colors more accurate via brightness, potion/pouch sprites in data/ui_gfx/items
+            // are not quite the same as what they appear in game, and I can't find any data
+            // on the filtering/algorithm to replicate how the game does it
+            let filters = "brightness(116%)"
             img.src = b64
-            img.onload = function () {
-                ctx.drawImage(img, 0, 0)
-
+            img.onload = () => {
+                ctx.imageSmoothingEnabled = false
+                if (this.itemInfo.path == 'data/ui_gfx/items/material_pouch.png') {
+                    filters = "brightness(135%)"
+                }
+                ctx.filter = filters
+                ctx.drawImage(img, 0, 0, 32, 32)
                 let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height)
                 let data = imageData.data
-                // console.log(data)
-                const mat = vm.itemInfo.color
+                const mat = this.itemInfo.color
                 // get fullness of material container as a decimal from 0-1
-                const perc = 1 - vm.itemInfo.mats.reduce((n, { amt }) => n + amt, 0) / 100
+                const perc = 1 - this.itemInfo.mats.reduce((n, { amt }) => n + amt, 0) / 100
                 // all noita materials never fill the top 3 pixels so define an offset
-                const top = 4 * 16 * 3
                 // data is an array of RGBA elements that starts at x=0,y=0
-                for (let x = 0; x < data.length; x += 4) {
-                    let r = data[x]
-                    let g = data[x + 1]
-                    let b = data[x + 2]
-                    // let a = data[x + 3]
+                for (let i = 0; i < data.length; i += 4) {
+                    const [x, y] = indexToXY(i, 32)
+                    let r = data[i]
+                    let g = data[i + 1]
+                    let b = data[i + 2]
+
                     let elevenTall = [
                         'data/ui_gfx/items/material_pouch.png',
                         'data/ui_gfx/items/potion_alchemist.png',
@@ -450,26 +457,19 @@ const ItemSlot = Vue.component('item-slot', {
                     ]
                     // do not recolor pixels if we are either at top of material container
                     // or the material container isn't full enough for coloration at this x/y
-                    if (
-                        elevenTall.some((x) => x == vm.itemInfo.path) &&
-                        (x < top || x < 4 * 16 * 11 * perc + top)
-                    ) {
+                    if ((y < 6 || y < Math.floor(22 * perc + 6)) && elevenTall.some((n) => n == this.itemInfo.path)) {
                         continue
-                    } else if (
-                        vm.itemInfo.path == 'data/ui_gfx/items/potion.png' &&
-                        (x < top || x < 4 * 16 * 12 * perc + top)
-                    ) {
+                    } else if ((y < 6 || y < Math.floor(24 * perc + 6)) && this.itemInfo.path == 'data/ui_gfx/items/potion.png') {
                         continue
                     } else {
-                        // colorize material container by multiplying RGB values and dividing by 256
-                        // in order to normalize value between 0 and 256
-                        data[x] = (mat.r * r) >> 8
-                        data[x + 1] = (mat.g * g) >> 8
-                        data[x + 2] = (mat.b * b) >> 8
+                        // mulitplicative color mixing
+                        data[i] = (mat.r * r) >> 8
+                        data[i + 1] = (mat.g * g) >> 8
+                        data[i + 2] = (mat.b * b) >> 8
                     }
                 }
                 ctx.putImageData(imageData, 0, 0)
-                vm.url = canvas.toDataURL()
+                this.url = canvas.toDataURL()
             }
             return this.url
         },
@@ -1373,6 +1373,9 @@ const perkComp = Vue.component('perk-comp', {
             })
             return out
         },
+        isBackupImage() {
+            return !HOP(this.tableObj.pseuds, this.icon.name)
+        },
         getPerk() {
             if (HOP(this.tableObj.perks, this.icon.name)) {
                 return this.tableObj.perks[this.icon.name]
@@ -1389,8 +1392,6 @@ const perkComp = Vue.component('perk-comp', {
             }
         },
         getImage() {
-            const xyToIndex = (x, y) => x * 4 + (y * 4 * 16)
-            const indexToXY = (i) => [Math.floor(i % (16 * 4) / 4), Math.floor(i / (16 * 4))]
             // get image keys/b64 string
             const name = "$cs_base_" + this.icon.name.slice(41)
             const icon = this.tableObj.enemies[name.slice(9)]
@@ -1400,9 +1401,7 @@ const perkComp = Vue.component('perk-comp', {
             // apotheosis edge case for miniblob
             const offset = icon.id == "miniblob" ? -4 * 4 * 16 : 0
             if (this.icon.name.includes("creature_shift") && !HOP(this.tableObj.pseuds, this.icon.name)) {
-                // img.onload changes "this" scope so we need to be able to get to "this" via vm
-                let vm = this
-                // initialize three 16x16 canvas contexts for pixel retrieval/manipulation
+                // initialize two 16x16 canvas contexts for pixel retrieval/manipulation
                 let img = []
                 let canvas = []
                 let ctx = []
@@ -1420,7 +1419,7 @@ const perkComp = Vue.component('perk-comp', {
                 let rgbaChannels = [0, 1, 2, 3]
                 // extract background frame data
                 img[0].src = iconB64
-                img[0].onload = function () {
+                img[0].onload = () => {
                     ctx[0].drawImage(img[0], 0, 0)
 
                     let imageData = ctx[0].getImageData(0, 0, canvas[0].width, canvas[0].height)
@@ -1430,7 +1429,7 @@ const perkComp = Vue.component('perk-comp', {
                     img[1].src = frameB64
                 }
                 // compose creature shift icon image
-                img[1].onload = function () {
+                img[1].onload = () => {
                     ctx[1].drawImage(img[1], 0, 0)
                     // hardfixed cleanup pixel co-ords
                     let cleanup = [
@@ -1442,11 +1441,11 @@ const perkComp = Vue.component('perk-comp', {
 
                     let imageData1 = ctx[1].getImageData(0, 0, canvas[1].width, canvas[1].height)
                     let data1 = imageData1.data
-                    frameBGColor = rgbaChannels.slice(0, 3).map((ch) => data1[xyToIndex(5, 4) + ch])
-                    frameCleanColor = rgbaChannels.map((ch) => data1[xyToIndex(5, 2) + ch])
+                    frameBGColor = rgbaChannels.slice(0, 3).map((ch) => data1[xyToIndex(5, 4, 16) + ch])
+                    frameCleanColor = rgbaChannels.map((ch) => data1[xyToIndex(5, 2, 16) + ch])
 
                     for (let i = 0; i < data1.length; i += 4) {
-                        [x, y] = indexToXY(i)
+                        const [x, y] = indexToXY(i, 16)
                         // let resPix = false
                         if ((x > 3 && y > 2) && (x < 13 && y < 12)) {
                             // let iconPix = [iconArray[i], iconArray[i + 1], iconArray[i + 2]]
@@ -1472,7 +1471,7 @@ const perkComp = Vue.component('perk-comp', {
                         })
                     }
                     ctx[1].putImageData(imageData1, 0, 0)
-                    vm.url = canvas[1].toDataURL()
+                    this.url = canvas[1].toDataURL()
                 }
             }
             return this.url
@@ -1484,15 +1483,15 @@ const perkComp = Vue.component('perk-comp', {
     <div class="icon-slot no-bg">
         <div class="zoom no-bg">
             <a v-if="getPerk.wiki_url" :href="getPerk.wiki_url" tabindex="-1" target="_blank" rel="noopener noreferrer">
-                <img v-if="icon.name.includes('creature_shift') && !tableObj.HOP(pseuds,icon.name)" ref="slot" :src="getImage"/>
+                <img v-if="icon.name.includes('creature_shift') && isBackupImage" ref="slot" :src="getImage"/>
                 <img v-else ref="slot" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"/>
             </a>
             <template v-else>
-                <img v-if="icon.name.includes('creature_shift') && !tableObj.HOP(pseuds,icon.name)" ref="slot" :src="getImage"/>
+                <img v-if="icon.name.includes('creature_shift') && isBackupImage" ref="slot" :src="getImage"/>
                 <img v-else ref="slot" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"/>
             </template>
             </div>
-        <perk-tooltip v-if="icon.name.includes('creature_shift') && !tableObj.HOP(pseuds,icon.name)" 
+        <perk-tooltip v-if="icon.name.includes('creature_shift') && isBackupImage" 
             ref="tooltip" :icon="getPerk" :amount="icon.amount" :name="icon.name" :src="getImage"></perk-tooltip>
         <perk-tooltip v-else 
             ref="tooltip" :icon="getPerk" :amount="icon.amount" :name="icon.name" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"></perk-tooltip>
