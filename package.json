@@ -1,7 +1,7 @@
 {
     "name": "streamer_wands",
     "version": "1.2.7",
-    "modVersion": "1.2.7",
+    "modVersion": "1.2.7-dev.0",
     "description": "",
     "main": "index.js",
     "scripts": {
