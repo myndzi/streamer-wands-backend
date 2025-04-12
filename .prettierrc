@@ -1,21 +1,23 @@
 {
-    "semi": false,
-    "singleQuote": true,
-    "tabWidth": 4,
-    "printWidth": 100,
-    "overrides": [
-        {
-            "files": "mod/**/*",
-            "options": {
-                "endOfLine": "crlf"
-            }
-        },
-        {
-            "files": "mod/**/*.xml",
-            "options": {
-                "endOfLine": "crlf",
-                "useTabs": true
-            }
-        }
-    ]
+  "semi": true,
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "printWidth": 100,
+  "overrides": [
+    {
+      "files": "mod/**/*",
+      "options": {
+        "endOfLine": "crlf"
+      }
+    },
+    {
+      "files": "mod/**/*.xml",
+      "options": {
+        "endOfLine": "crlf",
+        "useTabs": true
+      }
+    }
+  ]
 }

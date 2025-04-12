@@ -11,15 +11,16 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@sinclair/typebox": "^0.34.33",
         "body-parser": "^1.20.2",
         "connect-mongo": "^5.1.0",
         "dotenv": "^16.0.3",
-        "express": "^4.17.1",
+        "express": "^5.1.0",
         "express-session": "^1.17.3",
         "jsonwebtoken": "^9.0.0",
         "jszip": "^3.10.1",
         "mongoose": "^7.2.1",
-        "multer": "^1.4.5-lts.1",
+        "multer": "^1.4.5-lts.2",
         "passport": "^0.6.0",
         "passport-twitch-strategy": "^2.2.0",
         "pug": "^3.0.2",
@@ -27,7 +28,17 @@
         "ws": "^8.13.0"
     },
     "devDependencies": {
+        "@types/express": "^5.0.1",
+        "@types/express-session": "^1.18.1",
+        "@types/jsonwebtoken": "^9.0.9",
+        "@types/multer": "^1.4.12",
+        "@types/node": "^22.14.1",
+        "@types/passport": "^1.0.17",
+        "@types/ws": "^8.18.1",
         "nodemon": "^3.0.1",
-        "prettier": "^3.0.3"
+        "prettier": "^3.5.3",
+        "tsup": "^8.4.0",
+        "tsx": "^4.19.3",
+        "typescript": "^5.8.3"
     }
 }

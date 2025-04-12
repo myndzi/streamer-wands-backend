@@ -2,3 +2,4 @@
 /.env
 /mod.zip
 .DS_Store
+/config.json

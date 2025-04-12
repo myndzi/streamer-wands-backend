@@ -1,38 +1,52 @@
 {
-    "editor.formatOnSave": true,
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/*.code-search": true,
-        ".env": true
-    },
-    "files.exclude": {
-        ".env": true,
-        "**/node_modules": true,
-    },
-    "[js]": {
-        "editor.defaultFoldingRangeProvider": "esbenp.prettier-vscode"
-    },
-    "[lua]": {
-        "files.eol": "\r\n"
-    },
-    "[xml]": {
-        "files.eol": "\r\n",
-        "editor.detectIndentation": false,
-        "editor.insertSpaces": false,
-        "editor.defaultFormatter": "redhat.vscode-xml"
-    },
-    "[jade]": {
-        "editor.defaultFormatter": "ducfilan.pug-formatter"
-    },
-    "xml.format.maxLineWidth": 140,
-    "xml.format.closingBracketNewLine": true,
-    "xml.format.splitAttributes": true,
-    "xml.format.splitAttributesIndentSize": 1,
-    "Lua.workspace.ignoreDir": [
-        ".vscode",
-        "mod/files/scripts/json.lua",
-        "mod/files/scripts/coroutines.lua"
-    ],
-    "Lua.diagnostics.ignoredFiles": "Disable"
+  "editor.formatOnSave": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    ".env": true
+  },
+  "files.exclude": {
+    ".env": true,
+    "**/node_modules": true
+  },
+  "editor.tabSize": 2,
+  "[js]": {
+    "editor.defaultFoldingRangeProvider": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ts]": {
+    "editor.defaultFoldingRangeProvider": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFoldingRangeProvider": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFoldingRangeProvider": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[lua]": {
+    "files.eol": "\r\n"
+  },
+  "[xml]": {
+    "files.eol": "\r\n",
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[jade]": {
+    "editor.defaultFormatter": "ducfilan.pug-formatter"
+  },
+  "xml.format.maxLineWidth": 140,
+  "xml.format.closingBracketNewLine": true,
+  "xml.format.splitAttributes": true,
+  "xml.format.splitAttributesIndentSize": 1,
+  "Lua.workspace.ignoreDir": [
+    ".vscode",
+    "mod/files/scripts/json.lua",
+    "mod/files/scripts/coroutines.lua"
+  ],
+  "Lua.diagnostics.ignoredFiles": "Disable"
 }
