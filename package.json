@@ -13,9 +13,11 @@
     "dependencies": {
         "body-parser": "^1.20.2",
         "connect-mongo": "^5.1.0",
+        "domutils": "^3.2.2",
         "dotenv": "^16.0.3",
         "express": "^4.17.1",
         "express-session": "^1.17.3",
+        "htmlparser2": "^10.0.0",
         "jsonwebtoken": "^9.0.0",
         "jszip": "^3.10.1",
         "mongoose": "^7.2.1",
