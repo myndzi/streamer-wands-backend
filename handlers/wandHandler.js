@@ -61,7 +61,6 @@ exports.validate = (data) => {
         ngp: 0,
         seed: 0,
         start: "",
-        streak: 0,
         playtime: 0,
         ...data?.runInfo
     }
@@ -115,7 +114,6 @@ exports.validate = (data) => {
     validatedRunInfo.start = new Date(Date.UTC(...date))
     validatedRunInfo.ngp = numberValidation(runInfo.ngp)
     validatedRunInfo.seed = numberValidation(runInfo.seed)
-    validatedRunInfo.streak = numberValidation(runInfo.streak)
     validatedRunInfo.playtime = numberValidation(runInfo.playtime)
     validatedRunInfo.idletime = Date.now() - validatedRunInfo.start
 

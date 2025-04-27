@@ -1,6 +1,22 @@
 const HOP = (obj, key) => Object.prototype.hasOwnProperty.call(obj, key)
 const xyToIndex = (x, y, w) => x * 4 + (y * 4 * w)
 const indexToXY = (i, w) => [Math.floor(i % (w * 4) / 4), Math.floor(i / (w * 4))]
+const secondsToTimeArray = (sec) => {
+    const out = []
+    const time = {
+        days: sec / 3600 / 24 % 24,
+        hr: sec / 3600 % 60,
+        min: sec / 60 % 60,
+        sec: sec % 60,
+    }
+    Object.entries(time).forEach(([label, num]) => {
+        if (num > 1) {
+            out.push(Math.floor(num) + label)
+        }
+    })
+    return out
+}
+
 
 const WandContainer = Vue.component('wand-comp', {
     props: ['stats', 'ac', 'deck'],
@@ -751,24 +767,15 @@ const mapComp = Vue.component('map-comp', {
         },
         start() {
             const date = new Date(this.info.start)
-            const rantSec = this.info.idletime / 1000
-            const rantStr = []
-            const time = {
-                days: rantSec / 3600 / 24,
-                hr: rantSec / 3600,
-                min: rantSec / 60,
-                sec: rantSec,
-            }
-            Object.entries(time).forEach(([label, num]) => {
-                if (num > 1) {
-                    rantStr.push(Math.floor(num) + label)
-                }
-            })
+            const rantArr = secondsToTimeArray(this.info.idletime / 1000)
+            const playArr = secondsToTimeArray(this.info.playtime)
+
             return {
                 date: date.toLocaleDateString(),
                 time: date.toLocaleTimeString(),
-                rant: rantStr.join(" "),
-                under100: rantStr.length == 4 && rantStr[0] < 100,
+                rant: rantArr.join(" "),
+                playtime: playArr.join(" "),
+                under100: rantArr.length == 4 && rantArr[0] < 100,
             }
         }
     },
@@ -802,8 +809,7 @@ const mapComp = Vue.component('map-comp', {
             <p v-if="features.ngp">In {{ osd.pw }}{{ osd.hh }} NG{{ info.ngp > 0 ? ('+' + info.ngp) : "" }}</p>
             <p v-else><i>NG+ Tracker Hidden</i></p>
             <p>World Type: {{ osd.name }}</p>
-            <p>Current Streak: {{ info.streak }}</p>
-            <p>Playtime: {{ info.playtime }}</p>
+            <p>Playtime: {{ start.playtime }}</p>
             <template v-if="start.under100">
                 <p> Run started on {{ start.date }}</p>
                 <p> at {{ start.time }}</p>

@@ -353,7 +353,6 @@ function get_run_info(ngpCheck, seedCheck)
         versions["seed"] = tonumber(StatsGetValue("world_seed"))
     end
     versions["start"] = GlobalsGetValue("start_time", "")
-    versions["streak"] = tonumber(StatsGetValue("streaks"))
     versions["playtime"] = tonumber(StatsGetValue("playtime"))
     return versions
 end

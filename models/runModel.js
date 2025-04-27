@@ -5,7 +5,6 @@ const runSchema = new mongoose.Schema({
     ngp: Number,
     seed: Number,
     start: Date,
-    streak: Number,
     playtime: Number,
     idletime: Number,
 })
