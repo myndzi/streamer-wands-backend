@@ -47,7 +47,7 @@ function OnPlayerSpawned(player_entity)
 end
 
 function OnWorldInitialized()
-    if GlobalsGetValue("start_time", "") ~= "" then
+    if GlobalsGetValue("start_time", "") == "" then
         local year, month, day, hour, minute, second = GameGetDateAndTimeUTC()
         GlobalsSetValue("start_time", table.concat({ year, month - 1, day, hour, minute, second }, ","))
     end

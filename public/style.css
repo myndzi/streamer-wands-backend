@@ -795,6 +795,10 @@ a:visited {
     padding-left: 20px;
 }
 
+.map-tip {
+    white-space: pre-line;
+}
+
 .wands-tip {
     white-space: wrap;
 }

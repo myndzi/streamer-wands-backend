@@ -115,8 +115,8 @@ exports.validate = (data) => {
     validatedRunInfo.ngp = numberValidation(runInfo.ngp)
     validatedRunInfo.seed = numberValidation(runInfo.seed)
     validatedRunInfo.playtime = numberValidation(runInfo.playtime)
-    validatedRunInfo.idletime = Date.now() - validatedRunInfo.start
-
+    const rant = (new Date() - validatedRunInfo.start) / 1000 - validatedRunInfo.playtime
+    validatedRunInfo.idletime = Math.ceil(rant / 3) * 3
     const validatedApothInfo = {}
     validatedApothInfo.shifts = []
     if (apothInfo.csShifts) {

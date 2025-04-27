@@ -629,6 +629,7 @@ const mapComp = Vue.component('map-comp', {
             mapData: {},
             loaded: false,
             // input: "0,0",
+            tipSeed: `Seed was incremented by ${this.info.ngp}.\n(to display correct NG+ noitool shifts)`,
         }
     },
     mounted() {
@@ -767,15 +768,18 @@ const mapComp = Vue.component('map-comp', {
         },
         start() {
             const date = new Date(this.info.start)
-            const rantArr = secondsToTimeArray(this.info.idletime / 1000)
+            const rantArr = secondsToTimeArray(this.info.idletime)
             const playArr = secondsToTimeArray(this.info.playtime)
+            const dateStr = date.toLocaleDateString()
+            const timeStr = date.toLocaleTimeString()
+            const rantStr = rantArr.join(" ")
+            const rantRatio = this.info.idletime / this.info.playtime * 100
 
             return {
-                date: date.toLocaleDateString(),
-                time: date.toLocaleTimeString(),
-                rant: rantArr.join(" "),
                 playtime: playArr.join(" "),
-                under100: rantArr.length == 4 && rantArr[0] < 100,
+                over100: rantArr.length == 4 && rantArr[0] > 100,
+                mainTime: `Run started on ${dateStr}\nat ${timeStr}`,
+                tipTime: `Ranted for ${rantStr}\n(${rantRatio.toFixed(2)}% of runtime)`,
             }
         }
     },
@@ -795,7 +799,7 @@ const mapComp = Vue.component('map-comp', {
             <p v-if="!features.seed"><i>Seed Hidden</i></p>
             <p v-else-if="!seedInfo">No current run</p>
             <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
-                <map-tooltip :seed="seedInfo.seed" :ngp="info.ngp"></map-tooltip>
+                <map-tooltip :main="'Map ' + seedInfo.seed" :tip="tipSeed"></map-tooltip>
             </a>
             <p v-else>Map {{ seedInfo.seed }}</p>
             <template v-if="features.pos">
@@ -810,11 +814,7 @@ const mapComp = Vue.component('map-comp', {
             <p v-else><i>NG+ Tracker Hidden</i></p>
             <p>World Type: {{ osd.name }}</p>
             <p>Playtime: {{ start.playtime }}</p>
-            <template v-if="start.under100">
-                <p> Run started on {{ start.date }}</p>
-                <p> at {{ start.time }}</p>
-                <p>Ranted for {{ start.rant }}</p>
-            </template>
+            <map-tooltip v-if="!start.over100" :main="start.mainTime" :tip="start.tipTime"></map-tooltip>
         </div>
     </div>`
 })
@@ -846,13 +846,12 @@ const mapTooltip = Vue.component('map-tooltip', {
             }
         },
     },
-    props: ["seed", "ngp"],
+    props: ["main", "tip"],
     template: /* html */`
     <div ref="slot" class="shifts-tip" @mouseenter="updateTip">
-        <p>Map {{ seed }}</p>
+        <p class="map-tip">{{ main }}</p>
         <div ref="tooltip" class="tooltip fit">
-            <p>Seed was incremented by {{ this.ngp }}.</p>
-            <p>(to display correct NG+ noitool shifts)</p>
+            <p class="map-tip">{{ tip }}</p>
         </div>
     </div>`
 })
