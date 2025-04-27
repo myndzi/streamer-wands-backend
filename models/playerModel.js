@@ -7,6 +7,7 @@ const playerSchema = new mongoose.Schema({
     shiftsTimer: Number,
     health: [Number],
     gold: Number,
+    orbs: Number,
     x: Number,
     y: Number,
 })

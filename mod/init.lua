@@ -46,6 +46,13 @@ function OnPlayerSpawned(player_entity)
     dofile("mods/streamer_wands/files/ws/ws.lua")
 end
 
+function OnWorldInitialized()
+    if GlobalsGetValue("start_time", "") ~= "" then
+        local year, month, day, hour, minute, second = GameGetDateAndTimeUTC()
+        GlobalsSetValue("start_time", table.concat({ year, month - 1, day, hour, minute, second }, ","))
+    end
+end
+
 function OnWorldPreUpdate()
     if ModSettingGet("streamer_wands.seed") then return end
     if StatsGetValue("dead") ~= "1" then return end

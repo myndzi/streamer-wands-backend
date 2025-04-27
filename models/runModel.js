@@ -4,6 +4,10 @@ const runSchema = new mongoose.Schema({
     beta: String,
     ngp: Number,
     seed: Number,
+    start: Date,
+    streak: Number,
+    playtime: Number,
+    idletime: Number,
 })
 
 module.exports = mongoose.model('Run Info', runSchema)

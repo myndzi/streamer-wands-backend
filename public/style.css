@@ -563,8 +563,8 @@ a:visited {
 .player-info {
     display: flex;
     flex-flow: row wrap;
-    gap: 1rem;
-    max-width: 700px;
+    gap: 0.9rem;
+    max-width: 720px;
     justify-content: center;
 }
 
@@ -1335,7 +1335,6 @@ a:visited {
     transform: translate(-50%, -50%)
 }
 
-
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -1790,4 +1789,32 @@ crit
     image-rendering: pixelated;
     position: relative;
     top: -2px;
+}
+
+.more::before {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 35px;
+    width: 35px;
+    content: "";
+    background-size: cover;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeUlEQVR4nGP8//8/AyWAiSLdDAwMLOgCRnJy/9m42LEq/vXtJ5g+9+gRI0yMEdkL+DSjGwQzhAlZghjN6OqYGCgETDQx4MSN2wTZWAPRQkOV6ERx4sZtzEAkBzBhi2dCAFkdEwOFgBE9L4ASE4jGliYIpkRywMAnJAAc2zWAlTa4VAAAAABJRU5ErkJggg==');
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.orb::before {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 14px;
+    width: 14px;
+    content: "";
+    background-size: cover;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAKElEQVR4nGNggIL/UADjowBkCQxF2CSRxZiQFTMyMjKSbgVRjqQIAACylSvb4bEk9gAAAABJRU5ErkJggg==');
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }

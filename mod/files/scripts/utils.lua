@@ -70,8 +70,13 @@ function get_perks()
         local pseudo_tag = EntityHasTag(child, "pseudo_perk")
         local greed_tag = EntityHasTag(child, "greed_curse")
         if perk_tag or essence_tag or pseudo_tag or greed_tag or perk_comp then
-            local ui_comp = EntityGetFirstComponentIncludingDisabled(child, "UIIconComponent")
-            if ui_comp ~= nil then
+            ui_comp = EntityGetFirstComponentIncludingDisabled(child, "UIIconComponent")
+            game_effect_comp = EntityGetFirstComponentIncludingDisabled(child, "GameEffectComponent")
+            local frames = 0
+            if game_effect_comp ~= nil then
+                frames = ComponentGetValue2(game_effect_comp, "frames")
+            end
+            if ui_comp ~= nil and frames == 0 then
                 local name = ComponentGetValue2(ui_comp, "name")
                 if name == "$status_apotheosis_creature_shifted_name" then
                     sprite = ComponentGetValue2(ui_comp, "icon_sprite_file")
@@ -95,9 +100,10 @@ function get_player_info()
     local hp_comp = EntityGetFirstComponentIncludingDisabled(player, "DamageModelComponent")
     local money_comp = EntityGetFirstComponentIncludingDisabled(player, "WalletComponent")
     local money = ComponentGetValue2(money_comp, "money")
+    local orbs = GameGetOrbCountThisRun()
     local max_hp = ComponentGetValue2(hp_comp, "max_hp")
     local hp = ComponentGetValue2(hp_comp, "hp")
-    return { hp, max_hp, money }
+    return { hp, max_hp, money, orbs }
 end
 
 function get_shift_timer()
@@ -346,6 +352,9 @@ function get_run_info(ngpCheck, seedCheck)
     if seedCheck then
         versions["seed"] = tonumber(StatsGetValue("world_seed"))
     end
+    versions["start"] = GlobalsGetValue("start_time", "")
+    versions["streak"] = tonumber(StatsGetValue("streaks"))
+    versions["playtime"] = tonumber(StatsGetValue("playtime"))
     return versions
 end
 
@@ -478,6 +487,7 @@ function serialize_data()
     local player_info = get_player_info()
     info["health"] = { player_info[1], player_info[2] }
     info["gold"] = player_info[3]
+    info["orbs"] = player_info[4]
     local posCheck = ModSettingGet("streamer_wands.position")
     if posCheck then
         info["pos"] = get_player_pos()

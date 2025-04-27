@@ -610,7 +610,6 @@ const worldComp = Vue.component('world-comp', {
 const mapComp = Vue.component('map-comp', {
     data() {
         return {
-            tooltip: null,
             mapData: {},
             loaded: false,
             // input: "0,0",
@@ -750,6 +749,28 @@ const mapComp = Vue.component('map-comp', {
                 yStar: yStar + 'px',
             }
         },
+        start() {
+            const date = new Date(this.info.start)
+            const rantSec = this.info.idletime / 1000
+            const rantStr = []
+            const time = {
+                days: rantSec / 3600 / 24,
+                hr: rantSec / 3600,
+                min: rantSec / 60,
+                sec: rantSec,
+            }
+            Object.entries(time).forEach(([label, num]) => {
+                if (num > 1) {
+                    rantStr.push(Math.floor(num) + label)
+                }
+            })
+            return {
+                date: date.toLocaleDateString(),
+                time: date.toLocaleTimeString(),
+                rant: rantStr.join(" "),
+                under100: rantStr.length == 4 && rantStr[0] < 100,
+            }
+        }
     },
     props: ['player', 'info', 'features'],
     inject: ['switches'],
@@ -781,6 +802,13 @@ const mapComp = Vue.component('map-comp', {
             <p v-if="features.ngp">In {{ osd.pw }}{{ osd.hh }} NG{{ info.ngp > 0 ? ('+' + info.ngp) : "" }}</p>
             <p v-else><i>NG+ Tracker Hidden</i></p>
             <p>World Type: {{ osd.name }}</p>
+            <p>Current Streak: {{ info.streak }}</p>
+            <p>Playtime: {{ info.playtime }}</p>
+            <template v-if="start.under100">
+                <p> Run started on {{ start.date }}</p>
+                <p> at {{ start.time }}</p>
+                <p>Ranted for {{ start.rant }}</p>
+            </template>
         </div>
     </div>`
 })
@@ -1295,6 +1323,7 @@ const playerComp = Vue.component('player-comp', {
                 shortGold: Intl.NumberFormat('en-US', { notation: "compact" }).format(player.gold),
                 names: player.names,
                 amounts: player.amounts,
+                orbs: player.orbs,
             }
         }
     },
@@ -1311,6 +1340,9 @@ const playerComp = Vue.component('player-comp', {
                 <p v-if="updatePlayer.finite.gold" class="money" ref="slotGold">{{ updatePlayer.shortGold }}</p>
                 <p v-else class="money" ref="slotGold">&#8734;</p>
                 <p class="tooltip fit" ref="tipGold">$: {{ updatePlayer.gold}}</p>
+            </div>
+            <div class="tip">
+                <p class="orb">{{ updatePlayer.orbs }}</p>
             </div>
             <v-switch v-model="state" title="Show All Perks"></v-switch>
             <perks-comp :names="updatePlayer.names" :amounts="updatePlayer.amounts" :state="state"></perks-comp>
@@ -1335,9 +1367,10 @@ const perksComp = Vue.component('perks-comp', {
     template: /*html*/`
     <div class="perks">
     <perk-comp v-for="perk in playerPerks.first8" :key="perk.name" 
-    :icon="perk""></perk-comp>
+    :icon="perk"></perk-comp>
+    <div v-if="!state && !playerPerks.first8" class="icon-slot no-bg more"></div>
     <perk-comp v-if="state" v-for="perk in playerPerks.over8" :key="perk.name" 
-    :icon="perk""></perk-comp>
+    :icon="perk"></perk-comp>
     </div>`
 })
 
