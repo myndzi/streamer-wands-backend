@@ -1373,7 +1373,7 @@ const perksComp = Vue.component('perks-comp', {
     <div class="perks">
     <perk-comp v-for="perk in playerPerks.first8" :key="perk.name" 
     :icon="perk"></perk-comp>
-    <div v-if="!state && !playerPerks.first8" class="icon-slot no-bg more"></div>
+    <div v-if="!state && playerPerks.over8.length > 0" class="icon-slot no-bg more"></div>
     <perk-comp v-if="state" v-for="perk in playerPerks.over8" :key="perk.name" 
     :icon="perk"></perk-comp>
     </div>`
