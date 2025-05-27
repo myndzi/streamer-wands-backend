@@ -3,7 +3,6 @@ dofile_once("data/scripts/perks/perk.lua")
 dofile_once("data/scripts/gun/gun_actions.lua")
 dofile_once("mods/streamer_wands/files/scripts/enemyNames.lua")
 dofile_once("mods/streamer_wands/files/scripts/enemyNamesApoth.lua")
-dofile_once("mods/streamer_wands/files/scripts/materials.lua")
 dofile_once("mods/streamer_wands/stats.lua")
 
 function get_player()
@@ -23,9 +22,9 @@ end
 function get_player_pos()
     local x, y = EntityGetTransform(get_player())
     if (x ~= nil) then
-        return x, y
+        return { x, y }
     end
-    return 0, 0
+    return { 0, 0 }
 end
 
 function str_to_table(data)
@@ -71,9 +70,19 @@ function get_perks()
         local pseudo_tag = EntityHasTag(child, "pseudo_perk")
         local greed_tag = EntityHasTag(child, "greed_curse")
         if perk_tag or essence_tag or pseudo_tag or greed_tag or perk_comp then
-            local ui_comp = EntityGetFirstComponentIncludingDisabled(child, "UIIconComponent")
-            if ui_comp ~= nil then
+            ui_comp = EntityGetFirstComponentIncludingDisabled(child, "UIIconComponent")
+            game_effect_comp = EntityGetFirstComponentIncludingDisabled(child, "GameEffectComponent")
+            local frames = 0
+            if game_effect_comp ~= nil then
+                frames = ComponentGetValue2(game_effect_comp, "frames")
+            end
+            if ui_comp ~= nil and frames == 0 then
                 local name = ComponentGetValue2(ui_comp, "name")
+                if name == "$status_apotheosis_creature_shifted_name" then
+                    sprite = ComponentGetValue2(ui_comp, "icon_sprite_file")
+                    last_slash = sprite:match '^.*()/'
+                    name = name .. "_" .. string.sub(sprite, last_slash + 1, -5)
+                end
                 if perks[name] == nil then
                     perks[name] = 1
                     table.insert(order, name)
@@ -91,28 +100,66 @@ function get_player_info()
     local hp_comp = EntityGetFirstComponentIncludingDisabled(player, "DamageModelComponent")
     local money_comp = EntityGetFirstComponentIncludingDisabled(player, "WalletComponent")
     local money = ComponentGetValue2(money_comp, "money")
+    local orbs = GameGetOrbCountThisRun()
     local max_hp = ComponentGetValue2(hp_comp, "max_hp")
     local hp = ComponentGetValue2(hp_comp, "hp")
-    return { hp, max_hp, money }
+    return { hp, max_hp, money, orbs }
 end
 
-function get_shift_info()
-    local world_comp = get_world_state()
-    local mats = ComponentGetValue2(world_comp, "changed_materials")
-    local mats_string = ""
-    for _, mat in ipairs(mats) do
-        local mat_name = GameTextGetTranslatedOrNot("$mat_" .. mat)
-        if mat_name == "" then
-            if materials[mat] then
-                mat_name = GameTextGetTranslatedOrNot(materials[mat])
-            else
-                mat_name = mat
-            end
-        end
-        -- mats[_] = mat .. "@" .. mat_name
-        mats_string = mats_string .. "," .. mat .. "@" .. mat_name
+function get_shift_timer()
+    local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
+    local current_frame = GameGetFrameNum()
+    local shift_timer = (current_frame - last_trip) / 60
+    if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
+        shift_timer = -1
     end
-    return mats_string
+    return shift_timer
+end
+
+function get_shifts()
+    local shiftList = {}
+    local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
+
+    for i = 1, shiftNumber do
+        shiftMaterials = GlobalsGetValue("shift#" .. i, "empty")
+        if i > 1 then
+            local shiftsPrev = GlobalsGetValue("shift#" .. (i - 1), "empty")
+            shiftMaterials = string.sub(shiftMaterials, string.len(shiftsPrev) + 4)
+        end
+        table.insert(shiftList, shiftMaterials)
+    end
+    return shiftList
+end
+
+function get_creature_shift_timer()
+    local last_trip = tonumber(GlobalsGetValue("apotheosis_creature_shift_last_frame", "0"))
+    local current_frame = GameGetFrameNum()
+    local shift_timer = (current_frame - last_trip) / 60
+    if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
+        shift_timer = -1
+    end
+    return shift_timer
+end
+
+function get_creature_shifts(n)
+    local shiftList = {}
+    for i = 1, n do
+        local creatures = {}
+        local pre = "apotheosis_global_Cshift_"
+        for j = 2, 1, -1 do
+            local creature = GlobalsGetValue(pre .. i .. "_targ" .. j, "")
+            local creature_name = GameTextGetTranslatedOrNot("$animal_" .. creature)
+            if creature_name == "" then
+                creature_name = GameTextGetTranslatedOrNot("$enemy_apotheosis_" .. creature)
+                if creature_name == "" then
+                    creature_name = creature
+                end
+            end
+            table.insert(creatures, creature .. "%@%" .. creature_name)
+        end
+        table.insert(shiftList, table.concat(creatures, "<,>"))
+    end
+    return shiftList
 end
 
 function get_inventory()
@@ -294,22 +341,36 @@ function get_inventory_items()
     return inventory
 end
 
-function get_version()
-    local versions = ModGetActiveModIDs()
-    if GameIsBetaBuild() then
-        table.insert(versions, "beta")
+function get_run_info(ngpCheck, seedCheck)
+    local versions = {}
+    local modList = ModGetActiveModIDs()
+    versions["mods"] = modList
+    versions["beta"] = GameIsBetaBuild()
+    if ngpCheck then
+        versions["ngp"] = tonumber(SessionNumbersGetValue("NEW_GAME_PLUS_COUNT"))
     end
-    table.insert(versions, "NG+" .. SessionNumbersGetValue("NEW_GAME_PLUS_COUNT"))
-    local seed = StatsGetValue("world_seed")
-    table.insert(versions, "seed=" .. seed)
+    if seedCheck then
+        versions["seed"] = tonumber(StatsGetValue("world_seed"))
+    end
+    versions["start"] = GlobalsGetValue("start_time", "")
+    versions["playtime"] = tonumber(StatsGetValue("playtime"))
     return versions
+end
+
+function apotheosis_check()
+    for _, mod in ipairs(ModGetActiveModIDs()) do
+        if mod == "apotheosis" or mod == "Apotheosis" then
+            return true
+        end
+    end
+    return false
 end
 
 function get_spells_progress()
     local spells = {}
-    local mods = get_version()
+    local mods = get_run_info()
     local lock = false
-    for i, mod in ipairs(mods) do
+    for _, mod in ipairs(ModGetActiveModIDs()) do
         if mod == "conga_spell_lock" then
             lock = true
         end
@@ -339,10 +400,8 @@ end
 function get_enemies_progress()
     local enemies = {}
     local currentEnemies = enemyNames
-    for _, mod in ipairs(get_version()) do
-        if mod == "apotheosis" or mod == "Apotheosis" then
-            currentEnemies = enemyNamesApoth
-        end
+    if apotheosis_check() then
+        currentEnemies = enemyNamesApoth
     end
     for _, enemy in ipairs(currentEnemies) do
         local flag = "kill_" .. string.lower(enemy)
@@ -363,64 +422,88 @@ function serialize_data()
     if (player == nil) then
         return ""
     end
+    local data = {}
+
     local serialized = {}
     local wands_ids = get_wands()
-    local inventory = get_inventory_spells()
-    local items = get_inventory_items()
-
-    local progress = {}
-    local perks = get_perks_progress()
-    local spells = get_spells_progress()
-    local enemies = get_enemies_progress()
-    table.insert(progress, { perks, spells, enemies })
-
-    local version = get_version()
-
-    local info = {}
-    local fungal_info = {}
-    local shiftList = {}
-
-    local shifts = get_shift_info()
-    local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
-    GlobalsSetValue("shift#" .. shiftNumber, shifts)
-
-    for i = 1, shiftNumber do
-        local shifts = GlobalsGetValue("shift#" .. i, "empty")
-        if i > 1 then
-            local shiftsPrev = GlobalsGetValue("shift#" .. (i - 1), "empty")
-            shifts = string.sub(shifts, string.len(shiftsPrev))
-        end
-        table.insert(shiftList, shifts)
-    end
-
-    local last_trip = tonumber(GlobalsGetValue("fungal_shift_last_frame", "0"))
-    local current_frame = GameGetFrameNum()
-    local shift_timer = (current_frame - last_trip) / 60
-    if (shift_timer >= 300) or (current_frame < 300 * 60 and last_trip == 0) then
-        shift_timer = -1
-    end
-    table.insert(fungal_info, shiftNumber)
-    table.insert(fungal_info, shift_timer)
-
-    local names = {}
-    local amounts = {}
-    local perk_order = get_perks()
-    for i = #perk_order.order, 1, -1 do
-        table.insert(names, perk_order.order[i])
-        table.insert(amounts, perk_order.perks[perk_order.order[i]])
-    end
-
-    local player_info = get_player_info()
-    local health = { player_info[1], player_info[2] }
-    local gold = player_info[3]
-    local x, y = get_player_pos()
-    table.insert(info, { names, amounts, shiftList, fungal_info, health, gold, x, y })
-
     for _, wand in ipairs(wands_ids) do
         local stats = get_wand_stats(wand)
         local always_cast, deck = get_wand_spells(wand)
         table.insert(serialized, { stats, always_cast, deck })
     end
+    data["wands"] = serialized
+    data["inventory"] = get_inventory_spells()
+    data["items"] = get_inventory_items()
 
-    return json.encode({ wands = serialized, inventory = inventory, items = items, progress = progress, version = version, info = info })
+    local perks = get_perks_progress()
+    local spells = get_spells_progress()
+    local enemies = get_enemies_progress()
+    data["progress"] = { perks, spells, enemies }
+
+    local ngpCheck = ModSettingGet("streamer_wands.ngp")
+    local seedCheck = ModSettingGet("streamer_wands.seed")
+    local runInfo = get_run_info(ngpCheck, seedCheck)
+    data["runInfo"] = runInfo
+
+    local apothTimerCheck = ModSettingGet("streamer_wands.apothCreatureTimer")
+    local apothShiftsCheck = ModSettingGet("streamer_wands.apothCreatureShifts")
+    if apotheosis_check() then
+        local apothInfo = {}
+        local creatureShiftNumber = tonumber(GlobalsGetValue("apotheosis_creature_shift_iteration", "0"))
+        apothInfo["csTotal"] = creatureShiftNumber
+        if apothTimerCheck then
+            apothInfo["csTimer"] = get_creature_shift_timer()
+        end
+        if apothShiftsCheck then
+            apothInfo["csShifts"] = get_creature_shifts(creatureShiftNumber)
+        end
+        data["apothInfo"] = apothInfo
+    end
+
+    local info = {}
+    local shiftNumber = tonumber(GlobalsGetValue("fungal_shift_iteration", "0"))
+    info["shiftsTotal"] = shiftNumber
+    local shiftsCheck = ModSettingGet("streamer_wands.shifts")
+    local timerCheck = ModSettingGet("streamer_wands.shiftsTimer")
+    if shiftsCheck then
+        local shiftList = get_shifts()
+        info["shiftsList"] = shiftList
+    end
+    if timerCheck then
+        local shift_timer = get_shift_timer()
+        info["shiftsTimer"] = shift_timer
+    end
+
+    local perk_order = get_perks()
+    local names = {}
+    local amounts = {}
+    for i = #perk_order.order, 1, -1 do
+        table.insert(names, perk_order.order[i])
+        table.insert(amounts, perk_order.perks[perk_order.order[i]])
+    end
+    info["perks"] = { names, amounts }
+
+    local player_info = get_player_info()
+    info["health"] = { player_info[1], player_info[2] }
+    info["gold"] = player_info[3]
+    info["orbs"] = player_info[4]
+    local posCheck = ModSettingGet("streamer_wands.position")
+    if posCheck then
+        info["pos"] = get_player_pos()
+    end
+    data["playerInfo"] = info
+
+    local features = {
+        seed = seedCheck,
+        pos = posCheck,
+        ngp = ngpCheck,
+        shifts = shiftsCheck,
+        timer = timerCheck,
+        apothCreatureTimer = apothTimerCheck,
+        apothCreatureShifts = apothShiftsCheck,
+    }
+
+    data["modFeatures"] = features
+    data["modVersion"] = dofile("mods/streamer_wands/version.lua")
+    return json.encode(data)
 end

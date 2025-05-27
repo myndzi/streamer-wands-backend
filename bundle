@@ -3,7 +3,7 @@
 set -e
 
 name="streamer_wands"
-version="$(jq -r '.version' package.json)"
+version="$(jq -r '.modVersion' package.json)"
 if [ -n "$DEV" ]; then
   version="$version+$(git rev-parse --short HEAD)"
 fi

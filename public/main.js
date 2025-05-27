@@ -1,3 +1,23 @@
+const HOP = (obj, key) => Object.prototype.hasOwnProperty.call(obj, key)
+const xyToIndex = (x, y, w) => x * 4 + (y * 4 * w)
+const indexToXY = (i, w) => [Math.floor(i % (w * 4) / 4), Math.floor(i / (w * 4))]
+const secondsToTimeArray = (sec) => {
+    const out = []
+    const time = {
+        days: sec / 3600 / 24 % 24,
+        hr: sec / 3600 % 60,
+        min: sec / 60 % 60,
+        sec: sec % 60,
+    }
+    Object.entries(time).forEach(([label, num]) => {
+        if (num > 1) {
+            out.push(Math.floor(num) + label)
+        }
+    })
+    return out
+}
+
+
 const WandContainer = Vue.component('wand-comp', {
     props: ['stats', 'ac', 'deck'],
     template: /*html*/`
@@ -135,7 +155,7 @@ const WandStats = Vue.component('wand-stats', {
             }).join('&')
             let deckLink = this.deck.map((spell) => {
                 const spellToCheck = spell.split("_#")[0]
-                return spellDataMain.hasOwnProperty(spellToCheck) ? spellToCheck : ""
+                return HOP(spellDataMain, spellToCheck) ? spellToCheck : ""
             }).join('%2C')
             return link + statsLink + '&spells=' + deckLink
         },
@@ -146,7 +166,7 @@ const WandStats = Vue.component('wand-stats', {
                 (prop) => `${prop.newSim}=${+this.stats[prop.key]}`).join('&')
             let deckLink = this.deck.map((spell) => {
                 const spellToCheck = spell.split("_#")[0]
-                return spellDataMain.hasOwnProperty(spellToCheck) ? spellToCheck : ""
+                return HOP(spellDataMain, spellToCheck) ? spellToCheck : ""
             }).join('%2C')
             return link + statsLink + '&spells=' + deckLink
         },
@@ -270,18 +290,13 @@ const SpellSlot = Vue.component('spell-slot', {
     },
     computed: {
         info() {
-            return {
-                // spell string contains both the ID and uses remaining
-                id: this.spell && this.spell.split('_#')[0],
-                uses: this.spell && +this.spell.split('_#')[1],
-                // hide uses remaining overlay if in always cast slot
-                ac: this.$parent.$options.name == 'wand-ac',
-            }
-        },
-        // use icons objects to retrieve spell border images
-        spells() {
+            if (this.spell == "0" || this.spell === undefined) return false
+            const spell = this.spell
+            let [id, uses] = spell.split('_#')
+            const ac = this.$parent.$options.name == 'wand-ac'
+
             let data = spellDataMain
-            let img = icons.spells.filter((x) => spellDataMain.hasOwnProperty(x.id))
+            let img = icons.spells.filter((x) => HOP(spellDataMain, x.id))
             if (this.switches.betaContent.state) {
                 data = spellData
                 img = icons.spells
@@ -290,9 +305,18 @@ const SpellSlot = Vue.component('spell-slot', {
                 data = spellDataApoth
                 img = apothIcons.spells
             }
+            let keyedImages = img.reduce((obj, item) => Object.assign(obj, { [item.id]: item }), {})
+            const missing = {
+                name: id,
+                description: "Either this spell is missing from onlywands or it is modded and onlywands doesn't support this mod yet",
+                sprite: icons.pseuds.find((x) => x.id == "missingSpell").image,
+            }
             return {
-                data: data,
-                img: img.reduce((obj, item) => Object.assign(obj, { [item.id]: item }), {}),
+                id: id,
+                uses: +uses,
+                ac: ac,
+                img: (HOP(keyedImages, id) ? keyedImages[id] : icons.pseuds.find((x) => x.id == "missingSpell")),
+                data: (HOP(data, id) ? data[id] : missing),
             }
         },
     },
@@ -300,13 +324,13 @@ const SpellSlot = Vue.component('spell-slot', {
     inject: ['switches'],
     template: /*html*/`
     <div class="spell-slot">
-        <template v-if="this.spells.data[info.id]">
-            <img v-if="this.spells.img[info.id].bgImage" :style="bgStyle" :src="'data:image/png;base64,' + this.spells.img[info.id].bgImage"/>
-            <img ref="slot" class="spellZoom" :src="'data:image/png;base64,' + this.spells.data[info.id].sprite"/>
+        <template v-if="info">
+            <img v-if="info.img.bgImage" :style="bgStyle" :src="'data:image/png;base64,' + info.img.bgImage"/>
+            <img ref="slot" class="spellZoom" :src="'data:image/png;base64,' + info.data.sprite"/>
             <p v-if="(info.uses > -1) && !info.ac" :style="pStyle">
                 {{ info.uses }}
             </p>
-            <spell-tooltip ref="tooltip" :spell="info.id"></spell-tooltip>
+            <spell-tooltip ref="tooltip" :spell="info"></spell-tooltip>
         </template>
     </div>`,
 })
@@ -355,7 +379,7 @@ const ItemSlot = Vue.component('item-slot', {
         itemInfo() {
             // streamer-wands noita mod transfers item data via a concatenated string
             let [path, id, desc, mats] = this.item.split('$')
-            if (!itemData.hasOwnProperty(id)) return false
+            if (!HOP(itemData, id)) return false
             if (!this.switches.apothContent.state && this.item.indexOf('potheosis') > -1)
                 return false
             path = path.replace(new RegExp('mods/apotheosis/files', 'ig'), 'data')
@@ -368,11 +392,12 @@ const ItemSlot = Vue.component('item-slot', {
                 // streamer-wands noita mod outputs as an ABGR 8 byte number
                 // so & with relavent FF byte and shift the bits
                 color = {
-                    r: c & 0x000000ff,
-                    g: (c & 0x0000ff00) >> 8,
-                    b: (c & 0x00ff0000) >> 16,
-                    // a: 0xFF + ((c & 0xFF000000) >> 24),
+                    r: c & 0xFF,
+                    g: c >> 8 & 0xFF,
+                    b: c >> 16 & 0xFF,
+                    a: c >> 24 & 0xFF,
                 }
+                // color = [c & 0xFF, c >> 8 & 0xFF, c >> 16 & 0xFF, c >> 24 & 0xFF]
                 let table = both.splice(1)
                 table.forEach((x) => {
                     let [mat, amt] = x.split('#')
@@ -410,33 +435,37 @@ const ItemSlot = Vue.component('item-slot', {
 
         imgFilter() {
             b64 = 'data:image/png;base64,' + this.itemInfo.sprite
-            // img.onload changes "this" scope so we need to be able to get to "this" via vm
-            let vm = this
             let img = document.createElement('img')
             let canvas = document.createElement('canvas')
-            // material flasks are always 16x16
-            canvas.width = 16
-            canvas.height = 16
+            // upscale from 16x16 to 32x32 image cause thats what the game does when drawing liquid fill lines
+            canvas.width = 32
+            canvas.height = 32
             let ctx = canvas.getContext('2d')
-
+            // make the colors more accurate via brightness, potion/pouch sprites in data/ui_gfx/items
+            // are not quite the same as what they appear in game, and I can't find any data
+            // on the filtering/algorithm to replicate how the game does it
+            let filters = "brightness(116%)"
             img.src = b64
-            img.onload = function () {
-                ctx.drawImage(img, 0, 0)
-
+            img.onload = () => {
+                ctx.imageSmoothingEnabled = false
+                if (this.itemInfo.path == 'data/ui_gfx/items/material_pouch.png') {
+                    filters = "brightness(135%)"
+                }
+                ctx.filter = filters
+                ctx.drawImage(img, 0, 0, 32, 32)
                 let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height)
                 let data = imageData.data
-
-                const mat = vm.itemInfo.color
+                const mat = this.itemInfo.color
                 // get fullness of material container as a decimal from 0-1
-                const perc = 1 - vm.itemInfo.mats.reduce((n, { amt }) => n + amt, 0) / 100
+                const perc = 1 - this.itemInfo.mats.reduce((n, { amt }) => n + amt, 0) / 100
                 // all noita materials never fill the top 3 pixels so define an offset
-                const top = 4 * 16 * 3
                 // data is an array of RGBA elements that starts at x=0,y=0
-                for (let x = 0; x < data.length; x += 4) {
-                    let r = data[x]
-                    let g = data[x + 1]
-                    let b = data[x + 2]
-                    // let a = data[x + 3]
+                for (let i = 0; i < data.length; i += 4) {
+                    const [x, y] = indexToXY(i, 32)
+                    let r = data[i]
+                    let g = data[i + 1]
+                    let b = data[i + 2]
+
                     let elevenTall = [
                         'data/ui_gfx/items/material_pouch.png',
                         'data/ui_gfx/items/potion_alchemist.png',
@@ -444,26 +473,19 @@ const ItemSlot = Vue.component('item-slot', {
                     ]
                     // do not recolor pixels if we are either at top of material container
                     // or the material container isn't full enough for coloration at this x/y
-                    if (
-                        elevenTall.some((x) => x == vm.itemInfo.path) &&
-                        (x < top || x < 4 * 16 * 11 * perc + top)
-                    ) {
+                    if ((y < 6 || y < Math.floor(22 * perc + 6)) && elevenTall.some((n) => n == this.itemInfo.path)) {
                         continue
-                    } else if (
-                        vm.itemInfo.path == 'data/ui_gfx/items/potion.png' &&
-                        (x < top || x < 4 * 16 * 12 * perc + top)
-                    ) {
+                    } else if ((y < 6 || y < Math.floor(24 * perc + 6)) && this.itemInfo.path == 'data/ui_gfx/items/potion.png') {
                         continue
                     } else {
-                        // colorize material container by multiplying RGB values and dividing by 256
-                        // in order to normalize value between 0 and 256
-                        data[x] = (mat.r * r) >> 8
-                        data[x + 1] = (mat.g * g) >> 8
-                        data[x + 2] = (mat.b * b) >> 8
+                        // mulitplicative color mixing
+                        data[i] = (mat.r * r) >> 8
+                        data[i + 1] = (mat.g * g) >> 8
+                        data[i + 2] = (mat.b * b) >> 8
                     }
                 }
                 ctx.putImageData(imageData, 0, 0)
-                vm.url = canvas.toDataURL()
+                this.url = canvas.toDataURL()
             }
             return this.url
         },
@@ -472,9 +494,9 @@ const ItemSlot = Vue.component('item-slot', {
     inject: ['switches'],
     template: /*html*/`
     <div class="item-slot">
-        <template v-if="this.itemInfo">
-            <img v-if="this.itemInfo.color" ref="slot" :src="imgFilter"/>
-            <img v-else ref="slot" :src="'data:image/png;base64,' + this.itemInfo.sprite"/>
+        <template v-if="itemInfo">
+            <img v-if="itemInfo.color" ref="slot" :src="imgFilter"/>
+            <img v-else ref="slot" :src="'data:image/png;base64,' + itemInfo.sprite"/>
             <item-tooltip ref="tooltip" :item="itemInfo" :img="imgFilter"></item-tooltip>
         </template>
     </div>`,
@@ -509,8 +531,8 @@ const ItemTooltip = Vue.component('item-tooltip', {
         </template>
         <div class="desc-container">
             <p class="tooltip-description" v-html="item.desc"></p>
-            <img v-if="this.item.color" ref="slot" :src="img"/>
-            <img v-else ref="slot" :src="'data:image/png;base64,' + this.item.sprite"/>
+            <img v-if="item.color" ref="slot" :src="img"/>
+            <img v-else ref="slot" :src="'data:image/png;base64,' + item.sprite"/>
         </div>
     </div>`,
 })
@@ -520,8 +542,10 @@ const worldComp = Vue.component('world-comp', {
         return {
             state: {
                 shifts: false,
+                apothCS: false,
                 mods: false,
                 map: false,
+                userDisabled: false,
             },
             // debugMods: "",
             // debugNG: "0",
@@ -530,50 +554,71 @@ const worldComp = Vue.component('world-comp', {
         }
     },
     computed: {
-        updateWorld() {
-            let update = this.info[0]
-            let shiftInfo = update.shiftInfo
+        info() {
+            const player = this.player
+            const output = this.run
+            const apoth = this.apoth
+            output.shifts = player.shifts
+            output.count = player.shiftsTotal
+            output.timer = player.shiftsTimer
+            output.apoth = {
+                csShifts: apoth.shifts,
+                csCount: apoth.shiftsTotal,
+                csTimer: apoth.shiftsTimer,
+            }
+            return output
+        },
+        featureOutput() {
+            const features = this.features
+            delete features._id
             return {
-                shifts: update.shifts,
-                count: shiftInfo[0],
-                timer: shiftInfo[1],
+                "Seed": features.seed,
+                "Position": features.pos,
+                "New Game Plus": features.ngp,
+                "Fungal Shifts": features.shifts,
+                "Fungal Timer": features.timer,
+                "Creature Shifts": features.apothCreatureShifts,
+                "Creature Timer": features.apothCreatureTimer,
             }
         },
-        mods() {
-            // [0,n-2] = mods
-            // n - 1 = NG+
-            // n = seed
-            // beta is conditionally entered by utils.lua
-            let filtered = this.version.filter((x) => x != "beta").slice(0, -1)
-            let ngp = Number(filtered[filtered.length - 1].slice(3))
-            // debug new game plus number
-            // let ngp = Number(this.debugNG)
-            return {
-                list: filtered.slice(0, -1),
-                // debug mods list
-                // list: filtered.slice(0, -1).concat(this.debugMods.split(",")),
-                ngp: (ngp > 0) ? `+${ngp}` : ""
-            }
+        apothCheck() {
+            const switches = this.switches
+            return switches.apothContent.state
         },
     },
-    props: ['info', 'version'],
+    props: ['apoth', 'player', 'run', 'features'],
     inject: ['switches'],
     template: /*html*/`
     <div class="world-info">
         <div class="world-header">
-            <v-switch v-model="state.shifts" :title="'Show Shifts [' + updateWorld.count + ']'"></v-switch>
-            <v-switch v-model="state.mods" :title="'Show Mods [' + mods.list.length + ']'"></v-switch>
+            <v-switch v-model="state.shifts" :title="'Show ' + (apothCheck ? 'Fungal ' : '') + 'Shifts [' + info.count + ']'"></v-switch>
+            <v-switch v-if="apothCheck" v-model="state.apothCS" :title="'Show Creature Shifts [' + info.apoth.csCount + ']'"></v-switch>
+            <v-switch v-model="state.mods" :title="'Show Mods [' + info.mods.length + ']'"></v-switch>
+            <v-switch v-model="state.userDisabled" title="Show Feature Status"></v-switch>
             <v-switch v-model="state.map" title="Show Map and Game info (spoilers!!!)"></v-switch>
         </div>
         <div class="world-body">
-            <fungal-comp v-if="state.shifts" :shifts="updateWorld.shifts" :timer="updateWorld.timer" :number="updateWorld.count"></fungal-comp>
+            <fungal-comp v-if="state.shifts" :shifts="info.shifts" :timer="info.timer" :number="info.count" :features="features"></fungal-comp>
+            <creatureShift-comp v-if="state.apothCS" :shifts="info.apoth.csShifts" :timer="info.apoth.csTimer" :number="info.apoth.csCount" :features="features"></creatureShift-comp>
             <div v-if="state.mods" class="mods">
                 <!--<input v-model="debugMods" :class="debug"/>-->
                 <p><u>Mods:</u></p>
                 <!--<input v-model="debugNG" :class="debug"/>-->
-                <p v-for="mod in mods.list" :key="mod">{{ mod.length < 20 ? mod : mod.slice(0,20) }}</p>
+                <p v-for="mod in info.mods" :key="mod">{{ mod.length < 20 ? mod : mod.slice(0,20) }}</p>
             </div>
-            <map-comp v-if="state.map" :info="info" :version="version" :mods="mods"></map-comp>
+            <div v-if="state.userDisabled" class="features">
+                <div class="features-table">
+                <div class="features-row header">
+                    <div><b>Feature: </b></div>
+                    <div><b>Status</b></div>
+                </div>
+                <div class="features-row" v-for="(value, feature) in featureOutput"">
+                    <div>{{ feature }}</div>
+                    <div>{{ value ? "Enabled" : "Disabled" }}</div>
+                </div>
+            </div>
+            </div>
+            <map-comp v-if="state.map" :player="player" :info="info" :features="features"></map-comp>
         </div>
     </div>`
 })
@@ -581,10 +626,10 @@ const worldComp = Vue.component('world-comp', {
 const mapComp = Vue.component('map-comp', {
     data() {
         return {
-            tooltip: null,
             mapData: {},
             loaded: false,
             // input: "0,0",
+            tipSeed: `Seed was incremented by ${this.info.ngp}.\n(to display correct NG+ noitool shifts)`,
         }
     },
     mounted() {
@@ -598,9 +643,8 @@ const mapComp = Vue.component('map-comp', {
     },
     computed: {
         seedInfo() {
-            let seedIndex = this.version.findIndex((x) => x.indexOf('seed=') > -1)
-            if (seedIndex == -1) return false
-            let seedNumber = Number(this.version[seedIndex].split("=")[1]) + Number(this.mods.ngp)
+            // if (!this.seed) return null
+            let seedNumber = this.info.seed + this.info.ngp
             let url = `https://noitool.com/info?seed=${seedNumber}`
             // uncomment when noita starts receiving beta pushes again
             // if (this.switches.betaContent.state) {
@@ -619,10 +663,10 @@ const mapComp = Vue.component('map-comp', {
             const yHeaven = -14
             const yLoop = 48
             let widthPW = 70
-
+            let tileWidth = 70
             // from game coord input
-            const x = this.info[0].x || 0
-            const y = this.info[0].y || 0
+            const x = this.player.x || 0
+            const y = this.player.y || 0
             // debug coord input
             // const [x, y] = this.input.split(",").map((x) => +x) || [0, 0]
 
@@ -633,6 +677,7 @@ const mapComp = Vue.component('map-comp', {
                 "regular-beta": "Regular",
                 "purgatory": "Purgatory",
                 "apotheosis": "Apotheosis",
+                "apotheosis-beta-branch": "Apotheosis",
                 "apotheosis-new-game-plus": "Apotheosis NG+",
                 "apotheosis-tuonela": "Apotheosis Tuonela",
                 "noitavania": "Noitavania",
@@ -642,14 +687,14 @@ const mapComp = Vue.component('map-comp', {
             const apothNames = ["$curse_apotheosis_everything_name", "$curse_apotheosis_downunder_name"]
 
             // determine gamemode/map type
-            let mapName = Number(this.mods.ngp) > 0 ? "new-game-plus-main-branch" : "regular-main-branch"
-            const mapModes = this.mods.list.map((x) => x.toLowerCase())
+            let mapName = this.info.ngp > 0 ? "new-game-plus-main-branch" : "regular-main-branch"
+            const mapModes = this.info.mods.map((x) => x.toLowerCase())
             if (mapModes.includes("nightmare")) {
                 mapName = "nightmare-main-branch"
             } else if (mapModes.includes("apotheosis")) {
-                mapName = Number(this.mods.ngp) > 0 ? "apotheosis-new-game-plus" : "apotheosis"
+                mapName = this.info.ngp > 0 ? "apotheosis-new-game-plus" : "apotheosis"
                 widthPW = 100
-                if (this.info[0].names.some((x) => apothNames.includes(x))) {
+                if (this.player.names.some((x) => apothNames.includes(x))) {
                     mapName = "apotheosis-tuonela"
                 }
             } else if (mapModes.includes("purgatory")) {
@@ -657,11 +702,15 @@ const mapComp = Vue.component('map-comp', {
             } else if (mapModes.includes("biome-plus")) {
                 mapName = "alternate-biomes"
             } else if (mapModes.includes("noitavania")) {
-                mapName = Number(this.mods.ngp) > 0 ? "noitavania-new-game-plus" : "noitavania"
+                mapName = this.info.ngp > 0 ? "noitavania-new-game-plus" : "noitavania"
             }
 
             // get map URL and topleft offsets in chunk coordinates
-            const mapValues = this.mapData[mapName]
+            let mapValues = this.mapData[mapName]
+            if (!mapValues && mapName == "apotheosis") {
+                mapName = "apotheosis-beta-branch"
+                mapValues = this.mapData[mapName]
+            }
             const map = {
                 urls: mapValues.map((x) => x.url.replace(/\.dzi/, '_files/')),
             }
@@ -671,15 +720,22 @@ const mapComp = Vue.component('map-comp', {
 
             // Parallel world x-only calculation
             const PW = Math.sign(x) * Math.floor((Math.abs(x / 512) + widthPW / 2) / widthPW)
-            const xMap = Math.floor(((x / 512) + map.x0 - widthPW * PW) / zoom)
-            const xStar = -7 + ((x + (map.x0 - widthPW * PW) * 512) - (xMap * 4096)) * 192 / 4096
+            let xMap = Math.floor(((x / 512) + map.x0 - widthPW * PW) / zoom)
+            let xStar = -7 + ((x + (map.x0 - widthPW * PW) * 512) - (xMap * 4096)) * 192 / 4096
+            let tileSelector = PW
+            if (widthPW > tileWidth) {
+                const tile = Math.sign(x) * Math.floor((Math.abs(x / 512) + tileWidth / 2) / tileWidth)
+                xMap = Math.floor(((x / 512) + map.x0 - tileWidth * tile) / zoom)
+                xStar = -7 + ((x + (map.x0 - tileWidth * tile) * 512) - (xMap * 4096)) * 192 / 4096
+                tileSelector = tile
+            }
 
             let src = map.urls[0]
             let pwName = "Main"
-            if (PW >= 1) {
+            if (tileSelector >= 1) {
                 src = map.urls[2] ?? map.urls[0]
                 pwName = "East"
-            } else if (PW <= -1) {
+            } else if (tileSelector <= -1) {
                 src = map.urls[1] ?? map.urls[0]
                 pwName = "West"
             }
@@ -710,8 +766,24 @@ const mapComp = Vue.component('map-comp', {
                 yStar: yStar + 'px',
             }
         },
+        start() {
+            const date = new Date(this.info.start)
+            const rantArr = secondsToTimeArray(this.info.idletime)
+            const playArr = secondsToTimeArray(this.info.playtime)
+            const dateStr = date.toLocaleDateString()
+            const timeStr = date.toLocaleTimeString()
+            const rantStr = rantArr.join(" ")
+            const rantRatio = this.info.idletime / this.info.playtime * 100
+
+            return {
+                playtime: playArr.join(" "),
+                over100: rantArr.length == 4 && rantArr[0] > 100,
+                mainTime: `Run started on ${dateStr}\nat ${timeStr}`,
+                tipTime: `Ranted for ${rantStr}\n(${rantRatio.toFixed(2)}% of runtime)`,
+            }
+        }
     },
-    props: ['info', 'version', 'mods'],
+    props: ['player', 'info', 'features'],
     inject: ['switches'],
     template: /* html */`
     <div class="preview" v-if="loaded">
@@ -724,15 +796,25 @@ const mapComp = Vue.component('map-comp', {
         </a>
         <div class="preview-info">
             <!--<input v-model="input"/>-->
-            <p v-if="!seedInfo">No current run</p>
+            <p v-if="!features.seed"><i>Seed Hidden</i></p>
+            <p v-else-if="!seedInfo">No current run</p>
             <a v-else-if="seedInfo.url" :href="seedInfo.url" tabindex="1" target="_blank" rel="noopener noreferrer">
-                <map-tooltip :seed="seedInfo.seed" :mods="mods"></map-tooltip>
+                <map-tooltip :main="'Map ' + seedInfo.seed" :tip="tipSeed"></map-tooltip>
             </a>
             <p v-else>Map {{ seedInfo.seed }}</p>
-            <p>x: {{ osd.x }}</p>
-            <p>y: {{ osd.y }}</p>
-            <p>In {{ osd.pw }}{{ osd.hh }} NG{{ mods.ngp }}</p>
+            <template v-if="features.pos">
+                <p>x: {{ osd.x }}</p>
+                <p>y: {{ osd.y }}</p>
+            </template>
+            <template v-else>
+                <p><i>Position Hidden</i></p>
+                <p><i>Map/PW tracker shows 0, 0</i></p>
+            </template>
+            <p v-if="features.ngp">In {{ osd.pw }}{{ osd.hh }} NG{{ info.ngp > 0 ? ('+' + info.ngp) : "" }}</p>
+            <p v-else><i>NG+ Tracker Hidden</i></p>
             <p>World Type: {{ osd.name }}</p>
+            <p>Playtime: {{ start.playtime }}</p>
+            <map-tooltip v-if="!start.over100" :main="start.mainTime" :tip="start.tipTime"></map-tooltip>
         </div>
     </div>`
 })
@@ -764,13 +846,12 @@ const mapTooltip = Vue.component('map-tooltip', {
             }
         },
     },
-    props: ["seed", "mods"],
+    props: ["main", "tip"],
     template: /* html */`
     <div ref="slot" class="shifts-tip" @mouseenter="updateTip">
-        <p>Map {{ seed }}</p>
+        <p class="map-tip">{{ main }}</p>
         <div ref="tooltip" class="tooltip fit">
-            <p>Seed was incremented by {{ this.mods.ngp ? this.mods.ngp : 0 }}.</p>
-            <p>(to display correct NG+ noitool shifts)</p>
+            <p class="map-tip">{{ tip }}</p>
         </div>
     </div>`
 })
@@ -809,7 +890,10 @@ const fungalComp = Vue.component('fungal-comp', {
             const sequence = []
 
             let shiftsAll = []
-            const nShifts = Math.min(Math.max(this.state.number ?? this.shifts.length, 1), this.number)
+            let nShifts = Math.min(Math.max(this.state.number ?? this.shifts.length, 1), this.number)
+            if (!this.features.shifts) {
+                nShifts = 0
+            }
             for (let i = 0; i < nShifts; i++) {
                 const shift = this.shifts[i]
                 shiftsAll.push(shift.map((material, ioNumber) => {
@@ -822,7 +906,7 @@ const fungalComp = Vue.component('fungal-comp', {
             }
             shiftsAll = shiftsAll.flat(Infinity)
 
-            const HOP = Object.prototype.hasOwnProperty.call.bind(Object.prototype.hasOwnProperty);
+            // const HOP = Object.prototype.hasOwnProperty.call.bind(Object.prototype.hasOwnProperty);
 
             let j = 0
             for (let i = 0; i < shiftsAll.length - 1; i += 3) {
@@ -874,7 +958,7 @@ const fungalComp = Vue.component('fungal-comp', {
             }
 
             return sequence
-        }
+        },
     },
     methods: {
         highlight(cause, i) {
@@ -901,20 +985,37 @@ const fungalComp = Vue.component('fungal-comp', {
             }
         },
     },
-    props: ['shifts', 'timer', 'number'],
+    props: ['shifts', 'timer', 'number', 'features'],
     template: /*html*/`
     <div class="shifts">
         <div class="shifts-header">
-            <p><b>Shift Timer:</b> {{ timer > 0 ? Math.floor(300 - timer) + ' seconds remaining' : 'Ready to Shift' }}</p>
-            <v-switch v-model="state.originalShift" title="Show Original Shift in First Column"></v-switch>
-            <div class=shifts-input>    
-                <span>Calculate up to Shift N =</span><input v-model="state.number" type="number" inputmode="numeric" min="1" :max="number" :placeholder="number"/>
-                <span>/ {{ number }} Total</span>
+            <p v-if="features.timer"><b>Shift Timer:</b> {{ timer > 0 ? Math.floor(300 - timer) + ' seconds remaining' : 'Ready to Shift' }}</p>
+            <p v-else><i>Fungal Timer Hidden</i></p>
+            <template v-if="features.shifts">
+                <v-switch v-model="state.originalShift" title="Show Original Shift in First Column"></v-switch>
+                <div class=shifts-input>    
+                    <span>Calculate up to Shift N =</span><input v-model="state.number" type="number" inputmode="numeric" min="1" :max="number" :placeholder="number"/>
+                    <span>/ {{ number }} Total</span>
+                </div>
+            </template>
+            <p v-else><i>Fungal Shift Info Hidden</i></p>
+        </div>
+        <div class="shifts-table">
+            <div class="shifts-column">
+                <div class="shifts-header-cell"><b>N</b></div>
+                <div v-for="(shift,i) in shiftInfo">{{ shift.shiftNumber }}</div>
             </div>
-            <div class="shifts-table-row header">
-                <div><b>N</b></div>
-                <div><b>Input{{state.originalShift ? " &#8594; Raw Output" : "" }}</b></div>
-                <div ref="slot" class="shifts-tip" @mouseenter="updateTip">
+            <div class="shifts-column">
+                <div class="shifts-header-cell"><b>Input{{state.originalShift ? " &#8594; Raw Output" : "" }}</b></div>
+                <div ref="cells" :class="{ strike: shift.isOverwritten }" v-for="(shift,i) in shiftInfo">
+                    <mat-comp :material="shift.input" side="left"></mat-comp>
+                    <template v-if="state.originalShift || rowToggles[i]">
+                        &#8594; <mat-comp  :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'"></mat-comp>
+                    </template>
+                </div>
+            </div>
+            <div class="shifts-column">
+                <div ref="slot" class="shifts-tip shifts-header-cell" @mouseenter="updateTip">
                     <b>Final Result</b>
                     <div ref="tooltip" class="tooltip fit">
                         <p>When Final Result lists two materials:</p>
@@ -924,26 +1025,17 @@ const fungalComp = Vue.component('fungal-comp', {
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="shifts-table">
-            <div class="shifts-table-row" v-for="(shift,i) in shiftInfo">
-                <div>{{ shift.shiftNumber }}</div>
-                <div ref="cells" :class="{ strike: shift.isOverwritten }">
-                    <mat-comp :material="shift.input" side="left"></mat-comp>
-                    <template v-if="state.originalShift || rowToggles[i]">
-                        &#8594; <mat-comp  :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'"></mat-comp>
+                <div ref="cells" :class="{ strike: shift.isOverwritten }" v-for="(shift,i) in shiftInfo" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
+                    <template v-if="shift.extra.now">
+                        <mat-comp :material="shift.output.final" :side="shift.cause.output ? 'bottom' : 'top'" :i="i" :info="shiftInfo"></mat-comp> +
+                        <mat-comp  :material="shift.extra.now" side="right" :i="i" :info="shiftInfo"></mat-comp>
                     </template>
-                </div>
-                <div ref="cells" v-if="shift.extra.now" :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
-                    <mat-comp :material="shift.output.final" :side="shift.cause.output ? 'bottom' : 'top'" :i="i" :info="shiftInfo"></mat-comp> +
-                    <mat-comp  :material="shift.extra.now" side="right" :i="i" :info="shiftInfo"></mat-comp>
-                </div>
-                <div ref="cells" v-else-if="shift.output.original != shift.output.final" :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
-                    <mat-comp :material="shift.output.final" side="right" :i="i" :info="shiftInfo"></mat-comp>
-                </div>
-                <div ref="cells" v-else :class="{ strike: shift.isOverwritten }" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
-                    <mat-comp :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'" :i="i" :info="shiftInfo"></mat-comp>
+                    <template v-else-if="shift.output.original != shift.output.final">
+                        <mat-comp :material="shift.output.final" side="right" :i="i" :info="shiftInfo"></mat-comp>
+                    </template>
+                    <template v-else>
+                        <mat-comp :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'" :i="i" :info="shiftInfo"></mat-comp>
+                    </template>
                 </div>
             </div>
         </div>
@@ -979,7 +1071,7 @@ const materialComp = Vue.component('mat-comp', {
     },
     computed: {
         mat() {
-            let both = this.material.split("@")
+            let both = this.material.split("%@%")
             return {
                 raw: both[0],
                 ui: both[1],
@@ -997,7 +1089,7 @@ const materialComp = Vue.component('mat-comp', {
                 reasonShift = this.info[cause]
                 reasons.push({
                     shiftNumber: reasonShift.shiftNumber,
-                    reason: `${reasonShift.input.split("@")[0]} → ${reasonShift.output.original.split("@")[0]}`,
+                    reason: `${reasonShift.input.split("%@%")[0]} → ${reasonShift.output.original.split("%@%")[0]}`,
                 })
             }
             if (shift.cause.extra != null) {
@@ -1005,7 +1097,7 @@ const materialComp = Vue.component('mat-comp', {
                 reasonShift = this.info[cause]
                 reasons.push({
                     shiftNumber: reasonShift.shiftNumber,
-                    reason: `${reasonShift.input.split("@")[0]} → ${reasonShift.output.original.split("@")[0]}`,
+                    reason: `${reasonShift.input.split("%@%")[0]} → ${reasonShift.output.original.split("%@%")[0]}`,
                 })
             }
             return reasons
@@ -1021,6 +1113,7 @@ const materialComp = Vue.component('mat-comp', {
     props: {
         material: String,
         side: String,
+        creatureShift: { type: String, required: false },
         i: { type: Number, required: false },
         info: { type: Array, required: false },
     },
@@ -1028,10 +1121,161 @@ const materialComp = Vue.component('mat-comp', {
     <div class="material tip" ref="slot" @mouseover="updateTip">
         <span>{{ mat.ui }}</span>
         <div class="tooltip fit" ref="tooltip">
-            <p v-if="reasons.length > 0">Material ID: {{ mat.raw }}</p>
+            <p v-if="reasons.length > 0">{{ creatureShift ? "Creature" : "Material" }} ID: {{ mat.raw }}</p>
             <p v-else>{{ mat.raw }}</p>
             <p v-if="reasons.length > 0">Reasons: </p>
             <p v-for="reason in reasons">    {{ reason.shiftNumber }}: {{ reason.reason }}</p>
+        </div>
+    </div>`
+})
+
+const creatureShiftComp = Vue.component('creatureShift-comp', {
+    data() {
+        return {
+            state: {
+                originalShift: false,
+                hoverInfo: true,
+                number: null,
+            },
+            rowToggles: [],
+        }
+    },
+    mounted() {
+        this.rowToggles = Array(this.shiftInfo.length).fill(false)
+    },
+    computed: {
+        shiftInfo() {
+            const transformed = {}
+            const lastShift = {}
+            const sequence = []
+
+            let shiftsAll = []
+            let nShifts = Math.min(Math.max(this.state.number ?? this.shifts.length, 1), this.number)
+            if (!this.features.apothCreatureShifts) {
+                nShifts = 0
+            }
+            for (let i = 0; i < nShifts; i++) {
+                const shift = this.shifts[i]
+                shiftsAll.push(shift.map((material, ioNumber) => {
+                    if (ioNumber % 2) {
+                        return material
+                    }
+                    const letter = (shift.length > 2) ? String.fromCharCode(97 + ioNumber / 2) : ""
+                    return [(i + 1) + letter, material]
+                }))
+            }
+            shiftsAll = shiftsAll.flat(Infinity)
+
+            // const HOP = Object.prototype.hasOwnProperty.call.bind(Object.prototype.hasOwnProperty);
+
+            let j = 0
+            for (let i = 0; i < shiftsAll.length - 1; i += 3) {
+                const shiftNumber = shiftsAll[i]
+                const input = shiftsAll[i + 1]
+                const original = shiftsAll[i + 2]
+                const final = transformed[original] ?? { mat: original }
+                transformed[input] = {
+                    mat: final.mat,
+                    j,
+                }
+
+                const shift = {
+                    shiftNumber,
+                    input,
+                    output: {
+                        original,
+                        final: final.mat,
+                    },
+                    // extra: { atShift: null, now: null },
+                    cause: { output: null, },
+                    isOverwritten: false,
+                    j,
+                };
+                if (HOP(transformed, original)) {
+                    shift.cause.output = transformed[original].j
+                }
+
+                // if (HOP(transformed, final) && transformed[final] !== final) {
+                //     shift.extra.atShift = transformed[final].mat;
+                // }
+
+                if (HOP(lastShift, input)) {
+                    lastShift[input].isOverwritten = true
+                }
+                lastShift[input] = shift
+
+                sequence.push(shift)
+                j += 2
+            }
+
+            for (let i = 0; i < sequence.length; i++) {
+                const shift = sequence[i]
+                const final = shift.output.final
+                if (HOP(transformed, final) && transformed[final].mat !== final) {
+                    shift.output.final = transformed[final].mat
+                    shift.cause.output = transformed[final].j
+                }
+            }
+
+            return sequence
+        },
+    },
+    methods: {
+        highlight(cause, i) {
+            if (cause.output != null) {
+                [cause.output, cause.output + 1].forEach((cellIndex) => this.$refs.cells[cellIndex].classList.add('highlight'));
+                [cause.output >> 1, i].forEach((cellIndex) => this.rowToggles.splice(cellIndex, 1, true));
+            }
+        },
+        clear(causes, i) {
+            Object.values(causes).forEach((cause) => {
+                if (cause != null) {
+                    [cause, cause + 1].forEach((cellIndex) => this.$refs.cells[cellIndex].classList.remove('highlight'));
+                    [cause >> 1, i].forEach((cellIndex) => this.rowToggles.splice(cellIndex, 1, false));
+                }
+            });
+        },
+    },
+    props: ['shifts', 'timer', 'number', 'features'],
+    template: /*html*/`
+    <div class="shifts">
+        <div class="shifts-header">
+            <p v-if="features.apothCreatureTimer"><b>Shift Timer:</b> {{ timer > 0 ? Math.floor(300 - timer) + ' seconds remaining' : 'Ready to Shift' }}</p>
+            <p v-else><i>Creature Timer Hidden</i></p>
+            <template v-if="features.apothCreatureShifts">
+                <v-switch v-model="state.originalShift" title="Show Original Shift in First Column"></v-switch>
+                <div class=shifts-input>    
+                    <span>Calculate up to Shift N =</span><input v-model="state.number" type="number" inputmode="numeric" min="1" :max="number" :placeholder="number"/>
+                    <span>/ {{ number }} Total</span>
+                </div>
+            </template>
+            <p v-else><i>Creature Shift Info Hidden</i></p>
+        </div>
+        <div class="shifts-table">
+            <div class="shifts-column">
+                <div class="shifts-header-cell"><b>N</b></div>
+                <div v-for="(shift,i) in shiftInfo">{{ shift.shiftNumber }}</div>
+            </div>
+            <div class="shifts-column">
+                <div class="shifts-header-cell"><b>Input{{state.originalShift ? " &#8594; Raw Output" : "" }}</b></div>
+                <div ref="cells" :class="{ strike: shift.isOverwritten }" v-for="(shift,i) in shiftInfo">
+                    <mat-comp creatureShift="true" :material="shift.input" side="left"></mat-comp>
+                    <template v-if="state.originalShift || rowToggles[i]">
+                        &#8594; <mat-comp creatureShift="true" :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'"></mat-comp>
+                    </template>
+                </div>
+            </div>
+            <div class="shifts-column">
+                <div class="shifts-header-cell"><b>Final Result</b></div>
+                <div ref="cells" :class="{ strike: shift.isOverwritten }" v-for="(shift,i) in shiftInfo" @mouseenter="highlight(shift.cause, i)" @mouseleave="clear(shift.cause, i)">
+                    <template v-if="shift.output.original != shift.output.final">
+                        <mat-comp creatureShift="true" :material="shift.output.final" side="right" :i="i" :info="shiftInfo"></mat-comp>
+                    </template>
+                    <template v-else>
+                        <mat-comp creatureShift="true" :material="shift.output.original" :side="shift.output.original != shift.output.final ? 'top' : 'right'" :i="i" :info="shiftInfo"></mat-comp>
+                    </template>
+                </div>
+            </div>
         </div>
     </div>`
 })
@@ -1066,28 +1310,29 @@ const playerComp = Vue.component('player-comp', {
     },
     computed: {
         updatePlayer() {
-            let info = this.info[0]
+            let player = this.player
             // comparing health to 2^63 - 1, use BigInt cuz > 2^53-1
-            let bigHealth = BigInt(Math.floor(info.health[1] * 25))
+            let bigHealth = BigInt(Math.floor(player.health[1] * 25))
             // 2^63-1
             let maxHealth = 9223372036854775807n
             return {
-                hp: (info.health[0] * 25).toLocaleString('en-US'),
-                maxHP: (info.health[1] * 25).toLocaleString('en-US'),
-                gold: (info.gold).toLocaleString('en-US'),
+                hp: (player.health[0] * 25).toLocaleString('en-US'),
+                maxHP: (player.health[1] * 25).toLocaleString('en-US'),
+                gold: (player.gold).toLocaleString('en-US'),
                 finite: {
-                    gold: info.gold < (2 ** 31) - 1,
+                    gold: player.gold < (2 ** 31) - 1,
                     hp: bigHealth < maxHealth,
                 },
-                shortHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(info.health[0] * 25),
-                shortMaxHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(info.health[1] * 25),
-                shortGold: Intl.NumberFormat('en-US', { notation: "compact" }).format(info.gold),
-                names: info.names,
-                amounts: info.amounts,
+                shortHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(player.health[0] * 25),
+                shortMaxHP: Intl.NumberFormat('en-US', { notation: "compact", maximumSignificantDigits: 4 }).format(player.health[1] * 25),
+                shortGold: Intl.NumberFormat('en-US', { notation: "compact" }).format(player.gold),
+                names: player.names,
+                amounts: player.amounts,
+                orbs: player.orbs,
             }
         }
     },
-    props: ['info'],
+    props: ['player'],
     template: /*html*/`
     <div class="info-wrapper">
         <div class="player-info">
@@ -1101,8 +1346,11 @@ const playerComp = Vue.component('player-comp', {
                 <p v-else class="money" ref="slotGold">&#8734;</p>
                 <p class="tooltip fit" ref="tipGold">$: {{ updatePlayer.gold}}</p>
             </div>
+            <div class="tip">
+                <p class="orb">{{ updatePlayer.orbs }}</p>
+            </div>
             <v-switch v-model="state" title="Show All Perks"></v-switch>
-            <perks-comp :names="this.updatePlayer.names" :amounts="this.updatePlayer.amounts" :state="state"></perks-comp>
+            <perks-comp :names="updatePlayer.names" :amounts="updatePlayer.amounts" :state="state"></perks-comp>
         </div>
     </div>`
 })
@@ -1119,28 +1367,15 @@ const perksComp = Vue.component('perks-comp', {
                 over8: perks.slice(8),
             }
         },
-        perks() {
-            return this.perkTable.reduce((obj, item) => {
-                obj[item.ui_name] = item
-                return obj
-            }, {})
-        },
-        pseuds() {
-            return this.pseudTable.reduce((obj, item) => {
-                obj[item.id] = item
-                return obj
-            }, {})
-        },
-
     },
     props: ['names', 'amounts', 'state'],
-    inject: ['perkTable', 'pseudTable'],
     template: /*html*/`
     <div class="perks">
-        <perk-comp v-for="perk in playerPerks.first8" :key="perk.name" 
-        :icon="perks[perk.name] ? perks[perk.name] : pseuds[perk.name]" :amount="perk.amount"></perk-comp>
-        <perk-comp v-if="state" v-for="perk in playerPerks.over8" :key="perk.name" 
-        :icon="perks[perk.name] ? perks[perk.name] : pseuds[perk.name]" :amount="perk.amount"></perk-comp>
+    <perk-comp v-for="perk in playerPerks.first8" :key="perk.name" 
+    :icon="perk"></perk-comp>
+    <div v-if="!state && playerPerks.over8.length > 0" class="icon-slot no-bg more"></div>
+    <perk-comp v-if="state" v-for="perk in playerPerks.over8" :key="perk.name" 
+    :icon="perk"></perk-comp>
     </div>`
 })
 
@@ -1148,6 +1383,7 @@ const perkComp = Vue.component('perk-comp', {
     data() {
         return {
             tooltip: null,
+            url: null,
         }
     },
     mounted() {
@@ -1164,16 +1400,135 @@ const perkComp = Vue.component('perk-comp', {
             this.tooltip = null
         }
     },
-    props: ['icon', 'amount'],
+    computed: {
+        tableObj() {
+            const out = {}
+            Object.keys(this.tables).forEach((x) => {
+                out[x] = this.tables[x].reduce((obj, item) => {
+                    obj[x == "perks" ? item.ui_name : item.id] = item
+                    return obj
+                }, {})
+            })
+            return out
+        },
+        isBackupImage() {
+            return !HOP(this.tableObj.pseuds, this.icon.name)
+        },
+        getPerk() {
+            if (HOP(this.tableObj.perks, this.icon.name)) {
+                return this.tableObj.perks[this.icon.name]
+            } else if (HOP(this.tableObj.pseuds, this.icon.name)) {
+                return this.tableObj.pseuds[this.icon.name]
+            } else if (this.icon.name.includes("creature_shift")) {
+                creature = JSON.parse(JSON.stringify(this.tableObj.pseuds.creature_shift_ui))
+                creature.id = this.icon.name
+                return creature
+            } else {
+                const missing = JSON.parse(JSON.stringify(this.tableObj.pseuds.missingPerk))
+                missing.id = this.icon.name
+                return missing
+            }
+        },
+        getImage() {
+            // get image keys/b64 string
+            const name = "$cs_base_" + this.icon.name.slice(41)
+            const icon = this.tableObj.enemies[name.slice(9)]
+            const frame = this.tableObj.pseuds.creature_shift_ui
+            const iconB64 = 'data:image/png;base64,' + icon.image
+            const frameB64 = 'data:image/png;base64,' + frame.image
+            // apotheosis edge case for miniblob
+            const offset = icon.id == "miniblob" ? -4 * 4 * 16 : 0
+            if (this.icon.name.includes("creature_shift") && !HOP(this.tableObj.pseuds, this.icon.name)) {
+                // initialize two 16x16 canvas contexts for pixel retrieval/manipulation
+                let img = []
+                let canvas = []
+                let ctx = []
+                for (let i = 0; i < 2; i++) {
+                    img.push(document.createElement('img'))
+                    canvas.push(document.createElement('canvas'))
+                    canvas[i].width = 16
+                    canvas[i].height = 16
+                    ctx.push(canvas[i].getContext('2d'))
+                }
+                // initialize single pixel data arrays
+                let frameBGColor = []
+                let frameCleanColor = []
+                let iconArray = []
+                let rgbaChannels = [0, 1, 2, 3]
+                // extract background frame data
+                img[0].src = iconB64
+                img[0].onload = () => {
+                    ctx[0].drawImage(img[0], 0, 0)
+
+                    let imageData = ctx[0].getImageData(0, 0, canvas[0].width, canvas[0].height)
+                    let data = imageData.data
+
+                    iconArray = [...data]
+                    img[1].src = frameB64
+                }
+                // compose creature shift icon image
+                img[1].onload = () => {
+                    ctx[1].drawImage(img[1], 0, 0)
+                    let imageData1 = ctx[1].getImageData(0, 0, canvas[1].width, canvas[1].height)
+                    let data1 = imageData1.data
+                    frameBGColor = rgbaChannels.slice(0, 3).map((ch) => data1[xyToIndex(5, 4, 16) + ch])
+                    frameCleanColor = rgbaChannels.map((ch) => data1[xyToIndex(5, 2, 16) + ch])
+
+                    for (let i = 0; i < data1.length; i += 4) {
+                        const [x, y] = indexToXY(i, 16)
+                        // let resPix = false
+                        if ((x > 3 && y > 2) && (x < 13 && y < 12)) {
+                            // let iconPix = [iconArray[i], iconArray[i + 1], iconArray[i + 2]]
+                            let iconPix = iconArray.slice(i, i + 4)
+                            let a = iconArray[i + 3] / 255
+                            for (let ch = 0; ch < 4; ch++) {
+                                if (a < 1 && a > 0) {
+                                    data1[i + ch + offset] = Math.ceil(frameBGColor[ch] * (1 - a) + iconPix[ch] * a)
+                                    if (ch == 3) {
+                                        data1[i + ch + offset] = 0xFF
+                                    }
+                                } else if (iconPix.every((x) => x != 0)) {
+                                    data1[i + ch + offset] = iconPix[ch]
+                                }
+                            }
+                        }
+                    }
+                    let cleanup = [
+                        [4, 3],
+                        [12, 3],
+                        [4, 11],
+                        [12, 11],
+                    ].map((xy) => xyToIndex(...xy, 16))
+                    cleanup.forEach((i) => {
+                        for (let ch = 0; ch < 4; ch++) {
+                            data1[i + ch] = frameCleanColor[ch]
+                        }
+                    })
+                    ctx[1].putImageData(imageData1, 0, 0)
+                    this.url = canvas[1].toDataURL()
+                }
+            }
+            return this.url
+        }
+    },
+    props: ['icon'],
+    inject: ['tables'],
     template: /*html*/`
     <div class="icon-slot no-bg">
         <div class="zoom no-bg">
-            <a v-if="icon.wiki_url" :href="icon.wiki_url" tabindex="-1" target="_blank" rel="noopener noreferrer">
-                <img ref="slot" :src="'data:image/png;base64,' + (icon.ui_img ? icon.ui_img : icon.image)"/>
+            <a v-if="getPerk.wiki_url" :href="getPerk.wiki_url" tabindex="-1" target="_blank" rel="noopener noreferrer">
+                <img v-if="icon.name.includes('creature_shift') && isBackupImage" ref="slot" :src="getImage"/>
+                <img v-else ref="slot" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"/>
             </a>
-            <img v-else ref="slot" :src="'data:image/png;base64,' + (icon.ui_img ? icon.ui_img : icon.image)"/>
-        </div>
-        <perk-tooltip ref="tooltip" :icon="icon" :amount="amount"></perk-tooltip>
+            <template v-else>
+                <img v-if="icon.name.includes('creature_shift') && isBackupImage" ref="slot" :src="getImage"/>
+                <img v-else ref="slot" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"/>
+            </template>
+            </div>
+        <perk-tooltip v-if="icon.name.includes('creature_shift') && isBackupImage" 
+            ref="tooltip" :icon="getPerk" :amount="icon.amount" :name="icon.name" :src="getImage"></perk-tooltip>
+        <perk-tooltip v-else 
+            ref="tooltip" :icon="getPerk" :amount="icon.amount" :name="icon.name" :src="'data:image/png;base64,' + (getPerk.ui_img ? getPerk.ui_img : getPerk.image)"></perk-tooltip>
     </div>`,
 })
 
@@ -1186,14 +1541,14 @@ const perkTooltip = Vue.component('perk-tooltip', {
             return null
         },
     },
-    props: ['icon', 'amount'],
+    props: ['icon', 'amount', 'name', 'src'],
     template: /*html*/`
     <div class="tooltip">
         <p class="tooltip-title">{{ amount }} x {{ icon.name }}</p>
         <p class="tooltip-wiki">({{ icon.id }})</p>
         <div class="desc-container">
             <p v-if="icon.description" class="tooltip-description" v-html="desc"></p>
-            <img :src="'data:image/png;base64,' + (icon.ui_img ? icon.ui_img : icon.image)"/>
+            <img :src="src"/>
         </div>
     </div>`,
 })
@@ -1205,12 +1560,16 @@ const containerComp = Vue.component('wands-container', {
             fKeys: [],
             retryTimeout: null,
             retries: 0,
+            currentVersion: currentVersion,
+            modVersion: streamerModVersion,
+            features: streamerModFeatures,
             wands: streamerWands,
             inventory: streamerInventory,
-            progress: streamerProgress,
-            version: streamerVersion,
-            info: streamerInfo,
             items: streamerItems,
+            progress: streamerProgress,
+            runInfo: streamerRunInfo,
+            apothInfo: streamerApothInfo,
+            playerInfo: streamerPlayerInfo,
             newData: null,
             switches: {
                 progressTable: {
@@ -1233,11 +1592,12 @@ const containerComp = Vue.component('wands-container', {
                     className: 'beta-content',
                 },
                 apothContent: {
-                    state: streamerVersion.indexOf('Apotheosis') > -1,
+                    state: HOP(streamerRunInfo, "mods") && HOP(streamerRunInfo.mods, "apotheosis"),
                     label: 'Show Apotheosis Content',
                     className: 'apoth-content',
                 },
             },
+            progTables: false,
         }
     },
     created() {
@@ -1249,28 +1609,32 @@ const containerComp = Vue.component('wands-container', {
     provide() {
         return {
             switches: this.switches,
-            perkTable: this.dataVersion.icons.perks,
-            pseudTable: this.dataVersion.icons.pseuds,
+            tables: {
+                perks: this.dataVersion.icons.perks,
+                pseuds: this.dataVersion.icons.pseuds,
+                enemies: this.dataVersion.icons.enemies,
+            },
+            features: this.features,
         }
     },
     computed: {
         dataVersion() {
-            const progress = this.progress[0] || {
+            const progress = {
                 perks: [],
                 spells: [],
                 enemies: [],
+                ...this.progress,
             }
-
             let enemies = icons.enemies.filter((x) => !x.beta)
             let out = {
                 icons: {
                     perks: icons.perks,
-                    spells: icons.spells.filter((x) => spellDataMain.hasOwnProperty(x.id)),
+                    spells: icons.spells.filter((x) => HOP(spellDataMain, x.id)),
                     enemies: enemies,
                 },
                 prog: {
                     perks: progress.perks,
-                    spells: progress.spells.filter((x) => spellDataMain.hasOwnProperty(x)),
+                    spells: progress.spells.filter((x) => HOP(spellDataMain, x)),
                     enemies: progress.enemies.filter((x) => enemies.map((y) => y.id).includes(x)),
                 },
             }
@@ -1281,7 +1645,7 @@ const containerComp = Vue.component('wands-container', {
                         perks: progress.perks.filter((x) =>
                             icons.perks.map((y) => y.id).includes(x),
                         ),
-                        spells: progress.spells.filter((x) => spellData.hasOwnProperty(x)),
+                        spells: progress.spells.filter((x) => HOP(spellData, x)),
                         enemies: progress.enemies.filter((x) =>
                             icons.enemies.map((y) => y.id).includes(x),
                         ),
@@ -1295,7 +1659,7 @@ const containerComp = Vue.component('wands-container', {
                         perks: progress.perks.filter((x) =>
                             apothIcons.perks.map((y) => y.id).includes(x),
                         ),
-                        spells: progress.spells.filter((x) => spellDataApoth.hasOwnProperty(x)),
+                        spells: progress.spells.filter((x) => HOP(spellDataApoth, x)),
                         enemies: progress.enemies.filter((x) =>
                             apothIcons.enemies.map((y) => y.id).includes(x),
                         ),
@@ -1323,6 +1687,15 @@ const containerComp = Vue.component('wands-container', {
                     this.updateData(this.newData)
                     this.newData = null
                 }
+                if (newVal.progressTable.state) {
+                    setTimeout(() => {
+                        this.progTables = true
+                    }, 0)
+                } else if (!newVal.progressTable.state) {
+                    setTimeout(() => {
+                        this.progTables = false
+                    }, 0)
+                }
             },
             deep: true,
         },
@@ -1332,12 +1705,15 @@ const containerComp = Vue.component('wands-container', {
             this.fKeys = this.wands.map((v) => 1000 + Math.random() * 9999)
         },
         updateData(data) {
+            this.modVersion = data.modVersion
+            this.features = data.modFeatures
             this.wands = data.wands
             this.inventory = data.inventory
-            this.progress = data.progress
             this.items = data.items
-            this.version = data.version
-            this.info = data.info
+            this.progress = data.progress
+            this.runInfo = data.runInfo
+            this.apothInfo = data.apothInfo
+            this.playerInfo = data.playerInfo
             this.genKeys()
         },
         connect() {
@@ -1371,25 +1747,28 @@ const containerComp = Vue.component('wands-container', {
     },
     template: /*html*/`
     <div class="content">
-        <div class="top-wrapper">
-            <div class="inventory-wrapper" v-if="inventory.length > 0">
+    <div class="top-wrapper">
+    <div v-if="modVersion != currentVersion" class="outdated">
+                <p>Streamer is running outdated version: {{ modVersion }}</p>
+                <p>Modules will probably break, please update to version: {{ currentVersion }} </p>
+                <p>Note: If you just installed the mod try refreshing the page after you load into Noita with the mod enabled</p>
+            </div>
+            <div class="inventory-wrapper">
                 <spell-inv :spells="inventory" :items="items"></spell-inv>
             </div>
-            <div class="outdated" v-else>
-                <p>Streamer is running an outdated version of the mod.</p>
-            </div>
-            <player-comp :info="info"></player-comp>
+            <player-comp :player="playerInfo"></player-comp>
         </div>
         <div class="wands-wrapper">
             <wand-comp v-for="(wand, i) in wands" :key="fKeys[i]" :stats="wand.stats" :ac="wand.always_cast" :deck="wand.deck"></wand-comp>
         </div>
         <div class="disclaimer">
-            <world-comp :info="info" :version="version"></world-comp>
+            <world-comp :apoth="apothInfo" :player="playerInfo" :run="runInfo" :features="features"></world-comp>
         </div>
         <div class="switches">
+            <div v-if="switches.progressTable.state ^ progTables" class="loader"></div>
             <v-switch v-for="(sw, i) in switches" :key="i" v-model="sw.state" :title="sw.label" :class="sw.className"></v-switch>
         </div>
-        <div v-if="switches.progressTable.state" class="prog-wrapper">
+        <div v-if="progTables" class="prog-wrapper">
             <div class="top-border"></div>
             <prog-comp
                 v-for="(table, i) in this.tables"
@@ -1527,7 +1906,7 @@ const Progress = Vue.component('prog-comp', {
                     if (!meta[metaKeys[metaInd]]) return
                     const keys = meta[metaKeys[metaInd]]
                     const re = new RegExp('[><][d.-]*')
-                    if (keys.some((key) => spell.hasOwnProperty(key))) {
+                    if (keys.some((key) => HOP(spell, key))) {
                         // check if current spell has the meta property we are searching by
                         if (/type=\w+/.test(metaSearch)) {
                             // check if we are searching by spell type
@@ -1545,7 +1924,7 @@ const Progress = Vue.component('prog-comp', {
                             // otherwise we are searching by a meta property
                             const parts = metaSearch.split(/([><])+/)
                             if (!parts[2]) return
-                            const cmpFilter = keys.filter((key) => spell.hasOwnProperty(key))
+                            const cmpFilter = keys.filter((key) => HOP(spell, key))
                             let val = parseFloat(parts[2])
                             if (dmg25.indexOf(keys[0]) > -1) {
                                 val *= 25
@@ -1653,7 +2032,36 @@ const IconComp = Vue.component('icon-comp', {
             this.tooltip = null
         }
     },
+    computed: {
+        spell() {
+            if (this.tName != "Spells") return false
+            const id = this.icon.id
+
+            let data = spellDataMain
+            let img = icons.spells.filter((x) => HOP(spellDataMain, x.id))
+            if (this.switches.betaContent.state) {
+                data = spellData
+                img = icons.spells
+            }
+            if (this.switches.apothContent.state) {
+                data = spellDataApoth
+                img = apothIcons.spells
+            }
+            let keyedImages = img.reduce((obj, item) => Object.assign(obj, { [item.id]: item }), {})
+            const missing = {
+                name: id,
+                description: "Either this spell is missing from onlywands or it is modded and onlywands doesn't support this mod yet",
+                sprite: icons.pseuds.find((x) => x.id == "missingSpell").image,
+            }
+            return {
+                id: id,
+                img: (HOP(keyedImages, id) ? keyedImages[id] : icons.pseuds.find((x) => x.id == "missingSpell")),
+                data: (HOP(data, id) ? data[id] : missing),
+            }
+        },
+    },
     props: ['icon', 'tName', 'boolProg'],
+    inject: ['switches'],
     template: /*html*/`
     <div class="icon-slot" :class="[{ bgHide : !boolProg }, {spellTip : tName=='Spells'}]">
         <div class="zoom">
@@ -1663,7 +2071,7 @@ const IconComp = Vue.component('icon-comp', {
             </a>
             <img v-else ref="slot" :src="'data:image/png;base64,' + icon.image"/>
         </div>
-        <spell-tooltip v-if="tName=='Spells'" ref="tooltip" :spell="icon.id"></spell-tooltip>
+        <spell-tooltip v-if="tName=='Spells'" ref="tooltip" :spell="spell"></spell-tooltip>
         <icon-tooltip v-else ref="tooltip" :icon="icon"></icon-tooltip>
     </div>`,
 })
@@ -1889,25 +2297,14 @@ const SpellTooltip = Vue.component('spell-tooltip', {
         }
     },
     props: ['spell'],
-    inject: ['switches'],
     computed: {
-        spellVersion() {
-            let out = spellDataMain
-            if (this.switches.betaContent.state) {
-                out = spellData
-            }
-            if (this.switches.apothContent.state) {
-                out = spellDataApoth
-            }
-            return out
-        },
         name() {
-            let name = this.spellVersion[this.spell].name
+            let name = this.spell.data.name
             return name ? name.toUpperCase() : 'UNKNOWN'
         },
         meta() {
             const m = {}
-            let data = this.spellVersion[this.spell] && this.spellVersion[this.spell].meta
+            let data = this.spell.data && this.spell.data.meta
             const keys = this.stats.map((x) => x.key)
             if (!data) {
                 return m
@@ -1973,13 +2370,13 @@ const SpellTooltip = Vue.component('spell-tooltip', {
     template: /*html*/`
     <div class="tooltip">
         <p class="tooltip-title">{{name}}</p>
-        <p class="tooltip-description">{{spellVersion[spell].description}}</p>
+        <p class="tooltip-description">{{spell.data.description}}</p>
         <template v-for="(stat, index) in stats">
             <p v-if="typeof meta[stat.key] != 'undefined'" :key="stat.key" :class="stat.classes">
             {{stat.label}} <span>{{meta[stat.key]}} </span> </p>
             <br v-if="(index + 1) % 3 == 0 && typeof meta[stat.key] != 'undefined'">
             </template>
-        <img :src="'data:image/png;base64,' + spellVersion[spell].sprite"/>
+        <img :src="'data:image/png;base64,' + spell.data.sprite"/>
     </div>`,
 })
 

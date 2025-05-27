@@ -17,6 +17,7 @@ local function send_event()
 
     local json_string = serialize_data()
     if last_sent == json_string then return end
+    if json_string == "" then return end
 
     main_socket:send(json_string)
     last_sent = json_string

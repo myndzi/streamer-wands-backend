@@ -1,13 +1,15 @@
 const mongoose = require('mongoose')
-const infoSchema = new mongoose.Schema({
+const playerSchema = new mongoose.Schema({
     names: [String],
     amounts: [Number],
     shifts: [[String]],
-    shiftInfo: [Number],
+    shiftsTotal: Number,
+    shiftsTimer: Number,
     health: [Number],
     gold: Number,
+    orbs: Number,
     x: Number,
     y: Number,
 })
 
-module.exports = mongoose.model('Info', infoSchema)
+module.exports = mongoose.model('Player Info', playerSchema)
