@@ -1592,7 +1592,7 @@ const containerComp = Vue.component('wands-container', {
                     className: 'beta-content',
                 },
                 apothContent: {
-                    state: streamerRunInfo.mods.includes("apotheosis") || streamerRunInfo.mods.includes("Apotheosis"),
+                    state: streamerRunInfo.mods.some(mod => /apotheosis/i.test(mod)),
                     label: 'Show Apotheosis Content',
                     className: 'apoth-content',
                 },
