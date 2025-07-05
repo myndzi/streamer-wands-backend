@@ -193,10 +193,11 @@ function get_wand_stats(id)
 
     local ability_comp = EntityGetFirstComponentIncludingDisabled(id, "AbilityComponent")
     local item_comp = EntityGetFirstComponentIncludingDisabled(id, "ItemComponent")
-    serialized.sprite = ComponentGetValue2(ability_comp, "sprite_file")
+    serialized.sprite = ComponentGetValue2(item_comp, "ui_sprite") or ComponentGetValue2(ability_comp, "sprite_file")
     local use_name = ComponentGetValue2(item_comp, "always_use_item_name_in_ui")
     if use_name then
-        serialized.ui_name = GameTextGetTranslatedOrNot(ComponentGetValue2(ability_comp, "ui_name"))
+        item_name = ComponentGetValue2(item_comp, "item_name") or ComponentGetValue2(ability_comp, "ui_name")
+        serialized.ui_name = GameTextGetTranslatedOrNot(item_name)
     else
         serialized.ui_name = "wand"
     end
@@ -223,23 +224,25 @@ function get_wand_spells(id)
         for _, child in ipairs(childs) do
             local item_comp = EntityGetFirstComponentIncludingDisabled(child, "ItemComponent")
             local item_action_component = EntityGetFirstComponentIncludingDisabled(child, "ItemActionComponent")
-            local is_always_cast = ComponentGetValue2(item_comp, "permanently_attached")
-            local action_id = ComponentGetValue2(item_action_component, "action_id")
-            local slot = ComponentGetValue2(item_comp, "inventory_slot")
-            local charges = ComponentGetValue2(item_comp, "uses_remaining")
-            local empty_slots = slot - last_slot
+            if (item_comp ~= nil) and (item_action_component ~= nil) then
+                local is_always_cast = ComponentGetValue2(item_comp, "permanently_attached")
+                local action_id = ComponentGetValue2(item_action_component, "action_id")
+                local slot = ComponentGetValue2(item_comp, "inventory_slot")
+                local charges = ComponentGetValue2(item_comp, "uses_remaining")
+                local empty_slots = slot - last_slot
 
-            if empty_slots > 0 then
-                for s = 1, empty_slots do
-                    table.insert(deck, "0")
+                if empty_slots > 0 then
+                    for s = 1, empty_slots do
+                        table.insert(deck, "0")
+                        last_slot = last_slot + 1
+                    end
+                end
+                if (is_always_cast) then
+                    table.insert(always_cast, action_id .. "_#" .. charges)
+                else
+                    table.insert(deck, action_id .. "_#" .. charges)
                     last_slot = last_slot + 1
                 end
-            end
-            if (is_always_cast) then
-                table.insert(always_cast, action_id .. "_#" .. charges)
-            else
-                table.insert(deck, action_id .. "_#" .. charges)
-                last_slot = last_slot + 1
             end
         end
     end
