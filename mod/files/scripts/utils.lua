@@ -193,7 +193,12 @@ function get_wand_stats(id)
 
     local ability_comp = EntityGetFirstComponentIncludingDisabled(id, "AbilityComponent")
     local item_comp = EntityGetFirstComponentIncludingDisabled(id, "ItemComponent")
-    serialized.sprite = ComponentGetValue2(item_comp, "ui_sprite") or ComponentGetValue2(ability_comp, "sprite_file")
+    local sprite = ComponentGetValue2(item_comp, "ui_sprite")
+    if string.len(sprite) > 0 then
+        serialized.sprite = sprite
+    else
+        serialized.sprite = ComponentGetValue2(ability_comp, "sprite_file")
+    end
     local use_name = ComponentGetValue2(item_comp, "always_use_item_name_in_ui")
     if use_name then
         item_name = ComponentGetValue2(item_comp, "item_name") or ComponentGetValue2(ability_comp, "ui_name")
