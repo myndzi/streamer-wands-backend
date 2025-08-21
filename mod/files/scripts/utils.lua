@@ -366,23 +366,12 @@ function get_run_info(ngpCheck, seedCheck)
 end
 
 function apotheosis_check()
-    for _, mod in ipairs(ModGetActiveModIDs()) do
-        if mod == "apotheosis" or mod == "Apotheosis" then
-            return true
-        end
-    end
-    return false
+    return ModIsEnabled("apotheosis") or ModIsEnabled("Apotheosis")
 end
 
 function get_spells_progress()
     local spells = {}
-    local mods = get_run_info()
-    local lock = false
-    for _, mod in ipairs(ModGetActiveModIDs()) do
-        if mod == "conga_spell_lock" then
-            lock = true
-        end
-    end
+    local lock = ModIsEnabled("conga_spell_lock")
     for _, spell in ipairs(actions) do
         if HasFlagPersistent("action_" .. string.lower(spell.id)) then
             if lock and not HasFlagPersistent("disabled_" .. string.lower(spell.id)) then
@@ -425,6 +414,50 @@ function get_enemies_progress()
     return enemies
 end
 
+function check_flags(flags)
+    local checked_flags = {}
+    for _, pillar in ipairs(flags) do
+        for filename, flag in pairs(pillar) do
+            if HasFlagPersistent(flag[1]) then
+                table.insert(checked_flags, flag[1])
+            end
+            if HasFlagPersistent(table.concat({ "apotheosis_card_unlocked_", flag[1] })) then
+                table.insert(checked_flags, flag[1])
+            end
+        end
+    end
+    return checked_flags
+end
+
+function get_pillars_progress()
+    local flags =
+    {
+        { { "misc_chest_rain", "crain" }, { "misc_util_rain", "urain" },        { "misc_worm_rain", "wrain" },       { "misc_greed_rain", "grain" },      { "misc_altar_tablet", "train" },        { "misc_mimic_potion_rain", "mrain" },       { "misc_monk_bots", "mbots" },           { "misc_sun_effect", "seffect" }, { "misc_darksun_effect", "dseffect" }, { "secret_tower", "secrett" },       { "player_status_ghostly", "pghost" }, { "player_status_ratty", "prat" },         { "player_status_funky", "pfungi" },    { "player_status_lukky", "plukki" }, { "player_status_halo", "phalo" } },
+        { { "essence_fire", "essencef" }, { "essence_water", "essencew" },      { "essence_laser", "essencee" },     { "essence_air", "essencea" },       { "essence_alcohol", "essenceal" },      { "secret_moon", "moon" },                   { "secret_moon2", "moona" },             { "special_mood", "moong" },      { "secret_dmoon", "dmoon" },           { "dead_mood", "dmoong" },           { "secret_sun_collision", "sunmoon" }, { "secret_darksun_collision", "dsunmoon" } },
+        { { "progress_ending0", "end0" }, { "progress_ending1_toxic", "endt" }, { "progress_ending1_gold", "endb" }, { "progress_ending2", "endg" },      { "progress_newgameplusplus3", "endp" }, { "progress_nightmare", "endn" } },
+        { { "miniboss_dragon", "minid" }, { "miniboss_limbs", "minil" },        { "miniboss_meat", "meat" },         { "miniboss_ghost", "minigh" },      { "miniboss_pit", "minip" },             { "miniboss_alchemist", "minia" },           { "miniboss_robot", "minir" },           { "miniboss_wizard", "meme" },    { "miniboss_maggot", "maggot" },       { "miniboss_fish", "fish" },         { "miniboss_islandspirit", "elk" },    { "miniboss_threelk", "threelk" },         { "miniboss_gate_monsters", "minigm" }, { "final_secret_orb3", "yeah3" },    { "miniboss_sky", "minisky" },    { "boss_centipede", "boss" } },
+        { { "progress_orb_1", "orbf" },   { "progress_orb_evil", "orbe" },      { "progress_orb_all", "orba" },      { "progress_pacifist", "pacifist" }, { "progress_nogold", "nogold" },         { "progress_clock", "clock" },               { "progress_minit", "minit" },           { "progress_nohit", "nohit" },    { "progress_sun", "sun" },             { "progress_darksun", "dsun" },      { "progress_sunkill", "sunkill" },     { "secret_supernova", "col" } },
+        { { "secret_greed", "secretg" },  { "final_secret_orb", "yeah" },       { "final_secret_orb2", "yeah2" },    { "secret_chest_dark", "secretcd" }, { "secret_chest_light", "secretcl" },    { "card_unlocked_everything", "secretall" }, { "card_unlocked_divide", "secretten" }, { "secret_fruit", "secretf" },    { "secret_allessences", "secretae" },  { "secret_meditation", "secretme" }, { "secret_buried_eye", "secretbe" },   { "secret_hourglass", "secrethg" },        { "progress_hut_a", "huta" },           { "progress_hut_b", "hutb" },        { "secret_null", "null" } },
+    }
+    pillars = check_flags(flags)
+    if apotheosis_check() then
+        local flags_apoth =
+        {
+            { { "pandora_chest_rain", "p_secret_pandora" },        { "clam_chest_rain", "p_secret_clam" },                  { "musical_magic_played", "p_secret_musical_magic" },          { "unlocked_divine_liquid", "p_secret_opposing_porring" }, { "boss_flesh_monster_gourd_holy", "p_boss_heretic_gourd_holy" } },
+            { { "perkforged_protection_fire", "p_perk_fire" },     { "perkforged_breath_underwater", "p_perk_breathless" }, { "perkforged_protection_electricity", "p_perk_electricity" }, { "perkforged_telekinesis", "p_perk_telekinesis" },        { "perkforged_edit_wands_everywhere", "p_perk_twwe" },           { "perkforged_remove_fog_of_war", "p_perk_ase" },                { "perkforged_apotheosis_alcohol_immunity", "p_perk_drunk" },    { "perkforged_apotheosis_trip_immunity", "p_perk_trip" }, { "perkforged_mega_beam_stone", "p_perk_beamstone" }, { "perkforged_global_gore", "p_perk_moreblood" }, { "perkforged_apotheosis_plane_radar", "p_perk_radar" }, { "essence_fungus", "p_essence_fungus" }, { "moon_fungus_unlock", "p_essence_fungus_moon" }, },
+            { { "ending_apotheosis_01", "p_ending_01" },           { "ending_apotheosis_02", "p_ending_02" },               { "ending_apotheosis_03", "p_ending_03" },                     { "ending_apotheosis_speedrun", "p_ending_500" },          { "ending_apotheosis_speedrun_1hr", "p_ending_100_hr" },         { "ending_apotheosis_hardcore", "p_ending_challenge_hardcore" }, { "ending_apotheosis_everything", "p_ending_challenge_tuonela" } },
+            { { "boss_toxic_worm", "p_boss_toxic" },               { "blob_boss", "p_boss_blob" },                          { "musical_boss", "p_boss_music" },                            { "boss_monolith", "p_boss_monolith" },                    { "fire_lukki", "p_boss_fire_lukki" },                           { "worm_end_big", "p_boss_hell_worm" },                          { "boss_flesh_monster", "p_boss_heretic" },                      { "boss_flesh_monster_wrath", "p_boss_heretic_wrath" }, },
+            { { "foundneworb", "p_orb_1" },                        { "foundallneworbs", "p_orb_4" },                        { "45_orbs", "p_orb_45" }, },
+            { { "divine_red_fish_unlocked", "p_secret_red_fish" }, { "cat_secret", "p_secret_cat" },                        { "donated_beggar", "p_secret_hobo" },                         { "sleep", "p_secret_sleep" },                             { "lost_alchemy", "p_secret_alchemy_ants" },                     { "perk_creation", "p_secret_perk_creation" },                   { "omega_cross", "p_secret_omegadeath" },                        { "rage_aura", "p_secret_trolling" }, },
+        }
+        pillars_apoth = check_flags(flags)
+        for _, flag in ipairs(pillars_apoth) do
+            table.insert(pillars, flag)
+        end
+    end
+    return pillars
+end
+
 function serialize_data()
     local player = get_player()
     if (player == nil) then
@@ -446,7 +479,8 @@ function serialize_data()
     local perks = get_perks_progress()
     local spells = get_spells_progress()
     local enemies = get_enemies_progress()
-    data["progress"] = { perks, spells, enemies }
+    local pillars = get_pillars_progress()
+    data["progress"] = { perks, spells, enemies, pillars }
 
     local ngpCheck = ModSettingGet("streamer_wands.ngp")
     local seedCheck = ModSettingGet("streamer_wands.seed")

@@ -864,6 +864,89 @@ a:visited {
     color: rgb(204, 204, 204);
 }
 
+.pillars-wrapper {
+    background-color: rgba(42, 33, 30, 0.25);
+    border: rgb(145, 129, 103) solid 3px;
+    border-top: none;
+}
+
+.pillars {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    /* gap: 5rem; */
+}
+
+.pillars-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 25px;
+    justify-content: center;
+    position: sticky;
+    top: 25px;
+    background-color: black;
+    z-index: 2;
+    align-items: center;
+    border-bottom: rgb(145, 129, 103) solid 1px;
+    box-sizing: border-box;
+}
+
+.pillars-header-text {
+    display: flex;
+    gap: 1rem;
+}
+
+.pillar>.pillars-header {
+    width: 200px;
+    top: 50px;
+}
+
+.pillar {
+    text-align: center;
+}
+
+.pillar-dark {
+    filter: brightness(0.5);
+}
+
+.pillar-zoom,
+.pillar-zoom>img {
+    height: 5rem;
+    transition: height 0.2s;
+}
+
+.pillar-zoom:hover,
+.pillar-zoom:hover>img {
+    height: 10rem;
+}
+
+.pillar-cell {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.pillar-cell>.tooltip>p {
+    max-width: 450px;
+}
+
+.pillar-cell>.tooltip>p:first-child,
+.pillar-cell>.tooltip>p:nth-child(n + 3) {
+    color: rgb(111, 110, 110);
+}
+
+.spacer,
+.pillar-cell,
+.pillar-cell>img {
+    height: 5rem;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    text-align: left;
+}
+
 .switches {
     display: flex;
     flex-direction: row;
@@ -1197,7 +1280,8 @@ a:visited {
 }
 
 .item-slot .tooltip,
-.icon-slot:not(.spellTip) .tooltip {
+.icon-slot:not(.spellTip) .tooltip,
+.pillar .tooltip {
     min-width: fit-content;
     /* min-height: 120px; */
     visibility: hidden;
@@ -1214,11 +1298,17 @@ a:visited {
     font-size: 0.8rem;
 }
 
+.pillar .tooltip {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
 .spell-slot:hover .tooltip,
 .icon-slot:hover .tooltip,
 .tip:hover .tooltip,
 .shifts-tip:hover .tooltip,
 .material:hover .tooltip,
+.pillar-cell:hover>.tooltip,
 .item-slot:hover .tooltip {
     visibility: visible;
     transform: none;
