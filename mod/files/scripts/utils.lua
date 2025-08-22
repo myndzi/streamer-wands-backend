@@ -417,7 +417,7 @@ end
 function check_flags(flags)
     local checked_flags = {}
     for _, pillar in ipairs(flags) do
-        for filename, flag in pairs(pillar) do
+        for __, flag in ipairs(pillar) do
             if HasFlagPersistent(flag[1]) then
                 table.insert(checked_flags, flag[1])
             end
@@ -450,7 +450,7 @@ function get_pillars_progress()
             { { "foundneworb", "p_orb_1" },                        { "foundallneworbs", "p_orb_4" },                        { "45_orbs", "p_orb_45" }, },
             { { "divine_red_fish_unlocked", "p_secret_red_fish" }, { "cat_secret", "p_secret_cat" },                        { "donated_beggar", "p_secret_hobo" },                         { "sleep", "p_secret_sleep" },                             { "lost_alchemy", "p_secret_alchemy_ants" },                     { "perk_creation", "p_secret_perk_creation" },                   { "omega_cross", "p_secret_omegadeath" },                        { "rage_aura", "p_secret_trolling" }, },
         }
-        pillars_apoth = check_flags(flags)
+        pillars_apoth = check_flags(flags_apoth)
         for _, flag in ipairs(pillars_apoth) do
             table.insert(pillars, flag)
         end

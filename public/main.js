@@ -1804,37 +1804,49 @@ const pillarsComp = Vue.component('pillars-comp', {
             const lengths = pillarVersion.map((x) => x.length - 1)
             return {
                 pillarVersion,
-                lengths,
                 headers: pillarVersion.map((x) => x[0].name),
                 spacing: lengths.map((x) => Math.max(...lengths) - x),
-                maxLengths: Math.max(...pillarVersion.map((x) => x.length - 1)),
             }
         },
         progress() {
-            const flags = this.pillarProgress
-            const lengths = Array(this.info.lengths.length).fill(0)
-            const progress = this.info.pillarVersion.map((pillar, i) => pillar.map((flag) => {
-                if (HOP(flag, "key")) {
-                    const inc = flags.includes(flag.key)
-                    lengths[i] += +inc
-                    return inc
+            /**
+             * Summarize the progress of a single pillar
+             * 
+             * @param {{key: string, icon: string, name: string}[]} pillarData
+             * @return {{progress: boolean[], current: number, total: number}}
+             */
+            const pillarSummary = (pillarData) => {
+                /** @var {string[]} flags */
+                const flags = this.pillarProgress;
+                let count = 0
+                const progress = []
+                for (const data of pillarData) {
+                    const unlocked = flags.includes(data.key)
+                    progress.push(unlocked)
+                    if (unlocked) count++
                 }
-                return false
-            }))
-            const obj = {
-                // current: Array(this.info.lengths.length).fill(2),
-                current: lengths,
-                total: this.info.lengths,
+                return {
+                    progress,
+                    current: count,
+                    // pillarData includes top pillar image, don't count it in total
+                    total: pillarData.length - 1,
+                }
+            }
+            const allProgress = [];
+            const allCounts = [];
+            let totalCount = 0;
+            let totalTotal = 0;
+            for (const pillarData of this.info.pillarVersion) {
+                const { progress, ...counts } = pillarSummary(pillarData);
+                allProgress.push(progress)
+                allCounts.push(counts)
+                totalCount += counts.current;
+                totalTotal += counts.total;
             }
             return {
-                progress,
-                list: obj.total.map((x, i) => {
-                    return {
-                        current: obj.current[i],
-                        total: x,
-                    }
-                }),
-                overall: `${obj.current.reduce((a, c) => a + c, 0)} / ${obj.total.reduce((a, c) => a + c, 0)}`,
+                progress: allProgress,
+                list: allCounts,
+                overall: `${totalCount} / ${totalTotal}`,
             }
         },
     },
