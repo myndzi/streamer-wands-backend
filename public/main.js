@@ -1900,7 +1900,7 @@ const pillarCell = Vue.component('pillar-cell', {
             ref="slot" 
             :src="'data:image/png;base64,' + cell.icon" 
             @mouseenter="updateTip"
-            :class="{ 'pillar-dark': !progress ^ complete }"
+            :class="{ 'pillar-dark': !(progress || complete) }"
         />
         <div v-if="header" ref="tooltip" class="tooltip">
             <p>{{ header }}:</p>
