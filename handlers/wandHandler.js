@@ -101,7 +101,7 @@ exports.validate = (data) => {
     const validatedSpells = inventory.filter(strFilter)
     const validatedItems = items.filter(strFilter)
 
-    const progressKeys = ["perks", "spells", "enemies"]
+    const progressKeys = ["perks", "spells", "enemies", "pillars"]
     const validatedProgress = {}
     progress.forEach((table, i) => {
         validatedProgress[progressKeys[i]] = table.filter(strFilter)
