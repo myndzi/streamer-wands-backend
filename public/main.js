@@ -1906,13 +1906,14 @@ const pillarCell = Vue.component('pillar-cell', {
         },
     },
     props: ['cell', 'header', 'progress', 'complete'],
+    inject: ['switches'],
     template: /*html*/`
     <div class="pillar-cell" :class="{ 'pillar-zoom': header }">
         <img 
             ref="slot" 
             :src="'data:image/png;base64,' + cell.icon" 
             @mouseenter="updateTip"
-            :class="{ 'pillar-dark': !(progress || complete) }"
+            :class="{ 'pillar-dark': !(progress || complete) ^ switches.flipHidden.state }"
         />
         <div v-if="header" ref="tooltip" class="tooltip">
             <p>{{ header }}:</p>
