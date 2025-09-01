@@ -1577,6 +1577,11 @@ const containerComp = Vue.component('wands-container', {
                     label: 'Show Progress Table',
                     className: 'progress-table',
                 },
+                pillars: {
+                    state: false,
+                    label: "Show Pillars",
+                    className: "pillars-label",
+                },
                 autoRefresh: {
                     state: true,
                     label: 'Auto Refresh Data',
@@ -1623,6 +1628,7 @@ const containerComp = Vue.component('wands-container', {
                 perks: [],
                 spells: [],
                 enemies: [],
+                pillars: [],
                 ...this.progress,
             }
             let enemies = icons.enemies.filter((x) => !x.beta)
@@ -1666,6 +1672,7 @@ const containerComp = Vue.component('wands-container', {
                     },
                 }
             }
+            out.pillars = progress.pillars
             return out
         },
         tables() {
@@ -1768,6 +1775,9 @@ const containerComp = Vue.component('wands-container', {
             <div v-if="switches.progressTable.state ^ progTables" class="loader"></div>
             <v-switch v-for="(sw, i) in switches" :key="i" v-model="sw.state" :title="sw.label" :class="sw.className"></v-switch>
         </div>
+        <div v-if="switches.pillars.state">
+            <pillars-comp :pillarProgress="dataVersion.pillars"></pillars-comp>
+        </div>
         <div v-if="progTables" class="prog-wrapper">
             <div class="top-border"></div>
             <prog-comp
@@ -1780,6 +1790,137 @@ const containerComp = Vue.component('wands-container', {
             ></prog-comp>
         </div>
     </div>`,
+})
+
+const pillarsComp = Vue.component('pillars-comp', {
+    data() {
+        return {
+            apothState: false,
+        }
+    },
+    computed: {
+        info() {
+            const pillarVersion = this.apothState ? pillarsApoth : pillars
+            const lengths = pillarVersion.map((x) => x.length - 1)
+            return {
+                pillarVersion,
+                headers: pillarVersion.map((x) => x[0].name),
+                spacing: lengths.map((x) => Math.max(...lengths) - x),
+            }
+        },
+        progress() {
+            /**
+             * Summarize the progress of a single pillar
+             * 
+             * @param {{key: string, icon: string, name: string}[]} pillarData
+             * @return {{progress: boolean[], current: number, total: number}}
+             */
+            const pillarSummary = (pillarData) => {
+                /** @var {string[]} flags */
+                const flags = this.pillarProgress;
+                let count = 0
+                const progress = []
+                for (const data of pillarData) {
+                    const unlocked = flags.includes(data.key)
+                    progress.push(unlocked)
+                    if (unlocked) count++
+                }
+                return {
+                    progress,
+                    current: count,
+                    // pillarData includes top pillar image, don't count it in total
+                    total: pillarData.length - 1,
+                }
+            }
+            const allProgress = [];
+            const allCounts = [];
+            let totalCount = 0;
+            let totalTotal = 0;
+            for (const pillarData of this.info.pillarVersion) {
+                const { progress, ...counts } = pillarSummary(pillarData);
+                allProgress.push(progress)
+                allCounts.push(counts)
+                totalCount += counts.current;
+                totalTotal += counts.total;
+            }
+            return {
+                progress: allProgress,
+                list: allCounts,
+                overall: `${totalCount} / ${totalTotal}`,
+            }
+        },
+    },
+    props: ['pillarProgress'],
+    inject: ['switches'],
+    template: /*html*/`
+    <div class="pillars-wrapper">
+        <div class="pillars-header">
+            <div class="top-border"></div>
+            <div class="pillars-header-text">
+                <v-switch v-if="switches.apothContent.state" v-model="apothState" title="Show Apotheosis Pillars"></v-switch>
+                <p>Total: {{ progress.overall }}</p>
+            </div>
+        </div>
+        <div class="pillars">
+            <div class="pillar" v-for="(pillar,i) in info.pillarVersion" :key="'pillar' + i">
+                <p class="pillars-header">{{ progress.list[i].current }} / {{ progress.list[i].total }}</p>
+                <div class="spacer" v-for="j in info.spacing[i]" :key="'space' + j"></div>
+                <pillar-cell 
+                    v-for="(cell,k) in pillar" 
+                    :key="'cell' + k" 
+                    :cell="cell"
+                    :header="k ? info.headers[i] : false"
+                    :progress="progress.progress[i][k]"
+                    :complete="progress.list[i].current == progress.list[i].total"
+                    ></pillar-cell>
+            </div>
+        </div>
+    </div>`,
+})
+
+const pillarCell = Vue.component('pillar-cell', {
+    data() {
+        return {
+            tooltip: null,
+        }
+    },
+    mounted() {
+        if (this.$refs.tooltip) {
+            this.tooltip = Popper.createPopper(this.$refs.slot, this.$refs.tooltip, {
+                placement: 'right',
+                modifiers: [{ name: 'offset', options: { offset: [10, 50] } }],
+            })
+        }
+    },
+    beforeDestroy() {
+        if (this.tooltip) {
+            this.tooltip.destroy()
+            this.tooltip = null
+        }
+    },
+    methods: {
+        updateTip() {
+            if (this.tooltip) {
+                this.tooltip.update()
+            }
+        },
+    },
+    props: ['cell', 'header', 'progress', 'complete'],
+    inject: ['switches'],
+    template: /*html*/`
+    <div class="pillar-cell" :class="{ 'pillar-zoom': header }">
+        <img 
+            ref="slot" 
+            :src="'data:image/png;base64,' + cell.icon" 
+            @mouseenter="updateTip"
+            :class="{ 'pillar-dark': !(progress || complete) ^ switches.flipHidden.state }"
+        />
+        <div v-if="header" ref="tooltip" class="tooltip">
+            <p>{{ header }}:</p>
+            <p>{{ cell.name }}</p>
+            <p v-if="cell.desc">{{ cell.desc }}</p>
+        </div>
+    </div>`
 })
 
 const Progress = Vue.component('prog-comp', {
@@ -2404,6 +2545,12 @@ Vue.mixin({
             get icons() {
                 return icons
             },
+            get pillars() {
+                return pillars
+            },
+            get pillarsApoth() {
+                return pillarsApoth
+            },
             get itemData() {
                 return itemData
             },
@@ -2414,14 +2561,6 @@ Vue.mixin({
     },
 })
 
-Vue.component(WandContainer)
-Vue.component(WandStats)
-Vue.component(WandAc)
-Vue.component(WandDeck)
-Vue.component(SpellSlot)
-Vue.component(SpellTooltip)
-Vue.component(Progress)
-Vue.component(vSwitch)
 const app = new Vue({
     render: function (h) {
         return h(containerComp)
